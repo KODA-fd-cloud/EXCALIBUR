@@ -68,43 +68,60 @@ agent worker start --pool --pool-name excalibur-blog --idle-release-timeout 600
 
 Не коммитить: `memory/site.env.local`, реальные ключи MCP.
 
-## Automation schedule
+## Automation schedule (KODA)
 
-Cursor Automation → Schedule, пример:
+Cursor Automation → Schedule:
 
 ```text
-0 10,15,20 * * *
+0 8,15 * * *
 ```
 
-- Repository: ваш fork `excalibur-blog` / EXCALIBUR
-- Worker pool: `excalibur-blog`
-- Branch: `main`
+- Repository: `KODA-fd-cloud/EXCALIBUR`
+- Branch: `master`
+- Secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, FTP/WP, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
 
-## Automation prompt (шаблон)
+## Telegram UX (обязательно)
 
 ```text
-Ты работаешь в репозитории Excalibur BLOG.
+propose → ты: ок/нет
+  ок  → бот: «✅ Принято, пишу…» → пайплайн → бот: «🚀 Опубликовано» + URL
+  нет → бот: «⏭ Ок, пропускаю…»
+```
 
-Запусти полный пайплайн SEO/GEO статьи через оркестратора (Директор), не выполняя роли сам.
+Команды:
+
+```bash
+python3 scripts/excalibur_blog_telegram_notify.py poll --ack
+python3 scripts/excalibur_blog_telegram_notify.py ack
+python3 scripts/excalibur_blog_telegram_notify.py published --url "https://koda-fd.ru/blog/<slug>/"
+python3 scripts/excalibur_blog_telegram_notify.py propose --topic-id B24 --h1 "..."
+```
+
+## Automation prompt (шаблон с согласованием)
+
+```text
+Ты работаешь в репозитории KODA Excalibur BLOG (KODA-fd-cloud/EXCALIBUR).
+
+Цель: согласование темы в Telegram → статья → публикация → ссылка в Telegram.
 
 0. Прочитай AGENTS.md и shared/agent-pipeline-pitfalls.md.
-1. python3 scripts/excalibur_blog_today.py — зафиксируй дату и topic_id.
-2. Сбрось .cursor/excalibur-blog-handoff.md одной строкой "# Excalibur BLOG — новая сессия".
-3. Очисти .cursor/excalibur-blog-fragments/.
-4. python3 scripts/excalibur_blog_research_start.py --topic-id <из EXCALIBUR_SUGGESTED_TOPIC_ID или env>.
-5. Task(excalibur-blog-research) → research-notes.md.
-6. Task(excalibur-blog-writer) → article.html + meta.
-7. Task(excalibur-blog-geo-qa) → PASS + все QA JSON.
-8. ПАРАЛЛЕЛЬНО Task(excalibur-blog-cover) + Task(excalibur-blog-schema).
-   Cover/schema пишут во fragments; перенеси в handoff.
-9. Task(excalibur-blog-indexer).
-10. Task(excalibur-blog-publish) — **автоматически** после Indexer (skip только publish:no). Skill: publish-excalibur-blog. Обнови shared/published-articles.md.
+1. python3 scripts/excalibur_blog_telegram_notify.py poll --ack
+   - decision=approve / status=writing → иди в пайплайн для topic_id из pending.
+   - decision=reject → предложи следующую тему (шаг 11) и остановись.
+   - decision=pending / none → только предложи тему (шаг 11), НЕ пиши статью.
+2. Если пишем: python3 scripts/excalibur_blog_today.py + research_start для topic_id.
+3. Сбрось .cursor/excalibur-blog-handoff.md; очисти fragments.
+4. Task research → writer → geo-qa → cover||schema → indexer → publish.
+5. После успешного publish URL:
+   python3 scripts/excalibur_blog_telegram_notify.py published --url "<URL>"
+6. Закоммить pending-approval.json + published-articles.md + артефакты статьи.
+11. Следующая тема: возьми следующую неопубликованную P0 из memory/topics/blog-topics.md
+    (не дублировать slug из shared/published-articles.md) и:
+    python3 scripts/excalibur_blog_telegram_notify.py propose --topic-id ... --h1 "..." --slug ...
+    (кириллица обязательна; читай h1 из blog-topics.md, не транслитом)
 
-Fallback: если Task types недоступны — generalPurpose per role (см. AGENTS.md).
-
-Запрещено: single-agent pipeline, cover до QA PASS, секреты в handoff.
-
-Финальный ответ: article_dir + QA verdict + publish URL или блокер.
+Fallback Task types: generalPurpose per role (AGENTS.md).
+Запрещено: писать/публиковать без approve; single-agent pipeline; секреты в handoff.
 ```
 
 ## После каждого прогона
