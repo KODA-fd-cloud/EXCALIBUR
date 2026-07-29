@@ -1,0 +1,449 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B14",
+    "priority": "P0",
+    "slug": "upravlenie-debitorkoj-reestr-napominaniya",
+    "h1": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам",
+    "primary_query": "как управлять дебиторской задолженностью",
+    "secondary_queries": [
+      "контроль дебиторки",
+      "напоминание об оплате контрагенту",
+      "реестр просроченной дебиторки"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как управлять дебиторской задолженностью 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Управление дебиторской задолженностью: полный гайд 2026",
+          "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Управление дебиторской задолженностью: 7 шагов для МСБ в 2026",
+          "url": "https://m-context.ru/upravlenie-debitorskoy-zadolzhennostyu-msp-2026/",
+          "snippet": "Полный гайд по управлению дебиторской задолженностью в 2026 году: методы снижения ДЗ, кредитная политика, автоматизация, работа с должниками и KPI."
+        },
+        {
+          "title": "Особенности работы с дебиторской задолженностью в 2026 году",
+          "url": "https://secrets.tbank.ru/blogi-kompanij/rabota-s-debitorskoj-zadolzhennostyu-2026/",
+          "snippet": "Просроченная дебиторская задолженность российских компаний в январе 2026 года почти достигла 8,2 трлн рублей. Ниже — семь шагов для владельца МСБ: лимит отсрочки, договор, претензия, суд и еженедельный контроль. После прочтения у вас будет план, как вернуть деньги и перестать кредитовать неплательщиков."
+        },
+        {
+          "title": "Учет и Управление Дебиторской Задолженностью: 2025-2026 Годы, Реферат",
+          "url": "https://risk.econlib.ru/referat/uchet-debitorskoy-zadoljennosti-2/",
+          "snippet": "Грамотно выстроенные бизнес-процессы позволяют минимизировать просрочки платежей и исключить невозвраты дебиторской задолженности."
+        },
+        {
+          "title": "Управление задолженностью: эффективная работа с дебиторской задолженностью",
+          "url": "https://www.1cbit.ru/blog/upravlenie-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa/",
+          "snippet": "Настоящая работа призвана дать исчерпывающий анализ учета и управления дебиторской задолженностью, охватывая как фундаментальные теоретические аспекты, так и новейшие изменения в нормативно-правовой базе Российской Федерации, актуальные на 2025-2026 годы."
+        },
+        {
+          "title": "Управление дебиторской и кредиторской задолженностью: полный гайд 2026 ...",
+          "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-kreditorskoy-zadoljennosti/",
+          "snippet": "Разберём, как выстроить управление задолженностью: контроль дебиторки, работа с просрочкой, автоматизация в 1С и снижение кассовых разрывов."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как управлять дебиторской задолженностью июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Управление дебиторской задолженностью: полный гайд 2026",
+          "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Управление дебиторской задолженностью: 7 шагов для МСБ в 2026",
+          "url": "https://m-context.ru/upravlenie-debitorskoy-zadolzhennostyu-msp-2026/",
+          "snippet": "Полный гайд по управлению дебиторской задолженностью в 2026 году: методы снижения ДЗ, кредитная политика, автоматизация, работа с должниками и KPI."
+        },
+        {
+          "title": "Управление задолженностью: эффективная работа с дебиторской задолженностью",
+          "url": "https://www.1cbit.ru/blog/upravlenie-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa/",
+          "snippet": "Просроченная дебиторская задолженность российских компаний в январе 2026 года почти достигла 8,2 трлн рублей. Ниже — семь шагов для владельца МСБ: лимит отсрочки, договор, претензия, суд и еженедельный контроль. После прочтения у вас будет план, как вернуть деньги и перестать кредитовать неплательщиков."
+        },
+        {
+          "title": "Особенности работы с дебиторской задолженностью в 2026 году",
+          "url": "https://secrets.tbank.ru/blogi-kompanij/rabota-s-debitorskoj-zadolzhennostyu-2026/",
+          "snippet": "Разберём, как выстроить управление задолженностью: контроль дебиторки, работа с просрочкой, автоматизация в 1С и снижение кассовых разрывов."
+        },
+        {
+          "title": "Учет и Управление Дебиторской Задолженностью: 2025-2026 Годы, Реферат",
+          "url": "https://risk.econlib.ru/referat/uchet-debitorskoy-zadoljennosti-2/",
+          "snippet": "Грамотно выстроенные бизнес-процессы позволяют минимизировать просрочки платежей и исключить невозвраты дебиторской задолженности."
+        },
+        {
+          "title": "Учет и Анализ Дебиторской Задолженности (2026): Руководство для ...",
+          "url": "https://risk.econlib.ru/diplomnaya/ot-testa-do-zaschityi-diploma-5/",
+          "snippet": "Настоящая работа призвана дать исчерпывающий анализ учета и управления дебиторской задолженностью, охватывая как фундаментальные теоретические аспекты, так и новейшие изменения в нормативно-правовой базе Российской Федерации, актуальные на 2025-2026 годы."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как управлять дебиторской задолженностью новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Письмо Минфина России от 06.03.2026 № 23-01-06/18248 «О работе с ...",
+          "url": "https://minfin.gov.ru/ru/document?id_4=315857-pismo_minfina_rossii_ot_06.03.2026__23-01-0618248_o_rabote_s_debitorskoi_zadolzhennostyu_vklyuchaya_uregulirovanie_prosrochennoi_debitorskoi_zadolzhennosti_po_dokhodam",
+          "snippet": ""
+        },
+        {
+          "title": "Управление дебиторской задолженностью \\ 2026-2025-2024 год \\ Акты ...",
+          "url": "https://www.consultant.ru/law/podborki/upravlenie_debitorskoj_zadolzhennostyu/",
+          "snippet": "Одна из ключевых тем в рамках деятельности Межведомственной рабочей группы - работа с дебиторской задолженностью, включая урегулирование просроченной дебиторской задолженности по доходам."
+        },
+        {
+          "title": "Управление задолженностью: эффективная работа с дебиторской задолженностью",
+          "url": "https://www.1cbit.ru/blog/upravlenie-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa/",
+          "snippet": "Подборка наиболее важных документов по запросу Управление дебиторской задолженностью (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Дебиторская Задолженность: Учёт, Анализ, Оптимизация (РФ, 2026 ...",
+          "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-debitorskoy-zadoljennosti/",
+          "snippet": "Разберём, как выстроить управление задолженностью: контроль дебиторки, работа с просрочкой, автоматизация в 1С и снижение кассовых разрывов."
+        },
+        {
+          "title": "Управление дебиторской задолженностью: методы, оптимизация, повышение ...",
+          "url": "https://www.klerk.ru/blogs/kskgroup/627121/",
+          "snippet": "Полное руководство по дебиторской задолженности: учёт РСБУ/МСФО, анализ, PD-модели, факторинг, взыскание и списание. Актуально для российских предприятий на 2026 год."
+        },
+        {
+          "title": "Регламент по работе с дебиторской задолженностью",
+          "url": "https://www.consultant.ru/law/podborki/reglament_po_rabote_s_debitorskoj_zadolzhennostyu/",
+          "snippet": "Расскажем, как управлять дебиторской задолженностью: этапы и методы эффективного управления, как оценить риски, оптимизировать и контролировать дебиторскую задолженность."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "контроль дебиторки 2026",
+      "purpose": "вторичный запрос: контроль дебиторки",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Управление дебиторкой в 1С 2026: автоматизация и БДДС",
+          "url": "https://koderion.ru/blog/upravlenie-debitorskoy-zadolzhennostyu-1c-2026-avtomatizaciya-bdd%D1%81",
+          "snippet": ""
+        },
+        {
+          "title": "Управление дебиторской задолженностью: полный гайд 2026",
+          "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+          "snippet": "Тренды 2026: как автоматизировать контроль дебиторской задолженности в 1С, управлять cashflow и бюджетом БДДС с примерами кода."
+        },
+        {
+          "title": "Новые правила контроля дебиторской задолженности с 2026 года: письмо ...",
+          "url": "https://www.pro-ability.ru/news_buh/tpost/1484mbjsa1-novie-pravila-kontrolya-debitorskoi-zado",
+          "snippet": "Полный гайд по управлению дебиторской задолженностью в 2026 году: методы снижения ДЗ, кредитная политика, автоматизация, работа с должниками и KPI."
+        },
+        {
+          "title": "Управление задолженностью: эффективная работа с дебиторской задолженностью",
+          "url": "https://www.1cbit.ru/blog/upravlenie-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa/",
+          "snippet": "С 1 января 2026 года вступают в силу принципиально новые правила работы с дебиторской задолженностью для всех государственных органов, бюджетных и автономных учреждений."
+        },
+        {
+          "title": "Управление дебиторской задолженностью: 7 шагов для МСБ в 2026",
+          "url": "https://m-context.ru/upravlenie-debitorskoy-zadolzhennostyu-msp-2026/",
+          "snippet": "В статье представлены проверенные методики контроля задолженности, готовые чек-листы для их внедрения, а также примеры успешной автоматизации этих процессов с использованием системы 1С."
+        },
+        {
+          "title": "Просроченная дебиторка 2026: резерв, списание, проводки",
+          "url": "https://бухгалтеры.рф/blog/post/prosrochennaya-debitorka-2026-rezerv-spisanie-provodki",
+          "snippet": "Просроченная дебиторская задолженность российских компаний в январе 2026 года почти достигла 8,2 трлн рублей. Ниже — семь шагов для владельца МСБ: лимит отсрочки, договор, претензия, суд и еженедельный контроль. После прочтения у вас будет план, как вернуть деньги и перестать кредитовать неплательщиков."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "напоминание об оплате контрагенту 2026",
+      "purpose": "вторичный запрос: напоминание об оплате контрагенту",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Письмо-напоминание: скачать образец, бланк, генератор онлайн",
+          "url": "https://ggdt.ru/pismo-napominanie.html",
+          "snippet": ""
+        },
+        {
+          "title": "Запросите оплату, не проявляя навязчивости: бесплатные образцы писем ...",
+          "url": "https://requestletters.com/ru/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F/%D0%9A%D0%B0%D0%BA-%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-%D0%B2%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE-%D1%81-%D0%BF%D1%80%D0%BE%D1%81%D1%8C%D0%B1%D0%BE%D0%B9-%D0%BE%D0%B1-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5-%28%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%29.",
+          "snippet": "Заполните форму ниже — и получите готовое письмо-напоминание, соответствующее деловому этикету и требованиям 2026 года. Документ поможет вежливо, но настойчиво напомнить о предстоящих обязательствах. Все поля обязательны для заполнения."
+        },
+        {
+          "title": "Напоминание об оплате онлайн — вежливое письмо и сообщение | Utily",
+          "url": "https://utily.ru/tools/payment-reminder",
+          "snippet": "Как долго следует ждать, прежде чем отправить напоминание об оплате? Вы можете отправить вежливое напоминание незадолго до крайнего срока или через несколько дней после его истечения."
+        },
+        {
+          "title": "17 образцов писем с просьбой об оплате, которые помогут вам быстрее ...",
+          "url": "https://requestletters.com/ru/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F/17-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%86%D0%BE%D0%B2-%D0%BF%D0%B8%D1%81%D0%B5%D0%BC-%D1%81-%D0%BF%D1%80%D0%BE%D1%81%D1%8C%D0%B1%D0%BE%D0%B9-%D0%BE%D0%B1-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5",
+          "snippet": "Сгенерируйте аккуратное напоминание о задолженности: сумма, срок, контекст, тон, email или мессенджер. Мягко напомнить о платеже без лишней конфликтности. Бесплатный черновик."
+        },
+        {
+          "title": "Образец и бланк письма-напоминания 2026 года | База НПА",
+          "url": "https://bazanpa.ru/obrazec/pismo-napominanie/",
+          "snippet": "Используйте эти 17 образцов писем с просьбой об оплате, чтобы профессионально запросить просроченные платежи, установить крайний срок и защитить свои записи."
+        },
+        {
+          "title": "Письмо-напоминание. Образец написания 2025-2026 года",
+          "url": "https://assistentus.ru/forma/pismo-napominanie/",
+          "snippet": "Из публикации вы узнаете, как корректно с точки зрения принципов деловой этики напомнить контрагенту о приближающейся дате исполнения обязательств."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "реестр просроченной дебиторки 2026",
+      "purpose": "вторичный запрос: реестр просроченной дебиторки",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Письмо Минфина России от 06.03.2026 № 23-01-06/18248 «О работе с ...",
+          "url": "https://minfin.gov.ru/ru/document?id_4=315857-pismo_minfina_rossii_ot_06.03.2026__23-01-0618248_o_rabote_s_debitorskoi_zadolzhennostyu_vklyuchaya_uregulirovanie_prosrochennoi_debitorskoi_zadolzhennosti_po_dokhodam",
+          "snippet": ""
+        },
+        {
+          "title": "Письмо Минфина России от 06.03.2026 № 23-01-06/18249 «О работе с ...",
+          "url": "https://minfin.gov.ru/ru/document?id_4=315853-pismo_minfina_rossii_ot_06.03.2026__23-01-0618249_o_rabote_s_debitorskoi_zadolzhennostyu_vklyuchaya_uregulirovanie_prosrochennoi_debitorskoi_zadolzhennosti_po_dokhodam",
+          "snippet": "Реестр должников содержит данные о дебиторской задолженности по доходам (в том числе просроченной (установленный предельный срок уплаты которой наступил) по неналоговым доходам ..."
+        },
+        {
+          "title": "Просроченная дебиторка 2026: резерв, списание, проводки",
+          "url": "https://бухгалтеры.рф/blog/post/prosrochennaya-debitorka-2026-rezerv-spisanie-provodki",
+          "snippet": "Одна из ключевых тем в рамках деятельности Межведомственной рабочей группы - работа с дебиторской задолженностью, включая урегулирование просроченной дебиторской задолженности по доходам."
+        },
+        {
+          "title": "Просроченная дебиторская задолженность \\ 2026-2025-2024 год \\ Акты ...",
+          "url": "https://www.consultant.ru/law/podborki/prosrochennaya_debitorskaya_zadolzhennost/",
+          "snippet": "Как в 2026 году оценить просроченную дебиторку, создать резерв без искажений, не перепутать бухучет с налоговым и не потерять контроль над деньгами."
+        },
+        {
+          "title": "ЕФРСБ - bankrot.fedresurs.ru",
+          "url": "https://bankrot.fedresurs.ru/?utm_track=true",
+          "snippet": "(КонсультантПлюс, 2026) Просроченной считается дебиторская задолженность, по которой истек установленный срок исполнения обязательства."
+        },
+        {
+          "title": "Просроченная дебиторская \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/prosrochennaya_debitorskaya/",
+          "snippet": "Единый федеральный реестр сведений о банкротстве (ЕФРСБ) - портал раскрытия сведений о процедурах банкротства."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Управление дебиторкой в 1С 2026: автоматизация и БДДС",
+          "url": "https://koderion.ru/blog/upravlenie-debitorskoy-zadolzhennostyu-1c-2026-avtomatizaciya-bdd%D1%81",
+          "snippet": ""
+        },
+        {
+          "title": "Дебиторка под контролем: Полное руководство по управлению долгами в 1С ...",
+          "url": "https://rg-soft.ru/articles/debitorka-pod-kontrolem-polnoe-rukovodstvo-po-upravleniyu-dolgami-v-1s/",
+          "snippet": "В 2026 году ведущие компании внедряют многоуровневые системы автоматических уведомлений: за 3 дня до срока оплаты, в день просрочки, через 7 и 14 дней после."
+        },
+        {
+          "title": "Управление задолженностью: эффективная работа с дебиторской задолженностью",
+          "url": "https://www.1cbit.ru/blog/upravlenie-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa/",
+          "snippet": "В этой статье мы разберем, как настроить 1С так, чтобы вы видели полную картину долгов в реальном времени, минимизировали риски и сделали менеджеров союзниками в борьбе за деньги."
+        },
+        {
+          "title": "Управление дебиторской задолженностью: полный гайд 2026",
+          "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+          "snippet": "Разберём, как выстроить управление задолженностью: контроль дебиторки, работа с просрочкой, автоматизация в 1С и снижение кассовых разрывов."
+        },
+        {
+          "title": "Дебиторская задолженность: как списать, зарезервировать, настроить в 1С ...",
+          "url": "https://www.klerk.ru/user/2037110/696842/",
+          "snippet": "Полный гайд по управлению дебиторской задолженностью в 2026 году: методы снижения ДЗ, кредитная политика, автоматизация, работа с должниками и KPI."
+        },
+        {
+          "title": "Воронка сбора дебиторской задолженности или как настроить робота ...",
+          "url": "https://infostart.ru/journal/news/mir-1s/voronka-sbora-debitorskoy-zadolzhennosti-ili-kak-nastroit-robota-kollektora-v-1s_2417273/",
+          "snippet": "Дебиторская задолженность — это не просто цифры в балансе. Это замороженные деньги, источник кассовых разрывов и одна из главных мишеней для выездных проверок. В 2026 году ФНС использует автоматические алгоритмы для сверки возрастов долгов, резервов и фактов списания."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+      "title": "Управление дебиторской задолженностью: полный гайд 2026",
+      "from_query": "как управлять дебиторской задолженностью 2026"
+    },
+    {
+      "url": "https://m-context.ru/upravlenie-debitorskoy-zadolzhennostyu-msp-2026/",
+      "title": "Управление дебиторской задолженностью: 7 шагов для МСБ в 2026",
+      "from_query": "как управлять дебиторской задолженностью 2026"
+    },
+    {
+      "url": "https://secrets.tbank.ru/blogi-kompanij/rabota-s-debitorskoj-zadolzhennostyu-2026/",
+      "title": "Особенности работы с дебиторской задолженностью в 2026 году",
+      "from_query": "как управлять дебиторской задолженностью 2026"
+    },
+    {
+      "url": "https://risk.econlib.ru/referat/uchet-debitorskoy-zadoljennosti-2/",
+      "title": "Учет и Управление Дебиторской Задолженностью: 2025-2026 Годы, Реферат",
+      "from_query": "как управлять дебиторской задолженностью 2026"
+    },
+    {
+      "url": "https://www.1cbit.ru/blog/upravlenie-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa/",
+      "title": "Управление задолженностью: эффективная работа с дебиторской задолженностью",
+      "from_query": "как управлять дебиторской задолженностью 2026"
+    },
+    {
+      "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-kreditorskoy-zadoljennosti/",
+      "title": "Управление дебиторской и кредиторской задолженностью: полный гайд 2026 ...",
+      "from_query": "как управлять дебиторской задолженностью 2026"
+    },
+    {
+      "url": "https://risk.econlib.ru/diplomnaya/ot-testa-do-zaschityi-diploma-5/",
+      "title": "Учет и Анализ Дебиторской Задолженности (2026): Руководство для ...",
+      "from_query": "как управлять дебиторской задолженностью июль 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/document?id_4=315857-pismo_minfina_rossii_ot_06.03.2026__23-01-0618248_o_rabote_s_debitorskoi_zadolzhennostyu_vklyuchaya_uregulirovanie_prosrochennoi_debitorskoi_zadolzhennosti_po_dokhodam",
+      "title": "Письмо Минфина России от 06.03.2026 № 23-01-06/18248 «О работе с ...",
+      "from_query": "как управлять дебиторской задолженностью новости 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/upravlenie_debitorskoj_zadolzhennostyu/",
+      "title": "Управление дебиторской задолженностью \\ 2026-2025-2024 год \\ Акты ...",
+      "from_query": "как управлять дебиторской задолженностью новости 2026"
+    },
+    {
+      "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-debitorskoy-zadoljennosti/",
+      "title": "Дебиторская Задолженность: Учёт, Анализ, Оптимизация (РФ, 2026 ...",
+      "from_query": "как управлять дебиторской задолженностью новости 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/kskgroup/627121/",
+      "title": "Управление дебиторской задолженностью: методы, оптимизация, повышение ...",
+      "from_query": "как управлять дебиторской задолженностью новости 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/reglament_po_rabote_s_debitorskoj_zadolzhennostyu/",
+      "title": "Регламент по работе с дебиторской задолженностью",
+      "from_query": "как управлять дебиторской задолженностью новости 2026"
+    },
+    {
+      "url": "https://koderion.ru/blog/upravlenie-debitorskoy-zadolzhennostyu-1c-2026-avtomatizaciya-bdd%D1%81",
+      "title": "Управление дебиторкой в 1С 2026: автоматизация и БДДС",
+      "from_query": "контроль дебиторки 2026"
+    },
+    {
+      "url": "https://www.pro-ability.ru/news_buh/tpost/1484mbjsa1-novie-pravila-kontrolya-debitorskoi-zado",
+      "title": "Новые правила контроля дебиторской задолженности с 2026 года: письмо ...",
+      "from_query": "контроль дебиторки 2026"
+    },
+    {
+      "url": "https://бухгалтеры.рф/blog/post/prosrochennaya-debitorka-2026-rezerv-spisanie-provodki",
+      "title": "Просроченная дебиторка 2026: резерв, списание, проводки",
+      "from_query": "контроль дебиторки 2026"
+    },
+    {
+      "url": "https://ggdt.ru/pismo-napominanie.html",
+      "title": "Письмо-напоминание: скачать образец, бланк, генератор онлайн",
+      "from_query": "напоминание об оплате контрагенту 2026"
+    },
+    {
+      "url": "https://requestletters.com/ru/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F/%D0%9A%D0%B0%D0%BA-%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-%D0%B2%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE-%D1%81-%D0%BF%D1%80%D0%BE%D1%81%D1%8C%D0%B1%D0%BE%D0%B9-%D0%BE%D0%B1-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5-%28%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%29.",
+      "title": "Запросите оплату, не проявляя навязчивости: бесплатные образцы писем ...",
+      "from_query": "напоминание об оплате контрагенту 2026"
+    },
+    {
+      "url": "https://utily.ru/tools/payment-reminder",
+      "title": "Напоминание об оплате онлайн — вежливое письмо и сообщение | Utily",
+      "from_query": "напоминание об оплате контрагенту 2026"
+    },
+    {
+      "url": "https://requestletters.com/ru/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F/17-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%86%D0%BE%D0%B2-%D0%BF%D0%B8%D1%81%D0%B5%D0%BC-%D1%81-%D0%BF%D1%80%D0%BE%D1%81%D1%8C%D0%B1%D0%BE%D0%B9-%D0%BE%D0%B1-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B5",
+      "title": "17 образцов писем с просьбой об оплате, которые помогут вам быстрее ...",
+      "from_query": "напоминание об оплате контрагенту 2026"
+    },
+    {
+      "url": "https://bazanpa.ru/obrazec/pismo-napominanie/",
+      "title": "Образец и бланк письма-напоминания 2026 года | База НПА",
+      "from_query": "напоминание об оплате контрагенту 2026"
+    },
+    {
+      "url": "https://assistentus.ru/forma/pismo-napominanie/",
+      "title": "Письмо-напоминание. Образец написания 2025-2026 года",
+      "from_query": "напоминание об оплате контрагенту 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/document?id_4=315853-pismo_minfina_rossii_ot_06.03.2026__23-01-0618249_o_rabote_s_debitorskoi_zadolzhennostyu_vklyuchaya_uregulirovanie_prosrochennoi_debitorskoi_zadolzhennosti_po_dokhodam",
+      "title": "Письмо Минфина России от 06.03.2026 № 23-01-06/18249 «О работе с ...",
+      "from_query": "реестр просроченной дебиторки 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/prosrochennaya_debitorskaya_zadolzhennost/",
+      "title": "Просроченная дебиторская задолженность \\ 2026-2025-2024 год \\ Акты ...",
+      "from_query": "реестр просроченной дебиторки 2026"
+    },
+    {
+      "url": "https://bankrot.fedresurs.ru/?utm_track=true",
+      "title": "ЕФРСБ - bankrot.fedresurs.ru",
+      "from_query": "реестр просроченной дебиторки 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/prosrochennaya_debitorskaya/",
+      "title": "Просроченная дебиторская \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "реестр просроченной дебиторки 2026"
+    },
+    {
+      "url": "https://rg-soft.ru/articles/debitorka-pod-kontrolem-polnoe-rukovodstvo-po-upravleniyu-dolgami-v-1s/",
+      "title": "Дебиторка под контролем: Полное руководство по управлению долгами в 1С ...",
+      "from_query": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/user/2037110/696842/",
+      "title": "Дебиторская задолженность: как списать, зарезервировать, настроить в 1С ...",
+      "from_query": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам 2026"
+    },
+    {
+      "url": "https://infostart.ru/journal/news/mir-1s/voronka-sbora-debitorskoy-zadolzhennosti-ili-kak-nastroit-robota-kollektora-v-1s_2417273/",
+      "title": "Воронка сбора дебиторской задолженности или как настроить робота ...",
+      "from_query": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам 2026"
+    }
+  ]
+}

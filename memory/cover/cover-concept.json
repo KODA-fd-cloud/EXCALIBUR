@@ -1,24 +1,25 @@
 {
   "concept_version": "1",
-  "cover_family": "brand_collage",
-  "cover_family_label_ru": "Фирменный коллаж",
-  "allowed_cover_families_considered": ["brand_collage", "illustrated_flat", "gradient_abstract"],
-  "cover_family_selection_rationale": "Quad canvas: RU meme collage + blog-host hero; см. memory/cover/quad-style-digital-meme-collage-ru.json",
-  "quad_style_preset": "memory/cover/quad-style-digital-meme-collage-ru.json",
-  "secondary_cover_families": [],
+  "cover_family": "gradient_abstract",
+  "cover_family_label_ru": "Абстрактная holographic сетка (KODA legacy)",
+  "allowed_cover_families_considered": ["gradient_abstract", "ui_mockup_dark", "isometric_3d"],
+  "cover_family_selection_rationale": "Канон блога koda-fd.ru: абстрактная digital/holographic визуализация, фиолетовый/синий неон, узлы и связи, тёмный фон, БЕЗ текста на PNG — как ot-excel-k-fin-konturu-30-dney и avtomatizaciya-finansov-no-code",
+  "secondary_cover_families": ["ui_mockup_dark"],
+  "style_preset_file": "memory/cover/quad-style-koda-gradient-abstract.json",
   "prompt_assembly_mode": "prefix_scene_suffix",
-  "global_prompt_prefix": "Russian meme collage, blog host hero, Cyrillic Impact captions, ironic SEO humor, no watermark,",
-  "global_prompt_suffix": "16:9 panels, consistent hero likeness, readable Russian meme text on each panel, high detail",
-  "global_negative_prompt": "English text, Latin letters, watermark, logo, blurry, generic stock photo, no humor, panels without captions, extra fingers",
+  "global_prompt_prefix": "KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic,",
+  "global_prompt_suffix": "match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots",
+  "global_negative_prompt": "text, letters, words, watermark, logo, people, faces, stock photo, 3D shield icon, code editor window, spreadsheet UI, yellow headline typography, Cyrillic on image",
   "composition_lock": {
     "aspect_ratio": "16:9",
     "target_size": "1200x675",
-    "layout_description": "main subject right 55%, brand color band left",
-    "thumbnail_safe_zone": "center-right"
+    "layout_description": "main UI panel center-right 70%, optional secondary panel left",
+    "thumbnail_safe_zone": "center"
   },
   "color_lock": {
-    "background": "#FAFAF7",
-    "accent_primary": "#E85D4C",
-    "accent_secondary": "#1A1A2E"
+    "background": "#0a0a0f",
+    "accent_primary": "#8b5cf6",
+    "accent_secondary": "#7c3aed",
+    "text_link": "#93c5fd"
   }
 }

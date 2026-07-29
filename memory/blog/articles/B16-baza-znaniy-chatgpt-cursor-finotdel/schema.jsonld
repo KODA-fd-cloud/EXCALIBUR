@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/#article",
+      "headline": "Как сделать базу знаний для ChatGPT и Cursor: свои регламенты без утечки 1С",
+      "description": "База знаний финотдела для ChatGPT и Cursor: структура папок, rules, обезличивание и 10 тестовых вопросов без сырых выгрузок 1С.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/baza-znaniy-chatgpt-cursor-finotdel-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная сеть светящихся документов на тёмном фиолетово-синем фоне"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "как сделать базу знаний chatgpt, свои документы в нейросеть, knowledge base cursor, загрузить регламенты в chatgpt",
+      "wordCount": 8542,
+      "articleSection": "AI / база знаний",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем база знаний отличается от Custom GPT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom GPT – облачная обёртка с файлами и инструкциями внутри ChatGPT. Папка в Cursor – ваши файлы на диске, rules и индекс проекта. Для команды финотдела я начинаю с папки: её проще версионировать и не смешивать с сырыми данными."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли держать базу на локальной модели?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Cursor/скрипты + Ollama читают те же Markdown. Облако тогда не обязательно. Политика blacklist всё равно нужна."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как обновлять базу знаний?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Владелец, дата в шапке файла, перенос старого в archive, прогон тестовых вопросов. Без владельца база гниёт за месяц."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли класть выгрузки 1С в knowledge base?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сырые – нет. Если нужен пример – только обезличенный фрагмент или описание структуры колонок без живых строк."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли сразу RAG с векторной БД?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала порядок в папках и rules. Qdrant и подобное – когда объём и поиск по смыслу реально упираются в @-файлы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Кто должен поддерживать актуальность?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Один владелец в финотделе (часто финдир/ведущий менеджер). Все понемногу = никто."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B22",
+    "priority": "P1",
+    "slug": "google-apps-script-finansist-obnovit-dannye",
+    "h1": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script",
+    "primary_query": "как сделать google apps script кнопку",
+    "secondary_queries": [
+      "google таблицы скрипт кнопка",
+      "apps script финансы",
+      "обновить данные google sheets"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как сделать google apps script кнопку 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать кнопку в Google Apps Script: пошаговое руководство",
+          "url": "https://external.software/archives/49243",
+          "snippet": ""
+        },
+        {
+          "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps Script)",
+          "url": "https://rutube.ru/video/46d3e0ab13da4be59f1d5573f1b75a85/",
+          "snippet": "Использование кнопок в Google Apps Script позволяет автоматизировать задачи, улучшить пользовательский интерфейс и упростить взаимодействие с приложениями Google Workspace."
+        },
+        {
+          "title": "Как создать кнопку для запуска скрипта Google Apps Script в Google ...",
+          "url": "https://external.software/archives/75303",
+          "snippet": "⚡️В этом видео показываю, как добавить свою кнопку в меню Google Таблиц с помощью Google Apps Script. 💬 Вы создадите кастомный пункт меню (например, «Хештеги»), привяжете к нему функцию и сможете ..."
+        },
+        {
+          "title": "google apps script - Как сделать кнопку для каждой строки Таблицы ...",
+          "url": "https://ru.stackoverflow.com/questions/699829/%D0%9A%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D1%83-%D0%B4%D0%BB%D1%8F-%D0%BA%D0%B0%D0%B6%D0%B4%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B",
+          "snippet": "Мы покажем, как привязать к ним ваши скрипты, чтобы запускать сложные автоматизации одним кликом, значительно упрощая рабочие процессы и повышая общую производительность."
+        },
+        {
+          "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps ...",
+          "url": "https://vk.com/wall-228674224_97",
+          "snippet": "Всем доброй ночи/дня. разбираюсь с google app script, и стоит перед мною задание:"
+        },
+        {
+          "title": "applications-2026/GOOGLE_SHEETS_SETUP.md at master - GitHub",
+          "url": "https://github.com/Toki-Stamp/applications-2026/blob/master/GOOGLE_SHEETS_SETUP.md",
+          "snippet": "️💬 Google: шпаргалка по поисковым запросам ️ 🐍 Бесплатная шпаргалка по Python для новичков 👍🏻 Я настроил в Google Таблицах простой скрипт:.. Небольшой лайфхак для тех, кто работает с ..."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как сделать google apps script кнопку июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать кнопку в Google Apps Script: пошаговое руководство",
+          "url": "https://external.software/archives/49243",
+          "snippet": ""
+        },
+        {
+          "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps Script)",
+          "url": "https://rutube.ru/video/46d3e0ab13da4be59f1d5573f1b75a85/",
+          "snippet": "Использование кнопок в Google Apps Script позволяет автоматизировать задачи, улучшить пользовательский интерфейс и упростить взаимодействие с приложениями Google Workspace."
+        },
+        {
+          "title": "Как создать кнопку для запуска скрипта Google Apps Script в Google ...",
+          "url": "https://external.software/archives/75303",
+          "snippet": "⚡️В этом видео показываю, как добавить свою кнопку в меню Google Таблиц с помощью Google Apps Script. 💬 Вы создадите кастомный пункт меню (например, «Хештеги»), привяжете к нему функцию и сможете ..."
+        },
+        {
+          "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps ...",
+          "url": "https://vk.com/wall-228674224_97",
+          "snippet": "Мы покажем, как привязать к ним ваши скрипты, чтобы запускать сложные автоматизации одним кликом, значительно упрощая рабочие процессы и повышая общую производительность."
+        },
+        {
+          "title": "google apps script - Как сделать кнопку для каждой строки Таблицы ...",
+          "url": "https://ru.stackoverflow.com/questions/699829/%D0%9A%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D1%83-%D0%B4%D0%BB%D1%8F-%D0%BA%D0%B0%D0%B6%D0%B4%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B",
+          "snippet": "️💬 Google: шпаргалка по поисковым запросам ️ 🐍 Бесплатная шпаргалка по Python для новичков 👍🏻 Я настроил в Google Таблицах простой скрипт:.. Небольшой лайфхак для тех, кто работает с ..."
+        },
+        {
+          "title": "Class Button | Apps Script | Google for Developers",
+          "url": "https://developers.google.com/apps-script/reference/card-service/button",
+          "snippet": "Всем доброй ночи/дня. разбираюсь с google app script, и стоит перед мною задание:"
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как сделать google apps script кнопку новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать кнопку в Google Apps Script: пошаговое руководство",
+          "url": "https://external.software/archives/49243",
+          "snippet": ""
+        },
+        {
+          "title": "Как создать кнопку в Google Sheets с помощью Apps Script?",
+          "url": "https://external.software/archives/51425",
+          "snippet": "Использование кнопок в Google Apps Script позволяет автоматизировать задачи, улучшить пользовательский интерфейс и упростить взаимодействие с приложениями Google Workspace."
+        },
+        {
+          "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps Script)",
+          "url": "https://rutube.ru/video/46d3e0ab13da4be59f1d5573f1b75a85/",
+          "snippet": "Прежде чем создавать кнопку, необходимо подготовить таблицу Google Sheets. Это включает в себя определение структуры данных, создание необходимых листов и, возможно, добавление заголовков ..."
+        },
+        {
+          "title": "google apps script - Как сделать кнопку для каждой строки Таблицы ...",
+          "url": "https://ru.stackoverflow.com/questions/699829/%D0%9A%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D1%83-%D0%B4%D0%BB%D1%8F-%D0%BA%D0%B0%D0%B6%D0%B4%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B",
+          "snippet": "⚡️В этом видео показываю, как добавить свою кнопку в меню Google Таблиц с помощью Google Apps Script. 💬 Вы создадите кастомный пункт меню (например, «Хештеги»), привяжете к нему функцию и сможете ..."
+        },
+        {
+          "title": "applications-2026/GOOGLE_SHEETS_SETUP.md at master - GitHub",
+          "url": "https://github.com/Toki-Stamp/applications-2026/blob/master/GOOGLE_SHEETS_SETUP.md",
+          "snippet": "Всем доброй ночи/дня. разбираюсь с google app script, и стоит перед мною задание:"
+        },
+        {
+          "title": "Как в Гугл таблицах создать кнопку в ячейке, чтобы при нажатии ...",
+          "url": "https://qna.habr.com/q/1377228",
+          "snippet": "Подключение Google Таблицы и Apps Script Для того чтобы заявки с нашего красивого сайта попадали прямо в Google Таблицу, нужно настроить связку (Google Apps Script). Ниже — пошаговая инструкция, как это сделать за 5 минут."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "google таблицы скрипт кнопка 2026",
+      "purpose": "вторичный запрос: google таблицы скрипт кнопка",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как использовать макросы и дополнения",
+          "url": "https://support.google.com/docs/answer/9331168?hl=ru",
+          "snippet": ""
+        },
+        {
+          "title": "Как создать кнопку в Google Sheets с помощью Apps Script?",
+          "url": "https://external.software/archives/51425",
+          "snippet": "Автоматизируйте повторяющиеся задачи с помощью макросов в Таблицах. Если вам необходимы специальные функции, меню или окна, создайте их с помощью Google Apps Script. Рекомендации по работе с..."
+        },
+        {
+          "title": "Как вставить и назначить скрипт Google Apps Script кнопке в Google ...",
+          "url": "https://external.software/archives/78138",
+          "snippet": "Google Apps Script - это облачная скриптовая платформа, основанная на JavaScript, которая позволяет автоматизировать задачи в Google Workspace, включая Google Sheets."
+        },
+        {
+          "title": "Свои кнопки в Google sheets — Автоматизация для финансовых специалистов ...",
+          "url": "https://dmitriizhuk.ru/2023/12/15/custom-buttons-google-sheets/",
+          "snippet": "Мы рассмотрим, как написать базовую функцию, которая будет запускаться по клику, а также изучим методы программного изменения внешнего вида и поведения кнопки, что позволит ..."
+        },
+        {
+          "title": "Как использовать макросы в Google Таблицах",
+          "url": "https://support.google.com/docs/answer/7665004?hl=ru&co=GENIE.Platform%3DDesktop",
+          "snippet": "Теперь, при нажатии на нарисованную кнопку, будет запускаться и выполняться скрипт: Я хочу услышать ваше мнение и ваши идеи о том, как сделать этот сайт еще лучше. Примите участие в опросе, чтобы поделиться вашими пожеланиями, предложениями и замечаниями. Пройдите опрос сейчас и помогите сделать этот сайт более полезным для вас!"
+        },
+        {
+          "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps ...",
+          "url": "https://rutube.ru/video/46d3e0ab13da4be59f1d5573f1b75a85/",
+          "snippet": "При добавлении макроса в Google Таблицах автоматически создается скрипт Apps Script. Чтобы изменить скрипт, в верхней части экрана выберите Инструменты Редактор скриптов. Чтобы запустить..."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "apps script финансы 2026",
+      "purpose": "вторичный запрос: apps script финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Apps Script | Google for Developers",
+          "url": "https://developers.google.com/apps-script",
+          "snippet": ""
+        },
+        {
+          "title": "Топ‑5 новых моделей для автоматизации финансов (июль 2026)",
+          "url": "https://vc.ru/ai/3030629-top-modelei-dlya-avtomatizatsii-finansovykh-protsessov",
+          "snippet": "Want to see Apps Script in action? The Google Workspace Developers channel offers videos about tips, tricks, and the latest features."
+        },
+        {
+          "title": "Google Workspace Developer News: Gemini Powered Apps Script, Core ...",
+          "url": "https://pulse.appsscript.info/p/2026/05/google-workspace-developer-news-gemini-powered-apps-script-core-service-news-and-more/",
+          "snippet": "Ниже — топ‑5 моделей и платформ, которые реально меняют финансовую автоматизацию в 2026."
+        },
+        {
+          "title": "Google Apps Script: интеграция с Google ... - Google Workspace",
+          "url": "https://workspace.google.com/intl/ru/products/apps-script/",
+          "snippet": "Apps Script as a Core Service Another big announcement is that Apps Script is moving to a Google Workspace Core Service (04:21) starting in June 2026. This is a huge deal for enterprise developers because it means your custom scripts will have the same reliability, security and compliance standards as the rest of Workspace."
+        },
+        {
+          "title": "Google Apps Script April 2026 Update: What Changed",
+          "url": "https://modelmonkey.io/blog/google-apps-script-update-april-2026",
+          "snippet": "Используйте Google Apps Script для разработки бизнес-решений, нацеленных на интеграцию с Google Workspace, расширение его функционала и автоматизацию задач."
+        },
+        {
+          "title": "Приложения по учету финансов: лучшие на 2026 год",
+          "url": "https://moscow.mba/journal/luchshie-prilozheniya-dlya-ucheta-rashodov-i-dohodov-v-2026-godu-polnyj-obzor",
+          "snippet": "The April 2026 Google Apps Script update changed execution quotas, deprecated OAuth scopes, and added batch SpreadsheetApp methods. Here's what breaks and what helps."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "обновить данные google sheets 2026",
+      "purpose": "вторичный запрос: обновить данные google sheets",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+          "url": "https://datalopata.ru/blog/obzor-google-sheets-2026-polnyj-gajd-po-ai-i-avtomatizatsii/",
+          "snippet": ""
+        },
+        {
+          "title": "Как обновить данные в гугл таблице",
+          "url": "https://russgps.ru/rukovodstvo/62/kak-obnovit-dannye-v-gugl-tablice",
+          "snippet": "Прочитав этот материал, вы узнаете, как использовать новые алгоритмы обработки данных, какие ограничения до сих пор существуют и как внедрить эти обновления в рабочие процессы вашей ..."
+        },
+        {
+          "title": "Как обновить сводную таблицу Google Sheets ️",
+          "url": "https://tecnobits.com/ru/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%83-%D0%B2-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D1%85-Google/",
+          "snippet": "Один из самых простых способов обновить сводную таблицу в Google Таблицах — обновить браузер, который вы используете. Сделать это: Откройте сводную таблицу в браузере и внесите изменения, например отфильтруйте результат с помощью бокового меню. Нажмите на Обновить кнопку в окне браузера. Вот и все."
+        },
+        {
+          "title": "Новые возможности Google Таблиц",
+          "url": "https://support.google.com/docs/answer/9233144?hl=ru-ru",
+          "snippet": "Подождите, пока Google Sheets обновит данные в сводной таблице. Это может занять несколько секунд, в зависимости от размера электронной таблицы и объема обновляемых данных."
+        },
+        {
+          "title": "Как обновить таблицу в Google Sheets с помощью Google Apps Script?",
+          "url": "https://external.software/archives/19420",
+          "snippet": "Информацию о новых функциях Google Таблиц можно найти в блоге Google Workspace."
+        },
+        {
+          "title": "Как настроить автоматическое обновление данных в Google Sheets ...",
+          "url": "https://dasle.ru/kak-nastroit-avtomaticheskoe-obnovlenie-dannyh-v-google-sheets/",
+          "snippet": "Автоматизация рутинных задач в Google Sheets — ключ к повышению эффективности, особенно в сферах анализа данных, интернет-маркетинга и управления проектами."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать кнопку в Google Sheets с помощью Apps Script?",
+          "url": "https://external.software/archives/51425",
+          "snippet": ""
+        },
+        {
+          "title": "Как обновить таблицу в Google Sheets с помощью Google Apps Script?",
+          "url": "https://external.software/archives/19420",
+          "snippet": "Вместо выполнения множества шагов вручную, пользователь может просто нажать кнопку и запустить заранее определенный скрипт."
+        },
+        {
+          "title": "Свои кнопки в Google sheets — Автоматизация для финансовых специалистов ...",
+          "url": "https://dmitriizhuk.ru/2023/12/15/custom-buttons-google-sheets/",
+          "snippet": "Google Apps Script — это облачная платформа скриптов на основе JavaScript, позволяющая расширять функциональность приложений Google Workspace, таких как Sheets, Docs, Forms и Drive."
+        },
+        {
+          "title": "Разработка расширений для Google Sheets с помощью Apps Script ...",
+          "url": "https://hemaks.org/ru/posts/developing-extensions-for-google-sheets-with-apps-script-a-step-by-step-guide/",
+          "snippet": "Я хочу услышать ваше мнение и ваши идеи о том, как сделать этот сайт еще лучше. Примите участие в опросе, чтобы поделиться вашими пожеланиями, предложениями и замечаниями."
+        },
+        {
+          "title": "Extend Google Sheets | Apps Script | Google for Developers",
+          "url": "https://developers.google.com/apps-script/guides/sheets",
+          "snippet": "Google Apps Script — это мощная платформа на основе JavaScript, которая позволяет автоматизировать задачи, расширять функциональность Google Sheets и даже создавать веб-приложения."
+        },
+        {
+          "title": "Введение в работу с Apps Script в Google Таблицах",
+          "url": "https://timeweb.com/ru/community/articles/vvedenie-v-rabotu-s-apps-script-v-google-tablicah",
+          "snippet": "Learn how to extend, automate, and integrate Google Sheets with other Google services using Google Apps Script."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://external.software/archives/49243",
+      "title": "Как создать кнопку в Google Apps Script: пошаговое руководство",
+      "from_query": "как сделать google apps script кнопку 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/46d3e0ab13da4be59f1d5573f1b75a85/",
+      "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps Script)",
+      "from_query": "как сделать google apps script кнопку 2026"
+    },
+    {
+      "url": "https://external.software/archives/75303",
+      "title": "Как создать кнопку для запуска скрипта Google Apps Script в Google ...",
+      "from_query": "как сделать google apps script кнопку 2026"
+    },
+    {
+      "url": "https://ru.stackoverflow.com/questions/699829/%D0%9A%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D1%83-%D0%B4%D0%BB%D1%8F-%D0%BA%D0%B0%D0%B6%D0%B4%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B",
+      "title": "google apps script - Как сделать кнопку для каждой строки Таблицы ...",
+      "from_query": "как сделать google apps script кнопку 2026"
+    },
+    {
+      "url": "https://vk.com/wall-228674224_97",
+      "title": "Создаю кнопку для скрипта в Google Таблицах за 5 минут (Google Apps ...",
+      "from_query": "как сделать google apps script кнопку 2026"
+    },
+    {
+      "url": "https://github.com/Toki-Stamp/applications-2026/blob/master/GOOGLE_SHEETS_SETUP.md",
+      "title": "applications-2026/GOOGLE_SHEETS_SETUP.md at master - GitHub",
+      "from_query": "как сделать google apps script кнопку 2026"
+    },
+    {
+      "url": "https://developers.google.com/apps-script/reference/card-service/button",
+      "title": "Class Button | Apps Script | Google for Developers",
+      "from_query": "как сделать google apps script кнопку июль 2026"
+    },
+    {
+      "url": "https://external.software/archives/51425",
+      "title": "Как создать кнопку в Google Sheets с помощью Apps Script?",
+      "from_query": "как сделать google apps script кнопку новости 2026"
+    },
+    {
+      "url": "https://qna.habr.com/q/1377228",
+      "title": "Как в Гугл таблицах создать кнопку в ячейке, чтобы при нажатии ...",
+      "from_query": "как сделать google apps script кнопку новости 2026"
+    },
+    {
+      "url": "https://support.google.com/docs/answer/9331168?hl=ru",
+      "title": "Как использовать макросы и дополнения",
+      "from_query": "google таблицы скрипт кнопка 2026"
+    },
+    {
+      "url": "https://external.software/archives/78138",
+      "title": "Как вставить и назначить скрипт Google Apps Script кнопке в Google ...",
+      "from_query": "google таблицы скрипт кнопка 2026"
+    },
+    {
+      "url": "https://dmitriizhuk.ru/2023/12/15/custom-buttons-google-sheets/",
+      "title": "Свои кнопки в Google sheets — Автоматизация для финансовых специалистов ...",
+      "from_query": "google таблицы скрипт кнопка 2026"
+    },
+    {
+      "url": "https://support.google.com/docs/answer/7665004?hl=ru&co=GENIE.Platform%3DDesktop",
+      "title": "Как использовать макросы в Google Таблицах",
+      "from_query": "google таблицы скрипт кнопка 2026"
+    },
+    {
+      "url": "https://developers.google.com/apps-script",
+      "title": "Apps Script | Google for Developers",
+      "from_query": "apps script финансы 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/3030629-top-modelei-dlya-avtomatizatsii-finansovykh-protsessov",
+      "title": "Топ‑5 новых моделей для автоматизации финансов (июль 2026)",
+      "from_query": "apps script финансы 2026"
+    },
+    {
+      "url": "https://pulse.appsscript.info/p/2026/05/google-workspace-developer-news-gemini-powered-apps-script-core-service-news-and-more/",
+      "title": "Google Workspace Developer News: Gemini Powered Apps Script, Core ...",
+      "from_query": "apps script финансы 2026"
+    },
+    {
+      "url": "https://workspace.google.com/intl/ru/products/apps-script/",
+      "title": "Google Apps Script: интеграция с Google ... - Google Workspace",
+      "from_query": "apps script финансы 2026"
+    },
+    {
+      "url": "https://modelmonkey.io/blog/google-apps-script-update-april-2026",
+      "title": "Google Apps Script April 2026 Update: What Changed",
+      "from_query": "apps script финансы 2026"
+    },
+    {
+      "url": "https://moscow.mba/journal/luchshie-prilozheniya-dlya-ucheta-rashodov-i-dohodov-v-2026-godu-polnyj-obzor",
+      "title": "Приложения по учету финансов: лучшие на 2026 год",
+      "from_query": "apps script финансы 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/obzor-google-sheets-2026-polnyj-gajd-po-ai-i-avtomatizatsii/",
+      "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+      "from_query": "обновить данные google sheets 2026"
+    },
+    {
+      "url": "https://russgps.ru/rukovodstvo/62/kak-obnovit-dannye-v-gugl-tablice",
+      "title": "Как обновить данные в гугл таблице",
+      "from_query": "обновить данные google sheets 2026"
+    },
+    {
+      "url": "https://tecnobits.com/ru/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%83-%D0%B2-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D1%85-Google/",
+      "title": "Как обновить сводную таблицу Google Sheets ️",
+      "from_query": "обновить данные google sheets 2026"
+    },
+    {
+      "url": "https://support.google.com/docs/answer/9233144?hl=ru-ru",
+      "title": "Новые возможности Google Таблиц",
+      "from_query": "обновить данные google sheets 2026"
+    },
+    {
+      "url": "https://external.software/archives/19420",
+      "title": "Как обновить таблицу в Google Sheets с помощью Google Apps Script?",
+      "from_query": "обновить данные google sheets 2026"
+    },
+    {
+      "url": "https://dasle.ru/kak-nastroit-avtomaticheskoe-obnovlenie-dannyh-v-google-sheets/",
+      "title": "Как настроить автоматическое обновление данных в Google Sheets ...",
+      "from_query": "обновить данные google sheets 2026"
+    },
+    {
+      "url": "https://hemaks.org/ru/posts/developing-extensions-for-google-sheets-with-apps-script-a-step-by-step-guide/",
+      "title": "Разработка расширений для Google Sheets с помощью Apps Script ...",
+      "from_query": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script 2026"
+    },
+    {
+      "url": "https://developers.google.com/apps-script/guides/sheets",
+      "title": "Extend Google Sheets | Apps Script | Google for Developers",
+      "from_query": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script 2026"
+    },
+    {
+      "url": "https://timeweb.com/ru/community/articles/vvedenie-v-rabotu-s-apps-script-v-google-tablicah",
+      "title": "Введение в работу с Apps Script в Google Таблицах",
+      "from_query": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script 2026"
+    }
+  ]
+}

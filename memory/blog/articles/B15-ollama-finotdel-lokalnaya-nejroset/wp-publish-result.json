@@ -1,0 +1,15 @@
+{
+  "slug": "ollama-finotdel-lokalnaya-nejroset",
+  "topic_id": "B15",
+  "permalink": "https://koda-fd.ru/blog/ollama-finotdel-lokalnaya-nejroset/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B15-ollama-finotdel-lokalnaya-nejroset/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1037933,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=137 slug=ollama-finotdel-lokalnaya-nejroset\nOK featured_image=138\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/ollama-finotdel-lokalnaya-nejroset-dzen-cover.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/ollama-finotdel-lokalnaya-nejroset/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

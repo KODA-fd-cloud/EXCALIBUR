@@ -1,0 +1,52 @@
+{
+  "article": "memory/blog/articles/B17-nejroset-excel-formuly-finansist/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 6,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 5,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2016",
+      "kind": "date_or_year",
+      "context": "ур, не стартовый путь. Зафиксируйте версию Excel: 2016/2019 vs 365/2021 (XLOOKUP в 2016/2019 нет – будет",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2019",
+      "kind": "date_or_year",
+      "context": "е стартовый путь. Зафиксируйте версию Excel: 2016/2019 vs 365/2021 (XLOOKUP в 2016/2019 нет – будет #ИМЯ?",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2021",
+      "kind": "date_or_year",
+      "context": "путь. Зафиксируйте версию Excel: 2016/2019 vs 365/2021 (XLOOKUP в 2016/2019 нет – будет #ИМЯ?). Выберите",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "дите в скрипт и staging: от Excel к финконтуру за 30 дней и vibe-coding для финансиста . Отделите задачи Ex",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 минут",
+      "kind": "metric_or_duration",
+      "context": "енность за сумму в отчёте – ваша. Smoke-тест на 3–5 минут дешевле часа разбора \"почему ДДС разошёлся\". Сдел",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

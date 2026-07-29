@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B17",
+    "priority": "P0",
+    "slug": "nejroset-excel-formuly-finansist",
+    "h1": "Как использовать нейросеть для Excel: ChatGPT пишет формулы, сводные и очистку выгрузок",
+    "primary_query": "как использовать нейросеть для excel",
+    "secondary_queries": [
+      "chatgpt формулы excel",
+      "chatgpt сводные таблицы",
+      "ai для excel финансист"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B17",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как использовать нейросеть для excel 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как использовать нейросеть для excel июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как использовать нейросеть для excel новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "chatgpt формулы excel 2026",
+      "purpose": "вторичный запрос: chatgpt формулы excel"
+    },
+    {
+      "id": "secondary_2",
+      "query": "chatgpt сводные таблицы 2026",
+      "purpose": "вторичный запрос: chatgpt сводные таблицы"
+    },
+    {
+      "id": "secondary_3",
+      "query": "ai для excel финансист 2026",
+      "purpose": "вторичный запрос: ai для excel финансист"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как использовать нейросеть для Excel: ChatGPT пишет формулы, сводные и очистку выгрузок 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B17-nejroset-excel-formuly-finansist",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

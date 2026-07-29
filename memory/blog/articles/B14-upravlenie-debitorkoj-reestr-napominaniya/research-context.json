@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B14",
+    "priority": "P0",
+    "slug": "upravlenie-debitorkoj-reestr-napominaniya",
+    "h1": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам",
+    "primary_query": "как управлять дебиторской задолженностью",
+    "secondary_queries": [
+      "контроль дебиторки",
+      "напоминание об оплате контрагенту",
+      "реестр просроченной дебиторки"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B14",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как управлять дебиторской задолженностью 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как управлять дебиторской задолженностью июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как управлять дебиторской задолженностью новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "контроль дебиторки 2026",
+      "purpose": "вторичный запрос: контроль дебиторки"
+    },
+    {
+      "id": "secondary_2",
+      "query": "напоминание об оплате контрагенту 2026",
+      "purpose": "вторичный запрос: напоминание об оплате контрагенту"
+    },
+    {
+      "id": "secondary_3",
+      "query": "реестр просроченной дебиторки 2026",
+      "purpose": "вторичный запрос: реестр просроченной дебиторки"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B14-upravlenie-debitorkoj-reestr-napominaniya",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

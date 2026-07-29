@@ -1,0 +1,10 @@
+{
+  "style_preset": "koda_gradient_abstract",
+  "cover_family": "gradient_abstract",
+  "label_ru": "KODA legacy — абстрактная holographic сетка (без текста)",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-ot-excel-k-fin-konturu-30-dney-1024x576.png",
+  "prompt_assembly_mode": "prefix_scene_suffix",
+  "global_prompt_prefix": "KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic,",
+  "global_prompt_suffix": "match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image",
+  "global_negative_prompt": "text, letters, words, watermark, logo, people, faces, stock photo, 3D shield icon, code editor window, spreadsheet UI, yellow headline typography, koda-fd.ru on image"
+}

@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-24",
+    "today_ru": "24.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-26",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-24 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B11",
+    "priority": "P1",
+    "slug": "obezlichivanie-dannyh-chatgpt-finansist",
+    "h1": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты",
+    "primary_query": "обезличивание данных chatgpt",
+    "secondary_queries": [
+      "можно ли загружать 1с в нейросеть",
+      "152 фз chatgpt",
+      "маскирование персональных данных excel"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B11",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "обезличивание данных chatgpt 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "обезличивание данных chatgpt июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "обезличивание данных chatgpt новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "можно ли загружать 1с в нейросеть 2026",
+      "purpose": "вторичный запрос: можно ли загружать 1с в нейросеть"
+    },
+    {
+      "id": "secondary_2",
+      "query": "152 фз chatgpt 2026",
+      "purpose": "вторичный запрос: 152 фз chatgpt"
+    },
+    {
+      "id": "secondary_3",
+      "query": "маскирование персональных данных excel 2026",
+      "purpose": "вторичный запрос: маскирование персональных данных excel"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B11-obezlichivanie-dannyh-chatgpt-finansist",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

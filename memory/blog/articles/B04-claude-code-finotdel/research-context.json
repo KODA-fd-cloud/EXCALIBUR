@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-24",
+    "today_ru": "24.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-26",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-24 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B04",
+    "priority": "P0",
+    "slug": "claude-code-finotdel",
+    "h1": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями",
+    "primary_query": "claude code финансист",
+    "secondary_queries": [
+      "claude code для бухгалтера",
+      "терминальный ai финансы",
+      "автоматизация отчетности claude"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B04",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "claude code финансист 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "claude code финансист июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "claude code финансист новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "claude code для бухгалтера 2026",
+      "purpose": "вторичный запрос: claude code для бухгалтера"
+    },
+    {
+      "id": "secondary_2",
+      "query": "терминальный ai финансы 2026",
+      "purpose": "вторичный запрос: терминальный ai финансы"
+    },
+    {
+      "id": "secondary_3",
+      "query": "автоматизация отчетности claude 2026",
+      "purpose": "вторичный запрос: автоматизация отчетности claude"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B04-claude-code-finotdel",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

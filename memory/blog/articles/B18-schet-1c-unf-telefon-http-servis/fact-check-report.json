@@ -1,0 +1,38 @@
+{
+  "article": "memory/blog/articles/B18-schet-1c-unf-telefon-http-servis/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 4,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "т на оплату , а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "8080",
+      "kind": "large_number",
+      "context": "stAPI: Docker Compose или uvicorn (PWA обычно на :8080). С телефона введите код доступа – бэкенд дергает",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7700000000",
+      "kind": "large_number",
+      "context": "\", \"counterparty\": {\"name\": \"ООО Пример\", \"inn\": \"7700000000\"}, \"date\": \"2026-07-22\", \"vat\": {\"rate\": 22, \"inc",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10000",
+      "kind": "large_number",
+      "context": ", \"lines\": [{\"name\": \"Услуга\", \"qty\": 1, \"price\": 10000}] } Для установки PWA \"как приложение\" желателен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

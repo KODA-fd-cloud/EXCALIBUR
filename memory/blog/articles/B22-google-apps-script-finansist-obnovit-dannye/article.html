@@ -1,0 +1,147 @@
+<p>Каждый понедельник одно и то же: выгрузить ДДС из 1С, скачать CSV, Импорт в Google Sheets, снова поправить фильтры. Кнопка "обновить данные" через Google Apps Script убирает этот ритуал. За один вечер сделаете меню или кнопку в таблице, подключиете источник (CSV с Диска, webhook или OData 1С) и при желании откроете HTML-сводку без отдельного сайта.</p>
+
+<p>Apps Script – как макрос Excel, только живёт в облаке Google и умеет ходить в интернет (UrlFetchApp), писать на листы и отдавать страницу через HtmlService. Для финансиста это не "выучить JavaScript", а собрать один сценарий: нажал – лист raw обновился.</p>
+
+<p>В пилоте сводки кассы я так и делаю: таблица + Code.gs с refreshFrom1C() по OData УНФ и веб-UI "Сводка кассы". Ниже – общий маршрут и практика из этого контура. Про сам OData подробнее – в <a href="/blog/vygruzka-1c-excel-odata/">выгрузка 1С в Excel через OData</a>. Про no-code рядом – в <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизация финансов без кода</a>.</p>
+
+<h2 id="why-button">Разберите, зачем кнопка, если есть ручной импорт CSV</h2>
+<p>Ручной импорт ломает привычку: забыли лист, сдвинули формулы, импортировали "в новую вкладку". Кнопка фиксирует маршрут. Меню в таблице – как кнопка "Провести" в учётной системе: одно действие, понятный результат.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Способ</th>
+      <th>Когда ок</th>
+      <th>Минус</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Ручной CSV</b></td>
+      <td>Раз в квартал, маленький файл</td>
+      <td>Ошибки импорта, нет лога</td>
+    </tr>
+    <tr>
+      <td><b>Меню Apps Script</b></td>
+      <td>Обновление из таблицы силами финкоманды</td>
+      <td>Нужен bound-скрипт</td>
+    </tr>
+    <tr>
+      <td><b>HTML-кнопка в webapp</b></td>
+      <td>Сводка для собственника с телефона</td>
+      <td>Нужно развёртывание</td>
+    </tr>
+    <tr>
+      <td><b>Python POST в doPost</b></td>
+      <td>Тяжёлая выгрузка &gt; лимита GAS</td>
+      <td>Нужен скрипт снаружи</td>
+    </tr>
+  </tbody>
+</table>
+<blockquote>
+  <b>Вердикт:</b> начинайте с меню "Обновить" на связанном скрипте. <b>Не делайте:</b> сразу писать Marketplace add-on "для всех компаний".
+</blockquote>
+<p><b>Сделайте:</b> DoD – после клика лист raw_* заполнен и в meta есть updated_at. <b>Не делайте:</b> цель "изучить весь Apps Script Reference".</p>
+
+<h2 id="first-menu">Создайте первый скрипт: меню и функция "Обновить"</h2>
+<p>Кастомное меню работает только у скрипта, привязанного к таблице (Extensions → Apps Script). Код меню кладут в onOpen – simple trigger при открытии файла.</p>
+<ol>
+  <li>Откройте нужную Google-таблицу → Расширения → Apps Script.</li>
+  <li>Вставьте onOpen и функцию обновления, сохраните (Ctrl+S).</li>
+  <li>Обновите вкладку таблицы или выполните onOpen вручную (▶ Run) и выдайте права.</li>
+  <li>В меню сверху появится пункт, например "Финансы → Обновить данные".</li>
+  <li>Проверьте toast и что целевой лист изменился.</li>
+  <li>Альтернатива кнопке: Вставка → Рисунок → Assign script → имя функции без скобок.</li>
+</ol>
+<pre><code>function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu("Финансы")
+    .addItem("Обновить данные", "refreshData")
+    .addToUi();
+}
+
+function refreshData() {
+  var ss = SpreadsheetApp.getActive();
+  var sh = ss.getSheetByName("raw_dds") || ss.insertSheet("raw_dds");
+  // TODO: загрузка строк из Drive / UrlFetch / OData
+  ss.toast("Обновление запущено", "Финансы", 5);
+}</code></pre>
+<p>Если меню не видно – скрипт не сохранён, открыт не тот файл, или нет права редактора. Переоткройте вкладку. Имя меню одно на файл: повторный createMenu с тем же именем заменяет старое.</p>
+<p><b>Сделайте:</b> видимое меню + toast. <b>Не делайте:</b> хранить пароль 1С в ячейке "чтобы было удобно".</p>
+
+<h2 id="data-sources">Выберите источник: CSV с Диска, webhook или OData 1С</h2>
+<p>API здесь – как курьер между системами. Apps Script может забрать файл с Drive, принять POST (doPost) или сходить UrlFetchApp на OData 1С. В пилоте сводки кассы основной путь – refreshFrom1C(): Basic Auth, справочники + AccumulationRegister движений денег → лист raw_dds, в meta пишется ops_count.</p>
+<ol>
+  <li>Один раз выполните saveOnecCredentials(baseUrl, user, password) – учётные данные уходят в Script Properties, не на лист.</li>
+  <li>baseUrl – адрес вида .../odata/standard.odata (без хвоста сущности).</li>
+  <li>Вызовите refreshFrom1C() из меню или из HTML-кнопки.</li>
+  <li>Проверьте raw_dds: есть заголовок date/month/article/... и строки операций.</li>
+  <li>Если OData отвечает с BOM – срежьте первый символ перед JSON.parse (в боевом Code.gs так и сделано).</li>
+  <li>Тяжёлый объём: снаружи python fetch + push_via_webapp.py шлёт POST в doPost на тот же webapp URL.</li>
+</ol>
+<blockquote>
+  <b>Схема пилота:</b> кнопка/меню → refreshFrom1C (OData) → raw_dds + meta → HTML-сводка читает лист
+</blockquote>
+<pre><code>function saveOnecCredentials(baseUrl, user, password) {
+  PropertiesService.getScriptProperties().setProperties({
+    ONEC_BASE_URL: String(baseUrl || "").replace(/\/$/, ""),
+    ONEC_USER: String(user || ""),
+    ONEC_PASSWORD: String(password || "")
+  }, false);
+}</code></pre>
+<p><b>Сделайте:</b> credentials в Properties + один успешный refresh. <b>Не делайте:</b> коммитить пароль в git-репозиторий со скриптом.</p>
+
+<h2 id="html-dashboard">Соберите дашборд поверх листа: HtmlService без отдельного сайта</h2>
+<p>HtmlService.createTemplateFromFile("Index") в doGet отдаёт страницу "Сводка кассы" как веб-приложение Google. Отдельный VPS не нужен. В UI кнопка "Обновить из 1С" вызывает google.script.run.refreshFrom1C(), потом перечитывает getDashboardPayload().</p>
+<ol>
+  <li>В проекте Apps Script файл HTML должен называться Index (без .html в имени внутри редактора).</li>
+  <li>В Code.gs оставьте doGet, который evaluate() шаблон и ставит viewport.</li>
+  <li>Развернуть → Новое развёртывание → Веб-приложение → Выполнять: от вашего имени.</li>
+  <li>Доступ: сначала "Только я"; "Все" – только если понимаете, что URL увидят с данными сводки.</li>
+  <li>После правок кода – новая версия развёртывания, иначе UI останется старым.</li>
+  <li>Откройте URL с телефона и нажмите обновление – как smoke-test.</li>
+</ol>
+<p>Фильтры, KPI и лента операций живут в Index.html; источник правды – листы таблицы. Мок-данные (seedMockData) удобны, чтобы отладить UI без боевой 1С. В том же проекте doPost принимает JSON от Python: raw_dds и dashboard целиком перезаписываются, в meta ставится source=python_push. Так вы не упираетесь в 6 минут UrlFetch, когда регистр толстый.</p>
+<p>Практический порядок, которым я пользуюсь: сначала меню и refresh на малом $top, потом HTML-кнопка на том же refreshFrom1C, и только если упираемся в время – вынос выгрузки в fetch_cashflow.py. Не наоборот: иначе отлаживаете сразу три слоя.</p>
+<p><b>Сделайте:</b> webapp URL открывается и кнопка обновляет meta.updated_at. <b>Не делайте:</b> публиковать "всем" с паролем 1С в том же проекте без отдельной узкой учётки.</p>
+
+<h2 id="quotas-breakages">Проверьте права, триггеры и типичные поломки</h2>
+<p>Квоты Google реальны: UrlFetch около 20 000 вызовов/день на consumer и 100 000 на Workspace; один запуск скрипта – до 6 минут. Триггеры по времени (installable) удобны для ночного обновления, но съедают дневной runtime (90 мин consumer / 6 ч Workspace).</p>
+<ul>
+  <li>Меню не появилось → сохранить, reload, Run onOpen, проверить editor access.</li>
+  <li>Authorization required → первый Run с OAuth; для UrlFetch к 1С нужны scopes.</li>
+  <li>HTTP 401/403 от OData → учётка, права на регистр/справочники, публикация OData.</li>
+  <li>Таймаут → уменьшите $top, режьте период, или вынесите выгрузку в Python → doPost.</li>
+  <li>Webapp "старый" → не создали новую версию после правок.</li>
+  <li>Секреты → только PropertiesService; лист "settings" с паролем – антипаттерн.</li>
+  <li>Одновременные запуски → не жмите "Обновить" пятнадцать раз подряд: упрётесь в лимит параллельных выполнений.</li>
+  <li>Ответ 1С с кракозябрами → проверьте BOM и кодировку JSON; в пилоте перед parse срезается FEFF.</li>
+</ul>
+<p>Отдельно про installable time-driven triggers: ночной refresh удобен, но на consumer-аккаунте легко съесть дневной runtime. Я ставлю триггер только после того, как ручной запуск стабильно укладывается в минуту-две и понятен rollback (оставить предыдущий raw или писать в лист-staging).</p>
+<p>Разборы таких контуров – в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>.</p>
+<p><b>Сделайте:</b> чеклист квот и прав до "поставь на каждый час". <b>Не делайте:</b> часовой trigger на полную выгрузку без замера времени запуска.</p>
+
+<h2 id="today">Что сделать сегодня</h2>
+<ol>
+  <li>Привяжите Apps Script и меню "Обновить данные".</li>
+  <li>Сохраните credentials 1С в Script Properties (или начните с CSV/Drive).</li>
+  <li>Прогоните refresh на узком $top и проверьте raw + meta.</li>
+  <li>При необходимости разверните doGet-дашборд и кнопку в UI.</li>
+  <li>Зафиксируйте, кто имеет URL webapp и какая учётка 1С используется.</li>
+</ol>
+<p>Уроки и материалы по автоматизации финконтура – в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=google-apps-script-finansist-obnovit-dannye" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>.</p>
+
+<h2>Частые вопросы</h2>
+<h3>Можно ли сделать кнопку без знания JavaScript?</h3>
+<p>Да для старта: скопируйте шаблон onOpen + refresh, замените имена листов и URL OData. Учить язык имеет смысл после первого успешного обновления, точечно по ошибкам.</p>
+<h3>Безопасно ли хранить пароль 1С в Apps Script?</h3>
+<p>Храните только в Script Properties через saveOnecCredentials, не на листе и не в git. Заведите отдельную учётку 1С с минимальными правами на нужные объекты OData.</p>
+<h3>Какие лимиты Google важны финансисту?</h3>
+<p>6 минут на один запуск, дневные лимиты UrlFetch и суммарный runtime триггеров. Если выгрузка жирная – Python снаружи и doPost, а не бесконечный UrlFetch в цикле.</p>
+<h3>Меню не появляется. Что проверить первым?</h3>
+<p>Сохранение файла, перезагрузка вкладки таблицы, права редактора, ручной Run onOpen. Меню не показывается читателям без права edit.</p>
+<h3>Нужен ли программист 1С?</h3>
+<p>Для публикации OData и прав узкой учётки – обычно да, один раз. Сам Apps Script и кнопку финкоманда собирает сама по шаблону.</p>
+<h3>Чем HTML-дашборд лучше листа с графиками?</h3>
+<p>Удобнее фильтры и мобильный просмотр по URL. Лист остаётся источником данных. Для совета директоров это всё ещё прототип, не замена BI.</p>
+<h3>Можно ли обойтись только Telegram без PWA/webapp?</h3>
+<p>Да, если бот дергает тот же backend/OData. В этом гайде фокус – Google Sheets + Apps Script; Telegram – соседний канал на том же контракте данных.</p>

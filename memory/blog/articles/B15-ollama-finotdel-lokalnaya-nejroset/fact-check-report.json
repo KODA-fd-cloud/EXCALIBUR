@@ -1,0 +1,24 @@
+{
+  "article": "memory/blog/articles/B15-ollama-finotdel-lokalnaya-nejroset/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 2,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 1,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "им без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде OLLAMA_NO_CLOUD=1 / отк",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "11434",
+      "kind": "large_number",
+      "context": "пьютере или сервере и отдаёт API, обычно на порту 11434. Простыми словами: свой сейф с нейросетью в офисе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/upravlenie-debitorkoj-reestr-napominaniya/#article",
+      "headline": "Как настроить управление дебиторкой: реестр просрочки + автоматические напоминания контрагентам",
+      "description": "Управление дебиторской задолженностью без CRM: реестр просрочки в Sheets/Excel, статусы, автонапоминания через n8n и шаблоны писем без давления.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/upravlenie-debitorkoj-reestr-napominaniya/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/upravlenie-debitorkoj-reestr-napominaniya/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/upravlenie-debitorkoj-reestr-napominaniya-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная голографическая сеть узлов напоминаний на тёмном фоне"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "как управлять дебиторской задолженностью, контроль дебиторки, напоминание об оплате контрагенту, реестр просроченной дебиторки",
+      "wordCount": 8579,
+      "articleSection": "автоматизация / дебиторка",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/upravlenie-debitorkoj-reestr-napominaniya/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли управлять дебиторкой без 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. На старте хватает реестра счетов с отсрочкой в Google Sheets или Excel. 1С удобна как источник наполнения, но не обязательный движок напоминаний."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как не спамить клиентов напоминаниями?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Лимит касаний по статусу, пауза N дней после last_touch, стоп при ответе и статус dispute для споров. Одно и то же письмо каждый день – путь в игнор."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько раз напоминать об оплате контрагенту?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На мягком контуре обычно 3–4 касания до эскалации: до срока, день X, +3, +7. Дальше – звонок руководителя или претензионный порядок, не пятое вежливое письмо."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли ЭЦП для напоминаний?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для сервисных напоминаний – нет. ЭЦП/КЭП нужна на формальных документах и претензиях по вашему регламенту, это не зона авторассылки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Sheets + n8n отличается от CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CRM удобна, если продажи уже живут в ней. Sheets + n8n быстрее стартуют: один реестр и сценарий без внедрения воронки. Когда сделок сотни и нужна история менеджеров – смотрите CRM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда передавать дебиторку юристу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда исчерпан мягкий цикл (обычно 15+ дней без ответа или срыв обещанной даты) и сумма/риск оправдывают претензию. Автоматизировать суд завтра шаблоном не стоит."
+          }
+        }
+      ]
+    }
+  ]
+}

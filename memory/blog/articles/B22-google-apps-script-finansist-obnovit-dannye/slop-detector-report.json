@@ -1,0 +1,22 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 2,
+  "over_long_sentences": [
+    {
+      "sentence": "Способ Когда ок Минус Ручной CSV Раз в квартал, маленький файл Ошибки импорта, нет лога Меню Apps Script Обновление из таблицы силами финкоманды Нужен bound-скрипт HTML-кнопка в webapp Сводка для собственника с телефона Нужно развёртывание Python POST в doPost Тяжёлая выгрузка &gt; лимита GAS Нужен скрипт снаружи Вердикт: начинайте с меню \"Обновить\" на связанном скрипте",
+      "word_count": 55
+    },
+    {
+      "sentence": "Практический порядок, которым я пользуюсь: сначала меню и refresh на малом $top, потом HTML-кнопка на том же refreshFrom1C, и только если упираемся в время – вынос выгрузки в fetch_cashflow",
+      "word_count": 26
+    }
+  ],
+  "readability": {
+    "score": 93.5,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 9.6,
+    "avg_syllables_per_word": 1.7
+  }
+}

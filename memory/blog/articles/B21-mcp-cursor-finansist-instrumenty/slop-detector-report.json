@@ -1,0 +1,30 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 4,
+  "over_long_sentences": [
+    {
+      "sentence": "Простыми словами: без MCP агент видит то, что вы положили в чат; с MCP у него появляются кнопки-инструменты (tools), и он сам дергает их за свежими данными",
+      "word_count": 27
+    },
+    {
+      "sentence": "Задача финотдела Тип MCP Чего ждать Папка выгрузок CSV/Excel Filesystem (узкий path) Список файлов, чтение заголовков и строк без копипаста Проверить localhost-дашборд Browser Снимок/обход локальной страницы после Streamlit Строки в облачной таблице Табличный / Sheets-сервер Чтение диапазонов по API; нужны ключи в env Живая 1С Не MCP day-1 Сначала CSV в data/ или OData – иначе другой проект Схема пилота: CSV в data/ → filesystem MCP → Agent вызывает tool → summary / out/report",
+      "word_count": 70
+    },
+    {
+      "sentence": "Прогоните сценарий: агент читает папку выгрузок и собирает отчёт Те же CSV, что в вечернем пилоте со скриптом, – только доступ другой: не @файл по одному, а tool по папке",
+      "word_count": 29
+    },
+    {
+      "sentence": "Через MCP filesystem: 1) перечисли все файлы в data/; 2) для каждого CSV покажи заголовки и число строк; 3) по ключевому полю (уточни по заголовкам) найди дубли; 4) по сумме (если есть колонка amount/summa) дай итог; 5) запиши краткий отчёт в out/report",
+      "word_count": 39
+    }
+  ],
+  "readability": {
+    "score": 92.8,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 9.9,
+    "avg_syllables_per_word": 1.7
+  }
+}

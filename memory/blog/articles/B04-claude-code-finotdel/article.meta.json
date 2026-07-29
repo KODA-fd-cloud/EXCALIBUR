@@ -1,0 +1,42 @@
+{
+  "topic_id": "B04",
+  "h1": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями",
+  "title": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями",
+  "description": "Как настроить ИИ-агент Claude Code на Windows для финансового отдела. Пошаговые сценарии сверки реестров, категоризации и нормализации данных без программистов.",
+  "cover_alt": "Тёмный UI-мокап: Claude Code CLI для финансового отдела — сверка и анализ выгрузок 1С",
+  "slug": "claude-code-finotdel",
+  "primary_query": "claude code",
+  "secondary_queries": [
+    "claude coding",
+    "вайб кодинг это",
+    "claude code mcp",
+    "claude code windows",
+    "claude code cli",
+    "как установить claude code"
+  ],
+  "char_count": 9466,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "как использовать Claude Code в финансовом отделе",
+    "автоматизация финансового анализа с помощью Claude Code",
+    "установка и настройка Claude Code для финансистов"
+  ],
+  "meta_ab": {
+    "title_seo": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями",
+    "title_ctr": "💻 Смерть Excel? Как CFO используют Claude Code для анализа миллионов строк без программистов",
+    "title_aeo": "Как использовать Claude Code в финотделе компании для автоматизации аналитики?",
+    "description_seo": "Как настроить ИИ-агент Claude Code на Windows для финансового отдела. Пошаговые сценарии сверки реестров, категоризации и нормализации данных без программистов.",
+    "description_ctr": "🚀 Устали от зависания Excel на больших выгрузках 1С? Научитесь запускать Claude Code CLI локально. 7 готовых сценариев финансовой аналитики за 15 минут без облачных утечек!",
+    "description_aeo": "Пошаговый гайд по внедрению Claude Code в финансовом департаменте. Описание установки на Windows, интеграции с 1С через CSV и 7 сценариев анализа данных без передачи коммерческой тайны в облако."
+  },
+  "geo_qa": {
+    "score": 100,
+    "verdict": "PASS",
+    "date": "2026-06-24",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

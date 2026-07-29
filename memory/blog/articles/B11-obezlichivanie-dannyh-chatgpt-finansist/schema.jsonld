@@ -1,0 +1,114 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/#article",
+      "headline": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты",
+      "description": "Практическое руководство для CFO по обезличиванию финансовых данных перед отправкой в ChatGPT. Три уровня деперсонализации: Excel, локальный прокси на Python и локальные LLM.",
+      "datePublished": "2026-06-26",
+      "dateModified": "2026-06-26",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/06/obezlichivanie-dannyh-chatgpt-finansist-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "обезличивание данных, обезличивание персональных данных, ChatGPT финансист, 152-ФЗ, деперсонализация",
+      "wordCount": 9141,
+      "articleSection": "Безопасность данных / AI",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нарушает ли использование ChatGPT закон № 152-ФЗ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, отправка нефильтрованных ПДн клиентов в OpenAI без согласия субъектов и уведомления Роскомнадзора незаконна. Обезличивайте выгрузки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Достаточно ли заменить имя контрагента на Клиент А для защиты?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. ИНН, номера договоров и точные суммы сделок всё ещё позволяют идентифицировать лицо. Необходимо маскировать все уникальные идентификаторы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Безопасен ли платный тариф ChatGPT Team или Enterprise для финансовых данных?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Тарифы Enterprise не используют запросы для обучения, но риск утечки и трансграничной передачи сохраняется. Применяйте локальный прокси или on-premise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие данные из 1С категорически запрещено отправлять в публичные нейросети?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Любые файлы с персональными данными сотрудников и клиентов, а также первичные документы с точными реквизитами сделок и банковскими счетами."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли настроить автоматическое обезличивание без привлечения программистов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для Excel достаточно шаблона с формулами на скрытом листе. Для автоматизации API потребуются скрипты на Python, которые внедряются за пару часов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какое оборудование необходимо для запуска локальной модели типа Llama 3 для финотдела?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для Llama 3 или Qwen на 8–14 миллиардов параметров достаточно ПК с видеокартой Nvidia RTX 3060/4060 с 12 ГБ видеопамяти."
+          }
+        }
+      ]
+    }
+  ]
+}

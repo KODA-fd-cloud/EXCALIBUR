@@ -1,0 +1,15 @@
+{
+  "slug": "schet-1c-unf-telefon-http-servis",
+  "topic_id": "B18",
+  "permalink": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B18-schet-1c-unf-telefon-http-servis/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1193876,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=152 slug=schet-1c-unf-telefon-http-servis\nOK featured_image=156\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/schet-1c-unf-telefon-http-servis-dzen-cover-1.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

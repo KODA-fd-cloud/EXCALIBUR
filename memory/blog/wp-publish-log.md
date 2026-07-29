@@ -1,5 +1,142 @@
 # Excalibur BLOG — WP publish log
 
+## 2026-07-22 — B18 schet-1c-unf-telefon-http-servis — **PASS**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B18 |
+| slug | schet-1c-unf-telefon-http-servis |
+| verdict | **PASS** |
+| post_id | 152 |
+| featured_image_id | 156 |
+| inline_images | — |
+| permalink | https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/ |
+| method | ssh_docker_exec |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (QA); recheck SSL-noise local
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- CTA conversion-map: club×1 + TG×1, no salebot
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: yes
+
+### Result
+
+`
+OK post=152 slug=schet-1c-unf-telefon-http-servis
+OK featured_image=156
+OK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/schet-1c-unf-telefon-http-servis-dzen-cover-1.png
+OK schema_meta=1
+OK skip_theme_faq_meta=1
+permalink=https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/
+`
+
+---
+## 2026-07-22 — B21 mcp-cursor-finansist-instrumenty — **PASS**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B21 |
+| slug | mcp-cursor-finansist-instrumenty |
+| verdict | **PASS** |
+| post_id | 149 |
+| featured_image_id | 150 |
+| inline_images | — |
+| permalink | https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/ |
+| method | ssh_docker_exec |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- CTA conversion-map: club + finance_modern, no salebot
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: yes
+
+### Result
+
+`
+OK post=149 slug=mcp-cursor-finansist-instrumenty
+OK featured_image=150
+OK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/mcp-cursor-finansist-instrumenty-dzen-cover.png
+OK schema_meta=1
+OK skip_theme_faq_meta=1
+permalink=https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/
+`
+
+---
+## 2026-07-22 — B17 nejroset-excel-formuly-finansist — **PASS**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B17 |
+| slug | nejroset-excel-formuly-finansist |
+| verdict | **PASS** |
+| post_id | 146 |
+| featured_image_id | 147 |
+| inline_images | — |
+| permalink | https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/ |
+| method | ssh_docker_exec |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (5/5, ssl unverified recheck)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- CTA conversion-map: TG×2 + club×1, no salebot
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: yes
+
+### Result
+
+```
+OK post=146 slug=nejroset-excel-formuly-finansist
+OK featured_image=147
+OK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/nejroset-excel-formuly-finansist-dzen-cover.png
+OK schema_meta=1
+OK skip_theme_faq_meta=1
+permalink=https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/
+```
+
+---
+
+## 2026-07-22 — B20 cursor-finansist-skript-dashbord — **PASS**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B20 |
+| slug | cursor-finansist-skript-dashbord |
+| verdict | **PASS** |
+| post_id | 142 |
+| featured_image_id | 144 |
+| inline_images | — |
+| permalink | https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/ |
+| method | ssh_docker_exec |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (9/9, ssl unverified recheck)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: yes
+
+### Result
+
+```
+OK post=142 slug=cursor-finansist-skript-dashbord
+OK featured_image=144
+OK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/cursor-finansist-skript-dashbord-dzen-cover.png
+OK schema_meta=1
+OK skip_theme_faq_meta=1
+permalink=https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/
+```
+
+---
+
 ## 2026-06-11 — B02 avtomatizaciya-n8n-ai-agents
 
 | Field | Value |
@@ -172,3 +309,16 @@ OK inline_image_upload=13372 src=cover/inline-02.png url=https://mayai.ru/wp-con
 OK inline_image_upload=13373 src=cover/inline-03.png url=https://mayai.ru/wp-content/uploads/2026/06/avtonomnyj-kontent-zavod-nejroseti-inline-03.jpg
 permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 ```
+
+---
+
+## 2026-07-22 — B14/B15/B16 docker publish — **PASS**
+
+| topic_id | slug | post_id | permalink |
+|----------|------|---------|-----------|
+| B14 | upravlenie-debitorkoj-reestr-napominaniya | 134 | https://koda-fd.ru/blog/upravlenie-debitorkoj-reestr-napominaniya/ |
+| B15 | ollama-finotdel-lokalnaya-nejroset | 137 | https://koda-fd.ru/blog/ollama-finotdel-lokalnaya-nejroset/ |
+| B16 | baza-znaniy-chatgpt-cursor-finotdel | 140 | https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/ |
+
+method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
+QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only

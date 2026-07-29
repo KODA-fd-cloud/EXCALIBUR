@@ -1,0 +1,38 @@
+{
+  "article": "memory/blog/articles/B19-python-finansist-sverka-csv/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 4,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "60 минут",
+      "kind": "metric_or_duration",
+      "context": "ь два CSV по ключу и выгрузить расхождения. За 40–60 минут поставите Python, откроете папку в Cursor и получ",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "приходят свежие выгрузки. Это не курс \"Python за 30 дней\" и не датасаенс. В моей практике первый пилот все",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "30 тыс. строк, разовый раз Нормально Избыточно 50–200 тыс., повтор каждую неделю Зависает / рискует Рабо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "рок хрупкого кода. Чистый csv подойдёт на учебных 100 строках, на боевых выгрузках я беру pandas. Безопа",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

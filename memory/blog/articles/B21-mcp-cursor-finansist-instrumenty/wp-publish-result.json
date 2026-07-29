@@ -1,0 +1,15 @@
+{
+  "slug": "mcp-cursor-finansist-instrumenty",
+  "topic_id": "B21",
+  "permalink": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B21-mcp-cursor-finansist-instrumenty/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1023738,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=149 slug=mcp-cursor-finansist-instrumenty\nOK featured_image=150\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/mcp-cursor-finansist-instrumenty-dzen-cover.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

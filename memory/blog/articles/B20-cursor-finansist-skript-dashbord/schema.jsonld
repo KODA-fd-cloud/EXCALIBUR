@@ -1,0 +1,192 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#article",
+      "headline": "Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд",
+      "description": "Пошагово: Cursor вместо веб-чата, папка с CSV и .gitignore, скрипт сверки двух выгрузок и локальный мини-дашборд Streamlit/HTML за один вечер.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/cursor-finansist-skript-dashbord-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Тёмный UI-мокап: путь от CSV сверки к скрипту и локальному дашборду в Cursor"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "cursor ai, cursor для начинающих, cursor финансист, vibe coding cursor дашборд, скрипт сверки csv",
+      "wordCount": 9483,
+      "articleSection": "Cursor / vibe coding / финотдел",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Платный ли Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Старт с тарифа Hobby: бесплатно, без карты, с лимитами Agent и Tab. Для регулярной агентной работы смотрите Pro ($20/мес на момент проверки 22.07.2026 на cursor.com/pricing). Teams – от $40/user/мес. Покупайте только на cursor.com, не у \"серых\" перекупов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли git для вечернего пилота?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Заведите .gitignore сразу. Git понадобится, когда делитесь папкой с коллегой или откатываете сломанный промпт."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем эта статья отличается от гайда про AI-агентов финотчётности?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Та – про агентный контур отчётности. Эта – один вечер: скрипт сверки двух CSV + мини-дашборд в папке Cursor. Разные Definition of Done. Читайте агентов, когда пилот сверки уже стабильно бегает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Python заранее?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Желательно поставить интерпретатор и сказать агенту путь. Код сгенерируется. Без Python терминал не запустит скрипт и Streamlit – сначала мини-установка, потом промпт."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Streamlit или простой HTML?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Streamlit – если можно ставить пакеты: быстрее метрики и таблица. HTML – если пакеты нельзя. Оба на первом шаге только localhost, без выкладки боевых данных в облако."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Безопасно ли кидать выгрузки 1С в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сырые ПДн – нет. Урежьте колонки, обезличьте ИНН/ФИО, включите Privacy Mode, не пушьте data/ в публичный GitHub. Дашборд с боевыми данными – только localhost или внутренняя сеть."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С чего начать Cursor для начинающих в финотделе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Скачайте с cursor.com, откройте одну папку, Ask: \"объясни, не меняй\". Потом один промпт сверки с DoD. Не начинайте с деплоя и MCP – сначала артефакт на диске."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#howto",
+      "name": "Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд",
+      "description": "Папка проекта с CSV и .gitignore, скрипт сверки двух выгрузок, мини-дашборд Streamlit/HTML на localhost и чеклист итерации промптов.",
+      "inLanguage": "ru",
+      "totalTime": "PT3H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Cursor (скачать с cursor.com)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Python + pandas"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Streamlit или статический HTML"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Два обезличенных CSV выгрузки (банк vs 1С / две системы)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Файл .gitignore с data/*.csv, .env, *.xlsx"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Сравните Cursor и чат ChatGPT, откройте папку проекта",
+          "text": "Скачайте Cursor только с cursor.com. Откройте пустую папку проекта (не весь диск). Стартуйте в Ask: «объясни структуру, ничего не меняй». Для сверки двух выгрузок берите Cursor, а не веб-чат с сырыми CSV.",
+          "url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#cursor-vs-chatgpt"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Подготовьте папку: CSV, .gitignore, без сырых ПДн",
+          "text": "Положите два CSV в data/, скрипты в корень или src/, результат в out/. В .gitignore добавьте data/*.csv, .env и xlsx с ПДн. Урежьте колонки, зафиксируйте Definition of Done (ключ, суммы, out/mismatches.csv). Включите Privacy Mode при боевых срезах.",
+          "url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#prepare-folder"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Соберите скрипт сверки двух выгрузок",
+          "text": "Один промпт Agent с DoD: pandas/csv, ключ, допуск 0.01, out/mismatches.csv + summary. Примите diff только по нужному .py, прогоните в терминале Cursor. Краевые случаи (кодировка, разделитель, пустые ключи) правьте точечно, не «перепиши всё».",
+          "url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#scenario-reconcile"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Поднимите мини-дашборд из той же папки",
+          "text": "Сделайте app.py на Streamlit: метрики (число расхождений, сумма delta) + таблица из out/mismatches.csv. Запуск: streamlit run app.py на localhost. Если пакеты нельзя – один статический HTML. Боевые данные не выкладывайте в Community Cloud.",
+          "url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#scenario-dashboard"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Итерируйте промптами по чеклисту",
+          "text": "Одна задача = один чат; контекст через @файл; Ask перед Agent на незнакомом коде; короткие follow-up. Стоп, когда DoD выполнен: mismatches есть, дашборд открывается, цифры сходятся с ручной проверкой 3–5 строк.",
+          "url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/#iterate-prompts"
+        }
+      ]
+    }
+  ]
+}

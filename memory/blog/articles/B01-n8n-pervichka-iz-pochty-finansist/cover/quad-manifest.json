@@ -1,0 +1,42 @@
+{
+  "topic_id": "B01",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "koda_artur_human",
+  "style_file": "memory/cover/quad-style-koda-artur-human.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "30–60 минут в день на ручной ввод счетов — или n8n за вечер?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_ui_hook",
+      "alt": "Изометрическая схема n8n: счета из почты в Google Таблицу на тёмном фоне",
+      "scene_hint": "изометрическая схема n8n-нод (IMAP, PDF, LLM, Sheets, Telegram), счета-фактуры и таблица реестра, тёмный фон #0a0a0f, фиолетовые акценты #8b5cf6, без людей, крупный кириллический hook про автоматизацию первички",
+      "meme_caption_ru": "счета сами в таблицу?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "1. Оцените, зачем финансисту n8n в 2026 году",
+      "visual_type": "infographic_card",
+      "scene_hint": "Карточка фактов: n8n 35 475 показов, автоматизация бухгалтерии 1 142, IMAP+LLM+Sheets — «зачем финансисту n8n», тёмный UI #0a0a0f",
+      "alt": "Инфографика: зачем финансисту n8n в 2026 году"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "2. Выберите self-hosted или облако n8n для финданных",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица Self-hosted Community vs n8n Cloud: лицензия, 152-ФЗ, VPS, executions — тёмный dashboard mockup",
+      "alt": "Сравнение self-hosted и облака n8n для финданных"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "3. Соберите сценарий: почта → AI → Google Таблица → Telegram",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow: Яндекс IMAP → IF PDF → Extract/OCR → LLM JSON → Google Sheets → Telegram → статус на проверке, isometric nodes",
+      "alt": "Схема workflow n8n: почта, AI, таблица, Telegram"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "baza-znaniy-chatgpt-cursor-finotdel",
+  "topic_id": "B16",
+  "permalink": "https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B16-baza-znaniy-chatgpt-cursor-finotdel/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 911335,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=140 slug=baza-znaniy-chatgpt-cursor-finotdel\nOK featured_image=141\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/baza-znaniy-chatgpt-cursor-finotdel-dzen-cover.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

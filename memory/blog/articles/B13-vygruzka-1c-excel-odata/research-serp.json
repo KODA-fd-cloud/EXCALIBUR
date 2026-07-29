@@ -1,0 +1,454 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B13",
+    "priority": "P0",
+    "slug": "vygruzka-1c-excel-odata",
+    "h1": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста",
+    "primary_query": "выгрузка из 1с в excel",
+    "secondary_queries": [
+      "odata 1с",
+      "выгрузка 1с в google sheets",
+      "odata standard.odata финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "выгрузка из 1с в excel 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-fajly-iz-1s-v-eksel.html",
+          "snippet": ""
+        },
+        {
+          "title": "Как выгрузить отчёт из 1С в Excel: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-otchet-iz-1s-v-eksele.html",
+          "snippet": "Узнайте все способы экспорта из 1С в Excel: от стандартных отчётов до универсальных обработок. Скриншоты, коды и решения ошибок для бухгалтеров и аналитиков."
+        },
+        {
+          "title": "Выгрузка данных из 1С в Excel — отчёты и обработки | KVANT-C",
+          "url": "https://kvant-c.ru/faq/1c-excel-export/",
+          "snippet": "Подробный гайд по экспорту данных из 1С:Предприятие в Excel — все способы (вручную, через обработки, конфигуратор), типичные ошибки и решения. Оптимизировано для бухгалтеров и аналитиков."
+        },
+        {
+          "title": "Разбираемся, как выгрузить данные из 1С в Excel и наоборот",
+          "url": "https://scloud.ru/blog/razbiraemsya_kak_vygruzit_dannye_iz_1s_v_excel_i_naoborot/",
+          "snippet": "Как выгрузить данные из 1С 8.3 в Excel? Сохранение отчётов, использование обработок, COM-подключение и универсальная выгрузка. Пошаговые инструкции."
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция",
+          "url": "https://denvic.tech/blog/ekspertnye-stati/vygruzka-dannykh-iz-1s-v-excel-osnovnye-sposoby-poshagovaya-instruktsiya-i-vozmozhnye-problemy/",
+          "snippet": "В этой статье вы узнаете, как выгрузить данные из 1С в Excel, а потом загрузить обратно."
+        },
+        {
+          "title": "Выгрузка данных из 1с в Excel: 5 рабочих способов",
+          "url": "https://lumpics.ru/uploading-data-from-1c-in-excel/",
+          "snippet": "Пошагово разберем, как выгрузить данные из 1С в Excel: отчет, документ, список или таблицу. Покажем, как сохранить структуру и что делать, если файл отображается некорректно."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "выгрузка из 1с в excel июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-fajly-iz-1s-v-eksel.html",
+          "snippet": ""
+        },
+        {
+          "title": "Как выгрузить отчёт из 1С в Excel: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-otchet-iz-1s-v-eksele.html",
+          "snippet": "Узнайте все способы экспорта из 1С в Excel: от стандартных отчётов до универсальных обработок. Скриншоты, коды и решения ошибок для бухгалтеров и аналитиков."
+        },
+        {
+          "title": "Разбираемся, как выгрузить данные из 1С в Excel и наоборот",
+          "url": "https://scloud.ru/blog/razbiraemsya_kak_vygruzit_dannye_iz_1s_v_excel_i_naoborot/",
+          "snippet": "Подробный гайд по экспорту данных из 1С:Предприятие в Excel — все способы (вручную, через обработки, конфигуратор), типичные ошибки и решения. Оптимизировано для бухгалтеров и аналитиков."
+        },
+        {
+          "title": "Выгрузка данных из 1С в Excel — отчёты и обработки | KVANT-C",
+          "url": "https://kvant-c.ru/faq/1c-excel-export/",
+          "snippet": "В этой статье вы узнаете, как выгрузить данные из 1С в Excel, а потом загрузить обратно."
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция",
+          "url": "https://denvic.tech/blog/ekspertnye-stati/vygruzka-dannykh-iz-1s-v-excel-osnovnye-sposoby-poshagovaya-instruktsiya-i-vozmozhnye-problemy/",
+          "snippet": "Как выгрузить данные из 1С 8.3 в Excel? Сохранение отчётов, использование обработок, COM-подключение и универсальная выгрузка. Пошаговые инструкции."
+        },
+        {
+          "title": "Выгрузка данных из 1с в Excel: 5 рабочих способов",
+          "url": "https://lumpics.ru/uploading-data-from-1c-in-excel/",
+          "snippet": "Пошагово разберем, как выгрузить данные из 1С в Excel: отчет, документ, список или таблицу. Покажем, как сохранить структуру и что делать, если файл отображается некорректно."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "выгрузка из 1с в excel новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Выгрузка данных из 1С в Excel — отчёты и обработки | KVANT-C",
+          "url": "https://kvant-c.ru/faq/1c-excel-export/",
+          "snippet": ""
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-fajly-iz-1s-v-eksel.html",
+          "snippet": "Как выгрузить данные из 1С 8.3 в Excel? Сохранение отчётов, использование обработок, COM-подключение и универсальная выгрузка. Пошаговые инструкции."
+        },
+        {
+          "title": "Как выгрузить выписку из 1С в Excel: пошаговый гайд 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-skachat-vypisku-iz-1s-v-eksel.html",
+          "snippet": "Узнайте все способы экспорта из 1С в Excel: от стандартных отчётов до универсальных обработок. Скриншоты, коды и решения ошибок для бухгалтеров и аналитиков."
+        },
+        {
+          "title": "Выгрузка данных из 1С 8.3: способы экспорта в Excel, XML и PDF",
+          "url": "https://saldovka.com/2026-exp/vygruzka-dannyh-iz-1s.html",
+          "snippet": "В этой статье разберём все актуальные способы выгрузки выписок из 1С 8.3 (включая Бухгалтерию 3.0, УТ 11 и ЗУП 3.1) с учётом нюансов формата XLSX и совместимости с последними версиями Microsoft Excel."
+        },
+        {
+          "title": "Экспорт из 1С в Excel 2026 - habab.ru",
+          "url": "https://habab.ru/eksport-iz-1s-v-excel",
+          "snippet": "Как выгрузить данные из 1С 8.3 в Excel, PDF, Word, XML и CSV: вывести список, синхронизация с другими 1С, универсальный обмен и API."
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция",
+          "url": "https://denvic.tech/blog/ekspertnye-stati/vygruzka-dannykh-iz-1s-v-excel-osnovnye-sposoby-poshagovaya-instruktsiya-i-vozmozhnye-problemy/",
+          "snippet": "Экспорт из 1С в Excel: XLSX через ТабличныйДокумент, CSV для больших отчётов, OData для Power Query, диагностика ошибок. Автовыгрузка — 30 000 ₽."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "odata 1с 2026",
+      "purpose": "вторичный запрос: odata 1с",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Работа с 1С через протокол OData - INFOSTART",
+          "url": "https://infostart.ru/1c/articles/1570140/",
+          "snippet": ""
+        },
+        {
+          "title": "Технологический блог фирмы 1С | 1С:Зазеркалье",
+          "url": "https://wonderland.v8.1c.ru/blog/rasshirenie-podderzhki-protokola-odata",
+          "snippet": "В данной статье мы будем рассматривать работу с данными информационной базы через протокол OData (далее OData). Для начала рассмотрим, что такое OData. OpenDataProtocol или OData - это открытый веб-протокол для запроса и обновления данных."
+        },
+        {
+          "title": "Современная интеграция 1С: REST API, OData и асинхронность, как ...",
+          "url": "https://binavigator.ru/articles/servisy-1s/sovremennaya-integratsiya-1s-rest-api-1s-shina-i-arkhitektura-besshovnykh-resheniy/",
+          "snippet": "Мы продолжаем развивать механизм автоматизированного тестирования. Будет реализован сервис обслуживания баз данных, обеспечивающий периодическое обслуживание баз данных PostgreSQL, не мешая работе пользователей. По вашим просьбам мы добавили новые возможности в Систему взаимодействия."
+        },
+        {
+          "title": "API-first в 1С — REST и OData как архитектурный стандарт",
+          "url": "https://on-soft.ru/ru/blog/api-first-1c-rest-odata-webinar-2026-06-05-announcement/",
+          "snippet": "Платформа «1С:Предприятие» поддерживает интеграцию на базе открытых стандартов и протоколов, а также создание и использование web и HTTP сервисов. Проще говоря, 1С умеет «разговаривать» с другими программами по обоюдно понятным им правилам, а не только через ручной перенос данных."
+        },
+        {
+          "title": "Запись вебинара: API-first в 1С — REST и OData как архитектурный ...",
+          "url": "https://on-soft.ru/ru/blog/api-first-1c-rest-odata-webinar-2026-06-11-recording/",
+          "snippet": "Анонс вебинара ONSOFT о подходе API-first в 1С: когда выбирать REST и OData, как проектировать контракты и строить устойчивую архитектуру интеграций."
+        },
+        {
+          "title": "Вебинар: API-first в 1С — REST и OData ... - tenchat.ru",
+          "url": "https://tenchat.ru/media/5475052-vebinar-apifirst-v-1s--rest-i-odata-kak-arkhitekturniy-standart",
+          "snippet": "Вебинар состоялся 11 июня 2026. Мы разобрали, почему интеграции в 1С лучше проектировать от API, а не от случайных обменов, и где проходит практическая граница между OData и собственным REST-слоем. Вебинар был посвящён архитектурному подходу API-first в 1С."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "выгрузка 1с в google sheets 2026",
+      "purpose": "вторичный запрос: выгрузка 1с в google sheets",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "1С и Google Таблицы: быстрый обмен данными и синхронизация",
+          "url": "https://life1c.ru/post/2919",
+          "snippet": ""
+        },
+        {
+          "title": "Отчёты 1С в Google Sheets через Make: настройка за 30 минут",
+          "url": "https://promaren.ru/blog/2026/02/19/otchety-1s-v-google-sheets-cherez-make-nastroyka-za-30-minut/",
+          "snippet": "Настройте выгрузку в 1С в формате CSV с кодировкой UTF-8 и явным разделителем столбцов. Положите файл на Google Диск или используйте общую папку в облаке компании."
+        },
+        {
+          "title": "Интеграция 1С с Google Таблицами: Надежная выгрузка через сервисный аккаунт",
+          "url": "https://infostart.ru/1c/tools/2519580/",
+          "snippet": "Отчеты 1С в Google Sheets - это автоматическая выгрузка данных из 1С в облачные таблицы с последующей обработкой и визуализацией, доступная команде без входа в саму 1С."
+        },
+        {
+          "title": "1c И Гугл Таблицы: Корректный Перенос Данных",
+          "url": "https://dmitriizhuk.ru/2023/05/11/1c-and-google-sheets/",
+          "snippet": "Комплект из обработки 1С и консольного приложения, который демонстрирует два способа интеграции 1С с Google Таблицами с помощью сервисного аккаунта Google. Пример реализует выгрузку заказов покупателей из 1С ERP в конкретную Google Таблицу."
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Google Sheets (Гугл Таблицы) и создать BI ...",
+          "url": "https://extractor1c.ru/baza-znanij/instrukcii/kak-vygruzit-dannye-iz-1s-v-google-sheets-gugl-tablicy-i-sozdat-bi-dashbord/",
+          "snippet": "Если взять стандартную ОСВ из 1С и попробовать перенести ее в гугл таблицы через «Копировать — Вставить», то результат будет, мягко говоря, спорным. Так выглядит ОСВ в 1С: Копирую Ctrl+C и вставляю Ctrl+V. В гугл таблицах выглядит это всё примерно следующим образом, со всеми нюансами, присущими формам 1С, где есть объединения столбцов:"
+        },
+        {
+          "title": "⚡ Отчеты 1с В Google Sheets Через Make: Настройка За 30 Минут Марина ...",
+          "url": "https://vk.com/wall-234054051_611",
+          "snippet": "Теперь наша обработка будет в заданное расписание выгружать данных из 1С в листы Google таблицы с использованием сервисного пользователя."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "odata standard.odata финансы 2026",
+      "purpose": "вторичный запрос: odata standard.odata финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Open Data Protocol (OData) - Finance & Operations | Dynamics 365 (2026)",
+          "url": "https://solatatech.com/article/open-data-protocol-odata-finance-operations-dynamics-365",
+          "snippet": ""
+        },
+        {
+          "title": "Documentation · OData - the Best Way to REST",
+          "url": "https://www.odata.org/documentation/",
+          "snippet": "Article05/30/2023In this articleThis article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.What is OData?OData is a standard protocol for creating and consuming data. The purpose of OData is to provide a protocol that is based o..."
+        },
+        {
+          "title": "Open Data Protocol (OData) - Finance & Operations | Dynamics 365",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+          "snippet": "OData, short for Open Data Protocol, is an open protocol to allow the creation and consumption of queryable and interoperable RESTful APIs in a simple and standard way."
+        },
+        {
+          "title": "Работа с 1С через протокол OData - INFOSTART",
+          "url": "https://infostart.ru/1c/articles/1570140/",
+          "snippet": "What is OData? OData is a standard protocol for creating and consuming data. The purpose of OData is to provide a protocol that's based on Representational State Transfer (REST) for create, read, update, and delete (CRUD) operations."
+        },
+        {
+          "title": "SAP S/4 HANA OData v4 APIs available - Quick Refer... - SAP Community",
+          "url": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/sap-s-4-hana-odata-v4-apis-available-quick-reference-and-available-in-sap/ba-p/14328827",
+          "snippet": "В данной статье мы будем рассматривать работу с данными информационной базы через протокол OData (далее OData). Для начала рассмотрим, что такое OData. OpenDataProtocol или OData - это открытый веб-протокол для запроса и обновления данных."
+        },
+        {
+          "title": "Приложение 12. Описание сущностей, предоставляемых через стандартный ...",
+          "url": "https://its.1c.ru/db/v851doc/bookmark/dev/TI000001392",
+          "snippet": "These APIs support RESTful access with improved performance, reduced payload sizes (JSON), and advanced metadata modeling. You can explore and test all available OData V4 APIs—both for S/4HANA On‑Premise —directly from the SAP Business Accelerator Hub."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как подключить Excel к «1С» через OData и автоматизировать выгрузку ...",
+          "url": "https://e.fd.ru/1151210",
+          "snippet": ""
+        },
+        {
+          "title": "Выгрузка данных из 1С: Excel, SQL, Odata, Экстрактор",
+          "url": "https://denvic.tech/blog/ekspertnye-stati/vygruzka-dannykh-iz-1s-rasskazyvaem-pro-4-sposoba-i-nakhodim-samyy-optimalnyy/",
+          "snippet": "Автоматическая выгрузка данных из «1С» в Excel: пошаговая инструкция, как настроить подключение без программирования и получать нужные данные «по кнопке»."
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-fajly-iz-1s-v-eksel.html",
+          "snippet": "Как выгрузить данные из 1С в Excel без программирования? Для большинства конфигураций достаточно открыть нужный отчет или список, затем выбрать «Файл → Сохранить как» (или команду ..."
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Excel: 5 способов с примерами",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-sdelat-1s-v-eksel.html",
+          "snippet": "Вы узнаете, как сохранить структуру таблиц, избежать ошибок при работе с большими объёмами данных и автоматизировать рутинные операции."
+        },
+        {
+          "title": "Выгрузка данных из 1С в Excel — отчёты и обработки | KVANT-C",
+          "url": "https://kvant-c.ru/faq/1c-excel-export/",
+          "snippet": "Пошаговые инструкции по переносу данных из 1С:Предприятие в Excel — от простого копирования до автоматизации через COM-соединение и Power Query. Сравнение методов и решения ошибок."
+        },
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция",
+          "url": "https://denvic.tech/blog/ekspertnye-stati/vygruzka-dannykh-iz-1s-v-excel-osnovnye-sposoby-poshagovaya-instruktsiya-i-vozmozhnye-problemy/",
+          "snippet": "Как выгрузить данные из 1С 8.3 в Excel? Сохранение отчётов, использование обработок, COM-подключение и универсальная выгрузка. Пошаговые инструкции."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-fajly-iz-1s-v-eksel.html",
+      "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция 2026",
+      "from_query": "выгрузка из 1с в excel 2026"
+    },
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-otchet-iz-1s-v-eksele.html",
+      "title": "Как выгрузить отчёт из 1С в Excel: пошаговая инструкция 2026",
+      "from_query": "выгрузка из 1с в excel 2026"
+    },
+    {
+      "url": "https://kvant-c.ru/faq/1c-excel-export/",
+      "title": "Выгрузка данных из 1С в Excel — отчёты и обработки | KVANT-C",
+      "from_query": "выгрузка из 1с в excel 2026"
+    },
+    {
+      "url": "https://scloud.ru/blog/razbiraemsya_kak_vygruzit_dannye_iz_1s_v_excel_i_naoborot/",
+      "title": "Разбираемся, как выгрузить данные из 1С в Excel и наоборот",
+      "from_query": "выгрузка из 1с в excel 2026"
+    },
+    {
+      "url": "https://denvic.tech/blog/ekspertnye-stati/vygruzka-dannykh-iz-1s-v-excel-osnovnye-sposoby-poshagovaya-instruktsiya-i-vozmozhnye-problemy/",
+      "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция",
+      "from_query": "выгрузка из 1с в excel 2026"
+    },
+    {
+      "url": "https://lumpics.ru/uploading-data-from-1c-in-excel/",
+      "title": "Выгрузка данных из 1с в Excel: 5 рабочих способов",
+      "from_query": "выгрузка из 1с в excel 2026"
+    },
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-skachat-vypisku-iz-1s-v-eksel.html",
+      "title": "Как выгрузить выписку из 1С в Excel: пошаговый гайд 2026",
+      "from_query": "выгрузка из 1с в excel новости 2026"
+    },
+    {
+      "url": "https://saldovka.com/2026-exp/vygruzka-dannyh-iz-1s.html",
+      "title": "Выгрузка данных из 1С 8.3: способы экспорта в Excel, XML и PDF",
+      "from_query": "выгрузка из 1с в excel новости 2026"
+    },
+    {
+      "url": "https://habab.ru/eksport-iz-1s-v-excel",
+      "title": "Экспорт из 1С в Excel 2026 - habab.ru",
+      "from_query": "выгрузка из 1с в excel новости 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/1570140/",
+      "title": "Работа с 1С через протокол OData - INFOSTART",
+      "from_query": "odata 1с 2026"
+    },
+    {
+      "url": "https://wonderland.v8.1c.ru/blog/rasshirenie-podderzhki-protokola-odata",
+      "title": "Технологический блог фирмы 1С | 1С:Зазеркалье",
+      "from_query": "odata 1с 2026"
+    },
+    {
+      "url": "https://binavigator.ru/articles/servisy-1s/sovremennaya-integratsiya-1s-rest-api-1s-shina-i-arkhitektura-besshovnykh-resheniy/",
+      "title": "Современная интеграция 1С: REST API, OData и асинхронность, как ...",
+      "from_query": "odata 1с 2026"
+    },
+    {
+      "url": "https://on-soft.ru/ru/blog/api-first-1c-rest-odata-webinar-2026-06-05-announcement/",
+      "title": "API-first в 1С — REST и OData как архитектурный стандарт",
+      "from_query": "odata 1с 2026"
+    },
+    {
+      "url": "https://on-soft.ru/ru/blog/api-first-1c-rest-odata-webinar-2026-06-11-recording/",
+      "title": "Запись вебинара: API-first в 1С — REST и OData как архитектурный ...",
+      "from_query": "odata 1с 2026"
+    },
+    {
+      "url": "https://tenchat.ru/media/5475052-vebinar-apifirst-v-1s--rest-i-odata-kak-arkhitekturniy-standart",
+      "title": "Вебинар: API-first в 1С — REST и OData ... - tenchat.ru",
+      "from_query": "odata 1с 2026"
+    },
+    {
+      "url": "https://life1c.ru/post/2919",
+      "title": "1С и Google Таблицы: быстрый обмен данными и синхронизация",
+      "from_query": "выгрузка 1с в google sheets 2026"
+    },
+    {
+      "url": "https://promaren.ru/blog/2026/02/19/otchety-1s-v-google-sheets-cherez-make-nastroyka-za-30-minut/",
+      "title": "Отчёты 1С в Google Sheets через Make: настройка за 30 минут",
+      "from_query": "выгрузка 1с в google sheets 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/tools/2519580/",
+      "title": "Интеграция 1С с Google Таблицами: Надежная выгрузка через сервисный аккаунт",
+      "from_query": "выгрузка 1с в google sheets 2026"
+    },
+    {
+      "url": "https://dmitriizhuk.ru/2023/05/11/1c-and-google-sheets/",
+      "title": "1c И Гугл Таблицы: Корректный Перенос Данных",
+      "from_query": "выгрузка 1с в google sheets 2026"
+    },
+    {
+      "url": "https://extractor1c.ru/baza-znanij/instrukcii/kak-vygruzit-dannye-iz-1s-v-google-sheets-gugl-tablicy-i-sozdat-bi-dashbord/",
+      "title": "Как выгрузить данные из 1С в Google Sheets (Гугл Таблицы) и создать BI ...",
+      "from_query": "выгрузка 1с в google sheets 2026"
+    },
+    {
+      "url": "https://vk.com/wall-234054051_611",
+      "title": "⚡ Отчеты 1с В Google Sheets Через Make: Настройка За 30 Минут Марина ...",
+      "from_query": "выгрузка 1с в google sheets 2026"
+    },
+    {
+      "url": "https://solatatech.com/article/open-data-protocol-odata-finance-operations-dynamics-365",
+      "title": "Open Data Protocol (OData) - Finance & Operations | Dynamics 365 (2026)",
+      "from_query": "odata standard.odata финансы 2026"
+    },
+    {
+      "url": "https://www.odata.org/documentation/",
+      "title": "Documentation · OData - the Best Way to REST",
+      "from_query": "odata standard.odata финансы 2026"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+      "title": "Open Data Protocol (OData) - Finance & Operations | Dynamics 365",
+      "from_query": "odata standard.odata финансы 2026"
+    },
+    {
+      "url": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/sap-s-4-hana-odata-v4-apis-available-quick-reference-and-available-in-sap/ba-p/14328827",
+      "title": "SAP S/4 HANA OData v4 APIs available - Quick Refer... - SAP Community",
+      "from_query": "odata standard.odata финансы 2026"
+    },
+    {
+      "url": "https://its.1c.ru/db/v851doc/bookmark/dev/TI000001392",
+      "title": "Приложение 12. Описание сущностей, предоставляемых через стандартный ...",
+      "from_query": "odata standard.odata финансы 2026"
+    },
+    {
+      "url": "https://e.fd.ru/1151210",
+      "title": "Как подключить Excel к «1С» через OData и автоматизировать выгрузку ...",
+      "from_query": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста 2026"
+    },
+    {
+      "url": "https://denvic.tech/blog/ekspertnye-stati/vygruzka-dannykh-iz-1s-rasskazyvaem-pro-4-sposoba-i-nakhodim-samyy-optimalnyy/",
+      "title": "Выгрузка данных из 1С: Excel, SQL, Odata, Экстрактор",
+      "from_query": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/k/ka/kak-sdelat-1s-v-eksel.html",
+      "title": "Как выгрузить данные из 1С в Excel: 5 способов с примерами",
+      "from_query": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста 2026"
+    }
+  ]
+}

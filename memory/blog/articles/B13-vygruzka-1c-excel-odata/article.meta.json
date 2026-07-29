@@ -1,0 +1,43 @@
+{
+  "topic_id": "B13",
+  "h1": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста",
+  "title": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста",
+  "description": "Пошаговая выгрузка из 1С в Excel через OData: публикация standard.odata, Power Query, кнопка в Google Sheets и чеклист безопасности без заказной обработки.",
+  "cover_alt": "Тёмный UI-мокап: поток данных из 1С через OData в Excel и Google Sheets",
+  "slug": "vygruzka-1c-excel-odata",
+  "primary_query": "выгрузка из 1с в excel",
+  "secondary_queries": [
+    "odata 1с",
+    "выгрузка 1с в google sheets",
+    "odata standard.odata финансы"
+  ],
+  "char_count": 8760,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "выгрузка из 1С в Excel через OData",
+    "как подключить 1С к Excel по OData",
+    "кнопка Обновить из 1С в Google Sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Выгрузка из 1С в Excel через OData: пошагово без программиста",
+    "title_ctr": "💻 Выгрузка из 1С в Excel через OData: хватит жать \"Сохранить как\" каждый понедельник!",
+    "title_aeo": "Как выгрузить данные из 1С в Excel через OData без программиста?",
+    "description_seo": "Практический гайд: публикация standard.odata, Power Query в Excel, кнопка в Google Sheets и безопасность. Когда хватает OData, а когда звать 1С-ника.",
+    "description_ctr": "⚡️ Один раз настроили OData – дальше обновление по кнопке. Excel, Sheets, ДДС из УНФ и чеклист, что не тащить в облако.",
+    "description_aeo": "Выгрузка из 1С в Excel через OData – повторный HTTP-запрос к живой базе с фильтром. Как опубликовать standard.odata и обновить срез в Power Query или Apps Script."
+  },
+  "geo_qa": {
+    "score": 90,
+    "core_eeat_lite": 18,
+    "verdict": "PASS",
+    "date": "2026-07-22",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  },
+  "cover_family": "gradient_abstract"
+}

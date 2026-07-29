@@ -1,0 +1,10 @@
+{
+  "style_id": "koda_ui_dark",
+  "label_ru": "Тёмный UI-mockup KODA · isometric · без людей",
+  "cover_family": "ui_mockup_dark",
+  "design_code": "memory/cover/cover-concept.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "global_prompt_prefix": "Dark UI mockup for CFO tech blog KODA, background #0a0a0f, accent purple #8b5cf6 and blue #93c5fd, isometric 3D automation nodes, finance dashboards spreadsheets invoices, clean product render, Russian interface labels optional, no people no faces, subtle dot-mesh glow,",
+  "global_prompt_suffix": "single canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each), thin white gutters on center lines only, high detail UI illustration, professional fintech automation aesthetic",
+  "global_negative_prompt": "people faces stock photo humans watermark logo Moscow skyline blurry English-only UI generic corporate office meme collage torn paper"
+}

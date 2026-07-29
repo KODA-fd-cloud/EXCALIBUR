@@ -1,0 +1,10 @@
+{
+  "style_id": "koda_artur_human",
+  "label_ru": "Стиль Артура · Хост Ольга · Разноцветные шрифты · Тёмный KODA UI",
+  "cover_family": "brand_artur_human",
+  "design_code": "memory/cover/cover-design-code-human.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "global_prompt_prefix": "YouTube/Dzen high-CTR thumbnail style for tech-blog KODA, background #0a0a0f, accent purple #8b5cf6 and glowing electric blue #60a5fa, dramatic neon lighting. Top-left cover panel features a realistic cutout of the female host (friendly confident 30-year-old Olga with short dark hair and smart glasses, wearing a purple blazer) on the left, gesturing towards glowing 3D n8n automation nodes, floating spreadsheets and invoice documents. Huge Cyrillic hook title on the right of the cover panel with text in varied sizes, bold weights, and neon colors (yellow #facc15, purple #c084fc, white). Clean isometric tech rendering. Inline panels feature abstract fintech UI dashboards, schemas and comparison tables without any human faces.",
+  "global_prompt_suffix": "single canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each), thin white gutters on center lines, high-detail professional digital illustration, sharp focus, 8k resolution",
+  "global_negative_prompt": "watermark, logo, Moscow skyline, blurry, generic stock photo, corporate boring presentation, unreadable garbled English text, extra fingers, same face on multiple panels, human faces on inline panels"
+}

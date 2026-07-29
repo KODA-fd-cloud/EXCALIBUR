@@ -1,0 +1,16 @@
+{
+  "topic_id": "B20",
+  "slug": "cursor-finansist-skript-dashbord",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "reference_style": "cover-ot-excel-k-fin-konturu-30-dney",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактные голографические световые трассы code-path на тёмно-фиолетовом фоне",
+  "cover_alt_text": "Абстрактные голографические световые трассы code-path на тёмно-фиолетовом фоне",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "scene_hint": "abstract code-path light trails holographic dark purple, no text",
+  "generated_at": "2026-07-22T17:50:00+03:00",
+  "note": "user-mcp-kv unavailable; generated via Cursor GenerateImage with gradient_abstract prompt"
+}

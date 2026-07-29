@@ -1,0 +1,106 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/claude-code-finotdel/#article",
+      "headline": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями",
+      "description": "Как настроить ИИ-агент Claude Code на Windows для финансового отдела. Пошаговые сценарии сверки реестров, категоризации и нормализации данных без программистов.",
+      "datePublished": "2026-06-26",
+      "dateModified": "2026-06-26",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/claude-code-finotdel/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/claude-code-finotdel/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/06/claude-code-finotdel-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "claude code, claude code windows, вайб кодинг, claude code cli, финотдел",
+      "wordCount": 9466,
+      "articleSection": "AI / Vibe-coding",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/claude-code-finotdel/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Безопасно ли загружать финансовые данные в Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Claude Code не отправляет файлы в облако целиком: анализирует структуру, пишет Python-скрипт и выполняет его локально. В облако уходят только метаданные."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит использование Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Claude Code входит в подписку Claude Pro — около 20 долларов в месяц (или 17 при годовой оплате)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли навыки программирования для работы с Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Вы описываете задачу на русском языке, агент пишет код на Python, запускает его и выдает результат."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как запустить сохраненный Python-скрипт без повторной ИИ-генерации?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Запускайте сохранённый файл через python analyse.py — расчёты выполняются без обращения к ИИ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли настроить интеграцию Claude Code с нашей 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: выгружайте данные из 1С в CSV в рабочую папку. Claude Code анализирует файлы локально; скрипты выгрузки агент поможет написать."
+          }
+        }
+      ]
+    }
+  ]
+}

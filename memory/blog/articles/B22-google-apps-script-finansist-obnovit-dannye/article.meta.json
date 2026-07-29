@@ -1,0 +1,31 @@
+{
+  "topic_id": "B22",
+  "h1": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script",
+  "title": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script",
+  "description": "Меню onOpen, refreshFrom1C по OData, Script Properties для учётки 1С и HTML-дашборд HtmlService: кнопка «обновить данные» в Google Sheets.",
+  "cover_alt": "Абстрактная сетка таблицы с импульсом обновления узлов на тёмно-фиолетовом фоне",
+  "slug": "google-apps-script-finansist-obnovit-dannye",
+  "primary_query": "как сделать google apps script кнопку",
+  "secondary_queries": [
+    "google таблицы скрипт кнопка",
+    "apps script финансы",
+    "обновить данные google sheets"
+  ],
+  "char_count": 9253,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "кнопка обновить данные в Google Sheets",
+    "Apps Script меню onOpen для финотдела",
+    "refreshFrom1C OData в таблицу"
+  ],
+  "meta_ab": {
+    "title_seo": "Как сделать google apps script кнопку «обновить данные»",
+    "title_ctr": "💻 Кнопка «обновить данные» в Google Sheets через Apps Script – гайд!",
+    "title_aeo": "Как сделать кнопку обновить данные в Google Sheets через Apps Script?",
+    "description_seo": "Практический гайд: onOpen-меню, Script Properties, OData refreshFrom1C, HtmlService-дашборд, квоты UrlFetch и типичные поломки развёртывания.",
+    "description_ctr": "⚡️ Хватит импортировать CSV руками: меню «Обновить», OData 1С и сводка кассы в Google Apps Script за один вечер.",
+    "description_aeo": "Как сделать google apps script кнопку – bound-скрипт с onOpen, функция refresh и опциональный HtmlService webapp поверх листов таблицы."
+  },
+  "cover_family": "gradient_abstract"
+}

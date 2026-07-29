@@ -1,0 +1,15 @@
+{
+  "topic_id": "B13",
+  "slug": "vygruzka-1c-excel-odata",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "reference_style": "cover-ot-excel-k-fin-konturu-30-dney",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактная голографическая визуализация потока данных OData на тёмном фоне",
+  "cover_alt_text": "Абстрактная голографическая визуализация потока данных OData на тёмном фоне",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "generated_at": "2026-07-22T17:20:00+03:00",
+  "note": "user-mcp-kv unavailable; generated via Cursor GenerateImage with gradient_abstract prompt"
+}

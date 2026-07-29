@@ -1,0 +1,469 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-24",
+    "today_ru": "24.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-26",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-24 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B11",
+    "priority": "P1",
+    "slug": "obezlichivanie-dannyh-chatgpt-finansist",
+    "h1": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты",
+    "primary_query": "обезличивание данных chatgpt",
+    "secondary_queries": [
+      "можно ли загружать 1с в нейросеть",
+      "152 фз chatgpt",
+      "маскирование персональных данных excel"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "обезличивание данных chatgpt 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Утечки коммерческой тайны через ChatGPT 2026: как команды сливают ...",
+          "url": "https://velvetum.com/journal/utechki-kommercheskoy-tayny-cherez-chatgpt-2026",
+          "snippet": ""
+        },
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://www.anti-malware.ru/news/2026-06-17-111332/50389",
+          "snippet": "Заказчик пришёл с проблемой: после внутреннего аудита выяснилось, что 63% сотрудников копируют клиентские данные в публичный ChatGPT для составления писем и аналитики."
+        },
+        {
+          "title": "Как злоумышленники научили ChatGPT помогать обманывать россиян. Способы ...",
+          "url": "https://rg.ru/2026/06/22/reg-dnr/kak-zloumyshlenniki-nauchili-chatgpt-pomogat-obmanyvat-rossiian-sposoby.html",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        },
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://finance.rambler.ru/money/56616889-152-fz-i-neyroseti-kakie-dannye-nelzya-bezdumno-otdavat-chatgpt/",
+          "snippet": "Алгоритмы искусственного интеллекта, как установили сотрудники МВД России, с помощью ChatGPT перенаправляли ..."
+        },
+        {
+          "title": "МВД предупредило о фейковых ссылках в ответах ChatGPT",
+          "url": "https://www.vedomosti.ru/technology/news/2026/06/22/1207888-o-feikovih-ssilkah",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        },
+        {
+          "title": "МВД: ChatGPT может ссылаться на мошеннические ресурсы",
+          "url": "https://ria.ru/20260622/mvd-2100365343.html",
+          "snippet": "ChatGPT может ссылаться на мошеннические сайты при ответе на запрос пользователя, предупредили в управлении по борьбе с противоправным использованием технологий МВД России."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "обезличивание данных chatgpt июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://www.anti-malware.ru/news/2026-06-17-111332/50389",
+          "snippet": ""
+        },
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://finance.rambler.ru/money/56616889-152-fz-i-neyroseti-kakie-dannye-nelzya-bezdumno-otdavat-chatgpt/",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        },
+        {
+          "title": "МВД предупредило об использовании ChatGPT для продвижения фишинговых ...",
+          "url": "https://iz.ru/2119878/2026-06-22/v-mvd-predupredili-o-ssylkakh-na-saity-moshennikov-v-otvetakh-chatgpt",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        },
+        {
+          "title": "МВД: ChatGPT может ссылаться на мошеннические ресурсы",
+          "url": "https://ria.ru/20260622/mvd-2100365343.html",
+          "snippet": "Алгоритмы ChatGPT в ряде случаев перенаправляли покупателей на фейковые интернет-ресурсы ..."
+        },
+        {
+          "title": "Сайты мошенников попали в рекомендации ChatGPT — 22.06.2026 — В мире на ...",
+          "url": "https://ren.tv/news/v-mire/1437594-chatgpt-ne-umeet-otlichat-moshennicheskie-saity-ot-nastoiashchikh-rii",
+          "snippet": "МВД пишет, что \"ChatGPT может ссылаться на мошеннические ресурсы\", само ссылаясь при этом на публикацию на ..."
+        },
+        {
+          "title": "МВД: ChatGPT отправлял пользователей на сайты мошенников",
+          "url": "https://www.sovsekretno.ru/news/mvd-chatgpt-otpravlyal-polzovateley-na-sayty-moshennikov/",
+          "snippet": "Сайты мошенников попали в рекомендации ChatGPT Cайты-двойники, копирующие фирменную символику и описания товаров, появлялись в рекомендациях и помогали похищать данные и деньги."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "обезличивание данных chatgpt новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Утечки коммерческой тайны через ChatGPT 2026: как команды сливают ...",
+          "url": "https://velvetum.com/journal/utechki-kommercheskoy-tayny-cherez-chatgpt-2026",
+          "snippet": ""
+        },
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://www.anti-malware.ru/news/2026-06-17-111332/50389",
+          "snippet": "Заказчик пришёл с проблемой: после внутреннего аудита выяснилось, что 63% сотрудников копируют клиентские данные в публичный ChatGPT для составления писем и аналитики."
+        },
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://finance.rambler.ru/money/56616889-152-fz-i-neyroseti-kakie-dannye-nelzya-bezdumno-otdavat-chatgpt/",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        },
+        {
+          "title": "МВД: ChatGPT может ссылаться на мошеннические ресурсы",
+          "url": "https://ria.ru/20260622/mvd-2100365343.html",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        },
+        {
+          "title": "В России не будут запрещать ChatGPT, DeepSeek и другие зарубежные ...",
+          "url": "https://www.ixbt.com/news/2026/06/22/chatgpt-deepseek-2032.html",
+          "snippet": "МОСКВА, 22 июн - РИА Новости. Иногда алгоритмы искусственного интеллекта перенаправляют покупателей на ..."
+        },
+        {
+          "title": "ChatGPT, Gemini и Claude сливают персональные данные пользователей: кто ...",
+          "url": "https://inauka.ru/tehnologii/2026/05/20/chatgpt-gemini-i-claude-slivaut-personalnye-dannye-polzovatelei-kto-okazalsia-pod-ygrozoi/",
+          "snippet": "В России решили не вводить запрет на использование иностранных нейросетей в уже действующих системах: их применение разрешат вплоть до 2032 года. Об этом пишут ..."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "можно ли загружать 1с в нейросеть 2026",
+      "purpose": "вторичный запрос: можно ли загружать 1с в нейросеть",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Статья по теме \"Нейросети\" для 1С",
+          "url": "https://infostart.ru/1c/articles/integraciya_i_obmen_dannymi/neyroseti_integraciya/",
+          "snippet": ""
+        },
+        {
+          "title": "Нейросети внутри 1С — что уже можно использовать и что в планах?",
+          "url": "https://infostart.ru/1c/articles/2119114/",
+          "snippet": "Если использовать нейросеть в 1С как обычный чат, она почти всегда оставляет разработчику самую дорогую часть работы: ручную выгрузку, перенос кода, проверку и бесконечные уточнения."
+        },
+        {
+          "title": "Вайб кодинг в 1С. Лучшие нейросети для генерации 1С кода",
+          "url": "https://habr.com/ru/articles/908170/",
+          "snippet": "Следовательно, почти любую существующую нейросеть можно подключить к своей системе 1С и обучить на своих данных."
+        },
+        {
+          "title": "Нейросети внутри 1С — что уже можно использовать и что в планах ...",
+          "url": "https://vc.ru/id2905644/1204589-neiroseti-vnutri-1s-chto-uzhe-mozhno-ispolzovat-i-chto-v-planah",
+          "snippet": "В статье кратко на реальных примерах проанализированы возможности генерации кода 1С сетями от Yandex, Sber, Microsoft, Anthropic, DeepSeek, OpenAI, Google Сразу оговорюсь - статья не является истиной..."
+        },
+        {
+          "title": "Нейросети внутри 1С — что уже можно использовать и что в планах?",
+          "url": "https://habr.com/ru/sandbox/217881/",
+          "snippet": "Все нейронные сети имеют свой API, а в 90% случаев взаимодействие идёт по HTTP-сервису. Следовательно, почти любую существующую нейросеть можно подключить к своей системе 1С и обучить на ..."
+        },
+        {
+          "title": "Лучшие нейросети для 1С 2026: сравнение и применение",
+          "url": "https://matrixmsk.ru/blog-ai-bot/eau0cgf5m1-primenenie-neirosetei-v-1s-ot-generatsii",
+          "snippet": "Искусственный интеллект наконец-то может решить проблемы, которые много лет портили жизнь бухгалтерам, директорам и бизнесу в целом."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "152 фз chatgpt 2026",
+      "purpose": "вторичный запрос: 152 фз chatgpt",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ИИ и 152-ФЗ 2026: Юридический гайд для бизнеса в РФ",
+          "url": "https://rocai.ru/news/ai-legal-compliance-sng-2026",
+          "snippet": ""
+        },
+        {
+          "title": "152-ФЗ и нейросети: отправлять ли данные клиентов в ChatGPT | 2026",
+          "url": "https://aibot.direct/blog/152-fz-i-neyroseti",
+          "snippet": "Юридическое поле вокруг ИИ в начале 2026 года стало крайне жестким. Регуляторы больше не закрывают глаза на «тестовые аккаунты ChatGPT», через которые сотрудники сливают базу клиентов."
+        },
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://finance.rambler.ru/money/56616889-152-fz-i-neyroseti-kakie-dannye-nelzya-bezdumno-otdavat-chatgpt/",
+          "snippet": "Разбираем, какие данные считаются персональными по российскому закону, что происходит, когда они уходят в ChatGPT, Claude, Gemini и другие иностранные сервисы, и четыре легальных способа использовать нейросети в бизнесе — от анонимизации до on-premise."
+        },
+        {
+          "title": "152-фз Для Ai-чатбота: Чек-лист Соответствия 2026",
+          "url": "https://tyagalab.ru/blog/152-fz-compliance-checklist-2026",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        },
+        {
+          "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+          "url": "https://www.anti-malware.ru/news/2026-06-17-111332/50389",
+          "snippet": "С 2026 года штрафы за утечку персональных данных выросли до 6 млн ₽ для юрлиц. Если вы ставите AI-бот в клинику, юр. фирму или финкомпанию — вот обязательный чек-лист соответствия 152-ФЗ."
+        },
+        {
+          "title": "152-ФЗ в 2026 году: полный гид по соответствию сайта",
+          "url": "https://help152.ru/articles/152-fz-2026-polnyj-gid",
+          "snippet": "Пока компании массово подключают ChatGPT, Claude, DeepSeek и другие LLM к работе с договорами, тикетами, CRM и корпоративной почтой, многие забывают об одной неприятной детали: вместе с документами в нейросети часто отправляются персональные данные. А значит, в игру вступает 152-ФЗ."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "маскирование персональных данных excel 2026",
+      "purpose": "вторичный запрос: маскирование персональных данных excel",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "БДУ - Уязвимости",
+          "url": "https://bdu.fstec.ru/vul/2026-08326?viewtype=list",
+          "snippet": ""
+        },
+        {
+          "title": "Персональные данные в 2026: что должны делать компания и ИП, чтобы не ...",
+          "url": "https://efsol.ru/articles/personal-data-2026/",
+          "snippet": "BDU:2026-08326: Уязвимость редактора электронных таблиц Microsoft Excel пакетов программ Microsoft Office и Microsoft 365 Apps for Enterprise, связанная с нарушением механизма защиты данных, позволяющая нарушителю обойти ограничения безопасности Вид ..."
+        },
+        {
+          "title": "Гарда Маскирование — система обезличивания данных и надежности их ...",
+          "url": "https://www.garda.ai/products/data-protection/datamasking",
+          "snippet": "Разбираем, что должны делать компания и ИП в 2026 году, чтобы не попасть на штраф. Практически каждая организация работает с персональными данными физлиц. Основные понятия и требования содержатся в Федеральном законе от 27.07.2006 № 152-ФЗ (ред. от 24.06.2025) «О персональных данных»."
+        },
+        {
+          "title": "Новые требования к персональным данным в 2026: что теперь обязательно",
+          "url": "https://companies.rbc.ru/news/lIWDgweSHr/novyie-trebovaniya-k-personalnyim-dannyim-v-2026-chto-teper-obyazatelno/",
+          "snippet": "Гарда Data Masking поддерживают статическое маскирование, а также динамическое маскирование данных cовместно с Гарда DBF"
+        },
+        {
+          "title": "Изменения в законе «О персональных данных» 152-ФЗ в 2026 году: что ...",
+          "url": "https://riverstart.ru/blog/novyie-trebovaniya-kpersonalnyim-dannyim-v2025-pravila-rabotyi-dlya-biznesa-s152-fz",
+          "snippet": "Что нужно сделать уже сейчас? Провести аудит, локализовать данные, обновить документы, получить согласия, минимизировать сбор данных и обеспечить надежную защиту."
+        },
+        {
+          "title": "Цифровая гигиена бизнеса в 2026: персональные данные клиентов, штрафы ...",
+          "url": "https://www.demis.ru/articles/tsifrovaya-gigiena-2026-vse-chto-nuzhno-znat-o-personalnykh-dannykh-klientov/",
+          "snippet": "Кратко о статье: разберем ключевые изменения закона 152-ФЗ и рассмотрим, как компаниям изменить работу с персональными данными."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Утечки коммерческой тайны через ChatGPT 2026: как команды сливают ...",
+          "url": "https://velvetum.com/journal/utechki-kommercheskoy-tayny-cherez-chatgpt-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Бухгалтеры и ИИ — защита финансовых данных перед ChatGPT",
+          "url": "https://secure-prompt.com/ru/blog/accountants-financial-data-ai",
+          "snippet": "Velvetum собрал трёхэшелонный Velvetum-периметр защиты, который удерживает продуктивность нейросетевых сервисов без рисков утечки конфиденциальных атрибутов."
+        },
+        {
+          "title": "Как обезличивать данные перед отправкой в ИИ — шаблон и правила ...",
+          "url": "https://workwithai.ru/read/how-to-anonymize-data-before-ai",
+          "snippet": "This guide shows how accountants can use AI tools like ChatGPT for financial analysis, tax optimization, and audit preparation while keeping client financial data fully protected through client-side anonymization."
+        },
+        {
+          "title": "ChatGPT передаёт данные Google и Meta: как защититься — пошаговая ...",
+          "url": "https://vc.ru/ai/2929388-kak-zashchitit-dannye-ot-chatgpt-google-i-meta",
+          "snippet": "Подробная инструкция по обезличиванию данных перед работой с ИИ: что заменять, как маскировать информацию, какие ошибки допускают чаще всего и готовый шаблон для безопасных запросов."
+        },
+        {
+          "title": "Защита Данных ChatGPT | Предотвращение | anonym.legal",
+          "url": "https://anonym.legal/ru/solutions/chatgpt-protection",
+          "snippet": "Коллективный иск против OpenAI: ChatGPT тайно передавал запросы и email'ы пользователей Google и Meta. Разбираем, что случилось, как работают трекеры и как защитить свои данные прямо сейчас."
+        },
+        {
+          "title": "Политика ИИ 2026: Защитите данные от утечек в ChatGPT и локальные LLM",
+          "url": "https://security.malkov.pw/politika-ii-2026-zashchititie-dannyie-ot-utiechiek-v-chatgpt-i-lokalnyie-llm/",
+          "snippet": "Предотвратите попадание конфиденциальных данных в ChatGPT. Наше расширение Chrome автоматически обнаруживает PII, анонимизирует перед отправкой и деанонимизирует ответы."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://velvetum.com/journal/utechki-kommercheskoy-tayny-cherez-chatgpt-2026",
+      "title": "Утечки коммерческой тайны через ChatGPT 2026: как команды сливают ...",
+      "from_query": "обезличивание данных chatgpt 2026"
+    },
+    {
+      "url": "https://www.anti-malware.ru/news/2026-06-17-111332/50389",
+      "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+      "from_query": "обезличивание данных chatgpt 2026"
+    },
+    {
+      "url": "https://rg.ru/2026/06/22/reg-dnr/kak-zloumyshlenniki-nauchili-chatgpt-pomogat-obmanyvat-rossiian-sposoby.html",
+      "title": "Как злоумышленники научили ChatGPT помогать обманывать россиян. Способы ...",
+      "from_query": "обезличивание данных chatgpt 2026"
+    },
+    {
+      "url": "https://finance.rambler.ru/money/56616889-152-fz-i-neyroseti-kakie-dannye-nelzya-bezdumno-otdavat-chatgpt/",
+      "title": "152-ФЗ и нейросети: какие данные нельзя бездумно отдавать ChatGPT",
+      "from_query": "обезличивание данных chatgpt 2026"
+    },
+    {
+      "url": "https://www.vedomosti.ru/technology/news/2026/06/22/1207888-o-feikovih-ssilkah",
+      "title": "МВД предупредило о фейковых ссылках в ответах ChatGPT",
+      "from_query": "обезличивание данных chatgpt 2026"
+    },
+    {
+      "url": "https://ria.ru/20260622/mvd-2100365343.html",
+      "title": "МВД: ChatGPT может ссылаться на мошеннические ресурсы",
+      "from_query": "обезличивание данных chatgpt 2026"
+    },
+    {
+      "url": "https://iz.ru/2119878/2026-06-22/v-mvd-predupredili-o-ssylkakh-na-saity-moshennikov-v-otvetakh-chatgpt",
+      "title": "МВД предупредило об использовании ChatGPT для продвижения фишинговых ...",
+      "from_query": "обезличивание данных chatgpt июнь 2026"
+    },
+    {
+      "url": "https://ren.tv/news/v-mire/1437594-chatgpt-ne-umeet-otlichat-moshennicheskie-saity-ot-nastoiashchikh-rii",
+      "title": "Сайты мошенников попали в рекомендации ChatGPT — 22.06.2026 — В мире на ...",
+      "from_query": "обезличивание данных chatgpt июнь 2026"
+    },
+    {
+      "url": "https://www.sovsekretno.ru/news/mvd-chatgpt-otpravlyal-polzovateley-na-sayty-moshennikov/",
+      "title": "МВД: ChatGPT отправлял пользователей на сайты мошенников",
+      "from_query": "обезличивание данных chatgpt июнь 2026"
+    },
+    {
+      "url": "https://www.ixbt.com/news/2026/06/22/chatgpt-deepseek-2032.html",
+      "title": "В России не будут запрещать ChatGPT, DeepSeek и другие зарубежные ...",
+      "from_query": "обезличивание данных chatgpt новости 2026"
+    },
+    {
+      "url": "https://inauka.ru/tehnologii/2026/05/20/chatgpt-gemini-i-claude-slivaut-personalnye-dannye-polzovatelei-kto-okazalsia-pod-ygrozoi/",
+      "title": "ChatGPT, Gemini и Claude сливают персональные данные пользователей: кто ...",
+      "from_query": "обезличивание данных chatgpt новости 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/integraciya_i_obmen_dannymi/neyroseti_integraciya/",
+      "title": "Статья по теме \"Нейросети\" для 1С",
+      "from_query": "можно ли загружать 1с в нейросеть 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/2119114/",
+      "title": "Нейросети внутри 1С — что уже можно использовать и что в планах?",
+      "from_query": "можно ли загружать 1с в нейросеть 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/908170/",
+      "title": "Вайб кодинг в 1С. Лучшие нейросети для генерации 1С кода",
+      "from_query": "можно ли загружать 1с в нейросеть 2026"
+    },
+    {
+      "url": "https://vc.ru/id2905644/1204589-neiroseti-vnutri-1s-chto-uzhe-mozhno-ispolzovat-i-chto-v-planah",
+      "title": "Нейросети внутри 1С — что уже можно использовать и что в планах ...",
+      "from_query": "можно ли загружать 1с в нейросеть 2026"
+    },
+    {
+      "url": "https://habr.com/ru/sandbox/217881/",
+      "title": "Нейросети внутри 1С — что уже можно использовать и что в планах?",
+      "from_query": "можно ли загружать 1с в нейросеть 2026"
+    },
+    {
+      "url": "https://matrixmsk.ru/blog-ai-bot/eau0cgf5m1-primenenie-neirosetei-v-1s-ot-generatsii",
+      "title": "Лучшие нейросети для 1С 2026: сравнение и применение",
+      "from_query": "можно ли загружать 1с в нейросеть 2026"
+    },
+    {
+      "url": "https://rocai.ru/news/ai-legal-compliance-sng-2026",
+      "title": "ИИ и 152-ФЗ 2026: Юридический гайд для бизнеса в РФ",
+      "from_query": "152 фз chatgpt 2026"
+    },
+    {
+      "url": "https://aibot.direct/blog/152-fz-i-neyroseti",
+      "title": "152-ФЗ и нейросети: отправлять ли данные клиентов в ChatGPT | 2026",
+      "from_query": "152 фз chatgpt 2026"
+    },
+    {
+      "url": "https://tyagalab.ru/blog/152-fz-compliance-checklist-2026",
+      "title": "152-фз Для Ai-чатбота: Чек-лист Соответствия 2026",
+      "from_query": "152 фз chatgpt 2026"
+    },
+    {
+      "url": "https://help152.ru/articles/152-fz-2026-polnyj-gid",
+      "title": "152-ФЗ в 2026 году: полный гид по соответствию сайта",
+      "from_query": "152 фз chatgpt 2026"
+    },
+    {
+      "url": "https://bdu.fstec.ru/vul/2026-08326?viewtype=list",
+      "title": "БДУ - Уязвимости",
+      "from_query": "маскирование персональных данных excel 2026"
+    },
+    {
+      "url": "https://efsol.ru/articles/personal-data-2026/",
+      "title": "Персональные данные в 2026: что должны делать компания и ИП, чтобы не ...",
+      "from_query": "маскирование персональных данных excel 2026"
+    },
+    {
+      "url": "https://www.garda.ai/products/data-protection/datamasking",
+      "title": "Гарда Маскирование — система обезличивания данных и надежности их ...",
+      "from_query": "маскирование персональных данных excel 2026"
+    },
+    {
+      "url": "https://companies.rbc.ru/news/lIWDgweSHr/novyie-trebovaniya-k-personalnyim-dannyim-v-2026-chto-teper-obyazatelno/",
+      "title": "Новые требования к персональным данным в 2026: что теперь обязательно",
+      "from_query": "маскирование персональных данных excel 2026"
+    },
+    {
+      "url": "https://riverstart.ru/blog/novyie-trebovaniya-kpersonalnyim-dannyim-v2025-pravila-rabotyi-dlya-biznesa-s152-fz",
+      "title": "Изменения в законе «О персональных данных» 152-ФЗ в 2026 году: что ...",
+      "from_query": "маскирование персональных данных excel 2026"
+    },
+    {
+      "url": "https://www.demis.ru/articles/tsifrovaya-gigiena-2026-vse-chto-nuzhno-znat-o-personalnykh-dannykh-klientov/",
+      "title": "Цифровая гигиена бизнеса в 2026: персональные данные клиентов, штрафы ...",
+      "from_query": "маскирование персональных данных excel 2026"
+    },
+    {
+      "url": "https://secure-prompt.com/ru/blog/accountants-financial-data-ai",
+      "title": "Бухгалтеры и ИИ — защита финансовых данных перед ChatGPT",
+      "from_query": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты 2026"
+    },
+    {
+      "url": "https://workwithai.ru/read/how-to-anonymize-data-before-ai",
+      "title": "Как обезличивать данные перед отправкой в ИИ — шаблон и правила ...",
+      "from_query": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/2929388-kak-zashchitit-dannye-ot-chatgpt-google-i-meta",
+      "title": "ChatGPT передаёт данные Google и Meta: как защититься — пошаговая ...",
+      "from_query": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты 2026"
+    },
+    {
+      "url": "https://anonym.legal/ru/solutions/chatgpt-protection",
+      "title": "Защита Данных ChatGPT | Предотвращение | anonym.legal",
+      "from_query": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты 2026"
+    },
+    {
+      "url": "https://security.malkov.pw/politika-ii-2026-zashchititie-dannyie-ot-utiechiek-v-chatgpt-i-lokalnyie-llm/",
+      "title": "Политика ИИ 2026: Защитите данные от утечек в ChatGPT и локальные LLM",
+      "from_query": "Как обезличить финансовые данные перед ChatGPT: 3 уровня защиты 2026"
+    }
+  ]
+}

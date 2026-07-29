@@ -1,27 +1,19 @@
 {
-  "hero_id": "blog-host",
-  "name_ru": "Артур Хорошев",
-  "reference_image": "memory/cover/assets/blog-hero-reference.png",
-  "reference_notes": "Reference = только лицо (очки, quiff, борода). Одежду агент меняет свободно под крючок и тему статьи — не копировать костюм с фото.",
+  "hero_id": "koda-ui",
+  "name_ru": "КОДА (без лица на обложке)",
+  "reference_image": "memory/cover/assets/koda-ui-style-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "reference_url_source": "koda-fd.ru/wp-content",
   "visual_lock": {
-    "face": "овальное лицо, дружелюбная улыбка",
-    "glasses": "круглые чёрные очки",
-    "hair": "густая светло-русый/пепельный quiff, зачёс вверх и вправо",
-    "beard": "аккуратная короткая борода с сединой",
-    "energy": "харизматичный ведущий, ироничный, не клоун"
+    "style": "dark web, dot-mesh optional, purple glow",
+    "palette": "#0a0a0f, #8b5cf6, #93c5fd"
   },
-  "outfit_rule": "Свободный выбор агента: костюм, casual, мем-костюм, реквизит — по cover_hook и scene_hint. Reference photo outfit is NOT mandatory.",
-  "reference_outfit_hint": "На эталонном фото — красный пиджак и бабочка; это лишь один из вариантов, не lock.",
-  "prompt_fragment": "Blog host on COVER ONLY: preserve EXACT face likeness from reference — round black glasses, ash-blonde quiff, salt-and-pepper beard. Outfit, pose, props: agent's creative choice for the meme hook — do NOT copy reference photo clothing unless scene_hint asks.",
+  "outfit_rule": "N/A — no human on cover",
+  "prompt_fragment": "Abstract holographic data visualization: glowing purple #8b5cf6 and blue #93c5fd nodes and light trails on dark #0a0a0f, dot-mesh grid, NO text on image.",
   "cover_hook_rules": [
-    "Обложка = крючок: провокация, узнаваемая боль SEOшника, желание кликнуть",
-    "Крупный русский meme-caption на обложке (2–6 слов), читаемый",
-    "Герой смотрит в камеру или жестом указывает на текст",
-    "Не спойлерить весь гайд — намекнуть на конфликт SEO vs GEO / «текст не читают»",
-    "Одежда героя — на усмотрение агента (мем-костюм, casual, пиджак, худи…) — лицо с reference обязательно",
-    "Design code: fake скрины (Wordstat, отзывы, Telegram), рваная бумага, скотч, розовый маркер, разные мем-реакции — «сделал человек», 16:9"
-  ],
-  "reference_url_hosted": "https://files.catbox.moe/yjlmip.png",
-  "reference_url_source": "catbox",
-  "reference_url_updated_at": "2026-06-11T01:15:30+00:00"
+    "Обложка = намёк на боль CFO (ручная рутина vs автоматизация)",
+    "Без лиц и stock-фото людей",
+    "Читаемый контраст для превью в Яндексе и Telegram",
+    "16:9, без watermark"
+  ]
 }

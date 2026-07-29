@@ -1,0 +1,17 @@
+{
+  "article": "memory/blog/articles/B21-mcp-cursor-finansist-instrumenty/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 1,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 0,
+  "facts": [
+    {
+      "fact": "40 минут",
+      "kind": "metric_or_duration",
+      "context": "таблицы без копипаста содержимого в диалог. За 20–40 минут подключите первый сервер (файлы), проверите зелён",
+      "verified": true,
+      "reason": "Numerical value '40' matched in fact-bank context"
+    }
+  ]
+}

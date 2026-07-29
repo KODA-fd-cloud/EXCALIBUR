@@ -1,0 +1,14 @@
+{
+  "topic_id": "B11",
+  "slug": "obezlichivanie-dannyh-chatgpt-finansist",
+  "cover_family": "gradient_abstract",
+  "pipeline": "flux2_pro_image_to_image_legacy",
+  "reference_url": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-ot-excel-k-fin-konturu-30-dney-1024x576.png",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактная голографическая визуализация потоков защищённых финансовых данных на тёмном фоне",
+  "cover_alt_text": "Абстрактная голографическая визуализация потоков защищённых финансовых данных на тёмном фоне",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "generated_at": "2026-06-26T18:30:00+03:00"
+}

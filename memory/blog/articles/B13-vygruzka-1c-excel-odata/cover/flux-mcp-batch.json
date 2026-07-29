@@ -1,0 +1,25 @@
+{
+  "topic_id": "B13",
+  "pipeline": "flux2_pro_image_to_image_legacy",
+  "cover_family": "gradient_abstract",
+  "status": "blocked_mcp_unavailable",
+  "jobs": [
+    {
+      "tool": "flux2-pro-image-to-image",
+      "server": "user-mcp-kv",
+      "mcp_args": {
+        "prompt": "KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic, abstract OData data flow: left cluster of dense purple nodes (source ledger), luminous HTTP-like light conduit arcs into a central glowing transfer hub, then branching blue trails into a flat grid of receiving nodes (spreadsheet endpoints), directional particle streams suggesting sync/refresh without any UI chrome, match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image",
+        "input_urls": [
+          "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-ot-excel-k-fin-konturu-30-dney-1024x576.png"
+        ],
+        "aspect_ratio": "16:9"
+      }
+    }
+  ],
+  "apply_after": {
+    "script": "scripts/excalibur_blog_apply_flux_cover.py",
+    "article_dir": "memory/blog/articles/B13-vygruzka-1c-excel-odata",
+    "post": ["resize 1200x675", "copy dzen-cover.png", "update cover-registry.json cover_family=gradient_abstract"]
+  },
+  "alt": "Абстрактный поток данных 1С→OData→Excel: фиолетово-синие узлы и линии на тёмном фоне"
+}

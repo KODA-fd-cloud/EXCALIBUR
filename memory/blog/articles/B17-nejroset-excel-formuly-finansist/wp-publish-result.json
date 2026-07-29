@@ -1,0 +1,15 @@
+{
+  "slug": "nejroset-excel-formuly-finansist",
+  "topic_id": "B17",
+  "permalink": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B17-nejroset-excel-formuly-finansist/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 942723,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=146 slug=nejroset-excel-formuly-finansist\nOK featured_image=147\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/nejroset-excel-formuly-finansist-dzen-cover.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

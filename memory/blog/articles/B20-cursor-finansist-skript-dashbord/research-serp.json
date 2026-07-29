@@ -1,0 +1,106 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B20",
+    "priority": "P0",
+    "slug": "cursor-finansist-skript-dashbord",
+    "h1": "Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд",
+    "primary_query": "cursor ai",
+    "secondary_queries": [
+      "cursor для начинающих",
+      "cursor финансист",
+      "vibe coding cursor дашборд"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "cursor ai 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'cursor ai 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "cursor ai июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'cursor ai июль 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "cursor ai новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'cursor ai новости 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "cursor для начинающих 2026",
+      "purpose": "вторичный запрос: cursor для начинающих",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'cursor для начинающих 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "cursor финансист 2026",
+      "purpose": "вторичный запрос: cursor финансист",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'cursor финансист 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "vibe coding cursor дашборд 2026",
+      "purpose": "вторичный запрос: vibe coding cursor дашборд",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'vibe coding cursor дашборд 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [
+    "search failed for 'cursor ai 2026': HTTP Error 403: Forbidden",
+    "search failed for 'cursor ai июль 2026': HTTP Error 403: Forbidden",
+    "search failed for 'cursor ai новости 2026': HTTP Error 403: Forbidden",
+    "search failed for 'cursor для начинающих 2026': HTTP Error 403: Forbidden",
+    "search failed for 'cursor финансист 2026': HTTP Error 403: Forbidden",
+    "search failed for 'vibe coding cursor дашборд 2026': HTTP Error 403: Forbidden",
+    "search failed for 'Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд 2026': HTTP Error 403: Forbidden"
+  ],
+  "unique_urls": []
+}

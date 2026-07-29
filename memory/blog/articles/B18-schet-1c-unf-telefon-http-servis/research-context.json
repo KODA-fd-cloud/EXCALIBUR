@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B18",
+    "priority": "P0",
+    "slug": "schet-1c-unf-telefon-http-servis",
+    "h1": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA",
+    "primary_query": "выставить счет в 1с",
+    "secondary_queries": [
+      "интеграция 1с telegram",
+      "http сервис 1с унф",
+      "счет на оплату с телефона"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B18",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "выставить счет в 1с 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "выставить счет в 1с июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "выставить счет в 1с новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "интеграция 1с telegram 2026",
+      "purpose": "вторичный запрос: интеграция 1с telegram"
+    },
+    {
+      "id": "secondary_2",
+      "query": "http сервис 1с унф 2026",
+      "purpose": "вторичный запрос: http сервис 1с унф"
+    },
+    {
+      "id": "secondary_3",
+      "query": "счет на оплату с телефона 2026",
+      "purpose": "вторичный запрос: счет на оплату с телефона"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B18-schet-1c-unf-telefon-http-servis",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

@@ -1,0 +1,16 @@
+{
+  "topic_id": "B21",
+  "slug": "mcp-cursor-finansist-instrumenty",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "reference_style": "cover-ot-excel-k-fin-konturu-30-dney",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактная голографическая mesh-сеть tool-nodes на тёмно-фиолетово-синем фоне",
+  "cover_alt_text": "Абстрактная голографическая mesh-сеть tool-nodes на тёмно-фиолетово-синем фоне",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "scene_hint": "abstract tool nodes connected mesh holographic dark purple blue, no text",
+  "generated_at": "2026-07-22T18:00:00+03:00",
+  "note": "user-mcp-kv unavailable; generated via Cursor GenerateImage with gradient_abstract prompt"
+}

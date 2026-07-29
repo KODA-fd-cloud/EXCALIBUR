@@ -1,0 +1,45 @@
+{
+  "source": "memory/blog/articles/B04-claude-code-finotdel/article.html",
+  "total_links": 4,
+  "failed_count": 2,
+  "verdict": "fail",
+  "links": [
+    {
+      "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "status": null,
+      "ok": false,
+      "method": "GET",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+    },
+    {
+      "url": "https://koda-fd.ru/club?utm_source=blog&utm_medium=article&utm_campaign=claude-code-finotdel",
+      "status": null,
+      "ok": false,
+      "method": "GET",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
+      "kind": "internal_absolute",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/koda_salebot",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

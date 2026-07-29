@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-17",
+    "today_ru": "17.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-19",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-17 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B01",
+    "priority": "P0",
+    "slug": "n8n-pervichka-iz-pochty-finansist",
+    "h1": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода",
+    "primary_query": "n8n для финансиста",
+    "secondary_queries": [
+      "автоматизация первички n8n",
+      "n8n бухгалтерия",
+      "сбор счетов из почты автоматически"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B01",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "n8n для финансиста 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "n8n для финансиста июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "n8n для финансиста новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация первички n8n 2026",
+      "purpose": "вторичный запрос: автоматизация первички n8n"
+    },
+    {
+      "id": "secondary_2",
+      "query": "n8n бухгалтерия 2026",
+      "purpose": "вторичный запрос: n8n бухгалтерия"
+    },
+    {
+      "id": "secondary_3",
+      "query": "сбор счетов из почты автоматически 2026",
+      "purpose": "вторичный запрос: сбор счетов из почты автоматически"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B01-n8n-pervichka-iz-pochty-finansist",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

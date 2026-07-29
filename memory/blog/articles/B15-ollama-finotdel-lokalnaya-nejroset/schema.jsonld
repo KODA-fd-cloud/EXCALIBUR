@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/ollama-finotdel-lokalnaya-nejroset/#article",
+      "headline": "Как поставить Ollama для финотдела: локальная нейросеть под выгрузки 1С без облака",
+      "description": "Установка Ollama для финотдела: локальная LLM под CSV и выгрузки 1С, выбор модели, сценарии сверки и правило проверки цифр без облака.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/ollama-finotdel-lokalnaya-nejroset/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/ollama-finotdel-lokalnaya-nejroset/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/ollama-finotdel-lokalnaya-nejroset-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактное локальное свечение серверных узлов на тёмной сетке"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "как установить ollama, локальная нейросеть, ollama для бизнеса, локальная llm финансы",
+      "wordCount": 8504,
+      "articleSection": "AI / локальные модели",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/ollama-finotdel-lokalnaya-nejroset/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какая видеокарта нужна для Ollama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Желательна совместимая GPU с достаточным объёмом памяти под выбранную модель – так быстрее. Точную минимальную карту под каждую модель смотрите в карточке модели: важнее вместить веса, чем бренд."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли запускать Ollama только на CPU?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Ответ будет медленнее. Для черновиков финотдела это часто приемлемо, для интерактива здесь и сейчас – раздражает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ollama бесплатна?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сам движок – да, open source. Веса моделей качаются отдельно и у каждой своя лицензия; электричество и железо – ваши."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем локальная модель хуже ChatGPT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Часто слабее на сложных рассуждениях и длинном контексте, сильнее по контролю данных. Выбор – по задаче, не по моде."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Безопасно ли скармливать выгрузки 1С в Ollama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Безопаснее, чем слать их в облако, но не значит можно всё. Ограничьте доступ к папке, не кладите лишние ПДн, не выставляйте API наружу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как связать Ollama с Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Через локальный API endpoint (порт 11434) в настройках совместимого провайдера/агента или через скрипт, который дергает API. Сначала проверьте ответ curl/браузером, потом подключайте IDE."
+          }
+        }
+      ]
+    }
+  ]
+}

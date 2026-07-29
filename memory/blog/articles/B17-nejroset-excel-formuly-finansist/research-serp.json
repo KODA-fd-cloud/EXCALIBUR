@@ -1,0 +1,238 @@
+{
+  "agent": "excalibur-blog",
+  "source": "cursor_websearch",
+  "note": "Шаг 0 (research_start) вернул пустые results; перезаписано живым WebSearch 2026-07-22",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B17",
+    "priority": "P0",
+    "slug": "nejroset-excel-formuly-finansist",
+    "h1": "Как использовать нейросеть для Excel: ChatGPT пишет формулы, сводные и очистку выгрузок",
+    "primary_query": "как использовать нейросеть для excel",
+    "secondary_queries": [
+      "chatgpt формулы excel",
+      "chatgpt сводные таблицы",
+      "ai для excel финансист"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как использовать нейросеть для excel формулы ChatGPT 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "ChatGPT и Excel — GPT-5.4, официальное дополнение и загрузка таблиц",
+          "url": "https://mashagpt.ru/blog/kak-zagruzit-dannye-iz-excel-v-chatgpt",
+          "snippet": "В марте 2026 OpenAI запустила ChatGPT for Excel на GPT-5.4; загрузка таблиц, формулы, модели."
+        },
+        {
+          "title": "ChatGPT для Excel и новые решения для работы с финансовыми данными | OpenAI",
+          "url": "https://openai.com/ru-RU/index/chatgpt-for-excel/",
+          "snippet": "Бета ChatGPT для Excel; GPT-5.4; интеграции финансовых данных; апдейт Google Sheets 22.04.2026."
+        },
+        {
+          "title": "ChatGPT в Excel: что умеет и как использовать - Я зерокодер",
+          "url": "https://ya.zerocoder.ru/chatgpt-v-excel-chto-umeet-i-kak-ispolzovat/",
+          "snippet": "Add-in внутри Excel: таблицы, формулы, объяснение логики на GPT-5.4."
+        },
+        {
+          "title": "ИИ-помощник в Excel: формулы за 10 секунд | Дзен",
+          "url": "https://dzen.ru/a/ai2l3OAECSudCPHW",
+          "snippet": "Шаблон промпта для русской версии Excel с разделителем ; и русскими именами функций."
+        },
+        {
+          "title": "Автоматизация Excel и Google Таблиц с помощью ChatGPT / Хабр",
+          "url": "https://habr.com/ru/companies/sberbank/articles/918676/",
+          "snippet": "Плагин ChatGPT for Excel, API-ключ, UDF AIAssistant в ячейках."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "chatgpt формулы excel СУММЕСЛИМН XLOOKUP промпт",
+      "purpose": "вторичный запрос: chatgpt формулы excel",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "ChatGPT пишет формулы Excel: 7 точных промтов | Дзен",
+          "url": "https://dzen.ru/a/ags2OJne4hbdTbbG",
+          "snippet": "Промпты СУММЕСЛИ/СУММЕСЛИМН; обязательная фраза про русскую Excel и ; ; дебаг #ЗНАЧ!."
+        },
+        {
+          "title": "Нейросеть для Excel: инструменты и промпты 2026 — vc.ru",
+          "url": "https://vc.ru/aihub/2843144-neyroset-dlya-excel-luchshie-instrumenty-i-sovety",
+          "snippet": "Claude vs GPT для формул; XLOOKUP промпт; указать версию Excel."
+        },
+        {
+          "title": "Промпты для Excel. 23 готовых примера",
+          "url": "https://petr-panda.ru/nejroset-chatgpt-excel/",
+          "snippet": "Антипаттерны размытых запросов; явные листы/столбцы для СУММЕСЛИМН."
+        },
+        {
+          "title": "AI-генератор формул Excel | ExcelGPT",
+          "url": "https://excelgpt.app/ru/ai-excel-formula-generator",
+          "snippet": "Сервис генерации формул и гайд по XLOOKUP."
+        },
+        {
+          "title": "Как использовать ChatGPT для генерации формул Excel",
+          "url": "https://external.software/archives/81899",
+          "snippet": "Разбор пайплайна генерации формул; XLOOKUP vs VLOOKUP."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "chatgpt сводные таблицы excel pivot prompt",
+      "purpose": "вторичный запрос: chatgpt сводные таблицы",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "Powerful 50+ ChatGPT Prompts for Excel",
+          "url": "https://learnprompt.org/chat-gpt-prompts-for-excel/",
+          "snippet": "Промпты на layout Pivot Table и VBA на создание сводной."
+        },
+        {
+          "title": "ChatGPT for Excel & Data Analysis: Complete Guide (2026)",
+          "url": "https://www.ai-toolbox.co/chatgpt-management-and-productivity/chatgpt-excel-data-analysis-guide-2026",
+          "snippet": "Дизайн pivot, SUMIFS-альтернатива, VBA automation."
+        },
+        {
+          "title": "ChatGPT Prompts for Excel (2026)",
+          "url": "https://gptprompts.ai/chatgpt-prompts-excel",
+          "snippet": "Пошаговый промпт Build a PivotTable; сравнение Copilot vs ChatGPT."
+        },
+        {
+          "title": "ChatGPT for Excel: 10 Prompts That Actually Work",
+          "url": "https://findskill.ai/blog/chatgpt-for-excel/",
+          "snippet": "Pivot setup guide по колонкам пользователя."
+        },
+        {
+          "title": "How to Create a Blank Pivot Table in Excel Using ChatGPT",
+          "url": "https://www.thebricks.com/resources/guide-how-to-create-a-blank-pivot-table-in-excel-using-chatgpt",
+          "snippet": "VBA-макрос blank pivot + Assign Macro."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "ai для excel финансист формулы выгрузка 1с",
+      "purpose": "вторичный запрос: ai для excel финансист",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "ExcelAI Pro / Умный Excel для 1С | Infostart",
+          "url": "https://infostart.ru/marketplace/2419900/",
+          "snippet": "Обработка 1С: Excel + LLM для классификации/заполнения колонок."
+        },
+        {
+          "title": "«Умный Excel» – ИИ для 1С | Infostart Journal",
+          "url": "https://infostart.ru/journal/news/mir-1s/umnyy-excel-iskusstvennyy-intellekt-dlya-1s-kotoryy-dumaet-za-vas_2468692/",
+          "snippet": "Claude/GPT API внутри 1С для валидации и заполнения Excel."
+        },
+        {
+          "title": "Excel ИИ-агент ExcelMaster",
+          "url": "https://excelmaster.ai/ru",
+          "snippet": "In-Excel агент: формулы, VBA/Python, очистка данных."
+        },
+        {
+          "title": "Сервис «Финансист» — уход из рутины Excel+1С",
+          "url": "https://fin-ctrl.ru/",
+          "snippet": "Автоотчёты без ежедневной ручной сборки в Excel."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "compare_copilot",
+      "query": "Microsoft Copilot Excel vs ChatGPT formulas 2026",
+      "purpose": "FAQ: excel copilot vs chatgpt",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "Frequently asked questions about Copilot in Excel | Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/copilot/frequently-asked-questions-about-copilot-in-excel",
+          "snippet": "Формулы, PivotTables, лицензии; verify before rely."
+        },
+        {
+          "title": "Create PivotTables with Copilot in Excel | Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/topic/create-pivottables-with-copilot-in-excel-93f14f4e-1cb4-4d24-9509-d36a8677d652",
+          "snippet": "Официальные промпты на создание сводных."
+        },
+        {
+          "title": "Format data for Copilot in Excel | Microsoft Support",
+          "url": "https://support.microsoft.com/en-au/topic/format-data-for-copilot-in-excel-1604c8eb-57f1-4db1-8363-d53336228c65",
+          "snippet": "Таблица/supported range; AutoSave обязателен."
+        },
+        {
+          "title": "Excel Copilot vs ChatGPT 2026 | ExcelMojo",
+          "url": "https://www.excelmojo.com/excel-copilot-vs-chatgpt-spreadsheets-2026/",
+          "snippet": "Copilot in-grid vs ChatGPT copy-paste/формулы/VBA."
+        },
+        {
+          "title": "Best AI for Excel 2026: Copilot vs Claude vs ChatGPT",
+          "url": "https://fusioncomputing.ca/best-ai-for-excel-2026-copilot-vs-claude-vs-chatgpt/",
+          "snippet": "Сравнение каналов: in-workbook vs upload vs audit."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "official_xlookup",
+      "query": "XLOOKUP Excel availability Microsoft 365 vs Excel 2016",
+      "purpose": "факт совместимости для антигаллюцинационного блока",
+      "result_count": 2,
+      "results": [
+        {
+          "title": "XLOOKUP function | Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+          "snippet": "XLOOKUP недоступен в Excel 2016 и Excel 2019."
+        },
+        {
+          "title": "Which Excel Versions Have XLOOKUP",
+          "url": "https://www.thespreadsheetguru.com/xlookup-excel-version/",
+          "snippet": "M365, Excel 2021+, Online; не 2016."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    "https://openai.com/ru-RU/index/chatgpt-for-excel/",
+    "https://mashagpt.ru/blog/kak-zagruzit-dannye-iz-excel-v-chatgpt",
+    "https://ya.zerocoder.ru/chatgpt-v-excel-chto-umeet-i-kak-ispolzovat/",
+    "https://dzen.ru/a/ai2l3OAECSudCPHW",
+    "https://dzen.ru/a/ags2OJne4hbdTbbG",
+    "https://habr.com/ru/companies/sberbank/articles/918676/",
+    "https://vc.ru/aihub/2843144-neyroset-dlya-excel-luchshie-instrumenty-i-sovety",
+    "https://petr-panda.ru/nejroset-chatgpt-excel/",
+    "https://gptprompts.ai/chatgpt-prompts-excel",
+    "https://support.microsoft.com/en-us/excel/copilot/frequently-asked-questions-about-copilot-in-excel",
+    "https://support.microsoft.com/en-us/topic/create-pivottables-with-copilot-in-excel-93f14f4e-1cb4-4d24-9509-d36a8677d652",
+    "https://support.microsoft.com/en-au/topic/format-data-for-copilot-in-excel-1604c8eb-57f1-4db1-8363-d53336228c65",
+    "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+    "https://infostart.ru/marketplace/2419900/",
+    "https://www.excelmojo.com/excel-copilot-vs-chatgpt-spreadsheets-2026/"
+  ],
+  "serp_gap": "RU-locale промпты + проверка контрольной суммой + угол финансиста/выгрузка 1С + граница ухода в скрипт; конкуренты — списки промптов и product news без антигаллюцинационного чеклиста"
+}

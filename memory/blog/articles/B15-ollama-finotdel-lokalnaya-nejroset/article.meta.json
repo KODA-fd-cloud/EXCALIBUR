@@ -1,0 +1,43 @@
+{
+  "topic_id": "B15",
+  "h1": "Как поставить Ollama для финотдела: локальная нейросеть под выгрузки 1С без облака",
+  "title": "Как поставить Ollama для финотдела: локальная нейросеть под выгрузки 1С без облака",
+  "description": "Установка Ollama для финотдела: локальная LLM под CSV и выгрузки 1С, выбор модели, сценарии сверки и правило проверки цифр без облака.",
+  "cover_alt": "Абстрактное локальное свечение серверных узлов на тёмной сетке",
+  "slug": "ollama-finotdel-lokalnaya-nejroset",
+  "primary_query": "как установить ollama",
+  "secondary_queries": [
+    "локальная нейросеть",
+    "ollama для бизнеса",
+    "локальная llm финансы"
+  ],
+  "char_count": 8504,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "установка Ollama для финотдела",
+    "локальная нейросеть под выгрузки 1С",
+    "Ollama вместо облака для CSV"
+  ],
+  "meta_ab": {
+    "title_seo": "Как установить Ollama для финотдела: локальная нейросеть без облака",
+    "title_ctr": "💻 Ollama для финотдела: локальная нейросеть под выгрузки 1С без облака",
+    "title_aeo": "Как поставить Ollama и запустить локальную LLM для финансовых CSV?",
+    "description_seo": "Пошагово: установка Ollama, выбор модели под железо, сценарии сверки и категоризации ДДС, лимиты галлюцинаций и политика данных.",
+    "description_ctr": "⚡️ Сырое 1С не в ChatGPT. Поставьте Ollama, прогоните CSV локально и проверяйте цифры руками.",
+    "description_aeo": "Ollama – локальный рантайм LLM на порту 11434. Как установить, какую модель взять и где она помогает финотделу."
+  },
+  "geo_qa": {
+    "score": 88,
+    "core_eeat_lite": 17,
+    "verdict": "PASS",
+    "date": "2026-07-22",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  },
+  "cover_family": "gradient_abstract"
+}

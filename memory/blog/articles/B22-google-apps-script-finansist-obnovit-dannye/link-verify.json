@@ -1,0 +1,49 @@
+{
+  "source": "memory\\blog\\articles\\B22-google-apps-script-finansist-obnovit-dannye\\article.html",
+  "total_links": 4,
+  "failed_count": 0,
+  "verdict": "pass",
+  "note": "Local recheck hit SSL CERTIFICATE_VERIFY_FAILED (expired cert on koda-fd.ru/club); QA gate uses ssl_unverified_recheck; same SSL-noise pattern as B17/B20/B21.",
+  "links": [
+    {
+      "url": "/blog/vygruzka-1c-excel-odata/",
+      "status": 200,
+      "ok": true,
+      "method": "GET",
+      "error": "ssl_unverified_recheck",
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/"
+    },
+    {
+      "url": "/blog/avtomatizaciya-finansov-no-code/",
+      "status": 200,
+      "ok": true,
+      "method": "GET",
+      "error": "ssl_unverified_recheck",
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/"
+    },
+    {
+      "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false,
+      "checked_url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article"
+    },
+    {
+      "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=google-apps-script-finansist-obnovit-dannye",
+      "status": 200,
+      "ok": true,
+      "method": "GET",
+      "error": "ssl_unverified_recheck",
+      "kind": "external",
+      "skipped": false,
+      "checked_url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=google-apps-script-finansist-obnovit-dannye"
+    }
+  ]
+}

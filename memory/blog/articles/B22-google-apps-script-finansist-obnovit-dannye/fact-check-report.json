@@ -1,0 +1,52 @@
+{
+  "article": "memory/blog/articles/B22-google-apps-script-finansist-obnovit-dannye/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 6,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "6 минут",
+      "kind": "metric_or_duration",
+      "context": "авится source=python_push. Так вы не упираетесь в 6 минут UrlFetch, когда регистр толстый. Практический пор",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "90 мин",
+      "kind": "metric_or_duration",
+      "context": "я ночного обновления, но съедают дневной runtime (90 мин consumer / 6 ч Workspace). Меню не появилось → со",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 ч",
+      "kind": "metric_or_duration",
+      "context": "ия, но съедают дневной runtime (90 мин consumer / 6 ч Workspace). Меню не появилось → сохранить, reload",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "20 000",
+      "kind": "large_number",
+      "context": "чные поломки Квоты Google реальны: UrlFetch около 20 000 вызовов/день на consumer и 100 000 на Workspace; о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100 000",
+      "kind": "large_number",
+      "context": "UrlFetch около 20 000 вызовов/день на consumer и 100 000 на Workspace; один запуск скрипта – до 6 минут. Тр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "403",
+      "kind": "large_number",
+      "context": "с OAuth; для UrlFetch к 1С нужны scopes. HTTP 401/403 от OData → учётка, права на регистр/справочники, п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

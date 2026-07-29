@@ -1,0 +1,184 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#article",
+      "headline": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками",
+      "description": "Пошагово: что такое MCP для финансиста, какой сервер подключить первым, mcp.json/Marketplace в Cursor, сценарий отчёта по папке CSV и чеклист секретов.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/mcp-cursor-finansist-instrumenty-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Тёмный UI-мокап: узлы MCP-инструментов связаны с папкой CSV-выгрузок в Cursor"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "mcp cursor финансист, model context protocol cursor, mcp сервер для начинающих, подключить mcp cursor, filesystem mcp cursor csv",
+      "wordCount": 9453,
+      "articleSection": "Cursor / MCP / финотдел",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "MCP это доступ к 1С напрямую?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. MCP даёт агенту tools: файлы, API, браузер. К 1С идите отдельно через OData, HTTP-сервис или выгрузку CSV в папку, которую читает filesystem MCP. Не обещайте себе \"розетку в базу\" за один вечер."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Бесплатно ли подключить MCP в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Протокол открытый. Клиент – Cursor: старт с Hobby с лимитами Agent; стабильная агентная работа с MCP обычно на Pro – сверяйте актуальный тариф на cursor.com/pricing. Community-серверы часто free, но могут просить ключи сторонних API."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем MCP лучше, чем просто прикрепить файл через @?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Один-два файла разово – хватит @. Много файлов, повторные прогоны, свежие данные с диска или API – MCP, чтобы не копипастить. Для сверки двух CSV за вечер см. гайд про скрипт и дашборд."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда писать mcp.json на Windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проект: .cursor/mcp.json в корне папки. Глобально: %USERPROFILE%\\.cursor\\mcp.json. Секреты держите в env, не в git. После ручной правки – перезапуск Cursor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему сервер красный или серый?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте Output → MCP Logs. Проверьте Node/npx, путь к папке, видны ли env из shell-профиля. Сделайте remove+re-add, toggle сервера, рестарт после правки JSON."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли разрешать Auto-run всех tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На пилоте – нет. Оставляйте confirmation. Allowlist включайте только для понятных read-only tools, когда уже видели, что именно вызывается."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#howto",
+      "name": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками",
+      "description": "Подключить filesystem MCP в Cursor, проверить зелёный статус и собрать отчёт по папке CSV без копипаста в чат.",
+      "inLanguage": "ru",
+      "totalTime": "PT40M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Cursor (Settings → Tools & MCP)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Node.js LTS + npx (для stdio filesystem MCP)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "@modelcontextprotocol/server-filesystem"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Обезличенные CSV-выгрузки в папке data/"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Проектный .cursor/mcp.json или глобальный %USERPROFILE%\\.cursor\\mcp.json"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Разберите MCP простыми словами и зафиксируйте DoD",
+          "text": "MCP – протокол-розетка: агент вызывает tools за свежими данными вместо копипаста CSV в чат. Зафиксируйте Definition of Done: агент читает папку data/, выдаёт список файлов и свод без ручной вставки строк. Не ставьте в день 1 GitHub/Figma/Kubernetes «из топа».",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#mcp-prostymi-slovami"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Выберите первый стек: filesystem на папку выгрузок",
+          "text": "Один пилот – один-два сервера. Старт: filesystem с узким path на data/. Browser – опционально для localhost-дашборда. К боевой 1С MCP в день 1 не подключают: сначала CSV в папку или OData.",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#pervyy-stek"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Установите MCP в Cursor и проверьте вызов tool",
+          "text": "Settings → Tools & MCP (Ctrl+Shift+J): Add to Cursor / Marketplace или ручной mcp.json (проектный .cursor/mcp.json либо %USERPROFILE%\\.cursor\\mcp.json). Секреты только через env. После правки JSON – рестарт. Зелёный индикатор + тестовый промпт «перечисли файлы в data/» с approve tool.",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#ustanovka-mcp"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Прогоните сценарий отчёта по папке CSV",
+          "text": "Положите обезличенные выгрузки в data/. В Agent: список файлов → заголовки → дубли/итоги → out/report.md. Подтвердите только чтение нужной папки. Сверьте глазами 2–3 строки с исходным CSV.",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#scenariy-otchyot"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Закройте риски: path, секреты, confirmation",
+          "text": "Path только на data/, не на весь диск. Ключи в .env / env UI, .env в .gitignore. Не коммитьте пароли 1С в mcp.json. На пилоте – confirmation tools, без Auto-run всего. Боевые срезы – Privacy Mode и без сырых ПДн в облачных MCP.",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/#riski-mcp"
+        }
+      ]
+    }
+  ]
+}

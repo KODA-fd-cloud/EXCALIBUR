@@ -1,0 +1,56 @@
+{
+  "source": "memory/blog/articles/B13-vygruzka-1c-excel-odata/article.html",
+  "total_links": 5,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://koda-fd.ru/blog/ot-excel-k-fin-konturu-30-dney/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/ot-excel-k-fin-konturu-30-dney/"
+    },
+    {
+      "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+    },
+    {
+      "url": "https://koda-fd.ru/club?utm_source=blog&utm_medium=article&utm_campaign=vygruzka-1c-excel-odata",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_absolute",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/koda_salebot",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ],
+  "ssl_note": "koda-fd.ru cert expired; HTTP checked with ssl.create_default_context patched to unverified; all targets 200"
+}

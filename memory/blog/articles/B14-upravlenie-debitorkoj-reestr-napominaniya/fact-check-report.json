@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/B14-upravlenie-debitorkoj-reestr-napominaniya/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "unt Сколько ждут 185 000 due_date Плановая оплата 2026-06-15 days_overdue Формула от сегодня =MAX(0; TOD",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 дней",
+      "kind": "metric_or_duration",
+      "context": "недрения на месяц. Схема статусов: due_soon (за 3–5 дней до срока) → day_0 (день оплаты) → overdue_1 (1–7)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 дней",
+      "kind": "metric_or_duration",
+      "context": "йте под свой цикл сделки: для услуг с постоплатой 14 дней \"жёсткий\" порог можно сдвинуть, для предоплаты –",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "с вложением счёта/акта + просьба ответить датой. +7 дней: \"Предлагаю зафиксировать график из 2–3 платежей.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "нный финконтур – маршрут от Excel к финконтуру за 30 дней . Материалы и разборы контуров – в закрытом клубе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 минут",
+      "kind": "metric_or_duration",
+      "context": "закрытом клубе KODA . Сделайте: пятничный разбор 15 минут по overdue. Не делайте: считать успехом \"отправил",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "145",
+      "kind": "large_number",
+      "context": "в облаке) invoice_id / основание О чём речь Счёт 145 от 01.06 amount Сколько ждут 185 000 due_date План",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "185 000",
+      "kind": "large_number",
+      "context": "О чём речь Счёт 145 от 01.06 amount Сколько ждут 185 000 due_date Плановая оплата 2026-06-15 days_overdue Ф",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

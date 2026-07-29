@@ -1,0 +1,31 @@
+{
+  "topic_id": "B23",
+  "h1": "Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С",
+  "title": "Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С",
+  "description": "AGENTS.md и .cursor/rules/*.mdc для финотдела: папки data/out, запрет ПДн и сырых выгрузок 1С, связь с базой знаний и MCP.",
+  "cover_alt": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне",
+  "slug": "cursor-rules-finotdel",
+  "primary_query": "как настроить cursor rules",
+  "secondary_queries": [
+    "agents.md cursor",
+    ".cursorrules финансы",
+    "правила cursor для команды"
+  ],
+  "char_count": 8930,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "Cursor Rules для финотдела",
+    "AGENTS.md запрет сырых выгрузок 1С",
+    "project rules папки data и out"
+  ],
+  "meta_ab": {
+    "title_seo": "Как настроить cursor rules для финотдела и запрета 1С",
+    "title_ctr": "💻 Cursor Rules для финотдела: папки, стиль и запрет сырых выгрузок 1С!",
+    "title_aeo": "Как настроить Cursor Rules для финотдела: AGENTS.md и запрет ПДн?",
+    "description_seo": "Пошагово: AGENTS.md, .mdc always/globs, минимум security для data/, связь с базой знаний и MCP, шаблон на команду без культа сложности.",
+    "description_ctr": "⚡️ Агент снова предлагает закоммитить выгрузку 1С? Настройте Cursor Rules и AGENTS.md под финотдел за один вечер.",
+    "description_aeo": "Как настроить cursor rules – создать AGENTS.md и .cursor/rules/*.mdc с alwaysApply security, папками data/out и запретом сырых ПДн."
+  },
+  "cover_family": "gradient_abstract"
+}

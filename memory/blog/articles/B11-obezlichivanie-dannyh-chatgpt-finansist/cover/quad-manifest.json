@@ -1,0 +1,42 @@
+{
+  "topic_id": "B11",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "koda_ui_dark",
+  "style_file": "memory/cover/quad-style-koda-ui-dark.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Сотрудники тайно сливают 1С в ChatGPT? 3 уровня защиты CFO",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_ui_hook",
+      "alt": "Тёмный UI-мокап: обезличивание финансовых данных перед ChatGPT — щит 152-ФЗ и маскирование Excel",
+      "scene_hint": "Тёмный #0a0a0f dashboard: красный warning badge «152-ФЗ», иконка щита, замаскированная таблица Excel с [ИНН_01] токенами, стрелка к облаку ChatGPT с замком, фиолетовые акценты #8b5cf6 и синий #2563EB, isometric 3D, без людей, крупный кириллический hook",
+      "meme_caption_ru": "ПДн в облако? Нет."
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Как CFO контролировать скрытые угрозы: почему нельзя игнорировать утечки в ChatGPT",
+      "visual_type": "infographic_card",
+      "scene_hint": "Карточка фактов: 63% сотрудников, штраф 6 млн ₽, 152-ФЗ 2025 — тёмный UI mockup, красные алерты",
+      "alt": "Инфографика: риски утечек финданных в ChatGPT и штрафы 152-ФЗ"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Уровень 1. Как настроить ручное маскирование в Excel перед отправкой в ИИ",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема маскирования Excel: удалить ФИО/ИНН → индексы контрагентов → проценты вместо сумм, isometric на тёмном фоне",
+      "alt": "Схема ручного маскирования финансовых данных в Excel перед ИИ"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Уровень 2. Настройте локальный прокси-фильтр в ОЗУ для работы по API",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow: 1С → локальный Python прокси Presidio в ОЗУ → API OpenAI → ответ → размаскирование, glowing nodes purple blue",
+      "alt": "Схема локального прокси-фильтра деперсонализации для API нейросетей"
+    }
+  }
+}

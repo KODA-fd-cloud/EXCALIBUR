@@ -1,0 +1,15 @@
+{
+  "slug": "obezlichivanie-dannyh-chatgpt-finansist",
+  "topic_id": "B11",
+  "permalink": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B11-obezlichivanie-dannyh-chatgpt-finansist/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1290519,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=81 slug=obezlichivanie-dannyh-chatgpt-finansist\nOK featured_image=132\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/06/obezlichivanie-dannyh-chatgpt-finansist-dzen-cover-4.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

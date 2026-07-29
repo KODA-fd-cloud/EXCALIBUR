@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B13",
+    "priority": "P0",
+    "slug": "vygruzka-1c-excel-odata",
+    "h1": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста",
+    "primary_query": "выгрузка из 1с в excel",
+    "secondary_queries": [
+      "odata 1с",
+      "выгрузка 1с в google sheets",
+      "odata standard.odata финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B13",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "выгрузка из 1с в excel 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "выгрузка из 1с в excel июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "выгрузка из 1с в excel новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "odata 1с 2026",
+      "purpose": "вторичный запрос: odata 1с"
+    },
+    {
+      "id": "secondary_2",
+      "query": "выгрузка 1с в google sheets 2026",
+      "purpose": "вторичный запрос: выгрузка 1с в google sheets"
+    },
+    {
+      "id": "secondary_3",
+      "query": "odata standard.odata финансы 2026",
+      "purpose": "вторичный запрос: odata standard.odata финансы"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B13-vygruzka-1c-excel-odata",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

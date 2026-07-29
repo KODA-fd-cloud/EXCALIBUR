@@ -1,0 +1,459 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B19",
+    "priority": "P0",
+    "slug": "python-finansist-sverka-csv",
+    "h1": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel",
+    "primary_query": "как начать python для финансиста",
+    "secondary_queries": [
+      "сверка csv python",
+      "pandas сверка таблиц",
+      "python excel финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как начать python для финансиста 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как использовать Python в финансах: от анализа до автоматизации",
+          "url": "https://kurshub.ru/journal/blog/python-dlya-finansov-prostoj-sposob-stat-produktivnee/",
+          "snippet": ""
+        },
+        {
+          "title": "Книга «Python для финансистов» / Хабр - Habr",
+          "url": "https://habr.com/ru/companies/piter/articles/735786/",
+          "snippet": "Python для финансов: автоматизация процессов, анализ данных, торговые стратегии. Библиотеки и примеры, которые помогут вам начать прямо сейчас."
+        },
+        {
+          "title": "Технологии финансиста будущего: от анализа данных к решению с Python ...",
+          "url": "https://www.hse.ru/edu/dpo/1101064910",
+          "snippet": "Эта книга подойдет руководителям, которые хотят узнать о применении Python в области финансов. В то же время она будет полезна тем, кто уже владеет Python или другим языком программирования и хочет узнать, как их можно использовать в данной сфере."
+        },
+        {
+          "title": "Как выучить Python с нуля в 2026 году ... - Habr",
+          "url": "https://habr.com/ru/articles/1008648/",
+          "snippet": "В процессе обучения вы приобретаете практические навыки работы с данными и генеративным искусственным интеллектом, включая сбор данных из бесплатных источников, автоматизацию процессов в Excel и Python, финансовое моделирование, применение ИИ для анализа и прогнозирования, а также интеграцию с Power BI и использование нейросетей для генерации кода."
+        },
+        {
+          "title": "Учебные курсы - Python для финансистов 2025 и 2026 учебного года ...",
+          "url": "https://finance.hse.ru/courses/1048940511.html",
+          "snippet": "Разбираемся, как выстроить путь обучения, какие курсы выбрать и чего ожидать на выходе."
+        },
+        {
+          "title": "Python и SQL для финансиста: автоматизация анализа и отчетности",
+          "url": "https://analitik-dannyh-obucheniye.ru/prof/kak-finansistu-osvoit-python-i-sql",
+          "snippet": "This is an introductory course on programming in Python, one of the most popular data-centric programming languages widely used across industries and in the academic environment."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как начать python для финансиста июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Книга «Python для финансистов» / Хабр - Habr",
+          "url": "https://habr.com/ru/companies/piter/articles/735786/",
+          "snippet": ""
+        },
+        {
+          "title": "Как использовать Python в финансах: от анализа до автоматизации",
+          "url": "https://kurshub.ru/journal/blog/python-dlya-finansov-prostoj-sposob-stat-produktivnee/",
+          "snippet": "Эта книга подойдет руководителям, которые хотят узнать о применении Python в области финансов. В то же время она будет полезна тем, кто уже владеет Python или другим языком программирования и хочет узнать, как их можно использовать в данной сфере."
+        },
+        {
+          "title": "Технологии финансиста будущего: от анализа данных к решению с Python ...",
+          "url": "https://www.hse.ru/edu/dpo/1101064910",
+          "snippet": "Python для финансов: автоматизация процессов, анализ данных, торговые стратегии. Библиотеки и примеры, которые помогут вам начать прямо сейчас."
+        },
+        {
+          "title": "Как выучить Python с нуля в 2026 году ... - Habr",
+          "url": "https://habr.com/ru/articles/1008648/",
+          "snippet": "В процессе обучения вы приобретаете практические навыки работы с данными и генеративным искусственным интеллектом, включая сбор данных из бесплатных источников, автоматизацию процессов в Excel и Python, финансовое моделирование, применение ИИ для анализа и прогнозирования, а также интеграцию с Power BI и использование нейросетей для генерации кода."
+        },
+        {
+          "title": "Python для финансистов 2025 и 2026 учебного года — Учебные курсы ...",
+          "url": "https://www.hse.ru/ma/companyfin/courses/1048940511.html",
+          "snippet": "Разбираемся, как выстроить путь обучения, какие курсы выбрать и чего ожидать на выходе."
+        },
+        {
+          "title": "Учебные курсы - Python для финансистов 2025 и 2026 учебного года ...",
+          "url": "https://finance.hse.ru/courses/1048940511.html",
+          "snippet": "The main goal of the course is to provide the students with programming toolbox, form competence in basic Python as well as data-related Python libraries, and also prepare the students for studying more advanced topics and conducting rigorous empirical analyses on their own."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как начать python для финансиста новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Технологии финансиста будущего: от анализа данных к решению с Python ...",
+          "url": "https://www.hse.ru/edu/dpo/1101064910",
+          "snippet": ""
+        },
+        {
+          "title": "Как использовать Python в финансах: от анализа до автоматизации",
+          "url": "https://kurshub.ru/journal/blog/python-dlya-finansov-prostoj-sposob-stat-produktivnee/",
+          "snippet": "Программа впервые сочетает практическое освоение Python для финансового моделирования и автоматизации с углубленным применением Power Query в Excel для работы с API и JSON-данными, дополняя это ..."
+        },
+        {
+          "title": "Python в 2026: путеводитель от основ до middle-уровня",
+          "url": "https://tproger.ru/articles/python--polnyj-putevoditel-dlya-razrabotchika",
+          "snippet": "Python для финансов: автоматизация процессов, анализ данных, торговые стратегии. Библиотеки и примеры, которые помогут вам начать прямо сейчас."
+        },
+        {
+          "title": "Python и SQL для финансиста: автоматизация анализа и отчетности",
+          "url": "https://analitik-dannyh-obucheniye.ru/prof/kak-finansistu-osvoit-python-i-sql",
+          "snippet": "Это навигационный хаб: мы кратко разберём каждую важную область Python и дадим ссылки на подробные материалы Tproger, где каждая тема раскрыта в деталях."
+        },
+        {
+          "title": "Учебные курсы - Python для финансистов 2025 и 2026 учебного года ...",
+          "url": "https://finance.hse.ru/courses/1048940511.html",
+          "snippet": "Начните с изучения базового синтаксиса Python и SQL, а затем переходите к специализированным библиотекам для финансового анализа, таким как pandas, numpy и matplotlib."
+        },
+        {
+          "title": "Изучение Python с нуля: дорожная карта 2026",
+          "url": "https://tproger.ru/articles/python-roadmap",
+          "snippet": "This is an introductory course on programming in Python, one of the most popular data-centric programming languages widely used across industries and in the academic environment."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "сверка csv python 2026",
+      "purpose": "вторичный запрос: сверка csv python",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "csv — CSV File Reading and Writing — Python 3.14.6 documentation",
+          "url": "https://docs.python.org/3/library/csv.html",
+          "snippet": ""
+        },
+        {
+          "title": "Работа с CSV в Python | PurpleSchool",
+          "url": "https://purpleschool.ru/knowledge-base/python/files-mods/rabota-s-csv-v-python",
+          "snippet": "The csv module implements classes to read and write tabular data in CSV format. It allows programmers to say, \"write this data in the format preferred by Excel,\" or \"read data from this file which was generated by Excel,\" without knowing the precise details of the CSV format used by Excel."
+        },
+        {
+          "title": "CSV-файл в Python: чтение и запись",
+          "url": "https://pythonpip.ru/osnovy/csv-fajl-v-python-chtenie-i-zapis/",
+          "snippet": "Научитесь работать с CSV файлами в Python — чтение, запись, использование модуля csv и обработка табличных данных в коде."
+        },
+        {
+          "title": "python - Разбираемся с CSV: От стандартного модуля до магии Pandas",
+          "url": "https://runebook.dev/ru/docs/python/library/csv",
+          "snippet": "Как открыть CSV-файл в Python? Чтобы открыть CSV-файл в Python, воспользуйтесь библиотекой csv, которая предлагает простые методы для чтения и записи данных в этом формате."
+        },
+        {
+          "title": "Изучаем Python: модуль csv для начинающих с домашним заданием",
+          "url": "https://habr.com/ru/articles/960804/",
+          "snippet": "Используй кодировку utf-8-sig, если хочешь, чтобы Excel в Windows открывал твой файл корректно и сразу видел русский текст. Надеюсь, это краткое руководство поможет тебе в твоих проектах! Если что-то непонятно — смело спрашивай. Работа с файлами — это всегда немного приключение."
+        },
+        {
+          "title": "Автоматизирую Excel и CSV на Python: отчеты, сверка, обработка за 1 500 ...",
+          "url": "https://kwork.ru/software/51968019/avtomatiziruyu-excel-i-csv-na-python-otchety-sverka-obrabotka",
+          "snippet": "Для работы с такими файлами в Python есть идеальный инструмент — встроенный модуль csv. Он позволяет без установки внешних библиотек автоматизировать рутинные задачи: читать многотысячные отчеты, фильтровать строки или генерировать новые файлы на лету."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "pandas сверка таблиц 2026",
+      "purpose": "вторичный запрос: pandas сверка таблиц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "pandas documentation — pandas 3.0.4 documentation",
+          "url": "https://pandas.pydata.org/docs/",
+          "snippet": ""
+        },
+        {
+          "title": "Release notes — pandas 3.0.4 documentation",
+          "url": "https://pandas.pydata.org/docs/whatsnew/index.html",
+          "snippet": "They contain an introduction to pandas' main concepts and links to additional tutorials. The user guide provides in-depth information on the key concepts of pandas with useful background information and explanation. The reference guide contains a detailed description of the pandas API."
+        },
+        {
+          "title": "Pandas в 2026: Эволюция Python для анализа данных",
+          "url": "https://ai.itoq.ru/blog/pandas-v-2026-evolyutsiya-python-dlya-analiza-dannykh",
+          "snippet": "Release notes # This is the list of changes to pandas between each release. For full details, see the commit logs. For install and upgrade instructions, see Installation. Version 3.0 # What's new in 3.0.4 (June 28, 2026) Fixed regressions Bug fixes Contributors What's new in 3.0.3 (May 11, 2026) Enhancements Fixed regressions Bug fixes ..."
+        },
+        {
+          "title": "EDA на pandas для Data Science в 2026 году: с чего начать?",
+          "url": "https://senatorovai.com/eda-v-python-dlya-data-science-s-chego-nachat-i-na-chto-smotret/",
+          "snippet": "Что ждет pandas в ближайшем будущем? Давайте заглянем в 2026 год и попробуем спрогнозировать развитие этой незаменимой библиотеки."
+        },
+        {
+          "title": "Объяснение работы с DataFrame Pandas на примерах в 2026 году",
+          "url": "https://www.youstable.com/ru/%D0%91%D0%BB%D0%BE%D0%B3/%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA-pandas/",
+          "snippet": "EDA в pandas для Data Science: как читать таблицу, находить пропуски, выбросы, смещения, странные категории и превращать первичный просмотр данных в осмысленный этап анализа."
+        },
+        {
+          "title": "Руководство библиотеке Pandas на Python",
+          "url": "https://metanit.com/python/pandas/",
+          "snippet": "Pandas DataFrame: объяснение с примерами в 2026 году. Научитесь создавать, фильтровать, объединять, обрабатывать пропущенные значения и оптимизировать анализ данных в Python."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "python excel финансы 2026",
+      "purpose": "вторичный запрос: python excel финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Финансовое моделирование в Python и Excel: мой путь перехода на код",
+          "url": "https://habr.com/ru/companies/sibur_official/articles/917120/",
+          "snippet": ""
+        },
+        {
+          "title": "Python-in-Excel 2026 Edition - Google Books",
+          "url": "https://books.google.com/books/about/Python_in_Excel_2026_Edition.html?id=f8PF0QEACAAJ",
+          "snippet": "Почему я, как гуманитарий, начала осваивать Python. Как связка Excel + Python работает на практике. Как один и тот же проект ведёт себя в этих двух мирах."
+        },
+        {
+          "title": "Технологии финансиста будущего: от анализа данных к решению с Python ...",
+          "url": "https://www.hse.ru/edu/dpo/1101064910",
+          "snippet": "Python-in-Excel 2026 Edition is the definitive guide for modern finance teams, FP&A professionals, data analysts, and anyone who needs to build intelligent models without leaving Excel."
+        },
+        {
+          "title": "Шардин М. - Excel, Python и API: автоматизаци",
+          "url": "https://rutracker.org/forum/viewtopic.php?t=6840804",
+          "snippet": "Всем, кто хочет освоить современные инструменты анализа данных, ИИ и автоматизации в финансах."
+        },
+        {
+          "title": "Python-in-Excel 2026 Edition: The Complete Finance & FP&A ... - Amazon",
+          "url": "https://www.amazon.com/Python-Excel-2026-Integration-Comprehensive/dp/B0G4LY82NF",
+          "snippet": "Описание: Эта книга не просто абстрактная документация по изучению Excel, Python или API, и программирование в ней выступает не как профессия, а как бытовой навык, такой как умение пользоваться таблицами или Интернетом."
+        },
+        {
+          "title": "Python-in-Excel 2026 Edition: The Complete Finance & FP&A Integration ...",
+          "url": "https://www.clcoding.com/2025/12/python-in-excel-2026-edition-complete.html",
+          "snippet": "Python-in-Excel 2026 Edition is the definitive guide for modern finance teams, FP&A professionals, data analysts, and anyone who needs to build intelligent models without leaving Excel."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Исполняемые доки Python: CSV-файлы | Coddy",
+          "url": "https://coddy.tech/docs/ru/python/csv",
+          "snippet": ""
+        },
+        {
+          "title": "Изучаем Python: модуль csv для начинающих с домашним заданием",
+          "url": "https://habr.com/ru/articles/960804/",
+          "snippet": "Исполняемая документация Python - редактируйте и запускайте каждый пример прямо в браузере, без установки."
+        },
+        {
+          "title": "Работа с CSV в Python | PurpleSchool",
+          "url": "https://purpleschool.ru/knowledge-base/python/files-mods/rabota-s-csv-v-python",
+          "snippet": "В этой статье мы разберем все необходимое для уверенной работы с модулем csv: от основ чтения и записи до обработки данных в формате словарей и настройки нестандартных форматов."
+        },
+        {
+          "title": "Pandas: Чтение внешних данных из CSV-файлов | LabEx",
+          "url": "https://labex.io/ru/tutorials/pandas-pandas-reading-external-data-596396",
+          "snippet": "Научитесь работать с CSV файлами в Python — чтение, запись, использование модуля csv и обработка табличных данных в коде."
+        },
+        {
+          "title": "Pandas на Python: От чтения CSV до сложной аналитики за 1 статью",
+          "url": "https://habr.com/ru/articles/1005114/",
+          "snippet": "В этой лабораторной работе вы научитесь использовать pd.read_csv () для импорта данных из CSV-файла в Pandas DataFrame. Мы рассмотрим, как обрабатывать комментарии, указывать заголовки, управлять пропущенными значениями и выполнять первоначальный осмотр загруженных данных."
+        },
+        {
+          "title": "Полный гайд: как работать с CSV-файлами в Python",
+          "url": "https://pythonlib.ru/post17",
+          "snippet": "DataFrame — это двумерная таблица, с которой вы и будете работать 99% времени. Это ваш рабочий лист Excel, таблица из SQL-базы или загруженный CSV-файл. Чтобы не быть голословными, давайте создадим DataFrame прямо сейчас."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://kurshub.ru/journal/blog/python-dlya-finansov-prostoj-sposob-stat-produktivnee/",
+      "title": "Как использовать Python в финансах: от анализа до автоматизации",
+      "from_query": "как начать python для финансиста 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/piter/articles/735786/",
+      "title": "Книга «Python для финансистов» / Хабр - Habr",
+      "from_query": "как начать python для финансиста 2026"
+    },
+    {
+      "url": "https://www.hse.ru/edu/dpo/1101064910",
+      "title": "Технологии финансиста будущего: от анализа данных к решению с Python ...",
+      "from_query": "как начать python для финансиста 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/1008648/",
+      "title": "Как выучить Python с нуля в 2026 году ... - Habr",
+      "from_query": "как начать python для финансиста 2026"
+    },
+    {
+      "url": "https://finance.hse.ru/courses/1048940511.html",
+      "title": "Учебные курсы - Python для финансистов 2025 и 2026 учебного года ...",
+      "from_query": "как начать python для финансиста 2026"
+    },
+    {
+      "url": "https://analitik-dannyh-obucheniye.ru/prof/kak-finansistu-osvoit-python-i-sql",
+      "title": "Python и SQL для финансиста: автоматизация анализа и отчетности",
+      "from_query": "как начать python для финансиста 2026"
+    },
+    {
+      "url": "https://www.hse.ru/ma/companyfin/courses/1048940511.html",
+      "title": "Python для финансистов 2025 и 2026 учебного года — Учебные курсы ...",
+      "from_query": "как начать python для финансиста июль 2026"
+    },
+    {
+      "url": "https://tproger.ru/articles/python--polnyj-putevoditel-dlya-razrabotchika",
+      "title": "Python в 2026: путеводитель от основ до middle-уровня",
+      "from_query": "как начать python для финансиста новости 2026"
+    },
+    {
+      "url": "https://tproger.ru/articles/python-roadmap",
+      "title": "Изучение Python с нуля: дорожная карта 2026",
+      "from_query": "как начать python для финансиста новости 2026"
+    },
+    {
+      "url": "https://docs.python.org/3/library/csv.html",
+      "title": "csv — CSV File Reading and Writing — Python 3.14.6 documentation",
+      "from_query": "сверка csv python 2026"
+    },
+    {
+      "url": "https://purpleschool.ru/knowledge-base/python/files-mods/rabota-s-csv-v-python",
+      "title": "Работа с CSV в Python | PurpleSchool",
+      "from_query": "сверка csv python 2026"
+    },
+    {
+      "url": "https://pythonpip.ru/osnovy/csv-fajl-v-python-chtenie-i-zapis/",
+      "title": "CSV-файл в Python: чтение и запись",
+      "from_query": "сверка csv python 2026"
+    },
+    {
+      "url": "https://runebook.dev/ru/docs/python/library/csv",
+      "title": "python - Разбираемся с CSV: От стандартного модуля до магии Pandas",
+      "from_query": "сверка csv python 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/960804/",
+      "title": "Изучаем Python: модуль csv для начинающих с домашним заданием",
+      "from_query": "сверка csv python 2026"
+    },
+    {
+      "url": "https://kwork.ru/software/51968019/avtomatiziruyu-excel-i-csv-na-python-otchety-sverka-obrabotka",
+      "title": "Автоматизирую Excel и CSV на Python: отчеты, сверка, обработка за 1 500 ...",
+      "from_query": "сверка csv python 2026"
+    },
+    {
+      "url": "https://pandas.pydata.org/docs/",
+      "title": "pandas documentation — pandas 3.0.4 documentation",
+      "from_query": "pandas сверка таблиц 2026"
+    },
+    {
+      "url": "https://pandas.pydata.org/docs/whatsnew/index.html",
+      "title": "Release notes — pandas 3.0.4 documentation",
+      "from_query": "pandas сверка таблиц 2026"
+    },
+    {
+      "url": "https://ai.itoq.ru/blog/pandas-v-2026-evolyutsiya-python-dlya-analiza-dannykh",
+      "title": "Pandas в 2026: Эволюция Python для анализа данных",
+      "from_query": "pandas сверка таблиц 2026"
+    },
+    {
+      "url": "https://senatorovai.com/eda-v-python-dlya-data-science-s-chego-nachat-i-na-chto-smotret/",
+      "title": "EDA на pandas для Data Science в 2026 году: с чего начать?",
+      "from_query": "pandas сверка таблиц 2026"
+    },
+    {
+      "url": "https://www.youstable.com/ru/%D0%91%D0%BB%D0%BE%D0%B3/%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA-pandas/",
+      "title": "Объяснение работы с DataFrame Pandas на примерах в 2026 году",
+      "from_query": "pandas сверка таблиц 2026"
+    },
+    {
+      "url": "https://metanit.com/python/pandas/",
+      "title": "Руководство библиотеке Pandas на Python",
+      "from_query": "pandas сверка таблиц 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/sibur_official/articles/917120/",
+      "title": "Финансовое моделирование в Python и Excel: мой путь перехода на код",
+      "from_query": "python excel финансы 2026"
+    },
+    {
+      "url": "https://books.google.com/books/about/Python_in_Excel_2026_Edition.html?id=f8PF0QEACAAJ",
+      "title": "Python-in-Excel 2026 Edition - Google Books",
+      "from_query": "python excel финансы 2026"
+    },
+    {
+      "url": "https://rutracker.org/forum/viewtopic.php?t=6840804",
+      "title": "Шардин М. - Excel, Python и API: автоматизаци",
+      "from_query": "python excel финансы 2026"
+    },
+    {
+      "url": "https://www.amazon.com/Python-Excel-2026-Integration-Comprehensive/dp/B0G4LY82NF",
+      "title": "Python-in-Excel 2026 Edition: The Complete Finance & FP&A ... - Amazon",
+      "from_query": "python excel финансы 2026"
+    },
+    {
+      "url": "https://www.clcoding.com/2025/12/python-in-excel-2026-edition-complete.html",
+      "title": "Python-in-Excel 2026 Edition: The Complete Finance & FP&A Integration ...",
+      "from_query": "python excel финансы 2026"
+    },
+    {
+      "url": "https://coddy.tech/docs/ru/python/csv",
+      "title": "Исполняемые доки Python: CSV-файлы | Coddy",
+      "from_query": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel 2026"
+    },
+    {
+      "url": "https://labex.io/ru/tutorials/pandas-pandas-reading-external-data-596396",
+      "title": "Pandas: Чтение внешних данных из CSV-файлов | LabEx",
+      "from_query": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/1005114/",
+      "title": "Pandas на Python: От чтения CSV до сложной аналитики за 1 статью",
+      "from_query": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel 2026"
+    },
+    {
+      "url": "https://pythonlib.ru/post17",
+      "title": "Полный гайд: как работать с CSV-файлами в Python",
+      "from_query": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel 2026"
+    }
+  ]
+}

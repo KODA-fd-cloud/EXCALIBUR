@@ -1,0 +1,40 @@
+{
+  "topic_id": "B21",
+  "h1": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками",
+  "title": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками",
+  "description": "Пошагово: что такое MCP для финансиста, какой сервер подключить первым, mcp.json/Marketplace в Cursor, сценарий отчёта по папке CSV и чеклист секретов.",
+  "cover_alt": "Тёмный UI-мокап: узлы MCP-инструментов связаны с папкой CSV-выгрузок в Cursor",
+  "slug": "mcp-cursor-finansist-instrumenty",
+  "primary_query": "mcp cursor финансист",
+  "secondary_queries": [
+    "model context protocol cursor",
+    "mcp сервер для начинающих",
+    "подключить mcp cursor",
+    "filesystem mcp cursor csv"
+  ],
+  "char_count": 9453,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "MCP в Cursor: инструменты без копипаста CSV",
+    "как подключить MCP Cursor для папки выгрузок",
+    "filesystem MCP и отчёт по CSV в Agent"
+  ],
+  "meta_ab": {
+    "title_seo": "MCP Cursor: подключить инструменты и убрать копипаст CSV",
+    "title_ctr": "💻 MCP в Cursor: как перестать копировать CSV руками – гайд для финансиста!",
+    "title_aeo": "Как подключить MCP в Cursor и заставить агента читать папку CSV?",
+    "description_seo": "Практический гайд: MCP простыми словами, первый стек (файлы/браузер), Tools & MCP или mcp.json, сценарий отчёта по data/ и чеклист секретов без ПДн.",
+    "description_ctr": "⚡️ Пять CSV и снова копипаст в чат? Подключите filesystem MCP в Cursor и соберите отчёт по папке без ручной вставки строк.",
+    "description_aeo": "MCP в Cursor – протокол инструментов для агента: подключение через Marketplace или mcp.json, чтение папки выгрузок и отчёт без копипаста CSV."
+  },
+  "geo_qa": {
+    "score": 92,
+    "verdict": "PASS",
+    "date": "2026-07-22",
+    "html_linter": "pass",
+    "slop_score": 0,
+    "cannibalization": "pass"
+  },
+  "cover_family": "gradient_abstract"
+}

@@ -1,0 +1,28 @@
+{
+  "design_code_id": "koda_artur_human_16x9",
+  "label_ru": "CTR-обложка в стиле Артура 16:9",
+  "openability_rules": [
+    "Первый кадр (cover panel) = высокий CTR, яркий заголовок разного размера/цвета/шрифта",
+    "Реалистичный вырезанный силуэт Ольги (короткие темные волосы, очки, фиолетовый пиджак), указывающий на схему",
+    "Текстовые блоки: ключевое слово (например, 'n8n' или 'БЕЗ КОДА') выделено светящимся неоновым желтым #facc15 или фиолетовым #c084fc цветом",
+    "Фон: темная неоновая паутина процессов n8n, таблицы и графики с фиолетовым свечением #8b5cf6",
+    "Остальные 3 кадра холста (inline-панели) — чистые схемы и UI без людей для тела статьи"
+  ],
+  "visual_motifs": [
+    "cutout of professional female host Olga with realistic face",
+    "glowing neon lines connecting node icons",
+    "massive bold Cyrillic lettering with neon shadows",
+    "floating gold/yellow highlighted text elements",
+    "dark high-tech dashboard background #0a0a0f",
+    "isometric 3D automation blocks"
+  ],
+  "color_palette": {
+    "background": "#0a0a0f",
+    "accent_purple": "#8b5cf6",
+    "accent_blue": "#60a5fa",
+    "highlight_yellow": "#facc15",
+    "white": "#ffffff"
+  },
+  "cover_panel_prompt_block": "16:9 high-CTR blog cover: cutout of the female host Olga (realistic face, short dark hair, glasses, wearing a purple blazer) on the left looking at the reader and pointing right; on the right is a huge, bold Cyrillic hook headline 'n8n ДЛЯ ФИНАНСИСТА!' in varying massive sizes, custom heavy font styling, with key words highlighted in bright neon yellow #facc15 and white, glowing purple drop-shadows; background is a dark sleek #0a0a0f dashboard with isometric n8n automation nodes, floating spreadsheets and invoices with purple and blue glows, high energy, professional fintech style",
+  "inline_human_touch": "Pure professional dark UI illustration: isometric workflow diagram or dashboard comparison table, glowing purple and blue lines, clean sans-serif annotations, strictly no human faces or silhouettes."
+}

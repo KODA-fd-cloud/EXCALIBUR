@@ -1,0 +1,184 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#article",
+      "headline": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста",
+      "description": "Пошаговая выгрузка из 1С в Excel через OData: публикация standard.odata, Power Query, кнопка в Google Sheets и чеклист безопасности без заказной обработки.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/vygruzka-1c-excel-odata-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Тёмный UI-мокап: поток данных из 1С через OData в Excel и Google Sheets"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "выгрузка из 1с в excel, odata 1с, выгрузка 1с в google sheets, odata standard.odata, power query 1с",
+      "wordCount": 8760,
+      "articleSection": "1С / Excel / автоматизация",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Работает ли OData на УНФ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: это механизм платформы 1С. Нужны публикация и состав объектов. В облаке URL часто уже есть – иначе тикет в хостинг. On-prem – галка публикации у админа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли HTTPS для выгрузки из 1С в Excel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для доступа снаружи – да. В моей практике скрипт ходит по HTTPS с проверкой сертификата. Внутри LAN иногда оставляют HTTP, но пароль тогда в открытом периметре."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем OData отличается от обычной выгрузки Excel из отчёта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\"Сохранить как\" – разовый снимок. OData – повторяемый HTTP-запрос с фильтром и автообновлением в Power Query или скрипте. Один раз настроили – дальше жмёте \"Обновить\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли подключить OData без IIS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: Apache или облачная публикация. Без любого веб-сервера/публикации снаружи OData не заработает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сразу лить данные из 1С в Google Sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если URL базы доступен из интернета. Иначе Apps Script вернёт \"Адрес недоступен\" – тогда локальный Python/CSV и файл на Диск."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли программист на каждый отчёт через OData?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На чтение уже опубликованных сущностей – нет. На сложный отчёт СКД, объект вне OData или миллионы строк – да."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#howto",
+      "name": "Как выгрузить данные из 1С в Excel через OData: пошагово без программиста",
+      "description": "Публикация standard.odata, запрос с $filter/$top, Power Query в Excel, кнопка в Google Sheets и чеклист безопасности.",
+      "inLanguage": "ru",
+      "totalTime": "PT45M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "1С с публикацией на веб-сервере (IIS/Apache или облако)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Excel с Power Query"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets + Apps Script (опционально)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "URL …/odata/standard.odata и доступ к $metadata"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Отдельный пользователь 1С только на чтение"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Сверить задачу с возможностями OData",
+          "text": "Выберите OData для регулярных срезов (ДДС, справочники). Если нужны сложные join/СКД или миллионы строк – зовите программиста 1С, не мучайте HTTP-срез.",
+          "url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#when-odata"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Опубликовать базу и проверить URL standard.odata",
+          "text": "Опубликуйте базу со стандартным интерфейсом OData. Откройте …/odata/standard.odata и $metadata в браузере. Ограничьте состав объектов, создайте read-only пользователя и сделайте первый запрос Entity?$format=json&$top=10.",
+          "url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#publish-odata"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Подтянуть срез в Excel или CSV",
+          "text": "В Excel через Power Query укажите URL сущности с $format=json и разумным $top, добавьте $select/$filter, сохраните запрос на staging-лист (например raw_dds). Запасной путь – сохранить JSON/CSV и открыть файл.",
+          "url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#excel-csv"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Опционально: кнопка «Обновить из 1С» в Google Sheets",
+          "text": "Подключите Apps Script к тому же standard.odata (Basic Auth, HTTPS). Учётку храните в PropertiesService. Если URL 1С недоступен из интернета, UrlFetchApp вернёт «Адрес недоступен» – тогда локальный Python/CSV на Диск.",
+          "url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#google-sheets"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Закрыть безопасность и регламент",
+          "text": "Не открывайте лишние объекты и ПДн в OData/облачный лист. Зафиксируйте, кто жмёт «Обновить», какой период и куда пишется raw_*. Сырые выгрузки с ИНН/ФИО не копируйте в ChatGPT без обезличивания.",
+          "url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/#security"
+        }
+      ]
+    }
+  ]
+}

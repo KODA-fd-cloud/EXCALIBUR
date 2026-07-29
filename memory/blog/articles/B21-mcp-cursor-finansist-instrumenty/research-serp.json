@@ -1,0 +1,464 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B21",
+    "priority": "P0",
+    "slug": "mcp-cursor-finansist-instrumenty",
+    "h1": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками",
+    "primary_query": "mcp cursor",
+    "secondary_queries": [
+      "model context protocol cursor",
+      "mcp сервер для начинающих",
+      "подключить mcp cursor"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "mcp cursor 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Model Context Protocol (MCP) | Cursor Docs",
+          "url": "https://cursor.com/docs/mcp",
+          "snippet": ""
+        },
+        {
+          "title": "How to Set Up MCP Servers in Cursor IDE (2026 Guide)",
+          "url": "https://serenitiesai.com/articles/mcp-server-cursor-setup-2026",
+          "snippet": "Connect Cursor to external tools and data sources using Model Context Protocol (MCP). Install servers, configure authentication, and integrate with databases, APIs, and third-party services."
+        },
+        {
+          "title": "Best MCP Servers for Cursor (2026): 12 Must-Have + Setup",
+          "url": "https://toolradar.com/blog/best-mcp-servers-cursor",
+          "snippet": "Step-by-step guide to setting up MCP servers in Cursor IDE. Configure stdio, SSE, and HTTP servers with examples for Node.js and Python."
+        },
+        {
+          "title": "MCP Apps and Team Marketplaces for Plugins · Cursor",
+          "url": "https://cursor.com/changelog/2-6",
+          "snippet": "The 12 best MCP servers for Cursor IDE in 2026. Full setup walkthrough with mcp.json config, real workflows, and the exact config you should start with."
+        },
+        {
+          "title": "MCP Servers in Cursor: Setup, Configuration, and Security (2026 Guide)",
+          "url": "https://www.truefoundry.com/blog/mcp-servers-in-cursor-setup-configuration-and-security-guide",
+          "snippet": "# MCP Apps MCP Apps support interactive user interfaces like charts from Amplitude, diagrams from Figma, and whiteboards from tldraw directly inside Cursor."
+        },
+        {
+          "title": "MCP в Cursor 3.1 в 2026: подключение и топ-10 серверов",
+          "url": "https://shtruzel.ru/articles/mcp-v-cursor-podklyuchenie-i-luchshie-servery-2026",
+          "snippet": "Learn how to set up, configure, and secure MCP servers in Cursor. This 2026 guide covers stdio vs. Streamable HTTP, mcp.json best practices, tool limits, common errors, major 2025 CVEs, and how teams scale with an MCP Gateway."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "mcp cursor июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "MCP в Cursor 3.1 в 2026: подключение и топ-10 серверов",
+          "url": "https://shtruzel.ru/articles/mcp-v-cursor-podklyuchenie-i-luchshie-servery-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Best MCP Servers for Cursor (2026): 12 Must-Have + Setup",
+          "url": "https://toolradar.com/blog/best-mcp-servers-cursor",
+          "snippet": "Как настроить MCP в Cursor 3.1 в 2026: через Marketplace или mcp.json. 10 рабочих серверов (GitHub, Context7, Playwright, Supabase), безопасность и типичные ошибки"
+        },
+        {
+          "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+          "url": "https://neurinix.com/2026/06/21/podklyuchenie-mcp-cursor/",
+          "snippet": "The 12 best MCP servers for Cursor IDE in 2026. Full setup walkthrough with mcp.json config, real workflows, and the exact config you should start with."
+        },
+        {
+          "title": "Cursor AI 2026: Complete Guide to Every New Feature",
+          "url": "https://anycap.ai/page/en-US/ai/cursor-ai-2026-new-features-guide",
+          "snippet": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов и автоматизаторов без кода."
+        },
+        {
+          "title": "Cursor Automations: чек-лист настройки cloud-агентов 2026",
+          "url": "https://neurinix.com/2026/06/22/nastrojka-cursor-automations-2026/",
+          "snippet": "Cursor has shipped more in the first half of 2026 than most developer tools ship in three years. The AI code editor that captured the developer world's attention has evolved into something far more ambitious: a full agentic development platform where AI runs, tests, and ships code with minimal human interruption. This guide covers every significant Cursor update in 2026 — from the Cursor 3 ..."
+        },
+        {
+          "title": "Конспект: Экосистема Cursor AI 2026: Правила, MCP, Skills и Sub-agents ...",
+          "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
+          "snippet": "Что такое Cursor Automations? Always-on cloud agents, которые стартуют по триггеру (расписание, GitHub, Slack, webhook, Linear, PagerDuty), а не когда вы открыли чат в IDE."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "mcp cursor новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "MCP в Cursor 3.1 в 2026: подключение и топ-10 серверов",
+          "url": "https://shtruzel.ru/articles/mcp-v-cursor-podklyuchenie-i-luchshie-servery-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Best MCP Servers for Cursor (2026): 12 Must-Have + Setup",
+          "url": "https://toolradar.com/blog/best-mcp-servers-cursor",
+          "snippet": "Разбираю как настроить, какие 10 серверов реально стоят того в 2026, и почему не надо ставить @latest из первого попавшегося реддит-поста. Всегда используйте MCP в работе, и вы облегчите себе многие задачи! Без MCP агент Cursor сидит внутри вашей IDE — видит только код проекта."
+        },
+        {
+          "title": "MCP-серверы для Cursor: настройка, агрегатор и Wordstat — гайд ...",
+          "url": "https://mayai.ru/mcp-servery-cursor-gayd-biznes/",
+          "snippet": "Cursor added MCP support in late 2025 and has been improving it since. In January 2026, a major update introduced dynamic context management across MCP servers, reducing token usage by 47% when using multiple servers simultaneously."
+        },
+        {
+          "title": "Конспект: Экосистема Cursor AI 2026: Правила, MCP, Skills и Sub-agents ...",
+          "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
+          "snippet": "Этот гайд — практическая настройка для бизнеса в 2026 году: от «что такое MCP» до агрегатора, Wordstat, безопасности и минимального стека для контент-завода."
+        },
+        {
+          "title": "Cursor MCP Servers 2026: Что это такое и как их использовать",
+          "url": "https://www.nxcode.io/ru/resources/news/cursor-mcp-servers-complete-guide-2026",
+          "snippet": "В видео анализируется эволюция инструментов от простых правил до автономных подогентов, а также даются инструкции по управлению контекстом для максимальной эффективности разработки."
+        },
+        {
+          "title": "Актуальный гайд на Cursor в 2026 году / Хабр",
+          "url": "https://habr.com/ru/companies/bothub/articles/1044774/",
+          "snippet": "Полное руководство по MCP серверам в Cursor. Что такое Model Context Protocol, как настроить MCP серверы, лучшие серверы для программирования и как они улучшают ваш AI рабочий процесс."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "model context protocol cursor 2026",
+      "purpose": "вторичный запрос: model context protocol cursor",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Model Context Protocol (MCP) | Cursor Docs",
+          "url": "https://cursor.com/docs/mcp",
+          "snippet": ""
+        },
+        {
+          "title": "Model Context Protocol (MCP) 2026: Complete Developer Guide",
+          "url": "https://hypernestlabs.com/insights/mcp-model-context-protocol-guide",
+          "snippet": "Connect Cursor to external tools and data sources using Model Context Protocol (MCP). Install servers, configure authentication, and integrate with databases, APIs, and third-party services."
+        },
+        {
+          "title": "MCP | Cursor Docs",
+          "url": "https://cursor.com/docs/cli/mcp",
+          "snippet": "Cursor uses MCP to let AI agents in the editor connect to your databases, APIs, documentation, and project management tools. This means Cursor can look up your database schema, check your Jira tickets, and search your internal docs — all without you copy-pasting context into the chat window."
+        },
+        {
+          "title": "MCP (Model Context Protocol) Developer Guide: Build, Deploy & Secure AI ...",
+          "url": "https://lushbinary.com/blog/mcp-model-context-protocol-developer-guide-2026/",
+          "snippet": "Use Model Context Protocol servers with Cursor CLI for extended functionality. Configure MCP tools and manage server connections from the command line."
+        },
+        {
+          "title": "Model Context Protocol (MCP) Guide 2026 — The USB-C for AI | AI Moments",
+          "url": "https://www.singularitymoments.com/model-context-protocol-guide-2026/",
+          "snippet": "Complete developer guide to the Model Context Protocol (MCP). Covers architecture, TypeScript & Python server examples, client setup for Claude/Cursor/VS Code, spec 2025-11-25 updates (OAuth, elicitation, structured output), security best practices, and production deployment."
+        },
+        {
+          "title": "Complete Guide to MCP (Model Context Protocol) in 2026 — Architecture ...",
+          "url": "https://dev.to/x4nent/complete-guide-to-mcp-model-context-protocol-in-2026-architecture-implementation-and-4a11",
+          "snippet": "Complete 2026 guide to Model Context Protocol (MCP): what it is, how it works, MCP vs function calling, built-in MCP servers (filesystem, GitHub, Slack, Google Drive), using MCP with Claude Desktop and Claude Code, building your own MCP server in Python or Node.js, and why MCP is the universal connector for AI tools."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "mcp сервер для начинающих 2026",
+      "purpose": "вторичный запрос: mcp сервер для начинающих",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Туториал По Mcp-серверам 2026: Установка, Настройка И Запуск Первого ...",
+          "url": "https://septimlabs.com/ru/blog/mcp-server-tutorial-2026",
+          "snippet": ""
+        },
+        {
+          "title": "MCP Server с нуля: полное руководство для разработчиков",
+          "url": "https://meshlaunch.com/ru/blog/2026-mcp-server-from-scratch-developer-guide.html",
+          "snippet": "Практический туториал по MCP-серверам на 2026 год: что такое Model Context Protocol, как установить и настроить MCP-сервер в Claude Code и какие пять серверов стоит запустить первыми."
+        },
+        {
+          "title": "Топ MCP серверов для Claude, ChatGPT и Cursor и других в 2026 году",
+          "url": "https://mymeet.ai/ru/blog/mcp-servers",
+          "snippet": "Июнь 2026: практическое руководство по созданию MCP Server с нуля — эволюция от Function Calling до MCP, FastMCP Hello World, пять инструментов, Resources и Prompts, HTTP-транспорт, Docker, ChromaDB и шестишаговый runbook для ..."
+        },
+        {
+          "title": "Лучшие MCP для TradingView — подборка 2026",
+          "url": "https://trading-terminal.ru/blog/luchshie-mcp-dlya-tradingview/",
+          "snippet": "Лучшие MCP серверы для подключения AI-агентов к данным: встречи, файлы, GitHub, Slack, Notion, базы данных. Сравнение, критерии выбора и как подключить."
+        },
+        {
+          "title": "Лучшие Mcp Серверы 2026 — Топ-50",
+          "url": "https://thedailyworkflow.com/ru/mcp/best-mcp-servers-2026",
+          "snippet": "Сравнили 5 MCP-серверов для TradingView: управление графиком, скринер рынка, анализ, скриншоты и работа с Pine Script. Выбор под конкретную задачу."
+        },
+        {
+          "title": "Как создать MCP-сервер с нуля: гайд для Cursor и Claude — Обучение по ...",
+          "url": "https://mayai.ru/mcp-server-sozdat-gayd-cursor-claude/",
+          "snippet": "Этот MCP сервер подключает AI-инструменты к GitHub, предоставляя доступ к репозиториям, управление задачами и пулл-реквестами, анализ кода и мониторинг рабочих процессов через естественный язык."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "подключить mcp cursor 2026",
+      "purpose": "вторичный запрос: подключить mcp cursor",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "MCP в Cursor 3.1 в 2026: подключение и топ-10 серверов",
+          "url": "https://shtruzel.ru/articles/mcp-v-cursor-podklyuchenie-i-luchshie-servery-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+          "url": "https://neurinix.com/2026/06/21/podklyuchenie-mcp-cursor/",
+          "snippet": "MCP (Model Context Protocol) подключает к Cursor внешние инструменты — GitHub, базы, Figma, веб-поиск — через один JSON-конфиг. В Cursor 3.1 это работает из коробки: кладёте сервер в ~/.cursor/mcp.json или ставите в один клик через Cursor Marketplace."
+        },
+        {
+          "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+          "url": "https://mayai.ru/podklyuchenie-mcp-cursor/",
+          "snippet": "Откройте Settings (Ctrl+Shift+J) → Tools & MCP → «Add to Cursor» у нужного сервера. Либо создайте ~/.cursor/mcp.json или .cursor/mcp.json, добавьте блок mcpServers, сохраните валидный JSON и перезапустите Cursor."
+        },
+        {
+          "title": "Как подключить MCP сервер к Cursor и Claude: пошаговый гайд с командами",
+          "url": "https://vibecoderz.ru/blog/kak-podklyuchit-mcp-server-k-cursor-i-claude",
+          "snippet": "Настройка cursor mcp занимает 15-30 минут. Ниже - подключение через Tools & MCP или файл mcp.json. Вы увидите зелёный статус сервера, вызовете первый tool из Agent и соберёте минимальный стек под автоматизацию."
+        },
+        {
+          "title": "Как подключить MCP в Cursor, Claude Code и Windsurf: пошаговая ...",
+          "url": "https://vibecoderz.ru/blog/kak-podklyuchit-mcp-v-cursor-claude-code-i-windsurf",
+          "snippet": "Пошаговый разбор, как подключить MCP‑сервер к Cursor, Claude Desktop и Claude Code: конкретные команды, пути к конфигу и типичные ошибки. Узнайте, почему единый протокол упрощает работу с API и сервисами."
+        },
+        {
+          "title": "Cursor MCP сервер: как подключить тысячи инструментов за 5 минут ...",
+          "url": "https://www.neuroalex.site/2026/05/07/cursor-mcp-server-kak-podklyuchit-tysyachi-instrumentov-za-5-minut/",
+          "snippet": "Подключить MCP в любой из трех IDE можно за пять минут. В Cursor вы добавляете сервер в файл .cursor/mcp.json, в Claude Code запускаете команду claude mcp add, в Windsurf правите файл ~/.codeium/windsurf/mcp_config.json."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "MCP-сервер: что это и как настроить в Cursor и Claude — журнал «Код»",
+          "url": "https://thecode.media/mcp-server-cursor-claude/",
+          "snippet": ""
+        },
+        {
+          "title": "MCP в Cursor 3.1 в 2026: подключение и топ-10 серверов",
+          "url": "https://shtruzel.ru/articles/mcp-v-cursor-podklyuchenie-i-luchshie-servery-2026",
+          "snippet": "Что такое MCP-сервер и как подключить его к Cursor, Claude Code и Claude Desktop. Настройка mcp.json, готовые серверы и пример MCP на Python."
+        },
+        {
+          "title": "Установка MCP-сервера в Cursor: пошаговый гайд для 2026",
+          "url": "https://atomno-mcp.ru/blog/install-mcp-in-cursor-step-by-step/",
+          "snippet": "MCP (Model Context Protocol) подключает к Cursor внешние инструменты — GitHub, базы, Figma, веб-поиск — через один JSON-конфиг. В Cursor 3.1 это работает из коробки: кладёте сервер в ~/.cursor/mcp.json или ставите в один клик через Cursor Marketplace."
+        },
+        {
+          "title": "Как подключить MCP сервер к Cursor и Claude: пошаговый гайд с командами ...",
+          "url": "https://vibecoderz.ru/blog/kak-podklyuchit-mcp-server-k-cursor-i-claude",
+          "snippet": "Полный туториал по подключению MCP в Cursor IDE: от установки uv до проверки работоспособности. Скриншоты, типовые ошибки, лучшие практики."
+        },
+        {
+          "title": "MCP в Cursor — полное руководство (2026) — ru-mcp",
+          "url": "https://ru-mcp.ru/docs/cursor-integration",
+          "snippet": "Пошаговый разбор, как подключить MCP‑сервер к Cursor, Claude Desktop и Claude Code: конкретные команды, пути к конфигу и типичные ошибки. Узнайте, почему единый протокол упрощает работу с API и сервисами."
+        },
+        {
+          "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+          "url": "https://mayai.ru/podklyuchenie-mcp-cursor/",
+          "snippet": "Детальное руководство по настройке managed MCP-хаба в Cursor — для новичков и опытных разработчиков. Cursor — первый MCP-клиент, получивший нативную поддержку Streamable HTTP транспорта."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://cursor.com/docs/mcp",
+      "title": "Model Context Protocol (MCP) | Cursor Docs",
+      "from_query": "mcp cursor 2026"
+    },
+    {
+      "url": "https://serenitiesai.com/articles/mcp-server-cursor-setup-2026",
+      "title": "How to Set Up MCP Servers in Cursor IDE (2026 Guide)",
+      "from_query": "mcp cursor 2026"
+    },
+    {
+      "url": "https://toolradar.com/blog/best-mcp-servers-cursor",
+      "title": "Best MCP Servers for Cursor (2026): 12 Must-Have + Setup",
+      "from_query": "mcp cursor 2026"
+    },
+    {
+      "url": "https://cursor.com/changelog/2-6",
+      "title": "MCP Apps and Team Marketplaces for Plugins · Cursor",
+      "from_query": "mcp cursor 2026"
+    },
+    {
+      "url": "https://www.truefoundry.com/blog/mcp-servers-in-cursor-setup-configuration-and-security-guide",
+      "title": "MCP Servers in Cursor: Setup, Configuration, and Security (2026 Guide)",
+      "from_query": "mcp cursor 2026"
+    },
+    {
+      "url": "https://shtruzel.ru/articles/mcp-v-cursor-podklyuchenie-i-luchshie-servery-2026",
+      "title": "MCP в Cursor 3.1 в 2026: подключение и топ-10 серверов",
+      "from_query": "mcp cursor 2026"
+    },
+    {
+      "url": "https://neurinix.com/2026/06/21/podklyuchenie-mcp-cursor/",
+      "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+      "from_query": "mcp cursor июль 2026"
+    },
+    {
+      "url": "https://anycap.ai/page/en-US/ai/cursor-ai-2026-new-features-guide",
+      "title": "Cursor AI 2026: Complete Guide to Every New Feature",
+      "from_query": "mcp cursor июль 2026"
+    },
+    {
+      "url": "https://neurinix.com/2026/06/22/nastrojka-cursor-automations-2026/",
+      "title": "Cursor Automations: чек-лист настройки cloud-агентов 2026",
+      "from_query": "mcp cursor июль 2026"
+    },
+    {
+      "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
+      "title": "Конспект: Экосистема Cursor AI 2026: Правила, MCP, Skills и Sub-agents ...",
+      "from_query": "mcp cursor июль 2026"
+    },
+    {
+      "url": "https://mayai.ru/mcp-servery-cursor-gayd-biznes/",
+      "title": "MCP-серверы для Cursor: настройка, агрегатор и Wordstat — гайд ...",
+      "from_query": "mcp cursor новости 2026"
+    },
+    {
+      "url": "https://www.nxcode.io/ru/resources/news/cursor-mcp-servers-complete-guide-2026",
+      "title": "Cursor MCP Servers 2026: Что это такое и как их использовать",
+      "from_query": "mcp cursor новости 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/bothub/articles/1044774/",
+      "title": "Актуальный гайд на Cursor в 2026 году / Хабр",
+      "from_query": "mcp cursor новости 2026"
+    },
+    {
+      "url": "https://hypernestlabs.com/insights/mcp-model-context-protocol-guide",
+      "title": "Model Context Protocol (MCP) 2026: Complete Developer Guide",
+      "from_query": "model context protocol cursor 2026"
+    },
+    {
+      "url": "https://cursor.com/docs/cli/mcp",
+      "title": "MCP | Cursor Docs",
+      "from_query": "model context protocol cursor 2026"
+    },
+    {
+      "url": "https://lushbinary.com/blog/mcp-model-context-protocol-developer-guide-2026/",
+      "title": "MCP (Model Context Protocol) Developer Guide: Build, Deploy & Secure AI ...",
+      "from_query": "model context protocol cursor 2026"
+    },
+    {
+      "url": "https://www.singularitymoments.com/model-context-protocol-guide-2026/",
+      "title": "Model Context Protocol (MCP) Guide 2026 — The USB-C for AI | AI Moments",
+      "from_query": "model context protocol cursor 2026"
+    },
+    {
+      "url": "https://dev.to/x4nent/complete-guide-to-mcp-model-context-protocol-in-2026-architecture-implementation-and-4a11",
+      "title": "Complete Guide to MCP (Model Context Protocol) in 2026 — Architecture ...",
+      "from_query": "model context protocol cursor 2026"
+    },
+    {
+      "url": "https://septimlabs.com/ru/blog/mcp-server-tutorial-2026",
+      "title": "Туториал По Mcp-серверам 2026: Установка, Настройка И Запуск Первого ...",
+      "from_query": "mcp сервер для начинающих 2026"
+    },
+    {
+      "url": "https://meshlaunch.com/ru/blog/2026-mcp-server-from-scratch-developer-guide.html",
+      "title": "MCP Server с нуля: полное руководство для разработчиков",
+      "from_query": "mcp сервер для начинающих 2026"
+    },
+    {
+      "url": "https://mymeet.ai/ru/blog/mcp-servers",
+      "title": "Топ MCP серверов для Claude, ChatGPT и Cursor и других в 2026 году",
+      "from_query": "mcp сервер для начинающих 2026"
+    },
+    {
+      "url": "https://trading-terminal.ru/blog/luchshie-mcp-dlya-tradingview/",
+      "title": "Лучшие MCP для TradingView — подборка 2026",
+      "from_query": "mcp сервер для начинающих 2026"
+    },
+    {
+      "url": "https://thedailyworkflow.com/ru/mcp/best-mcp-servers-2026",
+      "title": "Лучшие Mcp Серверы 2026 — Топ-50",
+      "from_query": "mcp сервер для начинающих 2026"
+    },
+    {
+      "url": "https://mayai.ru/mcp-server-sozdat-gayd-cursor-claude/",
+      "title": "Как создать MCP-сервер с нуля: гайд для Cursor и Claude — Обучение по ...",
+      "from_query": "mcp сервер для начинающих 2026"
+    },
+    {
+      "url": "https://mayai.ru/podklyuchenie-mcp-cursor/",
+      "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+      "from_query": "подключить mcp cursor 2026"
+    },
+    {
+      "url": "https://vibecoderz.ru/blog/kak-podklyuchit-mcp-server-k-cursor-i-claude",
+      "title": "Как подключить MCP сервер к Cursor и Claude: пошаговый гайд с командами",
+      "from_query": "подключить mcp cursor 2026"
+    },
+    {
+      "url": "https://vibecoderz.ru/blog/kak-podklyuchit-mcp-v-cursor-claude-code-i-windsurf",
+      "title": "Как подключить MCP в Cursor, Claude Code и Windsurf: пошаговая ...",
+      "from_query": "подключить mcp cursor 2026"
+    },
+    {
+      "url": "https://www.neuroalex.site/2026/05/07/cursor-mcp-server-kak-podklyuchit-tysyachi-instrumentov-za-5-minut/",
+      "title": "Cursor MCP сервер: как подключить тысячи инструментов за 5 минут ...",
+      "from_query": "подключить mcp cursor 2026"
+    },
+    {
+      "url": "https://thecode.media/mcp-server-cursor-claude/",
+      "title": "MCP-сервер: что это и как настроить в Cursor и Claude — журнал «Код»",
+      "from_query": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками 2026"
+    },
+    {
+      "url": "https://atomno-mcp.ru/blog/install-mcp-in-cursor-step-by-step/",
+      "title": "Установка MCP-сервера в Cursor: пошаговый гайд для 2026",
+      "from_query": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками 2026"
+    },
+    {
+      "url": "https://ru-mcp.ru/docs/cursor-integration",
+      "title": "MCP в Cursor — полное руководство (2026) — ru-mcp",
+      "from_query": "MCP в Cursor: как подключить инструменты и перестать копировать CSV руками 2026"
+    }
+  ]
+}

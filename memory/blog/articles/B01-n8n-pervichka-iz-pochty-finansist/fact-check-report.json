@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/B01-n8n-pervichka-iz-pochty-finansist/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "сов без кода . 1. Оцените, зачем финансисту n8n в 2026 году n8n связывает почту, таблицу и мессенджер без",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "60 минут",
+      "kind": "metric_or_duration",
+      "context": "10-30 документах в неделю ручной ввод съедает 30-60 минут в день - типичная вилка для малого финотдела. n8n",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "к контуру описан в гайде от Excel к финконтуру за 30 дней . Делайте: храните оригинал PDF в Google Drive, в",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "60 мин",
+      "kind": "metric_or_duration",
+      "context": "й? При 10-30 документах в неделю ручной ввод - 30-60 мин/день; остается сверка. Замерьте две недели до и п",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "35 475",
+      "kind": "large_number",
+      "context": "ещаем: человек сверяет сумму. \"n8n\" в Вордстате - 35 475 показов/мес, \"автоматизация бухгалтерии\" - 1 142.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 142",
+      "kind": "large_number",
+      "context": "35 475 показов/мес, \"автоматизация бухгалтерии\" - 1 142. Первичка - счета, акты, УПД, по которым закрывае",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "559",
+      "kind": "large_number",
+      "context": "По Вордстату на июнь 2026: \"автоматизация n8n\" - 559 показов/мес, узкий \"автоматизация первички\" - 30,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 500",
+      "kind": "large_number",
+      "context": "d Лицензия 0 €, свой сервер от 20 €/мес (Starter, 2 500 executions) Где лежат PDF На VPS в РФ Инфраструкту",
+      "verified": true,
+      "reason": "Numerical value '2500' matched in fact-bank context"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "Масштаб Без лимита executions в CE Pro: 50 €/мес, 10 000 executions Self-hosted - своя установка на VPS чер",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9439",
+      "kind": "large_number",
+      "context": "ряет с договором. На n8n.io есть шаблон workflow #9439: IMAP → AI извлечение полей счета → Google Drive",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "993",
+      "kind": "large_number",
+      "context": "до строки в таблице IMAP: пароль приложения, порт 993 SSL JSON валиден, пустой amount ловится IF Статусы",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "upravlenie-debitorkoj-reestr-napominaniya",
+  "topic_id": "B14",
+  "permalink": "https://koda-fd.ru/blog/upravlenie-debitorkoj-reestr-napominaniya/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B14-upravlenie-debitorkoj-reestr-napominaniya/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 807302,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=134 slug=upravlenie-debitorkoj-reestr-napominaniya\nOK featured_image=135\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/upravlenie-debitorkoj-reestr-napominaniya-dzen-cover.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/upravlenie-debitorkoj-reestr-napominaniya/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

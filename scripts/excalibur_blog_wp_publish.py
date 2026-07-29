@@ -118,10 +118,15 @@ def load_article(article_dir: Path) -> dict:
     schema_path = article_dir / "schema.jsonld"
     cover_b64 = ""
     cover_evidence: dict[str, object] = {}
+    dzen_cover_b64 = ""
     cover_reg = article_dir / "cover" / "cover-registry.json"
     if cover_path.is_file():
         cover_evidence = normalize_cover_png(cover_path, cover_reg, project_root())
         cover_b64 = base64.b64encode(cover_path.read_bytes()).decode("ascii")
+    dzen_cover_path = article_dir / "cover" / "dzen-cover.png"
+    if dzen_cover_path.is_file():
+        normalize_cover_png(dzen_cover_path, cover_reg, project_root())
+        dzen_cover_b64 = base64.b64encode(dzen_cover_path.read_bytes()).decode("ascii")
     schema_raw = ""
     if schema_path.is_file():
         schema_raw = schema_path.read_text(encoding="utf-8").strip()
@@ -151,6 +156,7 @@ def load_article(article_dir: Path) -> dict:
         "excerpt": meta.get("description", ""),
         "content": content,
         "cover_b64": cover_b64,
+        "dzen_cover_b64": dzen_cover_b64,
         "cover_evidence": cover_evidence,
         "cover_alt": cover_alt,
         "schema_jsonld": schema_raw,
@@ -219,6 +225,32 @@ if (!empty($p['cover_b64'])) {{
             update_post_meta((int) $att_id, '_wp_attachment_image_alt', sanitize_text_field($p['cover_alt']));
         }}
         echo 'OK featured_image=' . (int) $att_id . PHP_EOL;
+    }}
+    @unlink($tmp);
+}}
+
+if (!empty($p['dzen_cover_b64'])) {{
+    $bin = base64_decode($p['dzen_cover_b64']);
+    $tmp = wp_tempnam('excalibur-dzen-cover-' . $slug . '.png');
+    file_put_contents($tmp, $bin);
+    $file_array = [
+        'name' => $slug . '-dzen-cover.png',
+        'tmp_name' => $tmp,
+        'type' => 'image/png',
+        'error' => 0,
+        'size' => strlen($bin),
+    ];
+    $att_id = media_handle_sideload($file_array, $post_id, null, [
+        'post_title' => $slug . ' dzen cover',
+    ]);
+    if (is_wp_error($att_id)) {{
+        echo 'WARN dzen_cover: ' . $att_id->get_error_message() . PHP_EOL;
+    }} else {{
+        $dzen_url = wp_get_attachment_url((int) $att_id);
+        if ($dzen_url) {{
+            update_post_meta($post_id, '_koda_dzen_cover_url', esc_url_raw($dzen_url));
+            echo 'OK dzen_cover_url=' . $dzen_url . PHP_EOL;
+        }}
     }}
     @unlink($tmp);
 }}

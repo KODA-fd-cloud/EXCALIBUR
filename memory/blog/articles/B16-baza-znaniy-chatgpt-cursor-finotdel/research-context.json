@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B16",
+    "priority": "P0",
+    "slug": "baza-znaniy-chatgpt-cursor-finotdel",
+    "h1": "Как сделать базу знаний для ChatGPT и Cursor: свои регламенты без утечки 1С",
+    "primary_query": "как сделать базу знаний chatgpt",
+    "secondary_queries": [
+      "свои документы в нейросеть",
+      "knowledge base cursor",
+      "загрузить регламенты в chatgpt"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B16",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как сделать базу знаний chatgpt 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как сделать базу знаний chatgpt июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как сделать базу знаний chatgpt новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "свои документы в нейросеть 2026",
+      "purpose": "вторичный запрос: свои документы в нейросеть"
+    },
+    {
+      "id": "secondary_2",
+      "query": "knowledge base cursor 2026",
+      "purpose": "вторичный запрос: knowledge base cursor"
+    },
+    {
+      "id": "secondary_3",
+      "query": "загрузить регламенты в chatgpt 2026",
+      "purpose": "вторичный запрос: загрузить регламенты в chatgpt"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как сделать базу знаний для ChatGPT и Cursor: свои регламенты без утечки 1С 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B16-baza-znaniy-chatgpt-cursor-finotdel",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

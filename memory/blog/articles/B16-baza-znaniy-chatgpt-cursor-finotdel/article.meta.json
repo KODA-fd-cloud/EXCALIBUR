@@ -1,0 +1,43 @@
+{
+  "topic_id": "B16",
+  "h1": "Как сделать базу знаний для ChatGPT и Cursor: свои регламенты без утечки 1С",
+  "title": "Как сделать базу знаний для ChatGPT и Cursor: свои регламенты без утечки 1С",
+  "description": "База знаний финотдела для ChatGPT и Cursor: структура папок, rules, обезличивание и 10 тестовых вопросов без сырых выгрузок 1С.",
+  "cover_alt": "Абстрактная сеть светящихся документов на тёмном фиолетово-синем фоне",
+  "slug": "baza-znaniy-chatgpt-cursor-finotdel",
+  "primary_query": "как сделать базу знаний chatgpt",
+  "secondary_queries": [
+    "свои документы в нейросеть",
+    "knowledge base cursor",
+    "загрузить регламенты в chatgpt"
+  ],
+  "char_count": 8542,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "база знаний для ChatGPT и Cursor",
+    "регламенты финотдела в knowledge base",
+    "как подключить документы к Cursor"
+  ],
+  "meta_ab": {
+    "title_seo": "Как сделать базу знаний ChatGPT и Cursor: регламенты без утечки 1С",
+    "title_ctr": "💻 База знаний финотдела: Cursor + ChatGPT без сырых выгрузок 1С",
+    "title_aeo": "Как сделать базу знаний для ChatGPT и Cursor из регламентов?",
+    "description_seo": "Структура папок, whitelist/blacklist, подключение в Cursor и ChatGPT, обезличивание и проверка 10 тестовыми вопросами.",
+    "description_ctr": "⚡️ Чтобы нейросеть отвечала \"как у нас\", а не \"вообще\". Папка регламентов, rules и тест против галлюцинаций.",
+    "description_aeo": "База знаний для ChatGPT и Cursor – папка регламентов и словаря ДДС плюс правила. Что класть, что нельзя и как проверять."
+  },
+  "geo_qa": {
+    "score": 88,
+    "core_eeat_lite": 17,
+    "verdict": "PASS",
+    "date": "2026-07-22",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  },
+  "cover_family": "gradient_abstract"
+}

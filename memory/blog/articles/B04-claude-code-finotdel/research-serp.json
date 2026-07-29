@@ -1,0 +1,454 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-24",
+    "today_ru": "24.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-26",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-24 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B04",
+    "priority": "P0",
+    "slug": "claude-code-finotdel",
+    "h1": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями",
+    "primary_query": "claude code финансист",
+    "secondary_queries": [
+      "claude code для бухгалтера",
+      "терминальный ai финансы",
+      "автоматизация отчетности claude"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "claude code финансист 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и ...",
+          "url": "https://vc.ru/claudedry/2983306-polnyj-gajd-po-claude-code",
+          "snippet": ""
+        },
+        {
+          "title": "Claude Code в 2026: гайд для тех, кто еще пишет код руками",
+          "url": "https://habr.com/ru/articles/987382/",
+          "snippet": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и нейросеть, которая обновляет документацию сама Экосистема вокруг Claude Code растёт быстрее, чем кто-либо успевает её ..."
+        },
+        {
+          "title": "Code w/ Claude SF 2026 recap: Building on the AI exponential",
+          "url": "https://claude.com/blog/code-w-claude-sf-2026-sf",
+          "snippet": "В этой статье я расскажу, как устроены AI Coding Agents (Claude Code, OpenAI Codex, Opencode и др), как правильно ими пользоваться и как потратить $20 так, чтобы не уволили в 2026."
+        },
+        {
+          "title": "Claude Code: настройка MCP, Hooks и Skills в 2026 — мой рабочий сетап",
+          "url": "https://okhlopkov.com/claude-code-nastrojka-mcp-hooks-skills-2026/",
+          "snippet": "Check out our Code w/ Claude SF 2026 recap and product announcements, and watch the keynotes and sessions on YouTube."
+        },
+        {
+          "title": "Claude Code в 2026: гайд для тех, кто еще пишет код руками AI агенты в ...",
+          "url": "https://vk.com/wall-218462255_8333",
+          "snippet": "Как я настроил Claude Code в 2026: MCP-серверы, hooks, skills, CLAUDE.md, субагенты, стоимость и реальные сценарии ежедневной работы."
+        },
+        {
+          "title": "Claude Code в 2026: Skills, Sub-agents и Hooks — полный гайд с ...",
+          "url": "https://itnots.ru/aiiskustvennyj-intellekt/claude-code-v-2026-skills-sub-agents-i-hooks-polnyj-gajd-s-primerami-ot-praktika/",
+          "snippet": "AI агенты в 2026: гайд для тех, кто всё еще пишет код руками. Как устроены агенты типа Claude Code, ChatGPT Codex и др. Как правильно с ними работать. Как управлять контекстом. Как прогать голосовухами ..."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "claude code финансист июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и ...",
+          "url": "https://vc.ru/claudedry/2983306-polnyj-gajd-po-claude-code",
+          "snippet": ""
+        },
+        {
+          "title": "Неделя 23 · 1-5 июня 2026 - Claude Code Docs",
+          "url": "https://code.claude.com/docs/ru/whats-new/2026-w23",
+          "snippet": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и нейросеть, которая обновляет документацию сама Экосистема вокруг Claude Code растёт быстрее, чем кто-либо успевает её ..."
+        },
+        {
+          "title": "Claude Code в 2026: гайд для тех, кто еще пишет код руками",
+          "url": "https://habr.com/ru/articles/987382/",
+          "snippet": "Запуск режима auto на Bedrock, Vertex и Foundry, запрос перед записью файлов, которые могут выполнять код в режиме acceptEdits, список установленных плагинов с помощью /plugin list и требование утвержденного диапазона версий для ..."
+        },
+        {
+          "title": "Claude Code: настройка MCP, Hooks и Skills в 2026 — мой рабочий сетап",
+          "url": "https://okhlopkov.com/claude-code-nastrojka-mcp-hooks-skills-2026/",
+          "snippet": "В этой статье я расскажу, как устроены AI Coding Agents (Claude Code, OpenAI Codex, Opencode и др), как правильно ими пользоваться и как потратить $20 так, чтобы не уволили в 2026."
+        },
+        {
+          "title": "Code w/ Claude SF 2026 recap: Building on the AI exponential",
+          "url": "https://claude.com/blog/code-w-claude-sf-2026-sf",
+          "snippet": "Как я настроил Claude Code в 2026: MCP-серверы, hooks, skills, CLAUDE.md, субагенты, стоимость и реальные сценарии ежедневной работы."
+        },
+        {
+          "title": "Глубокое погружение: Claude Code - Май-Июнь 2026 - RUS #Курсы ...",
+          "url": "https://vk.com/wall-225352641_12905",
+          "snippet": "Check out our Code w/ Claude SF 2026 recap and product announcements, and watch the keynotes and sessions on YouTube."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "claude code финансист новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Claude Code и Великая паника производительности 2026 года",
+          "url": "https://habr.com/ru/news/1004352/",
+          "snippet": ""
+        },
+        {
+          "title": "Claude Code в 2026: гайд для тех, кто еще пишет код руками",
+          "url": "https://habr.com/ru/articles/987382/",
+          "snippet": "Предполагалось, что \"Vibe coding\" будет классным. Бывший исследователь OpenAI Андрей Карпати ввел этот термин в культурный лексикон в феврале 2025 года, чтобы описать новый вид..."
+        },
+        {
+          "title": "ИИ Claude разрушил инфраструктуру IT-компании - Газета.Ru | Новости",
+          "url": "https://www.gazeta.ru/tech/news/2026/03/07/28010869.shtml",
+          "snippet": "В этой статье я расскажу, как устроены AI Coding Agents (Claude Code, OpenAI Codex, Opencode и др), как правильно ими пользоваться и как потратить $20 так, чтобы не уволили в 2026."
+        },
+        {
+          "title": "Claude Code и Великая паника производительности 2026 года раскрыты",
+          "url": "https://skyread.ru/news/2026/02/27/10531-claude-code-i-velikaya-panika-proizvoditelnosti-2026-goda-raskryty/",
+          "snippet": "Разработчик стартапа AI Shipping Labs лишился всей продакшен-инфраструктуры после того, как доверил управление ИИ-агенту Claude Code от Anthropic с административными правами. Попытка сэкономить..."
+        },
+        {
+          "title": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и ...",
+          "url": "https://vc.ru/claudedry/2983306-polnyj-gajd-po-claude-code",
+          "snippet": "Главное: Появилась новая тенденция в программировании — использование ИИ-агентов, таких как Claude Code и Codex, для полного выполнения задач с минимальным участием человека."
+        },
+        {
+          "title": "Искусственный интеллект Anthropic Claude пишет 80% производственного ...",
+          "url": "https://www.gate.com/ru/news/detail/anthropic-ai-claude-writes-80-of-production-code-as-of-may-2026-21633127",
+          "snippet": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и нейросеть, которая обновляет документацию сама Экосистема вокруг Claude Code растёт быстрее, чем кто-либо успевает её ..."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "claude code для бухгалтера 2026",
+      "purpose": "вторичный запрос: claude code для бухгалтера",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и ...",
+          "url": "https://vc.ru/claudedry/2983306-polnyj-gajd-po-claude-code",
+          "snippet": ""
+        },
+        {
+          "title": "Claude Code в 2026: гайд для тех, кто еще пишет код руками",
+          "url": "https://habr.com/ru/articles/987382/",
+          "snippet": "Гайд по Claude Code, автоматическое обновление документации, 220 проверенных источников, репозиторий на GitHub, уникальные навыки и плагины"
+        },
+        {
+          "title": "Claude Code вместо бухгалтера: акты и договоры за 30 секунд",
+          "url": "https://pavezlo.ru/marketing/claude-code-zamenyaet-buhgaltera/",
+          "snippet": "В этой статье я расскажу, как устроены AI Coding Agents (Claude Code, OpenAI Codex, Opencode и др), как правильно ими пользоваться и как потратить $20 так, чтобы не уволили в 2026."
+        },
+        {
+          "title": "Полный обзор возможностей Claude Code за март 2026 года: планировщик ...",
+          "url": "https://help.apiyi.com/ru/claude-code-2026-new-features-loop-computer-use-remote-control-guide-ru.html",
+          "snippet": "Теперь я говорю Claude Code: «Сделай копию акта за февраль, замени даты на март». Готово за 30 секунд. Без открытия Word, без ручных правок, без риска забыть поменять одну дату из пяти. Ежемесячные документы — акты, заявки, отчёты — это не сложно. Это рутинно."
+        },
+        {
+          "title": "Claude Code: настройка MCP, Hooks и Skills в 2026 — мой рабочий сетап",
+          "url": "https://okhlopkov.com/claude-code-nastrojka-mcp-hooks-skills-2026/",
+          "snippet": "В этой статье мы систематизируем все текущие возможности Claude Code, чтобы вы могли быстро понять назначение и сценарии использования каждой функции."
+        },
+        {
+          "title": "Claude Code — гайд по установке и использованию в 2026",
+          "url": "https://claudeskills.ru/blog/claude-code-guide",
+          "snippet": "Как я настроил Claude Code в 2026: MCP-серверы, hooks, skills, CLAUDE.md, субагенты, стоимость и реальные сценарии ежедневной работы."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "терминальный ai финансы 2026",
+      "purpose": "вторичный запрос: терминальный ai финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Искусственный интеллект и будущее цифровых финансов в 2026 году",
+          "url": "https://businessman.ru/2026-iskusstvennyiy-intellekt-i-buduschee-tsifrovyih-finansov-v-godu.html",
+          "snippet": ""
+        },
+        {
+          "title": "Рынок It На Пороге 2026 Года: Как Искусственный Интеллект Меняет ...",
+          "url": "https://vc.ru/ai/2514478-iskusstvennyj-intellekt-i-rynok-it-v-rossii-k-2026-godu",
+          "snippet": "Узнайте, как ИИ трансформирует финансы в 2026 году: от стратегий JP Morgan до влияния на рынок труда и национальную безопасность в эпоху цифровой революции."
+        },
+        {
+          "title": "PDF KPMG Global ИИ в финансах",
+          "url": "https://assets.kpmg.com/content/dam/kpmgsites/kz/pdf/2026/06/AI-in-Finance-RUS.pdf",
+          "snippet": "Искусственный интеллект из технологического тренда превратился в операционную среду для бизнеса. На пороге 2026 года мы наблюдаем не просто рост инвестиций, а фундаментальное перераспределение ресурсов и ценностей в экономике."
+        },
+        {
+          "title": "Искусственный интеллект в финансах: тренды 2026 и будущее индустрии ...",
+          "url": "https://teego.ru/finansy/iskusstvennyj-intellekt-v-finansah-trendy-2026-i-budushhee-industrii/",
+          "snippet": "Этот отчёт, ИИ в финансах 2026, рассматривает, откуда возникают эти результаты и какие факторы их определяют. Он основан на нашем исследовании 2024 года, посвящённом использованию ИИ в финансовой отчетности, и расширяет ..."
+        },
+        {
+          "title": "Искусственный интеллект в финансах 2026: Экспертный разбор мифов и ...",
+          "url": "https://helpdv.ru/software/ai/ai-in-finance-2024/",
+          "snippet": "Искусственный интеллект уже трансформирует банковское дело и инвестиции. Рассматриваем главные тренды и прогнозы развития финтех-сектора."
+        },
+        {
+          "title": "Искусственный интеллект в личных финансах: тренды 2026 - Информационное ...",
+          "url": "https://teego.ru/finansy/iskusstvennyj-intellekt-v-lichnyh-finansah-trendy-2026/",
+          "snippet": "Внедрение AI в управление рисками и скоринг в 2026 году упёрлось в проблему «грязных» данных. Типичная ошибка: финансовые отделы собирают гигантские архивы (терабайты) транзакционных данных, но забывают очищать их от структурных смещений."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "автоматизация отчетности claude 2026",
+      "purpose": "вторичный запрос: автоматизация отчетности claude",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Claude Code 2026: Руководство для не разработчиков",
+          "url": "https://airassvet.ru/articles/claude-code-2026-rukovodstvo-dlya-ne-razrabotchikov",
+          "snippet": ""
+        },
+        {
+          "title": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и ...",
+          "url": "https://vc.ru/claudedry/2983306-polnyj-gajd-po-claude-code",
+          "snippet": "Используя Claude Code как агентного помощника, маркетолог может построить пайплайн отчетности, который напрямую подключается к Google Ads API и Meta Marketing API через протокол MCP (Model Context Protocol)."
+        },
+        {
+          "title": "Claude Code: промышленная автоматизация и работа с тяжёлым кодом",
+          "url": "https://mayai.ru/claude-code-promyshlennaya-avtomatizacziya-i-rabota-s-tyazhyolym-kodom/",
+          "snippet": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и нейросеть, которая обновляет документацию сама Экосистема вокруг Claude Code растёт быстрее, чем кто-либо успевает её ..."
+        },
+        {
+          "title": "Полный обзор возможностей Claude Code за март 2026 года: планировщик ...",
+          "url": "https://help.apiyi.com/ru/claude-code-2026-new-features-loop-computer-use-remote-control-guide-ru.html",
+          "snippet": "К маю 2026 года нейросеть Claude Code официально стала индустриальным стандартом для работы с тяжелым кодом, превратившись из простой утилиты в автономного агента."
+        },
+        {
+          "title": "Автоматизация с Claude: пошаговая инструкция от......",
+          "url": "https://aishift.you/avtomatizaciya-s-claude-instrukciya",
+          "snippet": "Основные нововведения Claude Code 2026 Давайте сначала взглянем на общую карту возможностей, а затем разберем всё по порядку."
+        },
+        {
+          "title": "Claude Skills обогнали GPTs: новый прорыв в автоматизации отчетов",
+          "url": "https://fb.ru/news/ai/2026/3/17/450316",
+          "snippet": "В этой статье разберу пошаговую систему автоматизации задач через Claude Code, покажу 6 реальных кейсов и объясню, когда использовать Claude, а когда переходить на n8n. Любая автоматизация — это три шага. Входные данные → обработка → результат."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Claude Code: как пользоваться в 2026 | Полный гайд",
+          "url": "https://shtruzel.ru/articles/claude-code-kak-polzovatsya-v-2026-godu-polnyy-gayd-ot-ustanovki-do-prodvinutykh-funktsiy",
+          "snippet": ""
+        },
+        {
+          "title": "Claude Code — полный гайд: установка, команды и реальные сценарии",
+          "url": "https://thecode.media/claude-code-gajd/",
+          "snippet": "Пошаговая инструкция по Claude Code: установка, команды, интеграции с VS Code и JetBrains, тарифы Pro и Max, MCP серверы и примеры использования в 2026 году."
+        },
+        {
+          "title": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и ...",
+          "url": "https://vc.ru/claudedry/2983306-polnyj-gajd-po-claude-code",
+          "snippet": "В этом гайде пройдём весь путь: что это такое, как поставить на любую систему, какие есть команды, как настроить под свой проект и сколько это стоит. А в конце — реальные сценарии работы и то, что иногда называют вайбкодингом: вы описываете задачу словами, а код пишет агент."
+        },
+        {
+          "title": "Claude Code — гайд по установке и использованию в 2026",
+          "url": "https://claudeskills.ru/blog/claude-code-guide",
+          "snippet": "Структурно гайд охватывает все механизмы расширения Claude Code, которые появились за последний год: Skills (переиспользуемые навыки), Plugins (готовые пакеты конфигураций), MCP-серверы ..."
+        },
+        {
+          "title": "Claude Code с нуля: полный гайд 2026 — установка, агенты, реальные ...",
+          "url": "https://neiropotok.ru/blog/claude-code-s-nulya-polnyy-gid",
+          "snippet": "Полный гайд по Claude Code: установка, настройка, реальные примеры из терминала и скиллы для усиления. Цены, сравнение с Copilot и практический опыт."
+        },
+        {
+          "title": "Claude Code: полный гайд 2026 — установка, настройка, реальный кейс",
+          "url": "https://vibecoding.ru/media/blog/claude-code-guide-2026",
+          "snippet": "Это принципиально другой класс инструментов. В этом гайде разберём всё с нуля: установка, первая сессия, настройка под проект, режимы работы и продвинутые возможности."
+        }
+      ],
+      "searched_at": "2026-06-24"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://vc.ru/claudedry/2983306-polnyj-gajd-po-claude-code",
+      "title": "Самый подробный гайд по Claude Code в 2026 году: 220+ источников и ...",
+      "from_query": "claude code финансист 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/987382/",
+      "title": "Claude Code в 2026: гайд для тех, кто еще пишет код руками",
+      "from_query": "claude code финансист 2026"
+    },
+    {
+      "url": "https://claude.com/blog/code-w-claude-sf-2026-sf",
+      "title": "Code w/ Claude SF 2026 recap: Building on the AI exponential",
+      "from_query": "claude code финансист 2026"
+    },
+    {
+      "url": "https://okhlopkov.com/claude-code-nastrojka-mcp-hooks-skills-2026/",
+      "title": "Claude Code: настройка MCP, Hooks и Skills в 2026 — мой рабочий сетап",
+      "from_query": "claude code финансист 2026"
+    },
+    {
+      "url": "https://vk.com/wall-218462255_8333",
+      "title": "Claude Code в 2026: гайд для тех, кто еще пишет код руками AI агенты в ...",
+      "from_query": "claude code финансист 2026"
+    },
+    {
+      "url": "https://itnots.ru/aiiskustvennyj-intellekt/claude-code-v-2026-skills-sub-agents-i-hooks-polnyj-gajd-s-primerami-ot-praktika/",
+      "title": "Claude Code в 2026: Skills, Sub-agents и Hooks — полный гайд с ...",
+      "from_query": "claude code финансист 2026"
+    },
+    {
+      "url": "https://code.claude.com/docs/ru/whats-new/2026-w23",
+      "title": "Неделя 23 · 1-5 июня 2026 - Claude Code Docs",
+      "from_query": "claude code финансист июнь 2026"
+    },
+    {
+      "url": "https://vk.com/wall-225352641_12905",
+      "title": "Глубокое погружение: Claude Code - Май-Июнь 2026 - RUS #Курсы ...",
+      "from_query": "claude code финансист июнь 2026"
+    },
+    {
+      "url": "https://habr.com/ru/news/1004352/",
+      "title": "Claude Code и Великая паника производительности 2026 года",
+      "from_query": "claude code финансист новости 2026"
+    },
+    {
+      "url": "https://www.gazeta.ru/tech/news/2026/03/07/28010869.shtml",
+      "title": "ИИ Claude разрушил инфраструктуру IT-компании - Газета.Ru | Новости",
+      "from_query": "claude code финансист новости 2026"
+    },
+    {
+      "url": "https://skyread.ru/news/2026/02/27/10531-claude-code-i-velikaya-panika-proizvoditelnosti-2026-goda-raskryty/",
+      "title": "Claude Code и Великая паника производительности 2026 года раскрыты",
+      "from_query": "claude code финансист новости 2026"
+    },
+    {
+      "url": "https://www.gate.com/ru/news/detail/anthropic-ai-claude-writes-80-of-production-code-as-of-may-2026-21633127",
+      "title": "Искусственный интеллект Anthropic Claude пишет 80% производственного ...",
+      "from_query": "claude code финансист новости 2026"
+    },
+    {
+      "url": "https://pavezlo.ru/marketing/claude-code-zamenyaet-buhgaltera/",
+      "title": "Claude Code вместо бухгалтера: акты и договоры за 30 секунд",
+      "from_query": "claude code для бухгалтера 2026"
+    },
+    {
+      "url": "https://help.apiyi.com/ru/claude-code-2026-new-features-loop-computer-use-remote-control-guide-ru.html",
+      "title": "Полный обзор возможностей Claude Code за март 2026 года: планировщик ...",
+      "from_query": "claude code для бухгалтера 2026"
+    },
+    {
+      "url": "https://claudeskills.ru/blog/claude-code-guide",
+      "title": "Claude Code — гайд по установке и использованию в 2026",
+      "from_query": "claude code для бухгалтера 2026"
+    },
+    {
+      "url": "https://businessman.ru/2026-iskusstvennyiy-intellekt-i-buduschee-tsifrovyih-finansov-v-godu.html",
+      "title": "Искусственный интеллект и будущее цифровых финансов в 2026 году",
+      "from_query": "терминальный ai финансы 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/2514478-iskusstvennyj-intellekt-i-rynok-it-v-rossii-k-2026-godu",
+      "title": "Рынок It На Пороге 2026 Года: Как Искусственный Интеллект Меняет ...",
+      "from_query": "терминальный ai финансы 2026"
+    },
+    {
+      "url": "https://assets.kpmg.com/content/dam/kpmgsites/kz/pdf/2026/06/AI-in-Finance-RUS.pdf",
+      "title": "PDF KPMG Global ИИ в финансах",
+      "from_query": "терминальный ai финансы 2026"
+    },
+    {
+      "url": "https://teego.ru/finansy/iskusstvennyj-intellekt-v-finansah-trendy-2026-i-budushhee-industrii/",
+      "title": "Искусственный интеллект в финансах: тренды 2026 и будущее индустрии ...",
+      "from_query": "терминальный ai финансы 2026"
+    },
+    {
+      "url": "https://helpdv.ru/software/ai/ai-in-finance-2024/",
+      "title": "Искусственный интеллект в финансах 2026: Экспертный разбор мифов и ...",
+      "from_query": "терминальный ai финансы 2026"
+    },
+    {
+      "url": "https://teego.ru/finansy/iskusstvennyj-intellekt-v-lichnyh-finansah-trendy-2026/",
+      "title": "Искусственный интеллект в личных финансах: тренды 2026 - Информационное ...",
+      "from_query": "терминальный ai финансы 2026"
+    },
+    {
+      "url": "https://airassvet.ru/articles/claude-code-2026-rukovodstvo-dlya-ne-razrabotchikov",
+      "title": "Claude Code 2026: Руководство для не разработчиков",
+      "from_query": "автоматизация отчетности claude 2026"
+    },
+    {
+      "url": "https://mayai.ru/claude-code-promyshlennaya-avtomatizacziya-i-rabota-s-tyazhyolym-kodom/",
+      "title": "Claude Code: промышленная автоматизация и работа с тяжёлым кодом",
+      "from_query": "автоматизация отчетности claude 2026"
+    },
+    {
+      "url": "https://aishift.you/avtomatizaciya-s-claude-instrukciya",
+      "title": "Автоматизация с Claude: пошаговая инструкция от......",
+      "from_query": "автоматизация отчетности claude 2026"
+    },
+    {
+      "url": "https://fb.ru/news/ai/2026/3/17/450316",
+      "title": "Claude Skills обогнали GPTs: новый прорыв в автоматизации отчетов",
+      "from_query": "автоматизация отчетности claude 2026"
+    },
+    {
+      "url": "https://shtruzel.ru/articles/claude-code-kak-polzovatsya-v-2026-godu-polnyy-gayd-ot-ustanovki-do-prodvinutykh-funktsiy",
+      "title": "Claude Code: как пользоваться в 2026 | Полный гайд",
+      "from_query": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями 2026"
+    },
+    {
+      "url": "https://thecode.media/claude-code-gajd/",
+      "title": "Claude Code — полный гайд: установка, команды и реальные сценарии",
+      "from_query": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями 2026"
+    },
+    {
+      "url": "https://neiropotok.ru/blog/claude-code-s-nulya-polnyy-gid",
+      "title": "Claude Code с нуля: полный гайд 2026 — установка, агенты, реальные ...",
+      "from_query": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями 2026"
+    },
+    {
+      "url": "https://vibecoding.ru/media/blog/claude-code-guide-2026",
+      "title": "Claude Code: полный гайд 2026 — установка, настройка, реальный кейс",
+      "from_query": "Как использовать Claude Code в финотделе: пошаговый гайд с 7 сценариями 2026"
+    }
+  ]
+}

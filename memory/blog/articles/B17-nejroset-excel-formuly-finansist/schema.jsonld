@@ -1,0 +1,192 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#article",
+      "headline": "Как использовать нейросеть для Excel: ChatGPT пишет формулы, сводные и очистку выгрузок",
+      "description": "Практичный гайд: нейросеть для Excel пишет СУММЕСЛИМН, XLOOKUP и сводные. RU-Excel, 10 промптов и чеклист проверки для финансиста.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/nejroset-excel-formuly-finansist-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная сетка таблицы Excel с голографическим свечением на тёмном фоне"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "как использовать нейросеть для excel, chatgpt формулы excel, chatgpt сводные таблицы, ai для excel финансист, суммеслимн chatgpt",
+      "wordCount": 9493,
+      "articleSection": "Excel / AI / формулы",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли загружать выгрузку 1С в ChatGPT целиком?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. В чат – только схема столбцов и обезличенный срез без ФИО, ИНН, телефонов и лишних реквизитов. Сырую первичку маскируйте по статье про обезличивание. Иначе риск коммерческой тайны и 152-ФЗ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Хватит ли бесплатного тарифа нейросети для формул Excel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для copy-paste формул из чата часто хватает базового доступа – зависит от лимитов аккаунта. ChatGPT for Excel и Copilot in Excel требуют подходящую подписку по докам вендоров. Считайте канал: чат vs in-grid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Excel Copilot или ChatGPT – что выбрать финансисту?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copilot сильнее как оператор внутри книги: формулы, сводные, правки при формате Table. ChatGPT гибче как аналитик и отладчик через copy-paste. Hybrid нормален: формулу набросать в чате, сводную в Copilot, итог всегда сверить."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему нейросеть выдаёт английские SUMIFS, а у меня ошибка?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В русской Excel нужны русские имена и разделитель \";\". Добавьте это в каждый промпт хвостом. Если пришла EN-формула – попросите \"перепиши на RU-Excel\" до вставки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "XLOOKUP не работает у коллег на Excel 2019. Что делать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "XLOOKUP нет в Excel 2016 и 2019. В промпте сразу пишите версию и просите ВПР или ИНДЕКС+ПОИСКПОЗ. Иначе получите #ИМЯ? на чужих машинах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Достаточно ли \"красивого\" объяснения формулы от нейросети?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Обязательны контрольная сумма и тестовая строка. Без цифр объяснение – рассказ, не проверка. В отчёт собственнику – только формулы после smoke-теста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда ChatGPT for Excel лучше обычного чата?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда нужно править модель прямо в книге и есть доступ к beta add-in. Для разовой формулы на закрытии обычный чат + вставка быстрее. В обоих случаях сложное дорабатывайте руками и не грузите сырые ПДн."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#howto",
+      "name": "Как использовать нейросеть для Excel: ChatGPT пишет формулы, сводные и очистку выгрузок",
+      "description": "Граница задач для нейросети, выбор ChatGPT/Claude/Copilot, 10 промптов под RU-Excel, антигаллюцинационный чеклист и решение уйти в скрипт/staging.",
+      "inLanguage": "ru",
+      "totalTime": "PT1H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Excel (русская версия; 2016/2019 или 365/2021)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "ChatGPT и/или Claude (чат copy-paste)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Copilot in Excel или ChatGPT for Excel (опционально, in-grid)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Обезличенный срез: шапка столбцов + 5–20 строк без ФИО/ИНН"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Хвост промпта: русские имена функций и разделитель ;"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Отделите задачи Excel, которые реально отдать нейросети",
+          "text": "Отдайте нейросети формулы (СУММЕСЛИМН, XLOOKUP/ВПР), дизайн сводной и черновик очистки. Не отдавайте ежедневный join двух выгрузок и массовый ETL на сотнях тысяч строк – это скрипт/staging. Сырую выгрузку 1С с ПДн в чат не грузите.",
+          "url": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#excel-ai-tasks"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Сравните ChatGPT и Claude, зафиксируйте канал и версию Excel",
+          "text": "Зафиксируйте версию Excel (XLOOKUP нет в 2016/2019). Выберите один канал на сеанс: чат copy-paste или Copilot/add-in. Подготовьте безопасный срез и в промпте явно укажите русские имена функций и разделитель ;. Не принимайте ответ без контрольной суммы.",
+          "url": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#chatgpt-vs-claude"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Скопируйте рабочий промпт: СУММЕСЛИМН, lookup, сводная или дубли",
+          "text": "Один промпт = одна формула. Вставьте свои имена столбцов и хвост про RU-Excel. Для сводной просите раскладку Rows/Columns/Values/Filters без VBA. Антипаттерн – просить сумму без листа, столбцов и ячейки результата.",
+          "url": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#ten-prompts"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Проверьте формулы антигаллюцинационным чеклистом",
+          "text": "Сверьте контрольную сумму блока, 1–2 тестовые строки, смену фильтра, разделитель ; и русские имена функций. Если XLOOKUP, а у коллег Excel 2019 – запросите ВПР / ИНДЕКС+ПОИСКПОЗ. Нейросеть пишет черновик; ответственность за сумму в отчёте – ваша.",
+          "url": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#anti-hallucination"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Решите, когда пора уходить из Excel в скрипт или staging",
+          "text": "Уходите, если разбор повторяется каждый день/неделю, нужен join двух источников, файл тормозит или растёт зоопарк макросов. Схема: выгрузка → обезличенный срез → формула/сводная → при повторе Python/Cursor + raw_* → дашборд.",
+          "url": "https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/#leave-excel"
+        }
+      ]
+    }
+  ]
+}

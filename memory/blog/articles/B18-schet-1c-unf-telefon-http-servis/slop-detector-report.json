@@ -1,0 +1,26 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 3,
+  "over_long_sentences": [
+    {
+      "sentence": "Критерий Толстый клиент / RDP Мобильное УНФ HTTP + PWA/Telegram Что открываете Всю программу Полный функционал МП Один сценарий: счёт + PDF Где пароль 1С На рабочей станции В приложении / облаке Только на бэкенде Кто ставит Как обычно По инструкции 1С 1С-ник один раз, дальше менеджер Когда выбирать Офис, полный учёт Нужен весь МП Нужен только быстрый счёт Правило выбора: если официальное мобильное УНФ уже устраивает – не городите свой контур",
+      "word_count": 66
+    },
+    {
+      "sentence": "Соберите архитектуру: PWA/Telegram → бэкенд → HTTP-сервис УНФ → PDF Схема: Телефон (PWA или Telegram) → код доступа → FastAPI (сейф с учёткой 1С) → HTTP Basic → InvoiceBot в УНФ → контрагент / счёт / проведение → PDF Почему не бить телефоном напрямую в 1С",
+      "word_count": 34
+    },
+    {
+      "sentence": "{ \"doc_type\": \"invoice\", \"counterparty\": {\"name\": \"ООО Пример\", \"inn\": \"7700000000\"}, \"date\": \"2026-07-22\", \"vat\": {\"rate\": 22, \"included\": true}, \"lines\": [{\"name\": \"Услуга\", \"qty\": 1, \"price\": 10000}] } Для установки PWA \"как приложение\" желателен HTTPS; на LAN пилота часто хватает HTTP + \"на главный экран\" в Chrome Android",
+      "word_count": 37
+    }
+  ],
+  "readability": {
+    "score": 83.6,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 9.4,
+    "avg_syllables_per_word": 1.8
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "topic_id": "B20",
+  "h1": "Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд",
+  "title": "Cursor для финансиста: как за вечер собрать скрипт сверки и маленький дашборд",
+  "description": "Пошагово: Cursor вместо веб-чата, папка с CSV и .gitignore, скрипт сверки двух выгрузок и локальный мини-дашборд Streamlit/HTML за один вечер.",
+  "cover_alt": "Тёмный UI-мокап: путь от CSV сверки к скрипту и локальному дашборду в Cursor",
+  "slug": "cursor-finansist-skript-dashbord",
+  "primary_query": "cursor ai",
+  "secondary_queries": [
+    "cursor для начинающих",
+    "cursor финансист",
+    "vibe coding cursor дашборд"
+  ],
+  "char_count": 9483,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "Cursor для финансиста: скрипт сверки и дашборд",
+    "как за вечер собрать сверку CSV в Cursor",
+    "мини-дашборд Streamlit из папки Cursor"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor AI для финансиста: скрипт сверки и дашборд за вечер",
+    "title_ctr": "💻 Cursor AI для финансиста: скрипт сверки и дашборд за один вечер – без разработчика!",
+    "title_aeo": "Как за вечер собрать в Cursor скрипт сверки CSV и маленький дашборд?",
+    "description_seo": "Практический гайд: Cursor vs ChatGPT, папка data/.gitignore, промпт сверки двух выгрузок, Streamlit/HTML на localhost и чеклист без сырых ПДн.",
+    "description_ctr": "⚡️ Два CSV на столе? За вечер – скрипт расхождений и локальный дашборд в Cursor. Без заказного dev и без слива ФИО в чат.",
+    "description_aeo": "Cursor AI для финансиста – папка проекта с агентом: скрипт сверки двух CSV и мини-дашборд Streamlit/HTML на localhost за один вечер."
+  },
+  "geo_qa": {
+    "score": 92,
+    "verdict": "PASS",
+    "date": "2026-07-22",
+    "html_linter": "pass",
+    "slop_score": 0,
+    "cannibalization": "pass"
+  },
+  "cover_family": "gradient_abstract"
+}

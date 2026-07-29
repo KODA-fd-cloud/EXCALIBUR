@@ -1,0 +1,22 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 2,
+  "over_long_sentences": [
+    {
+      "sentence": "06 amount Сколько ждут 185 000 due_date Плановая оплата 2026-06-15 days_overdue Формула от сегодня =MAX(0; TODAY()-due_date) status Правило касания due_soon / overdue_1 / escalate owner Кто отвечает менеджер / финдир contact_channel Куда слать email бухгалтера / Telegram last_touch / result История 2026-06-18 / \"оплатят 20",
+      "word_count": 31
+    },
+    {
+      "sentence": "Схема: Реестр (Sheets) → n8n Schedule → фильтр статуса → шаблон письма → email/Telegram → лог в строку → раз в неделю разбор оплат Телеграм менеджеру – отдельно от письма клиенту: \"сегодня 4 строки overdue_1, вот список\"",
+      "word_count": 28
+    }
+  ],
+  "readability": {
+    "score": 67.2,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 11.5,
+    "avg_syllables_per_word": 2.1
+  }
+}

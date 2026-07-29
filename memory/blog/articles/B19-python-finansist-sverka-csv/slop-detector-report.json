@@ -1,0 +1,18 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 1,
+  "over_long_sentences": [
+    {
+      "sentence": ", повтор каждую неделю Зависает / рискует Рабочий стандарт Нужен лог: left_only / right_only Вручную костыли indicator=True из коробки Тот же отчёт завтра на новых файлах Копипаст формул Один скрипт, новые CSV Вердикт: если сверка повторяется и Excel уже \"думает\", берите скрипт",
+      "word_count": 38
+    }
+  ],
+  "readability": {
+    "score": 100.0,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 7.7,
+    "avg_syllables_per_word": 1.6
+  }
+}

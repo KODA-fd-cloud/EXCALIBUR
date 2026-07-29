@@ -1,0 +1,464 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B18",
+    "priority": "P0",
+    "slug": "schet-1c-unf-telefon-http-servis",
+    "h1": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA",
+    "primary_query": "выставить счет в 1с",
+    "secondary_queries": [
+      "интеграция 1с telegram",
+      "http сервис 1с унф",
+      "счет на оплату с телефона"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "выставить счет в 1с 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как выставить счет в 1С: пошаговая инструкция 2026 — Интеграция",
+          "url": "https://integration-software.ru/blog/kak-vystavit-schet-klientu-v-1s-8-3",
+          "snippet": ""
+        },
+        {
+          "title": "Как выставлять счета‑фактуры и вести книги с 1 апреля 2026 года ...",
+          "url": "https://e.glavbukh.ru/1172601",
+          "snippet": "Как выставить счёт в 1С — это последовательность из шести действий: открыть раздел «Продажи» → «Счета покупателям» → нажать «Создать» → выбрать контрагента и договор → заполнить ..."
+        },
+        {
+          "title": "УСН с НДС с 2026 года: как выставить счёт‑фактуру и вести книгу продаж в 1С",
+          "url": "https://grandproject.ru/blog/usn-s-nds-s-2026-goda-kak-vystavit-schyet-fakturu-i-vesti-knigu-prodazh-v-1s/",
+          "snippet": "Как выставлять счета‑фактуры и вести книги с 1 апреля 2026 года: образцы заполнения в 1С Компании уже с 1 апреля должны заполнять в счетах-фактурах новый обязательный реквизит."
+        },
+        {
+          "title": "Как оформить счет на доплату НДС в 2026 в 1С 8.3",
+          "url": "https://buhexpert8.ru/1s-buhgalteriya/nalogi/nds-nalogi/perehod-20/schet-pokupatelyu-na-doplatu-nds-v-2026-godu-v-1s.html",
+          "snippet": "Мы по шагам разберём, как настроить 1С для учёта НДС на УСН, как выставить первый счёт-фактуру, заполнить книгу продаж и сдать декларацию. Все инструкции — с конкретными кнопками и ..."
+        },
+        {
+          "title": "Счёт-фактура при зачёте аванса: новые требования 2026 года и настройка в 1С",
+          "url": "https://www.buslog.ru/service/articles/bp/novye-pravila-zapolneniya-scheta-faktury-pri-zachyete-avansa-s-2026-goda-chto-izmenilos-i-kak-rabota/",
+          "snippet": "Выставление Счета на оплату со ставкой НДС 22% по отгрузке в 2026 не будет ошибочным, но может запутать покупателя. Выставленный корректировочный счет-фактура на аванс в 2025 году будет со ставкой НДС 20%. При таком Счете покупатель правильно заполнит назначение платежного поручения."
+        },
+        {
+          "title": "Как выставлять счета-фактуры с 01.01.2026?",
+          "url": "https://its.1c.ru/db/newsclar/content/497842/hdoc",
+          "snippet": "В статье рассказываем о новых требованиях к заполнению счета-фактуры при зачёте аванса, которые вступают в силу с 1 января 2026 года."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "выставить счет в 1с июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как выставить счет в 1С: пошаговая инструкция 2026 — Интеграция",
+          "url": "https://integration-software.ru/blog/kak-vystavit-schet-klientu-v-1s-8-3",
+          "snippet": ""
+        },
+        {
+          "title": "УСН с НДС с 2026 года: как выставить счёт‑фактуру и вести книгу продаж в 1С",
+          "url": "https://grandproject.ru/blog/usn-s-nds-s-2026-goda-kak-vystavit-schyet-fakturu-i-vesti-knigu-prodazh-v-1s/",
+          "snippet": "Как выставить счет в 1С в 2026 году: пошаговая инструкция для 1С:Бухгалтерии 8, УТ, УНФ и ERP. Ставка НДС 22 %, нужные релизы, типовые ошибки и ЭДО."
+        },
+        {
+          "title": "Счёт-фактура при зачёте аванса: новые требования 2026 года и настройка в 1С",
+          "url": "https://www.buslog.ru/service/articles/bp/novye-pravila-zapolneniya-scheta-faktury-pri-zachyete-avansa-s-2026-goda-chto-izmenilos-i-kak-rabota/",
+          "snippet": "Мы по шагам разберём, как настроить 1С для учёта НДС на УСН, как выставить первый счёт-фактуру, заполнить книгу продаж и сдать декларацию. Все инструкции — с конкретными кнопками и ..."
+        },
+        {
+          "title": "Как выставлять счета-фактуры с 01.01.2026?",
+          "url": "https://its.1c.ru/db/newsclar/content/497842/hdoc",
+          "snippet": "В статье рассказываем о новых требованиях к заполнению счета-фактуры при зачёте аванса, которые вступают в силу с 1 января 2026 года."
+        },
+        {
+          "title": "Как выставлять счета‑фактуры и вести книги с 1 апреля 2026 года ...",
+          "url": "https://e.glavbukh.ru/1172601",
+          "snippet": "Как заполнять строку 5а счета-фактуры по новым правилам с 01.10.2024?"
+        },
+        {
+          "title": "Счет-фактура 2026: новые правила, образцы и пошаговая инструкция по ...",
+          "url": "https://biznesinalogi.ru/lenta/post/54271/",
+          "snippet": "1С уже формирует документы с новым реквизитом. Важно соблюдать порядок действий, чтобы программа правильно подтягивала реквизиты авансового счета-фактуры в документ на отгрузку (рис. 5)."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "выставить счет в 1с новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как выставлять счета‑фактуры и вести книги с 1 апреля 2026 года ...",
+          "url": "https://e.glavbukh.ru/1172601",
+          "snippet": ""
+        },
+        {
+          "title": "УСН с НДС с 2026 года: как выставить счёт‑фактуру и вести книгу продаж в 1С",
+          "url": "https://grandproject.ru/blog/usn-s-nds-s-2026-goda-kak-vystavit-schyet-fakturu-i-vesti-knigu-prodazh-v-1s/",
+          "snippet": "В статье — разъяснения и примеры от Ольги Думинской из ФНС для разных случаев, а также видео и подсказки, как работать с новым счетом-фактурой в программе 1С. Обновите программу до последней версии, чтобы она формировала счет-фактуру с новой строкой."
+        },
+        {
+          "title": "Счёт-фактура при зачёте аванса: новые требования 2026 года и настройка в 1С",
+          "url": "https://www.buslog.ru/service/articles/bp/novye-pravila-zapolneniya-scheta-faktury-pri-zachyete-avansa-s-2026-goda-chto-izmenilos-i-kak-rabota/",
+          "snippet": "Мы по шагам разберём, как настроить 1С для учёта НДС на УСН, как выставить первый счёт-фактуру, заполнить книгу продаж и сдать декларацию. Все инструкции — с конкретными кнопками и ..."
+        },
+        {
+          "title": "Как выставлять счета-фактуры с 01.01.2026?",
+          "url": "https://its.1c.ru/db/newsclar/content/497842/hdoc",
+          "snippet": "В статье рассказываем о новых требованиях к заполнению счета-фактуры при зачёте аванса, которые вступают в силу с 1 января 2026 года."
+        },
+        {
+          "title": "Как выставить счет в 1С: пошаговая инструкция 2026 — Интеграция",
+          "url": "https://integration-software.ru/blog/kak-vystavit-schet-klientu-v-1s-8-3",
+          "snippet": "Как заполнять строку 5а счета-фактуры по новым правилам с 01.10.2024?"
+        },
+        {
+          "title": "Новый счет-фактура 2026: Указываем данные авансового счета-фактуры",
+          "url": "https://1c-prime.ru/articles/rekomendatsii-novye-stati-2025/novyy-schet-faktura-2026-ukazyvaem-dannye-avansovogo-scheta-faktury/",
+          "snippet": "Как выставить счет в 1С в 2026 году: пошаговая инструкция для 1С:Бухгалтерии 8, УТ, УНФ и ERP. Ставка НДС 22 %, нужные релизы, типовые ошибки и ЭДО."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "интеграция 1с telegram 2026",
+      "purpose": "вторичный запрос: интеграция 1с telegram",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Интеграция 1С и Telegram — уведомления и боты | KVANT-C",
+          "url": "https://kvant-c.ru/faq/1c-telegram-integration/",
+          "snippet": ""
+        },
+        {
+          "title": "Telegram-боты из 1С — интеграция и примеры | KVANT-C",
+          "url": "https://kvant-c.ru/faq/1c-telegram-bot/",
+          "snippet": "Как настроить интеграцию 1С с Telegram. Отправка уведомлений, создание ботов, автоматические отчёты и контроль бизнес-процессов."
+        },
+        {
+          "title": "Интеграция 1С с Telegram: обмен данными и автоматизация учёта",
+          "url": "https://flow-masters.ru/blog/1c-telegram-integration/",
+          "snippet": "Как создать Telegram-бота для 1С: отправка уведомлений, команды, HTTP-запросы. Примеры кода."
+        },
+        {
+          "title": "Telegram-бот для 1С: автоматизация заявок и уведомлений в 2026 году",
+          "url": "https://somsk.ru/blog/telegram-bot-dlya-1s-avtomatizatsiya-zayavok-i-uvedomleniy-2026",
+          "snippet": "Пошаговое руководство по интеграции 1С с Telegram: настройка API, обмен данными, автоматизация учёта. Реальные кейсы и цифры ROI."
+        },
+        {
+          "title": "Интеграция 1С с Telegram-ботом: 5 практических сценариев автоматизации ...",
+          "url": "https://somsk.ru/blog/integratsiya-1c-telegram-bot",
+          "snippet": "Полное руководство по интеграции Telegram-ботов с программами 1С для автоматизации заявок, уведомлений и бизнес-процессов в 2026 году."
+        },
+        {
+          "title": "Интеграция систем программы 1C с мессенджером TelegramИнтеграция 1C с ...",
+          "url": "https://topkoder.ru/stati/integraciya-1c-s-telegram-poshagovyj-gajd-dlya-razrabotchika/",
+          "snippet": "Разбираем реальные кейсы подключения Telegram-бота к 1С: от уведомлений о заказах до мобильного склада. Пошаговые алгоритмы внедрения и экономический эффект."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "http сервис 1с унф 2026",
+      "purpose": "вторичный запрос: http сервис 1с унф",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Официальный сайт «1С:Управления нашей фирмой» (1С:УНФ), управляйте ...",
+          "url": "https://v8.1c.ru/small.biz/",
+          "snippet": ""
+        },
+        {
+          "title": "Вебинар «НДС 2026 года в 1С:УНФ и 1С:Рознице. Как подготовиться к ...",
+          "url": "https://v8.1c.ru/news/novyy-vebinar-nds-2026-goda-v-1s-unf-i-1s-roznitse-kak-podgotovitsya-k-izmeneniyam.htm",
+          "snippet": "Поддержка 54-ФЗ, работа с онлайн-кассами и ККТ, обмен данными с ГИСМ и ЕГАИС. Полная интеграция с сайтом, обработка заказов, управление оплатой и доставкой. Многофункциональная CRM-система, торговля со склада, передача на реализацию, расчет потребностей, закупка товаров."
+        },
+        {
+          "title": "Вебинар «НДС 2026 года в 1С:УНФ и 1С ... - Rutube",
+          "url": "https://rutube.ru/video/25d63f592c887b28aa0790c36787197d/",
+          "snippet": "18 декабря состоялся бесплатный вебинар «НДС 2026 года в 1С:УНФ и 1С:Рознице. Как подготовиться к изменениям». Ведущий вебинара: Михаил Пинягин, руководитель компании «Айтон»."
+        },
+        {
+          "title": "Новый интерфейс 1С:УНФ 2026: навигация по Обмену с 1С",
+          "url": "https://tusoft.ru/support/category/obmen-s-1s/novyy-interfeys-1sunf-gid-po-navigatsii/",
+          "snippet": "Вебинар «НДС 2026 года в 1С:УНФ и 1С:Рознице. Как подготовиться к изменениям». Ведущий вебинара: Михаил Пинягин, руководитель компании «Айтон»."
+        },
+        {
+          "title": "Учимся создавать http-сервисы (часть первая)",
+          "url": "https://infostart.ru/1c/articles/1293341/",
+          "snippet": "Эта инструкция поможет вам быстро сориентироваться в обновленной среде и найти привычные настройки обмена, инструменты загрузки товаров и документов в 1С, а также выгрузки номенклатуры на кассы и в облако Управления ассортиментом."
+        },
+        {
+          "title": "Полезные сервисы 1С:УНФ: от проверки контрагентов до создания веб-витрины",
+          "url": "https://1cfresh.com/articles/useful_sbm_services_2026_02_25",
+          "snippet": "Пошаговое руководство по созданию http-сервиса. Цель. Научиться создавать http сервисы на платформе 1С: Предприятие 8. План обучения: Подготовка объектов метаданных для сервиса."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "счет на оплату с телефона 2026",
+      "purpose": "вторичный запрос: счет на оплату с телефона",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Бланк и образец счёта на оплату 2026 (скачать шаблоны Word и Excel ...",
+          "url": "https://www.regberry.ru/malyy-biznes/schet-na-oplatu-obrazec-blank",
+          "snippet": ""
+        },
+        {
+          "title": "Бланк счёта на оплату — скачать образец 2026",
+          "url": "https://allcontract.ru/documents/documents/blank-scheta-na-oplatu",
+          "snippet": "Чтобы выставить счёт на оплату не обязательно пользоваться специальными программами, можно скачать бесплатно Word или Excel шаблон, и подготовить собственный бланк с необходимыми реквизитами продавца или поставщика услуг."
+        },
+        {
+          "title": "Счет на оплату 2026: образец, бланк и правила заполнения",
+          "url": "https://tenchat.ru/media/5235231-schet-na-oplatu-2026-obrazets-blank-i-pravila-zapolneniya",
+          "snippet": "Бланк счёта на оплату 2026: обязательные реквизиты, НДС 22%, электронная форма через ЭДО, счёт-договор, разница между счётом и счётом-фактурой."
+        },
+        {
+          "title": "Образец счёта на оплату 2026 — бланк и шаблон",
+          "url": "https://blank-kit.ru/blog/obrazec-scheta-na-oplatu-blank-shablon",
+          "snippet": "Счет на оплату это детализированное коммерческое предложение, переведенное в формат платежной инструкции. Документ содержит перечень товаров, финансовый расчет стоимости, сроки и данные получателя."
+        },
+        {
+          "title": "Счёт на оплату — бланк и образец 2026",
+          "url": "https://podpisal.ru/shablony/schet-na-oplatu/",
+          "snippet": "Актуальный образец счёта на оплату 2026 года. Бланк счёта для ИП, ООО и самозанятых. Пример заполнения с НДС 22%, 5%, 7% и без НДС. Скачать PDF и Word бесплатно."
+        },
+        {
+          "title": "Счет на оплату: скачать образец, бланк, генератор онлайн",
+          "url": "https://ggdt.ru/schet-na-oplatu.html",
+          "snippet": "Скачайте готовый бланк счёта на оплату в PDF, заполнив форму выше. Образец содержит все необходимые реквизиты и формируется автоматически — вам не нужно верстать документ вручную."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Отправка из 1С в Telegram, WhatsApp и Max через Green-Api · CoderStar",
+          "url": "https://www.coderstar.ru/rasshireniya/integracia-whatsapp/",
+          "snippet": ""
+        },
+        {
+          "title": "Интеграция 1С:Управление нашей фирмой с телефонией и чатами WhatsApp и ...",
+          "url": "https://docs.telefon1c.ru/v4/integration_into_configurations/integration_into_1cunf/",
+          "snippet": "Интеграция с Whatsapp осуществляется при помощи сторонней программы - Green-Api. Это платный сервис. С тарифами можно ознакомиться после регистрации на Green-Api."
+        },
+        {
+          "title": "Настройка Telegram-бота «УНФ в вашем Телеграме»",
+          "url": "https://solutions.1c.ru/add/unf-telegram-bot/",
+          "snippet": "Функционал системы позволяет обрабатывать входящие и исходящие сообщения WhatsApp и Telegram напрямую в 1С:Управление нашей фирмой, а также через Панель телефонии для 1С и с мобильного телефона."
+        },
+        {
+          "title": "Интеграция 1С УНФ с Telegram и Вконтакте - b-rs.ru",
+          "url": "https://b-rs.ru/company/article/integraciya-1s-unf-s-telegram-i-vkontakte",
+          "snippet": "Расширение упрощает настройку Telegram-бота «УНФ в вашем Телеграме» для получения информации об контрагентах, контактах, деньгах и продажах из вашей 1С прямо в мессенджере."
+        },
+        {
+          "title": "Как в \"1С:УНФ\" получать сообщения из мессенджера Telegram?",
+          "url": "https://torg.1c.ru/news/kak-v-1s-unf-poluchat-soobshcheniya-iz-messendzhera-telegram/",
+          "snippet": "Данный подход позволяет перенести бизнес-коммуникации в привычную для потребителя среду — такую как Telegram, ВКонтакте, обеспечивая тем самым новый уровень интеграции учета и общения."
+        },
+        {
+          "title": "Как выставить счет в 1С: пошаговая инструкция 2026 — Интеграция",
+          "url": "https://integration-software.ru/blog/kak-vystavit-schet-klientu-v-1s-8-3",
+          "snippet": "Для того чтобы система взаимодействия могла интегрироваться с Telegram, необходимо в мессенджере создать бот (через @BotFather), который будет представлять систему взаимодействия."
+        }
+      ],
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://integration-software.ru/blog/kak-vystavit-schet-klientu-v-1s-8-3",
+      "title": "Как выставить счет в 1С: пошаговая инструкция 2026 — Интеграция",
+      "from_query": "выставить счет в 1с 2026"
+    },
+    {
+      "url": "https://e.glavbukh.ru/1172601",
+      "title": "Как выставлять счета‑фактуры и вести книги с 1 апреля 2026 года ...",
+      "from_query": "выставить счет в 1с 2026"
+    },
+    {
+      "url": "https://grandproject.ru/blog/usn-s-nds-s-2026-goda-kak-vystavit-schyet-fakturu-i-vesti-knigu-prodazh-v-1s/",
+      "title": "УСН с НДС с 2026 года: как выставить счёт‑фактуру и вести книгу продаж в 1С",
+      "from_query": "выставить счет в 1с 2026"
+    },
+    {
+      "url": "https://buhexpert8.ru/1s-buhgalteriya/nalogi/nds-nalogi/perehod-20/schet-pokupatelyu-na-doplatu-nds-v-2026-godu-v-1s.html",
+      "title": "Как оформить счет на доплату НДС в 2026 в 1С 8.3",
+      "from_query": "выставить счет в 1с 2026"
+    },
+    {
+      "url": "https://www.buslog.ru/service/articles/bp/novye-pravila-zapolneniya-scheta-faktury-pri-zachyete-avansa-s-2026-goda-chto-izmenilos-i-kak-rabota/",
+      "title": "Счёт-фактура при зачёте аванса: новые требования 2026 года и настройка в 1С",
+      "from_query": "выставить счет в 1с 2026"
+    },
+    {
+      "url": "https://its.1c.ru/db/newsclar/content/497842/hdoc",
+      "title": "Как выставлять счета-фактуры с 01.01.2026?",
+      "from_query": "выставить счет в 1с 2026"
+    },
+    {
+      "url": "https://biznesinalogi.ru/lenta/post/54271/",
+      "title": "Счет-фактура 2026: новые правила, образцы и пошаговая инструкция по ...",
+      "from_query": "выставить счет в 1с июль 2026"
+    },
+    {
+      "url": "https://1c-prime.ru/articles/rekomendatsii-novye-stati-2025/novyy-schet-faktura-2026-ukazyvaem-dannye-avansovogo-scheta-faktury/",
+      "title": "Новый счет-фактура 2026: Указываем данные авансового счета-фактуры",
+      "from_query": "выставить счет в 1с новости 2026"
+    },
+    {
+      "url": "https://kvant-c.ru/faq/1c-telegram-integration/",
+      "title": "Интеграция 1С и Telegram — уведомления и боты | KVANT-C",
+      "from_query": "интеграция 1с telegram 2026"
+    },
+    {
+      "url": "https://kvant-c.ru/faq/1c-telegram-bot/",
+      "title": "Telegram-боты из 1С — интеграция и примеры | KVANT-C",
+      "from_query": "интеграция 1с telegram 2026"
+    },
+    {
+      "url": "https://flow-masters.ru/blog/1c-telegram-integration/",
+      "title": "Интеграция 1С с Telegram: обмен данными и автоматизация учёта",
+      "from_query": "интеграция 1с telegram 2026"
+    },
+    {
+      "url": "https://somsk.ru/blog/telegram-bot-dlya-1s-avtomatizatsiya-zayavok-i-uvedomleniy-2026",
+      "title": "Telegram-бот для 1С: автоматизация заявок и уведомлений в 2026 году",
+      "from_query": "интеграция 1с telegram 2026"
+    },
+    {
+      "url": "https://somsk.ru/blog/integratsiya-1c-telegram-bot",
+      "title": "Интеграция 1С с Telegram-ботом: 5 практических сценариев автоматизации ...",
+      "from_query": "интеграция 1с telegram 2026"
+    },
+    {
+      "url": "https://topkoder.ru/stati/integraciya-1c-s-telegram-poshagovyj-gajd-dlya-razrabotchika/",
+      "title": "Интеграция систем программы 1C с мессенджером TelegramИнтеграция 1C с ...",
+      "from_query": "интеграция 1с telegram 2026"
+    },
+    {
+      "url": "https://v8.1c.ru/small.biz/",
+      "title": "Официальный сайт «1С:Управления нашей фирмой» (1С:УНФ), управляйте ...",
+      "from_query": "http сервис 1с унф 2026"
+    },
+    {
+      "url": "https://v8.1c.ru/news/novyy-vebinar-nds-2026-goda-v-1s-unf-i-1s-roznitse-kak-podgotovitsya-k-izmeneniyam.htm",
+      "title": "Вебинар «НДС 2026 года в 1С:УНФ и 1С:Рознице. Как подготовиться к ...",
+      "from_query": "http сервис 1с унф 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/25d63f592c887b28aa0790c36787197d/",
+      "title": "Вебинар «НДС 2026 года в 1С:УНФ и 1С ... - Rutube",
+      "from_query": "http сервис 1с унф 2026"
+    },
+    {
+      "url": "https://tusoft.ru/support/category/obmen-s-1s/novyy-interfeys-1sunf-gid-po-navigatsii/",
+      "title": "Новый интерфейс 1С:УНФ 2026: навигация по Обмену с 1С",
+      "from_query": "http сервис 1с унф 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/1293341/",
+      "title": "Учимся создавать http-сервисы (часть первая)",
+      "from_query": "http сервис 1с унф 2026"
+    },
+    {
+      "url": "https://1cfresh.com/articles/useful_sbm_services_2026_02_25",
+      "title": "Полезные сервисы 1С:УНФ: от проверки контрагентов до создания веб-витрины",
+      "from_query": "http сервис 1с унф 2026"
+    },
+    {
+      "url": "https://www.regberry.ru/malyy-biznes/schet-na-oplatu-obrazec-blank",
+      "title": "Бланк и образец счёта на оплату 2026 (скачать шаблоны Word и Excel ...",
+      "from_query": "счет на оплату с телефона 2026"
+    },
+    {
+      "url": "https://allcontract.ru/documents/documents/blank-scheta-na-oplatu",
+      "title": "Бланк счёта на оплату — скачать образец 2026",
+      "from_query": "счет на оплату с телефона 2026"
+    },
+    {
+      "url": "https://tenchat.ru/media/5235231-schet-na-oplatu-2026-obrazets-blank-i-pravila-zapolneniya",
+      "title": "Счет на оплату 2026: образец, бланк и правила заполнения",
+      "from_query": "счет на оплату с телефона 2026"
+    },
+    {
+      "url": "https://blank-kit.ru/blog/obrazec-scheta-na-oplatu-blank-shablon",
+      "title": "Образец счёта на оплату 2026 — бланк и шаблон",
+      "from_query": "счет на оплату с телефона 2026"
+    },
+    {
+      "url": "https://podpisal.ru/shablony/schet-na-oplatu/",
+      "title": "Счёт на оплату — бланк и образец 2026",
+      "from_query": "счет на оплату с телефона 2026"
+    },
+    {
+      "url": "https://ggdt.ru/schet-na-oplatu.html",
+      "title": "Счет на оплату: скачать образец, бланк, генератор онлайн",
+      "from_query": "счет на оплату с телефона 2026"
+    },
+    {
+      "url": "https://www.coderstar.ru/rasshireniya/integracia-whatsapp/",
+      "title": "Отправка из 1С в Telegram, WhatsApp и Max через Green-Api · CoderStar",
+      "from_query": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA 2026"
+    },
+    {
+      "url": "https://docs.telefon1c.ru/v4/integration_into_configurations/integration_into_1cunf/",
+      "title": "Интеграция 1С:Управление нашей фирмой с телефонией и чатами WhatsApp и ...",
+      "from_query": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA 2026"
+    },
+    {
+      "url": "https://solutions.1c.ru/add/unf-telegram-bot/",
+      "title": "Настройка Telegram-бота «УНФ в вашем Телеграме»",
+      "from_query": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA 2026"
+    },
+    {
+      "url": "https://b-rs.ru/company/article/integraciya-1s-unf-s-telegram-i-vkontakte",
+      "title": "Интеграция 1С УНФ с Telegram и Вконтакте - b-rs.ru",
+      "from_query": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA 2026"
+    },
+    {
+      "url": "https://torg.1c.ru/news/kak-v-1s-unf-poluchat-soobshcheniya-iz-messendzhera-telegram/",
+      "title": "Как в \"1С:УНФ\" получать сообщения из мессенджера Telegram?",
+      "from_query": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA 2026"
+    }
+  ]
+}

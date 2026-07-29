@@ -1,0 +1,42 @@
+{
+  "topic_id": "B04",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "koda_artur_human",
+  "style_file": "memory/cover/quad-style-koda-artur-human.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Excel завис на 500 МБ? Claude Code для финотдела за 15 минут",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_ui_hook",
+      "alt": "Ольга Кондрацкая на обложке: Claude Code CLI для финотдела — терминал и анализ выгрузок 1С",
+      "scene_hint": "Ольга в фиолетовом пиджаке и очках указывает на glowing терминал Claude Code CLI, рядом огромные CSV файлы и pandas dashboard, тёмный фон #0a0a0f, неон yellow hook «CLAUDE CODE»",
+      "meme_caption_ru": "без программистов"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Claude Code vs Claude for Excel – что выбрать финотделу в 2026 году",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица Claude for Excel vs Claude Code CLI: объём данных, локально, pandas — тёмный SaaS mockup",
+      "alt": "Сравнение Claude for Excel и Claude Code CLI для финотдела"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Пошаговая инструкция: как установить и настроить Claude Code на Windows за 15 минут",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "5 шагов установки: Node.js → npm install → claude login → папка проекта → первый промпт, Windows terminal mockup",
+      "alt": "Пошаговая схема установки Claude Code на Windows"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "7 практических сценариев применения Claude Code в финансах без разработчиков",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чек-лист 7 сценариев: сверка, категоризация, аномалии, нормализация дат, analyse.py — стикеры на тёмном UI",
+      "alt": "Чек-лист 7 сценариев Claude Code для финансового отдела"
+    }
+  }
+}

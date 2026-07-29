@@ -1,0 +1,15 @@
+{
+  "slug": "cursor-finansist-skript-dashbord",
+  "topic_id": "B20",
+  "permalink": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B20-cursor-finansist-skript-dashbord/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 961760,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=142 slug=cursor-finansist-skript-dashbord\nOK featured_image=144\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/07/cursor-finansist-skript-dashbord-dzen-cover.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

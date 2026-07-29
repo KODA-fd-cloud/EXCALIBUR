@@ -1,0 +1,14 @@
+{
+  "topic_id": "B14",
+  "slug": "upravlenie-debitorkoj-reestr-napominaniya",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактная голографическая сеть узлов напоминаний на тёмном фоне",
+  "cover_alt_text": "Абстрактная голографическая сеть узлов напоминаний на тёмном фоне",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "generated_at": "2026-07-22T17:50:00+03:00",
+  "note": "user-mcp-kv unavailable; generated via Cursor GenerateImage with gradient_abstract prompt"
+}

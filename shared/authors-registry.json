@@ -1,22 +1,35 @@
 {
   "registry_version": "1.0",
-  "comment": "E-E-A-T Authors Registry for Maya AI / Ковчег blog. Provides authoritative profiles for article attribution and sameAs schema.org generation.",
+  "comment": "E-E-A-T Authors Registry — блог КОДА (koda-fd.ru/blog)",
   "authors": [
     {
-      "id": "artur-horoshev",
-      "name_ru": "Артур Хорошев",
-      "name_en": "Artur Horoshev",
-      "job_title_ru": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
-      "job_title_en": "CEO at Maya AI, Make.com & Vibecoding Course Author",
-      "bio_short_ru": "Эксперт по автоматизации бизнес-процессов на Make.com, вайбкодингу и AI-агентам. Тестировщик нейросетей Microsoft и Google, основатель сообщества «Ковчег».",
-      "bio_long_ru": "Артур Хорошев — ведущий российский эксперт по Make.com, вайбкодингу и AI-контент-заводам. Автор флагманского курса на kv-ai.ru (159+ уроков), спикер Московского Политеха, neuro-дизайнер и digital-маркетолог. Обучает создавать сложные автоматизации, кастомные модули и AI-агентов без знания программирования — через Cursor AI, OpenClaw и MCP.",
-      "expertise_tags": ["make_integromat", "vibecoding", "cursor_ai", "openclaw", "mcp", "ai_agents", "content_factory", "prompt_engineering", "geo", "seo", "telegram_bots", "marketing_automation"],
-      "avatar_url": "https://kv-ai.ru/artur-horosheff",
+      "id": "olga-kondratskaya",
+      "name_ru": "Ольга Кондрацкая",
+      "name_en": "Olga Kondratskaya",
+      "job_title_ru": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "job_title_en": "CFO-automation expert, KODA blog author",
+      "bio_short_ru": "Финансовый директор-автоматизатор: управленческий учёт, data foundation, n8n, Cursor и AI-агенты для финотдела без dev-команды.",
+      "bio_long_ru": "Ольга Кондрацкая — финансовый директор-автоматизатор, основатель бренда КОДА. Помогает CFO и финменеджерам строить финконтур: staging-таблицы, интеграции с 1С и банками, дашборды и AI-слой на Cursor/n8n. Ведёт Telegram «Финансист, который кодит» и закрытый клуб KODA с уроками, скриптами и разборами кейсов.",
+      "expertise_tags": [
+        "cfo_automation",
+        "management_accounting",
+        "data_foundation",
+        "n8n",
+        "make",
+        "cursor_ai",
+        "vibecoding",
+        "mcp",
+        "ai_agents",
+        "1c_integration",
+        "power_bi",
+        "geo",
+        "seo"
+      ],
+      "avatar_url": "https://koda-fd.ru/og-default.jpg",
       "sameAs": [
-        "https://kv-ai.ru/artur-horosheff",
-        "https://mayai.ru/obo-mne/",
-        "https://t.me/maya_pro",
-        "https://t.me/horosheff"
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
       ]
     }
   ]

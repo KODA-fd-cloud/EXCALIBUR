@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B22",
+    "priority": "P1",
+    "slug": "google-apps-script-finansist-obnovit-dannye",
+    "h1": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script",
+    "primary_query": "как сделать google apps script кнопку",
+    "secondary_queries": [
+      "google таблицы скрипт кнопка",
+      "apps script финансы",
+      "обновить данные google sheets"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B22",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как сделать google apps script кнопку 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как сделать google apps script кнопку июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как сделать google apps script кнопку новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "google таблицы скрипт кнопка 2026",
+      "purpose": "вторичный запрос: google таблицы скрипт кнопка"
+    },
+    {
+      "id": "secondary_2",
+      "query": "apps script финансы 2026",
+      "purpose": "вторичный запрос: apps script финансы"
+    },
+    {
+      "id": "secondary_3",
+      "query": "обновить данные google sheets 2026",
+      "purpose": "вторичный запрос: обновить данные google sheets"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как сделать кнопку «обновить данные» в Google Sheets через Apps Script 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B22-google-apps-script-finansist-obnovit-dannye",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

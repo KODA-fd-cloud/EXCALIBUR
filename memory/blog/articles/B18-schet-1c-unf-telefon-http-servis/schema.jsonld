@@ -1,0 +1,192 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#article",
+      "headline": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA",
+      "description": "Как выставить счёт на оплату из 1С:УНФ с телефона: расширение InvoiceBot, публикация HTTP-сервиса, FastAPI/PWA и Telegram без толстого клиента.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/schet-1c-unf-telefon-http-servis-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Тёмный UI-мокап: телефон связан с сервером 1С через HTTP-узлы"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "выставить счет в 1с, интеграция 1с telegram, http сервис 1с унф, счет на оплату с телефона, invoicebot унф",
+      "wordCount": 8860,
+      "articleSection": "1С / УНФ / HTTP-сервис",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Работает ли схема на УНФ 1.6 и 3.0?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как идея – да. Код пилота выверен под УНФ 3.0.13.x (СчетНаОплату, ТЧ Запасы). На 1.6 пройдите все // ПРОВЕРИТЬ: имена документа, ТЧ и ставок НДС отличаются."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли программист 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На установку расширения и публикацию hs – да (или сильный админ). На ежедневный счёт с телефона – нет: менеджер работает в PWA или боте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли только Telegram без PWA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Бот бьёт в тот же HTTP-сервис. PWA удобнее формой и PDF; Telegram – запасной канал с ALLOWED_CHAT_IDS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это лучше официального мобильного УНФ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "МП – полный клиент. Пилот – один сценарий, пароль 1С на сервере, PDF сразу. Если МП уже закрывает задачу, свой контур можно не строить."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это про счёт-фактуру и НДС 22%?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Статья про счёт на оплату. Ставку 22% в форме учесть можно; правила счёта-фактуры с 2026 – отдельная тема."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Безопасно ли светить HTTP-сервис в интернет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для пилота – локальная сеть или облачная публикация хостера плюс отдельный пользователь и код на бэкенде. В прод: HTTPS, узкие права, whitelist, лучше исходящий контур."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему PDF иногда не из 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В пилоте PDF часто собирает FastAPI (ReportLab). Документ в УНФ при этом настоящий; PDF – доставка на телефон. Печать БСП – запасной путь после сверки метаданных."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#howto",
+      "name": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA",
+      "description": "Критерий успеха, архитектура PWA/Telegram → FastAPI → HTTP-сервис УНФ, установка InvoiceBot, сценарий с телефона и чеклист безопасности.",
+      "inLanguage": "ru",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "1С:УНФ с публикацией HTTP-сервисов (IIS/Apache или облако)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "FastAPI-бэкенд (Docker Compose или uvicorn)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "PWA и/или Telegram-бот (aiogram)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Расширение InvoiceBot с шаблонами /ping, /counterparty, /nomenclature, /company, /create"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Отдельный пользователь InvoiceBot и ACCESS_CODE в .env на сервере"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Зафиксируйте задачу: счёт клиенту без ожидания бухгалтера",
+          "text": "Критерий успеха: за минуты на телефоне – проведённый документ в живой УНФ и PDF клиенту. Не RDP к толстому клиенту и не полное мобильное УНФ ради одной кнопки. Если официальное мобильное УНФ уже устраивает – не городите свой контур.",
+          "url": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#task-invoice-phone"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Соберите архитектуру: PWA/Telegram → бэкенд → HTTP-сервис УНФ → PDF",
+          "text": "Телефон (PWA или Telegram) → код доступа → FastAPI (сейф с учёткой 1С) → HTTP Basic → InvoiceBot в УНФ → контрагент / счёт / проведение → PDF. Логин и пароль базы не светите в браузере и в чате бота.",
+          "url": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#architecture"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Установите расширение InvoiceBot и опубликуйте HTTP-сервис",
+          "text": "Создайте расширение InvoiceBot, добавьте HTTP-сервис invoicebot с GET /ping, /counterparty, /nomenclature, /company и POST /create. Создайте пользователя InvoiceBot, опубликуйте базу, smoke-test …/hs/invoicebot/ping → JSON ok. Пройдите все метки // ПРОВЕРИТЬ под свою версию УНФ.",
+          "url": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#install-invoicebot"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Запустите PWA/бота: код доступа, контрагент, НДС, проведение",
+          "text": "Заполните .env (ONEC_BASE_URL, учётка 1С, ACCESS_CODE), поднимите FastAPI. С телефона: код → /api/ping → контрагент → позиции → НДС → «Создать в 1С» → PDF. Опционально Telegram с whitelist ALLOWED_CHAT_IDS.",
+          "url": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#run-pwa-bot"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Проверьте ограничения пилота и безопасность",
+          "text": "Отдельный пользователь InvoiceBot с минимальными правами, HTTPS снаружи, код и пароль только на сервере, whitelist chat_id для Telegram. Один общий access code – модель пилота, не банка. Не публикуйте hs наружу без отдельного пользователя и без кода на бэкенде.",
+          "url": "https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/#limits-security"
+        }
+      ]
+    }
+  ]
+}

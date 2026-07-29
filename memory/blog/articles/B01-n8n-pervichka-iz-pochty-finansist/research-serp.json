@@ -1,0 +1,484 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-17",
+    "today_ru": "17.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-19",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-17 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B01",
+    "priority": "P0",
+    "slug": "n8n-pervichka-iz-pochty-finansist",
+    "h1": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода",
+    "primary_query": "n8n для финансиста",
+    "secondary_queries": [
+      "автоматизация первички n8n",
+      "n8n бухгалтерия",
+      "сбор счетов из почты автоматически"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "n8n для финансиста 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "n8n Plans and Pricing - n8n.io",
+          "url": "https://n8n.io/pricing/",
+          "snippet": ""
+        },
+        {
+          "title": "Обзор n8n 2026: Платформа автоматизации с «честным кодом» стоимостью $2 ...",
+          "url": "https://utilo.io/ru/home/blog/n8n-review-2026-workflow-automation",
+          "snippet": "Discover n8n's pricing alternatives for cost-effective workflow automation solutions. Find the perfect plan to maximize your workflows."
+        },
+        {
+          "title": "Оплата n8n из России в 2026 году: обзор доступных способов купить ...",
+          "url": "https://tenchat.ru/media/5295215-oplata-n8n-iz-rossii-v-2026-godu-obzor-dostupnykh-sposobov-kupit-podpisku-n8n",
+          "snippet": "Если вы разработчик или техническая команда, которая хочет получить полный контроль над своей инфраструктурой автоматизации, n8n — это платформа, которая изменила правила игры, и в 2026 году ей нет равных."
+        },
+        {
+          "title": "Как купить подписку n8n из России в 2026 году: обзор доступных способов ...",
+          "url": "https://vc.ru/services/2908197-kak-kupit-podpisku-n8n-iz-rossii",
+          "snippet": "Оплата n8n распадается на три формата биллинга: облачная подписка, лицензия Business или Enterprise для self-hosted и корпоративный контракт. Критерии разные, маршрут выбирается под формат, а не под удобство."
+        },
+        {
+          "title": "Как купить подписку n8n из России в 2026: гайд по способам оплаты н8н",
+          "url": "https://dtf.ru/howto/5054079-kak-kupit-podpisku-n8n-iz-rossii",
+          "snippet": "Купить подписку n8n из России, способы оплаты, Cloud и self-hosted лицензии, ограничения по картам, доступ к сервису без обходов"
+        },
+        {
+          "title": "Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ...",
+          "url": "https://bot-craft.ru/blog/n8n-automation-2026/",
+          "snippet": "Подписка n8n из России, способы оплаты, обход санкций, использование карт, легальность, сервисы Global Payments, облачные и самохостинг решения"
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "n8n для финансиста июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai И Нейросети Для Финансиста И Бухгалтера",
+          "url": "https://blog.fin-academy.pro/",
+          "snippet": ""
+        },
+        {
+          "title": "n8n Cloud Подписка — Тарифы от 20,00 $/мес. (2026) | Subger",
+          "url": "https://subger.com/ru/service/n8n-cloud",
+          "snippet": "n8n для финансиста в 2026: 5 рабочих автоматизаций (первичка, курс ЦБ, платёжный календарь, выписка, дайджест собственнику), 10 промптов, кейсы с часами и рублями"
+        },
+        {
+          "title": "Обзор n8n 2026: Платформа автоматизации с «честным кодом» стоимостью $2 ...",
+          "url": "https://utilo.io/ru/home/blog/n8n-review-2026-workflow-automation",
+          "snippet": "n8n Cloud — сервис в категории Automation с тарифами от 20,00 $/мес.. Смотрите ценовые планы, доступные скидки и альтернативы ниже. Обновлено: июнь 2026 г."
+        },
+        {
+          "title": "Тарифы n8n в 2026: сколько стоит и какой план выбрать",
+          "url": "https://elseops.com/ru/blog/n8n-tarify/",
+          "snippet": "Если вы разработчик или техническая команда, которая хочет получить полный контроль над своей инфраструктурой автоматизации, n8n — это платформа, которая изменила правила игры, и в 2026 году ей нет равных."
+        },
+        {
+          "title": "Лучшие курсы n8n 2026 — ТОП-15 из 25, цены, отзывы и рейтинг",
+          "url": "https://checkroi.ru/courses/tool/n8n/",
+          "snippet": "Разбор тарифов n8n в 2026: облако vs свой сервер, реальная стоимость каждого плана, сравнение с Zapier и Make. Гайд от консультанта, который настраивает n8n каждую неделю."
+        },
+        {
+          "title": "AI Workflow Automation Platform - n8n",
+          "url": "https://n8n.io/",
+          "snippet": "Выбирайте подходящий формат обучения, ориентируясь на наличие наставника и итоговый сертификат. Система фильтров поможет найти курс под ваш бюджет и уровень подготовки за пару кликов."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "n8n для финансиста новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Обзор n8n 2026: Платформа автоматизации с «честным кодом» стоимостью $2 ...",
+          "url": "https://utilo.io/ru/home/blog/n8n-review-2026-workflow-automation",
+          "snippet": ""
+        },
+        {
+          "title": "Оплата n8n из России в 2026 году: обзор доступных способов купить ...",
+          "url": "https://tenchat.ru/media/5295215-oplata-n8n-iz-rossii-v-2026-godu-obzor-dostupnykh-sposobov-kupit-podpisku-n8n",
+          "snippet": "Если вы разработчик или техническая команда, которая хочет получить полный контроль над своей инфраструктурой автоматизации, n8n — это платформа, которая изменила правила игры, и в 2026 году ей нет равных."
+        },
+        {
+          "title": "n8n автоматизация с AI: пошаговый гайд для бизнеса [2026] | НейроСкоп",
+          "url": "https://neiroscop.ru/blog/n8n-avtomatizaciya-s-ai-gajd",
+          "snippet": "Оплата n8n распадается на три формата биллинга: облачная подписка, лицензия Business или Enterprise для self-hosted и корпоративный контракт. Критерии разные, маршрут выбирается под формат, а не под удобство."
+        },
+        {
+          "title": "Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ...",
+          "url": "https://bot-craft.ru/blog/n8n-automation-2026/",
+          "snippet": "n8n + AI — это самый экономичный способ автоматизировать бизнес-процессы в 2026 году. За ~1 750₽/мес (VPS + API) вы получаете 7 автоматизаций, которые экономят 15-20 часов/неделю."
+        },
+        {
+          "title": "n8n в 2026 году— статья | Romb Web",
+          "url": "https://www.romb-web.ru/articles/n8n-v-2026-godu",
+          "snippet": "В этой статье разбираю: что именно бизнес автоматизирует через n8n, сколько это стоит в 2026, как выбрать между self-hosted и cloud, и кто в России делает интеграции под ключ."
+        },
+        {
+          "title": "Что такое n8n и зачем он нужен в 2026 году: практическое руководство по ...",
+          "url": "https://digitalreview.live/guides/what-is-n8n-and-why-is-it-needed-in-2026",
+          "snippet": "В этой статье разберём, что такое n8n, чем он отличается от Zapier и Make, для каких задач подходит, когда лучше использовать облачную версию, а когда — self-hosted установку на своём сервере."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация первички n8n 2026",
+      "purpose": "вторичный запрос: автоматизация первички n8n",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "10 сценариев n8n для AI-автоматизации маркетинга 2026: от лидов до ...",
+          "url": "https://dipustovalov.ru/blog/n8n-ai-automation-scenarios-2026",
+          "snippet": ""
+        },
+        {
+          "title": "n8n: 10 сценариев автоматизации для контент-заводов и бизнеса в 2026 ...",
+          "url": "https://mayai.ru/n8n-10-sczenariev-avtomatizaczii-dlya-kontent-zavodov-i-biznesa-v-2026-godu/",
+          "snippet": "N8n — самая полезная штука в AI-стеке маркетолога 2026, про которую мало кто знает. Он соединяет AI, Telegram, Яндекс.Метрику, Google Sheets и Notion в один пайплайн без строчки кода. Я собрал 10 сценариев, которые реально крутятся на моих проектах — с конфигами и метриками экономии. Я работаю с n8n с лета 2024-го."
+        },
+        {
+          "title": "n8n автоматизация с AI: пошаговый гайд для бизнеса [2026] | НейроСкоп",
+          "url": "https://neiroscop.ru/blog/n8n-avtomatizaciya-s-ai-gajd",
+          "snippet": "В середине 2026 года рулит оркестрация автономных ИИ-агентов, способных генерировать мультимедиа и исправлять собственные ошибки. В этом материале мы разберем 10 практических сценариев на базе n8n, которые позволяют запустить автономный контент-завод без раздувания штата."
+        },
+        {
+          "title": "Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ...",
+          "url": "https://bot-craft.ru/blog/n8n-automation-2026/",
+          "snippet": "n8n + AI — это самый экономичный способ автоматизировать бизнес-процессы в 2026 году. За ~1 750₽/мес (VPS + API) вы получаете 7 автоматизаций, которые экономят 15-20 часов/неделю."
+        },
+        {
+          "title": "Шаблоны n8n 2026: автоматизация Slack, Telegram, Google Sheets",
+          "url": "https://lpmotor.ru/articles/n8n-sablon-dlya-avtomatizacii-2603",
+          "snippet": "В этой статье разбираю: что именно бизнес автоматизирует через n8n, сколько это стоит в 2026, как выбрать между self-hosted и cloud, и кто в России делает интеграции под ключ."
+        },
+        {
+          "title": "Обзор n8n 2026: Платформа автоматизации с «честным кодом» стоимостью $2 ...",
+          "url": "https://utilo.io/ru/home/blog/n8n-review-2026-workflow-automation",
+          "snippet": "В этой статье мы продолжаем знакомить вас с лучшими шаблонами автоматизации. Этот раздел представляет примеры n8n, которые решают распространенные задачи с минимальной настройкой. Каждый пример шаблона - это рабочий процесс, развертываемый почти мгновенно."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "n8n бухгалтерия 2026",
+      "purpose": "вторичный запрос: n8n бухгалтерия",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "N8n-воркфлоу Для Бухгалтерии - Бизнес-журнал Тарасова Константина",
+          "url": "https://journal.tarasovkn.ru/generator-n8n-workflow/generator-n8n-workflow-buhgalterskaya-kompaniya/",
+          "snippet": ""
+        },
+        {
+          "title": "Releases · n8n-io/n8n - GitHub",
+          "url": "https://github.com/n8n-io/n8n/releases",
+          "snippet": "Узнайте, как принимать решения без страха ошибок, справляться с давлением и избегать излишнего усложнения. Практические советы для уверенности в выборе. 5 мая 2026"
+        },
+        {
+          "title": "Ai Бухгалтер | 1с И Ии | Ai Бухгалтер Автоматизация Бухгалтерии С ...",
+          "url": "https://vk.com/buh_bez_boli",
+          "snippet": "2.26.4 (2026-06-15) Bug Fixes core: Prevent nodes from throwing context.getNodeParameter is not a function when n8n is installed via npm (#32186) (31b9f90) Features Reduces delay in displaying AI Assistant workflow preview examples (#32212) (e6ec246)"
+        },
+        {
+          "title": "Ai Для Бухгалтера 2026: Ocr Накладных, 1с, Gpt, Кейсы",
+          "url": "https://chimitdorzhi.tech/blog/ai-pomoshchnik-buhgaltera-2026/",
+          "snippet": "Убираем рутину: автоматическое распознавание чеков, счетов и первички, умные проводки, интеграция с 1С, n8n и современными нейросетями. Экономим десятки часов каждый месяц."
+        },
+        {
+          "title": "Календарь бухгалтера на 2026 год: отчетность, налоги, взносы и ...",
+          "url": "https://www.kontur-extern.ru/calendar/2026",
+          "snippet": "Бухгалтерия 2026 — последний бастион ручного труда в офисе. AI убирает 60-70% рутины: распознавание накладных, сверки контрагентов, категоризация выписок, ответы на типовые вопросы."
+        },
+        {
+          "title": "Налоговая реформа-2026: что изменится в бухгалтерском и налоговом учете ...",
+          "url": "https://www.klerk.ru/blogs/klerk/661324/",
+          "snippet": "На странице вы найдете подробный календарь бухгалтера на 2026 год со сроками сдачи, уплаты налогов и взносов и отправки уведомлений. Ссылки на актуальные бланки прилагаются."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "сбор счетов из почты автоматически 2026",
+      "purpose": "вторичный запрос: сбор счетов из почты автоматически",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация счетов: Упростите сбор и учет",
+          "url": "https://huntscreens.com/ru/products/getbeel",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация оплаты счетов: пошаговая инструкция",
+          "url": "https://www.bitrix24.ru/journal/avtomatizatsiya-oplaty-schetov/",
+          "snippet": "Автоматически собирайте, организуйте и сопоставляйте счета из электронной почты. Экономьте время, получайте аналитику расходов и упрощайте работу с бухгалтером."
+        },
+        {
+          "title": "Receiptor AI:Программное обеспечение на базе AI, автоматизирующее ...",
+          "url": "https://moge.ai/ru/product/receiptor-ai",
+          "snippet": "В статье разбираем, как автоматизировать оплату счетов, чтобы упростить и ускорить весь процесс от первой заявки до закрывающих документов. Автоматизация оплаты счетов — это единый цифровой процесс, в котором согласование, оплата и учет документов происходят по заданным правилам."
+        },
+        {
+          "title": "GetInvoice:AI-система для автоматизации сбора, извлечения и сверки ...",
+          "url": "https://moge.ai/ru/product/getinvoice",
+          "snippet": "Receiptor AI — это интеллектуальный инструмент автоматизации, предназначенный для оптимизации управления финансовыми документами путём извлечения чеков и счетов-фактур из почтовых ящиков, WhatsApp и других источников."
+        },
+        {
+          "title": "Изменения законодательства с апреля-2026: СПОТ, новая форма счета ...",
+          "url": "https://www.kontur-extern.ru/info/84242-izmeneniya_zakonodatelstva_aprel",
+          "snippet": "GetInvoice — это современная AI-платформа для полной автоматизации управления счетами и квитанциями. Она подключается к нескольким Gmail-аккаунтам и различным веб-порталам для автоматического сбора, извлечения и организации счетов и квитанций с использованием OCR."
+        },
+        {
+          "title": "Топ 10: Программы и сервисы для выставления счетов",
+          "url": "https://www.clouderp.ru/tools/invoice/",
+          "snippet": "Обновили формы счета-фактуры, книги покупок и книги продаж. В счете-фактуре, в частности, добавлена строка 5б, в которой указываются реквизиты авансового счета-фактуры, если в счет аванса была произведена отгрузка. Соответствующие графы добавлены в книгу покупок и книгу продаж."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "n8n-yandex-email-to-googlesheet - GitHub",
+          "url": "https://github.com/SerVoskanyan/n8n-yandex-email-to-googlesheet",
+          "snippet": ""
+        },
+        {
+          "title": "n8n: пошаговое руководство по созданию первого workflow для ...",
+          "url": "https://dzen.ru/a/aPwIIK4xeEPllYWd",
+          "snippet": "Автоматизация n8n: Запись новых писем из Яндекс Почты в Google Таблицы. Этот проект демонстрирует, как использовать n8n для автоматической обработки новых входящих писем из Яндекс Почты и записи ключевой информации (Отправитель, Тема, Дата Получения, Очищенное Сообщение) в Google Таблицы."
+        },
+        {
+          "title": "n8n: пошаговое руководство по созданию первого workflow для автоматизации",
+          "url": "https://promaren.ru/blog/2025/10/25/n8n-poshagovoe-rukovodstvo-po-sozdaniyu-pervogo-workflow-dlya-avtomatizacii/",
+          "snippet": "Если коротко, вы узнаете, как собрать свой первый сценарий в n8n и не утонуть в настройках, авторизациях и маленьких странностях интеграций."
+        },
+        {
+          "title": "N8N: полное руководство по автоматизации workflow 2026",
+          "url": "https://www.digitalrocket.ru/articles/n8n-avtomatizatsiya-workflow-rukovodstvo-2025/",
+          "snippet": "Готовы создать свой первый workflow в n8n? Откройте новое измерение автоматизации с пошаговым руководством для новичков!"
+        },
+        {
+          "title": "n8n на практике: кейсы компаний, установка и первый workflow",
+          "url": "https://pressaff.com/articles/n8n-in-practice-company-cases-installation-and-the-first-workflow/",
+          "snippet": "Простое руководство по автоматизации рутинных задач без программирования. Узнайте, как с помощью n8n настроить автоматическую работу между вашими сервисами и сэкономить десятки часов в месяц. n8n — это бесплатная программа, которая работает как «клей» между вашими сервисами."
+        },
+        {
+          "title": "7 практических AI-агентов на n8n: как собрать базу email без API",
+          "url": "https://vc.ru/ai/2189606-7-ai-agentov-na-n8n-dlya-sbora-email-bez-api-v-calgary",
+          "snippet": "В первой части обзора мы разобрали, что такое n8n, как устроена платформа и чем она отличается от Zapier и Make. Теперь — практика: реальные примеры внедрения, пошаговая установка и детальный разбор первого сценария с конкретными настройками."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://n8n.io/pricing/",
+      "title": "n8n Plans and Pricing - n8n.io",
+      "from_query": "n8n для финансиста 2026"
+    },
+    {
+      "url": "https://utilo.io/ru/home/blog/n8n-review-2026-workflow-automation",
+      "title": "Обзор n8n 2026: Платформа автоматизации с «честным кодом» стоимостью $2 ...",
+      "from_query": "n8n для финансиста 2026"
+    },
+    {
+      "url": "https://tenchat.ru/media/5295215-oplata-n8n-iz-rossii-v-2026-godu-obzor-dostupnykh-sposobov-kupit-podpisku-n8n",
+      "title": "Оплата n8n из России в 2026 году: обзор доступных способов купить ...",
+      "from_query": "n8n для финансиста 2026"
+    },
+    {
+      "url": "https://vc.ru/services/2908197-kak-kupit-podpisku-n8n-iz-rossii",
+      "title": "Как купить подписку n8n из России в 2026 году: обзор доступных способов ...",
+      "from_query": "n8n для финансиста 2026"
+    },
+    {
+      "url": "https://dtf.ru/howto/5054079-kak-kupit-podpisku-n8n-iz-rossii",
+      "title": "Как купить подписку n8n из России в 2026: гайд по способам оплаты н8н",
+      "from_query": "n8n для финансиста 2026"
+    },
+    {
+      "url": "https://bot-craft.ru/blog/n8n-automation-2026/",
+      "title": "Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ...",
+      "from_query": "n8n для финансиста 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/",
+      "title": "Ai И Нейросети Для Финансиста И Бухгалтера",
+      "from_query": "n8n для финансиста июнь 2026"
+    },
+    {
+      "url": "https://subger.com/ru/service/n8n-cloud",
+      "title": "n8n Cloud Подписка — Тарифы от 20,00 $/мес. (2026) | Subger",
+      "from_query": "n8n для финансиста июнь 2026"
+    },
+    {
+      "url": "https://elseops.com/ru/blog/n8n-tarify/",
+      "title": "Тарифы n8n в 2026: сколько стоит и какой план выбрать",
+      "from_query": "n8n для финансиста июнь 2026"
+    },
+    {
+      "url": "https://checkroi.ru/courses/tool/n8n/",
+      "title": "Лучшие курсы n8n 2026 — ТОП-15 из 25, цены, отзывы и рейтинг",
+      "from_query": "n8n для финансиста июнь 2026"
+    },
+    {
+      "url": "https://n8n.io/",
+      "title": "AI Workflow Automation Platform - n8n",
+      "from_query": "n8n для финансиста июнь 2026"
+    },
+    {
+      "url": "https://neiroscop.ru/blog/n8n-avtomatizaciya-s-ai-gajd",
+      "title": "n8n автоматизация с AI: пошаговый гайд для бизнеса [2026] | НейроСкоп",
+      "from_query": "n8n для финансиста новости 2026"
+    },
+    {
+      "url": "https://www.romb-web.ru/articles/n8n-v-2026-godu",
+      "title": "n8n в 2026 году— статья | Romb Web",
+      "from_query": "n8n для финансиста новости 2026"
+    },
+    {
+      "url": "https://digitalreview.live/guides/what-is-n8n-and-why-is-it-needed-in-2026",
+      "title": "Что такое n8n и зачем он нужен в 2026 году: практическое руководство по ...",
+      "from_query": "n8n для финансиста новости 2026"
+    },
+    {
+      "url": "https://dipustovalov.ru/blog/n8n-ai-automation-scenarios-2026",
+      "title": "10 сценариев n8n для AI-автоматизации маркетинга 2026: от лидов до ...",
+      "from_query": "автоматизация первички n8n 2026"
+    },
+    {
+      "url": "https://mayai.ru/n8n-10-sczenariev-avtomatizaczii-dlya-kontent-zavodov-i-biznesa-v-2026-godu/",
+      "title": "n8n: 10 сценариев автоматизации для контент-заводов и бизнеса в 2026 ...",
+      "from_query": "автоматизация первички n8n 2026"
+    },
+    {
+      "url": "https://lpmotor.ru/articles/n8n-sablon-dlya-avtomatizacii-2603",
+      "title": "Шаблоны n8n 2026: автоматизация Slack, Telegram, Google Sheets",
+      "from_query": "автоматизация первички n8n 2026"
+    },
+    {
+      "url": "https://journal.tarasovkn.ru/generator-n8n-workflow/generator-n8n-workflow-buhgalterskaya-kompaniya/",
+      "title": "N8n-воркфлоу Для Бухгалтерии - Бизнес-журнал Тарасова Константина",
+      "from_query": "n8n бухгалтерия 2026"
+    },
+    {
+      "url": "https://github.com/n8n-io/n8n/releases",
+      "title": "Releases · n8n-io/n8n - GitHub",
+      "from_query": "n8n бухгалтерия 2026"
+    },
+    {
+      "url": "https://vk.com/buh_bez_boli",
+      "title": "Ai Бухгалтер | 1с И Ии | Ai Бухгалтер Автоматизация Бухгалтерии С ...",
+      "from_query": "n8n бухгалтерия 2026"
+    },
+    {
+      "url": "https://chimitdorzhi.tech/blog/ai-pomoshchnik-buhgaltera-2026/",
+      "title": "Ai Для Бухгалтера 2026: Ocr Накладных, 1с, Gpt, Кейсы",
+      "from_query": "n8n бухгалтерия 2026"
+    },
+    {
+      "url": "https://www.kontur-extern.ru/calendar/2026",
+      "title": "Календарь бухгалтера на 2026 год: отчетность, налоги, взносы и ...",
+      "from_query": "n8n бухгалтерия 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/klerk/661324/",
+      "title": "Налоговая реформа-2026: что изменится в бухгалтерском и налоговом учете ...",
+      "from_query": "n8n бухгалтерия 2026"
+    },
+    {
+      "url": "https://huntscreens.com/ru/products/getbeel",
+      "title": "Автоматизация счетов: Упростите сбор и учет",
+      "from_query": "сбор счетов из почты автоматически 2026"
+    },
+    {
+      "url": "https://www.bitrix24.ru/journal/avtomatizatsiya-oplaty-schetov/",
+      "title": "Автоматизация оплаты счетов: пошаговая инструкция",
+      "from_query": "сбор счетов из почты автоматически 2026"
+    },
+    {
+      "url": "https://moge.ai/ru/product/receiptor-ai",
+      "title": "Receiptor AI:Программное обеспечение на базе AI, автоматизирующее ...",
+      "from_query": "сбор счетов из почты автоматически 2026"
+    },
+    {
+      "url": "https://moge.ai/ru/product/getinvoice",
+      "title": "GetInvoice:AI-система для автоматизации сбора, извлечения и сверки ...",
+      "from_query": "сбор счетов из почты автоматически 2026"
+    },
+    {
+      "url": "https://www.kontur-extern.ru/info/84242-izmeneniya_zakonodatelstva_aprel",
+      "title": "Изменения законодательства с апреля-2026: СПОТ, новая форма счета ...",
+      "from_query": "сбор счетов из почты автоматически 2026"
+    },
+    {
+      "url": "https://www.clouderp.ru/tools/invoice/",
+      "title": "Топ 10: Программы и сервисы для выставления счетов",
+      "from_query": "сбор счетов из почты автоматически 2026"
+    },
+    {
+      "url": "https://github.com/SerVoskanyan/n8n-yandex-email-to-googlesheet",
+      "title": "n8n-yandex-email-to-googlesheet - GitHub",
+      "from_query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aPwIIK4xeEPllYWd",
+      "title": "n8n: пошаговое руководство по созданию первого workflow для ...",
+      "from_query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026"
+    },
+    {
+      "url": "https://promaren.ru/blog/2025/10/25/n8n-poshagovoe-rukovodstvo-po-sozdaniyu-pervogo-workflow-dlya-avtomatizacii/",
+      "title": "n8n: пошаговое руководство по созданию первого workflow для автоматизации",
+      "from_query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026"
+    },
+    {
+      "url": "https://www.digitalrocket.ru/articles/n8n-avtomatizatsiya-workflow-rukovodstvo-2025/",
+      "title": "N8N: полное руководство по автоматизации workflow 2026",
+      "from_query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026"
+    },
+    {
+      "url": "https://pressaff.com/articles/n8n-in-practice-company-cases-installation-and-the-first-workflow/",
+      "title": "n8n на практике: кейсы компаний, установка и первый workflow",
+      "from_query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/2189606-7-ai-agentov-na-n8n-dlya-sbora-email-bez-api-v-calgary",
+      "title": "7 практических AI-агентов на n8n: как собрать базу email без API",
+      "from_query": "n8n для финансиста: как собрать первичку из почты в реестр без ручного ввода 2026"
+    }
+  ]
+}

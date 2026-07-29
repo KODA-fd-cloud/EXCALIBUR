@@ -1,0 +1,47 @@
+{
+  "source": "memory\\blog\\articles\\B14-upravlenie-debitorkoj-reestr-napominaniya\\article.html",
+  "total_links": 4,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/"
+    },
+    {
+      "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ot-excel-k-fin-konturu-30-dney/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/ot-excel-k-fin-konturu-30-dney/"
+    },
+    {
+      "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=upravlenie-debitorkoj-reestr-napominaniya",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ],
+  "ssl_note": "koda-fd.ru cert expired; HTTP checked with unverified SSL context; targets verified"
+}

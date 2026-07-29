@@ -1,0 +1,104 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-22",
+    "today_ru": "22.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-04-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B23",
+    "priority": "P1",
+    "slug": "cursor-rules-finotdel",
+    "h1": "Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С",
+    "primary_query": "как настроить cursor rules",
+    "secondary_queries": [
+      "agents.md cursor",
+      ".cursorrules финансы",
+      "правила cursor для команды"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как настроить cursor rules 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'как настроить cursor rules 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как настроить cursor rules июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'как настроить cursor rules июль 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как настроить cursor rules новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'как настроить cursor rules новости 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "agents.md cursor 2026",
+      "purpose": "вторичный запрос: agents.md cursor",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": ".cursorrules финансы 2026",
+      "purpose": "вторичный запрос: .cursorrules финансы",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for '.cursorrules финансы 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "правила cursor для команды 2026",
+      "purpose": "вторичный запрос: правила cursor для команды",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'правила cursor для команды 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "error": "search failed for 'Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С 2026': HTTP Error 403: Forbidden",
+      "searched_at": "2026-07-22"
+    }
+  ],
+  "errors": [
+    "search failed for 'как настроить cursor rules 2026': HTTP Error 403: Forbidden",
+    "search failed for 'как настроить cursor rules июль 2026': HTTP Error 403: Forbidden",
+    "search failed for 'как настроить cursor rules новости 2026': HTTP Error 403: Forbidden",
+    "search failed for '.cursorrules финансы 2026': HTTP Error 403: Forbidden",
+    "search failed for 'правила cursor для команды 2026': HTTP Error 403: Forbidden",
+    "search failed for 'Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С 2026': HTTP Error 403: Forbidden"
+  ],
+  "unique_urls": []
+}

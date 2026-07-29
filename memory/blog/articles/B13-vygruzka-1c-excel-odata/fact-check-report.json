@@ -1,0 +1,45 @@
+{
+  "article": "memory/blog/articles/B13-vygruzka-1c-excel-odata/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 5,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 4,
+  "facts": [
+    {
+      "fact": "2000",
+      "kind": "date_or_year",
+      "context": "son и разумным $top (в моих скриптах: движения до 2000 строк, справочники до 500 – это лимит практики, не",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": ", какой $top \". Не делайте: тащить всю историю за 10 лет одним запросом. Связка с Google Sheets: кнопка \"О",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "з таблиц дальше – разбор от Excel к финконтуру за 30 дней . Кейсы по 1С публикую в Telegram \"Финансист, кот",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "255",
+      "kind": "large_number",
+      "context": "отраслевых обзорах её часто ограничивают примерно 255 символами). Сделайте: зафиксируйте одну сущность и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "яДенежныхСредств_RecordType?$format=json&amp;$top=100 Authorization: Basic … Сделайте: сначала $top=10 ,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

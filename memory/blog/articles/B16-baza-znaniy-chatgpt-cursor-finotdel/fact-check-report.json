@@ -1,0 +1,24 @@
+{
+  "article": "memory/blog/articles/B16-baza-znaniy-chatgpt-cursor-finotdel/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 2,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 1,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "через @, а поведение закрепляете rules. В гайдах 2026 по Cursor отдельно подчёркивают индекс репозитория",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "егламенты, шаблоны, словарь ДДС Плоская свалка из 200 файлов убивает пользу. Минимальная структура, с ко",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

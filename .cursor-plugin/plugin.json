@@ -1,7 +1,7 @@
 {
-  "name": "excalibur-blog",
-  "displayName": "Excalibur BLOG",
-  "description": "Плагин SEO/GEO статей: оркестратор + субагенты (research, writer, geo-qa, cover||schema, indexer, publish). Параллельные Task где безопасно.",
+  "name": "koda-excalibur-blog",
+  "displayName": "KODA Excalibur BLOG",
+  "description": "SEO/GEO конвейер для блога koda-fd.ru: research, writer, geo-qa, cover, schema, publish в WordPress.",
   "version": "0.2.1",
   "keywords": [
     "excalibur",

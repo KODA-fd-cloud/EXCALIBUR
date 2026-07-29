@@ -1,0 +1,31 @@
+{
+  "topic_id": "B19",
+  "h1": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel",
+  "title": "Как начать с Python для финансиста: сверка двух CSV без зависания Excel",
+  "description": "Первый Python для финансиста: установка, pandas-сверка двух CSV по ключу, out/diffs.csv, кодировка cp1251 и разделитель ; без зависания Excel.",
+  "cover_alt": "Абстрактные голографические потоки данных сливаются в узлы сверки на тёмном фоне",
+  "slug": "python-finansist-sverka-csv",
+  "primary_query": "как начать python для финансиста",
+  "secondary_queries": [
+    "сверка csv python",
+    "pandas сверка таблиц",
+    "python excel финансы"
+  ],
+  "char_count": 8928,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "Python для финансиста: сверка двух CSV",
+    "pandas outer merge для расхождений",
+    "первый скрипт сверки выгрузок без Excel"
+  ],
+  "meta_ab": {
+    "title_seo": "Как начать python для финансиста: сверка двух CSV",
+    "title_ctr": "💻 Как начать Python для финансиста: сверка CSV без зависания Excel!",
+    "title_aeo": "Как начать с Python для финансиста и сверить два CSV без Excel?",
+    "description_seo": "Пошагово: установка Python и pandas, папка data/scripts/out, merge outer + indicator, отчёт diffs.csv, типичные ошибки кодировки и разделителя.",
+    "description_ctr": "⚡️ Excel висит на двух выгрузках? Первый pandas-скрипт сверки CSV для финансиста: ключ, суммы, out/diffs.csv за один вечер.",
+    "description_aeo": "Как начать python для финансиста – поставить pandas, сверить два CSV через outer merge с indicator и сохранить расхождения в out/diffs.csv."
+  },
+  "cover_family": "gradient_abstract"
+}

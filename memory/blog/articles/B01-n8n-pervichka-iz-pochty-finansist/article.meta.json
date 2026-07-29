@@ -1,0 +1,28 @@
+{
+  "topic_id": "B01",
+  "slug": "n8n-pervichka-iz-pochty-finansist",
+  "primary_query": "n8n для финансиста",
+  "secondary_queries": [
+    "автоматизация первички n8n",
+    "n8n бухгалтерия",
+    "сбор счетов из почты автоматически"
+  ],
+  "char_count": 8679,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "publish_target": "dzen",
+  "dzen_channel": "automation_koda",
+  "anchor_variants": [
+    "n8n сценарий первички из почты для CFO",
+    "автоматический реестр счетов в Google Таблице",
+    "как финансисту собрать workflow Яндекс Почта и Telegram"
+  ],
+  "meta_ab": {
+    "title_seo": "n8n для финансиста: первичка из почты в реестр без ручного ввода",
+    "title_ctr": "📬 n8n для финансиста: счета из почты в таблицу за вечер - без программиста!",
+    "title_aeo": "Как финансисту на n8n собрать первичку из почты в Google Таблицу?",
+    "description_seo": "Пошаговый гайд n8n для финансиста: Яндекс IMAP, AI из PDF, реестр в Google Sheets и уведомление в Telegram. Self-hosted, сверка сумм, без автопроводки в 1С.",
+    "description_ctr": "⚡ Устали вбивать счета вручную? Соберите n8n-workflow: почта → AI → таблица → Telegram. Чек-лист сверки и выбор VPS vs Cloud.",
+    "description_aeo": "n8n для финансиста - это цепочка IMAP-триггера, извлечения полей счета нейросетью и записи в staging-реестр Google Sheets с human-in-the-loop перед 1С."
+  }
+}

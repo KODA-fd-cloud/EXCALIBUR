@@ -1,0 +1,42 @@
+{
+  "topic_id": "B18",
+  "h1": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA",
+  "title": "Как выставить счёт из 1С:УНФ с телефона: HTTP-сервис + Telegram/PWA",
+  "description": "Как выставить счёт на оплату из 1С:УНФ с телефона: расширение InvoiceBot, публикация HTTP-сервиса, FastAPI/PWA и Telegram без толстого клиента.",
+  "cover_alt": "Тёмный UI-мокап: телефон связан с сервером 1С через HTTP-узлы",
+  "slug": "schet-1c-unf-telefon-http-servis",
+  "primary_query": "выставить счет в 1с",
+  "secondary_queries": [
+    "интеграция 1с telegram",
+    "http сервис 1с унф",
+    "счет на оплату с телефона"
+  ],
+  "char_count": 8860,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "выставить счёт из УНФ с телефона",
+    "HTTP-сервис InvoiceBot для счёта в 1С",
+    "счёт на оплату из УНФ через PWA"
+  ],
+  "meta_ab": {
+    "title_seo": "Выставить счет в 1С с телефона: УНФ + HTTP-сервис",
+    "title_ctr": "💻 Выставить счет в 1С с телефона: УНФ, HTTP-сервис и PDF без бухгалтера!",
+    "title_aeo": "Как выставить счет на оплату из 1С:УНФ с телефона через HTTP-сервис?",
+    "description_seo": "Практический гайд: InvoiceBot в УНФ, публикация hs, FastAPI/PWA и Telegram. Счёт в живой базе + PDF с телефона без толстого клиента.",
+    "description_ctr": "⚡️ Менеджер выставляет счёт из УНФ с телефона за минуты: расширение, /ping, код доступа, НДС и PDF. Честный пилот без магии.",
+    "description_aeo": "Выставить счет в 1С с телефона – узкий HTTP-сервис УНФ плюс PWA или Telegram. Документ создаётся в базе, PDF приходит сразу."
+  },
+  "geo_qa": {
+    "score": 92,
+    "verdict": "PASS",
+    "date": "2026-07-22",
+    "html_linter": "PASS",
+    "slop_score": 0,
+    "cannibalization": "PASS",
+    "utility_gate": "PASS",
+    "link_verify": "PASS",
+    "core_eeat_lite": "19/20"
+  },
+  "cover_family": "gradient_abstract"
+}
