@@ -83,18 +83,19 @@ Cursor Automation → Schedule:
 ## Telegram UX (обязательно)
 
 ```text
-propose → ты: ок/нет
-  ок  → бот: «✅ Принято, пишу…» → пайплайн → бот: «🚀 Опубликовано» + URL
-  нет → бот: «⏭ Ок, пропускаю…»
+propose → ты: ок / нет
+  ок  → «✅ Принято, пишу…» → пайплайн → «🚀 Опубликовано» + URL
+  нет → «⏭ Пропускаю…» + СРАЗУ следующая тема
+        (и так по кругу, пока не скажешь ок)
 ```
 
 Команды:
 
 ```bash
-python3 scripts/excalibur_blog_telegram_notify.py poll --ack
-python3 scripts/excalibur_blog_telegram_notify.py ack
+python3 scripts/excalibur_blog_telegram_notify.py propose --auto
+python3 scripts/excalibur_blog_telegram_notify.py poll --ack          # нет → сразу next
+python3 scripts/excalibur_blog_telegram_notify.py await               # ждать в цикле до ok
 python3 scripts/excalibur_blog_telegram_notify.py published --url "https://koda-fd.ru/blog/<slug>/"
-python3 scripts/excalibur_blog_telegram_notify.py propose --topic-id B24 --h1 "..."
 ```
 
 ## Automation prompt (шаблон с согласованием)
@@ -105,20 +106,18 @@ python3 scripts/excalibur_blog_telegram_notify.py propose --topic-id B24 --h1 ".
 Цель: согласование темы в Telegram → статья → публикация → ссылка в Telegram.
 
 0. Прочитай AGENTS.md и shared/agent-pipeline-pitfalls.md.
-1. python3 scripts/excalibur_blog_telegram_notify.py poll --ack
-   - decision=approve / status=writing → иди в пайплайн для topic_id из pending.
-   - decision=reject → предложи следующую тему (шаг 11) и остановись.
-   - decision=pending / none → только предложи тему (шаг 11), НЕ пиши статью.
+1. python3 scripts/excalibur_blog_telegram_notify.py await --timeout-sec 900
+   (на «нет» сам шлёт следующую тему, пока не будет «ок» или пустая очередь)
+   - decision=approve / status=writing → пайплайн для topic_id.
+   - timeout без ответа → остановись (тема остаётся pending до следующего слота).
+   - empty_queue → остановись.
 2. Если пишем: python3 scripts/excalibur_blog_today.py + research_start для topic_id.
 3. Сбрось .cursor/excalibur-blog-handoff.md; очисти fragments.
 4. Task research → writer → geo-qa → cover||schema → indexer → publish.
 5. После успешного publish URL:
    python3 scripts/excalibur_blog_telegram_notify.py published --url "<URL>"
 6. Закоммить pending-approval.json + published-articles.md + артефакты статьи.
-11. Следующая тема: возьми следующую неопубликованную P0 из memory/topics/blog-topics.md
-    (не дублировать slug из shared/published-articles.md) и:
-    python3 scripts/excalibur_blog_telegram_notify.py propose --topic-id ... --h1 "..." --slug ...
-    (кириллица обязательна; читай h1 из blog-topics.md, не транслитом)
+7. Если в этом слоте ещё нет новой pending-темы: propose --auto.
 
 Fallback Task types: generalPurpose per role (AGENTS.md).
 Запрещено: писать/публиковать без approve; single-agent pipeline; секреты в handoff.
