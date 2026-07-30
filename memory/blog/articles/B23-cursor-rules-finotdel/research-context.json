@@ -3,17 +3,17 @@
   "step": "research_start",
   "date_context": {
     "timezone": "Europe/Moscow",
-    "today_iso": "2026-07-22",
-    "today_ru": "22.07.2026",
+    "today_iso": "2026-07-30",
+    "today_ru": "30.07.2026",
     "year": 2026,
     "month": 7,
     "month_name_ru": "июль",
-    "weekday_ru": "среда",
+    "weekday_ru": "четверг",
     "freshness_window": {
-      "prefer_sources_after": "2026-04-23",
+      "prefer_sources_after": "2026-05-01",
       "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
     },
-    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-22 (2026 год)."
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-30 (2026 год)."
   },
   "topic": {
     "topic_id": "B23",
