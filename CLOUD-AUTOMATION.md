@@ -92,9 +92,9 @@ propose → ты: ок / нет
 Команды:
 
 ```bash
+python3 scripts/excalibur_blog_telegram_notify.py tick                 # слот по расписанию (всегда пишет в Telegram)
 python3 scripts/excalibur_blog_telegram_notify.py propose --auto
-python3 scripts/excalibur_blog_telegram_notify.py poll --ack          # нет → сразу next
-python3 scripts/excalibur_blog_telegram_notify.py await               # ждать в цикле до ok
+python3 scripts/excalibur_blog_telegram_notify.py poll --ack
 python3 scripts/excalibur_blog_telegram_notify.py published --url "https://koda-fd.ru/blog/<slug>/"
 ```
 
@@ -106,21 +106,21 @@ python3 scripts/excalibur_blog_telegram_notify.py published --url "https://koda-
 Цель: согласование темы в Telegram → статья → публикация → ссылка в Telegram.
 
 0. Прочитай AGENTS.md и shared/agent-pipeline-pitfalls.md.
-1. python3 scripts/excalibur_blog_telegram_notify.py await --timeout-sec 900
-   (на «нет» сам шлёт следующую тему, пока не будет «ок» или пустая очередь)
-   - decision=approve / status=writing → пайплайн для topic_id.
-   - timeout без ответа → остановись (тема остаётся pending до следующего слота).
-   - empty_queue → остановись.
-2. Если пишем: python3 scripts/excalibur_blog_today.py + research_start для topic_id.
-3. Сбрось .cursor/excalibur-blog-handoff.md; очисти fragments.
-4. Task research → writer → geo-qa → cover||schema → indexer → publish.
-5. После успешного publish URL:
+1. Env: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (иначе сразу ❌ БЛОКЕР).
+2. ПЕРВЫМ делом:
+   python3 scripts/excalibur_blog_telegram_notify.py tick
+   JSON:
+   - action=reminded|proposed + status=pending → ОСТАНОВИСЬ (жди ок; статья не пишется).
+   - action=handled_reply + reject_then_next → ОСТАНОВИСЬ.
+   - status=writing / continue_pipeline → пиши пайплайн для topic_id.
+   - empty_queue → ОСТАНОВИСЬ.
+3. Если writing: today + research_start → research → writer → geo-qa → cover||schema → indexer → publish.
+4. После publish:
    python3 scripts/excalibur_blog_telegram_notify.py published --url "<URL>"
-6. Закоммить pending-approval.json + published-articles.md + артефакты статьи.
-7. Если в этом слоте ещё нет новой pending-темы: propose --auto.
+5. Закоммить/запушь pending-approval.json, published-articles.md, артефакты.
 
-Fallback Task types: generalPurpose per role (AGENTS.md).
-Запрещено: писать/публиковать без approve; single-agent pipeline; секреты в handoff.
+Запрещено: длинный await в начале; писать без status=writing; single-agent pipeline; секреты в ответах.
+Кириллица обязательна.
 ```
 
 ## После каждого прогона
