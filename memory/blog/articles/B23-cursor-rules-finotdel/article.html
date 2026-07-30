@@ -11,6 +11,10 @@
 </blockquote>
 
 <h2 id="why-rules">Поймите, зачем rules, если "и так понятно из чата"</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнительная таблица: чат vs AGENTS.md vs .mdc vs User Rules для финотдела" loading="lazy">
+</figure>
+
 <p>Чат забывчив. Новый Agent не помнит вчерашний диалог. Rules лежат в git и едут к коллеге вместе с репозиторием – как единый план счетов: зафиксировали один раз, все работают по одной логике.</p>
 <table>
   <thead>
@@ -49,6 +53,10 @@
 <p><b>Сделайте:</b> пять запретов и пять правил "куда класть файлы" до создания файлов. <b>Не делайте:</b> надеяться, что модель "сама догадается про 152-ФЗ".</p>
 
 <h2 id="formats-2026">Выберите формат 2026: AGENTS.md, .mdc или legacy .cursorrules</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема выбора формата Cursor Rules 2026: AGENTS.md, .mdc и миграция с .cursorrules" loading="lazy">
+</figure>
+
 <p>На июль 2026 у Cursor четыре слоя: Project Rules, User Rules, Team Rules и AGENTS.md. Для пилота финотдела хватает Project + AGENTS.md. Team Rules – опция Team/Enterprise, если нужен Enforce орг-запрета ПДн с дашборда.</p>
 <p>Project Rules – файлы <b>.mdc</b> в <b>.cursor/rules/</b> с frontmatter alwaysApply, description, globs. Обычный .md без frontmatter система игнорирует. AGENTS.md – plain markdown; вложенные в подпапках поддерживаются, более глубокий приоритетнее. .cursorrules в корне – legacy: после миграции в Always .mdc удаляйте, не держите оба формата.</p>
 <ol>
@@ -63,6 +71,10 @@
 <p><b>Сделайте:</b> AGENTS.md + 2–4 .mdc. <b>Не делайте:</b> User Rules с орг-запретом ПДн – они не уедут коллеге через git.</p>
 
 <h2 id="min-set">Соберите минимальный набор: папки, CSV, запрет ПДн и сырых 1С</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Чеклист минимального набора Cursor Rules: папки data/out, запрет ПДн и сырых выгрузок 1С" loading="lazy">
+</figure>
+
 <p>Не пишите роман. Rules без проверяемого действия агент игнорирует первым. Каркас для пилотов со сверками и выгрузками:</p>
 <ul>
   <li>Папки: data/ – вход, out/ – отчёты, scripts/ – код; сырые CSV не в корне.</li>

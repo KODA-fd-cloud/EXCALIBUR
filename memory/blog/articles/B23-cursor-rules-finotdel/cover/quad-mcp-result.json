@@ -1,0 +1,10 @@
+{
+  "url": null,
+  "source": "cursor_GenerateImage_i2i_fallback",
+  "reason": "MCP server user-mcp-kv / gpt-image-2 not available in this Cloud run",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "local_canvas": "cover/canvas-quad.png",
+  "generated_artifact": "/opt/cursor/artifacts/assets/B23-canvas-quad.png",
+  "note": "ONE GenerateImage call with reference_image_paths (not 4 calls); canvas resized 1536x1024→2048x1152 for quad split"
+}
