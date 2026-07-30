@@ -1,0 +1,9 @@
+{
+  "slug": "python-finansist-sverka-csv",
+  "topic_id": "B19",
+  "permalink": "https://koda-fd.ru/blog/python-finansist-sverka-csv/",
+  "cover_evidence": {},
+  "raw_output": "OK post=158 slug=python-finansist-sverka-csv\npermalink=https://koda-fd.ru/blog/python-finansist-sverka-csv/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
