@@ -1,0 +1,23 @@
+{
+  "slug": "cursor-rules-finotdel",
+  "topic_id": "B23",
+  "permalink": "",
+  "public_url": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "reasons": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH missing (≠ yes); Cloud Secrets inject only TELEGRAM_*",
+    "No FTP_*/SSH_* credentials in env",
+    "memory/site.env.local absent",
+    "PUBLIC_SITE_URL missing"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "dry_run": "pass",
+    "qa": "PASS",
+    "cover": "present",
+    "schema": "present"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local",
+  "method": null
+}

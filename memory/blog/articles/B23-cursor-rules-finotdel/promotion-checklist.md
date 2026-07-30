@@ -1,7 +1,7 @@
 # Promotion checklist — B23 cursor-rules-finotdel
 
-Дата публикации: 2026-07-30  
-Live URL: https://koda-fd.ru/blog/cursor-rules-finotdel/
+Дата публикации: 2026-07-30 (publish blocked — credentials/allow flag)  
+Live URL: _(pending)_ expected https://koda-fd.ru/blog/cursor-rules-finotdel/
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
