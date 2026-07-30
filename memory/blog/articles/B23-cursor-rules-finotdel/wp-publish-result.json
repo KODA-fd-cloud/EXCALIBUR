@@ -1,0 +1,17 @@
+{
+  "slug": "cursor-rules-finotdel",
+  "topic_id": "B23",
+  "permalink": "",
+  "expected_permalink": "https://koda-fd.ru/blog/cursor-rules-finotdel/",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "reason": "No publish credentials: memory/site.env.local missing; Cloud Secrets only TELEGRAM_*; EXCALIBUR_BLOG_ALLOW_PUBLISH not set; FTP_*/SSH_* missing. Live URL returns 404.",
+  "preflight": {
+    "link_verify": "pass",
+    "dry_run": "pass",
+    "qa": "PASS",
+    "cover": "present",
+    "schema": "present"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}
