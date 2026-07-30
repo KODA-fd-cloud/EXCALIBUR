@@ -1,0 +1,20 @@
+{
+  "pipeline": "quad_canvas_1x_mcp",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "output_canvas": "cover/canvas-quad.png",
+  "jobs": [
+    {
+      "slot": "canvas_quad",
+      "tool": "gpt-image-2",
+      "note": "ONE call only — 4 panels inside, then excalibur_blog_cover_quad_split.py",
+      "mcp_args": {
+        "prompt": "KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic.\nSingle canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each). Optional thin white gutters ONLY on the exact center lines (x=1024 and y=576); keep all panel content strictly inside its quadrant — no bleed across seams.\nStyle reference (image-to-image): match the hosted KODA legacy abstract cover look — purple/blue holographic nodes on near-black, soft grain, cinematic depth. NO people, NO faces, NO text, NO letters, NO watermark, NO logo, NO UI screenshots, NO Cyrillic on image.\n\nTop-left COVER — abstract hook for Cursor Rules / blocked raw 1C dumps: holographic rule-grid with glowing purple lock-nodes blocking a red-tinted raw data path, blue safe clean-path nodes branching aside, dense dot-mesh, luminous connections, thumbnail-safe composition.\n\nTop-right INLINE — comparison metaphor (chat chaos vs rules order): left tangled chaotic orange-red node threads vs right ordered purple rule lattice with stable blue links, same dark field, no faces, no text.\n\nBottom-left INLINE — migration workflow as three glowing sphere stages connected by luminous arrows: dim legacy node → dual bright AGENTS+.mdc twin nodes → active-rules constellation, purple/blue neon.\n\nBottom-right INLINE — folder skeleton as layered holographic panes: raw zone dimmed behind violet barrier lock, clean and out zones as bright open blue nodes, scripts as side constellation.\n\nmatch KODA legacy blog card style across all four panels, thumbnail-safe, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image.\nNegative: text, letters, words, watermark, logo, people, faces, stock photo, 3D shield icon, code editor window, spreadsheet UI, yellow headline typography, meme collage, torn paper, sticky notes.",
+        "input_urls": [
+          "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png"
+        ],
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "topic_id": "B23",
+  "slug": "cursor-rules-finotdel",
+  "cover_family": "gradient_abstract",
+  "style_preset": "koda_gradient_abstract",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-07-30T12:11:17+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне",
+      "h2_anchor": null,
+      "visual_type": "cover_abstract_hook",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Абстрактное сравнение: хаотичный чат vs упорядоченная сетка Cursor Rules",
+      "h2_anchor": "Поймите, зачем rules, если \"и так понятно из чата\"",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Абстрактная схема миграции: legacy rules → AGENTS.md и .mdc",
+      "h2_anchor": "Выберите формат 2026: .mdc, AGENTS.md и миграция с .cursorrules",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Абстрактный каркас папок: raw заблокирован, clean и out открыты",
+      "h2_anchor": "Зафиксируйте каркас папок финотдела до первого правила",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "mcp_mode": "image-to-image-fallback-GenerateImage",
+  "mcp_server": "unavailable:user-mcp-kv"
+}

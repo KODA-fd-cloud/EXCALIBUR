@@ -5,18 +5,18 @@
   "total_over_long_sentences": 2,
   "over_long_sentences": [
     {
-      "sentence": "Связка такая: база знаний и промпты – в базе знаний ChatGPT/Cursor для финотдела ; вечерний пилот скрипта – в Cursor: скрипт и дашборд ; здесь – как закрепить правила, чтобы пилоты не разъезжались",
-      "word_count": 29
+      "sentence": "Знания и промпты – в базе знаний ChatGPT/Cursor для финотдела ; пилот скрипта – в Cursor: скрипт и дашборд ; здесь – как закрепить правила, чтобы сырая выгрузка 1С не уезжала в чат и в git",
+      "word_count": 31
     },
     {
-      "sentence": "Четыре режима применения, коротко: Always – в каждый чат (только security и папки); Apply Intelligently – по description, когда агент сам решит; globs – когда в контексте файлы под маской; Manual – только если @упомянули rule",
-      "word_count": 32
+      "sentence": "mdc Проект, git Скоуп: always / globs / @rule User Rules Локальные Settings Личные привычки на все репо Team Rules Дашборд Team/Enterprise Org-wide compliance Вердикт: для малого финотдела минимум – AGENTS",
+      "word_count": 29
     }
   ],
   "readability": {
     "score": 100.0,
     "level": "Very Easy (Simple conversational / children's text)",
-    "avg_sentence_len": 7.0,
-    "avg_syllables_per_word": 1.6
+    "avg_sentence_len": 6.8,
+    "avg_syllables_per_word": 1.4
   }
 }
