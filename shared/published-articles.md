@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-07-30 | B22 | google-apps-script-finansist-obnovit-dannye | https://koda-fd.ru/blog/google-apps-script-finansist-obnovit-dannye/ | published |
 | 2026-07-30 | B19 | python-finansist-sverka-csv | https://koda-fd.ru/blog/python-finansist-sverka-csv/ | published |
 | 2026-07-22 | B18 | schet-1c-unf-telefon-http-servis | https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/ | published |
 | 2026-07-22 | B21 | mcp-cursor-finansist-instrumenty | https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/ | published |

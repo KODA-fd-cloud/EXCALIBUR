@@ -7,6 +7,7 @@ import base64
 import ftplib
 import io
 import json
+import os
 import sys
 import urllib.request
 from pathlib import Path
@@ -21,17 +22,28 @@ def project_root() -> Path:
 
 
 def load_env(root: Path) -> dict[str, str]:
+    """Merge process env with optional memory/site.env.local (local wins for file keys)."""
+    env: dict[str, str] = {k: v for k, v in os.environ.items() if v is not None}
     for name in ("memory/site.env.local", "memory/site.env.local.example"):
         p = root / name
-        if p.is_file():
-            env: dict[str, str] = {}
-            for line in p.read_text(encoding="utf-8").splitlines():
-                line = line.strip()
-                if "=" in line and not line.startswith("#"):
-                    k, v = line.split("=", 1)
-                    env[k.strip()] = v.strip()
-            return env
-    raise FileNotFoundError("site.env.local not found under memory/")
+        if not p.is_file():
+            continue
+        for line in p.read_text(encoding="utf-8", errors="replace").splitlines():
+            line = line.strip()
+            if "=" in line and not line.startswith("#"):
+                k, v = line.split("=", 1)
+                env[k.strip()] = v.strip()
+        break
+    # Aliases used across scripts
+    if env.get("FTP_PASS") and not env.get("FTP_PASSWORD"):
+        env["FTP_PASSWORD"] = env["FTP_PASS"]
+    if env.get("FTP_PASSWORD") and not env.get("FTP_PASS"):
+        env["FTP_PASS"] = env["FTP_PASSWORD"]
+    if not (env.get("SSH_HOST") or env.get("FTP_HOST")):
+        raise FileNotFoundError(
+            "No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+        )
+    return env
 
 
 def cover_url_from_registry(registry_path: Path) -> str:

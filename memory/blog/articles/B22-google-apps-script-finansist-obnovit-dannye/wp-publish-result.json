@@ -1,0 +1,8 @@
+{
+  "slug": "google-apps-script-finansist-obnovit-dannye",
+  "topic_id": "B22",
+  "permalink": "https://koda-fd.ru/blog/google-apps-script-finansist-obnovit-dannye/",
+  "raw_output": "OK post=159 slug=google-apps-script-finansist-obnovit-dannye\npermalink=https://koda-fd.ru/blog/google-apps-script-finansist-obnovit-dannye/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
