@@ -1,0 +1,210 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/cursor-rules-finotdel/#article",
+      "headline": "Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С",
+      "description": "Пошагово: AGENTS.md и .cursor/rules/*.mdc для финотдела – папки data/raw и clean, запрет ПДн и сырых выгрузок 1С, проверка Active Rules.",
+      "datePublished": "2026-07-30",
+      "dateModified": "2026-07-30",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/cursor-rules-finotdel/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/cursor-rules-finotdel-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "как настроить cursor rules, agents.md cursor, .cursorrules финансы, правила cursor для команды, cursor rules финотдел, alwaysApply, Active Rules",
+      "wordCount": 8909,
+      "articleSection": "Cursor / Rules / финотдел",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/cursor-rules-finotdel/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Rules работают на бесплатном тарифе Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Project rules и AGENTS.md читаются из проекта. Лимиты Agent зависят от плана: сверьте cursor.com/pricing. Без Agent правила – просто текст в папке; откройте Agent и проверьте Active Rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем rules отличаются от system prompt и User Rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "User Rules – локальные привычки в Settings на все проекты. Project rules и AGENTS.md лежат в git и шарятся с командой. System prompt модели вы не редактируете."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли rules, если в команде один человек?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Иначе каждый раз заново запрещаете коммит data/raw/. Для соло хватает AGENTS.md, always-security и .gitignore."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько файлов rules достаточно в день 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Один AGENTS.md плюс два .mdc (security always + scripts globs). Больше десяти в первый вечер – усложняете онбординг."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Модель всё равно нарушила правило. Что делать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Усильте формулировку (\"не предлагай git add data/raw/\"), продублируйте .gitignore, в чате явно @rule. Критичное смотрите в diff глазами."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Удалять ли старый .cursorrules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После переноса в .mdc и проверки Active Rules – да. Два формата сразу делают поведение неочевидным."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как связать rules с MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В security укажите узкий path filesystem MCP и запрет секретов в mcp.json. Сначала data/clean и out, потом расширение прав."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/cursor-rules-finotdel/#howto",
+      "name": "Как настроить Cursor Rules для финотдела: стиль кода, папки и запрет сырых выгрузок 1С",
+      "description": "Собрать AGENTS.md и 2–3 .mdc с папками data/raw и data/clean, запретом ПДн и сырых выгрузок 1С, проверить Active Rules и закоммитить шаблон.",
+      "inLanguage": "ru",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Cursor (Customize → Rules / Agent)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Git"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "AGENTS.md в корне пилотного репозитория"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": ".cursor/rules/finotdel-security.mdc (alwaysApply: true)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": ".cursor/rules/scripts-python.mdc (globs **/*.py)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Каркас папок data/raw/, data/clean/, out/, scripts/ и .gitignore"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Поймите, зачем rules, если «и так понятно из чата»",
+          "text": "Чат забывчив. Rules лежат в git и едут к коллеге вместе с репозиторием. Для малого финотдела минимум – AGENTS.md + always-rule про ПДн и папки. Не копируйте 40 community rules или BSL-стандарты: у вас сценарий данных и запретов.",
+          "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/#why-rules"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Выберите формат 2026: .mdc, AGENTS.md и миграция с .cursorrules",
+          "text": "Канон project rules – файлы .mdc в .cursor/rules/ с YAML-шапкой. Простой старт – корневой AGENTS.md. Legacy .cursorrules мигрируйте в .mdc и не держите оба формата. Always Apply – только язык, папки, безопасность.",
+          "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/#choose-format"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Зафиксируйте каркас папок финотдела до первого правила",
+          "text": "Создайте data/raw/, data/clean/, out/, scripts/. В .gitignore добавьте data/raw/ и .env. ФИО, ИНН, телефоны, полные выписки – только в raw; агенту давайте data/clean/ или маскированный срез. Пропишите пути в always-правиле.",
+          "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/#folders"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Создайте AGENTS.md и два .mdc пошагово",
+          "text": "Откройте папку пилота в Cursor. Создайте AGENTS.md (стек, RU, папки, DoD), finotdel-security.mdc с alwaysApply: true и scripts-python.mdc с globs **/*.py. В Customize → Rules проверьте режимы; в новом Agent-чате сверьте Active Rules и прогоните тест на отказ коммита data/raw/.",
+          "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/#create-files"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Свяжите rules с базой знаний и MCP",
+          "text": "В AGENTS.md укажите путь к kb/ и узкий path filesystem MCP (data/clean, out). На пилоте подтверждение вызовов tools обязательно. User Rules не должны отменять запрет ПДн проекта. Skills/Hooks в день 1 не смешивайте с rules.",
+          "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/#link-kb-mcp"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Внедрите шаблон в команду без культа сложности",
+          "text": "Один шаблон с AGENTS.md, .gitignore и двумя .mdc. Для двух-трёх человек хватает git; Team Rules – опция для большой команды. Раз в месяц режьте мёртвые правила; критичное дублируйте .gitignore и ревью diff.",
+          "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/#team-rollout"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Что сделать сегодня: чеклист на вечер",
+          "text": "Создайте папки и .gitignore; напишите AGENTS.md; добавьте security always и один scoped .mdc; проверьте Active Rules; прогоните тест «закоммить data/raw/…»; закоммитьте шаблон без raw-файлов и отдайте коллеге на клон.",
+          "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/#today"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B23-cursor-rules-finotdel/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1022,
+      575
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 575,
+        "end": 578
+      },
+      "v_gutter_px": {
+        "start": 1022,
+        "end": 1024
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1022,
+          "bottom": 575
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1022,
+          "bottom": 575
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1024,
+          "top": 0,
+          "right": 2048,
+          "bottom": 575
+        },
+        "raw_box_px": {
+          "left": 1024,
+          "top": 0,
+          "right": 2048,
+          "bottom": 575
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактное сравнение: хаотичный чат vs упорядоченная сетка Cursor Rules",
+        "h2_anchor": "Поймите, зачем rules, если \"и так понятно из чата\""
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 578,
+          "right": 1022,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 578,
+          "right": 1022,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактная схема миграции: legacy rules → AGENTS.md и .mdc",
+        "h2_anchor": "Выберите формат 2026: .mdc, AGENTS.md и миграция с .cursorrules"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1024,
+          "top": 578,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1024,
+          "top": 578,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактный каркас папок: raw заблокирован, clean и out открыты",
+        "h2_anchor": "Зафиксируйте каркас папок финотдела до первого правила"
+      }
+    }
+  }
+}

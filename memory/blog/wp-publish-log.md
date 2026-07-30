@@ -322,3 +322,43 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-07-30 — B23 cursor-rules-finotdel — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B23 |
+| slug | cursor-rules-finotdel |
+| verdict | **FAIL / BLOCKER** |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — |
+| permalink | — |
+| method | — |
+
+### Preconditions
+
+- article-qa.md: PASS (93/100)
+- link-verify.json: pass (7/7, site-base https://koda-fd.ru) — recheck OK
+- dry-run: pass (slug=cursor-rules-finotdel, PHP payload built)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing** (≠ yes)
+- PUBLIC_SITE_URL: **missing**
+- FTP_*/SSH_*: **missing**
+- memory/site.env.local: **absent**
+- Cloud Secrets injected: TELEGRAM_* only
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+(ALLOW flag also unset before credentials gate)
+```
+
+### Fix
+
+Add Cloud Secrets: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL=https://koda-fd.ru`, `SSH_HOST`/`SSH_USER`/`SSH_PASSWORD` (или `FTP_*` + `FTP_ROOT`) — затем повторить publish.

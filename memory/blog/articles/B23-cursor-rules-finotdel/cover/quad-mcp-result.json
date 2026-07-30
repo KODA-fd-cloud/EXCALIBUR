@@ -1,0 +1,9 @@
+{
+  "url": null,
+  "fallback": "GenerateImage",
+  "reason": "MCP server user-mcp-kv not available in this environment",
+  "local_canvas": "cover/canvas-quad.png",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "aspect_ratio": "16:9",
+  "note": "i2i via GenerateImage reference_image_paths + KODA hosted style ref; resized 1536x1024→2048x1152 then split"
+}

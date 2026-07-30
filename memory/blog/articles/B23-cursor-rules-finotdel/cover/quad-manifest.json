@@ -1,0 +1,43 @@
+{
+  "topic_id": "B23",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "koda_gradient_abstract",
+  "style_file": "memory/cover/quad-style-koda-gradient-abstract.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Агент снова хочет закоммитить сырую выгрузку 1С?",
+  "cover_family": "gradient_abstract",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_abstract_hook",
+      "alt": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне",
+      "scene_hint": "Abstract holographic rule-grid: glowing purple #8b5cf6 lock-nodes blocking a red-tinted data path (raw 1C dump metaphor), blue #93c5fd safe clean-path nodes branching aside, dense dot-mesh on near-black #0a0a0f, luminous connection lines, cinematic depth, NO people NO faces NO text NO UI chrome",
+      "meme_caption_ru": "Сырой 1С? СТОП."
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Поймите, зачем rules, если \"и так понятно из чата\"",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Abstract comparison diptych as two glowing node clusters: left chaotic tangled orange-red chat threads vs right ordered purple rule lattice with stable blue links — same dark #0a0a0f field, no faces, no readable text, thumbnail-safe",
+      "alt": "Абстрактное сравнение: хаотичный чат vs упорядоченная сетка Cursor Rules"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Выберите формат 2026: .mdc, AGENTS.md и миграция с .cursorrules",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Abstract 3-step migration flow as glowing spheres connected by luminous arrows: legacy dim node → dual bright AGENTS+.mdc nodes → active-rules constellation, purple/blue neon on #0a0a0f, no text no UI screenshots",
+      "alt": "Абстрактная схема миграции: legacy rules → AGENTS.md и .mdc"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Зафиксируйте каркас папок финотдела до первого правила",
+      "visual_type": "checklist_board",
+      "scene_hint": "Abstract folder-tree as layered holographic panes: raw zone dimmed/locked with violet barrier, clean and out zones bright blue open nodes, scripts as side constellation, soft grain, no text no people",
+      "alt": "Абстрактный каркас папок: raw заблокирован, clean и out открыты"
+    }
+  }
+}
