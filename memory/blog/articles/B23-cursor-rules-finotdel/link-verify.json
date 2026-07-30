@@ -1,39 +1,48 @@
 {
-  "source": "memory\\blog\\articles\\B23-cursor-rules-finotdel\\article.html",
-  "total_links": 5,
+  "source": "memory/blog/articles/B23-cursor-rules-finotdel/article.html",
+  "total_links": 6,
   "failed_count": 0,
   "verdict": "pass",
-  "note": "Local recheck hit SSL CERTIFICATE_VERIFY_FAILED (expired cert on koda-fd.ru/club); QA gate uses ssl_unverified_recheck; same SSL-noise pattern as B17/B20/B21.",
   "links": [
     {
-      "url": "/blog/baza-znaniy-chatgpt-cursor-finotdel/",
+      "url": "https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/",
       "status": 200,
       "ok": true,
-      "method": "GET",
-      "error": "ssl_unverified_recheck",
+      "method": "HEAD",
+      "error": null,
       "kind": "internal_relative",
       "skipped": false,
       "checked_url": "https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/"
     },
     {
-      "url": "/blog/cursor-finansist-skript-dashbord/",
+      "url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/",
       "status": 200,
       "ok": true,
-      "method": "GET",
-      "error": "ssl_unverified_recheck",
+      "method": "HEAD",
+      "error": null,
       "kind": "internal_relative",
       "skipped": false,
       "checked_url": "https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/"
     },
     {
-      "url": "/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
       "status": 200,
       "ok": true,
-      "method": "GET",
-      "error": "ssl_unverified_recheck",
+      "method": "HEAD",
+      "error": null,
       "kind": "internal_relative",
       "skipped": false,
       "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/"
     },
     {
       "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
@@ -42,18 +51,16 @@
       "method": "HEAD",
       "error": null,
       "kind": "external",
-      "skipped": false,
-      "checked_url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article"
+      "skipped": false
     },
     {
       "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=cursor-rules-finotdel",
       "status": 200,
       "ok": true,
-      "method": "GET",
-      "error": "ssl_unverified_recheck",
+      "method": "HEAD",
+      "error": null,
       "kind": "external",
-      "skipped": false,
-      "checked_url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=cursor-rules-finotdel"
+      "skipped": false
     }
   ]
 }
