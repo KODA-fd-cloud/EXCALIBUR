@@ -1,0 +1,73 @@
+name: KODA blog Telegram tick
+
+# 08:00 и 15:00 МСК = 05:00 и 12:00 UTC
+on:
+  schedule:
+    - cron: "0 5,12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Telegram tick
+        id: tick
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${TELEGRAM_BOT_TOKEN}" ] || [ -z "${TELEGRAM_CHAT_ID}" ]; then
+            echo "Missing TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID in repo Secrets"
+            exit 2
+          fi
+          python scripts/excalibur_blog_telegram_notify.py tick | tee tick.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          raw = Path("tick.json").read_text(encoding="utf-8").strip().splitlines()[-1]
+          data = json.loads(raw)
+          summary = (
+              f"action={data.get('action')} status={data.get('status')} "
+              f"topic={data.get('topic_id')} decision={data.get('decision')}"
+          )
+          print(summary)
+          Path("tick-summary.txt").write_text(summary + "\n", encoding="utf-8")
+          Path("tick-status.txt").write_text(str(data.get("status") or ""), encoding="utf-8")
+          Path("tick-topic.txt").write_text(str(data.get("topic_id") or ""), encoding="utf-8")
+          PY
+          echo "summary=$(cat tick-summary.txt)" >> "$GITHUB_OUTPUT"
+          echo "status=$(cat tick-status.txt)" >> "$GITHUB_OUTPUT"
+          echo "topic_id=$(cat tick-topic.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit pending-approval state
+        if: always()
+        run: |
+          set -euo pipefail
+          if [ -f memory/topics/pending-approval.json ]; then
+            git config user.name "koda-blog-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add memory/topics/pending-approval.json memory/topics/telegram-updates.offset || true
+            if git diff --cached --quiet; then
+              echo "No pending changes"
+            else
+              git commit -m "chore(blog): telegram approval state from scheduled tick"
+              git push
+            fi
+          fi
+
+      - name: Notice if writing approved
+        if: steps.tick.outputs.status == 'writing'
+        run: |
+          echo "::notice::Topic ${{ steps.tick.outputs.topic_id }} approved (writing). Run Excalibur pipeline in Cursor or trigger cloud agent manually."
