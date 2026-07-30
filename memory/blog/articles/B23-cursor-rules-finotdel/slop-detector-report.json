@@ -2,21 +2,17 @@
   "verdict": "pass",
   "total_slop_hits": 0,
   "slop_hits": [],
-  "total_over_long_sentences": 2,
+  "total_over_long_sentences": 1,
   "over_long_sentences": [
     {
-      "sentence": "Связка такая: база знаний и промпты – в базе знаний ChatGPT/Cursor для финотдела ; вечерний пилот скрипта – в Cursor: скрипт и дашборд ; здесь – как закрепить правила, чтобы пилоты не разъезжались",
-      "word_count": 29
-    },
-    {
-      "sentence": "Четыре режима применения, коротко: Always – в каждый чат (только security и папки); Apply Intelligently – по description, когда агент сам решит; globs – когда в контексте файлы под маской; Manual – только если @упомянули rule",
-      "word_count": 32
+      "sentence": "Методология и промпты – в базе знаний ChatGPT и Cursor для финотдела ; вечерний пилот – в гайде Cursor: скрипт и дашборд ; здесь – как закрепить правила, чтобы пилоты не разъезжались",
+      "word_count": 27
     }
   ],
   "readability": {
     "score": 100.0,
     "level": "Very Easy (Simple conversational / children's text)",
-    "avg_sentence_len": 7.0,
-    "avg_syllables_per_word": 1.6
+    "avg_sentence_len": 6.4,
+    "avg_syllables_per_word": 1.5
   }
 }

@@ -1,0 +1,42 @@
+{
+  "topic_id": "B23",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Агент снова хочет закоммитить выгрузку 1С?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущая блога: мем-коллаж — агент Cursor предлагает закоммитить сырую выгрузку 1С",
+      "scene_hint": "reference-лицо Ольги в тёмно-фиолетовом блейзере и очках, поза facepalm у ноутбука; fake Cursor Agent chat «commit data/1c_export.csv?»; красный стикер «НЕ В GIT»; torn paper + scotch tape; розовый sticky «ПДн?!»; meme shocked cat + facepalm cutout; розовый highlight на «выгрузку 1С»; grunge paper #F5F5F0",
+      "meme_caption_ru": "Сырая 1С в git?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Поймите, зачем rules, если \"и так понятно из чата\"",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-таблица 4 строки: Чат / AGENTS.md / .mdc Project Rules / User Rules — колонки «где живёт» и «когда брать»; sticky «минимум: AGENTS+security»; без лица героя",
+      "alt": "Сравнительная таблица: чат vs AGENTS.md vs .mdc vs User Rules для финотдела"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Выберите формат 2026: AGENTS.md, .mdc или legacy .cursorrules",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow 5 шагов: New Cursor Rule → AGENTS.md → security.mdc Always → scoped .mdc globs → удалить legacy .cursorrules; стрелки; tape corner; без лица",
+      "alt": "Схема выбора формата Cursor Rules 2026: AGENTS.md, .mdc и миграция с .cursorrules"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Соберите минимальный набор: папки, CSV, запрет ПДн и сырых 1С",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист-доска: data/ in · out/ reports · scripts/ · .gitignore CSV · запрет ФИО/ИНН в чат · запрет сырых 1С · DoD в out/; розовый стикер «152-ФЗ»; без лица героя",
+      "alt": "Чеклист минимального набора Cursor Rules: папки data/out, запрет ПДн и сырых выгрузок 1С"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "topic_id": "B23",
+  "slug": "cursor-rules-finotdel",
+  "cover_family": "gradient_abstract",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "mcp_mode": "image-to-image",
+  "mcp_fallback": "cursor_GenerateImage_i2i",
+  "file": "cover/cover.png",
+  "alt": "Ведущая блога: мем-коллаж — агент Cursor предлагает закоммитить сырую выгрузку 1С",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-07-30T12:10:43+00:00",
+  "note": "user-mcp-kv/gpt-image-2 unavailable; ONE GenerateImage i2i with blog-hero-reference.png → resize 2048x1152 → split",
+
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Ведущая блога: мем-коллаж — агент Cursor предлагает закоммитить сырую выгрузку 1С",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнительная таблица: чат vs AGENTS.md vs .mdc vs User Rules для финотдела",
+      "h2_anchor": "Поймите, зачем rules, если \"и так понятно из чата\"",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема выбора формата Cursor Rules 2026: AGENTS.md, .mdc и миграция с .cursorrules",
+      "h2_anchor": "Выберите формат 2026: AGENTS.md, .mdc или legacy .cursorrules",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист минимального набора Cursor Rules: папки data/out, запрет ПДн и сырых выгрузок 1С",
+      "h2_anchor": "Соберите минимальный набор: папки, CSV, запрет ПДн и сырых 1С",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

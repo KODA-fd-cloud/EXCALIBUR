@@ -1,5 +1,40 @@
 # Excalibur BLOG — WP publish log
 
+## 2026-07-30 — B23 cursor-rules-finotdel — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B23 |
+| slug | cursor-rules-finotdel |
+| verdict | **FAIL / BLOCKER** |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — (local cover/inline-01..03 ready) |
+| permalink | — (expected `https://koda-fd.ru/blog/cursor-rules-finotdel/` → live **404**) |
+| method | blocked before FTP/SSH |
+
+### Preconditions
+
+- article-qa.md: PASS (93/100)
+- link-verify.json: pass (7/7, site-base https://koda-fd.ru) — rechecked 2026-07-30
+- schema.jsonld: present
+- cover/cover.png + cover/cover-registry.json + inline-01..03: present
+- dry-run: PASS (slug/title OK; PHP payload built)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing** (not in env; no `memory/site.env.local`)
+- FTP_*/SSH_*: **missing** (Cloud Secrets only TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+`wp-publish-result.json` → `"verdict": "fail"`. Ledger `shared/published-articles.md` **не** обновлён (нет live publish).
+
+**Fix for Director:** добавить в Cloud Secrets / `memory/site.env.local`: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL=https://koda-fd.ru/blog` (или `https://koda-fd.ru`), `FTP_*` или `SSH_*` + `FTP_ROOT` / `DOCKER_WP_CONTAINER`, затем повторить publish.
+
+---
 ## 2026-07-22 — B18 schet-1c-unf-telefon-http-servis — **PASS**
 
 | Field | Value |
