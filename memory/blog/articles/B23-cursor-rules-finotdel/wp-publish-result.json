@@ -1,0 +1,8 @@
+{
+  "slug": "cursor-rules-finotdel",
+  "topic_id": "B23",
+  "permalink": "https://koda-fd.ru/blog/cursor-rules-finotdel/",
+  "raw_output": "OK post=160 slug=cursor-rules-finotdel\npermalink=https://koda-fd.ru/blog/cursor-rules-finotdel/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
