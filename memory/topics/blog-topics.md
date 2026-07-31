@@ -14,7 +14,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 **Уже на блоге (не дублировать slug):** vibe-coding-finansist, avtomatizaciya-finansov-no-code, cursor-ai-agenty-finotchetnost, ot-excel-k-fin-konturu-30-dney, finansovyj-minimalizm, disnejlend-dlya-dannyh, ubijstvo-svyashchennoj-korovy, claude-code-finotdel, obezlichivanie-dannyh-chatgpt-finansist, vygruzka-1c-excel-odata, upravlenie-debitorkoj-reestr-napominaniya, ollama-finotdel-lokalnaya-nejroset, baza-znaniy-chatgpt-cursor-finotdel, nejroset-excel-formuly-finansist, schet-1c-unf-telefon-http-servis, python-finansist-sverka-csv, cursor-finansist-skript-dashbord, mcp-cursor-finansist-instrumenty, google-apps-script-finansist-obnovit-dannye
 
 **Очередь 2026-07 (согласовано):** B13–B23 — автоматизация + вайб-кодинг. Источник 1С: `D:\projects\1С` (`dds-sheets`, `pilot-unf`).  
-**Очередь 2026-08 (дозаправка):** B24–B33 — финконтур, банк, n8n, Cursor, сверки. Scout/дозаправка: `scripts/excalibur_blog_refill_topics.py`.
+**Очередь 2026-08 (дозаправка):** B24–B33 — финконтур, банк, n8n, Cursor, сверки.  
+**Авто-Scout (GHA перед каждым tick):** если unpublished < 3 → `scripts/excalibur_blog_scout_ci.py` ищет свежие темы (DDG / Cursor Cloud) и дописывает карточки сюда.
 
 ---
 
@@ -482,6 +483,52 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **cover_scene_hint:** abstract agreement documents network nodes dark, no text
 
 ---
+
+---
+
+## B34 — План счетов управленки в Sheets
+
+- **priority:** P0
+- **slug:** plan-schetov-upravlencheskij-sheets
+- **h1:** Как завести простой план счетов управленческого учёта в Google Sheets
+- **primary_query:** план счетов управленческий учет sheets
+- **secondary_queries:** автоматизация финотдела, план счетов управленческий учет sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-07-31 · trend-scored · tags:план,счетов,управленческий,sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B35 — Сверка банка и учёта через n8n
+
+- **priority:** P0
+- **slug:** sverka-banka-n8n-google-sheets
+- **h1:** Как сверить банковскую выписку с учётом через n8n и Google Sheets
+- **primary_query:** сверка банковской выписки n8n
+- **secondary_queries:** автоматизация финотдела, сверка банковской выписки n8n, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-07-31 · trend-scored · tags:n8n,банк,сверка,sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
 ## Архив очереди (не в работе)
 

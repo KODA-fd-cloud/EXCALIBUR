@@ -2,7 +2,8 @@
 
 ## Когда запускаться
 
-Запускается по запросу пользователя для расширения пула тем или перед началом нового цикла написания статьи, когда старые темы в `blog-topics.md` исчерпаны.
+1. **Авто (GHA):** перед каждым Telegram-tick, если unpublished < 3 → `python scripts/excalibur_blog_scout_ci.py` (тренды + utility bank / опционально Cursor Cloud).
+2. **Вручную / Cloud Agent:** по запросу или когда очередь пуста — полный алгоритм ниже (WebSearch + Wordstat MCP).
 
 ---
 

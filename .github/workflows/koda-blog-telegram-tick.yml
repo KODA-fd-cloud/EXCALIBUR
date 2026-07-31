@@ -1,6 +1,7 @@
 name: KODA blog Telegram tick
 
 # 08:00 и 15:00 МСК = 05:00 и 12:00 UTC
+# Перед tick: Scout дозаправляет очередь актуальными темами (если unpublished < 3).
 # После «ок»: если статья готова (html+QA PASS) — сразу публикация + ссылка в Telegram.
 on:
   schedule:
@@ -23,7 +24,26 @@ jobs:
           python-version: "3.12"
 
       - name: Install deps
-        run: pip install paramiko
+        run: pip install paramiko ddgs
+
+      - name: Scout refill topics
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          set -euo pipefail
+          # Если CURSOR_API_KEY есть — Cloud Scout; иначе web-scout (DDG) + cannibalization guard
+          python scripts/excalibur_blog_scout_ci.py --count 3 --min-unpublished 3 --notify --prefer-cursor | tee scout.json
+          git config user.name "koda-blog-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add memory/topics/blog-topics.md || true
+          if git diff --cached --quiet; then
+            echo "Scout: no topic file changes"
+          else
+            git commit -m "chore(blog): scout refill topics"
+            git push
+          fi
 
       - name: Telegram tick
         id: tick
@@ -75,7 +95,7 @@ jobs:
           set -euo pipefail
           git config user.name "koda-blog-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add memory/topics/pending-approval.json memory/topics/telegram-updates.offset shared/published-articles.md memory/blog/articles || true
+          git add memory/topics/pending-approval.json memory/topics/telegram-updates.offset memory/topics/blog-topics.md shared/published-articles.md memory/blog/articles || true
           if git diff --cached --quiet; then
             echo "No changes"
           else

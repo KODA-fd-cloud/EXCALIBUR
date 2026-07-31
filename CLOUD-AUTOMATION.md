@@ -70,15 +70,21 @@ agent worker start --pool --pool-name excalibur-blog --idle-release-timeout 600
 
 ## Automation schedule (KODA)
 
-Cursor Automation → Schedule:
+Основной автозапуск — **GitHub Actions** `.github/workflows/koda-blog-telegram-tick.yml`:
 
 ```text
-0 8,15 * * *
+0 5,12 * * *   # 08:00 и 15:00 МСК
 ```
 
-- Repository: `KODA-fd-cloud/EXCALIBUR`
-- Branch: `master`
-- Secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, FTP/WP, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
+Порядок шага:
+
+1. **Scout** — если unpublished < 3: `excalibur_blog_scout_ci.py` ищет актуальные темы (DuckDuckGo; при `CURSOR_API_KEY` — Cursor Cloud Scout) → commit в `blog-topics.md`
+2. **Telegram tick** — propose / remind / ок|нет
+3. **Publish** — если `writing` и есть html+QA PASS
+
+Опционально: Cursor Automation (часто выключается сама) — тот же cron в UTC как выше.
+
+Secrets: `TELEGRAM_*`, FTP/SSH/WP, `EXCALIBUR_BLOG_ALLOW_PUBLISH`, опционально `CURSOR_API_KEY` для Cloud Scout.
 
 ## Telegram UX (обязательно)
 

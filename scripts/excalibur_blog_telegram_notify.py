@@ -252,7 +252,7 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
             send_text(
                 token,
                 chat_id,
-                "📭 Карточки в очереди закончились. Бот не выдумывает темы — только blog-topics.md / Scout.",
+                "📭 Очередь пуста. В следующем слоте Scout сам дозаправит актуальными темами (web + cannibalization guard).",
             )
             pending["status"] = "rejected"
             pending["rejected_ids"] = rejected
@@ -436,7 +436,7 @@ def cmd_tick(args: argparse.Namespace) -> None:
             chat_id,
             "📭 Очередь карточек пуста.\n"
             "Я не придумываю темы на лету — только шлю следующую из blog-topics.md.\n"
-            "Дозаправь очередь (B24+) или запусти Scout, иначе слот будет пустым.",
+            "Очередь пуста — Scout дозаправит в следующем cron (или: python scripts/excalibur_blog_scout_ci.py --force --notify).",
         )
         print(json.dumps({"ok": False, "action": "empty_queue"}, ensure_ascii=False))
         return
