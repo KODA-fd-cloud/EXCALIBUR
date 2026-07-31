@@ -1,0 +1,34 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 5,
+  "over_long_sentences": [
+    {
+      "sentence": "Каждое утро копировать строки из банковской выписки в \"главный\" Excel или Google Sheets – это не контроль денег, а ручной конвейер с ошибками: колонки плывут, после повторной загрузки появляются дубли, второй расчётный счёт ломает свод",
+      "word_count": 34
+    },
+    {
+      "sentence": "Зафиксируйте, зачем staging между банком и отчётом DoD пилота простой: одна тестовая выписка за период лежит в Google Sheets на листе staging с едиными колонками; сумма оборотов и число строк сходятся с банком; повторная загрузка того же файла не плодит дубли",
+      "word_count": 41
+    },
+    {
+      "sentence": "Схема слоёв: Клиент-банк (CSV/XLSX) → папка raw/ (файл как есть) → лист raw_import → лист staging (нормализация + row_hash) → ДДС / сверка / дашборд Создайте Google-таблицу с тремя зонами: папка/лист под сырьё, raw_import , staging",
+      "word_count": 27
+    },
+    {
+      "sentence": "ГГГГ amount Сумма числом Запятая → точка; VALUE / NUMBERVALUE direction Приход / расход in / out или знак у amount counterparty Контрагент TRIM; без \"украшательств\" в raw purpose Назначение платежа Как в банке, без ручной правки смысла account_id Какой р/с Обязательно при нескольких счетах bank_doc_id Номер п/п Если банк отдаёт – сохраняйте row_hash Дедуп Хэш от ключевых полей source_file Имя файла выгрузки Для аудита повторных загрузок loaded_at Когда положили в staging Дата/время импорта Создайте шапку staging ровно по таблице выше – без \"ещё пару колонок на всякий случай\"",
+      "word_count": 81
+    },
+    {
+      "sentence": "row_hash (идея ключа): date | amount | purpose | account_id | bank_doc_id load_log: source_file | loaded_at | rows | turnover_in | turnover_out | status Типичные ошибки автоматизации: разные поля у разных банков без маппинга, пароли в скриптах, часовые пояса, автомат без тестовой выборки, комиссии банка, которые \"теряются\" при сверке",
+      "word_count": 32
+    }
+  ],
+  "readability": {
+    "score": 70.6,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 12.3,
+    "avg_syllables_per_word": 2.0
+  }
+}

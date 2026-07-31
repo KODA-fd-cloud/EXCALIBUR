@@ -1,0 +1,184 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#article",
+      "headline": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+      "description": "CSV из банка в Google Sheets: сырой слой, staging с колонками и row_hash, дедуп и контроль сумм без копипаста в отчёт.",
+      "datePublished": "2026-07-31",
+      "dateModified": "2026-07-31",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/bankovskaya-vypiska-staging-google-sheets-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактный поток банковских данных в сетку staging-таблицы на тёмном фоне"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "банковская выписка в excel автоматически, загрузка выписки в google sheets, нормализация выписки 1с, staging таблица финансы, row_hash дедуп",
+      "wordCount": 9344,
+      "articleSection": "Data foundation / Google Sheets / staging",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли выписка из клиент-банка?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если есть CSV или Excel. Для txt формата 1CClientBankExchange сначала разберите поля или сконвертируйте в таблицу, потом кладите в staging. PDF – только после конвертации и ручной сверки сумм с банком; в публичные конвертеры полные реквизиты не отдавайте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как жить с несколькими расчётными счетами?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Один лист staging, колонка account_id на каждый счёт. Сырые файлы храните отдельно. В row_hash обязательно включайте account_id, иначе одинаковые суммы и назначения с разных р/с сольются."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Зачем нельзя править сырой слой руками?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чтобы можно было пересобрать staging из файла и доказать аудиту происхождение строки. Правки – только в правилах нормализации (формулы, маппинг колонок), не в ячейках raw_import."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это замена нормализации выписки в 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Staging в Google Sheets – управленческий слой. В 1С остаются DirectBank, клиент-банк или ручные документы. Можно жить параллельно: Sheets для ДДС и сверки, 1С для бухучёта."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как автоматизировать загрузку дальше?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сначала ручной пилот одной выписки. Затем папка на Drive + Apps Script или сценарий n8n. Не подключайте автомат, пока не стабильны разделитель, кодировка и hash-дедуп."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если банк отдаёт только PDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Попробуйте в клиент-банке другой формат (Excel, txt, MT940). Если PDF единственный вариант – локальная конвертация + обязательная сверка оборотов; не стройте на OCR основу ежедневного контура без контроля."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#howto",
+      "name": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+      "description": "Сырой CSV/Excel из клиент-банка → raw_import → staging с колонками и row_hash, дедуп и сверка оборотов в Google Sheets за один вечер.",
+      "inLanguage": "ru",
+      "totalTime": "PT3H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Клиент-банк (экспорт CSV или Excel)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Drive (папка raw/)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Одна тестовая банковская выписка в CSV или Excel"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Контрольные цифры банка: обороты приход/расход и остаток на конец периода"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Зафиксируйте, зачем staging между банком и отчётом",
+          "text": "Создайте Google-таблицу с зонами raw, raw_import и staging. Отчёты читают только staging. Выберите одну выписку одного счёта, запишите контрольные цифры банка и не смешивайте управленческий staging с проводками 1С.",
+          "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#why-staging"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Задайте формат колонок staging: дата, сумма, контрагент, hash",
+          "text": "Соберите шапку staging: date, amount, direction, counterparty, purpose, account_id, bank_doc_id, row_hash, source_file, loaded_at. Назначьте account_id даже для одного счёта. Категории ДДС на этом шаге не добавляйте.",
+          "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#staging-columns"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Импортируйте CSV/Excel и обойдите ловушки кодировки",
+          "text": "Положите копию выписки в raw/ без правок. Импортируйте в raw_import через Файл → Импорт, укажите разделитель (часто точка с запятой) и снимите «Преобразовывать текст в числа, даты и формулы». При кракозябрах пересохраните в UTF-8 или выберите нужную кодировку в банке.",
+          "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#import-csv"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Настройте дедуп и правило «не трогать сырой файл»",
+          "text": "Соберите row_hash из date, amount, purpose, account_id и bank_doc_id. Перед дозаписью в staging не добавляйте строку с уже существующим hash. Ведите load_log и сверьте обороты с банком плюс 5 случайных строк глазами.",
+          "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#dedup-raw"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Что сделать сегодня и куда вести staging дальше",
+          "text": "Повторите импорт того же файла: новых строк быть не должно. Когда staging стабилен, ведите сверху категории ДДС, сверку CSV, Apps Script «Обновить данные» или платёжный календарь — не пять отчётов, пока не сошлись контрольные суммы с банком.",
+          "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/#today"
+        }
+      ]
+    }
+  ]
+}

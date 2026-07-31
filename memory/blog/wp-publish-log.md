@@ -322,3 +322,33 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-07-31 — B25 bankovskaya-vypiska-staging-google-sheets — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B25 |
+| slug | bankovskaya-vypiska-staging-google-sheets |
+| verdict | **BLOCKER** |
+| permalink | *(none — not published)* |
+| method | n/a |
+| ledger_updated | no |
+| telegram_published | no |
+
+### Preconditions
+
+- article-qa.md: PASS
+- link-verify.json: pass (8/8, site-base https://koda-fd.ru)
+- dry-run: PASS (slug ok, PHP bytes 8776759)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **unset**
+- FTP_/SSH_ secrets: **absent** (Cloud Secrets only TELEGRAM_*)
+- memory/site.env.local: **absent**
+- paramiko: **missing**
+
+### Result
+
+`❌ PUBLISH BLOCKER` — need Cloud Secrets: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL=https://koda-fd.ru`, SSH_* (or FTP_*+FTP_ROOT); install paramiko for docker path.

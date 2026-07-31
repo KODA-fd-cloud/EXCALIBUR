@@ -1,6 +1,14 @@
 {
   "site_base": "https://koda-fd.ru",
-  "total_articles": 16,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 21,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B04-claude-code-finotdel",
+      "keyword": "claude code",
+      "context": "плодите противоречия.</li> </ul> <p>Если в команде уже есть Claude Code или другие агенты, AGENTS.md остаётся общим языком: его чит",
+      "link_replacement": "<a href=\"/blog/claude-code-finotdel/\">Claude Code</a>"
+    }
+  ]
 }

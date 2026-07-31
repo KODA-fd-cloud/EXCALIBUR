@@ -1,0 +1,56 @@
+{
+  "topic_id": "B25",
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
+  "cover_family": "gradient_abstract",
+  "style_preset": "koda_gradient_abstract",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Абстрактный поток банковских данных в сетку staging-таблицы на тёмном фоне",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-07-31T12:11:48+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Абстрактный поток банковских данных в сетку staging-таблицы на тёмном фоне",
+      "h2_anchor": null,
+      "visual_type": "cover_abstract",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Абстрактная схема слоёв: банк → staging → отчёт на тёмном holographic фоне",
+      "h2_anchor": "Зафиксируйте, зачем staging между банком и отчётом",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Абстрактная сетка колонок staging с hash-узлом на тёмном фоне",
+      "h2_anchor": "Задайте формат колонок staging: дата, сумма, контрагент, hash",
+      "visual_type": "infographic_card",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Абстрактный импорт потока данных в сетку таблицы без текстовых подписей",
+      "h2_anchor": "Импортируйте CSV/Excel и обойдите ловушки кодировки",
+      "visual_type": "tool_screenshot",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "mcp_actual": "GenerateImage fallback",
+  "mcp_mode": "image-to-image",
+  "reference_url": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "note": "user-mcp-kv/gpt-image-2 unavailable; ONE GenerateImage i2i with style refs; resize 2048x1152; split+inject",
+  "cover_alt_text": "Абстрактный поток банковских данных в сетку staging-таблицы на тёмном фоне"
+}

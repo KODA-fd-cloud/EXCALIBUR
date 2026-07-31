@@ -1,0 +1,18 @@
+KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic,
+Single canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each). Optional thin white gutters ONLY on the exact center lines (x=1024 and y=576); keep all panel content strictly inside its quadrant — no bleed across seams.
+STYLE REFERENCE: match the provided KODA legacy blog card style — dark holographic purple/blue mesh, no people.
+
+Top-left COVER — hook "Банковская выписка без копипаста: staging-слой":
+abstract bank data stream into table grid dark holographic: left side chaotic purple particle stream (raw bank extract), converging light conduits into a clean ordered blue table/grid lattice on the right, soft depth, thumbnail-safe, absolutely NO text NO letters.
+
+Top-right — workflow layers visual (H2: staging between bank and report):
+abstract holographic layers: dense bank-source node cluster → mid staging buffer grid → sparse report/dashboard nodes, purple-blue light conduits, no text no UI chrome, NO people.
+
+Bottom-left — staging columns visual (H2: date, amount, counterparty, hash):
+abstract holographic spreadsheet lattice with eight glowing column pillars and a distinct hash-node beacon, ordered data rows as light particles, no text no letters, NO people.
+
+Bottom-right — CSV/Excel import visual (H2: encoding traps):
+abstract file-particle stream entering a translucent sheet grid; one side slightly glitched encoding noise dissolving into clean blue lattice, dark holographic, no text, NO people.
+
+match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image
+Negative: text, letters, words, watermark, logo, people, faces, stock photo, 3D shield icon, code editor window, spreadsheet UI chrome with labels, yellow headline typography, meme collage, torn paper, English or Cyrillic on image
