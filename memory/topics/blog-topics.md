@@ -13,7 +13,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 **Уже на блоге (не дублировать slug):** vibe-coding-finansist, avtomatizaciya-finansov-no-code, cursor-ai-agenty-finotchetnost, ot-excel-k-fin-konturu-30-dney, finansovyj-minimalizm, disnejlend-dlya-dannyh, ubijstvo-svyashchennoj-korovy, claude-code-finotdel, obezlichivanie-dannyh-chatgpt-finansist
 
-**Очередь 2026-07 (согласовано):** B13–B23 — автоматизация + вайб-кодинг. Источник 1С: `D:\projects\1С` (`dds-sheets`, `pilot-unf`).
+**Очередь 2026-07 (согласовано):** B13–B23 — опубликованы.  
+**Очередь 2026-07+ (scout):** B24–B26 — n8n/Make + локальные LLM для финотдела.
 
 ---
 
@@ -259,6 +260,75 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **faq_hints:** rules работают в free тарифе; чем отличается от system prompt; нужно ли для одного человека
 - **internal_links:** /baza-znaniy-chatgpt-cursor-finotdel/, /cursor-finansist-skript-dashbord/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract rule-grid nodes locked paths holographic dark purple, no text
+
+---
+
+## B24 — n8n для финотдела: установка и первый workflow
+
+- **priority:** P0
+- **slug:** n8n-finotdel-ustanovka-pervyj-workflow
+- **h1:** Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram
+- **primary_query:** как установить n8n
+- **secondary_queries:** n8n docker, n8n self-hosted, n8n google sheets telegram, автоматизация n8n финансы
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** Wordstat MCP `user-mcp-kv` недоступен в сессии scout 2026-07-31; спрос подтверждён трендами 2026 (n8n AI nodes / self-host) и нишей site-brief (кластер n8n/Make). Цифры показов не выдуманы.
+- **h2_outline:**
+  1. Зачем финотделу свой n8n, а не только ручные выгрузки
+  2. Cloud vs self-hosted: что выбрать под выписки и 152-ФЗ
+  3. Установка: Docker Compose, домен, HTTPS, WEBHOOK_URL
+  4. Первый workflow: Google Sheets (строка ДДС/реестра) → фильтр → Telegram-дайджест
+  5. Чек-лист безопасности: секреты, права Google, что не слать в облако
+- **faq_hints:** нужен ли vps; чем отличается от make; хватит ли без ssl; можно ли только локально на ноутбуке
+- **internal_links:** /upravlenie-debitorkoj-reestr-napominaniya/, /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract workflow nodes pipeline holographic dark purple blue, no text
+
+---
+
+## B25 — n8n или Make для финотдела
+
+- **priority:** P0
+- **slug:** n8n-ili-make-finotdel
+- **h1:** Как выбрать n8n или Make для финотдела: сравнение под выписки, объём и 152-ФЗ
+- **primary_query:** n8n или make
+- **secondary_queries:** n8n vs make, make.com или n8n, сравнение n8n make zapier, какая автоматизация для финансов
+- **search_intent:** comparison
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** Wordstat MCP недоступен; угол из трендов 2026 (n8n vs Make B2B) + требования финотдела к данным. Цифры показов не выдуманы.
+- **h2_outline:**
+  1. Критерии выбора для финансиста: данные, объём операций, кто будет чинить сценарий
+  2. Таблица сравнения: цена, self-host, интеграции, AI-ноды, риск блокировок
+  3. Когда хватает Make: быстрый старт без сервера
+  4. Когда брать n8n: выписки, ПДн, 100K+ операций, локальные LLM
+  5. Практичный гибрид: Make для внешних сервисов, n8n для чувствительного контура
+- **faq_hints:** можно ли мигрировать сценарии; нужен ли программист для n8n; подходит ли zapier из рф
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /n8n-finotdel-ustanovka-pervyj-workflow/, /ollama-finotdel-lokalnaya-nejroset/
+- **cover_scene_hint:** abstract two path fork nodes holographic dark purple cyan, no text
+
+---
+
+## B26 — n8n + Ollama: локальная категоризация ДДС
+
+- **priority:** P0
+- **slug:** n8n-ollama-kategorizaciya-dds
+- **h1:** Как связать n8n с Ollama: локальная категоризация ДДС без отправки выписок в облако
+- **primary_query:** как связать n8n с ollama
+- **secondary_queries:** n8n ollama, локальная llm в n8n, категоризация ддс нейросеть, n8n http ollama api
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** Wordstat MCP недоступен; связка n8n↔Ollama — горячий utility-хвост к B15 без дубля установки Ollama. Цифры показов не выдуманы.
+- **h2_outline:**
+  1. Зачем гонять ДДС через локальную модель, а не через ChatGPT API
+  2. Подготовка: Ollama уже стоит, модель для классификации, endpoint `/v1/chat/completions`
+  3. Workflow в n8n: триггер по строке Sheets → HTTP к Ollama → парсинг JSON → запись категории
+  4. Промпт и словарь статей: как снизить галлюцинации по суммам
+  5. Docker-сеть, host.docker.internal и чек-лист перед продом
+- **faq_hints:** работает ли из n8n cloud; какая модель лучше для классификации; нужно ли gpu
+- **internal_links:** /ollama-finotdel-lokalnaya-nejroset/, /n8n-finotdel-ustanovka-pervyj-workflow/, /nejroset-excel-formuly-finansist/
+- **cover_scene_hint:** abstract local llm node linked to workflow mesh dark purple blue, no text
 
 ---
 
