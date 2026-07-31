@@ -1,0 +1,31 @@
+{
+  "topic_id": "B25",
+  "h1": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+  "title": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+  "description": "Staging между банком и ДДС: колонки, импорт CSV, hash-дедуп, правило не трогать сырой файл и куда вести дальше.",
+  "cover_alt": "Абстрактный поток банковских данных в сетку таблицы на тёмном голографическом фоне",
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
+  "primary_query": "банковская выписка в excel автоматически",
+  "secondary_queries": [
+    "загрузка выписки в google sheets",
+    "нормализация выписки 1с",
+    "staging таблица финансы"
+  ],
+  "char_count": 9896,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "банковская выписка в staging-таблицу",
+    "нормализация выписки Google Sheets",
+    "дедуп строк банка по hash"
+  ],
+  "meta_ab": {
+    "title_seo": "Банковская выписка в staging Google Sheets без копипаста",
+    "title_ctr": "🏦 Выписка → staging-таблица: hash, дедуп, без ручного копипаста",
+    "title_aeo": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста?",
+    "description_seo": "Зачем staging, контракт колонок, ловушки CSV/кодировки, дедуп по hash и маршрут в ДДС/сверку/календарь.",
+    "description_ctr": "⚡️ Хватит копипаста из банк-клиента: import_tmp → raw_bank → отчёт без потери аудита.",
+    "description_aeo": "Банковская выписка в excel автоматически – через staging-лист raw_bank с row_hash и контролем оборота."
+  },
+  "cover_family": "gradient_abstract"
+}

@@ -1,11 +1,10 @@
 {
-  "topic_id": "B25",
-  "h1": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
-  "slug": "bankovskaya-vypiska-staging-google-sheets",
-  "status": "writing",
-  "proposed_at": 1785495901,
-  "proposal_message_id": 45,
+  "topic_id": "B26",
+  "h1": "Как сделать план-факт ДДС в Google Sheets за один вечер",
+  "slug": "plan-fakt-dds-google-sheets",
+  "status": "pending",
+  "proposed_at": 1785503642,
+  "proposal_message_id": 53,
   "chat_id": "1136346366",
-  "rejected_ids": [],
-  "ack_message_id": 49
+  "rejected_ids": []
 }
