@@ -1,6 +1,21 @@
 {
   "site_base": "https://koda-fd.ru",
-  "total_articles": 16,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 20,
+  "opportunities_found": 2,
+  "suggestions": [
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B04-claude-code-finotdel",
+      "keyword": "claude code",
+      "context": "плодите противоречия.</li> </ul> <p>Если в команде уже есть Claude Code или другие агенты, AGENTS.md остаётся общим языком: его чит",
+      "link_replacement": "<a href=\"/blog/claude-code-finotdel/\">Claude Code</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B24-n8n-finotdel-ustanovka-pervyj-workflow",
+      "keyword": "n8n self-hosted",
+      "context": "heets с реестром (или Excel на OneDrive/локальный CSV, если n8n self-hosted).</li>   <li>В n8n: Schedule Trigger (раз в день утром) → G",
+      "link_replacement": "<a href=\"/blog/n8n-finotdel-ustanovka-pervyj-workflow/\">n8n self-hosted</a>"
+    }
+  ]
 }

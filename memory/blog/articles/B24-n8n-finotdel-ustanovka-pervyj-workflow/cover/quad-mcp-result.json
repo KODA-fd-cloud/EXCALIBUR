@@ -1,0 +1,9 @@
+{
+  "url": null,
+  "local_source": "/opt/cursor/artifacts/assets/B24-canvas-quad-gen.png",
+  "mcp_status": "unavailable_user-mcp-kv",
+  "fallback": "Cursor GenerateImage i2i with reference_image_paths",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "canvas": "cover/canvas-quad.png",
+  "size": "2048x1152"
+}

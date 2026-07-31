@@ -1,0 +1,24 @@
+{
+  "article": "memory/blog/articles/B24-n8n-finotdel-ustanovka-pervyj-workflow/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 2,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "ние Google в режиме Testing, согласие живёт около 7 дней – credential придётся переподключать, пока не офо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5678",
+      "kind": "large_number",
+      "context": "упом только по HTTPS. Порт редактора по умолчанию 5678; в проде его вешают на 127.0.0.1:5678 , чтобы в и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

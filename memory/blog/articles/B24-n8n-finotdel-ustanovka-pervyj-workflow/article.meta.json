@@ -1,0 +1,32 @@
+{
+  "topic_id": "B24",
+  "h1": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram",
+  "title": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram",
+  "description": "Self-hosted n8n на Docker с HTTPS: Cloud vs свой сервер, WEBHOOK_URL, Google Sheets → Telegram-дайджест и чек-лист безопасности для финотдела.",
+  "cover_alt": "Абстрактный конвейер узлов workflow на тёмно-фиолетовом голографическом фоне без текста",
+  "slug": "n8n-finotdel-ustanovka-pervyj-workflow",
+  "primary_query": "как установить n8n",
+  "secondary_queries": [
+    "n8n docker",
+    "n8n self-hosted",
+    "n8n google sheets telegram",
+    "автоматизация n8n финансы"
+  ],
+  "char_count": 8788,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "установка n8n для финотдела",
+    "n8n Docker HTTPS и первый workflow",
+    "Sheets → Telegram дайджест в n8n"
+  ],
+  "meta_ab": {
+    "title_seo": "Как установить n8n для финотдела: Docker и HTTPS",
+    "title_ctr": "💻 Как установить n8n: Docker, HTTPS и дайджест Sheets → Telegram!",
+    "title_aeo": "Как установить n8n self-hosted на Docker с HTTPS для финотдела?",
+    "description_seo": "Пошагово: Cloud vs self-hosted, Docker Compose + Traefik, WEBHOOK_URL, Google Sheets → Telegram и чек-лист безопасности под выписки и 152-ФЗ.",
+    "description_ctr": "⚡️ Поднимите свой n8n за вечер: HTTPS, OAuth Sheets, бот в Telegram и первый дайджест по строке реестра без чужого SaaS.",
+    "description_aeo": "Как установить n8n – Docker Compose с Traefik, HTTPS, WEBHOOK_URL и workflow Google Sheets Trigger → фильтр → Telegram для финотдела."
+  },
+  "cover_family": "gradient_abstract"
+}

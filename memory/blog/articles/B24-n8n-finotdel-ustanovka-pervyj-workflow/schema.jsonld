@@ -1,0 +1,196 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#article",
+      "headline": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram",
+      "description": "Self-hosted n8n на Docker с HTTPS: Cloud vs свой сервер, WEBHOOK_URL, Google Sheets → Telegram-дайджест и чек-лист безопасности для финотдела.",
+      "datePublished": "2026-07-31",
+      "dateModified": "2026-07-31",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/07/n8n-finotdel-ustanovka-pervyj-workflow-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактный конвейер узлов workflow на тёмно-фиолетовом голографическом фоне без текста"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "как установить n8n, n8n docker, n8n self-hosted, n8n google sheets telegram, автоматизация n8n финансы",
+      "wordCount": 8788,
+      "articleSection": "n8n / автоматизация / финотдел",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли VPS или хватит ноутбука с Docker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для учёбы хватит ноутбука и localhost:5678. Для дайджеста в отпуске берите VPS с доменом и HTTPS: машина 24/7, порт 5678 не в интернет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем self-hosted n8n отличается от Make и n8n Cloud для финотдела?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Self-hosted держит сценарии и креды у вас. Cloud и Make быстрее стартуют, но данные идут через чужой контур. Для выписок и ПДн я выбираю Docker; для обезличенных пилотов Cloud допустим."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли работать без SSL, только по IP и порту?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для прода – нет. Без HTTPS ломаются вход, OAuth Google и WEBHOOK_URL. Официальный Compose завязан на Traefik и Let's Encrypt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему Google OAuth не коннектится на self-hosted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще всего неверный redirect URI или не включён Drive API вместе с Sheets. Нужен Custom OAuth2, не Managed. Сверьте URI символ в символ с тем, что показывает n8n."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что писать в Telegram, чтобы не светить ПДн?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дата, статья, сумма, код строки или ссылка на лист. Не отправляйте ИНН, полные ФИО, сканы и выписки целиком. Сомневаетесь – маскируйте поля до отправки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Хватит ли SQLite или сразу ставить PostgreSQL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для пилота SQLite в volume обычно достаточно. PostgreSQL – когда растёт число executions или нужны предсказуемые бэкапы БД."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как обновлять n8n без потери workflow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бэкап volume, затем docker compose pull, down, up -d. Не удаляйте named volume. После обновления проверьте Executions на тестовом workflow."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#howto",
+      "name": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram",
+      "description": "Self-hosted n8n на Docker с HTTPS: Cloud vs свой сервер, WEBHOOK_URL, Google Sheets → Telegram-дайджест и чек-лист безопасности для финотдела.",
+      "inLanguage": "ru",
+      "totalTime": "PT3H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Docker Engine + Docker Compose"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "VPS с доменом и Traefik (HTTPS / Let's Encrypt)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Cloud Console (Sheets API + Drive API, Custom OAuth2)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Telegram BotFather (Access Token)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": ".env: DOMAIN_NAME, SUBDOMAIN, WEBHOOK_URL, N8N_ENCRYPTION_KEY, GENERIC_TIMEZONE=Europe/Moscow"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Тестовая Google-таблица без лишних ПДн"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Выберите контур: Cloud или self-hosted",
+          "text": "Перед docker compose up решите, где живут данные. Для сырых выписок и живых ИНН берите self-hosted Docker; Cloud – только на уже обезличенных срезах. Составьте список полей, которые никогда не уезжают в облако.",
+          "url": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#cloud-vs-selfhost"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Установите n8n: Docker Compose, домен, HTTPS и WEBHOOK_URL",
+          "text": "VPS + Docker, A-запись поддомена, firewall 80/443. Официальный Compose+Traefik: N8N_PROTOCOL=https, WEBHOOK_URL=https://n8n.ваш-домен/, N8N_ENCRYPTION_KEY, порт 5678 только localhost. docker compose up -d, создайте owner-аккаунт, timezone Europe/Moscow.",
+          "url": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#install-docker"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Соберите первый workflow: Sheets → фильтр → Telegram",
+          "text": "Custom OAuth2 (Sheets + Drive API), тестовая таблица без ИНН/ФИО, бот через BotFather. Цепочка: Sheets Trigger (Row added) → IF/Filter → Telegram Send a text message. Тест строкой, Active, в сообщении только дата/статья/сумма/ссылка.",
+          "url": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#first-workflow"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Пройдите чек-лист безопасности перед продом",
+          "text": "HTTPS обязателен; 5678 только localhost; encryption key и WEBHOOK_URL в порядке; бэкап volume; токены не в git; в Telegram без ИНН/ФИО; обновления pull → down → up -d.",
+          "url": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#security-checklist"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Закрепите следующий шаг после дайджеста",
+          "text": "Бэкап volume и календарь обновлений; фильтр строк «на проверку финдиру»; отдельный workflow под реестр дебиторки; позже локальная категоризация ДДС через Ollama на том же контуре.",
+          "url": "https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/#next-steps"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "n8n-finotdel-ustanovka-pervyj-workflow",
+  "topic_id": "B24",
+  "permalink": "",
+  "verdict": "fail",
+  "status": "blocker",
+  "method": "none",
+  "blocker": "❌ PUBLISH BLOCKER",
+  "reasons": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH != yes (secret missing; injected secrets: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID only)",
+    "PUBLIC_SITE_URL missing in Cloud Secrets / site.env.local",
+    "SSH_HOST/SSH_USER/SSH_PASSWORD (or FTP_*) missing — docker/FTP publish unavailable",
+    "memory/site.env.local absent in cloud snapshot",
+    "paramiko not installed (secondary; credentials missing first)"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "site_base": "https://koda-fd.ru",
+    "dry_run": "pass",
+    "qa": "PASS",
+    "cover": "present",
+    "schema": "present"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local",
+  "telegram_published": false,
+  "note": "Do not call telegram published without Live URL. Re-run publish after Cloud Secrets include EXCALIBUR_BLOG_ALLOW_PUBLISH=yes, PUBLIC_SITE_URL=https://koda-fd.ru, SSH_* (preferred) or FTP_*+FTP_ROOT."
+}

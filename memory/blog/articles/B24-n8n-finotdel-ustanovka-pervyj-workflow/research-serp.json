@@ -1,0 +1,539 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-31",
+    "today_ru": "31.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B24",
+    "priority": "P0",
+    "slug": "n8n-finotdel-ustanovka-pervyj-workflow",
+    "h1": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram",
+    "primary_query": "как установить n8n",
+    "secondary_queries": [
+      "n8n docker",
+      "n8n self-hosted",
+      "n8n google sheets telegram",
+      "автоматизация n8n финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как установить n8n 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Установка n8n на VPS сервер: запуск и ... - Rutube",
+          "url": "https://rutube.ru/video/3d3c87aed74be96a602996770a5121b4/",
+          "snippet": ""
+        },
+        {
+          "title": "Как установить n8n на сервер: пошаговое руководство 2026",
+          "url": "https://market-n8n.ru/tpost/gx8kg19t41-kak-ustanovit-n8n-na-server-poshagovoe-r",
+          "snippet": "Установка n8n на VPS-сервер с нуля — показываю весь процесс от аренды виртуального сервера до первого входа в редактор автоматизаций. Готовый VPS с n8n: Разберём, как установить n8n без Docker и командной строки, используя ..."
+        },
+        {
+          "title": "Как установить n8n на VPS в 2026: инструкция на русском",
+          "url": "https://saramudvlad.ru/articles/kak-ustanovit-n8n-na-vps-2026/",
+          "snippet": "Подробное руководство по установке n8n на сервер, Ubuntu, Windows и macOS. Пошаговые инструкции, Docker, настройка SSL. Помощь в установке под ключ"
+        },
+        {
+          "title": "N8N: полное руководство по автоматизации workflow 2026",
+          "url": "https://www.digitalrocket.ru/articles/n8n-avtomatizatsiya-workflow-rukovodstvo-2025/",
+          "snippet": "Установка n8n на свой VPS за 30-40 минут: выбор сервера, Docker, домен и SSL, первый workflow и обновления. Пошагово, с готовым docker-compose и типовыми ошибками."
+        },
+        {
+          "title": "Полное руководство по n8n: установка, обучение и применение",
+          "url": "https://n8nio.ru/n8n-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5-%D0%BE%D0%B1%D1%83/",
+          "snippet": "Практическое руководство по n8n: установка, настройка, готовые workflow и сравнение с Zapier. Автоматизируйте бизнес-процессы без кода."
+        },
+        {
+          "title": "Как установить n8n на сервере и подготовить к продакшену: полное ...",
+          "url": "https://serverspace.ru/about/blog/kak-ustanovit-n8n-na-servere-i-podgotovit-k-prodakshenu-polnoe-rukovodstvo/",
+          "snippet": "n8n — инструмент для автоматизации бизнес-процессов. Узнайте, как установить и использовать n8n в 2025 году. Пошаговое руководство ждет вас!"
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как установить n8n июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Установка n8n на VPS сервер: запуск и ... - Rutube",
+          "url": "https://rutube.ru/video/3d3c87aed74be96a602996770a5121b4/",
+          "snippet": ""
+        },
+        {
+          "title": "Полное руководство по n8n: установка, обучение и применение",
+          "url": "https://n8nio.ru/n8n-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5-%D0%BE%D0%B1%D1%83/",
+          "snippet": "Установка n8n на VPS-сервер с нуля — показываю весь процесс от аренды виртуального сервера до первого входа в редактор автоматизаций. Готовый VPS с n8n: Разберём, как установить n8n без Docker и командной строки, используя ..."
+        },
+        {
+          "title": "Как установить n8n на VPS в 2026: инструкция на русском",
+          "url": "https://saramudvlad.ru/articles/kak-ustanovit-n8n-na-vps-2026/",
+          "snippet": "n8n — инструмент для автоматизации бизнес-процессов. Узнайте, как установить и использовать n8n в 2025 году. Пошаговое руководство ждет вас!"
+        },
+        {
+          "title": "Полное руководство по n8n. Часть 1: Знакомство и установка",
+          "url": "https://habr.com/ru/articles/962852/",
+          "snippet": "Установка n8n на свой VPS за 30-40 минут: выбор сервера, Docker, домен и SSL, первый workflow и обновления. Пошагово, с готовым docker-compose и типовыми ошибками."
+        },
+        {
+          "title": "N8N: полное руководство по автоматизации workflow 2026",
+          "url": "https://www.digitalrocket.ru/articles/n8n-avtomatizatsiya-workflow-rukovodstvo-2025/",
+          "snippet": "В этой статье я расскажу про n8n: как он устроен, зачем его использовать. Первая часть будет вводной, поэтому если вы еще не начали оптимизировать свою жизнь, то эта статья для вас."
+        },
+        {
+          "title": "Поднимаем свой n8n: Полный гайд по комфортной и надежной установке",
+          "url": "https://vc.ru/services/2297194-polnyj-gajd-po-ustanovke-n8n",
+          "snippet": "Практическое руководство по n8n: установка, настройка, готовые workflow и сравнение с Zapier. Автоматизируйте бизнес-процессы без кода."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как установить n8n новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "N8N: полное руководство по автоматизации workflow 2026",
+          "url": "https://www.digitalrocket.ru/articles/n8n-avtomatizatsiya-workflow-rukovodstvo-2025/",
+          "snippet": ""
+        },
+        {
+          "title": "Установка n8n на VPS сервер: запуск и ... - Rutube",
+          "url": "https://rutube.ru/video/3d3c87aed74be96a602996770a5121b4/",
+          "snippet": "Практическое руководство по n8n: установка, настройка, готовые workflow и сравнение с Zapier. Автоматизируйте бизнес-процессы без кода."
+        },
+        {
+          "title": "Полное руководство по n8n: установка, обучение и применение",
+          "url": "https://n8nio.ru/n8n-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5-%D0%BE%D0%B1%D1%83/",
+          "snippet": "Установка n8n на VPS-сервер с нуля — показываю весь процесс от аренды виртуального сервера до первого входа в редактор автоматизаций. Готовый VPS с n8n: Разберём, как установить n8n без Docker и командной строки, используя ..."
+        },
+        {
+          "title": "n8n: установка с официального сайта и 3 сценария за 20 минут",
+          "url": "https://dzen.ru/a/aaJOggLFUhfRi-Nd",
+          "snippet": "n8n — инструмент для автоматизации бизнес-процессов. Узнайте, как установить и использовать n8n в 2025 году. Пошаговое руководство ждет вас!"
+        },
+        {
+          "title": "Полное руководство по n8n. Часть 1: Знакомство и установка",
+          "url": "https://habr.com/ru/articles/962852/",
+          "snippet": "Установка n8n docker требует минимальных знаний командной строки, но дает максимальную надежность. Рекомендуемый стек 2026 года включает официальный образ n8nio/n8n, базу данных PostgreSQL и сервис Redis."
+        },
+        {
+          "title": "Настройка n8n для автоматического агрегатора новостей: пошаговая ...",
+          "url": "https://dzen.ru/a/Z6Xt5I-2r35HMp23",
+          "snippet": "В этой статье я расскажу про n8n: как он устроен, зачем его использовать. Первая часть будет вводной, поэтому если вы еще не начали оптимизировать свою жизнь, то эта статья для вас."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "n8n docker 2026",
+      "purpose": "вторичный запрос: n8n docker",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Install with Docker | Deploy | n8n Docs",
+          "url": "https://docs.n8n.io/deploy/host-n8n/install-options/install-with-docker",
+          "snippet": ""
+        },
+        {
+          "title": "Host n8n | Deploy | n8n Docs",
+          "url": "https://docs.n8n.io/deploy/host-n8n",
+          "snippet": "n8n recommends using Docker for most self-hosting needs. It provides a clean, isolated environment, avoids operating system and tooling incompatibilities, and makes database and environment management simpler. You can also use n8n in Docker with Docker Compose."
+        },
+        {
+          "title": "n8nio/n8n - Docker Image",
+          "url": "https://hub.docker.com/r/n8nio/n8n",
+          "snippet": "Access n8n hosting documentation and guides. Find comprehensive resources to help you set up and manage your self-hosted n8n instances."
+        },
+        {
+          "title": "n8n Self-Hosted on Docker (2026 Setup Guide) — TechFuel HQ",
+          "url": "https://techfuelhq.com/tutorials/n8n-self-hosted-docker-2026/",
+          "snippet": "From your Docker Desktop, navigate to the Images tab and select Pull from the context menu to download the latest n8n image. You can also use the command line to pull the latest, or a specific version:"
+        },
+        {
+          "title": "How to Self-Host n8n with Docker: The Complete 2026 Guide",
+          "url": "https://www.n8ndevelopers.com/blogs/how-to-self-host-n8n-with-docker-the-complete-2026-guide",
+          "snippet": "Set up n8n on Docker with persistent storage, HTTPS via Nginx Proxy Manager, queue mode for reliable runs, and automatic backups. Replace Zapier yourself."
+        },
+        {
+          "title": "How to Self-Host n8n with Docker: The Complete 2026 Guide",
+          "url": "https://blog.n8ndevelopers.com/how-to-self-host-n8n-with-docker-the-complete-2026-guide/",
+          "snippet": "By following this complete 2026 guide, you now have everything you need to install, configure, optimize, and maintain your self-hosted n8n instance like a professional DevOps engineer."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "n8n self-hosted 2026",
+      "purpose": "вторичный запрос: n8n self-hosted",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "n8n System Requirements 2026: Self-Hosted VPS Specs for Automation",
+          "url": "https://space-node.net/blog/n8n-system-requirements-2026",
+          "snippet": ""
+        },
+        {
+          "title": "What n8n Self-Hosting Actually Costs (2026) - openhosst.com",
+          "url": "https://openhosst.com/blog/n8n-self-hosted-pricing",
+          "snippet": "n8n system requirements for self-hosting in 2026: RAM, CPU, Docker, database choices, queue mode, backups, and VPS recommendations."
+        },
+        {
+          "title": "How to self-host n8n: Setup, architecture, and pricing guide (2026)",
+          "url": "https://northflank.com/blog/how-to-self-host-n8n-setup-architecture-and-pricing-guide",
+          "snippet": "n8n Self-Hosted Pricing: The True Cost Breakdown for 2026 The software is free. The infrastructure is not. Here is every line-item cost behind self-hosting n8n in 2026 — from the $0 Community Edition to the €667/month Business Plan — so you can make the right call for your budget."
+        },
+        {
+          "title": "Self-Hosted n8n Best Practices + Complete Setup Checklist for 2026",
+          "url": "https://n8nlab.io/blog/self-hosted-n8n-best-practices-setup-checklist",
+          "snippet": "Many teams want to run n8n self-hosted instead of relying on the cloud version. Self-hosting n8n gives you full control over data, lets you scale the way you want, and avoids vendor lock-in. In this guide, we'll show you how to self-host n8n on Northflank, step by step."
+        },
+        {
+          "title": "n8n Pricing 2026: Cloud vs Self-Hosted Costs - InstaPods",
+          "url": "https://instapods.com/blog/n8n-pricing/",
+          "snippet": "In this guide, you will build a production-grade, highly available self-hosted n8n environment. We cover every deployment layer, from server selection and Docker Compose orchestration to reverse proxies, managed PostgreSQL, credential encryption, and version control."
+        },
+        {
+          "title": "Self-Hosting n8n: Complete Enterprise Guide for 2026",
+          "url": "https://finbyz.tech/n8n/insights/self-hosting-n8n-enterprise-guide",
+          "snippet": "n8n price in 2026: Cloud is $24-60/mo, self-hosted runs $3.70-7/mo with unlimited executions. Every n8n pricing plan broken down with real 2026 cost math."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "n8n google sheets telegram 2026",
+      "purpose": "вторичный запрос: n8n google sheets telegram",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Шаблоны n8n 2026: автоматизация Slack, Telegram, Google Sheets",
+          "url": "https://lpmotor.ru/articles/n8n-sablon-dlya-avtomatizacii-2603",
+          "snippet": ""
+        },
+        {
+          "title": "Google Sheets and Telegram: Automate Workflows with n8n",
+          "url": "https://n8n.io/integrations/google-sheets/and/telegram/",
+          "snippet": "Шаблоны n8n для автоматизации рутины: подборка готовых шаблонов, примеры интеграций и объяснение, чем рабочий процесс отличается от шаблона и как их быстро настроить."
+        },
+        {
+          "title": "Форма сайта → Telegram + Google Sheets через n8n - Nodbot",
+          "url": "https://nodbot.ru/recipes/website-form-to-telegram-and-sheets/",
+          "snippet": "Yes, it is safe to use n8n to integrate Google Sheets and Telegram. n8n offers various features to ensure the safe handling of your data. These include encrypted data transfers, secure credential storage, RBAC functionality, and compliance with industry-standard security practices (SOC2 compliant)."
+        },
+        {
+          "title": "n8n-automation-2026-AI-Agent-Suite/Google_Drive_and_Google_Sheets/Chat ...",
+          "url": "https://github.com/m6474n/n8n-automation-2026-AI-Agent-Suite/blob/main/Google_Drive_and_Google_Sheets/Chat%20with%20your%20event%20schedule%20from%20Google%20Sheets%20in%20Telegram.json",
+          "snippet": "Форма сайта → Telegram + Google Sheets через n8n — готовый практический сценарий для n8n."
+        },
+        {
+          "title": "n8n-automation-2026-AI-Agent-Suite/Google_Drive_and_Google_Sheets ...",
+          "url": "https://github.com/m6474n/n8n-automation-2026-AI-Agent-Suite/blob/main/Google_Drive_and_Google_Sheets/README.md",
+          "snippet": "A comprehensive collection of n8n automation templates featuring AI agents, RAG systems, and enterprise workflows. Includes integrations for Gmail, WhatsApp, Telegram, Slack, and more."
+        },
+        {
+          "title": "n8n + Telegram + Google Sheets ⚙️Full Automation Workflow",
+          "url": "https://www.youtube.com/watch?v=T1NiehTGazo",
+          "snippet": "A comprehensive collection of n8n automation templates featuring AI agents, RAG systems, and enterprise workflows. Includes integrations for Gmail, WhatsApp, Telegram, Slack, and more."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "автоматизация n8n финансы 2026",
+      "purpose": "вторичный запрос: автоматизация n8n финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Обзор n8n 2026: Платформа автоматизации с «честным кодом» стоимостью $2 ...",
+          "url": "https://utilo.io/ru/blog/n8n-review-2026-workflow-automation",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ...",
+          "url": "https://bot-craft.ru/blog/n8n-automation-2026/",
+          "snippet": "Если вы разработчик или техническая команда, которая хочет получить полный контроль над своей инфраструктурой автоматизации, n8n — это платформа, которая изменила правила игры, и в 2026 году ей нет равных."
+        },
+        {
+          "title": "Автоматизация на n8n — workflow между 400+ сер… - FlowFrame",
+          "url": "https://flowframe.ru/avtomatizaciya/n8n-avtomatizaciya-2026/",
+          "snippet": "В этой статье разбираю: что именно бизнес автоматизирует через n8n, сколько это стоит в 2026, как выбрать между self-hosted и cloud, и кто в России делает интеграции под ключ."
+        },
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": "Автоматизация на n8n — workflow между 400+ сервисами Мы внедряем эту связку под ключ за 7-14 дней: пишем чистую архитектуру, тестируем все сценарии, оставляем документацию."
+        },
+        {
+          "title": "Автоматизация финансов с n8n, Actual Budget и SimpleFIN",
+          "url": "https://home-hosted.ru/articles/samostoyatelnoe-upravlenie-finansami-n8n-actual-budget-claude",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "n8n для бизнеса: AI-агенты, workflows и автоматизация — гайд 2026",
+          "url": "https://mayai.ru/n8n-gayd-biznes-ai-agenty-avtomatizaciya-2026/",
+          "snippet": "Пошаговое руководство по автоматизации личных финансов на домашнем сервере: настройка n8n, Actual Budget, SimpleFIN и Claude для полного контроля бюджета."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как установить n8n на VPS в 2026: инструкция на русском",
+          "url": "https://saramudvlad.ru/articles/kak-ustanovit-n8n-na-vps-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Старт с n8n: установка и первый workflow",
+          "url": "https://nodbot.ru/start/",
+          "snippet": "Установка n8n на свой VPS за 30-40 минут: выбор сервера, Docker, домен и SSL, первый workflow и обновления. Пошагово, с готовым docker-compose и типовыми ошибками."
+        },
+        {
+          "title": "Самостоятельный n8n: установка и настройка автоматизации",
+          "url": "https://www.home-hosted.ru/guides/self-hosted-n8n-workflow-automation-guide",
+          "snippet": "Стартовый маршрут по n8n: что это за платформа, как установить, собрать первый workflow и проверить базовые настройки."
+        },
+        {
+          "title": "Как установить n8n: локально, Docker и VPS — Nodbot",
+          "url": "https://nodbot.ru/kak-ustanovit-n8n/",
+          "snippet": "Разверните n8n на собственном сервере: пошаговый гид по Docker‑установке, настройке автоматизаций и интеграции с AI для эффективного self‑hosting."
+        },
+        {
+          "title": "Установка n8n self-hosted: с нуля до первого workflow",
+          "url": "https://flowframe.ru/blog/ustanovka-n8n-self-hosted/",
+          "snippet": "Эта инструкция помогает выбрать способ установки n8n без лишней теории. Для знакомства подойдёт локальный запуск."
+        },
+        {
+          "title": "Как установить n8n на сервере и подготовить к продакшену: полное ...",
+          "url": "https://serverspace.ru/about/blog/kak-ustanovit-n8n-na-servere-i-podgotovit-k-prodakshenu-polnoe-rukovodstvo/",
+          "snippet": "Если тебе интересно, как n8n интегрируется с конкретными бизнес-инструментами после установки, посмотри наш раздел про автоматизацию на n8n — там примеры реальных сценариев."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://rutube.ru/video/3d3c87aed74be96a602996770a5121b4/",
+      "title": "Установка n8n на VPS сервер: запуск и ... - Rutube",
+      "from_query": "как установить n8n 2026"
+    },
+    {
+      "url": "https://market-n8n.ru/tpost/gx8kg19t41-kak-ustanovit-n8n-na-server-poshagovoe-r",
+      "title": "Как установить n8n на сервер: пошаговое руководство 2026",
+      "from_query": "как установить n8n 2026"
+    },
+    {
+      "url": "https://saramudvlad.ru/articles/kak-ustanovit-n8n-na-vps-2026/",
+      "title": "Как установить n8n на VPS в 2026: инструкция на русском",
+      "from_query": "как установить n8n 2026"
+    },
+    {
+      "url": "https://www.digitalrocket.ru/articles/n8n-avtomatizatsiya-workflow-rukovodstvo-2025/",
+      "title": "N8N: полное руководство по автоматизации workflow 2026",
+      "from_query": "как установить n8n 2026"
+    },
+    {
+      "url": "https://n8nio.ru/n8n-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5-%D0%BE%D0%B1%D1%83/",
+      "title": "Полное руководство по n8n: установка, обучение и применение",
+      "from_query": "как установить n8n 2026"
+    },
+    {
+      "url": "https://serverspace.ru/about/blog/kak-ustanovit-n8n-na-servere-i-podgotovit-k-prodakshenu-polnoe-rukovodstvo/",
+      "title": "Как установить n8n на сервере и подготовить к продакшену: полное ...",
+      "from_query": "как установить n8n 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/962852/",
+      "title": "Полное руководство по n8n. Часть 1: Знакомство и установка",
+      "from_query": "как установить n8n июль 2026"
+    },
+    {
+      "url": "https://vc.ru/services/2297194-polnyj-gajd-po-ustanovke-n8n",
+      "title": "Поднимаем свой n8n: Полный гайд по комфортной и надежной установке",
+      "from_query": "как установить n8n июль 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aaJOggLFUhfRi-Nd",
+      "title": "n8n: установка с официального сайта и 3 сценария за 20 минут",
+      "from_query": "как установить n8n новости 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/Z6Xt5I-2r35HMp23",
+      "title": "Настройка n8n для автоматического агрегатора новостей: пошаговая ...",
+      "from_query": "как установить n8n новости 2026"
+    },
+    {
+      "url": "https://docs.n8n.io/deploy/host-n8n/install-options/install-with-docker",
+      "title": "Install with Docker | Deploy | n8n Docs",
+      "from_query": "n8n docker 2026"
+    },
+    {
+      "url": "https://docs.n8n.io/deploy/host-n8n",
+      "title": "Host n8n | Deploy | n8n Docs",
+      "from_query": "n8n docker 2026"
+    },
+    {
+      "url": "https://hub.docker.com/r/n8nio/n8n",
+      "title": "n8nio/n8n - Docker Image",
+      "from_query": "n8n docker 2026"
+    },
+    {
+      "url": "https://techfuelhq.com/tutorials/n8n-self-hosted-docker-2026/",
+      "title": "n8n Self-Hosted on Docker (2026 Setup Guide) — TechFuel HQ",
+      "from_query": "n8n docker 2026"
+    },
+    {
+      "url": "https://www.n8ndevelopers.com/blogs/how-to-self-host-n8n-with-docker-the-complete-2026-guide",
+      "title": "How to Self-Host n8n with Docker: The Complete 2026 Guide",
+      "from_query": "n8n docker 2026"
+    },
+    {
+      "url": "https://blog.n8ndevelopers.com/how-to-self-host-n8n-with-docker-the-complete-2026-guide/",
+      "title": "How to Self-Host n8n with Docker: The Complete 2026 Guide",
+      "from_query": "n8n docker 2026"
+    },
+    {
+      "url": "https://space-node.net/blog/n8n-system-requirements-2026",
+      "title": "n8n System Requirements 2026: Self-Hosted VPS Specs for Automation",
+      "from_query": "n8n self-hosted 2026"
+    },
+    {
+      "url": "https://openhosst.com/blog/n8n-self-hosted-pricing",
+      "title": "What n8n Self-Hosting Actually Costs (2026) - openhosst.com",
+      "from_query": "n8n self-hosted 2026"
+    },
+    {
+      "url": "https://northflank.com/blog/how-to-self-host-n8n-setup-architecture-and-pricing-guide",
+      "title": "How to self-host n8n: Setup, architecture, and pricing guide (2026)",
+      "from_query": "n8n self-hosted 2026"
+    },
+    {
+      "url": "https://n8nlab.io/blog/self-hosted-n8n-best-practices-setup-checklist",
+      "title": "Self-Hosted n8n Best Practices + Complete Setup Checklist for 2026",
+      "from_query": "n8n self-hosted 2026"
+    },
+    {
+      "url": "https://instapods.com/blog/n8n-pricing/",
+      "title": "n8n Pricing 2026: Cloud vs Self-Hosted Costs - InstaPods",
+      "from_query": "n8n self-hosted 2026"
+    },
+    {
+      "url": "https://finbyz.tech/n8n/insights/self-hosting-n8n-enterprise-guide",
+      "title": "Self-Hosting n8n: Complete Enterprise Guide for 2026",
+      "from_query": "n8n self-hosted 2026"
+    },
+    {
+      "url": "https://lpmotor.ru/articles/n8n-sablon-dlya-avtomatizacii-2603",
+      "title": "Шаблоны n8n 2026: автоматизация Slack, Telegram, Google Sheets",
+      "from_query": "n8n google sheets telegram 2026"
+    },
+    {
+      "url": "https://n8n.io/integrations/google-sheets/and/telegram/",
+      "title": "Google Sheets and Telegram: Automate Workflows with n8n",
+      "from_query": "n8n google sheets telegram 2026"
+    },
+    {
+      "url": "https://nodbot.ru/recipes/website-form-to-telegram-and-sheets/",
+      "title": "Форма сайта → Telegram + Google Sheets через n8n - Nodbot",
+      "from_query": "n8n google sheets telegram 2026"
+    },
+    {
+      "url": "https://github.com/m6474n/n8n-automation-2026-AI-Agent-Suite/blob/main/Google_Drive_and_Google_Sheets/Chat%20with%20your%20event%20schedule%20from%20Google%20Sheets%20in%20Telegram.json",
+      "title": "n8n-automation-2026-AI-Agent-Suite/Google_Drive_and_Google_Sheets/Chat ...",
+      "from_query": "n8n google sheets telegram 2026"
+    },
+    {
+      "url": "https://github.com/m6474n/n8n-automation-2026-AI-Agent-Suite/blob/main/Google_Drive_and_Google_Sheets/README.md",
+      "title": "n8n-automation-2026-AI-Agent-Suite/Google_Drive_and_Google_Sheets ...",
+      "from_query": "n8n google sheets telegram 2026"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=T1NiehTGazo",
+      "title": "n8n + Telegram + Google Sheets ⚙️Full Automation Workflow",
+      "from_query": "n8n google sheets telegram 2026"
+    },
+    {
+      "url": "https://utilo.io/ru/blog/n8n-review-2026-workflow-automation",
+      "title": "Обзор n8n 2026: Платформа автоматизации с «честным кодом» стоимостью $2 ...",
+      "from_query": "автоматизация n8n финансы 2026"
+    },
+    {
+      "url": "https://bot-craft.ru/blog/n8n-automation-2026/",
+      "title": "Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ...",
+      "from_query": "автоматизация n8n финансы 2026"
+    },
+    {
+      "url": "https://flowframe.ru/avtomatizaciya/n8n-avtomatizaciya-2026/",
+      "title": "Автоматизация на n8n — workflow между 400+ сер… - FlowFrame",
+      "from_query": "автоматизация n8n финансы 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация n8n финансы 2026"
+    },
+    {
+      "url": "https://home-hosted.ru/articles/samostoyatelnoe-upravlenie-finansami-n8n-actual-budget-claude",
+      "title": "Автоматизация финансов с n8n, Actual Budget и SimpleFIN",
+      "from_query": "автоматизация n8n финансы 2026"
+    },
+    {
+      "url": "https://mayai.ru/n8n-gayd-biznes-ai-agenty-avtomatizaciya-2026/",
+      "title": "n8n для бизнеса: AI-агенты, workflows и автоматизация — гайд 2026",
+      "from_query": "автоматизация n8n финансы 2026"
+    },
+    {
+      "url": "https://nodbot.ru/start/",
+      "title": "Старт с n8n: установка и первый workflow",
+      "from_query": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram 2026"
+    },
+    {
+      "url": "https://www.home-hosted.ru/guides/self-hosted-n8n-workflow-automation-guide",
+      "title": "Самостоятельный n8n: установка и настройка автоматизации",
+      "from_query": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram 2026"
+    },
+    {
+      "url": "https://nodbot.ru/kak-ustanovit-n8n/",
+      "title": "Как установить n8n: локально, Docker и VPS — Nodbot",
+      "from_query": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram 2026"
+    },
+    {
+      "url": "https://flowframe.ru/blog/ustanovka-n8n-self-hosted/",
+      "title": "Установка n8n self-hosted: с нуля до первого workflow",
+      "from_query": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram 2026"
+    }
+  ]
+}

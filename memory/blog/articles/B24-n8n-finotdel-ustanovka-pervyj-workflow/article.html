@@ -1,0 +1,144 @@
+<p>Выписки и реестры живут в Google Sheets, а собственник ждёт дайджест в Telegram к вечеру – руками это ломается на первом отпуске. Как установить n8n для финотдела: поднять self-hosted Docker с HTTPS, задать WEBHOOK_URL и собрать первый workflow Sheets → фильтр → Telegram. В итоге у вас свой "супер-Excel" между таблицей и чатом, без отдачи сырых выписок на чужой SaaS.</p>
+
+<p>n8n – визуальный конструктор сценариев: узлы сами таскают данные между сервисами, как формулы между листами. Self-hosted здесь = свой сейф в офисе (или на вашем VPS), а не арендованная ячейка в чужом банке. Docker – упаковка программы "как есть": поставили контейнер и не собираете зависимости руками. Официальный образ – <code>docker.n8n.io/n8nio/n8n</code>; на дату статьи в docs указан stable 2.32.6 – для прода берите stable, не beta.</p>
+
+<h2 id="why-n8n">Зачем финотделу свой n8n, а не только ручные выгрузки</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение ручных выгрузок и n8n для финотдела: время, ошибки, 152-ФЗ" loading="lazy">
+</figure>
+
+<p>Ручной контур знаком: обновил лист → скопировал сумму → написал в Telegram. Работает, пока один человек и один файл. Как только появляется реестр ДДС и дебиторка, копипаст становится узким местом. Связка Sheets → n8n → Telegram закрывает дайджест собственнику без найма разработчика.</p>
+<p>Я ставлю n8n, чтобы один раз описать правило: "новая строка с типом Расход и суммой больше X → короткое сообщение в чат". Базу no-code я разбирала в материале про <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизацию финансов без кода</a>; здесь – установка и первый рабочий контур.</p>
+<p><b>Сделайте:</b> выпишите 1–2 события, которые шлёте руками каждый день. <b>Не делайте:</b> тащить в первый workflow всю банковскую выгрузку – начните с дайджеста по одной таблице.</p>
+
+<h2 id="cloud-vs-selfhost">Выберите контур: Cloud или self-hosted под выписки и 152-ФЗ</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема выбора Cloud или self-hosted n8n под выписки и 152-ФЗ" loading="lazy">
+</figure>
+
+<p>Перед <code>docker compose up</code> решите, где живут данные. n8n Cloud удобен новичкам: сервис уже крутится, trial Starter/Pro без карты. По открытому прайсу (annually): Starter около 20€/мес (2,5K executions), Pro 50€ (10K). Execution – полный прогон сценария, не один шаг. Данные Cloud – на стороне n8n в EU (Frankfurt). Self-hosted Community бесплатен для внутреннего использования; сервер и обновления – на вас.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Критерий</th>
+      <th>n8n Cloud</th>
+      <th>Self-hosted (Docker)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Где данные</b></td>
+      <td>Хостинг n8n (EU)</td>
+      <td>Ваш VPS / сервер</td>
+    </tr>
+    <tr>
+      <td><b>Старт</b></td>
+      <td>Минуты, без Docker</td>
+      <td>Нужны Docker, домен, HTTPS</td>
+    </tr>
+    <tr>
+      <td><b>Выписки / ПДн</b></td>
+      <td>Риск чужого контура</td>
+      <td>Контролируете сами</td>
+    </tr>
+    <tr>
+      <td><b>Кому брать</b></td>
+      <td>Пилот без чувствительных полей</td>
+      <td>Финотдел с реестрами и 152-ФЗ</td>
+    </tr>
+  </tbody>
+</table>
+<blockquote>
+  <b>Вердикт:</b> для сырых выписок и живых ИНН я беру self-hosted. Cloud – только на уже обезличенных срезах. Полное сравнение с Make – отдельная тема; здесь фокус на установке n8n.
+</blockquote>
+<p><b>Сделайте:</b> список полей, которые никогда не уезжают в облако. <b>Не делайте:</b> выбирать Cloud "потому что проще", если в Sheets лежат полные ФИО и номера счетов.</p>
+
+<h2 id="install-docker">Установите n8n: Docker Compose, домен, HTTPS и WEBHOOK_URL</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Чеклист установки n8n: Docker Compose, домен, HTTPS, WEBHOOK_URL" loading="lazy">
+</figure>
+
+<p>Официальный путь для прода – Docker Compose с Traefik (авто-HTTPS от Let's Encrypt) и доступом только по HTTPS. Порт редактора по умолчанию 5678; в проде его вешают на <code>127.0.0.1:5678</code>, чтобы в интернет смотрел только reverse proxy. Tunnel/`--tunnel` – для локальной разработки, не для боевого сервера.</p>
+<ol>
+  <li>Возьмите VPS с публичным IP. Установите Docker Engine и Docker Compose.</li>
+  <li>Выделите домен. Создайте A-запись поддомена, например <code>n8n</code> → IP сервера. Дождитесь ответа DNS.</li>
+  <li>Откройте на firewall только 80 и 443. Порт 5678 наружу не публикуйте.</li>
+  <li>Скопируйте официальный пример Compose+Traefik из docs n8n. Заполните <code>.env</code>: <code>DOMAIN_NAME</code>, <code>SUBDOMAIN</code>, <code>GENERIC_TIMEZONE=Europe/Moscow</code>, <code>SSL_EMAIL</code>.</li>
+  <li>Задайте <code>N8N_PROTOCOL=https</code> и <code>WEBHOOK_URL=https://n8n.ваш-домен/</code> – без этого вебхуки и OAuth часто ломаются.</li>
+  <li>Добавьте длинный <code>N8N_ENCRYPTION_KEY</code> (в менеджер паролей). За proxy: <code>N8N_PROXY_HOPS=1</code>.</li>
+  <li>Запустите <code>docker compose up -d</code>. Откройте <code>https://n8n.ваш-домен</code>, создайте owner-аккаунт, проверьте timezone.</li>
+</ol>
+<pre><code># ключевые переменные .env (подставьте свои значения)
+DOMAIN_NAME=example.com
+SUBDOMAIN=n8n
+GENERIC_TIMEZONE=Europe/Moscow
+SSL_EMAIL=fin@example.com
+N8N_PROTOCOL=https
+WEBHOOK_URL=https://n8n.example.com/
+N8N_ENCRYPTION_KEY=сгенерируйте_длинную_строку
+N8N_PROXY_HOPS=1
+
+docker compose up -d
+# обновление: docker compose pull && docker compose down && docker compose up -d</code></pre>
+<p>По умолчанию данные лежат в volume (часто SQLite в <code>/home/node/.n8n</code>). Для пилота хватает; PostgreSQL – через <code>DB_TYPE=postgresdb</code>, когда нужен запас по бэкапам. Ноутбук годится для учёбы на localhost; для дайджеста "пока я в отпуске" нужен сервер 24/7.</p>
+<p><b>Сделайте:</b> один HTTPS-инстанс с бэкапом volume. <b>Не делайте:</b> открывать <code>http://IP:5678</code> в интернет "на пару дней".</p>
+
+<h2 id="first-workflow">Соберите первый workflow: Sheets → фильтр → Telegram</h2>
+<p>Цель вечера – одно сообщение: "в реестре появилась строка". Google Sheets Trigger ловит Row added / Row updated. У Google нет вебхука на лист, поэтому триггер идёт через polling – интервал в настройках ноды. API = защищённый курьер между таблицей и n8n.</p>
+<ol>
+  <li><b>Google OAuth.</b> На self-hosted нужен Custom OAuth2: Cloud Console → Sheets API + Drive API → OAuth Client → redirect URI из n8n (на проде HTTPS-домен + <code>/rest/oauth2-credential/callback</code>). Несовпадение даёт <code>redirect_uri_mismatch</code>.</li>
+  <li><b>Тестовая таблица.</b> Колонки: дата, тип, сумма, статья, комментарий. Без ИНН и полных ФИО – привычка из гайда по <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">обезличиванию данных</a>.</li>
+  <li><b>Telegram-бот.</b> BotFather <code>/newbot</code> (username на <code>bot</code>) → Access Token в credentials n8n. Узнайте <code>chat_id</code> чата или группы.</li>
+  <li><b>Цепочка.</b> Sheets Trigger (Row added) → IF/Filter (тип = Расход, сумма &gt; порога) → Telegram Send a text message.</li>
+  <li><b>Тест.</b> Добавьте строку → смотрите Executions → включите Active.</li>
+</ol>
+<blockquote>
+  <b>Схема:</b> Новая строка в Sheets → Trigger (polling) → Filter → Telegram-дайджест → (позже) напоминание по дебиторке
+</blockquote>
+<p>В Telegram: дата, статья, сумма, ссылка на лист – без выписки и паспорта контрагента. Тот же паттерн ляжет на <a href="/blog/upravlenie-debitorkoj-reestr-napominaniya/">реестр дебиторки и автонапоминания</a>.</p>
+<p>Если OAuth-приложение Google в режиме Testing, согласие живёт около 7 дней – credential придётся переподключать, пока не оформите статус по правилам Google.</p>
+<p>Разборы сценариев – в канале <a href="https://t.me/finance_modern?utm_source=blog&amp;utm_medium=article" target="_blank" rel="noopener">"Финансист, который кодит"</a>.</p>
+<p><b>Сделайте:</b> один Active-workflow на тестовой таблице. <b>Не делайте:</b> слать в Telegram PDF с полной выпиской "для удобства".</p>
+
+<h2 id="security-checklist">Пройдите чек-лист безопасности перед продом</h2>
+<p>Автоматизация без паранойи по секретам – дыра шире экономии часа в неделю. Пройдите список до боевого реестра.</p>
+<ul>
+  <li>HTTPS обязателен; HTTP по IP:порт в интернет – нет.</li>
+  <li>Порт 5678 только localhost за Traefik/nginx.</li>
+  <li><code>N8N_ENCRYPTION_KEY</code> задан и лежит в сейфе паролей.</li>
+  <li><code>WEBHOOK_URL</code> с https совпадает с доменом.</li>
+  <li>Volume n8n в регулярном бэкапе.</li>
+  <li>Сильный owner-пароль; лишних пользователей нет.</li>
+  <li>Google OAuth: минимальные scopes, точный redirect URI.</li>
+  <li>Для бота – лист без лишних ПДн.</li>
+  <li>В Telegram не копируйте ИНН/ФИО "на всякий случай".</li>
+  <li>Токен бота и Client Secret не в git и не в общем Doc.</li>
+  <li>Обновления: <code>pull</code> → <code>down</code> → <code>up -d</code>.</li>
+  <li>Сырые выгрузки 1С не гоняйте через чужие SaaS – для локальной модели см. <a href="/blog/ollama-finotdel-lokalnaya-nejroset/">установку Ollama</a>.</li>
+</ul>
+<p><b>Сделайте:</b> отметьте пункты галочками. <b>Не делайте:</b> считать self-hosted автоматическим соответствием 152-ФЗ – важны доступы и что уезжает в Telegram.</p>
+
+<h2 id="next-steps">Что сделать дальше</h2>
+<ol>
+  <li>Закрепите бэкап volume и календарь обновлений compose.</li>
+  <li>Добавьте фильтр: только строки со статусом "на проверку финдиру".</li>
+  <li>Свяжите инстанс с реестром дебиторки отдельным workflow.</li>
+  <li>Позже – локальная категоризация ДДС через Ollama на том же контуре.</li>
+</ol>
+<p>Материалы клуба – на <a href="https://club.koda-fd.ru/?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=n8n-finotdel-ustanovka-pervyj-workflow" target="_blank" rel="noopener">club.koda-fd.ru</a>. Сначала доведите до Active один дайджест Sheets → Telegram.</p>
+
+<h2>Частые вопросы</h2>
+<h3>Нужен ли VPS или хватит ноутбука с Docker?</h3>
+<p>Для учёбы хватит ноутбука и <code>localhost:5678</code>. Для дайджеста в отпуске берите VPS с доменом и HTTPS: машина 24/7, порт 5678 не в интернет.</p>
+<h3>Чем self-hosted n8n отличается от Make и n8n Cloud для финотдела?</h3>
+<p>Self-hosted держит сценарии и креды у вас. Cloud и Make быстрее стартуют, но данные идут через чужой контур. Для выписок и ПДн я выбираю Docker; для обезличенных пилотов Cloud допустим.</p>
+<h3>Можно ли работать без SSL, только по IP и порту?</h3>
+<p>Для прода – нет. Без HTTPS ломаются вход, OAuth Google и WEBHOOK_URL. Официальный Compose завязан на Traefik и Let's Encrypt.</p>
+<h3>Почему Google OAuth не коннектится на self-hosted?</h3>
+<p>Чаще всего неверный redirect URI или не включён Drive API вместе с Sheets. Нужен Custom OAuth2, не Managed. Сверьте URI символ в символ с тем, что показывает n8n.</p>
+<h3>Что писать в Telegram, чтобы не светить ПДн?</h3>
+<p>Дата, статья, сумма, код строки или ссылка на лист. Не отправляйте ИНН, полные ФИО, сканы и выписки целиком. Сомневаетесь – маскируйте поля до отправки.</p>
+<h3>Хватит ли SQLite или сразу ставить PostgreSQL?</h3>
+<p>Для пилота SQLite в volume обычно достаточно. PostgreSQL – когда растёт число executions или нужны предсказуемые бэкапы БД.</p>
+<h3>Как обновлять n8n без потери workflow?</h3>
+<p>Бэкап volume, затем <code>docker compose pull</code>, <code>down</code>, <code>up -d</code>. Не удаляйте named volume. После обновления проверьте Executions на тестовом workflow.</p>
