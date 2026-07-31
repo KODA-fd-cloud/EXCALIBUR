@@ -2,18 +2,13 @@
   "topic_id": "B23",
   "slug": "cursor-rules-finotdel",
   "cover_family": "gradient_abstract",
-  "pipeline": "fallback_pil_montserrat",
+  "pipeline": "cursor_generate_image_legacy_abstract",
   "file": "cover/cover.png",
   "dzen_file": "cover/dzen-cover.png",
   "alt": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне",
   "cover_alt_text": "Абстрактная сетка правил с заблокированными путями на тёмно-фиолетовом голографическом фоне",
   "aspect_ratio": "16:9",
   "size": "1200x675",
-  "generated_at": "2026-07-31T13:16:26.591869+00:00",
-  "note": "MCP gpt-image unavailable in CI fast-path; fallback branded cover",
-  "lines": [
-    "CURSOR RULES",
-    "ДЛЯ ФИНОТДЕЛА",
-    "БЕЗ ХАОСА В ЧАТЕ"
-  ]
+  "generated_at": "2026-07-31T13:29:27.144900+00:00",
+  "note": "abstract holographic, NO text on image (blog brand style)"
 }

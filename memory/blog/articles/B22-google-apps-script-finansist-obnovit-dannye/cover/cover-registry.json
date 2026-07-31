@@ -2,18 +2,13 @@
   "topic_id": "B22",
   "slug": "google-apps-script-finansist-obnovit-dannye",
   "cover_family": "gradient_abstract",
-  "pipeline": "fallback_pil_montserrat",
+  "pipeline": "cursor_generate_image_legacy_abstract",
   "file": "cover/cover.png",
   "dzen_file": "cover/dzen-cover.png",
   "alt": "Абстрактная сетка таблицы с импульсом обновления узлов на тёмно-фиолетовом фоне",
   "cover_alt_text": "Абстрактная сетка таблицы с импульсом обновления узлов на тёмно-фиолетовом фоне",
   "aspect_ratio": "16:9",
   "size": "1200x675",
-  "generated_at": "2026-07-31T13:16:26.437873+00:00",
-  "note": "MCP gpt-image unavailable in CI fast-path; fallback branded cover",
-  "lines": [
-    "GOOGLE APPS SCRIPT",
-    "КНОПКА ОБНОВИТЬ",
-    "ДАННЫЕ В SHEETS"
-  ]
+  "generated_at": "2026-07-31T13:29:26.876442+00:00",
+  "note": "abstract holographic, NO text on image (blog brand style)"
 }
