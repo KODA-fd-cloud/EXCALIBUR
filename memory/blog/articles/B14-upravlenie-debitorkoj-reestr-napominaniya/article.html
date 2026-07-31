@@ -82,7 +82,7 @@
 <h2 id="autonotify">Автонапоминания: Google Sheets / Excel → n8n → Telegram/email</h2>
 <p>n8n (или Make) здесь – супер-Excel: строка реестра сама порождает письмо или сообщение в Telegram. Логика простая: раз в день читаем строки с нужным статусом и пустым/устаревшим <code>last_touch</code>, шлём шаблон, пишем лог обратно в лист.</p>
 <ol>
-  <li>Лист Google Sheets с реестром (или Excel на OneDrive/локальный CSV, если n8n self-hosted).</li>
+  <li>Лист Google Sheets с реестром (или Excel на OneDrive/локальный CSV, если <a href="/blog/n8n-finotdel-ustanovka-pervyj-workflow/">n8n self-hosted</a>).</li>
   <li>В n8n: Schedule Trigger (раз в день утром) → Google Sheets "Get rows" с фильтром по status.</li>
   <li>IF: статус в списке касаний и с последнего касания прошло N дней (антиспам).</li>
   <li>Email / Gmail / SMTP или Telegram Bot – текст из шаблона по статусу.</li>
