@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-31",
+    "today_ru": "31.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B25",
+    "priority": "P0",
+    "slug": "bankovskaya-vypiska-staging-google-sheets",
+    "h1": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+    "primary_query": "банковская выписка в excel автоматически",
+    "secondary_queries": [
+      "загрузка выписки в google sheets",
+      "нормализация выписки 1с",
+      "staging таблица финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B25",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "банковская выписка в excel автоматически 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "банковская выписка в excel автоматически июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "банковская выписка в excel автоматически новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "загрузка выписки в google sheets 2026",
+      "purpose": "вторичный запрос: загрузка выписки в google sheets"
+    },
+    {
+      "id": "secondary_2",
+      "query": "нормализация выписки 1с 2026",
+      "purpose": "вторичный запрос: нормализация выписки 1с"
+    },
+    {
+      "id": "secondary_3",
+      "query": "staging таблица финансы 2026",
+      "purpose": "вторичный запрос: staging таблица финансы"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B25-bankovskaya-vypiska-staging-google-sheets",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
