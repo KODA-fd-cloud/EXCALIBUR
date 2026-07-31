@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-07-31 | B24 | platezhnyj-kalendar-google-sheets-n8n | https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/ | published |
 | 2026-07-30 | B23 | cursor-rules-finotdel | https://koda-fd.ru/blog/cursor-rules-finotdel/ | published |
 | 2026-07-30 | B22 | google-apps-script-finansist-obnovit-dannye | https://koda-fd.ru/blog/google-apps-script-finansist-obnovit-dannye/ | published |
 | 2026-07-30 | B19 | python-finansist-sverka-csv | https://koda-fd.ru/blog/python-finansist-sverka-csv/ | published |

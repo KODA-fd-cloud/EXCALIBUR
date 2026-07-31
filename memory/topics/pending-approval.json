@@ -1,10 +1,10 @@
 {
-  "topic_id": "B24",
-  "h1": "Как собрать платёжный календарь в Google Sheets и напоминания через n8n",
-  "slug": "platezhnyj-kalendar-google-sheets-n8n",
+  "topic_id": "B25",
+  "h1": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
   "status": "pending",
-  "proposed_at": 1753962000,
-  "proposal_message_id": 37,
+  "proposed_at": 1785495901,
+  "proposal_message_id": 45,
   "chat_id": "1136346366",
   "rejected_ids": []
 }

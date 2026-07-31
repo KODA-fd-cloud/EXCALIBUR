@@ -1,0 +1,31 @@
+{
+  "topic_id": "B24",
+  "h1": "Как собрать платёжный календарь в Google Sheets и напоминания через n8n",
+  "title": "Как собрать платёжный календарь в Google Sheets и напоминания через n8n",
+  "description": "Колонки календаря, кассовый разрыв в Sheets, n8n-напоминания в Telegram и стыковка с банковской выпиской через staging без автоплатежа.",
+  "cover_alt": "Абстрактная временная шкала платежей фиолетово-синими узлами на тёмном фоне",
+  "slug": "platezhnyj-kalendar-google-sheets-n8n",
+  "primary_query": "платёжный календарь google sheets",
+  "secondary_queries": [
+    "кассовый разрыв таблица",
+    "напоминание об оплате n8n",
+    "платёжный календарь без 1с"
+  ],
+  "char_count": 9840,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "платёжный календарь в Google Sheets",
+    "напоминания об оплате через n8n",
+    "кассовый разрыв без ERP"
+  ],
+  "meta_ab": {
+    "title_seo": "Платёжный календарь Google Sheets + напоминания n8n",
+    "title_ctr": "📅 Платёжный календарь в Sheets и алерты n8n без ERP – гайд",
+    "title_aeo": "Как собрать платёжный календарь в Google Sheets и напоминания через n8n?",
+    "description_seo": "Минимальные колонки, расчёт кассового разрыва, сценарий n8n → Telegram, staging выписки и правила без автоплатежа.",
+    "description_ctr": "⚡️ Очередь платежей, красный день кассы и напоминание owner в Telegram – контур за один вечер.",
+    "description_aeo": "Платёжный календарь google sheets – лист calendar + cash + n8n filter по due_date и status=approved."
+  },
+  "cover_family": "gradient_abstract"
+}

@@ -1,11 +1,11 @@
 name: KODA blog Telegram tick
 
-# 08:00 и 15:00 МСК = 05:00 и 12:00 UTC
-# Перед tick: Scout дозаправляет очередь актуальными темами (если unpublished < 3).
+# Tick часто (каждые 15 мин) — чтобы «ок/нет» не висели до 15:00.
+# Scout + тяжёлые слоты: 08:00 и 15:00 МСК (= 05:00 и 12:00 UTC).
 # После «ок»: если статья готова (html+QA PASS) — сразу публикация + ссылка в Telegram.
 on:
   schedule:
-    - cron: "0 5,12 * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,8 +33,14 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: |
           set -euo pipefail
-          # Если CURSOR_API_KEY есть — Cloud Scout; иначе web-scout (DDG) + cannibalization guard
-          python scripts/excalibur_blog_scout_ci.py --count 3 --min-unpublished 3 --notify --prefer-cursor | tee scout.json
+          # Скрипт сам skip, если unpublished >= 3. Telegram-notify — в «больших» часах.
+          HOUR_UTC=$(date -u +%H)
+          EXTRA=""
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ] || [ "$HOUR_UTC" = "05" ] || [ "$HOUR_UTC" = "12" ]; then
+            EXTRA="--notify --prefer-cursor"
+          fi
+          # shellcheck disable=SC2086
+          python scripts/excalibur_blog_scout_ci.py --count 3 --min-unpublished 3 $EXTRA | tee scout.json
           git config user.name "koda-blog-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add memory/topics/blog-topics.md || true

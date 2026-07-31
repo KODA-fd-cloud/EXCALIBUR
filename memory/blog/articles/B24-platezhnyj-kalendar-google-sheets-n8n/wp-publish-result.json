@@ -1,0 +1,8 @@
+{
+  "slug": "platezhnyj-kalendar-google-sheets-n8n",
+  "topic_id": "B24",
+  "permalink": "https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/",
+  "raw_output": "OK post=161 slug=platezhnyj-kalendar-google-sheets-n8n\npermalink=https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
