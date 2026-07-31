@@ -151,7 +151,13 @@ def main() -> int:
         propose_topic(token, chat_id, nxt, rejected_ids=[])
         action_next = "proposed_next"
     else:
-        send_text(token, chat_id, "📭 Очередь тем пуста — добавь карточки в blog-topics.md.")
+        send_text(
+            token,
+            chat_id,
+            "📭 После публикации очередь карточек пуста.\n"
+            "Бот не генерирует темы сам — только предлагает из blog-topics.md.\n"
+            "Дозаправь Bxx или запусти Scout.",
+        )
         action_next = "queue_empty"
 
     print(

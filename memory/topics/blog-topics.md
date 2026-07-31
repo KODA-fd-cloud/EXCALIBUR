@@ -11,9 +11,10 @@
 python scripts/excalibur_blog_utility_gate.py --topic-id B13
 ```
 
-**Уже на блоге (не дублировать slug):** vibe-coding-finansist, avtomatizaciya-finansov-no-code, cursor-ai-agenty-finotchetnost, ot-excel-k-fin-konturu-30-dney, finansovyj-minimalizm, disnejlend-dlya-dannyh, ubijstvo-svyashchennoj-korovy, claude-code-finotdel, obezlichivanie-dannyh-chatgpt-finansist
+**Уже на блоге (не дублировать slug):** vibe-coding-finansist, avtomatizaciya-finansov-no-code, cursor-ai-agenty-finotchetnost, ot-excel-k-fin-konturu-30-dney, finansovyj-minimalizm, disnejlend-dlya-dannyh, ubijstvo-svyashchennoj-korovy, claude-code-finotdel, obezlichivanie-dannyh-chatgpt-finansist, vygruzka-1c-excel-odata, upravlenie-debitorkoj-reestr-napominaniya, ollama-finotdel-lokalnaya-nejroset, baza-znaniy-chatgpt-cursor-finotdel, nejroset-excel-formuly-finansist, schet-1c-unf-telefon-http-servis, python-finansist-sverka-csv, cursor-finansist-skript-dashbord, mcp-cursor-finansist-instrumenty, google-apps-script-finansist-obnovit-dannye
 
-**Очередь 2026-07 (согласовано):** B13–B23 — автоматизация + вайб-кодинг. Источник 1С: `D:\projects\1С` (`dds-sheets`, `pilot-unf`).
+**Очередь 2026-07 (согласовано):** B13–B23 — автоматизация + вайб-кодинг. Источник 1С: `D:\projects\1С` (`dds-sheets`, `pilot-unf`).  
+**Очередь 2026-08 (дозаправка):** B24–B33 — финконтур, банк, n8n, Cursor, сверки. Scout/дозаправка: `scripts/excalibur_blog_refill_topics.py`.
 
 ---
 
@@ -259,6 +260,226 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **faq_hints:** rules работают в free тарифе; чем отличается от system prompt; нужно ли для одного человека
 - **internal_links:** /baza-znaniy-chatgpt-cursor-finotdel/, /cursor-finansist-skript-dashbord/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract rule-grid nodes locked paths holographic dark purple, no text
+
+---
+
+## B24 — Платёжный календарь в Google Sheets + n8n
+
+- **priority:** P0
+- **slug:** platezhnyj-kalendar-google-sheets-n8n
+- **h1:** Как собрать платёжный календарь в Google Sheets и напоминания через n8n
+- **primary_query:** платёжный календарь google sheets
+- **secondary_queries:** кассовый разрыв таблица, напоминание об оплате n8n, платёжный календарь без 1с
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Минимальные колонки календаря: дата, контрагент, сумма, статус
+  2. Как считать кассовый разрыв без тяжёлой ERP
+  3. n8n: триггер по дате → Telegram/email ответственному
+  4. Связка с банковской выпиской (staging, не прямая проводка)
+  5. Что не обещать: автоплатёж без подписи и контроля
+- **faq_hints:** можно ли без n8n; хватит ли Excel; как не задвоить платежи
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /upravlenie-debitorkoj-reestr-napominaniya/
+- **cover_scene_hint:** abstract calendar nodes cashflow timeline dark purple blue, no text
+
+---
+
+## B25 — Банковская выписка в staging-таблицу
+
+- **priority:** P0
+- **slug:** bankovskaya-vypiska-staging-google-sheets
+- **h1:** Как разложить банковскую выписку в staging-таблицу без ручного копипаста
+- **primary_query:** банковская выписка в excel автоматически
+- **secondary_queries:** загрузка выписки в google sheets, нормализация выписки 1с, staging таблица финансы
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Зачем staging между банком и отчётом
+  2. Формат колонок: дата, сумма, контрагент, назначение, hash
+  3. Импорт CSV/Excel и типичные ловушки кодировки
+  4. Дедуп и правило «не трогать сырой файл»
+  5. Куда дальше: ДДС, сверка, дашборд
+- **faq_hints:** подойдёт ли выписка из клиента-банка; как жить с несколькими счетами
+- **internal_links:** /ot-excel-k-fin-konturu-30-dney/, /python-finansist-sverka-csv/
+- **cover_scene_hint:** abstract bank data stream into table grid dark holographic, no text
+
+---
+
+## B26 — План-факт ДДС за вечер
+
+- **priority:** P0
+- **slug:** plan-fakt-dds-google-sheets
+- **h1:** Как сделать план-факт ДДС в Google Sheets за один вечер
+- **primary_query:** план факт ддс excel
+- **secondary_queries:** план факт денежный поток, ддс google sheets, отклонение факта от плана
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Что считать планом: недели vs месяцы
+  2. Листы: План, Факт, Сводка отклонений
+  3. Формулы SUMIFS / QUERY без VBA
+  4. Правило категорий: один справочник на все листы
+  5. Еженедельный ритуал обновления для CFO
+- **faq_hints:** чем отличается от ОПиУ; можно ли без 1с
+- **internal_links:** /finansovyj-minimalizm/, /ot-excel-k-fin-konturu-30-dney/
+- **cover_scene_hint:** abstract plan vs fact bars holographic dark purple, no text
+
+---
+
+## B27 — Дайджест собственнику из Sheets
+
+- **priority:** P0
+- **slug:** daydzhest-sobstvenniku-n8n-telegram
+- **h1:** Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram
+- **primary_query:** дайджест собственнику telegram
+- **secondary_queries:** отчёт собственнику автоматически, n8n google sheets telegram, weekly finance digest
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Какие 5–7 цифр реально читает собственник
+  2. Лист «Дайджест»: формулы, не копипаст
+  3. n8n: раз в неделю → сообщение в Telegram
+  4. Текст без воды: факт / отклонение / вопрос
+  5. Безопасность: не слать ПДн и полные выписки
+- **faq_hints:** можно ли в MAX; нужен ли отдельный бот
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /platezhnyj-kalendar-google-sheets-n8n/
+- **cover_scene_hint:** abstract message bubble finance metrics dark ui, no text
+
+---
+
+## B28 — Сверка банк ↔ 1С без ПДн в ChatGPT
+
+- **priority:** P0
+- **slug:** sverka-bank-1c-bez-pdn
+- **h1:** Как сверить банк и 1С без отправки ПДн в ChatGPT
+- **primary_query:** сверка банка и 1с
+- **secondary_queries:** сверка выписки 1с, обезличить выписку для ии, сверка оборотов банк учет
+- **search_intent:** checklist
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Что сравниваем: обороты, остатки, «висяки»
+  2. Маскирование ИНН/счетов до любой нейросети
+  3. Локальный маршрут: Python/Claude Code vs облако
+  4. Чеклист расхождений: дата, сумма, назначение
+  5. Когда звать 1С-ника, а когда хватает таблицы
+- **faq_hints:** можно ли полностью в Excel; нужен ли OData
+- **internal_links:** /obezlichivanie-dannyh-chatgpt-finansist/, /python-finansist-sverka-csv/
+- **cover_scene_hint:** abstract two ledgers merge shield privacy dark, no text
+
+---
+
+## B29 — Категории ДДС: справочник, который не разъедется
+
+- **priority:** P0
+- **slug:** spravochnik-kategorij-dds
+- **h1:** Как завести справочник категорий ДДС, чтобы отчёты не разъезжались
+- **primary_query:** категории ддс справочник
+- **secondary_queries:** классификация платежей excel, статьи ддс google sheets, единый справочник финансы
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Сколько категорий достаточно на старте
+  2. Лист «Справочник» + запрет свободного ввода
+  3. Правила для «Прочее» и переводов между счетами
+  4. Как обучить команду одним шаблоном
+  5. Связка с дашбордом и план-фактом
+- **faq_hints:** чем отличается от плана счетов 1с; можно ли 200 статей
+- **internal_links:** /plan-fakt-dds-google-sheets/, /disnejlend-dlya-dannyh/
+- **cover_scene_hint:** abstract taxonomy tree nodes finance dark purple, no text
+
+---
+
+## B30 — Power Query для финансиста: обновление без макросов
+
+- **priority:** P0
+- **slug:** power-query-finansist-obnovlenie
+- **h1:** Как обновлять финтаблицы через Power Query без макросов и VBA
+- **primary_query:** power query для финансиста
+- **secondary_queries:** power query excel обновление, загрузка csv power query, power query google sheets
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Когда Power Query лучше ручного VLOOKUP
+  2. Подключение папки с выгрузками
+  3. Типы данных, даты, разделитель `;`
+  4. Обновить всё одной кнопкой
+  5. Границы: когда уходить в Python/Sheets
+- **faq_hints:** есть ли в Excel Online; работает ли на Mac
+- **internal_links:** /python-finansist-sverka-csv/, /nejroset-excel-formuly-finansist/
+- **cover_scene_hint:** abstract data pipes transform nodes dark ui, no text
+
+---
+
+## B31 — Чеклист закрытия месяца для малого финотдела
+
+- **priority:** P0
+- **slug:** cheklist-zakrytiya-mesyaca-finotdel
+- **h1:** Чеклист закрытия месяца для малого финотдела: от банка до отчёта собственнику
+- **primary_query:** чеклист закрытия месяца финансист
+- **secondary_queries:** закрытие месяца управленческий учет, месяц close finance checklist, что проверить перед отчетом
+- **search_intent:** checklist
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. День −3…0: банк, акты, зарплата
+  2. Сверки: банк↔учёт, взаиморасчёты
+  3. Управленческие отчёты: ДДС, ОПиУ, долги
+  4. Автоматизация: что можно снять с ручного чеклиста
+  5. Шаблон чеклиста в Sheets на команду
+- **faq_hints:** отличается ли от бухгалтерского закрытия; сколько часов норма
+- **internal_links:** /finansovyj-minimalizm/, /daydzhest-sobstvenniku-n8n-telegram/
+- **cover_scene_hint:** abstract checklist nodes month close dark holographic, no text
+
+---
+
+## B32 — Make vs n8n для финотдела
+
+- **priority:** P0
+- **slug:** make-vs-n8n-finotdel
+- **h1:** Make или n8n для финотдела: что выбрать под банк, Sheets и Telegram
+- **primary_query:** make или n8n
+- **secondary_queries:** n8n vs make финансы, автоматизация финотдела no-code, self-hosted n8n для компании
+- **search_intent:** comparison
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Критерии CFO: данные, цена, кто администрирует
+  2. Таблица: облако Make vs self-hosted n8n
+  3. Типовые сценарии: выписка, напоминания, дайджест
+  4. Когда остаться в Sheets без оркестратора
+  5. Решение на 90 дней без смены стека
+- **faq_hints:** нужен ли программист для n8n; безопаснее ли self-hosted
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /platezhnyj-kalendar-google-sheets-n8n/
+- **cover_scene_hint:** abstract two paths fork automation dark purple blue, no text
+
+---
+
+## B33 — Акты сверки: реестр и контроль ответов
+
+- **priority:** P0
+- **slug:** akty-sverki-reestr-kontrol
+- **h1:** Как вести реестр актов сверки и контролировать ответы контрагентов без CRM
+- **primary_query:** реестр актов сверки
+- **secondary_queries:** контроль актов сверки, акт сверки google sheets, напоминание акт сверки
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **h2_outline:**
+  1. Колонки реестра: период, контрагент, статус, дата ответа
+  2. Статусы: черновик / отправлен / согласован / спор
+  3. Напоминания через Sheets → n8n → email
+  4. Что хранить из 1С, чего не тащить в облако
+  5. Связка с дебиторкой и закрытием месяца
+- **faq_hints:** нужна ли ЭДО; можно ли без 1с
+- **internal_links:** /upravlenie-debitorkoj-reestr-napominaniya/, /cheklist-zakrytiya-mesyaca-finotdel/
+- **cover_scene_hint:** abstract agreement documents network nodes dark, no text
 
 ---
 

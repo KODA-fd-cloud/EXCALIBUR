@@ -249,7 +249,11 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
         send_text(token, chat_id, f"⏭ Ок, пропускаю {pending['topic_id']}. Сразу следующая тема:")
         topic = next_topic(skip_ids=set(rejected))
         if not topic:
-            send_text(token, chat_id, "📭 Больше тем нет. Добавь карточки в blog-topics.md.")
+            send_text(
+                token,
+                chat_id,
+                "📭 Карточки в очереди закончились. Бот не выдумывает темы — только blog-topics.md / Scout.",
+            )
             pending["status"] = "rejected"
             pending["rejected_ids"] = rejected
             save_pending(pending)
@@ -325,7 +329,11 @@ def cmd_propose(args: argparse.Namespace) -> None:
     if args.auto or not args.topic_id:
         topic = next_topic()
         if not topic:
-            send_text(token, chat_id, "📭 Очередь тем пуста. Добавь темы в blog-topics.md.")
+            send_text(
+                token,
+                chat_id,
+                "📭 Очередь карточек пуста. Новые темы — только из blog-topics.md (дозаправка / Scout), не «из воздуха».",
+            )
             print(json.dumps({"ok": False, "reason": "empty_queue"}, ensure_ascii=False))
             return
     else:
@@ -355,7 +363,12 @@ def cmd_next(args: argparse.Namespace) -> None:
             rejected.append(pending["topic_id"])
     topic = next_topic(skip_ids=set(rejected))
     if not topic:
-        send_text(token, chat_id, "📭 Больше тем в очереди нет. Добавь карточки в blog-topics.md.")
+        send_text(
+            token,
+            chat_id,
+            "📭 Очередь карточек пуста. Бот предлагает только темы из blog-topics.md — "
+            "новые карточки нужно дозаправить (Scout / B24+).",
+        )
         print(json.dumps({"ok": False, "reason": "empty_queue"}, ensure_ascii=False))
         return
     pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)
@@ -418,7 +431,13 @@ def cmd_tick(args: argparse.Namespace) -> None:
 
     topic = next_topic()
     if not topic:
-        send_text(token, chat_id, "📭 Очередь тем пуста. Добавь карточки в blog-topics.md.")
+        send_text(
+            token,
+            chat_id,
+            "📭 Очередь карточек пуста.\n"
+            "Я не придумываю темы на лету — только шлю следующую из blog-topics.md.\n"
+            "Дозаправь очередь (B24+) или запусти Scout, иначе слот будет пустым.",
+        )
         print(json.dumps({"ok": False, "action": "empty_queue"}, ensure_ascii=False))
         return
     pending = propose_topic(token, chat_id, topic)
