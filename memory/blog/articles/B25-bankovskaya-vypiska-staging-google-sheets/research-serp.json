@@ -1,0 +1,479 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-31",
+    "today_ru": "31.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B25",
+    "priority": "P0",
+    "slug": "bankovskaya-vypiska-staging-google-sheets",
+    "h1": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+    "primary_query": "банковская выписка в excel автоматически",
+    "secondary_queries": [
+      "загрузка выписки в google sheets",
+      "нормализация выписки 1с",
+      "staging таблица финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "банковская выписка в excel автоматически 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Генератор Банковских Выписок - Ai Онлайн Бесплатно, Без Регистрации",
+          "url": "https://bankstatementgenerator.ai/ru/",
+          "snippet": ""
+        },
+        {
+          "title": "Шаблон обработки банковских выписок в Excel | как обработать выписку ...",
+          "url": "https://www.helpexcel.pro/page30595834.html",
+          "snippet": "Создавайте профессиональные банковские выписки мгновенно с нашим AI-генератором банковских выписок. 100% онлайн, бесплатно, без регистрации. Экспорт в PDF или Excel за считанные секунды."
+        },
+        {
+          "title": "Шаблон обработки банковских выписок в Excel | как обработать выписку ...",
+          "url": "https://www.helpexcel.pro/table-bank-statement/",
+          "snippet": "Скачайте готовый шаблон для автоматической обработки банковских выписок в Excel. Удобный инструмент для анализа операций, категоризации платежей и формирования отчетов."
+        },
+        {
+          "title": "Конвертируйте Банковские Выписки в CSV, Excel, JSON",
+          "url": "https://www.easybankconvert.com/ru",
+          "snippet": "Скачайте готовый шаблон для автоматической обработки банковских выписок в Excel. Удобный инструмент для анализа операций, категоризации платежей и формирования отчетов."
+        },
+        {
+          "title": "Бесплатный Конвертер Банковских Выписок В Csv | Выписка В Csv",
+          "url": "https://statementtocsv.com/ru/",
+          "snippet": "Бесплатный инструмент конвертации банковских выписок. Мгновенно конвертируйте PDF банковские выписки в формат CSV, Excel или JSON. Продвинутый анализ для всех банков."
+        },
+        {
+          "title": "Ai Ассистент Для Выписок, Счетов-фактур И Квитанций",
+          "url": "https://bankgpt.io/ru",
+          "snippet": "Конвертируйте банковские выписки в CSV, Excel и JSON за секунды. Поддержка 1000+ банков мира. Банковская безопасность, мгновенная обработка, регистрация не требуется. Прямой импорт в QuickBooks, Xero и Excel."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "банковская выписка в excel автоматически июль 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Конвертер банковских выписок PDF в Excel/CSV — Бесплатно и безопасно ...",
+          "url": "https://bankstatementconverte.com/ru/",
+          "snippet": ""
+        },
+        {
+          "title": "Бесплатный Конвертер Банковских Выписок В Csv | Выписка В Csv",
+          "url": "https://statementtocsv.com/ru/",
+          "snippet": "Мгновенно конвертируйте банковские выписки PDF из США, Великобритании и мировых банков в редактируемый формат Excel (XLSX) или CSV. Извлечение дат, описаний и остатков с помощью ИИ."
+        },
+        {
+          "title": "Генератор Банковских Выписок - Ai Онлайн Бесплатно, Без Регистрации",
+          "url": "https://bankstatementgenerator.ai/ru/",
+          "snippet": "Конвертируйте банковские выписки в CSV, Excel и JSON за секунды. Поддержка 1000+ банков мира. Банковская безопасность, мгновенная обработка, регистрация не требуется. Прямой импорт в QuickBooks, Xero и Excel."
+        },
+        {
+          "title": "Конвертируйте Банковские Выписки в CSV, Excel, JSON",
+          "url": "https://www.easybankconvert.com/ru",
+          "snippet": "Создавайте профессиональные банковские выписки мгновенно с нашим AI-генератором банковских выписок. 100% онлайн, бесплатно, без регистрации. Экспорт в PDF или Excel за считанные секунды."
+        },
+        {
+          "title": "Конвертер банковских выписок — преобразуйте выписки в Excel и CSV",
+          "url": "https://www.currency.wiki/ru/bank-statement-converter",
+          "snippet": "Бесплатный инструмент конвертации банковских выписок. Мгновенно конвертируйте PDF банковские выписки в формат CSV, Excel или JSON. Продвинутый анализ для всех банков."
+        },
+        {
+          "title": "Конвертер банковских выписок — PDF/CSV в Excel бесплатно",
+          "url": "https://bosconvertpro.com/ru/bank-statement-converter",
+          "snippet": "Преобразуйте PDF-выписки в структурированные таблицы Excel или CSV. Работает с выписками любого банка мира с автоматической конвертацией валют."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "банковская выписка в excel автоматически новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Генератор Банковских Выписок - Ai Онлайн Бесплатно, Без Регистрации",
+          "url": "https://bankstatementgenerator.ai/ru/",
+          "snippet": ""
+        },
+        {
+          "title": "Шаблон обработки банковских выписок в Excel | как обработать выписку ...",
+          "url": "https://www.helpexcel.pro/table-bank-statement/",
+          "snippet": "Создавайте профессиональные банковские выписки мгновенно с нашим AI-генератором банковских выписок. 100% онлайн, бесплатно, без регистрации. Экспорт в PDF или Excel за считанные секунды."
+        },
+        {
+          "title": "Конвертируйте Банковские Выписки в CSV, Excel, JSON",
+          "url": "https://www.easybankconvert.com/ru",
+          "snippet": "Скачайте готовый шаблон для автоматической обработки банковских выписок в Excel. Удобный инструмент для анализа операций, категоризации платежей и формирования отчетов."
+        },
+        {
+          "title": "Бесплатный Конвертер Банковских Выписок В Csv | Выписка В Csv",
+          "url": "https://statementtocsv.com/ru/",
+          "snippet": "Бесплатный инструмент конвертации банковских выписок. Мгновенно конвертируйте PDF банковские выписки в формат CSV, Excel или JSON. Продвинутый анализ для всех банков."
+        },
+        {
+          "title": "Как Обработать Выписку Банка в Excel - Rutube",
+          "url": "https://rutube.ru/video/3bb2800fd16f036bef99ed3f27f752be/",
+          "snippet": "Конвертируйте банковские выписки в CSV, Excel и JSON за секунды. Поддержка 1000+ банков мира. Банковская безопасность, мгновенная обработка, регистрация не требуется. Прямой импорт в QuickBooks, Xero и Excel."
+        },
+        {
+          "title": "Шаблоны банковские выписки Excel - Pikbest",
+          "url": "https://ru.pikbest.com/free-excel/%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%8B%D0%BF%D0%B8%D1%81%D0%BA%D0%B8.html",
+          "snippet": "В этом обучающем видео я рассмотрю, как быстро и эффективно обрабатывать банковские выписки в программе Microsoft Excel для целей управленческого учета. Узнать подробнее о системе - БЕСПЛАТНО ..."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "загрузка выписки в google sheets 2026",
+      "purpose": "вторичный запрос: загрузка выписки в google sheets",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+          "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+          "snippet": ""
+        },
+        {
+          "title": "Выгрузка данных в Google Таблицы (Sheets) с автоматическим обновлением ...",
+          "url": "https://tabletka.io/help/googlesheets",
+          "snippet": "Три шага на этой неделе: 1) проверьте, в каких форматах ваш банк выдаёт выписки; 2) настройте выгрузку одного тестового файла и импорт в Google Sheets; 3) запустите ежедневную проверку первых ..."
+        },
+        {
+          "title": "Как отправить платежи из банка прямо в Гугл-таблицу? Инструкция",
+          "url": "https://kimi.ru/blog/cases/00ad3gcsn1-kak-otpravit-platezhi-iz-banka-pryamo-v",
+          "snippet": "Google обращается к сервису не чаще одного раза в 60 минут, а Tabletka.io кэширует данные на 15 минут. Таким образом максимальная задержка появления данных составляет 75 минут."
+        },
+        {
+          "title": "Google Таблицы: онлайн-таблицы и шаблоны | Google Workspace",
+          "url": "https://workspace.google.com/intl/ru/products/sheets/",
+          "snippet": "Избавьтесь от ручного ввода данных! Загружайте банковские выписки (физ. и юр. лиц) прямо в Google Таблицы через сервис Kimi. Автоматизируйте управленческий учет и исключите ошибки."
+        },
+        {
+          "title": "Как быстро обрабатывать банковскую выписку в Google Sheets",
+          "url": "https://www.youtube.com/watch?v=SaVqjcSW7FU",
+          "snippet": "Создавайте таблицы онлайн в Google Таблицах. Работайте над ними совместно с другими пользователями на любом устройстве в режиме реального времени."
+        },
+        {
+          "title": "Как экспортировать данные из Google Документов, Таблиц, Презентаций ...",
+          "url": "https://support.google.com/docs/answer/9759608?hl=ru",
+          "snippet": "Предпринимателю обязательно нужно вести учет финансов, чтобы контролировать движение средств в бизнесе и не допустить паденияМы уже несколько лет занимаемся ..."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "нормализация выписки 1с 2026",
+      "purpose": "вторичный запрос: нормализация выписки 1с",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ФСБУ 2026: Изменения в бухучете и пошаговая настройка 1С под новые ...",
+          "url": "https://www.arenda1c.ru/articles/fsbu-2026-obyazatelnyie-standartyi-i-nastrojka-1s-pod-novyie-pravila.html",
+          "snippet": ""
+        },
+        {
+          "title": "Как разнести выписку в 1С: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-pravilno-raznesti-vypisku-v-1s.html",
+          "snippet": "ФСБУ 2026: обязательные и добровольные стандарты. Как настроить 1С, обновить учетную политику и правильно сдать отчетность без штрафов."
+        },
+        {
+          "title": "Как правильно заполнить выписку в 1С: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-zapolnit-vypisku-v-1s.html",
+          "snippet": "Подробное руководство по разнесению банковской выписки в 1С: от загрузки до проведения. Схемы, ошибки, автоматизация и советы для бухгалтеров."
+        },
+        {
+          "title": "1С-Отчетность 2026: настройка, отправка и типовые ошибки | Журнал ...",
+          "url": "https://otchetmaster.ru/info/elektronnaya-otchetnost/1s-otchetnost-2026/",
+          "snippet": "Детальное руководство по заполнению банковской выписки в 1С: от настроек до проводок. Разбираем типичные ошибки и автоматизацию процесса."
+        },
+        {
+          "title": "Автозагрузка выписки в 1С: как убрать ручную обработку платежек и поиск ...",
+          "url": "https://infostart.ru/journal/news/mir-1s/avtozagruzka-vypiski-v-1s-kak-ubrat-ruchnuyu-obrabotku-platezhek-i-poisk-schetov_2631010/",
+          "snippet": "Используя это руководство, вы сможете самостоятельно настроить работу с сервисом и минимизировать риск технических ошибок при сдаче отчетности в 2026 году."
+        },
+        {
+          "title": "Как настроить автоматическое получение банковской выписки через 1С ...",
+          "url": "https://buh.ru/news/samoe-novoe-v-1s-bukhgalterii-8-nastroyki-avtomaticheskogo-polucheniya-bankovskoy-vypiski-cherez-1s-.html",
+          "snippet": "В этой статье рассмотрим понятный подход, как минимизировать ручную обработку: настроить правила, которые при загрузке выписки автоматически распознают платеж и заполняют все пункты."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "staging таблица финансы 2026",
+      "purpose": "вторичный запрос: staging таблица финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Таблица бюджета в Excel на 2026 год: готовый шаблон и инструкция",
+          "url": "https://avocadomoney.com/instrumenty-i-shablony/tablitca-byudzheta-v-excel-2026-shablon-i-instrukciya",
+          "snippet": ""
+        },
+        {
+          "title": "Минфин России :: Методические материалы для формирования информации по ...",
+          "url": "https://minfin.gov.ru/ru/perfomance/budget/gosfin/fin_stats/method/",
+          "snippet": "Подробная инструкция по использованию таблицы учета доходов и расходов в Excel на 2026 год. Готовый шаблон, структура файла и советы по ведению бюджета."
+        },
+        {
+          "title": "Минфин обновил таблицы соответствия КВР и КОСГУ на 2026 год",
+          "url": "https://deloprava.ru/minfin-obnovil-tabliczy-sootvetstviya-kvr-i-kosgu-na-2026-god/",
+          "snippet": "Документ Таблица соответствия показателей статистики государственных финансов (СГФ) показателям бухгалтерской (финансовой) отчетности Российской Федерации (2026 год) при формировании ..."
+        },
+        {
+          "title": "Бесплатные электронные таблицы с шаблонами бюджета, которые можно ...",
+          "url": "https://excel.cloud.microsoft/create/ru/budget-templates/",
+          "snippet": "Минфин России опубликовал обновленные таблицы соответствия подразделов, КВР и КОСГУ на 2026 год. Изменения затронули лизинг, субсидии, недвижимость и учет материальных запасов."
+        },
+        {
+          "title": "Бесплатные настраиваемые шаблоны Excel для планирования деловых и ...",
+          "url": "https://excel.cloud.microsoft/create/ru/financial-management-templates/",
+          "snippet": "Найдите настраиваемый шаблон бюджета для Excel и добавьте наглядности в свои финансы. От семейного бюджета до бюджета для бизнеса — у нас есть подходящий шаблон бюджета."
+        },
+        {
+          "title": "Минфин России :: 2026 год",
+          "url": "https://minfin.gov.ru/ru/perfomance/budget/basis/npa/2026",
+          "snippet": "Управляйте своими финансами эффективнее с помощью шаблонов Excel, предназначенных для расчета кредитов, отслеживания расходов и планирования сбережений — как для личных нужд, так и для достижения бизнес-целей."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация загрузки и сверки банковских выписок в учетной программе",
+          "url": "https://kassa.zp.ua/ru/avtomatyzatsiya-zavantazhennya-ta-zvirky-bankivskykh-vypysok-v-oblikovii-prohrami/",
+          "snippet": ""
+        },
+        {
+          "title": "Загрузка Банковской Выписки В Rst-pms — Пошаговая Инструкция",
+          "url": "https://rutube.ru/video/32a03b9259131a61a6d74f41164e038f/",
+          "snippet": "Хотите убрать ручной ввод банковских выписок из ежедневной рутины? Поможем оценить, можно ли автоматизировать импорт и сверку банковских выписок именно в вашей системе учета: в облачном сервисе, BAS/1С-подобной базе или локальной программе."
+        },
+        {
+          "title": "Загрузка Банковской Выписки В Rst-pms — Пошаговая Инструкция",
+          "url": "https://www.youtube.com/watch?v=8CdYhuzAdD0",
+          "snippet": "В этом видео вы узнаете, как правильно загрузить банковскую выписку в систему RST-PMS, автоматически распределить операции, проверить баланс и сохранить данные."
+        },
+        {
+          "title": "Кейс #2: Как я объединил 3 источника данных в одну таблицу без ...",
+          "url": "https://vk.com/wall-233197311_31",
+          "snippet": "В этом видео вы узнаете, как правильно загрузить банковскую выписку в систему RST-PMS, автоматически ..."
+        },
+        {
+          "title": "Автоматизация загрузки и обработки банковских выписок",
+          "url": "https://infostart.ru/1c/tools/2448745/",
+          "snippet": "Такие решения я закладываю в основу авто-отчётов: вы добавляете новые строки в источники, а итоговая таблица пересчитывается сама."
+        },
+        {
+          "title": "Как правильно заполнить выписку в 1С: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-zapolnit-vypisku-v-1s.html",
+          "snippet": "Эффективный инструмент для автоматизированной загрузки и разбора банковских выписок. Она автоматически распознаёт и создаёт контрагентов, банковские счета и документы поступлений и списаний, обеспечивает точное сопоставление данных и минимизирует дубли."
+        }
+      ],
+      "searched_at": "2026-07-31"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://bankstatementgenerator.ai/ru/",
+      "title": "Генератор Банковских Выписок - Ai Онлайн Бесплатно, Без Регистрации",
+      "from_query": "банковская выписка в excel автоматически 2026"
+    },
+    {
+      "url": "https://www.helpexcel.pro/page30595834.html",
+      "title": "Шаблон обработки банковских выписок в Excel | как обработать выписку ...",
+      "from_query": "банковская выписка в excel автоматически 2026"
+    },
+    {
+      "url": "https://www.helpexcel.pro/table-bank-statement/",
+      "title": "Шаблон обработки банковских выписок в Excel | как обработать выписку ...",
+      "from_query": "банковская выписка в excel автоматически 2026"
+    },
+    {
+      "url": "https://www.easybankconvert.com/ru",
+      "title": "Конвертируйте Банковские Выписки в CSV, Excel, JSON",
+      "from_query": "банковская выписка в excel автоматически 2026"
+    },
+    {
+      "url": "https://statementtocsv.com/ru/",
+      "title": "Бесплатный Конвертер Банковских Выписок В Csv | Выписка В Csv",
+      "from_query": "банковская выписка в excel автоматически 2026"
+    },
+    {
+      "url": "https://bankgpt.io/ru",
+      "title": "Ai Ассистент Для Выписок, Счетов-фактур И Квитанций",
+      "from_query": "банковская выписка в excel автоматически 2026"
+    },
+    {
+      "url": "https://bankstatementconverte.com/ru/",
+      "title": "Конвертер банковских выписок PDF в Excel/CSV — Бесплатно и безопасно ...",
+      "from_query": "банковская выписка в excel автоматически июль 2026"
+    },
+    {
+      "url": "https://www.currency.wiki/ru/bank-statement-converter",
+      "title": "Конвертер банковских выписок — преобразуйте выписки в Excel и CSV",
+      "from_query": "банковская выписка в excel автоматически июль 2026"
+    },
+    {
+      "url": "https://bosconvertpro.com/ru/bank-statement-converter",
+      "title": "Конвертер банковских выписок — PDF/CSV в Excel бесплатно",
+      "from_query": "банковская выписка в excel автоматически июль 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/3bb2800fd16f036bef99ed3f27f752be/",
+      "title": "Как Обработать Выписку Банка в Excel - Rutube",
+      "from_query": "банковская выписка в excel автоматически новости 2026"
+    },
+    {
+      "url": "https://ru.pikbest.com/free-excel/%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%8B%D0%BF%D0%B8%D1%81%D0%BA%D0%B8.html",
+      "title": "Шаблоны банковские выписки Excel - Pikbest",
+      "from_query": "банковская выписка в excel автоматически новости 2026"
+    },
+    {
+      "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+      "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+      "from_query": "загрузка выписки в google sheets 2026"
+    },
+    {
+      "url": "https://tabletka.io/help/googlesheets",
+      "title": "Выгрузка данных в Google Таблицы (Sheets) с автоматическим обновлением ...",
+      "from_query": "загрузка выписки в google sheets 2026"
+    },
+    {
+      "url": "https://kimi.ru/blog/cases/00ad3gcsn1-kak-otpravit-platezhi-iz-banka-pryamo-v",
+      "title": "Как отправить платежи из банка прямо в Гугл-таблицу? Инструкция",
+      "from_query": "загрузка выписки в google sheets 2026"
+    },
+    {
+      "url": "https://workspace.google.com/intl/ru/products/sheets/",
+      "title": "Google Таблицы: онлайн-таблицы и шаблоны | Google Workspace",
+      "from_query": "загрузка выписки в google sheets 2026"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SaVqjcSW7FU",
+      "title": "Как быстро обрабатывать банковскую выписку в Google Sheets",
+      "from_query": "загрузка выписки в google sheets 2026"
+    },
+    {
+      "url": "https://support.google.com/docs/answer/9759608?hl=ru",
+      "title": "Как экспортировать данные из Google Документов, Таблиц, Презентаций ...",
+      "from_query": "загрузка выписки в google sheets 2026"
+    },
+    {
+      "url": "https://www.arenda1c.ru/articles/fsbu-2026-obyazatelnyie-standartyi-i-nastrojka-1s-pod-novyie-pravila.html",
+      "title": "ФСБУ 2026: Изменения в бухучете и пошаговая настройка 1С под новые ...",
+      "from_query": "нормализация выписки 1с 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/k/ka/kak-pravilno-raznesti-vypisku-v-1s.html",
+      "title": "Как разнести выписку в 1С: пошаговая инструкция 2026",
+      "from_query": "нормализация выписки 1с 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/k/ka/kak-zapolnit-vypisku-v-1s.html",
+      "title": "Как правильно заполнить выписку в 1С: пошаговая инструкция 2026",
+      "from_query": "нормализация выписки 1с 2026"
+    },
+    {
+      "url": "https://otchetmaster.ru/info/elektronnaya-otchetnost/1s-otchetnost-2026/",
+      "title": "1С-Отчетность 2026: настройка, отправка и типовые ошибки | Журнал ...",
+      "from_query": "нормализация выписки 1с 2026"
+    },
+    {
+      "url": "https://infostart.ru/journal/news/mir-1s/avtozagruzka-vypiski-v-1s-kak-ubrat-ruchnuyu-obrabotku-platezhek-i-poisk-schetov_2631010/",
+      "title": "Автозагрузка выписки в 1С: как убрать ручную обработку платежек и поиск ...",
+      "from_query": "нормализация выписки 1с 2026"
+    },
+    {
+      "url": "https://buh.ru/news/samoe-novoe-v-1s-bukhgalterii-8-nastroyki-avtomaticheskogo-polucheniya-bankovskoy-vypiski-cherez-1s-.html",
+      "title": "Как настроить автоматическое получение банковской выписки через 1С ...",
+      "from_query": "нормализация выписки 1с 2026"
+    },
+    {
+      "url": "https://avocadomoney.com/instrumenty-i-shablony/tablitca-byudzheta-v-excel-2026-shablon-i-instrukciya",
+      "title": "Таблица бюджета в Excel на 2026 год: готовый шаблон и инструкция",
+      "from_query": "staging таблица финансы 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/perfomance/budget/gosfin/fin_stats/method/",
+      "title": "Минфин России :: Методические материалы для формирования информации по ...",
+      "from_query": "staging таблица финансы 2026"
+    },
+    {
+      "url": "https://deloprava.ru/minfin-obnovil-tabliczy-sootvetstviya-kvr-i-kosgu-na-2026-god/",
+      "title": "Минфин обновил таблицы соответствия КВР и КОСГУ на 2026 год",
+      "from_query": "staging таблица финансы 2026"
+    },
+    {
+      "url": "https://excel.cloud.microsoft/create/ru/budget-templates/",
+      "title": "Бесплатные электронные таблицы с шаблонами бюджета, которые можно ...",
+      "from_query": "staging таблица финансы 2026"
+    },
+    {
+      "url": "https://excel.cloud.microsoft/create/ru/financial-management-templates/",
+      "title": "Бесплатные настраиваемые шаблоны Excel для планирования деловых и ...",
+      "from_query": "staging таблица финансы 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/perfomance/budget/basis/npa/2026",
+      "title": "Минфин России :: 2026 год",
+      "from_query": "staging таблица финансы 2026"
+    },
+    {
+      "url": "https://kassa.zp.ua/ru/avtomatyzatsiya-zavantazhennya-ta-zvirky-bankivskykh-vypysok-v-oblikovii-prohrami/",
+      "title": "Автоматизация загрузки и сверки банковских выписок в учетной программе",
+      "from_query": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/32a03b9259131a61a6d74f41164e038f/",
+      "title": "Загрузка Банковской Выписки В Rst-pms — Пошаговая Инструкция",
+      "from_query": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста 2026"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8CdYhuzAdD0",
+      "title": "Загрузка Банковской Выписки В Rst-pms — Пошаговая Инструкция",
+      "from_query": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста 2026"
+    },
+    {
+      "url": "https://vk.com/wall-233197311_31",
+      "title": "Кейс #2: Как я объединил 3 источника данных в одну таблицу без ...",
+      "from_query": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/tools/2448745/",
+      "title": "Автоматизация загрузки и обработки банковских выписок",
+      "from_query": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста 2026"
+    }
+  ]
+}
