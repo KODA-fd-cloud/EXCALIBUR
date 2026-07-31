@@ -2,9 +2,10 @@
   "topic_id": "B25",
   "h1": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
   "slug": "bankovskaya-vypiska-staging-google-sheets",
-  "status": "pending",
+  "status": "writing",
   "proposed_at": 1785495901,
   "proposal_message_id": 45,
   "chat_id": "1136346366",
-  "rejected_ids": []
+  "rejected_ids": [],
+  "ack_message_id": 49
 }
