@@ -1,0 +1,30 @@
+{
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
+  "topic_id": "B25",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "method": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "bankovskaya-vypiska-staging-google-sheets",
+    "php_bytes": 8776759
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 8,
+    "failed_count": 0,
+    "site_base": "https://koda-fd.ru"
+  },
+  "preconditions": {
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH": "unset",
+    "PUBLIC_SITE_URL": "unset",
+    "site.env.local": false,
+    "FTP_or_SSH_secrets": false,
+    "injected_secret_names": ["TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"],
+    "paramiko": false
+  },
+  "raw_output": "BLOCKER: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes; no FTP_/SSH_ credentials in Cloud Secrets or memory/site.env.local; paramiko missing for docker publish path",
+  "ledger_updated": false,
+  "telegram_published": false
+}
