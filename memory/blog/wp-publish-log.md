@@ -1,5 +1,41 @@
 # Excalibur BLOG — WP publish log
 
+## 2026-07-31 — B24 n8n-finotdel-ustanovka-pervyj-workflow — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B24 |
+| slug | n8n-finotdel-ustanovka-pervyj-workflow |
+| verdict | **FAIL / BLOCKER** |
+| permalink | _(нет)_ |
+| method | none (secrets missing) |
+| telegram_published | no |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (6/6, site-base https://koda-fd.ru)
+- dry-run: pass (slug/title/PHP payload)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING** (≠ yes)
+- PUBLIC_SITE_URL: **MISSING** (expected https://koda-fd.ru)
+- SSH_*/FTP_*: **MISSING**
+- Cloud injected secrets: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID only
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+docker_publish: ModuleNotFoundError: paramiko (secondary)
+```
+
+### Next
+
+Add Cloud Secrets: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL=https://koda-fd.ru`, `SSH_HOST`/`SSH_USER`/`SSH_PASSWORD` (preferred; `DOCKER_WP_CONTAINER` optional) or `FTP_*`+`FTP_ROOT`. Then re-run excalibur-blog-publish for B24. Do **not** call telegram published without URL.
+
+---
 ## 2026-07-22 — B18 schet-1c-unf-telefon-http-servis — **PASS**
 
 | Field | Value |

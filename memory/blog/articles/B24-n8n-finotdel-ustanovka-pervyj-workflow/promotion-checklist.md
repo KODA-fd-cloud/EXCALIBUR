@@ -1,7 +1,7 @@
 # Promotion checklist — B24 n8n-finotdel-ustanovka-pervyj-workflow
 
-Дата публикации: 2026-07-31  
-Live URL: https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/
+Дата публикации: 2026-07-31 (planned; WP publish blocked — secrets)  
+Live URL: _(pending)_ — ожидаемый: https://koda-fd.ru/blog/n8n-finotdel-ustanovka-pervyj-workflow/
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
