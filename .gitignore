@@ -11,3 +11,9 @@ __pycache__/
 canvases/
 node_modules/
 .cursor/canvases/
+
+scripts/test_*.py
+scripts/upload_*.py
+scripts/publish_to_dzen.py
+scripts/inspect_nginx.py
+
