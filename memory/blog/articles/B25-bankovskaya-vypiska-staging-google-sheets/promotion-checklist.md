@@ -1,7 +1,8 @@
 # Promotion checklist — B25 bankovskaya-vypiska-staging-google-sheets
 
 Дата публикации: 2026-07-31  
-Live URL: https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/
+Live URL: — (ожидаемый: https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/)  
+Publish status: ❌ PUBLISH BLOCKER — нет FTP_*/SSH_* и EXCALIBUR_BLOG_ALLOW_PUBLISH=yes
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 

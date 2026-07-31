@@ -1,0 +1,22 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 2,
+  "over_long_sentences": [
+    {
+      "sentence": "Источник Когда брать Риск CSV / Excel из клиента-банка Ежедневный/еженедельный staging Разный набор колонок у банков PDF выписка Только если другого формата нет Ошибки распознавания, ручная правка 1С:ДиректБанк Проводки и бухучёт Не заменяет управленческий staging в Sheets Онлайн PDF→Excel SaaS Личные тесты без реквизитов Утечка ИНН, счетов, назначений платежа Вердикт: для юрлица берите CSV/Excel из банка",
+      "word_count": 58
+    },
+    {
+      "sentence": "Минимальный канон на листе staging : date – дата операции в виде YYYY-MM-DD amount – сумма числом, десятичный разделитель точка direction – in или out (приход/расход) counterparty – контрагент purpose – назначение платежа после TRIM account_id – ваш расчётный счёт или короткий код счёта bank – банк или продукт source_file – имя файла выгрузки row_hash – отпечаток строки для дедупа Логика hash: склейте дату + сумму + назначение + account_id в устойчивый ключ (формула хеша или конкатенация)",
+      "word_count": 61
+    }
+  ],
+  "readability": {
+    "score": 75.9,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 11.3,
+    "avg_syllables_per_word": 1.9
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "article": "memory/blog/articles/B25-bankovskaya-vypiska-staging-google-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 5,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 4,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "pose | account_id | bank | source_file | row_hash 2026-07-28 | 15000.00 | out | ООО Ромашка | Оплата по",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "uery). Рамка финконтура: от Excel к финконтуру за 30 дней . Схема контура: Клиент-банк (CSV/Excel) → raw_im",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1251",
+      "kind": "large_number",
+      "context": ". Кодировка: если кракозябры – попробуйте Windows-1251, затем UTF-8. Снимите автоконвертацию текста в чи",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15000",
+      "kind": "large_number",
+      "context": "t_id | bank | source_file | row_hash 2026-07-28 | 15000.00 | out | ООО Ромашка | Оплата по сч. 44 | 40702",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "40702",
+      "kind": "large_number",
+      "context": "15000.00 | out | ООО Ромашка | Оплата по сч. 44 | 40702... | Сбер | vypiska_0728.csv | a3f1... Нормализац",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

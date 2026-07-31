@@ -1,0 +1,33 @@
+{
+  "topic_id": "B25",
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
+  "article_dir": "memory/blog/articles/B25-bankovskaya-vypiska-staging-google-sheets",
+  "publish_date": "2026-07-31",
+  "verdict": "fail",
+  "status": "publish_blocker",
+  "dry_run": {
+    "ok": true,
+    "slug": "bankovskaya-vypiska-staging-google-sheets",
+    "title": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+    "php_bytes": 8815103
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 5,
+    "failed_count": 0,
+    "site_base": "https://koda-fd.ru"
+  },
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "blockers": [
+    "❌ PUBLISH BLOCKER: memory/site.env.local отсутствует",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH не задан (нужно yes)",
+    "FTP_*/SSH_* credentials отсутствуют в env и Cloud Secrets",
+    "PUBLIC_SITE_URL не задан",
+    "live URL https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/ → HTTP 404"
+  ],
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}
