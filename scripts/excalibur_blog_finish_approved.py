@@ -98,6 +98,17 @@ def main() -> int:
         print(json.dumps({"ok": False, "action": "qa_not_pass", "topic_id": topic_id, "dir": article_dir.name}, ensure_ascii=False))
         return 3
 
+    cover_png = article_dir / "cover" / "cover.png"
+    if not cover_png.is_file():
+        send_text(
+            token,
+            chat_id,
+            f"⚠️ {topic_id}: статья есть, но нет обложки cover/cover.png — без неё не публикую.\n"
+            f"Сгенерируй cover (агент cover / scripts/excalibur_blog_make_fallback_cover.py).",
+        )
+        print(json.dumps({"ok": False, "action": "missing_cover", "topic_id": topic_id}, ensure_ascii=False))
+        return 7
+
     if env.get("EXCALIBUR_BLOG_ALLOW_PUBLISH", "").strip().lower() != "yes":
         send_text(token, chat_id, "❌ Публикация заблокирована: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes")
         print(json.dumps({"ok": False, "action": "publish_blocked"}, ensure_ascii=False))

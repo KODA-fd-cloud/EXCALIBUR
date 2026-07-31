@@ -1,0 +1,19 @@
+{
+  "topic_id": "B25",
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
+  "cover_family": "gradient_abstract",
+  "pipeline": "fallback_pil_montserrat",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактный поток банковских данных в сетку таблицы на тёмном голографическом фоне",
+  "cover_alt_text": "Абстрактный поток банковских данных в сетку таблицы на тёмном голографическом фоне",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "generated_at": "2026-07-31T13:16:26.895237+00:00",
+  "note": "MCP gpt-image unavailable in CI fast-path; fallback branded cover",
+  "lines": [
+    "ВЫПИСКА В STAGING",
+    "БЕЗ КОПИПАСТА",
+    "HASH И ДЕДУП"
+  ]
+}
