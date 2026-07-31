@@ -322,3 +322,44 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-07-31 — B25 bankovskaya-vypiska-staging-google-sheets — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B25 |
+| slug | bankovskaya-vypiska-staging-google-sheets |
+| verdict | **FAIL / BLOCKER** |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — |
+| permalink | — (expected: https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/) |
+| method | not attempted (no credentials) |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (5/5, site-base https://koda-fd.ru) — rechecked 2026-07-31
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: PASS (slug ok, PHP bytes 8815103)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing**
+- memory/site.env.local: **missing**
+- FTP_*/SSH_*: **missing** (Cloud Secrets: only TELEGRAM_* per prior memory)
+- live HEAD expected URL: **404**
+
+### Blockers
+
+```
+❌ PUBLISH BLOCKER
+No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+EXCALIBUR_BLOG_ALLOW_PUBLISH != yes
+```
+
+### Notes
+
+- `shared/published-articles.md` **not** updated (no live OK)
+- Credentials not invented; step executed (not silent skip)
+

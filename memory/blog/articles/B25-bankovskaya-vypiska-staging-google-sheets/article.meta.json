@@ -1,0 +1,31 @@
+{
+  "topic_id": "B25",
+  "h1": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+  "title": "Как разложить банковскую выписку в staging-таблицу без ручного копипаста",
+  "description": "Банк → raw_import → staging с каноном колонок и row_hash → сверка итога. Импорт CSV в Google Sheets или Power Query без копипаста.",
+  "cover_alt": "Абстрактный поток банковских данных в сетку таблицы на тёмном голографическом фоне",
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
+  "primary_query": "банковская выписка в excel автоматически",
+  "secondary_queries": [
+    "загрузка выписки в google sheets",
+    "нормализация выписки 1с",
+    "staging таблица финансы"
+  ],
+  "char_count": 9271,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "staging банковской выписки в Google Sheets",
+    "загрузка выписки без копипаста",
+    "канон колонок и row_hash для ДДС"
+  ],
+  "meta_ab": {
+    "title_seo": "Банковская выписка в excel автоматически: staging без копипаста",
+    "title_ctr": "📊 Банковская выписка в Excel автоматически – staging-слой без копипаста",
+    "title_aeo": "Как разложить банковскую выписку в staging-таблицу без копипаста?",
+    "description_seo": "Как загрузить выписку в Google Sheets: raw_import, канон колонок, row_hash, дедуп и сверка итога с банком без ручного копипаста.",
+    "description_ctr": "⚡️ Уберите копипаст из клиента-банка: CSV → raw → staging с hash и контролем Σ приход/расход за один прогон.",
+    "description_aeo": "Staging банковской выписки – лист raw_import, канон date/amount/direction/counterparty/purpose/account_id/row_hash, затем ДДС или сверка."
+  },
+  "cover_family": "gradient_abstract"
+}

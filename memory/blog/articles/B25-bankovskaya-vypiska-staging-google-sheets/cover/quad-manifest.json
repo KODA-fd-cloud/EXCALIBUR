@@ -1,0 +1,42 @@
+{
+  "topic_id": "B25",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Копипаст выписки в Excel — ещё жив?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущая блога: мем-коллаж — копипаст банковской выписки в Excel vs staging",
+      "scene_hint": "reference-лицо (Ольга: очки, quiff/аккуратная стрижка, борода не копировать — женский хост), одежда: оверсайз худи тёмно-фиолетовое + бейдж «CSV→staging», жест «хватит копипаста»; вокруг fake скрин клиент-банка «Скачать выписку», Google Sheets с колонками date/amount/row_hash, Telegram «опять Ctrl+C 800 строк?», розовый стикер «raw_import», meme facepalm + shocked cat, розовый highlight на «копипаст», рваная бумага и скотч",
+      "meme_caption_ru": "800 строк Ctrl+C?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Разберите, зачем staging между банком и отчётом",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-таблица сравнение: банк→отчёт напрямую vs банк→raw_import→staging→ДДС; колонки риск копипаста, дедуп, сверка Σ; мини-стикер «зачем staging»; без лица героя",
+      "alt": "Сравнительная таблица: прямой импорт в отчёт vs staging-слой для банковской выписки"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Выберите файл: CSV и Excel вместо PDF и онлайн-конвертеров",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема выбора файла: клиент-банк → CSV/XLSX (зелёная галочка) vs PDF/онлайн-конвертер (красный крест); стрелки «кодировка Windows-1251»; скотч-уголок; без лица героя",
+      "alt": "Схема выбора файла выписки: CSV и Excel вместо PDF и онлайн-конвертеров"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Создайте листы книги: raw_import, staging, справочник",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист листов Google Sheets: ☐ raw_import ☐ staging ☐ справочник контрагентов; рядом мини-скрин вкладок книги; розовая sticky «канон колонок»; без лица героя",
+      "alt": "Чеклист листов книги: raw_import, staging и справочник для выписки"
+    }
+  }
+}

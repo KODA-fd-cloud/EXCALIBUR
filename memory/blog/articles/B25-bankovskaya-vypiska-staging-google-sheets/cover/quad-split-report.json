@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B25-bankovskaya-vypiska-staging-google-sheets/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1047,
+      593
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 593,
+        "end": 601
+      },
+      "v_gutter_px": {
+        "start": 1047,
+        "end": 1056
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 2,
+          "right": 1047,
+          "bottom": 591
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1047,
+          "bottom": 593
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Ведущая блога: мем-коллаж — копипаст банковской выписки в Excel vs staging",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1056,
+          "top": 17,
+          "right": 2048,
+          "bottom": 575
+        },
+        "raw_box_px": {
+          "left": 1056,
+          "top": 0,
+          "right": 2048,
+          "bottom": 593
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнительная таблица: прямой импорт в отчёт vs staging-слой для банковской выписки",
+        "h2_anchor": "Разберите, зачем staging между банком и отчётом"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 33,
+          "top": 601,
+          "right": 1013,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 601,
+          "right": 1047,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема выбора файла выписки: CSV и Excel вместо PDF и онлайн-конвертеров",
+        "h2_anchor": "Выберите файл: CSV и Excel вместо PDF и онлайн-конвертеров"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1062,
+          "top": 601,
+          "right": 2042,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1056,
+          "top": 601,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист листов книги: raw_import, staging и справочник для выписки",
+        "h2_anchor": "Создайте листы книги: raw_import, staging, справочник"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Разберите, зачем staging между банком и отчётом",
+    "injected inline_2 after H2 — Выберите файл: CSV и Excel вместо PDF и онлайн-конвертеров",
+    "injected inline_3 after H2 — Создайте листы книги: raw_import, staging, справочник"
+  ]
+}
