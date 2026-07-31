@@ -1,0 +1,24 @@
+{
+  "article": "memory/blog/articles/B25-bankovskaya-vypiska-staging-google-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 2,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "тур целиком – рядом путь от Excel к финконтуру за 30 дней . Если нужен минимализм отчётности без лишних лис",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1251",
+      "kind": "large_number",
+      "context": "ат 1CClientBankExchange (файл .txt, часто Windows-1251) – для обмена с 1С; в Sheets он попадёт только по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "source": "/workspace/memory/blog/articles/B25-bankovskaya-vypiska-staging-google-sheets/article.html",
+  "total_links": 8,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://koda-fd.ru/blog/ot-excel-k-fin-konturu-30-dney/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/ot-excel-k-fin-konturu-30-dney/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/finansovyj-minimalizm/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/finansovyj-minimalizm/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/python-finansist-sverka-csv/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/python-finansist-sverka-csv/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/google-apps-script-finansist-obnovit-dannye/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/google-apps-script-finansist-obnovit-dannye/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/"
+    },
+    {
+      "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=bankovskaya-vypiska-staging-google-sheets",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}
