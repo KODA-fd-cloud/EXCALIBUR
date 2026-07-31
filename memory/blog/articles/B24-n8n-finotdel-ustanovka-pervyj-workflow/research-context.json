@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-07-31",
+    "today_ru": "31.07.2026",
+    "year": 2026,
+    "month": 7,
+    "month_name_ru": "июль",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-07-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B24",
+    "priority": "P0",
+    "slug": "n8n-finotdel-ustanovka-pervyj-workflow",
+    "h1": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram",
+    "primary_query": "как установить n8n",
+    "secondary_queries": [
+      "n8n docker",
+      "n8n self-hosted",
+      "n8n google sheets telegram",
+      "автоматизация n8n финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B24",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как установить n8n 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как установить n8n июль 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как установить n8n новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "n8n docker 2026",
+      "purpose": "вторичный запрос: n8n docker"
+    },
+    {
+      "id": "secondary_2",
+      "query": "n8n self-hosted 2026",
+      "purpose": "вторичный запрос: n8n self-hosted"
+    },
+    {
+      "id": "secondary_3",
+      "query": "n8n google sheets telegram 2026",
+      "purpose": "вторичный запрос: n8n google sheets telegram"
+    },
+    {
+      "id": "secondary_4",
+      "query": "автоматизация n8n финансы 2026",
+      "purpose": "вторичный запрос: автоматизация n8n финансы"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как установить n8n для финотдела: Docker, HTTPS и первый workflow Sheets → Telegram 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B24-n8n-finotdel-ustanovka-pervyj-workflow",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
