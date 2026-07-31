@@ -1,0 +1,50 @@
+{
+  "topic_id": "B25",
+  "slug": "bankovskaya-vypiska-staging-google-sheets",
+  "cover_family": "gradient_abstract",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Ведущая блога: мем-коллаж — копипаст банковской выписки в Excel vs staging",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-07-31T12:11:42+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Ведущая блога: мем-коллаж — копипаст банковской выписки в Excel vs staging",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнительная таблица: прямой импорт в отчёт vs staging-слой для банковской выписки",
+      "h2_anchor": "Разберите, зачем staging между банком и отчётом",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема выбора файла выписки: CSV и Excel вместо PDF и онлайн-конвертеров",
+      "h2_anchor": "Выберите файл: CSV и Excel вместо PDF и онлайн-конвертеров",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист листов книги: raw_import, staging и справочник для выписки",
+      "h2_anchor": "Создайте листы книги: raw_import, staging, справочник",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

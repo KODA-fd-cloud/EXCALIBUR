@@ -1,0 +1,40 @@
+{
+  "topic_id": "B25",
+  "status": "ok_fallback",
+  "generation_method": "cursor_GenerateImage_fallback",
+  "mcp_mode": "image-to-image",
+  "mcp_server": null,
+  "mcp_tool": "gpt-image-2",
+  "mcp_available": false,
+  "fallback_reason": "MCP server user-mcp-kv / gpt-image-2 not connected in this Cloud run (only Cursor Automation Tools + cursor-cloud)",
+  "fallback": {
+    "tool": "Cursor GenerateImage",
+    "calls": 1,
+    "aspect_ratio": "16:9",
+    "reference_image_paths": [
+      "memory/cover/assets/blog-hero-reference.png"
+    ],
+    "prompt_source": "cover/quad-mcp-batch.json jobs[0].mcp_args.prompt",
+    "raw_output_file": "cover/canvas-quad-raw.png",
+    "raw_size_px": [1536, 1024],
+    "resize": {
+      "method": "LANCZOS",
+      "to_size_px": [2048, 1152],
+      "output": "cover/canvas-quad.png"
+    },
+    "artifact_src": "/opt/cursor/artifacts/assets/B25-canvas-quad-fallback.png"
+  },
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "input_urls_intended": [
+    "https://koda-fd.ru/assets/CAcjfm4N.jpg"
+  ],
+  "canvas": "cover/canvas-quad.png",
+  "apply": {
+    "script": "excalibur_blog_cover_quad_split.py",
+    "note": "Local canvas already written; skipped URL download via quad_apply.py",
+    "inject_html": true
+  },
+  "split_status": "PASS",
+  "generated_at": "2026-07-31T12:11:00+00:00"
+}
