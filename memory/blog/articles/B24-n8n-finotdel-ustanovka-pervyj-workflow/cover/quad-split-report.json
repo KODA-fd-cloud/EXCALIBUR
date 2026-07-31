@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B24-n8n-finotdel-ustanovka-pervyj-workflow/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1019,
+      572
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 572,
+        "end": 580
+      },
+      "v_gutter_px": {
+        "start": 1019,
+        "end": 1029
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1019,
+          "bottom": 572
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1019,
+          "bottom": 572
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Тёмный коллаж: узлы n8n Docker→HTTPS→Sheets→Telegram, стикер «свой сервер» и hook про дайджест",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1029,
+          "top": 0,
+          "right": 2048,
+          "bottom": 572
+        },
+        "raw_box_px": {
+          "left": 1029,
+          "top": 0,
+          "right": 2048,
+          "bottom": 572
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение ручных выгрузок и n8n для финотдела: время, ошибки, 152-ФЗ",
+        "h2_anchor": "Зачем финотделу свой n8n, а не только ручные выгрузки"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 580,
+          "right": 1019,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 580,
+          "right": 1019,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема выбора Cloud или self-hosted n8n под выписки и 152-ФЗ",
+        "h2_anchor": "Выберите контур: Cloud или self-hosted под выписки и 152-ФЗ"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1029,
+          "top": 580,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1029,
+          "top": 580,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист установки n8n: Docker Compose, домен, HTTPS, WEBHOOK_URL",
+        "h2_anchor": "Установите n8n: Docker Compose, домен, HTTPS и WEBHOOK_URL"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Зачем финотделу свой n8n, а не только ручные выгрузки",
+    "injected inline_2 after H2 — Выберите контур: Cloud или self-hosted под выписки и 152-ФЗ",
+    "injected inline_3 after H2 — Установите n8n: Docker Compose, домен, HTTPS и WEBHOOK_URL"
+  ]
+}

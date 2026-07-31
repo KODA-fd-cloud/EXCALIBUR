@@ -1,0 +1,42 @@
+{
+  "topic_id": "B24",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Вечер с Docker — и n8n сам шлёт дайджест в Telegram",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Тёмный коллаж: узлы n8n Docker→HTTPS→Sheets→Telegram, стикер «свой сервер» и hook про дайджест",
+      "scene_hint": "No human face. Dark #0a0a0f KODA fintech collage: glowing purple #8b5cf6 / blue #93c5fd n8n workflow nodes pipeline (Docker whale icon stylized → Traefik lock HTTPS → Google Sheets grid → Telegram paper plane), fake terminal snippet WEBHOOK_URL=https://…, pink sticky «свой контур», scotch tape, torn paper scrap with yellow highlight on «n8n», shocked cat meme cutout once, bold Cyrillic hook, 16:9 widescreen zine-on-dark aesthetic, style from reference abstract cover",
+      "meme_caption_ru": "Sheets → Telegram за вечер"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Зачем финотделу свой n8n, а не только ручные выгрузки",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-таблица «Ручные выгрузки vs n8n»: колонки Время / Ошибки / 152-ФЗ / Повтор; строки Excel-копипаст vs self-hosted workflow; галочки у n8n; розовый стикер «хватит CSV по вечерам»; без людей",
+      "alt": "Сравнение ручных выгрузок и n8n для финотдела: время, ошибки, 152-ФЗ"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Выберите контур: Cloud или self-hosted под выписки и 152-ФЗ",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Decision diagram Cloud vs self-hosted: слева облако n8n Cloud (быстрый старт, данные вне периметра), справа Docker VPS + HTTPS (выписки, ПДн, 152-ФЗ); стрелка «выписки/реестр → self-hosted»; тёмный UI + tape; без людей",
+      "alt": "Схема выбора Cloud или self-hosted n8n под выписки и 152-ФЗ"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Установите n8n: Docker Compose, домен, HTTPS и WEBHOOK_URL",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист установки: ☐ VPS ☐ DNS A-запись ☐ Docker Compose ☐ Traefik HTTPS ☐ WEBHOOK_URL ☐ первый логин; clipboard на тёмном фоне, красные галочки, мини-скрин compose.yml; стикер «без HTTP в прод»; без людей",
+      "alt": "Чеклист установки n8n: Docker Compose, домен, HTTPS, WEBHOOK_URL"
+    }
+  }
+}

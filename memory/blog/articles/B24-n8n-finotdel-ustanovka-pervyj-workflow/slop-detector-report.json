@@ -1,0 +1,26 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 3,
+  "over_long_sentences": [
+    {
+      "sentence": "Критерий n8n Cloud Self-hosted (Docker) Где данные Хостинг n8n (EU) Ваш VPS / сервер Старт Минуты, без Docker Нужны Docker, домен, HTTPS Выписки / ПДн Риск чужого контура Контролируете сами Кому брать Пилот без чувствительных полей Финотдел с реестрами и 152-ФЗ Вердикт: для сырых выписок и живых ИНН я беру self-hosted",
+      "word_count": 47
+    },
+    {
+      "sentence": "com/ N8N_ENCRYPTION_KEY=сгенерируйте_длинную_строку N8N_PROXY_HOPS=1 docker compose up -d # обновление: docker compose pull && docker compose down && docker compose up -d По умолчанию данные лежат в volume (часто SQLite в /home/node/",
+      "word_count": 27
+    },
+    {
+      "sentence": "Схема: Новая строка в Sheets → Trigger (polling) → Filter → Telegram-дайджест → (позже) напоминание по дебиторке В Telegram: дата, статья, сумма, ссылка на лист – без выписки и паспорта контрагента",
+      "word_count": 26
+    }
+  ],
+  "readability": {
+    "score": 97.2,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 8.5,
+    "avg_syllables_per_word": 1.6
+  }
+}

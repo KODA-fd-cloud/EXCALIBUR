@@ -1,0 +1,50 @@
+{
+  "topic_id": "B24",
+  "slug": "n8n-finotdel-ustanovka-pervyj-workflow",
+  "cover_family": "gradient_abstract",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Тёмный коллаж: узлы n8n Docker→HTTPS→Sheets→Telegram, стикер «свой сервер» и hook про дайджест",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-07-31T05:26:07+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Тёмный коллаж: узлы n8n Docker→HTTPS→Sheets→Telegram, стикер «свой сервер» и hook про дайджест",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение ручных выгрузок и n8n для финотдела: время, ошибки, 152-ФЗ",
+      "h2_anchor": "Зачем финотделу свой n8n, а не только ручные выгрузки",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема выбора Cloud или self-hosted n8n под выписки и 152-ФЗ",
+      "h2_anchor": "Выберите контур: Cloud или self-hosted под выписки и 152-ФЗ",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист установки n8n: Docker Compose, домен, HTTPS, WEBHOOK_URL",
+      "h2_anchor": "Установите n8n: Docker Compose, домен, HTTPS и WEBHOOK_URL",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}
