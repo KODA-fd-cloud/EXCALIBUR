@@ -2,11 +2,12 @@
   "topic_id": "B27",
   "h1": "Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram",
   "slug": "daydzhest-sobstvenniku-n8n-telegram",
-  "status": "pending",
+  "status": "writing",
   "proposed_at": 1785511740,
   "proposal_message_id": 58,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"
-  ]
+  ],
+  "ack_message_id": 60
 }
