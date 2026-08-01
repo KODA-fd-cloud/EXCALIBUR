@@ -1,14 +1,12 @@
 {
-  "topic_id": "B28",
-  "h1": "Как сверить банк и 1С без отправки ПДн в ChatGPT",
-  "slug": "sverka-bank-1c-bez-pdn",
-  "status": "writing",
-  "proposed_at": 1785551927,
-  "proposal_message_id": 72,
+  "topic_id": "B29",
+  "h1": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались",
+  "slug": "spravochnik-kategorij-dds",
+  "status": "pending",
+  "proposed_at": 1785552464,
+  "proposal_message_id": 78,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"
-  ],
-  "missing_article_notified": false,
-  "ack_message_id": 74
+  ]
 }

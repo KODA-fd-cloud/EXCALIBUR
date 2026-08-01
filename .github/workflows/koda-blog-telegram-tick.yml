@@ -86,8 +86,9 @@ jobs:
           set -euo pipefail
           pip install cursor-sdk || true
           python scripts/excalibur_blog_write_approved.py | tee write.json
-          # pull in case Cloud Agent pushed article while we waited
-          git pull --rebase origin master || true
+          # Cloud Agent pushes to master — must refresh checkout before publish
+          git fetch origin master
+          git reset --hard origin/master
 
       - name: Publish if approved (writing)
         id: finish

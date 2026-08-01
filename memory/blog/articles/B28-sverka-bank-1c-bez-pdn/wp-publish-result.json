@@ -1,0 +1,8 @@
+{
+  "slug": "sverka-bank-1c-bez-pdn",
+  "topic_id": "B28",
+  "permalink": "https://koda-fd.ru/blog/sverka-bank-1c-bez-pdn/",
+  "raw_output": "OK post=191 slug=sverka-bank-1c-bez-pdn\nOK featured_image=192\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/sverka-bank-1c-bez-pdn-dzen-cover.png\npermalink=https://koda-fd.ru/blog/sverka-bank-1c-bez-pdn/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
