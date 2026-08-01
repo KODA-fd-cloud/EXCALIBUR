@@ -2,11 +2,13 @@
   "topic_id": "B28",
   "h1": "Как сверить банк и 1С без отправки ПДн в ChatGPT",
   "slug": "sverka-bank-1c-bez-pdn",
-  "status": "pending",
+  "status": "writing",
   "proposed_at": 1785551927,
   "proposal_message_id": 72,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"
-  ]
+  ],
+  "missing_article_notified": false,
+  "ack_message_id": 74
 }
