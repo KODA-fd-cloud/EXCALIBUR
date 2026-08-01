@@ -2,28 +2,35 @@
   "article": "memory/blog/articles/B29-spravochnik-kategorij-dds/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
   "verdict": "pass",
-  "total_extracted_facts": 3,
+  "total_extracted_facts": 4,
   "verified_facts_count": 1,
-  "unverified_facts_count": 2,
+  "unverified_facts_count": 3,
   "facts": [
     {
       "fact": "2011",
       "kind": "date_or_year",
-      "context": "в кассу Не считать доходом или расходом По ПБУ 23/2011 денежные потоки в бухгалтерском ОДДС делятся на те",
+      "context": "ходом или расходом В бухгалтерском ОДДС по ПБУ 23/2011 потоки делят на текущие, инвестиционные и финансов",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "15 минут",
       "kind": "metric_or_duration",
-      "context": "строки, остальные не плодят дубли. Раз в неделю – 15 минут: просмотр строк с пустой категорией и \"Прочее\". О",
+      "context": "строки, остальные не плодят дубли. Раз в неделю – 15 минут: пустые категории и хвост \"Прочее\". По открытым о",
       "verified": true,
       "reason": "Numerical value '15' matched in fact-bank context"
     },
     {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "вочника. Маршрут от хаоса Excel – в финконтуре за 30 дней . Итоговый вердикт: единый справочник категорий Д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
       "fact": "200",
       "kind": "large_number",
-      "context": "категорий достаточно на старте На старте не нужно 200 строк. По опыту шаблонов для собственника хватает",
+      "context": "и \"логистика\", а не субсчёт 26. Можно ли завести 200 статей сразу? Можно, но на старте вредно: путают к",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     }
