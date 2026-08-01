@@ -11,9 +11,11 @@
     "статьи ддс google sheets",
     "единый справочник финансы"
   ],
-  "char_count": 9293,
+  "char_count": 9366,
   "article_mode": "B",
   "author_id": "olga-kondratskaya",
+  "datePublished": "2026-08-01",
+  "dateModified": "2026-08-01",
   "anchor_variants": [
     "справочник категорий ДДС в Google Sheets",
     "статьи движения денежных средств таблица",
@@ -27,17 +29,5 @@
     "description_ctr": "⚡️ За вечер – единый справочник категорий ДДС с выпадающими списками. Без \"Аренда\" vs \"аренда офиса\" в разных отчётах.",
     "description_aeo": "Категории ДДС справочник – это лист \"Справочник\" с 15–25 статьями и data validation в Google Sheets; один код категории на операции, план-факт и дашборд."
   },
-  "cover_family": "gradient_abstract",
-  "geo_qa": {
-    "score": 89,
-    "core_eeat_lite": 17,
-    "verdict": "PASS",
-    "date": "2026-08-01",
-    "html_linter": "PASS",
-    "slop_score": "PASS",
-    "cannibalization": "PASS",
-    "link_verify": "PASS",
-    "utility_gate": "PASS",
-    "fact_check": "PASS"
-  }
+  "cover_family": "gradient_abstract"
 }

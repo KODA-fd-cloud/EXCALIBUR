@@ -6,14 +6,15 @@
 **research_date:** 2026-08-01  
 **publish_target:** сайт koda-fd.ru/blog  
 **utility_gate:** PASS (`how_to`, mode B)  
-**related_published:** `/plan-fakt-dds-google-sheets/` (B26, очередь), `/disnejlend-dlya-dannyh/`  
-**internal_links:** `/plan-fakt-dds-google-sheets/`, `/disnejlend-dlya-dannyh/`, `/bankovskaya-vypiska-staging-google-sheets/` (B25), `/ot-excel-k-fin-konturu-30-dney/`
+**related_published:** `/disnejlend-dlya-dannyh/`, `/bankovskaya-vypiska-staging-google-sheets/` (B25)  
+**related_queue (не href до publish):** план-факт ДДС Google Sheets (B26)  
+**internal_links:** `/disnejlend-dlya-dannyh/`, `/bankovskaya-vypiska-staging-google-sheets/`; B26 — только plain text до публикации
 
 ---
 
 ## utility_verdict
 
-**PASS** — тема utility-only how-to (mode B). Читатель получает пошаговый маршрут: собрать единый лист «Справочник» категорий ДДС в Google Sheets/Excel, запретить свободный ввод через проверку данных, задать правила для «Прочее» и переводов между счетами, обучить команду одному шаблону и связать справочник с план-фактом и дашбордом. Не новость про НДС/КБК, не «что такое ДДС» без действий.
+**PASS** — тема utility-only how-to (mode B). Читатель получает пошаговый маршрут: собрать единый лист «Справочник» категорий ДДС в Google Sheets/Excel, запретить свободный ввод через проверку данных, задать правила для «Прочее» и переводов между счетами, обучить команду одному шаблону и связать справочник с план-фактом и дашбордом. Не новость про НДС/КБК/ОКПДТР, не «что такое ДДС» без действий, не настройка 1С с нуля.
 
 ---
 
@@ -33,13 +34,13 @@
 6. **Связать с операциями и staging** — лист «Движения»/staging B25: одна строка = одно движение денег; колонка «Категория» только из справочника; SUMIFS/QUERY на «Отчёт» и «План-факт» тянут те же коды.
 7. **Обучить команду одним шаблоном** — короткая памятка (1 экран): как выбрать статью, что делать с переводом, куда писать если статьи нет; запрет дублировать категории синонимами.
 8. **Проверить сходимость отчётов** — контрольная формула: остаток на конец = остаток на начало + чистый поток; сверка суммы по категориям на листах «Факт» и «Сводка»; при расхождении — искать опечатку вне справочника.
-9. **Связать с дашбордом и план-фактом** — один именованный диапазон `DDS_Categories` для всех листов; при добавлении статьи обновляется только «Справочник» (мост к B26 «план-факт ДДС»).
+9. **Связать с дашбордом и план-фактом** — один именованный диапазон `DDS_Categories` для всех листов; при добавлении статьи обновляется только «Справочник» (мост к материалу про план-факт ДДС).
 
 ---
 
 ## Яндекс Wordstat (MCP user-mcp-kv)
 
-⚠️ **WORDSTAT AUTH WARNING:** сервер MCP `user-mcp-kv` в этой сессии **не подключён** (в каталоге MCP доступен только `cursor-cloud`, инструментов `wordstat_*` нет). Точные показы/мес **не получены** и **не выдуманы**. Подключите MCP-KV / обновите токен: https://oauth.yandex.ru/authorize?response_type=token&client_id=c654b948515a4a07a4c89648a0831d40
+⚠️ **WORDSTAT AUTH WARNING:** сервер MCP `user-mcp-kv` в этой сессии **не подключён** (в каталоге MCP доступны только `cursor-cloud` / automation tools; инструментов `wordstat_*` нет). Точные показы/мес **не получены** и **не выдуманы**. Подключите MCP-KV / обновите токен: https://oauth.yandex.ru/authorize?response_type=token&client_id=c654b948515a4a07a4c89648a0831d40
 
 **Экспертная семантика (без цифр спроса) — LSI для копирайтера:**
 
@@ -51,53 +52,54 @@
 | Единый источник | единый справочник финансы, справочник категорий расходов | лид, боль «разъезжается» |
 | Управленка | управленческий учет ддс, отчет о движении денежных средств статьи | FAQ vs ПБУ |
 | 1С (контекст) | статьи движения денежных средств 1с настроить | FAQ «чем отличается от 1С» |
-| План-факт | план факт ддс excel, бддс статьи | internal → B26 |
+| План-факт | план факт ддс excel, бддс статьи | internal → B26 (plain text) |
 
-**SEO-вывод:** preflight `research-serp.json` по запросу «категории ддс справочник 2026» уехал в ОКПДТР/КБК/НДС — **нерелевантен, игнорирован**. Живой WebSearch даёт шаблоны ДДС (МойСклад, Finguin, HelpExcel) и гайды по статьям ДДС в 1С. **serp_gap КОДА:** единый справочник в Sheets/Excel с data validation и анти-хаос правилами для команды без ERP, не настройка 1С с нуля.
+**SEO-вывод:** preflight `research-serp.json` по запросу «категории ддс справочник 2026» уехал в ОКПДТР/КБК/НДС — **нерелевантен, игнорирован**. Живой WebSearch (01.08.2026) даёт методологию справочника (WiseAdvice), шаблоны ДДС (МойСклад, Finguin, PlanFact, Монолит) и гайды по статьям в 1С. **serp_gap КОДА:** единый справочник в Sheets/Excel с data validation и анти-хаос правилами для команды без ERP, не настройка 1С с нуля.
 
 ---
 
 ## SERP (WebSearch Cursor, 01.08.2026)
 
-### Primary: `категории ддс справочник` / `справочник категорий ДДС`
+### Primary: `категории ддс справочник` / `справочник статей ДДС`
 
 | # | URL | Тип | Пробел для КОДА |
 | --- | --- | --- | --- |
-| 1 | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | Правила справочника статей ДДС (1С) | Сильная методология групп; нет Sheets/validation; фокус ERP |
-| 2 | https://monuchet.ru/spravochnik/dds-dlya-sobstvennika-na-1-liste/ | ДДС на 1 листе, лист «Справочник» | Есть структура 3 листов; мало про запрет ввода и команду |
-| 3 | https://finguin.agency/shablon-dds-excel | Шаблон Excel/Sheets со «Справочником» | Продуктовый лендинг; нет регламента «Прочее» |
-| 4 | https://www.moysklad.ru/poleznoe/shablony/dds-otchet-o-dvizhenii-denezhnyh-sredstv/ | Шаблон: Настройки / Проводки / Сводная | Статьи на листе «Настройки»; upsell в ERP |
-| 5 | https://store.birdyx.ru/article/tablica-dds-google-sheets-uchet-deneg | Структура таблицы ДДС | Категории как база аналитики; коммерческий CTA |
-| 6 | https://fin-uchet.pro/blog/nastroika-spravochnikov-dlia-uprucheta | Настройка справочников управленки | Про 1С/xls-шаблоны; не пошаговый Sheets |
+| 1 | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | Правила справочника статей ДДС (методология + 1С) | Сильная методология групп; нет Sheets/validation; фокус ERP |
+| 2 | https://wiseadvice-it.ru/o-kompanii/blog/articles/dvizhenie-denezhnyh-sredstv-v-1s-8-3-stati-otchet-analiz/ | Статьи ДДС в 1С 8.3, ОДДС | ERP-howto; не Excel |
+| 3 | https://buhexpert8.ru/1s-buhgalteriya/lajfhaki-dlya-buhgaltera/putevoditel-po-spravochnikam/stati-dds/kategorii-denezhnyh-potokov.html | 3 категории потоков (ПБУ) | Норматив; не управленческий справочник Sheets |
+| 4 | https://buhuchet-info.ru/s-predpriyatie-v-voprosah-i-otvetah/s-predpriyatie/statiyi-sredstv.html | Справочник статей ДДС в 1С | Дерево групп; нет validation |
+| 5 | https://its.1c.ru/db/pubbunu30taxi/content/14/hdoc | Официальный ITS: справочник статей ДДС | Закрытый ITS; FAQ-контекст |
+
+### Secondary: `статьи ддс google sheets` / шаблоны
+
+| # | URL | Тип | Пробел для КОДА |
+| --- | --- | --- | --- |
+| 6 | https://monuchet.ru/spravochnik/dds-dlya-sobstvennika-na-1-liste/ | ДДС на 1 листе, лист «Справочник» | Есть 3 листа; мало про запрет ввода и команду |
+| 7 | https://finguin.agency/shablon-dds-excel | Шаблон Excel/Sheets со «Справочником» | Продуктовый лендинг; нет регламента «Прочее» |
+| 8 | https://www.moysklad.ru/poleznoe/shablony/dds-otchet-o-dvizhenii-denezhnyh-sredstv/ | Шаблон: Настройки / Проводки / Сводная | Статьи на листе «Настройки»; upsell в ERP |
+| 9 | https://planfact.io/tools/dds | Шаблон ДДС + Google-копия | Lead-gen; мало про анти-разъезд |
+| 10 | https://aspro.finance/blog/otchet-dds/ | Как составить отчёт ДДС | Общий обзор; Excel как «просто» без validation |
+| 11 | https://store.birdyx.ru/article/tablica-dds-google-sheets-uchet-deneg | Структура таблицы ДДС | Категории как база; коммерческий CTA |
+| 12 | https://www.helpexcel.pro/otchyot-o-dvizhenii-denezhnykh-sredstv | Статьи ДДС из выписки / нейросеть | Есть идея группировки; нет справочника+validation |
 
 ### Secondary: `классификация платежей excel`
 
 | # | URL | Тип | Пробел для КОДА |
 | --- | --- | --- | --- |
-| 7 | https://www.consultant.ru/document/cons_doc_LAW_294182/252a18c6c1ed7f73c477d440e408174114595536/ | ПБУ 23/2011: 3 вида потоков | Норматив бухотчётности; не управленческий справочник |
-| 8 | https://vse-ob-1c.ru/oplata/pbu-denezhnye-sredstva-2.html | ПБУ 23/2011 текст | То же; FAQ «чем управленка отличается» |
-| 9 | https://buhexpert8.ru/1s-buhgalteriya/kassovye-operatsii/postuplenie-v-kassu/stati-dvizheniya-denezhnyh-sredstv-v-1s-8-3-kak-nastroit.html | Статьи ДДС в 1С 8.3 | Нет Excel/Sheets |
-| 10 | https://assistant1c.com/blog/1c-buhgalteriya/prochie-operacii/dvizhenie-denezhnyh-sredstv-v-1s-8-3/ | Справочник статей ДДС 1С | Дублирует нишу 1С |
-
-### Secondary: `статьи ддс google sheets`
-
-| # | URL | Тип | Пробел для КОДА |
-| --- | --- | --- | --- |
-| 11 | https://dzen.ru/a/Yo5Lb4olU3QwCh77 | HelpExcel: лист «Справочник», Cash Flow | Есть связь ДДС↔P&L; мало про validation |
-| 12 | https://adesk.ru/blog/otchet-dds-dlia-proizvodstva-zachem-nuzhen-gde-vesti-i-kak-ego-sostavit/ | Как составить отчёт ДДС | Общий обзор |
-| 13 | https://support.google.com/docs/answer/186103?hl=ru | Официальная справка: data validation | Техника списков; нет финансового контекста |
-| 14 | https://skyeng.ru/it-industry/it/kak-sozdat-vypadayuschiy-spisok-v-google-tablitsakh/ | Выпадающие списки + лист «Справочник» | Общий IT-гайд |
+| 13 | https://www.profiz.ru/se/3_2019/plateji_i_excel/ | Excel-модель: справочник статей ДДС + коды | Есть кодификация; устаревший SE, нет Sheets-команды |
+| 14 | https://assino.ru/news/uchet-dvizheniya-denezhnyh-sredstv-v-1s-erp/ | 1С:ERP три группы статей | ERP-контекст |
+| 15 | https://support.google.com/docs/answer/186103?hl=ru | Официальная справка: data validation | Техника списков; нет финансового контекста |
 
 ### Secondary: `единый справочник финансы`
 
 | # | URL | Тип | Пробел для КОДА |
 | --- | --- | --- | --- |
-| 15 | https://dzen.ru/a/ahgaw90QUSzUkraX | Отдельная вкладка «Справочник» для списков | Про статусы/категории; не ДДС |
-| 16 | https://assino.ru/news/uchet-dvizheniya-denezhnyh-sredstv-v-1s-erp/ | 1С:ERP три группы статей | ERP-контекст |
+| 16 | https://canconsult.ru/pravila | Правила справочника доходов/расходов (ОДР=БДР) | Сильный принцип «план = факт»; не ДДС отдельно |
+| 17 | https://fin-uchet.pro/blog/nastroika-spravochnikov-dlia-uprucheta | Настройка справочников управленки | Про 1С/xls; не пошаговый Sheets |
 
 ### H1: «Как завести справочник категорий ДДС, чтобы отчёты не разъезжались»
 
-Прямых статей с таким H1 **нет**. Выдача preflight (Taiwan.md, Avito) — мусор. **serp_gap КОДА:** анти-разъезд через единый справочник + validation + регламент команды в Google Sheets, связка с план-фактом (B26) и data foundation (Disneyland).
+Прямых статей с таким H1 **нет**. Выдача preflight (ОКПДТР, Avito-мусор) — игнорирована. **serp_gap КОДА:** анти-разъезд через единый справочник + validation + регламент команды в Google Sheets, связка с план-фактом (B26) и data foundation (Disneyland).
 
 ---
 
@@ -105,12 +107,12 @@
 
 | # | Утверждение | Источник | Дата проверки |
 | --- | --- | --- | --- |
-| 1 | Денежные потоки в отчёте о ДДС (ПБУ 23/2011) делятся на **текущие, инвестиционные и финансовые** (п. 7). | https://vse-ob-1c.ru/oplata/pbu-denezhnye-sredstva-2.html | 2026-08-01 |
-| 2 | Потоки, которые нельзя однозначно отнести к виду деятельности, по ПБУ 23/2011 классифицируются как **текущие** (п. 11). | https://vse-ob-1c.ru/oplata/pbu-denezhnye-sredstva-2.html | 2026-08-01 |
-| 3 | Для группировки верхнего уровня в справочнике статей ДДС достаточно **четырёх групп**: операционная, инвестиционная, финансовая, **перемещение денежных средств** (между счетами/кассами). | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
-| 4 | Внутри каждой группы не рекомендуется создавать **более 4 уровней** подстатей; мелкие статьи объединяют по принципу существенности. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
-| 5 | Не рекомендуется заводить статью **«Прочее»** — иначе операции сваливают в неё и теряют детализацию; если завели — нужен постоянный контроль состава. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
-| 6 | При многих статьях операционной деятельности выделяют подстатьи **«Поступления средств»** и **«Выплаты средств»**. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
+| 1 | Денежные потоки в отчёте о ДДС классифицируют по **текущим, инвестиционным и финансовым** операциям (ПБУ 23/2011). | https://buhexpert8.ru/1s-buhgalteriya/lajfhaki-dlya-buhgaltera/putevoditel-po-spravochnikam/stati-dds/kategorii-denezhnyh-potokov.html | 2026-08-01 |
+| 2 | Для группировки верхнего уровня в справочнике статей ДДС достаточно **четырёх групп**: операционная, инвестиционная, финансовая, **перемещение денежных средств** (между счетами/кассами). | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
+| 3 | Внутри каждой группы не рекомендуется создавать **более 4 уровней** подстатей; мелкие статьи объединяют по принципу существенности. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
+| 4 | Не рекомендуется заводить статью **«Прочее»** — иначе операции сваливают в неё и теряют детализацию; если завели — нужен постоянный контроль состава. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
+| 5 | При многих статьях операционной деятельности выделяют подстатьи **«Поступления средств»** и **«Выплаты средств»**. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
+| 6 | Используйте **короткие названия** статей; длинные подписи обрезаются в строках отчёта. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
 | 7 | Корректность **ОДДС** зависит от того, какими статьями наполнен справочник и какие статьи закреплены в операциях. | https://wiseadvice-it.ru/o-kompanii/blog/articles/spravochnik-statei-dvizheniya-denezhnyh-sredstv/ | 2026-08-01 |
 | 8 | Для старта ДДС достаточно **5–7 статей поступлений** и **10–15 статей платежей** (второй уровень детализации). | https://monuchet.ru/spravochnik/dds-dlya-sobstvennika-na-1-liste/ | 2026-08-01 |
 | 9 | Минимальный шаблон Google Sheets: лист **«Движения»** (дата, счёт, контрагент, назначение, статья, сумма), лист **«Отчёт»** (свод по статьям/месяцам), лист **«Справочник»** (список статей). | https://monuchet.ru/spravochnik/dds-dlya-sobstvennika-na-1-liste/ | 2026-08-01 |
@@ -119,12 +121,16 @@
 | 12 | Без категорий невозможно понять, **куда уходят деньги** и где перерасход. | https://store.birdyx.ru/article/tablica-dds-google-sheets-uchet-deneg | 2026-08-01 |
 | 13 | Готовый шаблон ДДС (МойСклад): лист **«Настройки»** — виды деятельности и **статьи расходов/поступлений**; «Проводки» — операции; «Сводная» — итоги. | https://www.moysklad.ru/poleznoe/shablony/dds-otchet-o-dvizhenii-denezhnyh-sredstv/ | 2026-08-01 |
 | 14 | Шаблон Finguin: отдельный **«Справочник всех категорий»**, сгруппированных по видам деятельности; работает в Excel и Google Таблицах **без макросов**. | https://finguin.agency/shablon-dds-excel | 2026-08-01 |
-| 15 | В шаблоне HelpExcel статьи ДДС **регулируются на листе «Справочник»**; отчёт Cash Flow — свод по категориям; есть таблица соответствия статей ДДС и P&L. | https://dzen.ru/a/Yo5Lb4olU3QwCh77 | 2026-08-01 |
+| 15 | Статья учёта в ДДС — категория дохода/расхода («Аренда офиса», «Зарплата», «Выручка»); группы статей ложатся в структуру отчёта по видам деятельности. | https://aspro.finance/blog/otchet-dds/ | 2026-08-01 |
 | 16 | Формирование финансовых справочников (статьи ДДС, затрат) **не жёстко регламентировано** — руководитель задаёт структуру под свою управленческую отчётность. | https://fin-uchet.pro/blog/nastroika-spravochnikov-dlia-uprucheta | 2026-08-01 |
 | 17 | Google Sheets: при data validation значение **не из списка отклоняется** по умолчанию; для мягкого режима — «Показывать предупреждение» в расширенных настройках. | https://support.google.com/docs/answer/186103?hl=ru | 2026-08-01 |
-| 18 | Рекомендуемый паттерн: отдельный лист **«Справочник»** как единая точка управления категориями для выпадающих списков по всей книге. | https://dzen.ru/a/ahgaw90QUSzUkraX | 2026-08-01 |
+| 18 | Принцип единого справочника для плана и факта: статьи бюджета **равны** статьям в отчёте — иначе план-факт разъедется. | https://canconsult.ru/pravila | 2026-08-01 |
 | 19 | В 1С:ERP справочник статей ДДС структурирован по **трём видам деятельности** (операционная, инвестиционная, финансовая) — аналог управленческой классификации. | https://assino.ru/news/uchet-dvizheniya-denezhnyh-sredstv-v-1s-erp/ | 2026-08-01 |
 | 20 | Проверка ДДС: **остаток на конец = остаток на начало + чистый денежный поток**; несходимость указывает на пропуск или дубль операции. | https://monuchet.ru/spravochnik/dds-dlya-sobstvennika-na-1-liste/ | 2026-08-01 |
+| 21 | Практичный способ набрать статьи: взять **банковские выписки за 3 месяца**, сгруппировать платежи по типам операций. | https://www.helpexcel.pro/otchyot-o-dvizhenii-denezhnykh-sredstv | 2026-08-01 |
+| 22 | В Excel-моделях платежей полезна **цифровая кодификация** статей ДДС (код + название) для иерархии и выпадающих списков. | https://www.profiz.ru/se/3_2019/plateji_i_excel/ | 2026-08-01 |
+
+**fact-bank.md:** отдельных строк по ДДС/справочникам нет — цифры только из таблицы выше.
 
 ---
 
@@ -133,8 +139,9 @@
 | Конкурент | Что делает | Чего не даёт |
 | --- | --- | --- |
 | WiseAdvice / 1С-гайды | Правила статей в ERP | Sheets без программиста, запрет ручного ввода |
-| Шаблоны (МойСклад, Finguin) | Готовые категории | Регламент команды, анти-«Прочее», связка план-факт |
-| Монолит / Birdyx | Структура листов | Data validation, именованные диапазоны, staging B25 |
+| Шаблоны (МойСклад, Finguin, PlanFact) | Готовые категории | Регламент команды, анти-«Прочее», связка план-факт |
+| Монолит / Birdyx / Aspro | Структура листов / обзор ДДС | Data validation, именованные диапазоны, staging B25 |
+| Canconsult | Единый справочник ОДР=БДР | Применить тот же принцип к ДДС + Sheets workflow |
 
 **Позиционирование статьи:** data foundation — «Диснейленд для данных»: один справочник → все отчёты; vibe-coding опционально (Apps Script / Cursor для авто-категоризации **после** справочника, не вместо него).
 
@@ -159,9 +166,10 @@
 - **H2 из карточки:** (1) сколько категорий на старте (2) лист «Справочник» + запрет ввода (3) «Прочее» и переводы (4) обучение команды (5) связка с дашбордом и план-фактом
 - **Тон:** Ольга Кондрацкая, практик; короткие названия статей (WiseAdvice)
 - **Запрет:** длинное тире «—» в тексте статьи; эмодзи
+- **Internal:** `/disnejlend-dlya-dannyh/`, `/bankovskaya-vypiska-staging-google-sheets/` — href OK; B26 (`/plan-fakt-dds-google-sheets/`) — **plain text**, без href до publish
 
 ---
 
 ## Источники preflight
 
-`research-serp.json` — **нерелевантен** для primary (ОКПДТР, КБК, НДС, мусор по H1). Использован только secondary-блок (`store.birdyx.ru`, `adesk.ru`) как подсказка URL; факты перепроверены через WebFetch/WebSearch.
+`research-serp.json` — **нерелевантен** для primary (ОКПДТР, КБК, НДС, мусор по H1). Использован только как негативный контроль; факты и SERP — из WebSearch/WebFetch Cursor 01.08.2026.

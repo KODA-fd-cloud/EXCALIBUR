@@ -322,3 +322,35 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-01 — B29 spravochnik-kategorij-dds — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B29 |
+| slug | spravochnik-kategorij-dds |
+| verdict | **BLOCKER** |
+| post_id | — |
+| permalink | — (expected: https://koda-fd.ru/blog/spravochnik-kategorij-dds/) |
+| method | blocked (no credentials) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (4/4, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: PASS (`slug=spravochnik-kategorij-dds`, PHP bytes=7297167)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing**
+- memory/site.env.local: **missing**
+- Cloud Secrets: only TELEGRAM_* (no FTP_*/SSH_*/PUBLIC_SITE_URL)
+
+### Result
+
+```
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+`shared/published-articles.md` **not** updated (no live OK).
