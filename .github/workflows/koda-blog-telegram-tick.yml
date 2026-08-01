@@ -31,7 +31,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install deps
-        run: pip install paramiko ddgs
+        run: pip install paramiko ddgs Pillow
 
       - name: Scout refill topics
         env:

@@ -1,16 +1,12 @@
 {
-  "topic_id": "B30",
-  "h1": "Как обновлять финтаблицы через Power Query без макросов и VBA",
-  "slug": "power-query-finansist-obnovlenie",
-  "status": "queued_write",
-  "proposed_at": 1785593565,
-  "proposal_message_id": 94,
+  "topic_id": "B31",
+  "h1": "Чеклист закрытия месяца для малого финотдела: от банка до отчёта собственнику",
+  "slug": "cheklist-zakrytiya-mesyaca-finotdel",
+  "status": "pending",
+  "proposed_at": 1785596838,
+  "proposal_message_id": 102,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"
-  ],
-  "missing_article_notified": true,
-  "ack_message_id": 96,
-  "approved_at": 1785596436,
-  "write_job_started_at": 1785596439
+  ]
 }

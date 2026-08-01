@@ -1,0 +1,8 @@
+{
+  "slug": "power-query-finansist-obnovlenie",
+  "topic_id": "B30",
+  "permalink": "https://koda-fd.ru/blog/power-query-finansist-obnovlenie/",
+  "raw_output": "OK post=197 slug=power-query-finansist-obnovlenie\nOK featured_image=198\npermalink=https://koda-fd.ru/blog/power-query-finansist-obnovlenie/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
