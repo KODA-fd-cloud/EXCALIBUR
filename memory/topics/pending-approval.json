@@ -1,12 +1,13 @@
 {
-  "topic_id": "B31",
-  "h1": "Чеклист закрытия месяца для малого финотдела: от банка до отчёта собственнику",
-  "slug": "cheklist-zakrytiya-mesyaca-finotdel",
+  "topic_id": "B32",
+  "h1": "Make или n8n для финотдела: что выбрать под банк, Sheets и Telegram",
+  "slug": "make-vs-n8n-finotdel",
   "status": "pending",
-  "proposed_at": 1785596838,
-  "proposal_message_id": 102,
+  "proposed_at": 1785600741,
+  "proposal_message_id": 105,
   "chat_id": "1136346366",
   "rejected_ids": [
-    "B26"
+    "B26",
+    "B31"
   ]
 }
