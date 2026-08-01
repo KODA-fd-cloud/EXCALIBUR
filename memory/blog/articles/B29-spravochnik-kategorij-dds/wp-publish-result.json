@@ -1,0 +1,21 @@
+{
+  "slug": "spravochnik-kategorij-dds",
+  "topic_id": "B29",
+  "permalink": "",
+  "verdict": "blocker",
+  "method": "none",
+  "blockers": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH unset (≠ yes)",
+    "memory/site.env.local missing",
+    "SSH_*/FTP_* credentials not in env; Cloud secrets only TELEGRAM_BOT_TOKEN,TELEGRAM_CHAT_ID"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "dry_run": "pass",
+    "dry_run_php_bytes": 7872715,
+    "qa": "PASS",
+    "cover": "present",
+    "schema": "present"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}

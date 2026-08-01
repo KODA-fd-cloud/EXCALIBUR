@@ -1,0 +1,42 @@
+{
+  "topic_id": "B29",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "koda_gradient_abstract",
+  "style_file": "memory/cover/quad-style-koda-gradient-abstract.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Отчёты ДДС разъезжаются без одного справочника?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; MCP unavailable → GenerateImage i2i fallback",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_abstract_hook",
+      "alt": "Абстрактное дерево таксономии финансовых категорий ДДС на тёмно-фиолетовом фоне без текста",
+      "scene_hint": "Holographic taxonomy tree of cash-flow categories: glowing purple root branching into four neon clusters (ops/invest/fin/transfers) on near-black #0a0a0f, luminous nodes and links, soft particle grid, cinematic depth, NO text NO people",
+      "meme_caption_ru": "Один справочник — всё сходится"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Выберите, сколько категорий достаточно на старте",
+      "visual_type": "infographic_card",
+      "scene_hint": "Abstract infographic: compact constellation of ~20 glowing category spheres in 4 color-coded groups, balanced density suggesting 15–25 articles, purple/blue neon on #0a0a0f, NO text NO people",
+      "alt": "Инфографика: оптимальный объём 15–25 категорий ДДС в четырёх группах"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Создайте лист \"Справочник\" и запретите свободный ввод",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Abstract Sheets-like grid as luminous lattice with a locked dropdown node glowing cyan; free-text path shown as broken dim line vs validated bright path, dark UI, NO readable letters NO people",
+      "alt": "UI-схема: лист Справочник с data validation и запретом свободного ввода"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Пропишите правила для \"Прочее\" и переводов между счетами",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow of glowing arrows between two account nodes (transfers loop, not P&L) vs a muted overflow node for Prochee with a cap/limit ring; purple-blue neon process diagram, NO text NO people",
+      "alt": "Схема правил: Прочее с лимитом и переводы между счетами вне дохода/расхода"
+    }
+  }
+}

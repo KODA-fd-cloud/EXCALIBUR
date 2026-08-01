@@ -2,13 +2,49 @@
   "topic_id": "B29",
   "slug": "spravochnik-kategorij-dds",
   "cover_family": "gradient_abstract",
-  "pipeline": "cursor_generate_image_legacy_abstract",
+  "style_preset": "koda_gradient_abstract",
+  "pipeline": "quad_canvas_1x_mcp",
   "file": "cover/cover.png",
-  "dzen_file": "cover/dzen-cover.png",
-  "alt": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
-  "cover_alt_text": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
+  "alt": "Абстрактное дерево таксономии финансовых категорий ДДС на тёмно-фиолетовом фоне без текста",
   "aspect_ratio": "16:9",
-  "size": "1200x675",
-  "generated_at": "2026-08-01T07:55:00+03:00",
-  "note": "abstract holographic CGI gradient_abstract via Cursor GenerateImage; no text/letters/watermark"
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-08-01T05:11:00+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Абстрактное дерево таксономии финансовых категорий ДДС на тёмно-фиолетовом фоне без текста",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Инфографика: оптимальный объём 15–25 категорий ДДС в четырёх группах",
+      "h2_anchor": "Выберите, сколько категорий достаточно на старте",
+      "visual_type": "infographic_card",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "UI-схема: лист Справочник с data validation и запретом свободного ввода",
+      "h2_anchor": "Создайте лист \"Справочник\" и запретите свободный ввод",
+      "visual_type": "tool_screenshot",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Схема правил: Прочее с лимитом и переводы между счетами вне дохода/расхода",
+      "h2_anchor": "Пропишите правила для \"Прочее\" и переводов между счетами",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    }
+  ]
 }
