@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "mcp_mode": "fallback_GenerateImage",
+  "mcp_tool": "gpt-image-2",
+  "mcp_available": false,
+  "blocker_avoided": "user-mcp-kv / gpt-image-2 unavailable in this environment",
+  "fallback": {
+    "tool": "Cursor GenerateImage",
+    "calls": 1,
+    "reference_image_paths": [
+      "memory/cover/assets/blog-hero-reference.png"
+    ],
+    "aspect_ratio": "16:9",
+    "raw_path": "/opt/cursor/artifacts/assets/B29-canvas-quad-raw.png",
+    "raw_size": [
+      1536,
+      1024
+    ],
+    "resized_lanczos_to": [
+      2048,
+      1152
+    ],
+    "canvas_path": "memory/blog/articles/B29-spravochnik-kategorij-dds/cover/canvas-quad.png",
+    "canvas_size": [
+      2048,
+      1152
+    ]
+  },
+  "input_urls_note": "MCP input_urls skipped — local i2i via reference_image_paths",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "reference_local": "memory/cover/assets/blog-hero-reference.png",
+  "url": "",
+  "local_canvas": "cover/canvas-quad.png",
+  "created_at": "2026-08-01T05:10:34+00:00"
+}

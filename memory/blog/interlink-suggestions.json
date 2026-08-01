@@ -1,6 +1,21 @@
 {
   "site_base": "https://koda-fd.ru",
-  "total_articles": 16,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 24,
+  "opportunities_found": 2,
+  "suggestions": [
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B04-claude-code-finotdel",
+      "keyword": "claude code",
+      "context": "плодите противоречия.</li> </ul> <p>Если в команде уже есть Claude Code или другие агенты, AGENTS.md остаётся общим языком: его чит",
+      "link_replacement": "<a href=\"/blog/claude-code-finotdel/\">Claude Code</a>"
+    },
+    {
+      "source": "B28-sverka-bank-1c-bez-pdn",
+      "target": "B04-claude-code-finotdel",
+      "keyword": "claude code",
+      "context": "езличенный срез + промпт)</th>       <th>Локально (Python / Claude Code в папке)</th>     </tr>   </thead>   <tbody>     <tr>",
+      "link_replacement": "<a href=\"/blog/claude-code-finotdel/\">Claude Code</a>"
+    }
+  ]
 }
