@@ -229,6 +229,20 @@ def remind_pending(token: str, chat_id: str, pending: dict) -> dict:
 def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> dict:
     out: dict = {"decision": decision, "topic_id": pending.get("topic_id")}
     if decision == "approve":
+        # Idempotent: не спамить «Тема принята» при повторном poll того же ок
+        if pending.get("status") in {"writing", "queued_write"} and pending.get("ack_message_id"):
+            out["status"] = pending.get("status")
+            out["action"] = "already_approved"
+            out["ack_message_id"] = pending.get("ack_message_id")
+            return out
+        if pending.get("ack_message_id") and pending.get("status") == "pending":
+            # ack уже был, но status откатило git-race → восстановить writing без нового сообщения
+            pending["status"] = "writing"
+            save_pending(pending)
+            out["status"] = "writing"
+            out["action"] = "repaired_writing_no_ack"
+            out["ack_message_id"] = pending.get("ack_message_id")
+            return out
         result = send_text(
             token,
             chat_id,
@@ -240,6 +254,7 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
         pending["status"] = "writing"
         pending["missing_article_notified"] = False
         pending["ack_message_id"] = result["message_id"]
+        pending["approved_at"] = int(time.time())
         save_pending(pending)
         out["status"] = "writing"
         out["ack_message_id"] = result["message_id"]

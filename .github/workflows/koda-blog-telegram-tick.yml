@@ -8,6 +8,11 @@ on:
     - cron: "*/15 * * * *"
   workflow_dispatch:
 
+# Один тик за раз: иначе параллельные runs жрут один «ок» и спамят «Тема принята»
+concurrency:
+  group: koda-blog-telegram-tick
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -17,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -86,9 +93,14 @@ jobs:
           set -euo pipefail
           pip install cursor-sdk || true
           python scripts/excalibur_blog_write_approved.py | tee write.json
-          # Cloud Agent pushes to master — must refresh checkout before publish
+          # Cloud Agent pushes articles to master — refresh tree, but KEEP local pending/offset
+          mkdir -p /tmp/koda-tick-state
+          cp memory/topics/pending-approval.json /tmp/koda-tick-state/ || true
+          cp memory/topics/telegram-updates.offset /tmp/koda-tick-state/ || true
           git fetch origin master
           git reset --hard origin/master
+          cp /tmp/koda-tick-state/pending-approval.json memory/topics/ 2>/dev/null || true
+          cp /tmp/koda-tick-state/telegram-updates.offset memory/topics/ 2>/dev/null || true
 
       - name: Publish if approved (writing)
         id: finish

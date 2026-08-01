@@ -2,11 +2,14 @@
   "topic_id": "B29",
   "h1": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались",
   "slug": "spravochnik-kategorij-dds",
-  "status": "pending",
+  "status": "writing",
   "proposed_at": 1785552464,
   "proposal_message_id": 78,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"
-  ]
+  ],
+  "missing_article_notified": false,
+  "ack_message_id": 79,
+  "approved_at": 1785593483
 }
