@@ -1,0 +1,494 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-01",
+    "today_ru": "01.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-03",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-01 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B29",
+    "priority": "P0",
+    "slug": "spravochnik-kategorij-dds",
+    "h1": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались",
+    "primary_query": "категории ддс справочник",
+    "secondary_queries": [
+      "классификация платежей excel",
+      "статьи ддс google sheets",
+      "единый справочник финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "категории ддс справочник 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Новый ОКПДТР | Классификатор профессий и должностей 2026 ...",
+          "url": "https://classinform.ru/okpdtr2.html",
+          "snippet": ""
+        },
+        {
+          "title": "Общероссийский классификатор профессий рабочих, должностей служащих и ...",
+          "url": "https://info.vcot.info/reference/okpdtr/",
+          "snippet": "Новый классификатор профессий и должностей 2026. Новые коды ОКПДТР ОК 016-2025. Поиск ОКПДТР."
+        },
+        {
+          "title": "Общероссийский классификатор профессий рабочих, должностей служащих и ...",
+          "url": "https://normativ.kontur.ru/document?moduleId=1&documentId=502281",
+          "snippet": "Справочник ОКПДТР — официальный классификатор профессий, должностей и тарифных разрядов. Быстрый поиск по наименованиям и кодам. Актуальные данные с удобным интерфейсом."
+        },
+        {
+          "title": "Отчет ддс форма \\ 2026-2025-2024 год \\ Акты, образцы, формы, договоры ...",
+          "url": "https://www.consultant.ru/law/podborki/otchet_dds_forma/",
+          "snippet": "Введение Общероссийский классификатор профессий рабочих, должностей служащих и тарифных разрядов (ОКПДТР) является документом по стандартизации."
+        },
+        {
+          "title": "Общероссийский классификатор профессий и должностей 2026 — ОКПДТР с ...",
+          "url": "https://ppt.ru/art/rabota/klassifikator-sluj",
+          "snippet": "Подборка наиболее важных документов по вопросу Отчет ддс форма нормативно-правовые акты формы статьи консультации экспертов и многое другое."
+        },
+        {
+          "title": "Классификатор профессий обновят",
+          "url": "https://actualcomment.ru/klassifikator-professiy-obnovyat-2507010946.html",
+          "snippet": "Квалификационные справочники помогают упорядочить названия профессий и должностей. ОКПДТР делит всех работников по категориям и условиям труда, используя специальные коды. Классификатор содержит два раздела: профессии рабочих и должности служащих."
+        }
+      ],
+      "searched_at": "2026-08-01"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "категории ддс справочник август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Статья отчет о ддс \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/statya_otchet_o_dds/",
+          "snippet": ""
+        },
+        {
+          "title": "Статьи ддс \\ 2026-2025-2024 год \\ Акты, образцы, формы, договоры ...",
+          "url": "https://www.consultant.ru/law/podborki/stati_dds/",
+          "snippet": "Подборка наиболее важных документов по запросу Статья отчет о ддс (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "ФНС обновила декларацию по НДС: новые строки и коды с 2026 года",
+          "url": "https://deloprava.ru/fns-obnovila-deklaracziyu-po-nds-novye-stroki-i-kody-s-2026-goda/",
+          "snippet": "(Издательство \"Главная книга\", 2026) Все статьи отчета разделены на три вида: денежные потоки от текущих, инвестиционных и финансовых операций."
+        },
+        {
+          "title": "Новый ОКПДТР | Классификатор профессий и должностей 2026 ...",
+          "url": "https://classinform.ru/okpdtr2.html",
+          "snippet": "С отчётности за I квартал 2026 года действует обновлённая декларация по НДС. Рассказываем, какие строки добавили в разделы 3, 8 и 9, какие появились новые коды операций (в т.ч. для СВО и драгметаллов) и как подготовиться к изменениям без ошибок."
+        },
+        {
+          "title": "ГАРАНТ - Законодательство (кодексы, законы, указы, постановления) РФ ...",
+          "url": "https://www.garant.ru/",
+          "snippet": "Новый классификатор профессий и должностей 2026. Новые коды ОКПДТР ОК 016-2025. Поиск ОКПДТР."
+        },
+        {
+          "title": "База документов информационно-правовой системы ГАРАНТ",
+          "url": "https://base.garant.ru/",
+          "snippet": "Законодательство - законы и кодексы Российской Федерации. Полные тексты документов в ..."
+        }
+      ],
+      "searched_at": "2026-08-01"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "категории ддс справочник новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Статья отчет о ддс \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/statya_otchet_o_dds/",
+          "snippet": ""
+        },
+        {
+          "title": "Статьи ддс \\ 2026-2025-2024 год \\ Акты, образцы, формы, договоры ...",
+          "url": "https://www.consultant.ru/law/podborki/stati_dds/",
+          "snippet": "Подборка наиболее важных документов по запросу Статья отчет о ддс (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "ФНС обновила декларацию по НДС: новые строки и коды с 2026 года",
+          "url": "https://deloprava.ru/fns-obnovila-deklaracziyu-po-nds-novye-stroki-i-kody-s-2026-goda/",
+          "snippet": "Подборка наиболее важных документов по запросу Статьи ддс (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое). Типовая ситуация: Как заполнить отчет о движении денежных средств за 2025 г."
+        },
+        {
+          "title": "НДС в 2026 году - все свежие изменения - nalog-nalog.ru",
+          "url": "https://nalog-nalog.ru/nalogovye-izmeneniya-2026/nds-v-2026-godu-vse-svezhie-izmeneniya-nn/",
+          "snippet": "С отчётности за I квартал 2026 года действует обновлённая декларация по НДС. Рассказываем, какие строки добавили в разделы 3, 8 и 9, какие появились новые коды операций (в т.ч. для СВО и драгметаллов) и как подготовиться к изменениям без ошибок."
+        },
+        {
+          "title": "Сопоставительная таблица целевых статей расходов и кодов видов доходов ...",
+          "url": "https://minfin.gov.ru/ru/document?id_4=314021-sopostavitelnaya_tablitsa_tselevykh_statei_raskhodov_i_kodov_vidov_dokhodov_primenyayushchikhsya_pri_sostavlenii_i_ispolnenii_byudzhetov_byudzhetnoi_sistemy_rossiiskoi_federatsii_nachinaya_s_byudzhetov_na_2026_god_i_planovyi_period_2027_i_2028_godov",
+          "snippet": "НДС в 2026 году - изменений по налогу было немало. Коснулись они лимитов доходов на упрощенке, когда можно применять пониженные ставки 5% и 7%. Кроме того, повысилась ставка НДС."
+        },
+        {
+          "title": "НДС в 2026 году: повышение ставок НДС | МФППП",
+          "url": "https://support.mfppp.ru/news/buhgalteriya/nds-2026-klyuchevye-izmeneniya/",
+          "snippet": "Сопоставительная таблица целевых статей расходов и кодов видов доходов, применяющихся при составлении и исполнении бюджетов бюджетной системы Российской Федерации, начиная с бюджетов на 2026 год и плановый период 2027 и 2028 годов Скачать"
+        }
+      ],
+      "searched_at": "2026-08-01"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "классификация платежей excel 2026",
+      "purpose": "вторичный запрос: классификация платежей excel",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Минфин России :: Методический кабинет",
+          "url": "https://minfin.gov.ru/ru/perfomance/budget/classandaccounting/metod",
+          "snippet": ""
+        },
+        {
+          "title": "Справочник кодов бюджетной классификации (КБК) на 2026 год",
+          "url": "https://www.moysklad.ru/poleznoe/formy-dokumentov/spravochnik-kbk/",
+          "snippet": "Документ Сопоставительная таблица кодов классификации расходов федерального бюджета, применяемых в 2025 году, к кодам классификации расходов федерального бюджета, применяемым в 2026 ..."
+        },
+        {
+          "title": "Классификатор платежей \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/klassifikator_platezhej/",
+          "snippet": "Чтобы не использовать неправильный КБК, вы должны точно знать, за что производится платеж. На этой странице можно скачать справочник кодов бюджетной классификации на 2026 год."
+        },
+        {
+          "title": "Счет-фактура 2026: правила заполнения и образец в [Excel]",
+          "url": "https://tenchat.ru/media/5767974-schetfaktura-2026-pravila-zapolneniya-i-obrazets-v-excel",
+          "snippet": "Подборка наиболее важных документов по запросу Классификатор платежей (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Сопоставительная таблица изменений единых для бюджетов бюджетной ...",
+          "url": "https://minfin.gov.ru/ru/document?id_4=313989-sopostavitelnaya_tablitsa_izmenenii_edinykh_dlya_byudzhetov_byudzhetnoi_sistemy_rossiiskoi_federatsii_vidov_raskhodov_klassifikatsii_raskhodov_byudzhetov_primenyaemykh_v_2025_godu_k_primenyaemym_v_2026_godu_i_p",
+          "snippet": "Счет-фактура — налоговый документ, фиксирующий стоимость отгруженных товаров, оказанных услуг или выполненных работ. Любая счет-фактура при НДС служит главным юридическим основанием для принятия налога к вычету ..."
+        },
+        {
+          "title": "Коды бюджетной классификации (КБК) на 2026 год",
+          "url": "https://www.buhonline.ru/kbk-2026",
+          "snippet": "* применяются при составлении и исполнении федерального бюджета, начиная с бюджета на 2026 год и на плановый период 2027 и 2028 годов."
+        }
+      ],
+      "searched_at": "2026-08-01"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "статьи ддс google sheets 2026",
+      "purpose": "вторичный запрос: статьи ддс google sheets",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+          "url": "https://dzen.ru/a/aXnVKBD7VhuwWOqa",
+          "snippet": ""
+        },
+        {
+          "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+          "url": "https://datalopata.ru/blog/obzor-google-sheets-2026-polnyj-gajd-po-ai-i-avtomatizatsii/",
+          "snippet": "Статья автора «ИТ картель🤖» в Дзене : Согласно исследованию Forrester, к началу 2026 года более 82% компаний сегмента Enterprise перешли на гибридные облачные решения для работы с данными."
+        },
+        {
+          "title": "Таблица ДДС: как сделать удобный учет в Google Sheets",
+          "url": "https://store.birdyx.ru/article/tablica-dds-google-sheets-uchet-deneg",
+          "snippet": "Обзор google sheets 2026: узнайте о новых AI-функциях Gemini 3.0, работе с Big Data и автоматизации без кода в 2026 году."
+        },
+        {
+          "title": "Как составить отчет ДДС для производства",
+          "url": "https://adesk.ru/blog/otchet-dds-dlia-proizvodstva-zachem-nuzhen-gde-vesti-i-kak-ego-sostavit/",
+          "snippet": "Как сделать таблицу ДДС в Google Sheets: структура, учет операций, планирование и контроль денег. Пошагово + готовая таблица ДДС."
+        },
+        {
+          "title": "Как вести ДДС и ОПУ в Google Таблицах - Rutube",
+          "url": "https://rutube.ru/video/14511e729ae88c677a56208d95121f5e/",
+          "snippet": "Получить эту информацию помогает отчет ДДС. Рассказываем, как его составить, и делимся бесплатным шаблоном. Отчет о движении денежных средств, ДДС с англ. cashflow «движение денег» — это финансовый инструмент, с помощью которого можно узнать, откуда пришли деньги и на что их потратили."
+        },
+        {
+          "title": "AI + Google Sheets: 15 автоматизаций для бизнеса в 2026",
+          "url": "https://atlasceo.ru/build/atlas-594-ai-google-sheets-15-avtomatizatsiy-dlya-biznesa/",
+          "snippet": "📚 Хочешь наконец-то понять, куда уходят деньги и сколько на самом деле зарабатывает твой бизнес? В этом видео я покажу готовый шаблон Google Таблицы, который объединяет ДДС (движение денежных средств) и ОПУ (отчёт о прибылях и убытках) — два ключевых отчёта, без которых невозможно управлять финансами осознанно. 🟣 С его помощью вы сможете: вид..."
+        }
+      ],
+      "searched_at": "2026-08-01"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "единый справочник финансы 2026",
+      "purpose": "вторичный запрос: единый справочник финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "PDF ОСНОВНЫЕ НАПРАВЛЕНИЯ ЕДИНОЙ ГОСУДАРСТВЕННОЙ ДЕНЕЖНО-КРЕДИТНОЙ ПОЛИТИКИ ...",
+          "url": "https://cbr.ru/StaticHtml/File/180750/Brochure_2026(2027-2028).pdf",
+          "snippet": ""
+        },
+        {
+          "title": "Основные направления единой государственной денежно-кредитной политики ...",
+          "url": "https://cbr.ru/about_br/publ/ondkp/on_2026_2028/",
+          "snippet": "Резкая эскалация тарифных ограничений в 2026 году приведет к жесткой посадке крупнейших экономик. Негативные явления на рынке капитала, а также накопившиеся дисбалансы на финансовых рынках ..."
+        },
+        {
+          "title": "Главная страница",
+          "url": "https://budget.gov.ru/",
+          "snippet": "Из-за возникновения в 2026 году мирового финансового кризиса и усиления санкционного давления снизится как уровень потенциала российской экономики, так и темпы его роста."
+        },
+        {
+          "title": "Минфин России :: Методический кабинет",
+          "url": "https://minfin.gov.ru/ru/perfomance/budget/classandaccounting/metod",
+          "snippet": "Министерство финансов Российской Федерации minfin.gov.ru Федеральное казначейство roskazna.gov.ru Федеральная налоговая служба nalog.gov.ru Портал предоставления мер финансовой государственной поддержки"
+        },
+        {
+          "title": "Минфин России :: 2026 год",
+          "url": "https://minfin.gov.ru/ru/perfomance/budget/basis/npa/2026",
+          "snippet": "Документ Сопоставительная таблица кодов классификации расходов федерального бюджета, применяемых в 2025 году, к кодам классификации расходов федерального бюджета, применяемым в 2026 ..."
+        },
+        {
+          "title": "PDF ОСНОВНЫЕ НАПРАВЛЕНИЯ ЕДИНОЙ ГОСУДАРСТВЕННОЙ ДЕН",
+          "url": "http://council.gov.ru/media/files/9vZArZ5D2P0B4PwUT8L1f8o4OKMzUCcY.pdf",
+          "snippet": "2026 год 1 документ Федеральный бюджет ОБАС Опубликовано: 05.09.2025Изменено: 05.09.2025"
+        }
+      ],
+      "searched_at": "2026-08-01"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Про Taiwan.md | Taiwan.md",
+          "url": "https://taiwan.md/ru/about/",
+          "snippet": ""
+        },
+        {
+          "title": "gist:6180dd43bfa2b14ea69b7636c4eb19de · GitHub",
+          "url": "https://gist.github.com/tweeksy702/6180dd43bfa2b14ea69b7636c4eb19de",
+          "snippet": "Декларация цифрового организма обрела форму: Taiwan.md — это не просто веб-сайт, а цифровой организм, который учится рассказывать историю острова. 2026 / 03 / 27"
+        },
+        {
+          "title": "Астрология Со Светланой Стрельцовой: Эзотерика — Статистика Канала Max ...",
+          "url": "https://maxdash.ru/channel/channel_strelcova_astro",
+          "snippet": "[!warning] Совет Не зубри команды. Каждый день пробуй одну новую команду в терминале и записывай в заметку linux_cheatsheet.md. Через 2 месяца у тебя будет свой справочник."
+        },
+        {
+          "title": "bmw 125 - Купить мотоциклы и мототехнику ️ в Казани | Б/у и новые ...",
+          "url": "https://www.avito.ru/kazan/mototsikly_i_mototehnika?q=bmw+125",
+          "snippet": "— Конфликты в августе чаще возникают не в лоб, а исподтишка: кто-то обижается молча, кто-то накапливает недовольство. 📍 12 августа — Солнечное затмение во Льве Одно из главных событий ..."
+        },
+        {
+          "title": "Пять жизней одного шпиона. Жизнь пятая. Судьба рез",
+          "url": "https://proza.ru/2026/07/28/714",
+          "snippet": "🏍️ 59 объявлений о продаже мотоциклов и мототехники в Казани на Авито. 🛵Вы можете купить новые и подержанные мотоциклы по низким ценам. Большой выбор б/у и новых мотоциклов с разным объёмом двигателя: выгодные ..."
+        },
+        {
+          "title": "Ваш ИИ-помощник Claude. От установки до первых проектов (fb2)",
+          "url": "https://ru.flibusta.is/b/882713/read",
+          "snippet": "Пять жизней одного шпиона. Жизнь пятая. Судьба рез Игорь Хатковский Пятая жизнь. Судьба резидента. Глава первая Выжить любой ценой."
+        }
+      ],
+      "searched_at": "2026-08-01"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://classinform.ru/okpdtr2.html",
+      "title": "Новый ОКПДТР | Классификатор профессий и должностей 2026 ...",
+      "from_query": "категории ддс справочник 2026"
+    },
+    {
+      "url": "https://info.vcot.info/reference/okpdtr/",
+      "title": "Общероссийский классификатор профессий рабочих, должностей служащих и ...",
+      "from_query": "категории ддс справочник 2026"
+    },
+    {
+      "url": "https://normativ.kontur.ru/document?moduleId=1&documentId=502281",
+      "title": "Общероссийский классификатор профессий рабочих, должностей служащих и ...",
+      "from_query": "категории ддс справочник 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/otchet_dds_forma/",
+      "title": "Отчет ддс форма \\ 2026-2025-2024 год \\ Акты, образцы, формы, договоры ...",
+      "from_query": "категории ддс справочник 2026"
+    },
+    {
+      "url": "https://ppt.ru/art/rabota/klassifikator-sluj",
+      "title": "Общероссийский классификатор профессий и должностей 2026 — ОКПДТР с ...",
+      "from_query": "категории ддс справочник 2026"
+    },
+    {
+      "url": "https://actualcomment.ru/klassifikator-professiy-obnovyat-2507010946.html",
+      "title": "Классификатор профессий обновят",
+      "from_query": "категории ддс справочник 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/statya_otchet_o_dds/",
+      "title": "Статья отчет о ддс \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "категории ддс справочник август 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/stati_dds/",
+      "title": "Статьи ддс \\ 2026-2025-2024 год \\ Акты, образцы, формы, договоры ...",
+      "from_query": "категории ддс справочник август 2026"
+    },
+    {
+      "url": "https://deloprava.ru/fns-obnovila-deklaracziyu-po-nds-novye-stroki-i-kody-s-2026-goda/",
+      "title": "ФНС обновила декларацию по НДС: новые строки и коды с 2026 года",
+      "from_query": "категории ддс справочник август 2026"
+    },
+    {
+      "url": "https://www.garant.ru/",
+      "title": "ГАРАНТ - Законодательство (кодексы, законы, указы, постановления) РФ ...",
+      "from_query": "категории ддс справочник август 2026"
+    },
+    {
+      "url": "https://base.garant.ru/",
+      "title": "База документов информационно-правовой системы ГАРАНТ",
+      "from_query": "категории ддс справочник август 2026"
+    },
+    {
+      "url": "https://nalog-nalog.ru/nalogovye-izmeneniya-2026/nds-v-2026-godu-vse-svezhie-izmeneniya-nn/",
+      "title": "НДС в 2026 году - все свежие изменения - nalog-nalog.ru",
+      "from_query": "категории ддс справочник новости 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/document?id_4=314021-sopostavitelnaya_tablitsa_tselevykh_statei_raskhodov_i_kodov_vidov_dokhodov_primenyayushchikhsya_pri_sostavlenii_i_ispolnenii_byudzhetov_byudzhetnoi_sistemy_rossiiskoi_federatsii_nachinaya_s_byudzhetov_na_2026_god_i_planovyi_period_2027_i_2028_godov",
+      "title": "Сопоставительная таблица целевых статей расходов и кодов видов доходов ...",
+      "from_query": "категории ддс справочник новости 2026"
+    },
+    {
+      "url": "https://support.mfppp.ru/news/buhgalteriya/nds-2026-klyuchevye-izmeneniya/",
+      "title": "НДС в 2026 году: повышение ставок НДС | МФППП",
+      "from_query": "категории ддс справочник новости 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/perfomance/budget/classandaccounting/metod",
+      "title": "Минфин России :: Методический кабинет",
+      "from_query": "классификация платежей excel 2026"
+    },
+    {
+      "url": "https://www.moysklad.ru/poleznoe/formy-dokumentov/spravochnik-kbk/",
+      "title": "Справочник кодов бюджетной классификации (КБК) на 2026 год",
+      "from_query": "классификация платежей excel 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/klassifikator_platezhej/",
+      "title": "Классификатор платежей \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "классификация платежей excel 2026"
+    },
+    {
+      "url": "https://tenchat.ru/media/5767974-schetfaktura-2026-pravila-zapolneniya-i-obrazets-v-excel",
+      "title": "Счет-фактура 2026: правила заполнения и образец в [Excel]",
+      "from_query": "классификация платежей excel 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/document?id_4=313989-sopostavitelnaya_tablitsa_izmenenii_edinykh_dlya_byudzhetov_byudzhetnoi_sistemy_rossiiskoi_federatsii_vidov_raskhodov_klassifikatsii_raskhodov_byudzhetov_primenyaemykh_v_2025_godu_k_primenyaemym_v_2026_godu_i_p",
+      "title": "Сопоставительная таблица изменений единых для бюджетов бюджетной ...",
+      "from_query": "классификация платежей excel 2026"
+    },
+    {
+      "url": "https://www.buhonline.ru/kbk-2026",
+      "title": "Коды бюджетной классификации (КБК) на 2026 год",
+      "from_query": "классификация платежей excel 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aXnVKBD7VhuwWOqa",
+      "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+      "from_query": "статьи ддс google sheets 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/obzor-google-sheets-2026-polnyj-gajd-po-ai-i-avtomatizatsii/",
+      "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+      "from_query": "статьи ддс google sheets 2026"
+    },
+    {
+      "url": "https://store.birdyx.ru/article/tablica-dds-google-sheets-uchet-deneg",
+      "title": "Таблица ДДС: как сделать удобный учет в Google Sheets",
+      "from_query": "статьи ддс google sheets 2026"
+    },
+    {
+      "url": "https://adesk.ru/blog/otchet-dds-dlia-proizvodstva-zachem-nuzhen-gde-vesti-i-kak-ego-sostavit/",
+      "title": "Как составить отчет ДДС для производства",
+      "from_query": "статьи ддс google sheets 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/14511e729ae88c677a56208d95121f5e/",
+      "title": "Как вести ДДС и ОПУ в Google Таблицах - Rutube",
+      "from_query": "статьи ддс google sheets 2026"
+    },
+    {
+      "url": "https://atlasceo.ru/build/atlas-594-ai-google-sheets-15-avtomatizatsiy-dlya-biznesa/",
+      "title": "AI + Google Sheets: 15 автоматизаций для бизнеса в 2026",
+      "from_query": "статьи ддс google sheets 2026"
+    },
+    {
+      "url": "https://cbr.ru/StaticHtml/File/180750/Brochure_2026(2027-2028).pdf",
+      "title": "PDF ОСНОВНЫЕ НАПРАВЛЕНИЯ ЕДИНОЙ ГОСУДАРСТВЕННОЙ ДЕНЕЖНО-КРЕДИТНОЙ ПОЛИТИКИ ...",
+      "from_query": "единый справочник финансы 2026"
+    },
+    {
+      "url": "https://cbr.ru/about_br/publ/ondkp/on_2026_2028/",
+      "title": "Основные направления единой государственной денежно-кредитной политики ...",
+      "from_query": "единый справочник финансы 2026"
+    },
+    {
+      "url": "https://budget.gov.ru/",
+      "title": "Главная страница",
+      "from_query": "единый справочник финансы 2026"
+    },
+    {
+      "url": "https://minfin.gov.ru/ru/perfomance/budget/basis/npa/2026",
+      "title": "Минфин России :: 2026 год",
+      "from_query": "единый справочник финансы 2026"
+    },
+    {
+      "url": "http://council.gov.ru/media/files/9vZArZ5D2P0B4PwUT8L1f8o4OKMzUCcY.pdf",
+      "title": "PDF ОСНОВНЫЕ НАПРАВЛЕНИЯ ЕДИНОЙ ГОСУДАРСТВЕННОЙ ДЕН",
+      "from_query": "единый справочник финансы 2026"
+    },
+    {
+      "url": "https://taiwan.md/ru/about/",
+      "title": "Про Taiwan.md | Taiwan.md",
+      "from_query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026"
+    },
+    {
+      "url": "https://gist.github.com/tweeksy702/6180dd43bfa2b14ea69b7636c4eb19de",
+      "title": "gist:6180dd43bfa2b14ea69b7636c4eb19de · GitHub",
+      "from_query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026"
+    },
+    {
+      "url": "https://maxdash.ru/channel/channel_strelcova_astro",
+      "title": "Астрология Со Светланой Стрельцовой: Эзотерика — Статистика Канала Max ...",
+      "from_query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026"
+    },
+    {
+      "url": "https://www.avito.ru/kazan/mototsikly_i_mototehnika?q=bmw+125",
+      "title": "bmw 125 - Купить мотоциклы и мототехнику ️ в Казани | Б/у и новые ...",
+      "from_query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026"
+    },
+    {
+      "url": "https://proza.ru/2026/07/28/714",
+      "title": "Пять жизней одного шпиона. Жизнь пятая. Судьба рез",
+      "from_query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026"
+    },
+    {
+      "url": "https://ru.flibusta.is/b/882713/read",
+      "title": "Ваш ИИ-помощник Claude. От установки до первых проектов (fb2)",
+      "from_query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026"
+    }
+  ]
+}

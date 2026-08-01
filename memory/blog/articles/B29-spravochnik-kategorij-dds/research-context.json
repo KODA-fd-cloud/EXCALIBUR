@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-01",
+    "today_ru": "01.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-03",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-01 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B29",
+    "priority": "P0",
+    "slug": "spravochnik-kategorij-dds",
+    "h1": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались",
+    "primary_query": "категории ддс справочник",
+    "secondary_queries": [
+      "классификация платежей excel",
+      "статьи ддс google sheets",
+      "единый справочник финансы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B29",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "категории ддс справочник 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "категории ддс справочник август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "категории ддс справочник новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "классификация платежей excel 2026",
+      "purpose": "вторичный запрос: классификация платежей excel"
+    },
+    {
+      "id": "secondary_2",
+      "query": "статьи ддс google sheets 2026",
+      "purpose": "вторичный запрос: статьи ддс google sheets"
+    },
+    {
+      "id": "secondary_3",
+      "query": "единый справочник финансы 2026",
+      "purpose": "вторичный запрос: единый справочник финансы"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B29-spravochnik-kategorij-dds",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

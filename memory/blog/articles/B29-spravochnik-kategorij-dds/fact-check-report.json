@@ -1,0 +1,31 @@
+{
+  "article": "memory/blog/articles/B29-spravochnik-kategorij-dds/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 3,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "2011",
+      "kind": "date_or_year",
+      "context": "в кассу Не считать доходом или расходом По ПБУ 23/2011 денежные потоки в бухгалтерском ОДДС делятся на те",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 минут",
+      "kind": "metric_or_duration",
+      "context": "строки, остальные не плодят дубли. Раз в неделю – 15 минут: просмотр строк с пустой категорией и \"Прочее\". О",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "категорий достаточно на старте На старте не нужно 200 строк. По опыту шаблонов для собственника хватает",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

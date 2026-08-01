@@ -1,0 +1,14 @@
+{
+  "topic_id": "B29",
+  "slug": "spravochnik-kategorij-dds",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
+  "cover_alt_text": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "generated_at": "2026-08-01T07:55:00+03:00",
+  "note": "abstract holographic CGI gradient_abstract via Cursor GenerateImage; no text/letters/watermark"
+}
