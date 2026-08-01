@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """After Telegram ok (pending status=writing): publish ready article or report blocker.
 
-Used by GitHub Actions so «Принято, пишу…» is followed by a real URL.
+Used by GitHub Actions so ┬л╨Я╤А╨╕╨╜╤П╤В╨╛, ╨┐╨╕╤И╤ГтАж┬╗ is followed by a real URL.
 """
 from __future__ import annotations
 
@@ -78,19 +78,20 @@ def main() -> int:
 
     article_dir = find_article_dir(topic_id)
     if article_dir is None:
-        # Do NOT spam Telegram every 15 min — write_approved owns the one-shot notice.
+        # Do NOT spam Telegram every 15 min тАФ write_approved owns the one-shot notice.
         pending["status"] = "queued_write"
         save_pending(pending)
+        # exit 0 тАФ ╨╕╨╜╨░╤З╨╡ GHA ╤Б set -e ╨║╤А╨░╤Б╨╜╤Л╨╣ ╨║╨░╨╢╨┤╤Л╨╡ 15 ╨╝╨╕╨╜ ╨┐╤А╨╕ ╨╛╤З╨╡╤А╨╡╨┤╨╕ ╨╜╨░ ╨╜╨░╨┐╨╕╤Б╨░╨╜╨╕╨╡
         print(json.dumps({"ok": False, "action": "missing_article", "topic_id": topic_id}, ensure_ascii=False))
-        return 2
+        return 0
 
     if not qa_pass(article_dir):
         if not pending.get("qa_fail_notified"):
             send_text(
                 token,
                 chat_id,
-                f"⚠️ {topic_id}: статья есть, но GEO QA не PASS — публикацию пропускаю.\n"
-                f"Папка: {article_dir.name}",
+                f"тЪая╕П {topic_id}: ╤Б╤В╨░╤В╤М╤П ╨╡╤Б╤В╤М, ╨╜╨╛ GEO QA ╨╜╨╡ PASS тАФ ╨┐╤Г╨▒╨╗╨╕╨║╨░╤Ж╨╕╤О ╨┐╤А╨╛╨┐╤Г╤Б╨║╨░╤О.\n"
+                f"╨Я╨░╨┐╨║╨░: {article_dir.name}",
             )
             pending["qa_fail_notified"] = True
             save_pending(pending)
@@ -103,7 +104,7 @@ def main() -> int:
             send_text(
                 token,
                 chat_id,
-                f"⚠️ {topic_id}: статья есть, но нет обложки cover/cover.png — без неё не публикую.",
+                f"тЪая╕П {topic_id}: ╤Б╤В╨░╤В╤М╤П ╨╡╤Б╤В╤М, ╨╜╨╛ ╨╜╨╡╤В ╨╛╨▒╨╗╨╛╨╢╨║╨╕ cover/cover.png тАФ ╨▒╨╡╨╖ ╨╜╨╡╤С ╨╜╨╡ ╨┐╤Г╨▒╨╗╨╕╨║╤Г╤О.",
             )
             pending["missing_cover_notified"] = True
             save_pending(pending)
@@ -111,16 +112,16 @@ def main() -> int:
         return 7
 
     if env.get("EXCALIBUR_BLOG_ALLOW_PUBLISH", "").strip().lower() != "yes":
-        send_text(token, chat_id, "❌ Публикация заблокирована: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes")
+        send_text(token, chat_id, "тЭМ ╨Я╤Г╨▒╨╗╨╕╨║╨░╤Ж╨╕╤П ╨╖╨░╨▒╨╗╨╛╨║╨╕╤А╨╛╨▓╨░╨╜╨░: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes")
         print(json.dumps({"ok": False, "action": "publish_blocked"}, ensure_ascii=False))
         return 4
 
-    send_text(token, chat_id, f"⏳ {topic_id}: статья готова, публикую на сайт…")
+    send_text(token, chat_id, f"тП│ {topic_id}: ╤Б╤В╨░╤В╤М╤П ╨│╨╛╤В╨╛╨▓╨░, ╨┐╤Г╨▒╨╗╨╕╨║╤Г╤О ╨╜╨░ ╤Б╨░╨╣╤ВтАж")
 
     try:
         out = publish_via_docker(article_dir, env)
     except Exception as e:
-        send_text(token, chat_id, f"❌ {topic_id}: публикация упала: {e}")
+        send_text(token, chat_id, f"тЭМ {topic_id}: ╨┐╤Г╨▒╨╗╨╕╨║╨░╤Ж╨╕╤П ╤Г╨┐╨░╨╗╨░: {e}")
         print(json.dumps({"ok": False, "action": "publish_error", "error": str(e)}, ensure_ascii=False))
         return 5
 
@@ -145,7 +146,7 @@ def main() -> int:
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     if result["verdict"] != "pass":
-        send_text(token, chat_id, f"❌ {topic_id}: publish не вернул OK post=\n{out[:500]}")
+        send_text(token, chat_id, f"тЭМ {topic_id}: publish ╨╜╨╡ ╨▓╨╡╤А╨╜╤Г╨╗ OK post=\n{out[:500]}")
         print(json.dumps({"ok": False, "action": "publish_fail", "out": out[:1000]}, ensure_ascii=False))
         return 6
 
@@ -153,11 +154,11 @@ def main() -> int:
     rejected = list(pending.get("rejected_ids") or [])
     pending["status"] = "published"
     pending["published_url"] = permalink
-    # Keep rejected_ids — иначе после publish снова предложит темы, которые уже «нет»
+    # Keep rejected_ids тАФ ╨╕╨╜╨░╤З╨╡ ╨┐╨╛╤Б╨╗╨╡ publish ╤Б╨╜╨╛╨▓╨░ ╨┐╤А╨╡╨┤╨╗╨╛╨╢╨╕╤В ╤В╨╡╨╝╤Л, ╨║╨╛╤В╨╛╤А╤Л╨╡ ╤Г╨╢╨╡ ┬л╨╜╨╡╤В┬╗
     pending["rejected_ids"] = rejected
     save_pending(pending)
 
-    send_text(token, chat_id, f"🚀 Опубликовано\n\n{topic_id}: {h1 or payload.get('h1', '')}\n{permalink}")
+    send_text(token, chat_id, f"ЁЯЪА ╨Ю╨┐╤Г╨▒╨╗╨╕╨║╨╛╨▓╨░╨╜╨╛\n\n{topic_id}: {h1 or payload.get('h1', '')}\n{permalink}")
 
     # Immediately propose next topic so queue doesn't stall until next cron
     nxt = next_topic(skip_ids={topic_id})
@@ -168,9 +169,9 @@ def main() -> int:
         send_text(
             token,
             chat_id,
-            "📭 После публикации очередь карточек пуста.\n"
-            "Бот не генерирует темы сам — только предлагает из blog-topics.md.\n"
-            "Дозаправь Bxx или запусти Scout.",
+            "ЁЯУн ╨Я╨╛╤Б╨╗╨╡ ╨┐╤Г╨▒╨╗╨╕╨║╨░╤Ж╨╕╨╕ ╨╛╤З╨╡╤А╨╡╨┤╤М ╨║╨░╤А╤В╨╛╤З╨╡╨║ ╨┐╤Г╤Б╤В╨░.\n"
+            "╨С╨╛╤В ╨╜╨╡ ╨│╨╡╨╜╨╡╤А╨╕╤А╤Г╨╡╤В ╤В╨╡╨╝╤Л ╤Б╨░╨╝ тАФ ╤В╨╛╨╗╤М╨║╨╛ ╨┐╤А╨╡╨┤╨╗╨░╨│╨░╨╡╤В ╨╕╨╖ blog-topics.md.\n"
+            "╨Ф╨╛╨╖╨░╨┐╤А╨░╨▓╤М Bxx ╨╕╨╗╨╕ ╨╖╨░╨┐╤Г╤Б╤В╨╕ Scout.",
         )
         action_next = "queue_empty"
 
