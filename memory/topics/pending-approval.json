@@ -1,15 +1,12 @@
 {
-  "topic_id": "B29",
-  "h1": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались",
-  "slug": "spravochnik-kategorij-dds",
-  "status": "writing",
-  "proposed_at": 1785552464,
-  "proposal_message_id": 78,
+  "topic_id": "B30",
+  "h1": "Как обновлять финтаблицы через Power Query без макросов и VBA",
+  "slug": "power-query-finansist-obnovlenie",
+  "status": "pending",
+  "proposed_at": 1785593565,
+  "proposal_message_id": 94,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"
-  ],
-  "missing_article_notified": false,
-  "ack_message_id": 79,
-  "approved_at": 1785593483
+  ]
 }
