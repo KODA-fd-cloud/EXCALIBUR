@@ -322,3 +322,41 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-01 — B29 spravochnik-kategorij-dds — **BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B29 |
+| slug | spravochnik-kategorij-dds |
+| verdict | **FAIL / PUBLISH BLOCKER** |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — |
+| permalink | — |
+| method | none |
+
+### Preconditions
+
+- article-qa.md: PASS (90/100)
+- link-verify.json: pass (5/5, site-base https://koda-fd.ru) — recheck OK
+- schema.jsonld: present
+- cover/cover.png + alt + 3 inline: present
+- dry-run: OK (slug/title, PHP payload built)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing** (≠ yes)
+- credentials: **missing** (`memory/site.env.local` отсутствует; SSH_*/FTP_* не в Cloud Secrets)
+- PUBLIC_SITE_URL: **missing**
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+Причина: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes; нет SSH_*/FTP_* и site.env.local.
+Ledger (shared/published-articles.md) не обновлён.
+```
+
+### Next
+
+Добавить в Cloud Secrets: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL=https://koda-fd.ru`, `SSH_*` или `FTP_*` → повторить publish.

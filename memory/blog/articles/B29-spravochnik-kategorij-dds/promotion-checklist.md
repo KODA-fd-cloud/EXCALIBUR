@@ -1,9 +1,10 @@
 # Promotion checklist — B29 spravochnik-kategorij-dds
 
 Дата публикации: 2026-08-01  
-Live URL: https://koda-fd.ru/blog/spravochnik-kategorij-dds/
+Live URL: — (publish blocker; ожидаемый permalink после publish: https://koda-fd.ru/blog/spravochnik-kategorij-dds/)
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
+Publish 2026-08-01: ❌ BLOCKER — нет EXCALIBUR_BLOG_ALLOW_PUBLISH / credentials.
 
 ## Сразу после publish
 
