@@ -6,6 +6,13 @@
       "topic_scene_descriptor": "writer at laptop with notebook and coffee, warm editorial light, abstract SEO graph shapes, brand collage layers",
       "cover_alt_text": "Обложка: автор готовит SEO-статью за ноутбуком",
       "archetype": "how_to"
+    },
+    "B29": {
+      "topic_id": "B29",
+      "slug": "spravochnik-kategorij-dds",
+      "topic_scene_descriptor": "holographic taxonomy tree of cash-flow categories branching into four neon clusters on near-black, luminous nodes and links, soft particle grid",
+      "cover_alt_text": "Абстрактное дерево таксономии финансовых категорий ДДС на тёмно-фиолетовом фоне без текста",
+      "archetype": "how_to"
     }
   }
 }

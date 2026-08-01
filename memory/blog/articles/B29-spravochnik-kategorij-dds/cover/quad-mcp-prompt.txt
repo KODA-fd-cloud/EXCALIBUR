@@ -1,0 +1,15 @@
+KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic,
+Single canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each). Optional thin white gutters ONLY on the exact center lines (x=1024 and y=576); keep all panel content strictly inside its quadrant — no bleed across seams.
+Style-match the input reference: dark holographic purple-blue neon network aesthetic, no humans.
+
+Top-left COVER — hook "Отчёты ДДС разъезжаются без одного справочника?":
+Holographic taxonomy tree of cash-flow categories: glowing purple root branching into four neon clusters (ops/invest/fin/transfers) on near-black #0a0a0f, luminous nodes and links, soft particle grid, cinematic depth, NO text NO people.
+
+Top-right — [infographic_card] Abstract infographic: compact constellation of ~20 glowing category spheres in 4 color-coded groups, balanced density suggesting 15–25 articles, purple/blue neon on #0a0a0f, NO text NO people.
+
+Bottom-left — [tool_screenshot] Abstract Sheets-like grid as luminous lattice with a locked dropdown node glowing cyan; free-text path shown as broken dim line vs validated bright path, dark UI, NO readable letters NO people.
+
+Bottom-right — [workflow_diagram] Workflow of glowing arrows between two account nodes (transfers loop, not P&L) vs a muted overflow node for Prochee with a cap/limit ring; purple-blue neon process diagram, NO text NO people.
+
+match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots with readable text NO Cyrillic on image.
+Negative: text, letters, words, watermark, logo, people, faces, stock photo, meme collage, torn paper, yellow headline typography, koda-fd.ru on image, bleed across panel seams
