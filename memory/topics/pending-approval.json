@@ -1,13 +1,14 @@
 {
-  "topic_id": "B32",
-  "h1": "Make или n8n для финотдела: что выбрать под банк, Sheets и Telegram",
-  "slug": "make-vs-n8n-finotdel",
+  "topic_id": "B33",
+  "h1": "Как вести реестр актов сверки и контролировать ответы контрагентов без CRM",
+  "slug": "akty-sverki-reestr-kontrol",
   "status": "pending",
-  "proposed_at": 1785608909,
-  "proposal_message_id": 107,
+  "proposed_at": 1785613509,
+  "proposal_message_id": 110,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
-    "B31"
+    "B31",
+    "B32"
   ]
 }
