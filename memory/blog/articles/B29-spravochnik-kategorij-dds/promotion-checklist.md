@@ -1,7 +1,7 @@
 # Promotion checklist — B29 spravochnik-kategorij-dds
 
-Дата публикации: 2026-08-01  
-Live URL: https://koda-fd.ru/blog/spravochnik-kategorij-dds/
+Дата публикации: 2026-08-01 (planned; WP publish BLOCKER — нет credentials/allow)  
+Live URL: (ожидаемый) https://koda-fd.ru/blog/spravochnik-kategorij-dds/ — **не подтверждён live**
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
