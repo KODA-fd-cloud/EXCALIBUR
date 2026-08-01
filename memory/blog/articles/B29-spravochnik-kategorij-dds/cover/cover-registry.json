@@ -2,13 +2,55 @@
   "topic_id": "B29",
   "slug": "spravochnik-kategorij-dds",
   "cover_family": "gradient_abstract",
-  "pipeline": "cursor_generate_image_legacy_abstract",
+  "style_preset": "koda_gradient_abstract",
+  "pipeline": "quad_canvas_1x_mcp",
   "file": "cover/cover.png",
-  "dzen_file": "cover/dzen-cover.png",
   "alt": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
-  "cover_alt_text": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
   "aspect_ratio": "16:9",
-  "size": "1200x675",
-  "generated_at": "2026-08-01T07:55:00+03:00",
-  "note": "abstract holographic CGI gradient_abstract via Cursor GenerateImage; no text/letters/watermark"
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-08-01T12:10:15+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Инфографика: компактный стартовый набор категорий ДДС против перегруженного дерева",
+      "h2_anchor": "Выберите, сколько категорий достаточно на старте",
+      "visual_type": "infographic_card",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема: единый справочник категорий блокирует свободный ввод и кормит отчёты",
+      "h2_anchor": "Создайте лист \"Справочник\" и запретите свободный ввод",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Сравнение: чёрная дыра «Прочее» против чистых перемещений между счетами",
+      "h2_anchor": "Пропишите правила для \"Прочее\" и переводов между счетами",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "mcp_actual": "GenerateImage fallback",
+  "mcp_mode": "image-to-image",
+  "reference_url": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "note": "user-mcp-kv/gpt-image-2 unavailable; ONE Cursor GenerateImage i2i with koda-ui-style-reference + style-ref URL; resize 2048x1152; quad split+inject",
+  "cover_alt_text": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста"
 }

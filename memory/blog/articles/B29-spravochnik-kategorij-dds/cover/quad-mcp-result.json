@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "mcp_requested": "user-mcp-kv/gpt-image-2",
+  "mcp_actual": "GenerateImage fallback",
+  "mcp_mode": "image-to-image",
+  "jobs": 1,
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "reference_image_paths": ["memory/cover/assets/koda-ui-style-reference.png"],
+  "canvas": "cover/canvas-quad.png",
+  "canvas_size_px": [2048, 1152],
+  "split": "PASS",
+  "inject_html": "ok"
+}
