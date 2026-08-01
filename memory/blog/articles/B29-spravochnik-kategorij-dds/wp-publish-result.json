@@ -1,0 +1,16 @@
+{
+  "verdict": "fail",
+  "topic_id": "B29",
+  "slug": "spravochnik-kategorij-dds",
+  "blocker": "PUBLISH BLOCKER",
+  "reason": "No memory/site.env.local; Cloud Secrets only TELEGRAM_*; missing EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_*/SSH_*",
+  "dry_run": {
+    "ok": true,
+    "slug": "spravochnik-kategorij-dds",
+    "php_bytes": 7297167
+  },
+  "link_verify": "pass",
+  "expected_permalink": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/",
+  "permalink": null,
+  "published_articles_updated": false
+}
