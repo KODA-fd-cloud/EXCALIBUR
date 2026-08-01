@@ -1,0 +1,43 @@
+{
+  "topic_id": "B30",
+  "h1": "Как обновлять финтаблицы через Power Query без макросов и VBA",
+  "title": "Как обновлять финтаблицы через Power Query без макросов и VBA",
+  "description": "Power Query для финансиста: подключение папки с CSV, типы данных и разделитель «;», обновление одной кнопкой без VBA и границы перехода в Python.",
+  "cover_alt": "Абстрактные голографические узлы потоков данных на тёмном фоне",
+  "slug": "power-query-finansist-obnovlenie",
+  "primary_query": "power query для финансиста",
+  "secondary_queries": [
+    "power query excel обновление",
+    "загрузка csv power query",
+    "power query google sheets"
+  ],
+  "char_count": 8747,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "обновление финтаблиц через Power Query",
+    "Power Query без макросов для CSV",
+    "загрузка выгрузок из папки в Excel"
+  ],
+  "meta_ab": {
+    "title_seo": "Power Query для финансиста: обновление финтаблиц без VBA",
+    "title_ctr": "Power Query без макросов: как обновлять финтаблицы одной кнопкой",
+    "title_aeo": "Как обновить финтаблицу через Power Query без VBA?",
+    "description_seo": "Пошагово: папка с выгрузками, типы данных, разделитель «;», «Обновить всё» и когда переходить на Python или Sheets.",
+    "description_ctr": "Хватит понедельничного VLOOKUP. Настройте Power Query один раз и жмите «Обновить всё».",
+    "description_aeo": "Power Query в Excel загружает CSV из папки, задаёт типы и обновляет финтаблицу без макросов. Границы и FAQ по Excel Online и Mac."
+  },
+  "geo_qa": {
+    "score": 87,
+    "core_eeat_lite": 17,
+    "verdict": "PASS",
+    "date": "2026-08-01",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  },
+  "cover_family": "gradient_abstract"
+}
