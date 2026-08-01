@@ -1,0 +1,17 @@
+KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic.
+
+Single canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each). Optional thin white gutters ONLY on the exact center lines (x=1024 and y=576); keep all panel content strictly inside its quadrant — no bleed across seams.
+
+STYLE REFERENCE: match the input reference image mood — dark #0a0a0f, purple/blue neon holographic nodes, soft grain, KODA legacy blog card look. Image-to-image: keep palette and material language from reference, invent four new panel compositions for cash-flow category taxonomy.
+
+Top-left COVER — visual hook for «Аренда vs аренда офиса — отчёты разъезжаются?»: hierarchical taxonomy tree of glowing category nodes: root hub → four thick branches (operating / investing / financing / transfers) → 15–25 leaf spheres; left side shows chaotic tangled synonym-nodes dissolving into the clean unified graph on the right; thumbnail-safe; absolutely NO text NO letters NO watermark NO logo NO people NO faces.
+
+Top-right — Infographic metaphor for «Выберите, сколько категорий достаточно на старте»: left half overstuffed cluster of ~200 tiny noisy nodes; right half calm compact graph with ~20 larger nodes on four branches; contrast of overload vs starter set; NO text NO people.
+
+Bottom-left — Workflow metaphor for «Создайте лист Справочник и запретите свободный ввод»: raw bank-statement particle stream enters a central locked shield/vault node (single source of truth), then exits as clean aggregated report light-trails; NO text NO people.
+
+Bottom-right — Comparison metaphor for «Пропишите правила для Прочее и переводов между счетами»: left — dark void black-hole node sucking chaotic expense lines; right — two account orbs with clean mirrored transfer arcs that do not inflate revenue; NO text NO people.
+
+match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image.
+
+Negative: text, letters, words, watermark, logo, people, faces, stock photo, spreadsheet UI, yellow headline typography, Cyrillic on image, vertical carousel 9:16, bleed across gutters.

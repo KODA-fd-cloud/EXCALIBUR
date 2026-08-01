@@ -1,0 +1,188 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#article",
+      "headline": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались",
+      "description": "Единый лист \"Справочник\" категорий ДДС в Google Sheets: 15-25 статей, data validation, правила \"Прочее\" и переводов, обучение команды и связка с план-фактом.",
+      "datePublished": "2026-08-01",
+      "dateModified": "2026-08-01",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/spravochnik-kategorij-dds-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "категории ддс справочник, классификация платежей excel, статьи ддс google sheets, единый справочник финансы",
+      "wordCount": 9316,
+      "articleSection": "ДДС / Google Sheets / управленческий учёт",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем справочник ДДС отличается от плана счетов 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "План счетов – бухучёт по правилам учётной политики. Справочник категорий ДДС – управленческие статьи по факту движения денег (кассовый метод). Связать можно через таблицу соответствия, но копировать 1:1 не нужно: собственнику важны \"маркетинг\" и \"логистика\", а не субсчёт 26."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли завести 200 статей сразу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно, но на старте это вредно: путают команду и дробят аналитику. Добавляйте статьи по правилу существенности (>5% оборота два месяца подряд), не глубже четырёх уровней."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Excel или Google Sheets для статей ДДС?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Оба работают; validation по смыслу одинакова. Sheets удобнее для совместного ввода и доступа финдиректора с собственником без версий \"файл_финал2.xlsx\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как провести перевод между счетами?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Группа \"Перемещения\", направление \"перевод\", не приход и не расход. В отчёте перевод не попадает в чистую выручку и не раздувает OPEX."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если нужной статьи нет в списке?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не вводить текст руками. Заявка владельцу справочника → новая строка в \"Справочник\" → повторный ввод операции. Иначе снова получите \"Аренда\" и \"аренда офиса\" в разных отчётах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли автоматическая категоризация через AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После того как справочник и validation стоят. AI или правила по контрагенту ускоряют разметку staging, но словарь статей должен быть вашим и единым – иначе модель придумает свои синонимы."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#howto",
+      "name": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались",
+      "description": "Лист \"Справочник\" на 15-25 статей, data validation с запретом свободного ввода, правила \"Прочее\" и переводов, обучение команды и связка с план-фактом.",
+      "inLanguage": "ru",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets или Excel"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Проверка данных (data validation) — выпадающий список из диапазона"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "SUMIFS / QUERY для свода и план-факта"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Лист \"Справочник\": код, группа, направление, название, активна, комментарий"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Именованный диапазон DDS_Categories на активные названия"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Памятка команде на один экран (выбор статьи, перевод, заявка на новую строку)"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Выберите, сколько категорий достаточно на старте",
+          "text": "Зафиксируйте 4 группы верхнего уровня: операционная, инвестиционная, финансовая и перемещения. На старте хватает 5-7 статей поступлений и 10-15 статей платежей (всего 15-25 активных строк). Не копируйте план счетов 1С один к одному.",
+          "url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#start-volume"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Создайте лист \"Справочник\" и запретите свободный ввод",
+          "text": "Создайте лист \"Справочник\" с колонками код, группа, направление, название, активна, комментарий. На листе \"Движения\" включите проверку данных → список из Справочник!D2:D100 в режиме \"Отклонять ввод\". Задайте именованный диапазон DDS_Categories.",
+          "url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#spravochnik-validation"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Пропишите правила для \"Прочее\" и переводов между счетами",
+          "text": "Не заводите \"Прочее\" без лимита: не больше 5% оборота и еженедельный разбор. Переводы — группа \"Перемещения\", направление \"перевод\", не доход и не расход. Новая статья только через владельца справочника.",
+          "url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#prochee-perevody"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Обучите команду одному шаблону",
+          "text": "Разошлите памятку: категория только из списка, без свободного текста. Покажите на одном платеже аренду vs коммуналку, объясните перевод и назначьте одного владельца справочника. Раз в неделю — 15 минут разбор пустых и \"Прочее\".",
+          "url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#team-template"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Свяжите справочник с дашбордом и план-фактом",
+          "text": "Подключите Отчёт и план-факт через SUMIFS/QUERY по коду из справочника. Один DDS_Categories на всю книгу: добавили статью только в \"Справочник\" — сводки подхватили её сами. Сверьте сумму по категориям на \"Факт\" и \"Сводка\".",
+          "url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/#dashboard-plan-fakt"
+        }
+      ]
+    }
+  ]
+}

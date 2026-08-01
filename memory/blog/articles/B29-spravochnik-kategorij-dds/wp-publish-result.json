@@ -1,0 +1,9 @@
+{
+  "slug": "spravochnik-kategorij-dds",
+  "topic_id": "B29",
+  "permalink": "",
+  "raw_output": "BLOCKER: EXCALIBUR_BLOG_ALLOW_PUBLISH missing; no SSH_*/FTP_* credentials; no memory/site.env.local; PUBLIC_SITE_URL missing",
+  "verdict": "fail",
+  "method": "none",
+  "blocker": "EXCALIBUR_BLOG_ALLOW_PUBLISH != yes; missing publish credentials (SSH_*/FTP_*) and site.env.local"
+}

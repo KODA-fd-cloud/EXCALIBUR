@@ -2,9 +2,9 @@
   "article": "memory/blog/articles/B29-spravochnik-kategorij-dds/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
   "verdict": "pass",
-  "total_extracted_facts": 3,
+  "total_extracted_facts": 4,
   "verified_facts_count": 1,
-  "unverified_facts_count": 2,
+  "unverified_facts_count": 3,
   "facts": [
     {
       "fact": "2011",
@@ -16,14 +16,21 @@
     {
       "fact": "15 минут",
       "kind": "metric_or_duration",
-      "context": "строки, остальные не плодят дубли. Раз в неделю – 15 минут: просмотр строк с пустой категорией и \"Прочее\". О",
+      "context": "строки, остальные не плодят дубли. Раз в неделю – 15 минут: просмотр строк с пустой категорией и \"Прочее\". П",
       "verified": true,
       "reason": "Numerical value '15' matched in fact-bank context"
     },
     {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "l к финконтуру – в гайде от Excel к финконтуру за 30 дней . Итоговый вердикт: единый справочник категорий Д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
       "fact": "200",
       "kind": "large_number",
-      "context": "категорий достаточно на старте На старте не нужно 200 строк. По опыту шаблонов для собственника хватает",
+      "context": "категорий достаточно на старте На старте не нужно 200 строк. По рабочим шаблонам для собственника хватае",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     }

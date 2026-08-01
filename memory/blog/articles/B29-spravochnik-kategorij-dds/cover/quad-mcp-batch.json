@@ -1,0 +1,29 @@
+{
+  "pipeline": "quad_canvas_1x_mcp",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "reference_image_local": "memory/cover/assets/koda-ui-style-reference.png",
+  "output_canvas": "cover/canvas-quad.png",
+  "mcp_actual_fallback": "GenerateImage",
+  "jobs": [
+    {
+      "slot": "canvas_quad",
+      "tool": "gpt-image-2",
+      "note": "ONE call only — 4 panels inside, then excalibur_blog_cover_quad_split.py; Cloud fallback: Cursor GenerateImage i2i",
+      "mcp_args": {
+        "prompt": "KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic.\n\nSingle canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each). Optional thin white gutters ONLY on the exact center lines (x=1024 and y=576); keep all panel content strictly inside its quadrant — no bleed across seams.\n\nSTYLE REFERENCE: match the input reference image mood — dark #0a0a0f, purple/blue neon holographic nodes, soft grain, KODA legacy blog card look. Image-to-image: keep palette and material language from reference, invent four new panel compositions for cash-flow category taxonomy.\n\nTop-left COVER — visual hook for «Аренда vs аренда офиса — отчёты разъезжаются?»: hierarchical taxonomy tree of glowing category nodes: root hub → four thick branches (operating / investing / financing / transfers) → 15–25 leaf spheres; left side shows chaotic tangled synonym-nodes dissolving into the clean unified graph on the right; thumbnail-safe; absolutely NO text NO letters NO watermark NO logo NO people NO faces.\n\nTop-right — Infographic metaphor for «Выберите, сколько категорий достаточно на старте»: left half overstuffed cluster of ~200 tiny noisy nodes; right half calm compact graph with ~20 larger nodes on four branches; contrast of overload vs starter set; NO text NO people.\n\nBottom-left — Workflow metaphor for «Создайте лист Справочник и запретите свободный ввод»: raw bank-statement particle stream enters a central locked shield/vault node (single source of truth), then exits as clean aggregated report light-trails; NO text NO people.\n\nBottom-right — Comparison metaphor for «Пропишите правила для Прочее и переводов между счетами»: left — dark void black-hole node sucking chaotic expense lines; right — two account orbs with clean mirrored transfer arcs that do not inflate revenue; NO text NO people.\n\nmatch KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image.\n\nNegative: text, letters, words, watermark, logo, people, faces, stock photo, spreadsheet UI, yellow headline typography, Cyrillic on image, vertical carousel 9:16, bleed across gutters.",
+        "input_urls": [
+          "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png"
+        ],
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      },
+      "generate_image_fallback": {
+        "aspect_ratio": "16:9",
+        "reference_image_paths": [
+          "memory/cover/assets/koda-ui-style-reference.png"
+        ],
+        "style_ref_url": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png"
+      }
+    }
+  ]
+}

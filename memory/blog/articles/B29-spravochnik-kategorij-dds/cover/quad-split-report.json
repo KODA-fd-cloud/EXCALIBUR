@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B29-spravochnik-kategorij-dds/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1022,
+      575
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 575,
+        "end": 578
+      },
+      "v_gutter_px": {
+        "start": 1022,
+        "end": 1025
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1022,
+          "bottom": 575
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1022,
+          "bottom": 575
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактное дерево таксономии финансовых категорий на тёмно-фиолетовом фоне без текста",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1025,
+          "top": 0,
+          "right": 2048,
+          "bottom": 575
+        },
+        "raw_box_px": {
+          "left": 1025,
+          "top": 0,
+          "right": 2048,
+          "bottom": 575
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Инфографика: компактный стартовый набор категорий ДДС против перегруженного дерева",
+        "h2_anchor": "Выберите, сколько категорий достаточно на старте"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 578,
+          "right": 1022,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 578,
+          "right": 1022,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема: единый справочник категорий блокирует свободный ввод и кормит отчёты",
+        "h2_anchor": "Создайте лист \"Справочник\" и запретите свободный ввод"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1025,
+          "top": 578,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1025,
+          "top": 578,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение: чёрная дыра «Прочее» против чистых перемещений между счетами",
+        "h2_anchor": "Пропишите правила для \"Прочее\" и переводов между счетами"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Выберите, сколько категорий достаточно на старте",
+    "injected inline_2 after H2 — Создайте лист \"Справочник\" и запретите свободный ввод",
+    "injected inline_3 after H2 — Пропишите правила для \"Прочее\" и переводов между счетами"
+  ]
+}
