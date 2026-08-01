@@ -75,9 +75,23 @@ jobs:
           echo "status=$(cat tick-status.txt)" >> "$GITHUB_OUTPUT"
           echo "topic_id=$(cat tick-topic.txt)" >> "$GITHUB_OUTPUT"
 
+      - name: Write if approved (no article yet)
+        id: write
+        if: ${{ steps.tick.outputs.status == 'writing' || steps.tick.outputs.status == 'queued_write' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          set -euo pipefail
+          pip install cursor-sdk || true
+          python scripts/excalibur_blog_write_approved.py | tee write.json
+          # pull in case Cloud Agent pushed article while we waited
+          git pull --rebase origin master || true
+
       - name: Publish if approved (writing)
         id: finish
-        if: steps.tick.outputs.status == 'writing'
+        if: ${{ steps.tick.outputs.status == 'writing' || steps.tick.outputs.status == 'queued_write' }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

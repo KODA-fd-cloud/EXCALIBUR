@@ -1,0 +1,8 @@
+{
+  "slug": "daydzhest-sobstvenniku-n8n-telegram",
+  "topic_id": "B27",
+  "permalink": "https://koda-fd.ru/blog/daydzhest-sobstvenniku-n8n-telegram/",
+  "raw_output": "OK post=188 slug=daydzhest-sobstvenniku-n8n-telegram\nOK featured_image=189\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/daydzhest-sobstvenniku-n8n-telegram-dzen-cover.png\npermalink=https://koda-fd.ru/blog/daydzhest-sobstvenniku-n8n-telegram/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

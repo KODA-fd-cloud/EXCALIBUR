@@ -1,0 +1,26 @@
+{
+  "topic_id": "B27",
+  "h1": "Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram",
+  "title": "Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram",
+  "description": "5–7 цифр для собственника, лист digest с формулами, n8n раз в неделю в Telegram, тон факт/отклонение/вопрос и без ПДн.",
+  "cover_alt": "Абстрактные светящиеся пузыри сообщений и метрики на тёмном голографическом фоне",
+  "slug": "daydzhest-sobstvenniku-n8n-telegram",
+  "primary_query": "дайджест собственнику telegram",
+  "secondary_queries": [
+    "отчёт собственнику автоматически",
+    "n8n google sheets telegram",
+    "weekly finance digest"
+  ],
+  "char_count": 7957,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "cover_family": "gradient_abstract",
+  "meta_ab": {
+    "title_seo": "Дайджест собственнику из Google Sheets в Telegram",
+    "title_ctr": "📬 Еженедельный дайджест собственнику из Sheets → Telegram",
+    "title_aeo": "Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram?",
+    "description_seo": "Метрики, лист digest, n8n cron, шаблон факт/отклонение/вопрос, безопасность без ПДн.",
+    "description_ctr": "⚡️ 5–7 цифр понедельника собственнику в Telegram без простыни Excel.",
+    "description_aeo": "Дайджест собственнику telegram – Google Sheets digest + n8n schedule + Telegram bot."
+  }
+}

@@ -232,10 +232,13 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
         result = send_text(
             token,
             chat_id,
-            f"✅ Принято, пишу…\n\n{pending['topic_id']}: {pending.get('h1', '')}\n"
-            f"Пришлю ссылку, когда статья будет на сайте.",
+            f"✅ Тема принята: {pending['topic_id']}\n"
+            f"{pending.get('h1', '')}\n\n"
+            f"Дальше: очередь на написание → QA → обложка → публикация.\n"
+            f"Ссылку пришлю, когда статья будет на сайте (это не мгновенно).",
         )
         pending["status"] = "writing"
+        pending["missing_article_notified"] = False
         pending["ack_message_id"] = result["message_id"]
         save_pending(pending)
         out["status"] = "writing"
@@ -386,14 +389,14 @@ def cmd_tick(args: argparse.Namespace) -> None:
             pending["proposed_at"] = now - 3600
             save_pending(pending)
 
-    if pending and pending.get("status") == "writing":
+    if pending and pending.get("status") in {"writing", "queued_write"}:
         print(
             json.dumps(
                 {
                     "ok": True,
                     "action": "continue_pipeline",
                     "decision": "approve",
-                    "status": "writing",
+                    "status": pending.get("status"),
                     "topic_id": pending.get("topic_id"),
                     "h1": pending.get("h1"),
                     "slug": pending.get("slug"),
@@ -520,7 +523,9 @@ def cmd_ack(args: argparse.Namespace) -> None:
     result = send_text(
         token,
         chat_id,
-        f"✅ Принято, пишу…\n\n{topic_id}: {h1}\nПришлю ссылку, когда статья будет на сайте.",
+        f"✅ Тема принята: {topic_id}\n{h1}\n\n"
+        f"Дальше: очередь на написание → QA → обложка → публикация.\n"
+        f"Ссылку пришлю, когда статья будет на сайте.",
     )
     if pending:
         pending["status"] = "writing"

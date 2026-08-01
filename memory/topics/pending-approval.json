@@ -1,10 +1,19 @@
 {
+<<<<<<< Updated upstream
   "topic_id": "B27",
   "h1": "Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram",
   "slug": "daydzhest-sobstvenniku-n8n-telegram",
   "status": "writing",
   "proposed_at": 1785511740,
   "proposal_message_id": 58,
+=======
+  "topic_id": "B26",
+  "h1": "Как сделать план-факт ДДС в Google Sheets за один вечер",
+  "slug": "plan-fakt-dds-google-sheets",
+  "status": "pending",
+  "proposed_at": 1785551461,
+  "proposal_message_id": 70,
+>>>>>>> Stashed changes
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"

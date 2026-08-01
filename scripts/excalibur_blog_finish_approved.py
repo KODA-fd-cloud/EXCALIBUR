@@ -66,7 +66,7 @@ def append_ledger(topic_id: str, slug: str, url: str) -> None:
 def main() -> int:
     load_dotenv_local()
     pending = load_pending()
-    if not pending or pending.get("status") != "writing":
+    if not pending or pending.get("status") not in {"writing", "queued_write"}:
         print(json.dumps({"ok": True, "action": "skip", "reason": "not_writing"}, ensure_ascii=False))
         return 0
 
@@ -78,34 +78,35 @@ def main() -> int:
 
     article_dir = find_article_dir(topic_id)
     if article_dir is None:
-        send_text(
-            token,
-            chat_id,
-            f"⚠️ {topic_id}: «ок» принят, но готовой article.html в репо нет.\n"
-            f"Нужен прогон Excalibur (research→writer→qa→cover→publish).\n"
-            f"H1: {h1}",
-        )
+        # Do NOT spam Telegram every 15 min — write_approved owns the one-shot notice.
+        pending["status"] = "queued_write"
+        save_pending(pending)
         print(json.dumps({"ok": False, "action": "missing_article", "topic_id": topic_id}, ensure_ascii=False))
         return 2
 
     if not qa_pass(article_dir):
-        send_text(
-            token,
-            chat_id,
-            f"⚠️ {topic_id}: статья есть, но GEO QA не PASS — публикацию пропускаю.\n"
-            f"Папка: {article_dir.name}",
-        )
+        if not pending.get("qa_fail_notified"):
+            send_text(
+                token,
+                chat_id,
+                f"⚠️ {topic_id}: статья есть, но GEO QA не PASS — публикацию пропускаю.\n"
+                f"Папка: {article_dir.name}",
+            )
+            pending["qa_fail_notified"] = True
+            save_pending(pending)
         print(json.dumps({"ok": False, "action": "qa_not_pass", "topic_id": topic_id, "dir": article_dir.name}, ensure_ascii=False))
         return 3
 
     cover_png = article_dir / "cover" / "cover.png"
     if not cover_png.is_file():
-        send_text(
-            token,
-            chat_id,
-            f"⚠️ {topic_id}: статья есть, но нет обложки cover/cover.png — без неё не публикую.\n"
-            f"Сгенерируй cover (агент cover / scripts/excalibur_blog_make_fallback_cover.py).",
-        )
+        if not pending.get("missing_cover_notified"):
+            send_text(
+                token,
+                chat_id,
+                f"⚠️ {topic_id}: статья есть, но нет обложки cover/cover.png — без неё не публикую.",
+            )
+            pending["missing_cover_notified"] = True
+            save_pending(pending)
         print(json.dumps({"ok": False, "action": "missing_cover", "topic_id": topic_id}, ensure_ascii=False))
         return 7
 

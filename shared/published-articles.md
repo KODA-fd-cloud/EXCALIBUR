@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-08-01 | B27 | daydzhest-sobstvenniku-n8n-telegram | https://koda-fd.ru/blog/daydzhest-sobstvenniku-n8n-telegram/ | published |
 | 2026-07-31 | B25 | bankovskaya-vypiska-staging-google-sheets | https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/ | published |
 | 2026-07-31 | B24 | platezhnyj-kalendar-google-sheets-n8n | https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/ | published |
 | 2026-07-30 | B23 | cursor-rules-finotdel | https://koda-fd.ru/blog/cursor-rules-finotdel/ | published |
