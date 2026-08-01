@@ -81,7 +81,7 @@ def main() -> int:
         # Do NOT spam Telegram every 15 min тАФ write_approved owns the one-shot notice.
         pending["status"] = "queued_write"
         save_pending(pending)
-        # exit 0 тАФ ╨╕╨╜╨░╤З╨╡ GHA ╤Б set -e ╨║╤А╨░╤Б╨╜╤Л╨╣ ╨║╨░╨╢╨┤╤Л╨╡ 15 ╨╝╨╕╨╜ ╨┐╤А╨╕ ╨╛╤З╨╡╤А╨╡╨┤╨╕ ╨╜╨░ ╨╜╨░╨┐╨╕╤Б╨░╨╜╨╕╨╡
+        # exit 0 so GHA with set -e stays green while write is queued
         print(json.dumps({"ok": False, "action": "missing_article", "topic_id": topic_id}, ensure_ascii=False))
         return 0
 
@@ -154,7 +154,7 @@ def main() -> int:
     rejected = list(pending.get("rejected_ids") or [])
     pending["status"] = "published"
     pending["published_url"] = permalink
-    # Keep rejected_ids тАФ ╨╕╨╜╨░╤З╨╡ ╨┐╨╛╤Б╨╗╨╡ publish ╤Б╨╜╨╛╨▓╨░ ╨┐╤А╨╡╨┤╨╗╨╛╨╢╨╕╤В ╤В╨╡╨╝╤Л, ╨║╨╛╤В╨╛╤А╤Л╨╡ ╤Г╨╢╨╡ ┬л╨╜╨╡╤В┬╗
+    # Keep rejected_ids so previously skipped topics are not re-proposed
     pending["rejected_ids"] = rejected
     save_pending(pending)
 
