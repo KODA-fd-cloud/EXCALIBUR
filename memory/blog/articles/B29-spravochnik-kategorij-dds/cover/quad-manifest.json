@@ -1,0 +1,42 @@
+{
+  "topic_id": "B29",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "«Аренда» и «аренда офиса» — почему план-факт разъезжается?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога у коллажа: разные названия одной статьи ДДС ломают план-факт",
+      "scene_hint": "reference-лицо (очки, quiff, борода), одежда НЕ с reference: тёмный кашемировый свитер и рубашка CFO-casual; вокруг fake Google Sheets «Аренда» vs «аренда офиса» vs «Офисные расходы», стикер «−487 тыс.» на план-факте, Telegram «почему цифры не сходятся?», розовый sticky «один справочник», meme facepalm + shocked cat, розовый highlight на «разъезжается», scotch tape, torn paper",
+      "meme_caption_ru": "Один код — или хаос"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Выберите, сколько категорий достаточно на старте",
+      "visual_type": "infographic_card",
+      "scene_hint": "Инфографика 16:9: 4 группы ДДС (операционная / инвестиционная / финансовая / перемещения), бейджи «5–7 приход», «10–15 расход», «15–25 строк на старт»; без лица героя; мини sticky «не 200 строк»",
+      "alt": "Инфографика: 4 группы категорий ДДС и лимит 15–25 статей на старт"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Создайте лист \"Справочник\" и запретите свободный ввод",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-мокап Google Sheets: лист «Справочник» колонки код/группа/направление/название/активна + data validation dropdown на «Движения»; сравнение «свободный ввод ✗» vs «выпадающий список ✓»; без героя; tape corner",
+      "alt": "Мокап листа Справочник с data validation против свободного ввода"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Пропишите правила для \"Прочее\" и переводов между счетами",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow 4 шага: операция → если перевод р/с→р/с то группа Перемещения → если мусор то Прочее с лимитом → иначе код из Справочника; стрелки, блок «не доход»; без лица; sticky «Прочее ≤5%»",
+      "alt": "Схема правил: Прочее и переводы между счетами в справочнике ДДС"
+    }
+  }
+}
