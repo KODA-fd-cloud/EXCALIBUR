@@ -1,0 +1,38 @@
+{
+  "article": "memory/blog/articles/B28-sverka-bank-1c-bez-pdn/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 4,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "скать \"пропавший платёж\" бессмысленно. С 1 апреля 2025 инвентаризация р/с по ФСБУ 28/2023 тоже опирается",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "но. С 1 апреля 2025 инвентаризация р/с по ФСБУ 28/2023 тоже опирается на выписку - расхождение с банком н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2000",
+      "kind": "date_or_year",
+      "context": "т, новые CSV в data/ Объём данных Ок на срезе 500-2000 строк Тянет десятки тысяч строк без зависания Когд",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 минут",
+      "kind": "metric_or_duration",
+      "context": "или скрипт; карта замен у ответственного. Разбор 15 минут на закрытии месяца.",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    }
+  ]
+}

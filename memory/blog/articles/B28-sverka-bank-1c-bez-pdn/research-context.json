@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-01",
+    "today_ru": "01.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-03",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-01 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B28",
+    "priority": "P0",
+    "slug": "sverka-bank-1c-bez-pdn",
+    "h1": "Как сверить банк и 1С без отправки ПДн в ChatGPT",
+    "primary_query": "сверка банка и 1с",
+    "secondary_queries": [
+      "сверка выписки 1с",
+      "обезличить выписку для ии",
+      "сверка оборотов банк учет"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B28",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "сверка банка и 1с 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "сверка банка и 1с август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "сверка банка и 1с новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "сверка выписки 1с 2026",
+      "purpose": "вторичный запрос: сверка выписки 1с"
+    },
+    {
+      "id": "secondary_2",
+      "query": "обезличить выписку для ии 2026",
+      "purpose": "вторичный запрос: обезличить выписку для ии"
+    },
+    {
+      "id": "secondary_3",
+      "query": "сверка оборотов банк учет 2026",
+      "purpose": "вторичный запрос: сверка оборотов банк учет"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как сверить банк и 1С без отправки ПДн в ChatGPT 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B28-sverka-bank-1c-bez-pdn",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
