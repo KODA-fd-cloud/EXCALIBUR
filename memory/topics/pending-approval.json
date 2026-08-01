@@ -1,22 +1,12 @@
 {
-<<<<<<< Updated upstream
-  "topic_id": "B27",
-  "h1": "Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram",
-  "slug": "daydzhest-sobstvenniku-n8n-telegram",
-  "status": "writing",
-  "proposed_at": 1785511740,
-  "proposal_message_id": 58,
-=======
-  "topic_id": "B26",
-  "h1": "Как сделать план-факт ДДС в Google Sheets за один вечер",
-  "slug": "plan-fakt-dds-google-sheets",
+  "topic_id": "B28",
+  "h1": "Как сверить банк и 1С без отправки ПДн в ChatGPT",
+  "slug": "sverka-bank-1c-bez-pdn",
   "status": "pending",
-  "proposed_at": 1785551461,
-  "proposal_message_id": 70,
->>>>>>> Stashed changes
+  "proposed_at": 1785551506,
+  "proposal_message_id": 71,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26"
-  ],
-  "ack_message_id": 60
+  ]
 }

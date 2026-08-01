@@ -150,9 +150,11 @@ def main() -> int:
         return 6
 
     append_ledger(topic_id, payload["slug"], permalink)
+    rejected = list(pending.get("rejected_ids") or [])
     pending["status"] = "published"
     pending["published_url"] = permalink
-    pending["rejected_ids"] = []
+    # Keep rejected_ids — иначе после publish снова предложит темы, которые уже «нет»
+    pending["rejected_ids"] = rejected
     save_pending(pending)
 
     send_text(token, chat_id, f"🚀 Опубликовано\n\n{topic_id}: {h1 or payload.get('h1', '')}\n{permalink}")
@@ -160,7 +162,7 @@ def main() -> int:
     # Immediately propose next topic so queue doesn't stall until next cron
     nxt = next_topic(skip_ids={topic_id})
     if nxt:
-        propose_topic(token, chat_id, nxt, rejected_ids=[])
+        propose_topic(token, chat_id, nxt, rejected_ids=rejected)
         action_next = "proposed_next"
     else:
         send_text(
