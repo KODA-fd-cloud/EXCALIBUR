@@ -11,7 +11,7 @@
     "статьи ддс google sheets",
     "единый справочник финансы"
   ],
-  "char_count": 9293,
+  "char_count": 9385,
   "article_mode": "B",
   "author_id": "olga-kondratskaya",
   "anchor_variants": [
@@ -25,19 +25,7 @@
     "title_aeo": "Как завести справочник категорий ДДС, чтобы отчёты не разъезжались?",
     "description_seo": "Пошагово: 4 группы статей, лист \"Справочник\", validation, правила \"Прочее\" и переводов, обучение команды и связка с план-фактом ДДС.",
     "description_ctr": "⚡️ За вечер – единый справочник категорий ДДС с выпадающими списками. Без \"Аренда\" vs \"аренда офиса\" в разных отчётах.",
-    "description_aeo": "Категории ДДС справочник – это лист \"Справочник\" с 15–25 статьями и data validation в Google Sheets; один код категории на операции, план-факт и дашборд."
+    "description_aeo": "Категории ДДС справочник – лист \"Справочник\" с 15–25 статьями и data validation в Google Sheets; один код на операции, план-факт и дашборд."
   },
-  "cover_family": "gradient_abstract",
-  "geo_qa": {
-    "score": 89,
-    "core_eeat_lite": 17,
-    "verdict": "PASS",
-    "date": "2026-08-01",
-    "html_linter": "PASS",
-    "slop_score": "PASS",
-    "cannibalization": "PASS",
-    "link_verify": "PASS",
-    "utility_gate": "PASS",
-    "fact_check": "PASS"
-  }
+  "cover_family": "gradient_abstract"
 }
