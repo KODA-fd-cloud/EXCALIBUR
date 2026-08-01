@@ -1,0 +1,17 @@
+{
+  "status": "fallback_ok",
+  "method": "Cursor_GenerateImage",
+  "mcp_attempted": "user-mcp-kv/gpt-image-2",
+  "mcp_status": "offline_unavailable",
+  "fallback": "ONE GenerateImage i2i with reference_image_paths=[memory/cover/assets/blog-hero-reference.png]",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "reference_local": "memory/cover/assets/blog-hero-reference.png",
+  "aspect_ratio": "16:9",
+  "raw_output_size": "1536x1024",
+  "canvas_resized_to": "2048x1152",
+  "resize_filter": "LANCZOS",
+  "canvas_file": "cover/canvas-quad.png",
+  "artifact_source": "/opt/cursor/artifacts/assets/B29-canvas-quad-gen.png",
+  "url": "",
+  "note": "MCP gpt-image-2 unavailable in Cloud session; documented GenerateImage fallback per cover skill/handoff"
+}
