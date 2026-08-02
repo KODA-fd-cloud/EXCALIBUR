@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-02",
+    "today_ru": "02.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-04",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-02 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B36",
+    "priority": "P0",
+    "slug": "dashbord-dds-looker-studio",
+    "h1": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
+    "primary_query": "дашборд ддс looker studio",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "дашборд ддс looker studio",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B36",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "дашборд ддс looker studio 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "дашборд ддс looker studio август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "дашборд ддс looker studio новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "дашборд ддс looker studio 2026",
+      "purpose": "вторичный запрос: дашборд ддс looker studio"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B36-dashbord-dds-looker-studio",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
