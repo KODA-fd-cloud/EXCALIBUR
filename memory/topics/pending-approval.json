@@ -1,17 +1,18 @@
 {
-  "topic_id": "B35",
-  "h1": "Как сверить банковскую выписку с учётом через n8n и Google Sheets",
-  "slug": "sverka-banka-n8n-google-sheets",
-  "status": "rejected",
-  "proposed_at": 1785633340,
-  "proposal_message_id": 119,
+  "topic_id": "B33",
+  "h1": "Как вести реестр актов сверки и контролировать ответы контрагентов без CRM",
+  "slug": "akty-sverki-reestr-kontrol",
+  "status": "writing",
+  "proposed_at": 1785672127,
+  "proposal_message_id": 146,
   "chat_id": "1136346366",
   "rejected_ids": [
+    "B36",
     "B26",
     "B31",
-    "B32",
-    "B33",
-    "B34",
-    "B35"
-  ]
+    "B32"
+  ],
+  "missing_article_notified": false,
+  "ack_message_id": 148,
+  "approved_at": 1785672131
 }
