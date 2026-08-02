@@ -1,15 +1,16 @@
 {
-  "topic_id": "B34",
-  "h1": "Как завести простой план счетов управленческого учёта в Google Sheets",
-  "slug": "plan-schetov-upravlencheskij-sheets",
+  "topic_id": "B35",
+  "h1": "Как сверить банковскую выписку с учётом через n8n и Google Sheets",
+  "slug": "sverka-banka-n8n-google-sheets",
   "status": "pending",
-  "proposed_at": 1785627654,
-  "proposal_message_id": 116,
+  "proposed_at": 1785633340,
+  "proposal_message_id": 119,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
     "B31",
     "B32",
-    "B33"
+    "B33",
+    "B34"
   ]
 }
