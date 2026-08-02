@@ -530,6 +530,75 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B36 — Дашборд ДДС за час в Looker Studio
+
+- **priority:** P0
+- **slug:** dashbord-dds-looker-studio
+- **h1:** Как собрать дашборд ДДС в Looker Studio из Google Sheets за час
+- **primary_query:** дашборд ддс looker studio
+- **secondary_queries:** автоматизация финотдела, дашборд ддс looker studio, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-02 · trend-scored · rotation
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B37 — Cursor правит формулу Excel без магии
+
+- **priority:** P0
+- **slug:** cursor-excel-formuly-bez-polomki
+- **h1:** Как попросить Cursor поправить Excel-формулу финансиста и не сломать файл
+- **primary_query:** cursor excel формулы финансист
+- **secondary_queries:** автоматизация финотдела, cursor excel формулы финансист, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-02 · trend-scored · rotation
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B38 — Сравнение: Apps Script vs n8n
+
+- **priority:** P0
+- **slug:** apps-script-ili-n8n-finotdel
+- **h1:** Apps Script или n8n для финотдела: когда хватает кнопки в Sheets
+- **primary_query:** apps script или n8n
+- **secondary_queries:** автоматизация финотдела, apps script или n8n, 2026
+- **search_intent:** comparison
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-02 · trend-scored · rotation
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Старые карточки B01–B03, B05–B10, B12 сняты с активной очереди после согласования 2026-07.  
