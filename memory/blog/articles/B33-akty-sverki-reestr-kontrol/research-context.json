@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-02",
+    "today_ru": "02.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-04",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-02 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B33",
+    "priority": "P0",
+    "slug": "akty-sverki-reestr-kontrol",
+    "h1": "Как вести реестр актов сверки и контролировать ответы контрагентов без CRM",
+    "primary_query": "реестр актов сверки",
+    "secondary_queries": [
+      "контроль актов сверки",
+      "акт сверки google sheets",
+      "напоминание акт сверки"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B33",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "реестр актов сверки 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "реестр актов сверки август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "реестр актов сверки новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "контроль актов сверки 2026",
+      "purpose": "вторичный запрос: контроль актов сверки"
+    },
+    {
+      "id": "secondary_2",
+      "query": "акт сверки google sheets 2026",
+      "purpose": "вторичный запрос: акт сверки google sheets"
+    },
+    {
+      "id": "secondary_3",
+      "query": "напоминание акт сверки 2026",
+      "purpose": "вторичный запрос: напоминание акт сверки"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как вести реестр актов сверки и контролировать ответы контрагентов без CRM 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B33-akty-sverki-reestr-kontrol",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
