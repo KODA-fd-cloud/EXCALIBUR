@@ -1,0 +1,16 @@
+{
+  "slug": "akty-sverki-reestr-kontrol",
+  "topic_id": "B33",
+  "permalink": "",
+  "verdict": "fail",
+  "blockers": [
+    "❌ PUBLISH BLOCKER: memory/site.env.local отсутствует",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH отсутствует (!= yes)",
+    "PUBLIC_SITE_URL отсутствует",
+    "FTP_*/SSH_* credentials отсутствуют"
+  ],
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local",
+  "link_verify": "pass",
+  "dry_run": "pass",
+  "publish_date": "2026-08-02"
+}
