@@ -1,0 +1,196 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#article",
+      "headline": "Как вести реестр актов сверки и контролировать ответы контрагентов без CRM",
+      "description": "Реестр актов сверки в Google Sheets: статусы, срок ответа, напоминания Sheets → n8n → email без CRM и связка с дебиторкой.",
+      "datePublished": "2026-08-02",
+      "dateModified": "2026-08-02",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/akty-sverki-reestr-kontrol-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная сеть узлов документов сверки на тёмном фоне без текста"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "реестр актов сверки, контроль актов сверки, акт сверки google sheets, напоминание акт сверки",
+      "wordCount": 9302,
+      "articleSection": "автоматизация / сверки / дебиторка",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужна ли ЭДО, чтобы контролировать ответы по актам сверки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Для старта зафиксируйте канал email, дату отправки и срок ответа в реестре. ЭДО удобнее для подписи и статуса документа, но контроль ответов строится на колонках статуса, а не на обязательной ЭДО."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли вести реестр актов сверки без 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Акт и журнал статусов собирают в Excel или Google Sheets. Без 1С вы вручную или из банка/склада заполняете сальдо; контроль ответов всё равно живёт в таблице со статусами и due_reply."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем акт сверки отличается от формы 0510477 и от 1С:Сверка 2.0?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "0510477 с 01.01.2026 обязательна для бюджетного учёта; коммерция использует договорную форму. 1С:Сверка 2.0 – сервис сверки первички и счетов-фактур, не замена реестра ответов по актам взаиморасчётов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько раз напоминать и через сколько дней ждать ответ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Рабочий старт: срок ответа 5–7 рабочих дней, затем не больше двух мягких напоминаний. Дальше – статус no_response и звонок ответственного, а не третье автоматическое письмо."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Прерывает ли акт сверки исковую давность?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Подписанный уполномоченным лицом акт может признаваться признанием долга и прерывать срок по ст. 203 ГК РФ. Проверяйте полномочия подписанта; акт сам по себе не заменяет первичку в споре."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что писать в письме-напоминании без давления?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Период, наше сальдо, просьба подтвердить или прислать расшифровку до даты, контакт бухгалтера. Без угроз судом в первом касании – сначала сервисный тон, потом эскалация внутри вашей команды."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как связать согласованное сальдо с реестром дебиторки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После статуса agreed обновите сумму и статус в реестре ДЗ по тому же коду контрагента. Споры оставьте в dispute на обеих сторонах контура, чтобы не слать оплату-напоминания параллельно со сверкой расхождений."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#howto",
+      "name": "Как вести реестр актов сверки и контролировать ответы контрагентов без CRM",
+      "description": "Колонки реестра в Google Sheets, статусы draft→closed, напоминания Sheets → n8n → email, граница данных из 1С и связка с дебиторкой.",
+      "inLanguage": "ru",
+      "totalTime": "P7D",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets или Excel"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "n8n (Cloud или self-hosted)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Email / SMTP"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Лист Реестр_сверок с колонками статуса и due_reply"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Выгрузка ОСВ/актов из 1С или ручной ввод сальдо"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Credentials vault для n8n и почты"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Соберите колонки реестра актов сверки в таблице",
+          "text": "Создайте лист Реестр_сверок: одна строка = один акт на период и контрагента. Заполните contragent_code, period, our_balance, channel, sent_date, due_reply, status, reply_date, delta, owner, next_step, file_link. В очередь ставьте контрагентов по обороту, незакрытому сальдо и давности сверки.",
+          "url": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#reestr-columns"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Задайте статусы: от черновика до закрытия без CRM",
+          "text": "Зафиксируйте словарь статусов draft → sent → awaiting → agreed / dispute / no_response → closed. После отправки сразу заполняйте due_reply (5–7 рабочих дней). Подсвечивайте просрочку: если сегодня > due_reply и статус awaiting — красить строку. При dispute глушите автонапоминания.",
+          "url": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#statuses"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Настройте напоминания: Google Sheets → n8n → email",
+          "text": "Откройте n8n доступ к листу Реестр_сверок. Schedule Trigger раз в день → Get rows → фильтр sent/awaiting с просроченным due_reply и лимитом двух касаний → мягкий email → Update row (last_touch, reminder_1/2). Стоп после любого ответа; третье автописьмо клиенту не шлите.",
+          "url": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#reminders"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Проверьте выгрузку из 1С: что можно в облако, чего нельзя",
+          "text": "Сырой срез кладите на raw_sverka; в рабочий реестр — код контрагента, период, сальдо, статус, даты, сумма расхождения и ссылка на папку. Не тащите в облако полные реквизиты, ПДн и сканы паспортов. API-ключи храните в credentials, не в ячейке.",
+          "url": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#data-boundary"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Свяжите реестр с дебиторкой и закрытием месяца",
+          "text": "После agreed обновите реестр ДЗ по коду контрагента. Незакрытые awaiting и dispute держите в чеклисте закрытия месяца. Раз в неделю разбирайте долю agreed/closed, сумму dispute, no_response и затянутые next_step owner.",
+          "url": "https://koda-fd.ru/blog/akty-sverki-reestr-kontrol/#ar-month-close"
+        }
+      ]
+    }
+  ]
+}
