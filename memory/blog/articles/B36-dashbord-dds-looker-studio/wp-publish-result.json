@@ -1,0 +1,20 @@
+{
+  "topic_id": "B36",
+  "slug": "dashbord-dds-looker-studio",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "dashbord-dds-looker-studio",
+    "title": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
+    "php_bytes": 10889747
+  },
+  "link_verify": "pass",
+  "blockers": [
+    "memory/site.env.local отсутствует",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH не задан (нужен yes)",
+    "Cloud Secrets: только TELEGRAM_* — нет FTP_*/SSH_*/PUBLIC_SITE_URL",
+    "paramiko не установлен (docker publish fallback недоступен)"
+  ]
+}

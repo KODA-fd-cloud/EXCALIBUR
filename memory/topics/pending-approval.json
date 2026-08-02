@@ -1,17 +1,13 @@
 {
-  "topic_id": "B35",
-  "h1": "Как сверить банковскую выписку с учётом через n8n и Google Sheets",
-  "slug": "sverka-banka-n8n-google-sheets",
-  "status": "rejected",
-  "proposed_at": 1785633340,
-  "proposal_message_id": 119,
+  "topic_id": "B36",
+  "h1": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
+  "slug": "dashbord-dds-looker-studio",
+  "status": "writing",
+  "proposed_at": 1785646999,
+  "proposal_message_id": 125,
   "chat_id": "1136346366",
-  "rejected_ids": [
-    "B26",
-    "B31",
-    "B32",
-    "B33",
-    "B34",
-    "B35"
-  ]
+  "rejected_ids": [],
+  "missing_article_notified": false,
+  "ack_message_id": 127,
+  "approved_at": 1785647027
 }

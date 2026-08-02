@@ -1,0 +1,419 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-02",
+    "today_ru": "02.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-04",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-02 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B36",
+    "priority": "P0",
+    "slug": "dashbord-dds-looker-studio",
+    "h1": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
+    "primary_query": "дашборд ддс looker studio",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "дашборд ддс looker studio",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "дашборд ддс looker studio 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Дашборд в Looker Studio: пошаговый гайд 2026",
+          "url": "https://pravda-ads.ru/blog/dashbord-looker-studio-gajd",
+          "snippet": ""
+        },
+        {
+          "title": "Looker Studio для маркетолога в 2026: дашборды из Я.Метрики, Я.Директ и ...",
+          "url": "https://dipustovalov.ru/blog/looker-studio-marketing-2026",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: источники данных, метрики, структура страниц и типичные ошибки. Практический гайд для бизнеса в РФ."
+        },
+        {
+          "title": "Дашборд в Looker Studio для маркетинга: что вывести",
+          "url": "https://leadtheway-marketing.com/ru/blog/looker-studio-dashboard-ru",
+          "snippet": "Looker Studio объединяет Я.Метрику, Я.Директ и VK Ads в одном бесплатном дашборде. Разбор: как подключить российские источники данных, настроить Blended Data для сквозного CPL по каналам, автоматически отправлять отчёты клиентам по расписанию и не перегрузить дашборд лишними виджетами."
+        },
+        {
+          "title": "Дашборд для маркетолога: отчёт в Looker Studio за 1 час",
+          "url": "https://nagimov.kz/blog/dashboard-marketologa.html",
+          "snippet": "Какие метрики вывести в дашборд Looker Studio для B2B-маркетинга: от расходов и лидов до CPL и окупаемости. Структура, источники данных, частые ошибки."
+        },
+        {
+          "title": "Google Looker Studio: маркетинговый дашборд за 1 день",
+          "url": "https://media.klyasyuk.ru/google-looker-studio-marketing-dashboard-guide/",
+          "snippet": "Как собрать дашборд маркетолога в Looker Studio за 1 час: какие метрики выводить, как подключить Google Ads, GA4 и Kaspi, шаблон структуры и частые ошибки."
+        },
+        {
+          "title": "Google Looker Studio: дашборды для маркетолога",
+          "url": "https://marketer.by/2026/03/24/google-looker-studio-dashbordy-dlya-marketologa/",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: подключение источников, ключевые виджеты, шаблоны для B2B и автоматическое обновление данных."
+        }
+      ],
+      "searched_at": "2026-08-02"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "дашборд ддс looker studio август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Дашборд в Looker Studio: пошаговый гайд 2026",
+          "url": "https://pravda-ads.ru/blog/dashbord-looker-studio-gajd",
+          "snippet": ""
+        },
+        {
+          "title": "Looker Studio для маркетолога в 2026: дашборды из Я.Метрики, Я.Директ и ...",
+          "url": "https://dipustovalov.ru/blog/looker-studio-marketing-2026",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: источники данных, метрики, структура страниц и типичные ошибки. Практический гайд для бизнеса в РФ."
+        },
+        {
+          "title": "Дашборд в Looker Studio для маркетинга: что вывести",
+          "url": "https://leadtheway-marketing.com/ru/blog/looker-studio-dashboard-ru",
+          "snippet": "Looker Studio объединяет Я.Метрику, Я.Директ и VK Ads в одном бесплатном дашборде. Разбор: как подключить российские источники данных, настроить Blended Data для сквозного CPL по каналам, автоматически отправлять отчёты клиентам по расписанию и не перегрузить дашборд лишними виджетами."
+        },
+        {
+          "title": "Google Looker Studio: маркетинговый дашборд за 1 день",
+          "url": "https://media.klyasyuk.ru/google-looker-studio-marketing-dashboard-guide/",
+          "snippet": "Какие метрики вывести в дашборд Looker Studio для B2B-маркетинга: от расходов и лидов до CPL и окупаемости. Структура, источники данных, частые ошибки."
+        },
+        {
+          "title": "Дашборд для маркетолога: отчёт в Looker Studio за 1 час",
+          "url": "https://nagimov.kz/blog/dashboard-marketologa.html",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: подключение источников, ключевые виджеты, шаблоны для B2B и автоматическое обновление данных."
+        },
+        {
+          "title": "Google Looker Studio: дашборды для маркетолога",
+          "url": "https://marketer.by/2026/03/24/google-looker-studio-dashbordy-dlya-marketologa/",
+          "snippet": "Хорошая новость в том, что собрать рабочий дашборд маркетолога в Looker Studio можно за один час -- без программистов, бесплатно и так, чтобы он обновлялся сам."
+        }
+      ],
+      "searched_at": "2026-08-02"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "дашборд ддс looker studio новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Дашборд в Looker Studio: пошаговый гайд 2026",
+          "url": "https://pravda-ads.ru/blog/dashbord-looker-studio-gajd",
+          "snippet": ""
+        },
+        {
+          "title": "Как настроить бесплатную аналитику в Looker Studio: пошаговое ...",
+          "url": "https://hubes.ru/blog/kak-nastroit-besplatnuyu-analitiku-v-looker-studio-poshagovoe-rukovodstvo-dlya-biznesa",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: источники данных, метрики, структура страниц и типичные ошибки. Практический гайд для бизнеса в РФ."
+        },
+        {
+          "title": "Google Looker Studio: дашборды для маркетолога",
+          "url": "https://marketer.by/2026/03/25/google-looker-studio-dashbordy-dlya-marketologa-kotorye-prevrashhajut-dannye-v-resheniya/",
+          "snippet": "Пошаговая инструкция по настройке дашбордов в Looker Studio (бывший Google Data Studio). Подключаем Google Analytics, Яндекс.Метрику, Google Sheets и строим визуальные отчёты для маркетинга и продаж."
+        },
+        {
+          "title": "Google Looker Studio: маркетинговый дашборд за 1 день",
+          "url": "https://media.klyasyuk.ru/google-looker-studio-marketing-dashboard-guide/",
+          "snippet": "Looker Studio от Google обещает превратить разрозненные источники в понятные дашборды, помогающие отслеживать признаки успеха и оперативно реагировать на изменения рынка."
+        },
+        {
+          "title": "Looker Studio для маркетолога в 2026: дашборды из Я.Метрики, Я.Директ и ...",
+          "url": "https://dipustovalov.ru/blog/looker-studio-marketing-2026",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: подключение источников, ключевые виджеты, шаблоны для B2B и автоматическое обновление данных."
+        },
+        {
+          "title": "Дашборд в Looker Studio для маркетинга: что вывести",
+          "url": "https://leadtheway-marketing.com/ru/blog/looker-studio-dashboard-ru",
+          "snippet": "Looker Studio объединяет Я.Метрику, Я.Директ и VK Ads в одном бесплатном дашборде. Разбор: как подключить российские источники данных, настроить Blended Data для сквозного CPL по каналам, автоматически отправлять отчёты клиентам по расписанию и не перегрузить дашборд лишними виджетами."
+        }
+      ],
+      "searched_at": "2026-08-02"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+          "url": "https://vk.com/video271632077_456240008",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+          "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+          "snippet": "Смотрите онлайн АВТОМАТИЗАЦИЯ ФИНОТДЕЛА 1 ч 16 мин 2 с. Видео от 30 января 2026 в хорошем качестве, без регистрации в бесплатном видеокаталоге ВКонтакте! 2 — оценили."
+        },
+        {
+          "title": "Какой софт выбирают финансовые директора России в 2026 году",
+          "url": "https://blog.fin-ctrl.ru/blog/kakoy-soft-vybiraut-findiry",
+          "snippet": "Встречи на ПМЭФ-2026 хорошо подсветили именно эти перемены. Автоматизация становится не набором отдельных инструментов, а способом собрать процессы, данные и людей в более управляемую среду. Для одних компаний это означает переход от ручных таблиц к единой системе."
+        },
+        {
+          "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+          "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+          "snippet": "Сегодня же ситуация изменилась. Уход западных вендоров из России в 2022 году запустил процесс, который к 2025−2026 годам превратился в масштабную перестройку всей архитектуры корпоративного ПО."
+        }
+      ],
+      "searched_at": "2026-08-02"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "дашборд ддс looker studio 2026",
+      "purpose": "вторичный запрос: дашборд ддс looker studio",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Дашборд в Looker Studio: пошаговый гайд 2026",
+          "url": "https://pravda-ads.ru/blog/dashbord-looker-studio-gajd",
+          "snippet": ""
+        },
+        {
+          "title": "Looker Studio для маркетолога в 2026: дашборды из Я.Метрики, Я.Директ и ...",
+          "url": "https://dipustovalov.ru/blog/looker-studio-marketing-2026",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: источники данных, метрики, структура страниц и типичные ошибки. Практический гайд для бизнеса в РФ."
+        },
+        {
+          "title": "Дашборд для маркетолога: отчёт в Looker Studio за 1 час",
+          "url": "https://nagimov.kz/blog/dashboard-marketologa.html",
+          "snippet": "Looker Studio объединяет Я.Метрику, Я.Директ и VK Ads в одном бесплатном дашборде. Разбор: как подключить российские источники данных, настроить Blended Data для сквозного CPL по каналам, автоматически отправлять отчёты клиентам по расписанию и не перегрузить дашборд лишними виджетами."
+        },
+        {
+          "title": "Выбор dashboard программы 2026: Power BI, Looker Studio, Met",
+          "url": "https://fanruan.ru/blog/panel-priborov-programma",
+          "snippet": "Как собрать дашборд маркетолога в Looker Studio за 1 час: какие метрики выводить, как подключить Google Ads, GA4 и Kaspi, шаблон структуры и частые ошибки."
+        },
+        {
+          "title": "Google Looker Studio: маркетинговый дашборд за 1 день",
+          "url": "https://media.klyasyuk.ru/google-looker-studio-marketing-dashboard-guide/",
+          "snippet": "Как выбрать dashboard программу в 2026 году: сравнение Power BI, Looker Studio, Metabase и DataLens по задачам, пользователям и стоимости."
+        },
+        {
+          "title": "Дашборд в Looker Studio для маркетинга: что вывести",
+          "url": "https://leadtheway-marketing.com/ru/blog/looker-studio-dashboard-ru",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: подключение источников, ключевые виджеты, шаблоны для B2B и автоматическое обновление данных."
+        }
+      ],
+      "searched_at": "2026-08-02"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Праздники в 2026 году: полный календарь праздников на каждый месяц",
+          "url": "https://mirkosmosa.ru/holiday/2026",
+          "snippet": "На этой странице вы найдёте готовые календари для каждого месяца: Формат А4, готовый к печати. Просто выберите нужный месяц ниже и скачайте календарь бесплатно и без регистрации. Идеально подходит для офиса, школы, дома или планирования личных дел."
+        }
+      ],
+      "searched_at": "2026-08-02"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Дашборд в Looker Studio: пошаговый гайд 2026",
+          "url": "https://pravda-ads.ru/blog/dashbord-looker-studio-gajd",
+          "snippet": ""
+        },
+        {
+          "title": "Looker Studio для маркетолога в 2026: дашборды из Я.Метрики, Я.Директ и ...",
+          "url": "https://dipustovalov.ru/blog/looker-studio-marketing-2026",
+          "snippet": "В этом гайде разберём по шагам, как собрать рабочий дашборд под малый и средний бизнес в РФ, и каких ошибок стоит избегать."
+        },
+        {
+          "title": "Как настроить бесплатную аналитику в Looker Studio: пошаговое ...",
+          "url": "https://hubes.ru/blog/kak-nastroit-besplatnuyu-analitiku-v-looker-studio-poshagovoe-rukovodstvo-dlya-biznesa",
+          "snippet": "Я использую Looker Studio в клиентских проектах. На каждом — дашборд, который объединяет данные из Я.Метрики, бюджеты из Я.Директ и VK Ads (через Google Sheets), и CRM-конверсии."
+        },
+        {
+          "title": "Google Looker Studio: маркетинговый дашборд за 1 день",
+          "url": "https://media.klyasyuk.ru/google-looker-studio-marketing-dashboard-guide/",
+          "snippet": "Пошаговая инструкция по настройке дашбордов в Looker Studio (бывший Google Data Studio). Подключаем Google Analytics, Яндекс.Метрику, Google Sheets и строим визуальные отчёты для маркетинга и продаж."
+        },
+        {
+          "title": "Дашборд для маркетолога: отчёт в Looker Studio за 1 час",
+          "url": "https://nagimov.kz/blog/dashboard-marketologa.html",
+          "snippet": "Как собрать маркетинговый дашборд в Looker Studio: подключение источников, ключевые виджеты, шаблоны для B2B и автоматическое обновление данных."
+        },
+        {
+          "title": "Connect to Google Sheets | Data Studio | Google Cloud Documentation",
+          "url": "https://docs.cloud.google.com/data-studio/connect-to-google-sheets",
+          "snippet": "Хорошая новость в том, что собрать рабочий дашборд маркетолога в Looker Studio можно за один час -- без программистов, бесплатно и так, чтобы он обновлялся сам."
+        }
+      ],
+      "searched_at": "2026-08-02"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://pravda-ads.ru/blog/dashbord-looker-studio-gajd",
+      "title": "Дашборд в Looker Studio: пошаговый гайд 2026",
+      "from_query": "дашборд ддс looker studio 2026"
+    },
+    {
+      "url": "https://dipustovalov.ru/blog/looker-studio-marketing-2026",
+      "title": "Looker Studio для маркетолога в 2026: дашборды из Я.Метрики, Я.Директ и ...",
+      "from_query": "дашборд ддс looker studio 2026"
+    },
+    {
+      "url": "https://leadtheway-marketing.com/ru/blog/looker-studio-dashboard-ru",
+      "title": "Дашборд в Looker Studio для маркетинга: что вывести",
+      "from_query": "дашборд ддс looker studio 2026"
+    },
+    {
+      "url": "https://nagimov.kz/blog/dashboard-marketologa.html",
+      "title": "Дашборд для маркетолога: отчёт в Looker Studio за 1 час",
+      "from_query": "дашборд ддс looker studio 2026"
+    },
+    {
+      "url": "https://media.klyasyuk.ru/google-looker-studio-marketing-dashboard-guide/",
+      "title": "Google Looker Studio: маркетинговый дашборд за 1 день",
+      "from_query": "дашборд ддс looker studio 2026"
+    },
+    {
+      "url": "https://marketer.by/2026/03/24/google-looker-studio-dashbordy-dlya-marketologa/",
+      "title": "Google Looker Studio: дашборды для маркетолога",
+      "from_query": "дашборд ддс looker studio 2026"
+    },
+    {
+      "url": "https://hubes.ru/blog/kak-nastroit-besplatnuyu-analitiku-v-looker-studio-poshagovoe-rukovodstvo-dlya-biznesa",
+      "title": "Как настроить бесплатную аналитику в Looker Studio: пошаговое ...",
+      "from_query": "дашборд ддс looker studio новости 2026"
+    },
+    {
+      "url": "https://marketer.by/2026/03/25/google-looker-studio-dashbordy-dlya-marketologa-kotorye-prevrashhajut-dannye-v-resheniya/",
+      "title": "Google Looker Studio: дашборды для маркетолога",
+      "from_query": "дашборд ддс looker studio новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vk.com/video271632077_456240008",
+      "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+      "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://blog.fin-ctrl.ru/blog/kakoy-soft-vybiraut-findiry",
+      "title": "Какой софт выбирают финансовые директора России в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+      "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://fanruan.ru/blog/panel-priborov-programma",
+      "title": "Выбор dashboard программы 2026: Power BI, Looker Studio, Met",
+      "from_query": "дашборд ддс looker studio 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://mirkosmosa.ru/holiday/2026",
+      "title": "Праздники в 2026 году: полный календарь праздников на каждый месяц",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://docs.cloud.google.com/data-studio/connect-to-google-sheets",
+      "title": "Connect to Google Sheets | Data Studio | Google Cloud Documentation",
+      "from_query": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час 2026"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 5,
+  "over_long_sentences": [
+    {
+      "sentence": "За час можно собрать дашборд ДДС в Looker Studio из того же листа операций: scorecards приток, отток и чистый поток, динамика и топ статей с автообновлением раз в 15 минут",
+      "word_count": 29
+    },
+    {
+      "sentence": "Решите, когда Looker Studio нужен финотделу Берите Looker Studio, если уже есть \"длинный\" лист операций (одна строка = одно движение денег) и нужен экран для собственника: фильтры по дате и счёту, шаринг view-only, PDF по расписанию",
+      "word_count": 35
+    },
+    {
+      "sentence": "Ситуация Инструмент Почему Ввод и контроль операций Google Sheets Validation, SUMIF, сверка остатка Экран собственнику + фильтры Looker Studio View-only, freshness, schedule PDF Тяжёлая модель и сложный ETL Power BI / DataLens позже На старте ДДС избыточно На рынке готовый пакет \"таблица ДДС + визуализация в Data Studio\" оценивают от 4 500 ₽ и около 7 дней",
+      "word_count": 50
+    },
+    {
+      "sentence": "Формат табличный: одна строка заголовков, все ячейки в колонке одного типа, без merged cells, картинок и строки Totals (Looker просуммирует её с деталями и раздует KPI)",
+      "word_count": 26
+    },
+    {
+      "sentence": "Проверьте: нет ли Totals в листе, нет ли текста в сумме, не wide ли колонки статей, сделан ли Refresh fields после смены схемы, не устарел ли кэш freshness",
+      "word_count": 28
+    }
+  ],
+  "readability": {
+    "score": 81.4,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 12.6,
+    "avg_syllables_per_word": 1.8
+  }
+}

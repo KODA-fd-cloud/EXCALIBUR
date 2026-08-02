@@ -1,0 +1,180 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#article",
+      "headline": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
+      "description": "Пошагово: лист операций ДДС в Google Sheets, коннектор Looker Studio, scorecards приток/отток/чистый поток, freshness от 15 минут и проверка сходимости без программиста.",
+      "datePublished": "2026-08-02",
+      "dateModified": "2026-08-02",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/dashbord-dds-looker-studio-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактный тёмный UI дашборда cash flow с фиолетовыми акцентами без текста и лиц"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "дашборд ддс looker studio, looker studio google sheets, отчет ддс дашборд, автоматизация финотдела, cash flow dashboard",
+      "wordCount": 8839,
+      "articleSection": "Looker Studio / ДДС / финотдел",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли собрать дашборд ДДС в Looker Studio без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Нужен нативный коннектор Google Sheets, Create report и формулы CASE в calculated fields. Программист не требуется; Apps Script пригодится позже только для автоподливки строк в лист."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько займёт внедрение дашборда ДДС?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При готовом long-листе операций – около часа на первый дашборд. Если нет справочника категорий и табличного формата – заложите 0,5–1 день на data foundation, затем час на Looker."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие риски для данных при Owner's Credentials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зрители с ссылкой на отчёт видят данные источника, даже без доступа к Sheets. Не кладите ПДн и полные назначения платежей; держите отдельную копию листа \"для BI\" и шарьте только view-only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Looker Studio или дашборд прямо в Google Sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sheets – для ввода, validation и контроля сходимости. Looker – когда нужны фильтры для собственника, шаринг без права править таблицу и schedule PDF. Для ежедневного учёта лист не заменяйте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как учитывать переводы между счетами на дашборде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Отдельное направление \"перевод\". Не суммируйте их в Приток и Отток – иначе оборот раздуется. На холсте переводы либо скрывайте фильтром, либо выводите отдельным scorecard \"Перемещения\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему цифры в Looker Studio \"не те\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте: нет ли Totals в листе, нет ли текста в сумме, не wide ли колонки статей, сделан ли Refresh fields после смены схемы, не устарел ли кэш freshness. Сверьте период фильтра с SUMIF на \"Операции_DDS\"."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#howto",
+      "name": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
+      "description": "Подготовить long-лист Операции_DDS без ПДн, подключить коннектор Sheets в Looker Studio, добавить calculated fields Приток/Отток/Чистый_поток, собрать scorecards и проверить сходимость.",
+      "inLanguage": "ru",
+      "totalTime": "PT1H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Looker Studio (lookerstudio.google.com)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets (коннектор Data source)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Лист Операции_DDS (long: Дата, Направление, Статья, Группа, Сумма, Счёт)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Справочник категорий ДДС (15–25 статей) без ПДн"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Решите, когда Looker Studio нужен финотделу",
+          "text": "Берите Looker Studio, если уже есть длинный лист операций (дата, направление, статья, сумма, счёт) и нужен экран собственнику с фильтрами и view-only. Не стартуйте с BI при хаосе в категориях – сначала справочник статей.",
+          "url": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#when-looker"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Подготовьте лист операций и уберите ПДн",
+          "text": "Заведите worksheet Операции_DDS в tabular/long формате без Totals, merged cells и картинок. Даты как Date, сумма числом, направление: приход / расход / перевод. Уберите ФИО, реквизиты и сырые назначения платежей; для командного просмотра осознанно выберите Owner's Credentials.",
+          "url": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#prepare-pdn"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Соберите дашборд ДДС в Looker Studio пошагово",
+          "text": "Create → Data source → Google Sheets → лист Операции_DDS → Use first row as headers → CONNECT. Проверьте типы полей. Добавьте calculated fields Приток / Отток / Чистый_поток (переводы отдельно). Create report: Date range, scorecards, time series, топ статей, фильтры по счёту и группе.",
+          "url": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#build-dashboard"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Проверьте свежесть, сходимость и типичные ошибки",
+          "text": "Выставьте Data freshness 15 мин или 1 час. После смены колонок – Refresh fields. Сверьте KPI с SUMIF на листе за тот же период. Частые ломатели: Totals в источнике, текст в сумме, wide-колонки статей, забытый Refresh fields.",
+          "url": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#check-errors"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Расшарьте отчёт и заложите следующий шаг автоматизации",
+          "text": "Share view-only собственнику; при необходимости включите Schedule delivery PDF. Дальше подливайте операции из staging банковской выписки и Apps Script – Looker подхватит лист по freshness. Не правьте формулы на сводном листе вместо обновления Операции_DDS.",
+          "url": "https://koda-fd.ru/blog/dashbord-dds-looker-studio/#next-auto"
+        }
+      ]
+    }
+  ]
+}
