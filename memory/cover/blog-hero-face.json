@@ -1,0 +1,19 @@
+{
+  "hero_id": "blog-host-face",
+  "name_ru": "Ведущий блога (лицо для i2i cover)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://litter.catbox.moe/y7pfva.png",
+  "reference_url_source": "litterbox.catbox.moe",
+  "reference_url_updated_at": "2026-08-02T12:10:00+00:00",
+  "visual_lock": {
+    "style": "exact face likeness from reference photo",
+    "palette": "#F5F5F0, #1A1A2E, #FF1493, #E85D4C"
+  },
+  "outfit_rule": "Outfit and pose are agent choice per scene_hint — do NOT copy the red suit/bowtie from the reference photo unless scene_hint asks.",
+  "prompt_fragment": "Preserve EXACT likeness of the blog host from the reference photo: round black glasses, ash-blonde voluminous quiff, salt-and-pepper beard, fair complexion, friendly confident expression. Face lock only — clothing is free.",
+  "cover_hook_rules": [
+    "Обложка = крючок боли + мем + fake UI",
+    "Лицо только на cover-панели",
+    "16:9, кириллица на hook/meme"
+  ]
+}

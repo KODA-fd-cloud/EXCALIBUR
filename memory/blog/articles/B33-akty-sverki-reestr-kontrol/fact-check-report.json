@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/B33-akty-sverki-reestr-kontrol/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 5,
+  "facts": [
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "ие сальдо, не первичка по 402-ФЗ. Форма 0510477 с 2026 года – про госсектор; нам нужен монитор ответов в табл",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": ", не полный ИНН в облаке) period За какой отрезок 2026-Q2 или 01.04–30.06 our_balance Сальдо по нашим да",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "15 минут",
+      "kind": "metric_or_duration",
+      "context": "ка висят крупные сверки. Еженедельный разбор KPI (15 минут): доля строк со статусом agreed/closed за период;",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "0510477",
+      "kind": "large_number",
+      "context": "то признание сальдо, не первичка по 402-ФЗ. Форма 0510477 с 2026 года – про госсектор; нам нужен монитор отв",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "0142",
+      "kind": "large_number",
+      "context": "лонка Зачем Пример contragent_code Кого сверяем K-0142 (код, не полный ИНН в облаке) period За какой отр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "185 400",
+      "kind": "large_number",
+      "context": "ли 01.04–30.06 our_balance Сальдо по нашим данным 185 400 channel Куда отправили email / ЭДО / почта sent_da",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 300",
+      "kind": "large_number",
+      "context": "ly_date / delta Факт ответа и расхождение 12.08 / 12 300 owner / next_step / file_link Кто ведёт и куда фай",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "203",
+      "kind": "large_number",
+      "context": "м лицом акт может прерывать исковую давность (ст. 203 ГК РФ; Пленум ВС). Это не гарантия взыскания без п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

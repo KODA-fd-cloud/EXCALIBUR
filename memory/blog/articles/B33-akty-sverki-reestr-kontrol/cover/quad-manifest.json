@@ -1,0 +1,42 @@
+{
+  "topic_id": "B33",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-face.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Акты ушли в почту — ответы потерялись в чатах?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; Cloud fallback: GenerateImage i2i",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога у фейкового реестра сверки: акты ушли, ответы потерялись",
+      "scene_hint": "reference-лицо (очки, quiff, борода), одежда: тёмный худи финансиста + бейдж «финконтроль»; вокруг fake Google Sheets «Реестр_сверок» со статусами awaiting красным, fake Telegram «где акт???», стикер-отзыв ★☆☆☆☆ «потеряли ответы», facepalm мем + shocked cat cutout, розовый highlight на «потерялись», рваная бумага и скотч, sticky note «без CRM»",
+      "meme_caption_ru": "Кто молчит по акту?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Соберите колонки реестра актов сверки в таблице",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-мокап таблицы Google Sheets «Реестр_сверок»: колонки contragent_code, period, our_balance, channel, sent_date, due_reply, status, reply_date, delta, owner — кириллические заголовки «Колонка / Зачем», розовая sticky «одна строка = один акт», скотч на углу, БЕЗ лица героя",
+      "alt": "Таблица колонок реестра актов сверки: статус, срок ответа, сальдо"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Задайте статусы: от черновика до закрытия без CRM",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема статусов стрелками: draft → sent → awaiting → agreed / dispute / no_response → closed; опционально reminder_1 → reminder_2; красная подсветка просрочки due_reply; sticky «без CRM», маркерные стрелки, БЕЗ лица героя",
+      "alt": "Схема статусов сверки: draft → sent → awaiting → closed"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте напоминания: Google Sheets → n8n → email",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Фейковый скрин workflow n8n: Schedule Trigger → Google Sheets Get rows → Filter due_reply → Email SMTP → Update row; подпись кириллицей «Sheets → n8n → email», sticky «лимит 2 касания», БЕЗ лица героя",
+      "alt": "Скрин контура напоминаний: Google Sheets → n8n → email"
+    }
+  }
+}
