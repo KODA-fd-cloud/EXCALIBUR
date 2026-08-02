@@ -3,7 +3,7 @@
   "h1": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
   "title": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
   "description": "Пошагово: лист операций ДДС в Google Sheets, коннектор Looker Studio, scorecards приток/отток/чистый поток, freshness от 15 минут и проверка сходимости без программиста.",
-  "cover_alt": "Абстрактный тёмный UI дашборда cash flow с фиолетовыми акцентами без текста и лиц",
+  "cover_alt": "Ведущий блога: коллаж – свод ДДС скринами vs дашборд Looker Studio за час",
   "slug": "dashbord-dds-looker-studio",
   "primary_query": "дашборд ддс looker studio",
   "secondary_queries": [
@@ -27,5 +27,5 @@
     "description_ctr": "⚡️ За час – рабочий дашборд ДДС в Looker Studio: scorecards, топ статей, фильтры. Без программиста и без ПДн в облаке.",
     "description_aeo": "Дашборд ДДС Looker Studio – отчёт cash flow из Google Sheets: приток, отток, чистый поток, топ статей; автообновление от 15 минут."
   },
-  "cover_family": "gradient_abstract"
+  "cover_family": "brand_collage"
 }

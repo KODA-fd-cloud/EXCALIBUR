@@ -1,0 +1,53 @@
+{
+  "topic_id": "B36",
+  "slug": "dashbord-dds-looker-studio",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "mcp_actual": "GenerateImage fallback",
+  "mcp_mode": "image-to-image",
+  "file": "cover/cover.png",
+  "alt": "Ведущий блога: коллаж – свод ДДС скринами vs дашборд Looker Studio за час",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-08-02T05:13:58+00:00",
+  "note": "gpt-image-2 MCP unavailable; ONE Cursor GenerateImage i2i with blog-hero-reference.png + hosted ref; resized 2048x1152; split+inject PASS",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Ведущий блога: коллаж – свод ДДС скринами vs дашборд Looker Studio за час",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение Sheets-свода и Looker Studio: когда финотделу нужен дашборд ДДС",
+      "h2_anchor": "Решите, когда Looker Studio нужен финотделу",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема подготовки листа операций ДДС и обезличивания перед Looker Studio",
+      "h2_anchor": "Подготовьте лист операций и уберите ПДн",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист пошаговой сборки дашборда ДДС в Looker Studio",
+      "h2_anchor": "Соберите дашборд ДДС в Looker Studio пошагово",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

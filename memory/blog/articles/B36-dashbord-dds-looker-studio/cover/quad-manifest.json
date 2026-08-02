@@ -1,0 +1,42 @@
+{
+  "topic_id": "B36",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Свод ДДС скринами в чат – а дашборд за час?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; fallback GenerateImage i2i if MCP unavailable",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога: коллаж – свод ДДС скринами vs дашборд Looker Studio за час",
+      "scene_hint": "reference-лицо (очки, quiff, борода) в тёмно-фиолетовом блейзере, рука указывает на fake Looker scorecards «приток / отток / чистый поток»; рядом рваный скрин Google Sheets с Totals и Telegram «скинь ДДС к совещанию»; стикер «за час»; facepalm-мем + shocked cat; розовый highlight на «за час»",
+      "meme_caption_ru": "Скрины в чат? Нет."
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Решите, когда Looker Studio нужен финотделу",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица «Sheets-свод vs Looker Studio»: фильтры руками / дашборд, скрин в чат / share link, Totals-ловушка / scorecards приток-отток; стикер «когда хватит Sheets»",
+      "alt": "Сравнение Sheets-свода и Looker Studio: когда финотделу нужен дашборд ДДС"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте лист операций и уберите ПДн",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "4 шага: лист Операции_DDS (long) → без Totals → обезличить контрагентов/счета → коннектор Sheets в Looker; стрелки маркером, мини-скрин колонок дата/статья/сумма/направление",
+      "alt": "Схема подготовки листа операций ДДС и обезличивания перед Looker Studio"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Соберите дашборд ДДС в Looker Studio пошагово",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист сборки: коннектор → calculated fields → scorecards → динамика → топ статей → фильтры → freshness 15 мин → проверка сходимости; галочки ручкой, скотч на углу",
+      "alt": "Чеклист пошаговой сборки дашборда ДДС в Looker Studio"
+    }
+  }
+}
