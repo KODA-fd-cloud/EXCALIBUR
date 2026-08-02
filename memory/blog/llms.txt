@@ -1,5 +1,5 @@
-# КОДА — блог «Финансист, который кодит»
-> Практический блог: Cursor, автоматизация и ИИ для финансиста.
+# Maya AI — блог «Ковчег»
+> Практический блог по автоматизации бизнеса на Make.com, вайбкодингу и ИИ-агентам.
 
 ## Blog Articles
 
@@ -17,5 +17,15 @@
 - [Как сделать базу знаний для ChatGPT и Cursor из регламентов?](https://koda-fd.ru/blog/baza-znaniy-chatgpt-cursor-finotdel/): База знаний для ChatGPT и Cursor – папка регламентов и словаря ДДС плюс правила. Что класть, что нельзя и как проверять.
 - [Как использовать нейросеть для Excel, чтобы ChatGPT писал формулы и сводные?](https://koda-fd.ru/blog/nejroset-excel-formuly-finansist/): Как использовать нейросеть для Excel: ChatGPT/Claude пишут формулы и сводные, финансист сверяет контрольной суммой на обезличенном срезе.
 - [Как выставить счет на оплату из 1С:УНФ с телефона через HTTP-сервис?](https://koda-fd.ru/blog/schet-1c-unf-telefon-http-servis/): Выставить счет в 1С с телефона – узкий HTTP-сервис УНФ плюс PWA или Telegram. Документ создаётся в базе, PDF приходит сразу.
+- [Как начать с Python для финансиста и сверить два CSV без Excel?](https://koda-fd.ru/blog/python-finansist-sverka-csv/): Как начать python для финансиста – поставить pandas, сверить два CSV через outer merge с indicator и сохранить расхождения в out/diffs.csv.
 - [Как за вечер собрать в Cursor скрипт сверки CSV и маленький дашборд?](https://koda-fd.ru/blog/cursor-finansist-skript-dashbord/): Cursor AI для финансиста – папка проекта с агентом: скрипт сверки двух CSV и мини-дашборд Streamlit/HTML на localhost за один вечер.
 - [Как подключить MCP в Cursor и заставить агента читать папку CSV?](https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/): MCP в Cursor – протокол инструментов для агента: подключение через Marketplace или mcp.json, чтение папки выгрузок и отчёт без копипаста CSV.
+- [Как сделать кнопку обновить данные в Google Sheets через Apps Script?](https://koda-fd.ru/blog/google-apps-script-finansist-obnovit-dannye/): Как сделать google apps script кнопку – bound-скрипт с onOpen, функция refresh и опциональный HtmlService webapp поверх листов таблицы.
+- [Как настроить Cursor Rules для финотдела: AGENTS.md и запрет ПДн?](https://koda-fd.ru/blog/cursor-rules-finotdel/): Как настроить cursor rules – создать AGENTS.md и .cursor/rules/*.mdc с alwaysApply security, папками data/out и запретом сырых ПДн.
+- [Как собрать платёжный календарь в Google Sheets и напоминания через n8n?](https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/): Платёжный календарь google sheets – лист calendar + cash + n8n filter по due_date и status=approved.
+- [Как разложить банковскую выписку в staging-таблицу без ручного копипаста?](https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/): Банковская выписка в excel автоматически – через staging-лист raw_bank с row_hash и контролем оборота.
+- [Как собрать еженедельный дайджест собственнику из Google Sheets в Telegram?](https://koda-fd.ru/blog/daydzhest-sobstvenniku-n8n-telegram/): Дайджест собственнику telegram – Google Sheets digest + n8n schedule + Telegram bot.
+- [Как сверить банк и 1С без передачи персональных данных в ChatGPT?](https://koda-fd.ru/blog/sverka-bank-1c-bez-pdn/): Как сверить банк и 1С без отправки ПДн в ChatGPT - через ОСВ 51, обезличенную выгрузку или локальный merge CSV и чеклист расхождений.
+- [Как завести справочник категорий ДДС, чтобы отчёты не разъезжались?](https://koda-fd.ru/blog/spravochnik-kategorij-dds/): Категории ДДС справочник – это лист "Справочник" с 15–25 статьями и data validation в Google Sheets; один код категории на операции, план-факт и дашборд.
+- [Как обновить финтаблицу через Power Query без VBA?](https://koda-fd.ru/blog/power-query-finansist-obnovlenie/): Power Query в Excel загружает CSV из папки, задаёт типы и обновляет финтаблицу без макросов. Границы и FAQ по Excel Online и Mac.
+- [Как собрать дашборд ДДС в Looker Studio из Google Sheets за час?](https://koda-fd.ru/blog/dashbord-dds-looker-studio/): Дашборд ДДС Looker Studio – отчёт cash flow из Google Sheets: приток, отток, чистый поток, топ статей; автообновление от 15 минут.

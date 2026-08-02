@@ -1,0 +1,52 @@
+{
+  "article": "memory/blog/articles/B36-dashbord-dds-looker-studio/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 6,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 4,
+  "facts": [
+    {
+      "fact": "2011",
+      "kind": "date_or_year",
+      "context": "рхнего уровня удобно держать как в ОДДС по ПБУ 23/2011: текущие, инвестиционные и финансовые плюс переме",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 минут",
+      "kind": "metric_or_duration",
+      "context": "ок, динамика и топ статей с автообновлением раз в 15 минут. Ниже – пошаговый маршрут без программиста: long-",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "зация в Data Studio\" оценивают от 4 500 ₽ и около 7 дней. DIY за час реален, если data foundation уже стои",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 часов",
+      "kind": "metric_or_duration",
+      "context": "ets: каждые 15 минут (default), 1 час, 4 часа или 12 часов. Realtime каждую минуту недоступен – минимум 15 м",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 мин",
+      "kind": "metric_or_duration",
+      "context": "верьте KPI с SUMIF на листе и выставьте freshness 15 мин или 1 час. Расшарьте view-only и при необходимост",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "4 500",
+      "kind": "large_number",
+      "context": "ца ДДС + визуализация в Data Studio\" оценивают от 4 500 ₽ и около 7 дней. DIY за час реален, если data fo",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
