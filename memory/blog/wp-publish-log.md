@@ -322,3 +322,32 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-03 — B37 import-1c-unf-excel-regulyarno — ❌ PUBLISH BLOCKER
+
+| field | value |
+|-------|-------|
+| topic_id | B37 |
+| slug | import-1c-unf-excel-regulyarno |
+| article_dir | memory/blog/articles/B37-import-1c-unf-excel-regulyarno |
+| link-verify | pass (6/6, site-base https://koda-fd.ru) |
+| dry-run | pass (slug/title/PHP payload ok) |
+| publish | blocked |
+| ledger | not updated |
+
+### Preconditions
+
+- article-qa.md: PASS
+- link-verify.json: pass
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: missing (no process env, no memory/site.env.local)
+- FTP_*/SSH_*: missing
+
+### Blockers
+
+- ❌ PUBLISH BLOCKER: нет `memory/site.env.local` и Cloud Secrets (`EXCALIBUR_BLOG_ALLOW_PUBLISH`, `FTP_*`/`SSH_*`, `PUBLIC_SITE_URL`)
+- Live publish не выполнен; `shared/published-articles.md` не изменялся
+

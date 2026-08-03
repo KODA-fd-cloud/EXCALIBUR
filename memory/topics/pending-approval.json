@@ -1,10 +1,10 @@
 {
-  "topic_id": "B36",
-  "h1": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
-  "slug": "bankovskaya-vypiska-google-sheets",
-  "status": "pending",
-  "proposed_at": 1785726602,
-  "proposal_message_id": 161,
+  "topic_id": "B37",
+  "h1": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок",
+  "slug": "import-1c-unf-excel-regulyarno",
+  "status": "writing",
+  "proposed_at": 1785733306,
+  "proposal_message_id": 166,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -12,6 +12,10 @@
     "B32",
     "B33",
     "B34",
-    "B35"
-  ]
+    "B35",
+    "B36"
+  ],
+  "missing_article_notified": false,
+  "ack_message_id": 168,
+  "approved_at": 1785733331
 }
