@@ -535,18 +535,21 @@ def main() -> int:
 
     if args.notify:
         try:
+            from excalibur_blog_telegram_notify import cooldown_ready, cooldown_touch  # noqa: WPS433
+
             token, chat_id = require_creds()
             if added:
                 lines = "\n".join(f"• {a['topic_id']}: {a['h1']}" for a in added)
                 send_text(token, chat_id, f"🔎 Scout дозаправил очередь ({mode}):\n{lines}")
             elif mode == "cursor_cloud":
                 send_text(token, chat_id, "🔎 Scout (Cursor Cloud) запущен — новые темы скоро в blog-topics.md")
-            else:
+            elif cooldown_ready("scout_exhausted", 24 * 3600):
                 send_text(
                     token,
                     chat_id,
-                    "🔎 Scout: банк углов исчерпан или всё в overlap. Допиши ANGLE_BANK / Cloud Scout.",
+                    "🔎 Scout: банк углов исчерпан или всё в overlap. (не чаще 1×/сутки)",
                 )
+                cooldown_touch("scout_exhausted")
         except SystemExit:
             pass
 

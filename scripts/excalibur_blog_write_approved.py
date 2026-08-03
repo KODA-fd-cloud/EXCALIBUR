@@ -108,12 +108,14 @@ def main() -> int:
 
     if os.environ.get("CURSOR_API_KEY", "").strip():
         try:
-            send_text(
-                token,
-                chat_id,
-                f"✍️ {topic_id}: запускаю Cloud Agent на написание статьи + обложку.\n"
-                f"Это не мгновенно. Ссылку пришлю после publish.",
-            )
+            if not pending.get("write_launch_notified"):
+                send_text(
+                    token,
+                    chat_id,
+                    f"✍️ {topic_id}: запускаю Cloud Agent на написание статьи + обложку.\n"
+                    f"Это не мгновенно. Ссылку пришлю после publish.",
+                )
+                pending["write_launch_notified"] = True
             pending["status"] = "queued_write"
             pending["write_job_started_at"] = int(time.time())
             pending["missing_article_notified"] = True

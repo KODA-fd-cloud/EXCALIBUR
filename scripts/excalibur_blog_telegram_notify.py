@@ -427,11 +427,19 @@ def cmd_propose(args: argparse.Namespace) -> None:
     if args.auto or not args.topic_id:
         topic = next_topic()
         if not topic:
-            send_text(
-                token,
-                chat_id,
-                "📭 Очередь карточек пуста. Новые темы — только из blog-topics.md (дозаправка / Scout), не «из воздуха».",
-            )
+            try:
+                autofill_topics(5)
+            except Exception:
+                pass
+            topic = next_topic()
+        if not topic:
+            if cooldown_ready("empty_queue", EMPTY_QUEUE_COOLDOWN_SEC):
+                send_text(
+                    token,
+                    chat_id,
+                    "📭 Очередь пуста даже после Scout. Сообщение не чаще 1×/сутки.",
+                )
+                cooldown_touch("empty_queue")
             print(json.dumps({"ok": False, "reason": "empty_queue"}, ensure_ascii=False))
             return
     else:
@@ -461,12 +469,19 @@ def cmd_next(args: argparse.Namespace) -> None:
             rejected.append(pending["topic_id"])
     topic = next_topic(skip_ids=set(rejected))
     if not topic:
-        send_text(
-            token,
-            chat_id,
-            "📭 Очередь карточек пуста. Бот предлагает только темы из blog-topics.md — "
-            "новые карточки нужно дозаправить (Scout / B24+).",
-        )
+        try:
+            autofill_topics(5)
+        except Exception:
+            pass
+        topic = next_topic(skip_ids=set(rejected))
+    if not topic:
+        if cooldown_ready("empty_queue", EMPTY_QUEUE_COOLDOWN_SEC):
+            send_text(
+                token,
+                chat_id,
+                "📭 Очередь пуста даже после Scout. Сообщение не чаще 1×/сутки.",
+            )
+            cooldown_touch("empty_queue")
         print(json.dumps({"ok": False, "reason": "empty_queue"}, ensure_ascii=False))
         return
     pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)

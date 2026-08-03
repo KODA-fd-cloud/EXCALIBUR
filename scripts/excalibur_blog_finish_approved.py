@@ -96,7 +96,7 @@ def main() -> int:
             pending["qa_fail_notified"] = True
             save_pending(pending)
         print(json.dumps({"ok": False, "action": "qa_not_pass", "topic_id": topic_id, "dir": article_dir.name}, ensure_ascii=False))
-        return 3
+        return 0
 
     cover_png = article_dir / "cover" / "cover.png"
     if not cover_png.is_file():
@@ -109,14 +109,20 @@ def main() -> int:
             pending["missing_cover_notified"] = True
             save_pending(pending)
         print(json.dumps({"ok": False, "action": "missing_cover", "topic_id": topic_id}, ensure_ascii=False))
-        return 7
+        return 0
 
     if env.get("EXCALIBUR_BLOG_ALLOW_PUBLISH", "").strip().lower() != "yes":
-        send_text(token, chat_id, "❌ Публикация заблокирована: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes")
+        if not pending.get("publish_blocked_notified"):
+            send_text(token, chat_id, "❌ Публикация заблокирована: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes")
+            pending["publish_blocked_notified"] = True
+            save_pending(pending)
         print(json.dumps({"ok": False, "action": "publish_blocked"}, ensure_ascii=False))
-        return 4
+        return 0
 
-    send_text(token, chat_id, f"⏳ {topic_id}: статья готова, публикую на сайт…")
+    if not pending.get("publish_started_notified"):
+        send_text(token, chat_id, f"⏳ {topic_id}: статья готова, публикую на сайт…")
+        pending["publish_started_notified"] = True
+        save_pending(pending)
 
     try:
         out = publish_via_docker(article_dir, env)
