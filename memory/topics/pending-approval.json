@@ -1,10 +1,10 @@
 {
-  "topic_id": "B35",
-  "h1": "Как сверить банковскую выписку с учётом через n8n и Google Sheets",
-  "slug": "sverka-banka-n8n-google-sheets",
-  "status": "rejected",
-  "proposed_at": 1785633340,
-  "proposal_message_id": 119,
+  "topic_id": "B36",
+  "h1": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
+  "slug": "bankovskaya-vypiska-google-sheets",
+  "status": "pending",
+  "proposed_at": 1785726602,
+  "proposal_message_id": 161,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",

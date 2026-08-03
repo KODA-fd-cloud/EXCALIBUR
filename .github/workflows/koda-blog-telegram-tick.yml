@@ -47,10 +47,11 @@ jobs:
             EXTRA="--notify --prefer-cursor"
           fi
           # shellcheck disable=SC2086
-          python scripts/excalibur_blog_scout_ci.py --count 3 --min-unpublished 3 $EXTRA | tee scout.json
+          # min-unpublished считает proposeable (не rejected). При 0 — всегда дозаправка.
+          python scripts/excalibur_blog_scout_ci.py --count 5 --min-unpublished 3 $EXTRA | tee scout.json
           git config user.name "koda-blog-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add memory/topics/blog-topics.md || true
+          git add memory/topics/blog-topics.md memory/topics/telegram-cooldowns.json || true
           if git diff --cached --quiet; then
             echo "Scout: no topic file changes"
           else
@@ -128,7 +129,7 @@ jobs:
           set -euo pipefail
           git config user.name "koda-blog-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add memory/topics/pending-approval.json memory/topics/telegram-updates.offset memory/topics/blog-topics.md shared/published-articles.md memory/blog/articles || true
+          git add memory/topics/pending-approval.json memory/topics/telegram-updates.offset memory/topics/telegram-cooldowns.json memory/topics/blog-topics.md shared/published-articles.md memory/blog/articles || true
           if git diff --cached --quiet; then
             echo "No changes"
           else

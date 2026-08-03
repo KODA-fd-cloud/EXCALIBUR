@@ -530,6 +530,121 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B36 — Выгрузка банк→Sheets без 1С
+
+- **priority:** P0
+- **slug:** bankovskaya-vypiska-google-sheets
+- **h1:** Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание
+- **primary_query:** банковская выписка google sheets
+- **secondary_queries:** автоматизация финотдела, банковская выписка google sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:банк,sheets,api
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B37 — Импорт 1С УНФ → Excel без выгрузок руками
+
+- **priority:** P0
+- **slug:** import-1c-unf-excel-regulyarno
+- **h1:** Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок
+- **primary_query:** импорт 1с унф excel регулярно
+- **secondary_queries:** автоматизация финотдела, импорт 1с унф excel регулярно, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:1с,excel,odata
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B38 — Cursor правит формулу Excel без магии
+
+- **priority:** P0
+- **slug:** cursor-excel-formuly-bez-polomki
+- **h1:** Как попросить Cursor поправить Excel-формулу финансиста и не сломать файл
+- **primary_query:** cursor excel формулы финансист
+- **secondary_queries:** автоматизация финотдела, cursor excel формулы финансист, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:cursor,excel,формулы
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B39 — Бюджет vs факт в Sheets за вечер
+
+- **priority:** P0
+- **slug:** byudzhet-fakt-google-sheets
+- **h1:** Как собрать бюджет vs факт в Google Sheets за один вечер: шаблон и формулы
+- **primary_query:** бюджет факт google sheets
+- **secondary_queries:** автоматизация финотдела, бюджет факт google sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:sheets,управленческий
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B40 — Cursor Agent для еженедельного ДДС
+
+- **priority:** P0
+- **slug:** cursor-agent-ezhenedelnyj-dds
+- **h1:** Как собрать еженедельный отчёт ДДС через Cursor Agent и шаблон Sheets
+- **primary_query:** cursor agent отчёт ддс
+- **secondary_queries:** автоматизация финотдела, cursor agent отчёт ддс, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:cursor,agent
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Старые карточки B01–B03, B05–B10, B12 сняты с активной очереди после согласования 2026-07.  

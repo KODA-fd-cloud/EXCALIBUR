@@ -23,6 +23,11 @@ PENDING = ROOT / "memory" / "topics" / "pending-approval.json"
 TOPICS = ROOT / "memory" / "topics" / "blog-topics.md"
 PUBLISHED = ROOT / "shared" / "published-articles.md"
 OFFSET_FILE = ROOT / "memory" / "topics" / "telegram-updates.offset"
+COOLDOWNS = ROOT / "memory" / "topics" / "telegram-cooldowns.json"
+
+# Anti-spam: never hammer Telegram with the same system notice
+EMPTY_QUEUE_COOLDOWN_SEC = 24 * 3600
+REMIND_COOLDOWN_SEC = 12 * 3600
 
 
 def load_dotenv_local() -> None:
@@ -150,13 +155,56 @@ def parse_topics() -> list[dict]:
     return topics
 
 
+def load_cooldowns() -> dict:
+    if not COOLDOWNS.is_file():
+        return {}
+    try:
+        return json.loads(COOLDOWNS.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def save_cooldowns(data: dict) -> None:
+    COOLDOWNS.parent.mkdir(parents=True, exist_ok=True)
+    COOLDOWNS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def cooldown_ready(key: str, seconds: int) -> bool:
+    data = load_cooldowns()
+    last = int(data.get(key) or 0)
+    return (time.time() - last) >= seconds
+
+
+def cooldown_touch(key: str) -> None:
+    data = load_cooldowns()
+    data[key] = int(time.time())
+    save_cooldowns(data)
+
+
+def rejected_ids() -> set[str]:
+    pending = load_pending() or {}
+    return {str(x).upper() for x in (pending.get("rejected_ids") or [])}
+
+
+def proposeable_count() -> int:
+    """Unpublished topics that are NOT rejected — real queue depth for Scout/tick."""
+    pub_ids, pub_slugs = published_ids_and_slugs()
+    skip = pub_ids | rejected_ids()
+    n = 0
+    for t in parse_topics():
+        if t["topic_id"] in skip:
+            continue
+        if t["slug"] and t["slug"].lower() in pub_slugs:
+            continue
+        n += 1
+    return n
+
+
 def next_topic(*, skip_ids: set[str] | None = None) -> dict | None:
     skip_ids = {x.upper() for x in (skip_ids or set())}
     pub_ids, pub_slugs = published_ids_and_slugs()
     skip_ids |= pub_ids
-    pending = load_pending()
-    rejected = set(pending.get("rejected_ids", []) if pending else [])
-    skip_ids |= {x.upper() for x in rejected}
+    skip_ids |= rejected_ids()
     candidates = []
     for t in parse_topics():
         if t["topic_id"] in skip_ids:
@@ -166,6 +214,14 @@ def next_topic(*, skip_ids: set[str] | None = None) -> dict | None:
         candidates.append(t)
     candidates.sort(key=lambda t: (0 if t["priority"] == "P0" else 1, t["topic_id"]))
     return candidates[0] if candidates else None
+
+
+def autofill_topics(count: int = 5) -> list[dict]:
+    """Force Scout web refill when queue is exhausted (incl. all-rejected case)."""
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from excalibur_blog_scout_ci import scout_web  # noqa: WPS433
+
+    return scout_web(count)
 
 
 def normalize_reply(text: str) -> str:
@@ -211,6 +267,10 @@ def effective_proposed_at(pending: dict) -> int:
 
 
 def remind_pending(token: str, chat_id: str, pending: dict) -> dict:
+    # Silent if reminded recently — tick runs every 15m, don't spam
+    last = int(pending.get("reminded_at") or 0)
+    if last and (time.time() - last) < REMIND_COOLDOWN_SEC:
+        return pending
     text = (
         f"⏰ Напоминание — тема ждёт решения\n\n"
         f"ID: {pending.get('topic_id')}\n"
@@ -222,6 +282,7 @@ def remind_pending(token: str, chat_id: str, pending: dict) -> dict:
     pending["status"] = "pending"
     pending["proposed_at"] = int(result["date"])
     pending["proposal_message_id"] = result["message_id"]
+    pending["reminded_at"] = int(time.time())
     save_pending(pending)
     return pending
 
@@ -267,16 +328,35 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
         send_text(token, chat_id, f"⏭ Ок, пропускаю {pending['topic_id']}. Сразу следующая тема:")
         topic = next_topic(skip_ids=set(rejected))
         if not topic:
-            send_text(
-                token,
-                chat_id,
-                "📭 Очередь пуста. В следующем слоте Scout сам дозаправит актуальными темами (web + cannibalization guard).",
-            )
-            pending["status"] = "rejected"
-            pending["rejected_ids"] = rejected
-            save_pending(pending)
-            out["status"] = "rejected"
-            out["next"] = None
+            try:
+                autofill_topics(5)
+            except Exception:
+                pass
+            topic = next_topic(skip_ids=set(rejected))
+            if not topic:
+                pending["status"] = "rejected"
+                pending["rejected_ids"] = rejected
+                save_pending(pending)
+                if cooldown_ready("empty_queue", EMPTY_QUEUE_COOLDOWN_SEC):
+                    send_text(
+                        token,
+                        chat_id,
+                        "📭 После «нет» не осталось тем. Scout не дозаправил — попробую позже (не чаще 1×/сутки).",
+                    )
+                    cooldown_touch("empty_queue")
+                out["status"] = "rejected"
+                out["next"] = None
+                return out
+            # fall through to propose filled topic
+            new_pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)
+            out["status"] = "pending"
+            out["decision"] = "reject_then_autofill_next"
+            out["next"] = {
+                "topic_id": new_pending["topic_id"],
+                "h1": new_pending["h1"],
+                "slug": new_pending.get("slug", ""),
+            }
+            out["topic_id"] = new_pending["topic_id"]
             return out
         new_pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)
         out["status"] = "pending"
@@ -394,9 +474,10 @@ def cmd_next(args: argparse.Namespace) -> None:
 
 
 def cmd_tick(args: argparse.Namespace) -> None:
-    """Scheduled entrypoint — never silent: propose, remind, or continue pipeline."""
+    """Scheduled entrypoint: propose / remind (rate-limited) / handle ok|нет / autofill."""
     token, chat_id = require_creds()
     pending = load_pending()
+    rejected = list((pending or {}).get("rejected_ids") or [])
 
     if pending and pending.get("status") == "pending":
         now = int(time.time())
@@ -430,12 +511,14 @@ def cmd_tick(args: argparse.Namespace) -> None:
             out["action"] = "handled_reply"
             print(json.dumps(out, ensure_ascii=False))
             return
+        before = int(pending.get("reminded_at") or 0)
         pending = remind_pending(token, chat_id, pending)
+        action = "reminded" if int(pending.get("reminded_at") or 0) != before else "waiting_silent"
         print(
             json.dumps(
                 {
                     "ok": True,
-                    "action": "reminded",
+                    "action": action,
                     "decision": "pending",
                     "status": "pending",
                     "topic_id": pending.get("topic_id"),
@@ -447,32 +530,53 @@ def cmd_tick(args: argparse.Namespace) -> None:
         )
         return
 
-    topic = next_topic()
+    # No active pending (missing / rejected / published) → propose next or autofill
+    topic = next_topic(skip_ids=set(rejected))
+    added: list[dict] = []
     if not topic:
-        send_text(
-            token,
-            chat_id,
-            "📭 Очередь карточек пуста.\n"
-            "Я не придумываю темы на лету — только шлю следующую из blog-topics.md.\n"
-            "Очередь пуста — Scout дозаправит в следующем cron (или: python scripts/excalibur_blog_scout_ci.py --force --notify).",
+        try:
+            added = autofill_topics(5)
+        except Exception as e:
+            print(f"autofill failed: {e}", file=sys.stderr)
+            added = []
+        topic = next_topic(skip_ids=set(rejected))
+
+    if not topic:
+        notified = False
+        if cooldown_ready("empty_queue", EMPTY_QUEUE_COOLDOWN_SEC):
+            send_text(
+                token,
+                chat_id,
+                "📭 Нет тем для согласования (все оставшиеся отклонены или банк углов пуст).\n"
+                "Scout не смог дозаправить сейчас. Повторю попытку в фоне; это сообщение — не чаще 1 раза/сутки.",
+            )
+            cooldown_touch("empty_queue")
+            notified = True
+        print(
+            json.dumps(
+                {
+                    "ok": False,
+                    "action": "empty_queue" if notified else "empty_queue_silent",
+                    "proposeable": proposeable_count(),
+                    "rejected": rejected,
+                },
+                ensure_ascii=False,
+            )
         )
-        print(json.dumps({"ok": False, "action": "empty_queue"}, ensure_ascii=False))
         return
-    pending = propose_topic(token, chat_id, topic)
-    print(
-        json.dumps(
-            {
-                "ok": True,
-                "action": "proposed",
-                "decision": "pending",
-                "status": "pending",
-                "topic_id": pending["topic_id"],
-                "h1": pending["h1"],
-                "slug": pending.get("slug", ""),
-            },
-            ensure_ascii=False,
-        )
-    )
+
+    pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)
+    out = {
+        "ok": True,
+        "action": "proposed_after_autofill" if added else "proposed",
+        "decision": "pending",
+        "status": "pending",
+        "topic_id": pending["topic_id"],
+        "h1": pending["h1"],
+        "slug": pending.get("slug", ""),
+        "autofilled": [{"topic_id": a.get("topic_id"), "slug": a.get("slug")} for a in added],
+    }
+    print(json.dumps(out, ensure_ascii=False))
 
 
 def cmd_poll(args: argparse.Namespace) -> None:

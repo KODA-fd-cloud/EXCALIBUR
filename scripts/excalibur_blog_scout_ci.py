@@ -237,6 +237,13 @@ def unpublished_count() -> int:
     return n
 
 
+def proposeable_count() -> int:
+    """Topics that tick can actually propose (unpublished and not rejected)."""
+    from excalibur_blog_telegram_notify import proposeable_count as _pc  # noqa: WPS433
+
+    return _pc()
+
+
 def next_topic_id() -> str:
     max_num = 0
     for t in parse_topics():
@@ -462,9 +469,24 @@ def main() -> int:
     args = ap.parse_args()
 
     left = unpublished_count()
-    if not args.force and left >= args.min_unpublished:
-        print(json.dumps({"ok": True, "action": "skip", "unpublished": left}, ensure_ascii=False))
+    proposeable = proposeable_count()
+    # Critical: rejected-but-unpublished used to fake a "full" queue and block Scout forever
+    if not args.force and proposeable >= args.min_unpublished:
+        print(
+            json.dumps(
+                {
+                    "ok": True,
+                    "action": "skip",
+                    "unpublished": left,
+                    "proposeable": proposeable,
+                },
+                ensure_ascii=False,
+            )
+        )
         return 0
+    if proposeable == 0 and not args.force:
+        # Always refill when tick has nothing to offer
+        args.force = True
 
     mode = "web"
     added: list[dict] = []
