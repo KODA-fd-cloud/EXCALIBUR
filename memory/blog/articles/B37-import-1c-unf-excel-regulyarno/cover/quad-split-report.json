@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B37-import-1c-unf-excel-regulyarno/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1021,
+      574
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 574,
+        "end": 579
+      },
+      "v_gutter_px": {
+        "start": 1021,
+        "end": 1026
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1021,
+          "bottom": 574
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1021,
+          "bottom": 574
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Тёмный UI-мокап: регулярный поток данных из 1С УНФ в Excel по расписанию",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1026,
+          "top": 0,
+          "right": 2048,
+          "bottom": 574
+        },
+        "raw_box_px": {
+          "left": 1026,
+          "top": 0,
+          "right": 2048,
+          "bottom": 574
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактная развилка: когда регулярный импорт УНФ→Excel нужен финотделу и когда нет",
+        "h2_anchor": "Когда регулярный импорт нужен финотделу (и когда нет)"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 579,
+          "right": 1021,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 579,
+          "right": 1021,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактная схема: фильтр полей и безопасность перед регулярным обновлением УНФ→Excel",
+        "h2_anchor": "Подготовьте данные и безопасность перед обновлением"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1026,
+          "top": 579,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1026,
+          "top": 579,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Абстрактные три коридора схем A/B/C регулярного импорта УНФ в Excel",
+        "h2_anchor": "Выберите схему регулярного импорта УНФ → Excel"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Когда регулярный импорт нужен финотделу (и когда нет)",
+    "injected inline_2 after H2 — Подготовьте данные и безопасность перед обновлением",
+    "injected inline_3 after H2 — Выберите схему регулярного импорта УНФ → Excel"
+  ]
+}

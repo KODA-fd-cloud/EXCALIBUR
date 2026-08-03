@@ -1,0 +1,43 @@
+{
+  "topic_id": "B37",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_generateimage_fallback",
+  "cover_family": "gradient_abstract",
+  "style_preset": "koda_gradient_abstract",
+  "style_file": "memory/cover/quad-style-koda-gradient-abstract.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Хватит жать «Сохранить как» каждое утро",
+  "mcp_note": "user-mcp-kv/gpt-image unavailable → ONE Cursor GenerateImage i2i with style-ref, then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_ui_hook",
+      "alt": "Тёмный UI-мокап: регулярный поток данных из 1С УНФ в Excel по расписанию",
+      "scene_hint": "Abstract holographic data river: left cluster of purple nodes (УНФ source) flowing via luminous arcs into blue spreadsheet-like grid of light on the right, circular refresh orbit motif, near-black #0a0a0f, soft grain, no UI chrome",
+      "meme_caption_ru": "Снова Сохранить как?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Когда регулярный импорт нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Abstract bifurcation: two glowing pathways — tight daily pulse nodes (нужен срез) vs sparse cold dots (разовый прайс / тяжёлый BI), holographic split composition, no text",
+      "alt": "Абстрактная развилка: когда регулярный импорт УНФ→Excel нужен финотделу и когда нет"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте данные и безопасность перед обновлением",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Abstract security filter: violet node stream passing through translucent shield rings and narrow gate before reaching blue Excel lattice, locked unused side-channels fading out, no text",
+      "alt": "Абстрактная схема: фильтр полей и безопасность перед регулярным обновлением УНФ→Excel"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Выберите схему регулярного импорта УНФ → Excel",
+      "visual_type": "checklist_board",
+      "scene_hint": "Three parallel luminous corridors A/B/C from one UNF core to Excel sink: short daytime pulse, overnight file drop path, aggregate JSON spur — equal abstract lanes, no labels on image",
+      "alt": "Абстрактные три коридора схем A/B/C регулярного импорта УНФ в Excel"
+    }
+  }
+}

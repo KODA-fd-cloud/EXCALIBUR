@@ -1,0 +1,58 @@
+{
+  "topic_id": "B37",
+  "slug": "import-1c-unf-excel-regulyarno",
+  "cover_family": "gradient_abstract",
+  "style_preset": "koda_gradient_abstract",
+  "pipeline": "quad_canvas_1x_generateimage_fallback",
+  "file": "cover/cover.png",
+  "alt": "Тёмный UI-мокап: регулярный поток данных из 1С УНФ в Excel по расписанию",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-08-03T05:11:53.866900+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Тёмный UI-мокап: регулярный поток данных из 1С УНФ в Excel по расписанию",
+      "h2_anchor": null,
+      "visual_type": "cover_ui_hook",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Абстрактная развилка: когда регулярный импорт УНФ→Excel нужен финотделу и когда нет",
+      "h2_anchor": "Когда регулярный импорт нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Абстрактная схема: фильтр полей и безопасность перед регулярным обновлением УНФ→Excel",
+      "h2_anchor": "Подготовьте данные и безопасность перед обновлением",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Абстрактные три коридора схем A/B/C регулярного импорта УНФ в Excel",
+      "h2_anchor": "Выберите схему регулярного импорта УНФ → Excel",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "mcp_actual": "cursor_GenerateImage",
+  "mcp_preferred": "user-mcp-kv/gpt-image-2",
+  "mcp_mode": "image-to-image",
+  "style_ref": "memory/cover/assets/koda-ui-style-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "gutter_detect": "PASS",
+  "note": "user-mcp-kv unavailable; ONE GenerateImage quad canvas i2i with koda-ui style-ref; resampled to 2048x1152; gutter_detect split + inject"
+}
