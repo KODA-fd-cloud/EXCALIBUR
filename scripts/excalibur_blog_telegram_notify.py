@@ -456,7 +456,9 @@ def cmd_propose(args: argparse.Namespace) -> None:
                     break
             if not topic["h1"]:
                 raise SystemExit("❌ --h1 required if topic not in blog-topics.md")
-    pending = propose_topic(token, chat_id, topic)
+    prev = load_pending() or {}
+    rejected = list(prev.get("rejected_ids") or [])
+    pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)
     print(json.dumps({"ok": True, "pending": str(PENDING), **pending}, ensure_ascii=False))
 
 

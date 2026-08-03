@@ -15,7 +15,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 **Очередь 2026-07 (согласовано):** B13–B23 — автоматизация + вайб-кодинг. Источник 1С: `D:\projects\1С` (`dds-sheets`, `pilot-unf`).  
 **Очередь 2026-08 (дозаправка):** B24–B33 — финконтур, банк, n8n, Cursor, сверки.  
-**Авто-Scout (GHA перед каждым tick):** если unpublished < 3 → `scripts/excalibur_blog_scout_ci.py` ищет свежие темы (DDG / Cursor Cloud) и дописывает карточки сюда.
+**Авто-Scout (GHA перед каждым tick):** если proposeable < 3 → `scripts/excalibur_blog_scout_ci.py` ищет свежие темы (DDG / Cursor Cloud) и дописывает карточки сюда.  
+**Анти-парафраз:** у каждой новой карточки `theme_key` (job-to-be-done). Scout режет смысловые дубли через `excalibur_blog_scout_helper.py` (не только совпадение primary_query).
 
 ---
 
@@ -509,17 +510,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B35 — Сверка банка и учёта через n8n
+## B41 — Сверка: начисление зарплаты ↔ банк
 
 - **priority:** P0
-- **slug:** sverka-banka-n8n-google-sheets
-- **h1:** Как сверить банковскую выписку с учётом через n8n и Google Sheets
-- **primary_query:** сверка банковской выписки n8n
-- **secondary_queries:** автоматизация финотдела, сверка банковской выписки n8n, 2026
-- **search_intent:** how_to
+- **slug:** sverka-zarplaty-nachislenie-vyplata
+- **theme_key:** salary_accrual_vs_pay
+- **h1:** Как сверить начисление зарплаты с выплатами из банка: таблица расхождений
+- **primary_query:** сверка зарплаты начисление и выплата
+- **secondary_queries:** автоматизация финотдела, сверка зарплаты начисление и выплата, 2026
+- **search_intent:** troubleshooting
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-07-31 · trend-scored · tags:n8n,банк,сверка,sheets
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:сверка,банк,excel
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -532,17 +534,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B36 — Выгрузка банк→Sheets без 1С
+## B42 — Дашборд ДДС за час в Looker Studio
 
 - **priority:** P0
-- **slug:** bankovskaya-vypiska-google-sheets
-- **h1:** Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание
-- **primary_query:** банковская выписка google sheets
-- **secondary_queries:** автоматизация финотдела, банковская выписка google sheets, 2026
+- **slug:** dashbord-dds-looker-studio
+- **theme_key:** looker_dds_dashboard
+- **h1:** Как собрать дашборд ДДС в Looker Studio из Google Sheets за час
+- **primary_query:** дашборд ддс looker studio
+- **secondary_queries:** автоматизация финотдела, дашборд ддс looker studio, 2026
 - **search_intent:** how_to
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:банк,sheets,api
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:ддс,sheets,дашборд
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -555,17 +558,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B37 — Импорт 1С УНФ → Excel без выгрузок руками
+## B43 — Контроль лимитов расходов в Telegram
 
 - **priority:** P0
-- **slug:** import-1c-unf-excel-regulyarno
-- **h1:** Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок
-- **primary_query:** импорт 1с унф excel регулярно
-- **secondary_queries:** автоматизация финотдела, импорт 1с унф excel регулярно, 2026
-- **search_intent:** how_to
+- **slug:** limity-rashodov-telegram-alert
+- **theme_key:** expense_limits_telegram
+- **h1:** Как контролировать лимиты статей расходов и слать алерт в Telegram
+- **primary_query:** лимиты расходов telegram алерт
+- **secondary_queries:** автоматизация финотдела, лимиты расходов telegram алерт, 2026
+- **search_intent:** workflow
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:1с,excel,odata
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:лимиты,telegram,бюджет
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -578,17 +582,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B38 — Cursor правит формулу Excel без магии
+## B44 — Управленческий ОПиУ из ДДС
 
 - **priority:** P0
-- **slug:** cursor-excel-formuly-bez-polomki
-- **h1:** Как попросить Cursor поправить Excel-формулу финансиста и не сломать файл
-- **primary_query:** cursor excel формулы финансист
-- **secondary_queries:** автоматизация финотдела, cursor excel формулы финансист, 2026
+- **slug:** upravlencheskij-opiu-iz-dds
+- **theme_key:** upi_from_dds
+- **h1:** Как собрать упрощённый управленческий ОПиУ из ДДС в Google Sheets
+- **primary_query:** управленческий опиу из ддс
+- **secondary_queries:** автоматизация финотдела, управленческий опиу из ддс, 2026
 - **search_intent:** how_to
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:cursor,excel,формулы
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:ддс,sheets,управленческий
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -601,40 +606,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B39 — Бюджет vs факт в Sheets за вечер
+## B45 — Антидубли контрагентов в реестре
 
 - **priority:** P0
-- **slug:** byudzhet-fakt-google-sheets
-- **h1:** Как собрать бюджет vs факт в Google Sheets за один вечер: шаблон и формулы
-- **primary_query:** бюджет факт google sheets
-- **secondary_queries:** автоматизация финотдела, бюджет факт google sheets, 2026
-- **search_intent:** how_to
+- **slug:** dubli-kontragentov-excel-skript
+- **theme_key:** counterparty_dedupe
+- **h1:** Как найти дубли контрагентов в реестре дебиторки: Excel + простой скрипт
+- **primary_query:** дубли контрагентов excel
+- **secondary_queries:** автоматизация финотдела, дубли контрагентов excel, 2026
+- **search_intent:** troubleshooting
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:sheets,управленческий
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B40 — Cursor Agent для еженедельного ДДС
-
-- **priority:** P0
-- **slug:** cursor-agent-ezhenedelnyj-dds
-- **h1:** Как собрать еженедельный отчёт ДДС через Cursor Agent и шаблон Sheets
-- **primary_query:** cursor agent отчёт ддс
-- **secondary_queries:** автоматизация финотдела, cursor agent отчёт ддс, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:cursor,agent
+- **source_notes:** scout_ci 2026-08-03 · trend-scored · tags:контрагенты,excel
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -646,6 +629,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
 ## Архив очереди (не в работе)
+
+Сняты как смысловые дубли (2026-08-03): B41≈B28 сверка банка, B42≈B25 выписка→Sheets, B43≈B13 1С→Excel, B44≈B17 формулы Excel+ИИ, B45≈B26 план-факт, B40≈B27 дайджест/отчёт.
 
 Старые карточки B01–B03, B05–B10, B12 сняты с активной очереди после согласования 2026-07.  
 Опубликованные **B04** (`claude-code-finotdel`) и **B11** (`obezlichivanie-dannyh-chatgpt-finansist`) — только в `shared/published-articles.md`.

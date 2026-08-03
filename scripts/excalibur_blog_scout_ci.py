@@ -31,8 +31,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from excalibur_blog_scout_helper import (  # noqa: E402
     check_overlap,
+    is_blocked,
     load_existing_topics,
     load_published_topics,
+    theme_keys_for,
 )
 from excalibur_blog_telegram_notify import (  # noqa: E402
     load_dotenv_local,
@@ -59,66 +61,11 @@ TREND_QUERIES = [
     f"claude code финансы",
 ]
 
-# Utility-only angles. Scout picks unpublished ones boosted by trend hits.
-# Keep primary_query short RU phrases; slug kebab.
+# Utility-only angles. Each theme_key = unique job-to-be-done.
+# Do NOT add paraphrases of published jobs (bankstmt, reconcile, planfakt, 1c export, …).
 ANGLE_BANK: list[dict[str, str]] = [
     {
-        "short": "Сверка банка и учёта через n8n",
-        "h1": "Как сверить банковскую выписку с учётом через n8n и Google Sheets",
-        "primary_query": "сверка банковской выписки n8n",
-        "slug": "sverka-banka-n8n-google-sheets",
-        "intent": "how_to",
-        "tags": "n8n банк сверка sheets",
-    },
-    {
-        "short": "Категоризация ДДС нейросетью локально",
-        "h1": "Как категоризировать ДДС локальной нейросетью без отправки выписок в облако",
-        "primary_query": "категоризация ддс нейросеть локально",
-        "slug": "kategorizaciya-dds-lokalnaya-nejroset",
-        "intent": "how_to",
-        "tags": "ollama ддс категории безопасность",
-    },
-    {
-        "short": "Бюджет vs факт в Sheets за вечер",
-        "h1": "Как собрать бюджет vs факт в Google Sheets за один вечер: шаблон и формулы",
-        "primary_query": "бюджет факт google sheets",
-        "slug": "byudzhet-fakt-google-sheets",
-        "intent": "how_to",
-        "tags": "бюджет sheets управленческий",
-    },
-    {
-        "short": "Cursor правит формулу Excel без магии",
-        "h1": "Как попросить Cursor поправить Excel-формулу финансиста и не сломать файл",
-        "primary_query": "cursor excel формулы финансист",
-        "slug": "cursor-excel-formuly-bez-polomki",
-        "intent": "how_to",
-        "tags": "cursor excel формулы",
-    },
-    {
-        "short": "Telegram-бот статусов оплат",
-        "h1": "Как сделать Telegram-бот статусов оплат для финотдела на n8n",
-        "primary_query": "telegram бот статусы оплат n8n",
-        "slug": "telegram-bot-statusy-oplat-n8n",
-        "intent": "workflow",
-        "tags": "telegram n8n оплаты",
-    },
-    {
-        "short": "Выгрузка банк→Sheets без 1С",
-        "h1": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
-        "primary_query": "банковская выписка google sheets",
-        "slug": "bankovskaya-vypiska-google-sheets",
-        "intent": "how_to",
-        "tags": "банк sheets csv api",
-    },
-    {
-        "short": "Чеклист безопасности ИИ в финотделе",
-        "h1": "Чеклист безопасности: что нельзя скармливать ChatGPT из выгрузок 1С",
-        "primary_query": "безопасность chatgpt финансы чеклист",
-        "slug": "cheklist-bezopasnost-chatgpt-finotdel",
-        "intent": "checklist",
-        "tags": "chatgpt безопасность 1с пдн",
-    },
-    {
+        "theme_key": "contract_registry_reminders",
         "short": "Реестр договоров + сроки в Sheets",
         "h1": "Как вести реестр договоров и сроков оплаты в Google Sheets с напоминаниями",
         "primary_query": "реестр договоров google sheets",
@@ -127,14 +74,7 @@ ANGLE_BANK: list[dict[str, str]] = [
         "tags": "договоры sheets напоминания",
     },
     {
-        "short": "Power Automate для напоминаний оплат",
-        "h1": "Как настроить напоминания об оплате через Power Automate и Excel Online",
-        "primary_query": "power automate напоминание об оплате",
-        "slug": "power-automate-napominanie-ob-oplate",
-        "intent": "how_to",
-        "tags": "power automate excel оплаты",
-    },
-    {
+        "theme_key": "looker_dds_dashboard",
         "short": "Дашборд ДДС за час в Looker Studio",
         "h1": "Как собрать дашборд ДДС в Looker Studio из Google Sheets за час",
         "primary_query": "дашборд ддс looker studio",
@@ -143,30 +83,7 @@ ANGLE_BANK: list[dict[str, str]] = [
         "tags": "looker ддс sheets дашборд",
     },
     {
-        "short": "Сверка взаиморасчётов CSV+Python",
-        "h1": "Как сверить взаиморасчёты контрагентов в Python по двум CSV за 15 минут",
-        "primary_query": "сверка взаиморасчетов python csv",
-        "slug": "sverka-vzaimoraschetov-python-csv",
-        "intent": "how_to",
-        "tags": "python csv сверка контрагенты",
-    },
-    {
-        "short": "n8n: акты → папка → реестр",
-        "h1": "Как автоматически класть сканы актов в папку и строку реестра через n8n",
-        "primary_query": "n8n акты сверки автоматизация",
-        "slug": "n8n-akty-papka-reestr",
-        "intent": "workflow",
-        "tags": "n8n акты диск реестр",
-    },
-    {
-        "short": "Cursor Agent для еженедельного ДДС",
-        "h1": "Как собрать еженедельный отчёт ДДС через Cursor Agent и шаблон Sheets",
-        "primary_query": "cursor agent отчёт ддс",
-        "slug": "cursor-agent-ezhenedelnyj-dds",
-        "intent": "how_to",
-        "tags": "cursor agent ддс отчёт",
-    },
-    {
+        "theme_key": "bank_fee_to_dds",
         "short": "Разнести комиссию банка в ДДС",
         "h1": "Как автоматически разносить банковскую комиссию в статьи ДДС: правила и исключения",
         "primary_query": "разнести комиссию банка ддс",
@@ -175,22 +92,7 @@ ANGLE_BANK: list[dict[str, str]] = [
         "tags": "банк комиссия ддс правила",
     },
     {
-        "short": "Сравнение: Apps Script vs n8n",
-        "h1": "Apps Script или n8n для финотдела: когда хватает кнопки в Sheets",
-        "primary_query": "apps script или n8n",
-        "slug": "apps-script-ili-n8n-finotdel",
-        "intent": "comparison",
-        "tags": "apps script n8n сравнение",
-    },
-    {
-        "short": "План счетов управленки в Sheets",
-        "h1": "Как завести простой план счетов управленческого учёта в Google Sheets",
-        "primary_query": "план счетов управленческий учет sheets",
-        "slug": "plan-schetov-upravlencheskij-sheets",
-        "intent": "how_to",
-        "tags": "план счетов управленческий sheets",
-    },
-    {
+        "theme_key": "expense_limits_telegram",
         "short": "Контроль лимитов расходов в Telegram",
         "h1": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
         "primary_query": "лимиты расходов telegram алерт",
@@ -199,14 +101,7 @@ ANGLE_BANK: list[dict[str, str]] = [
         "tags": "лимиты telegram бюджет алерт",
     },
     {
-        "short": "Импорт 1С УНФ → Excel без выгрузок руками",
-        "h1": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок",
-        "primary_query": "импорт 1с унф excel регулярно",
-        "slug": "import-1c-unf-excel-regulyarno",
-        "intent": "how_to",
-        "tags": "1с унф excel odata",
-    },
-    {
+        "theme_key": "make_payment_draft",
         "short": "Make: платёжка из таблицы",
         "h1": "Как собрать сценарий Make: строка в таблице → черновик платёжки в банк-клиент",
         "primary_query": "make платёжка из google sheets",
@@ -215,12 +110,121 @@ ANGLE_BANK: list[dict[str, str]] = [
         "tags": "make платёжка sheets банк",
     },
     {
+        "theme_key": "counterparty_dedupe",
         "short": "Антидубли контрагентов в реестре",
         "h1": "Как найти дубли контрагентов в реестре дебиторки: Excel + простой скрипт",
         "primary_query": "дубли контрагентов excel",
         "slug": "dubli-kontragentov-excel-skript",
         "intent": "troubleshooting",
         "tags": "дубли контрагенты excel дебиторка",
+    },
+    {
+        "theme_key": "cash_gap_forecast",
+        "short": "Прогноз кассового разрыва на 14 дней",
+        "h1": "Как собрать прогноз кассового разрыва на 14 дней в Google Sheets без 1С",
+        "primary_query": "прогноз кассового разрыва google sheets",
+        "slug": "prognoz-kassovogo-razryva-sheets",
+        "intent": "how_to",
+        "tags": "кассовый разрыв sheets прогноз",
+    },
+    {
+        "theme_key": "payroll_bank_file",
+        "short": "Зарплатная ведомость → файл в банк",
+        "h1": "Как из зарплатной ведомости собрать файл для банк-клиента без копипаста",
+        "primary_query": "зарплатная ведомость файл для банка",
+        "slug": "zarplatnaya-vedomost-fail-bank",
+        "intent": "how_to",
+        "tags": "зарплата банк excel выгрузка",
+    },
+    {
+        "theme_key": "expense_claims_control",
+        "short": "Подотчёт: авансы и чеки в одном реестре",
+        "h1": "Как вести подотчётные в Google Sheets: аванс, чеки, срок отчёта, эскалация",
+        "primary_query": "учет подотчетных google sheets",
+        "slug": "podotchet-reestr-google-sheets",
+        "intent": "workflow",
+        "tags": "подотчет sheets аванс чеки",
+    },
+    {
+        "theme_key": "closing_docs_before_pay",
+        "short": "Комплект закрывашек до оплаты",
+        "h1": "Как не платить поставщику без комплекта закрывающих: чеклист и статус в таблице",
+        "primary_query": "контроль закрывающих документов перед оплатой",
+        "slug": "kontrol-zakryvayushchih-pered-oplatoj",
+        "intent": "checklist",
+        "tags": "закрывающие оплата реестр контроль",
+    },
+    {
+        "theme_key": "multi_entity_bank",
+        "short": "Несколько юрлиц: выписки в один контур",
+        "h1": "Как свести банковские выписки нескольких юрлиц в один управленческий контур",
+        "primary_query": "выписки нескольких юрлиц один учет",
+        "slug": "vypiski-neskolkih-yurlic-odin-kontur",
+        "intent": "workflow",
+        "tags": "холдинг юрлица банк staging",
+    },
+    {
+        "theme_key": "payment_purpose_rules",
+        "short": "Разбор назначения платежа правилами",
+        "h1": "Как разобрать назначение платежа правилами (не нейросетью) и проставить статью ДДС",
+        "primary_query": "разбор назначения платежа правила ддс",
+        "slug": "razbor-naznacheniya-platezha-pravila",
+        "intent": "how_to",
+        "tags": "назначение платежа правила ддс",
+    },
+    {
+        "theme_key": "vendor_approval_sla",
+        "short": "Очередь согласования оплат в Telegram",
+        "h1": "Как собрать очередь согласования оплат поставщикам в Telegram с SLA",
+        "primary_query": "согласование оплат telegram sla",
+        "slug": "soglasovanie-oplat-telegram-sla",
+        "intent": "workflow",
+        "tags": "согласование оплаты telegram n8n",
+    },
+    {
+        "theme_key": "upi_from_dds",
+        "short": "Управленческий ОПиУ из ДДС",
+        "h1": "Как собрать упрощённый управленческий ОПиУ из ДДС в Google Sheets",
+        "primary_query": "управленческий опиу из ддс",
+        "slug": "upravlencheskij-opiu-iz-dds",
+        "intent": "how_to",
+        "tags": "опиу ддс sheets управленческий",
+    },
+    {
+        "theme_key": "fx_simple_mgmt",
+        "short": "Курсовые разницы в управленке",
+        "h1": "Как учитывать курсовые разницы в простой управленке на Google Sheets",
+        "primary_query": "курсовые разницы управленческий учет sheets",
+        "slug": "kursovye-raznicy-upravlencheskij-sheets",
+        "intent": "how_to",
+        "tags": "валюта курс sheets управленка",
+    },
+    {
+        "theme_key": "salary_accrual_vs_pay",
+        "short": "Сверка: начисление зарплаты ↔ банк",
+        "h1": "Как сверить начисление зарплаты с выплатами из банка: таблица расхождений",
+        "primary_query": "сверка зарплаты начисление и выплата",
+        "slug": "sverka-zarplaty-nachislenie-vyplata",
+        "intent": "troubleshooting",
+        "tags": "зарплата сверка банк excel",
+    },
+    {
+        "theme_key": "edo_status_to_sheets",
+        "short": "Статусы ЭДО в Sheets",
+        "h1": "Как забирать статусы ЭДО (отправлен/подписан) в Google Sheets без ручного мониторинга",
+        "primary_query": "статусы эдо google sheets",
+        "slug": "statusy-edo-google-sheets",
+        "intent": "workflow",
+        "tags": "эдо sheets статусы автоматизация",
+    },
+    {
+        "theme_key": "ar_abc_analysis",
+        "short": "ABC по дебиторке за час",
+        "h1": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым",
+        "primary_query": "abc анализ дебиторской задолженности",
+        "slug": "abc-analiz-debitorki-excel",
+        "intent": "how_to",
+        "tags": "дебиторка abc excel приоритизация",
     },
 ]
 
@@ -319,6 +323,7 @@ def score_angle(angle: dict[str, str], trend_blob: str, salt: str) -> float:
 
 def append_card(topic_id: str, angle: dict[str, str], *, evidence: str = "") -> None:
     today = date.today().isoformat()
+    theme = (angle.get("theme_key") or "").strip() or "unset"
     card = f"""
 ---
 
@@ -326,6 +331,7 @@ def append_card(topic_id: str, angle: dict[str, str], *, evidence: str = "") -> 
 
 - **priority:** P0
 - **slug:** {angle['slug']}
+- **theme_key:** {theme}
 - **h1:** {angle['h1']}
 - **primary_query:** {angle['primary_query']}
 - **secondary_queries:** автоматизация финотдела, {angle['primary_query']}, {YEAR}
@@ -363,6 +369,9 @@ def scout_web(count: int) -> list[dict[str, str]]:
     pub_ids, pub_slugs = published_ids_and_slugs()
     used_slugs = {t.get("slug", "").lower() for t in existing} | pub_slugs
     used_q = {t.get("primary_query", "").strip().lower() for t in existing}
+    used_themes: set[str] = set()
+    for t in existing:
+        used_themes |= theme_keys_for(t)
 
     print("Gathering trend signals…", flush=True)
     trend_blob = gather_trend_blob()
@@ -380,28 +389,44 @@ def scout_web(count: int) -> list[dict[str, str]]:
             break
         slug = angle["slug"].lower()
         pq = angle["primary_query"].strip().lower()
+        theme = (angle.get("theme_key") or "").strip().lower()
         if slug in used_slugs or pq in used_q:
+            print(f"SKIP slug/query used: {slug}", flush=True)
             continue
-        warns = check_overlap(angle["primary_query"], existing, published)
-        if any(w.get("severity") == "CRITICAL" for w in warns):
+        if theme and theme in used_themes:
+            print(f"SKIP theme_key used: {theme}", flush=True)
             continue
-        if any(w.get("severity") == "WARNING" and w.get("similarity", 0) >= 0.5 for w in warns):
+        warns = check_overlap(
+            angle["primary_query"],
+            existing,
+            published,
+            h1=angle["h1"],
+            slug=angle["slug"],
+            theme_key=theme,
+            short=angle.get("short", ""),
+        )
+        if is_blocked(warns):
+            hit = warns[0]["topic_id"] if warns else "?"
+            print(f"SKIP semantic dup vs {hit}: {angle['h1'][:70]}", flush=True)
             continue
 
         topic_id = next_topic_id()
         tag_hits = [t for t in angle.get("tags", "").split() if t.lower() in trend_blob]
         evidence = "tags:" + ",".join(tag_hits) if tag_hits else "rotation"
         append_card(topic_id, angle, evidence=evidence)
-        existing.append(
-            {
-                "topic_id": topic_id,
-                "primary_query": angle["primary_query"],
-                "slug": angle["slug"],
-                "priority": "P0",
-            }
-        )
+        row_topic = {
+            "topic_id": topic_id,
+            "h1": angle["h1"],
+            "primary_query": angle["primary_query"],
+            "slug": angle["slug"],
+            "theme_key": theme,
+            "short": angle.get("short", ""),
+            "priority": "P0",
+        }
+        existing.append(row_topic)
         used_slugs.add(slug)
         used_q.add(pq)
+        used_themes |= theme_keys_for(row_topic)
         row = {"topic_id": topic_id, **angle}
         added.append(row)
         print(f"ADDED {topic_id}: {angle['h1']}", flush=True)
@@ -425,12 +450,21 @@ def scout_cursor_cloud(count: int) -> dict:
 - memory/brief/site-brief.md
 
 Задача: найти {count} НОВЫЕ актуальные utility-only темы ({YEAR}), релевантные CFO/финотделу + автоматизация (n8n/Make/Cursor/1С/Sheets/Python).
+
+КРИТИЧНО — анти-парафраз:
+- Не предлагай ту же работу другими словами (job-to-be-done должен быть новым).
+- Запрещены вариации уже закрытых кластеров: банковская выписка/staging, сверка банк↔учёт, план-факт/бюджет-факт, выгрузка 1С→Excel/OData, ИИ/Cursor для Excel-формул, дайджест собственнику, дебиторка+напоминания, Make vs n8n.
+- Перед добавлением проверь:
+  python scripts/excalibur_blog_scout_helper.py --check-query "..." --h1 "..." --slug "..." --theme-key "snake_case_job"
+  Если exit code 1 / OVERLAP — тему НЕ добавляй.
+- В карточке обязательно поле **theme_key:** уникальный snake_case job id.
+
 Не дублируй опубликованные slug и карточки в blog-topics.md.
 Используй web search по свежим трендам. Wordstat — если MCP доступен; иначе честно пометь demand: unknown.
 Каждую тему добавь карточкой в конец memory/topics/blog-topics.md (перед секцией Архив, если есть).
 article_mode только B. search_intent: how_to|checklist|comparison|troubleshooting|workflow.
 После правок: git add/commit/push в master с сообщением "chore(blog): scout refill topics".
-В финальном ответе JSON: {{"added":[{{"topic_id","h1","slug","primary_query"}}]}}
+В финальном ответе JSON: {{"added":[{{"topic_id","h1","slug","primary_query","theme_key"}}]}}
 """
 
     result = Agent.prompt(

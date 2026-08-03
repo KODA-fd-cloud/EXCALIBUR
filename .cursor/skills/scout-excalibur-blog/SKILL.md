@@ -47,9 +47,9 @@ Append new Topic Card to blog-topics.md
 ### Шаг 4 — Тест на каннибализацию ключевых слов
 Перед созданием темы запусти:
 ```bash
-python scripts/excalibur_blog_scout_helper.py --check-query "<выбранный_запрос>"
+python scripts/excalibur_blog_scout_helper.py --check-query "<primary>" --h1 "<h1>" --slug "<slug>" --theme-key "<snake_job>"
 ```
-Если возвращается `OVERLAP DETECTED` — измени формулировку запроса или выбери другую тему. Не допускай семантического пересечения с опубликованными или запланированными статьями!
+Если exit code 1 / `OVERLAP DETECTED` — тему НЕ добавляй. **Перефраз того же смысла запрещён**.
 
 ### Шаг 5 — Сборка карточки темы (Utility-Only)
 Сформируй карточку темы по шаблону:

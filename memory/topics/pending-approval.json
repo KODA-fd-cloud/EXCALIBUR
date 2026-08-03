@@ -1,10 +1,10 @@
 {
-  "topic_id": "B36",
-  "h1": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
-  "slug": "bankovskaya-vypiska-google-sheets",
+  "topic_id": "B41",
+  "h1": "Как сверить начисление зарплаты с выплатами из банка: таблица расхождений",
+  "slug": "sverka-zarplaty-nachislenie-vyplata",
   "status": "pending",
-  "proposed_at": 1785726602,
-  "proposal_message_id": 161,
+  "proposed_at": 1785738660,
+  "proposal_message_id": 175,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -12,6 +12,11 @@
     "B32",
     "B33",
     "B34",
-    "B35"
+    "B35",
+    "B36",
+    "B37",
+    "B38",
+    "B39",
+    "B40"
   ]
 }
