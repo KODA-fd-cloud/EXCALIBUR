@@ -1,0 +1,26 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 3,
+  "over_long_sentences": [
+    {
+      "sentence": "Когда регулярный импорт нужен финотделу (и когда нет) Нужен, если каждое утро или каждый час вам нужен один и тот же срез: ДДС за период, остатки, продажи, справочники",
+      "word_count": 28
+    },
+    {
+      "sentence": "HTTP-сервис УНФ (JSON) + PQ/скрипт Нужен агрегат, сырой OData тяжёл Нужен 1С-ник один раз на сервис Схема контура: УНФ (OData или HTTP) → узкий срез с фильтром → Power Query / CSV → лист raw_* → сводная / отчёт CFO Вердикт: большинству финотделов хватает схемы A",
+      "word_count": 39
+    },
+    {
+      "sentence": "Схема B коротко: планировщик (Task Scheduler, Python или Power Automate Desktop) дергает OData или HTTP, кладёт CSV в папку, Power Query читает \"из папки\" – как реестр выписок до открытия книги",
+      "word_count": 30
+    }
+  ],
+  "readability": {
+    "score": 79.8,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 11.7,
+    "avg_syllables_per_word": 1.9
+  }
+}

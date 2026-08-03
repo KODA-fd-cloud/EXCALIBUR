@@ -1,0 +1,191 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#article",
+      "headline": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок",
+      "description": "Регулярный импорт из 1С УНФ в Excel: Power Query refresh, скрипт в папку, HTTP-сервис и чеклист безопасности без ежедневного \"Сохранить как\".",
+      "datePublished": "2026-08-03",
+      "dateModified": "2026-08-03",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/import-1c-unf-excel-regulyarno-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Тёмный UI-мокап: регулярный поток данных из 1С УНФ в Excel по расписанию"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "импорт 1с унф excel регулярно, выгрузка 1с в excel по расписанию, power query 1с обновление, odata 1с унф excel",
+      "wordCount": 8932,
+      "articleSection": "1С / Excel / автоматизация",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли настроить регулярный импорт из УНФ в Excel без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Схему A – да, если OData уже опубликован и есть read-only пользователь. Публикацию канала и схему C обычно делает админ или 1С-ник один раз. Закрытая on-prem база без веб-публикации сама \"не взлетит\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько займёт внедрение регулярного обновления?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Если канал OData есть – ориентир полчаса–два часа на запрос, staging и свойства подключения. Скрипт по расписанию с тестами – часто полдня. Заложите неделю smoke-test со сверкой сумм."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие риски для данных при регулярном импорте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Широкий состав OData, учётка с лишними правами и пароль в общей книге. Лечится read-only пользователем, узким $select/$filter и запретом сырых ПДн в облаке. Перед нейросетями – обезличивание."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем эта статья отличается от выгрузки через OData?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Тот гайд закрывает первое подключение и разовый срез. Здесь – ежедневный контур: refresh при открытии, таймер в Desktop, скрипт в папку или HTTP-срез, владелец процесса и чеклист падений."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обновит ли Excel Online сам данные из УНФ по расписанию?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Надёжного авто-refresh обычного Power Query к УНФ в облаке ждать не стоит. Берите Desktop с открытой книгой, скрипт с файлом в папке или отдельный BI со шлюзом – это уже не книга на столе финансиста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что выбрать: OData Feed, файл из папки или HTTP-сервис?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OData Feed – простой срез и база доступна с ПК. Файл из папки – ночной cron до открытия Excel. HTTP-сервис – готовый агрегат, когда сырой регистр неудобен. Сначала зафиксируйте SLA свежести, потом меняйте схему."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#howto",
+      "name": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок",
+      "description": "Выбор схемы регулярности УНФ → Excel, безопасность канала, Power Query refresh в Desktop, проверка контрольных сумм и регламент владельца.",
+      "inLanguage": "ru",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "1С:УНФ с публикацией OData или HTTP-сервиса"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Excel Desktop с Power Query"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Планировщик / скрипт / PAD (опционально, схема B)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Рабочий URL сущности OData ($format=json) или путь к папке с CSV"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Отдельный пользователь 1С только на чтение"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Определите, когда регулярный импорт нужен",
+          "text": "Нужен для одного и того же среза каждое утро или каждый час (ДДС, остатки, продажи). Не нужен для разовой загрузки прайса в УНФ или BI на миллионы строк. Зафиксируйте сущность, горизонт дат и SLA свежести до настройки расписания.",
+          "url": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#when-needed"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Подготовьте данные и безопасность",
+          "text": "Составьте список полей и период. Сырой ответ пишите на лист raw_*. Создайте read-only пользователя, сузьте состав OData, используйте $select/$filter/$top. Пароль – в учётных данных Excel или секретах скрипта, не в ячейке.",
+          "url": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#prepare-security"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Выберите схему A, B или C",
+          "text": "A – Power Query + refresh при открытой книге в Desktop. B – скрипт/планировщик кладёт CSV в папку к 7:00. C – HTTP-сервис УНФ отдаёт готовый JSON-агрегат. Не ждите, что Excel Online сам по cron обновит PQ к закрытой УНФ.",
+          "url": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#choose-scheme"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Настройте схему A в Excel Desktop",
+          "text": "Зафиксируйте рабочий URL с $format=json, $select и $filter. Подключите OData Feed / из интернета / из папки с учёткой read-only. Приведите типы в Power Query, загрузите на raw_*. Включите обновление при открытии и при необходимости каждые N минут. Сверьте контрольную сумму с УНФ и зафиксируйте дату Refresh на листе meta.",
+          "url": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#setup-scheme-a"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Проверьте результат и типичные ошибки",
+          "text": "Прогоните smoke-test: утро понедельника, смена пароля, день без движений, рост объёма. Разберите 401/403, таймаут, ложный успех в Excel Online и раздувание книги без $filter. На meta выведите время Refresh и контрольную сумму.",
+          "url": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#check-errors"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Закрепите владельца и запасной путь",
+          "text": "Оставьте staging raw_* неприкосновенным. Раз в квартал пересмотрите состав OData. Зафиксируйте запасной путь: вчерашний CSV в папке, если live-канал лёг. Один владелец и один канонический файл.",
+          "url": "https://koda-fd.ru/blog/import-1c-unf-excel-regulyarno/#next-steps"
+        }
+      ]
+    }
+  ]
+}

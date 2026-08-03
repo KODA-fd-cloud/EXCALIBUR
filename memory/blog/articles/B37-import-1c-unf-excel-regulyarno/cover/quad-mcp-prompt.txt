@@ -1,0 +1,13 @@
+KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic,
+Single canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each). Thin white gutters ONLY on the exact center lines (x=1024 and y=576); keep all panel content strictly inside its quadrant — no bleed across seams. Match the style of the attached KODA reference image (dark holographic nodes, purple/blue neon).
+
+Top-left COVER — hook "Хватит жать «Сохранить как» каждое утро": Abstract holographic data river: left cluster of purple nodes (1C UNF source) flowing via luminous arcs into blue spreadsheet-like grid of light on the right, circular refresh orbit motif, near-black #0a0a0f, soft grain, no UI chrome, no people.
+
+Top-right — comparison / when needed: Abstract bifurcation: two glowing pathways — tight daily pulse nodes (needed daily slice) vs sparse cold dots (one-off price list / heavy BI), holographic split composition, no text, no people.
+
+Bottom-left — security prep workflow: Abstract security filter: violet node stream passing through translucent shield rings and narrow gate before reaching blue Excel lattice, locked unused side-channels fading out, no text, no people.
+
+Bottom-right — choose scheme A/B/C: Three parallel luminous corridors from one UNF core to Excel sink: short daytime pulse, overnight file drop path, aggregate JSON spur — equal abstract lanes, no labels on image, no people.
+
+match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image
+Negative: text, letters, words, watermark, logo, people, faces, stock photo, 3D shield icon, code editor window, spreadsheet UI chrome, yellow headline typography, koda-fd.ru on image, meme collage, sticky notes

@@ -1,0 +1,31 @@
+{
+  "article": "memory/blog/articles/B37-import-1c-unf-excel-regulyarno/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 3,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "актор, а не книгу финансиста. Ориентир из обзоров 2026: справочники до примерно 100 тысяч строк с переза",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 минут",
+      "kind": "metric_or_duration",
+      "context": "чного Refresh, потом таймер. Не делайте: интервал 5 минут на тяжёлый регистр без $filter . Проверьте резуль",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "Ориентир из обзоров 2026: справочники до примерно 100 тысяч строк с перезаливкой раз в сутки ещё терпимы",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

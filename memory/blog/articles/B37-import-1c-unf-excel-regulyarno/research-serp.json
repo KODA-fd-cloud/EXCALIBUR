@@ -1,0 +1,469 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-03",
+    "today_ru": "03.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-05",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-03 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B37",
+    "priority": "P0",
+    "slug": "import-1c-unf-excel-regulyarno",
+    "h1": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок",
+    "primary_query": "импорт 1с унф excel регулярно",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "импорт 1с унф excel регулярно",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "импорт 1с унф excel регулярно 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Импорт Excel в 1С: пошаговая инструкция (2026) — Эксель Гид",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-importirovat-eksel-v-1s.html",
+          "snippet": ""
+        },
+        {
+          "title": "Порядок загрузки данных из Excel в 1C:УНФ Загрузка данных из ...",
+          "url": "https://topkoder.ru/stati/zagruzka-dannyh-iz-elektronnyh-tablic-excel-v-programmu-1s-upravlenie-nashej-firmoj/",
+          "snippet": "В этой статье мы разберем все актуальные способы импорта — от ручного ввода через буфер обмена до автоматизированных обработок с использованием COM-соединения и XML-обмена."
+        },
+        {
+          "title": "Новый интерфейс 1С:УНФ 2026: навигация по Обмену с 1С",
+          "url": "https://tusoft.ru/support/category/obmen-s-1s/novyy-interfeys-1sunf-gid-po-navigatsii/",
+          "snippet": "Возможности интеграции Excel с 1С:УНФ делают подобные процессы простыми и эффективными. Функция загрузки данных из файлов Excel применима к следующим объектам конфигурации: Компания. Осуществлять импорт данных возможно прямо из этих объектов или же используя функцию «Загрузка данных из Excel»."
+        },
+        {
+          "title": "Перенос номенклатуры в 1С УНФ: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-nomenklaturu-v-1s-unf.html",
+          "snippet": "Эта инструкция поможет вам быстро сориентироваться в обновленной среде и найти привычные настройки обмена, инструменты загрузки товаров и документов в 1С, а также выгрузки номенклатуры на кассы и в облако Управления ассортиментом."
+        },
+        {
+          "title": "Загрузка номенклатуры из Excel в 1С: УНФ",
+          "url": "https://42clouds.com/ru-ru/manuals/bystryy-vvod-nomenklatury-cherez-fayl-excel-v-1s-upravlenie-nashey-firmoy/",
+          "snippet": "В этой статье разберём все актуальные способы переноса — от ручного ввода до автоматизированного обмена через XML и Excel, — а также покажем, как избежать типичных проблем."
+        },
+        {
+          "title": "Загрузка из Excel в 1С: рабочая инструкция",
+          "url": "https://lumpics.ru/upload-from-excel-in-1c/",
+          "snippet": "Быстро перенести номенклатуру, остатки и цены в 1С:УНФ проще всего из Excel. Конфигурация поддерживает два пути: универсальный мастер «Загрузка данных из Excel» в справочниках и точечный импорт прямо в документы, например в «Установку цен номенклатуры», «Требование-накладную» или «Заказ»."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "импорт 1с унф excel регулярно август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Импорт Excel в 1С: пошаговая инструкция (2026) — Эксель Гид",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-importirovat-eksel-v-1s.html",
+          "snippet": ""
+        },
+        {
+          "title": "Порядок загрузки данных из Excel в 1C:УНФ Загрузка данных из ...",
+          "url": "https://topkoder.ru/stati/zagruzka-dannyh-iz-elektronnyh-tablic-excel-v-programmu-1s-upravlenie-nashej-firmoj/",
+          "snippet": "В этой статье мы разберем все актуальные способы импорта — от ручного ввода через буфер обмена до автоматизированных обработок с использованием COM-соединения и XML-обмена."
+        },
+        {
+          "title": "Перенос номенклатуры в 1С УНФ: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-nomenklaturu-v-1s-unf.html",
+          "snippet": "Для корректной загрузка данных из электронных таблиц Excel в программу 1С:УНФ необходимо тщательно подготовить исходные данных. Для успешного импорта необходимо правильно отформатировать таблицу: заголовки столбцов должны соответствовать названиям полей в 1С, а типы данных - их актуальным форматам."
+        },
+        {
+          "title": "Как загрузить данные из Excel в 1С: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-prochitat-dannye-iz-ekselya-v-1s.html",
+          "snippet": "В этой статье разберём все актуальные способы переноса — от ручного ввода до автоматизированного обмена через XML и Excel, — а также покажем, как избежать типичных проблем."
+        },
+        {
+          "title": "Импорт В Унф - Infostart",
+          "url": "https://infostart.ru/1c/articles/995322/",
+          "snippet": "Подробное руководство по импорту данных из Excel в 1С: способы загрузки, обработка ошибок, примеры кода и типовые проблемы. Актуально для 1С 8.3 и 8.2."
+        },
+        {
+          "title": "Перенос данных из Excel в 1С: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-iz-eksel-v-1s.html",
+          "snippet": "Подробно рассмотрены основные особенности отражения в УНФ операций импорта и предложена модификация отчёта по ценам контрагентов, позволяющая сравнивать цены от разных поставщиков."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "импорт 1с унф excel регулярно новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "1С или Excel: как малому бизнесу перейти на 1С:УНФ",
+          "url": "https://binavigator.ru/articles/servisy-1s/pyat-prichin-pereyti-iz-excel-v-1s-unf/",
+          "snippet": ""
+        },
+        {
+          "title": "Обмен с 1С в 2026: новости 1С:УНФ и платформы 8.5",
+          "url": "https://tusoft.ru/blog/novosti-kompanii/1c-unf-platforma-85-i-obnovlenie-tovarnyh-kategorij-v-module-obmen-s-1c/",
+          "snippet": "Сравнение Excel и 1С:УНФ для малого бизнеса: скрытые потери ручного учета, окупаемость, безопасность данных и контроль. Расчет ROI и стоимость владения за 3 года."
+        },
+        {
+          "title": "Новый интерфейс 8.5 в 1С:УНФ, 1С:Розница и 1С:РМК",
+          "url": "https://v8.1c.ru/news/novyy-interfeys-8-5-v-1s-unf-1s-roznitsa-i-1s-rmk.htm",
+          "snippet": "Обновления модуля Обмен с 1С от ТУ СОФТ в 2026: поддержка платформы 8.5 и новых видов маркированной продукции в 1С:УНФ."
+        },
+        {
+          "title": "Перенос номенклатуры в 1С УНФ: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-nomenklaturu-v-1s-unf.html",
+          "snippet": "Представим наши решения в новом интерфейсе зимой 2025-2026 гг. Смотрите основные изменения уже сейчас: На Rutube. На YouTube. В сообществе ВКонтакте."
+        },
+        {
+          "title": "Новый интерфейс 1С:УНФ 2026: навигация по Обмену с 1С",
+          "url": "https://tusoft.ru/support/category/obmen-s-1s/novyy-interfeys-1sunf-gid-po-navigatsii/",
+          "snippet": "В этой статье разберём все актуальные способы переноса — от ручного ввода до автоматизированного обмена через XML и Excel, — а также покажем, как избежать типичных проблем."
+        },
+        {
+          "title": "Новости маркировки с 1С:Розницей и 1С:УНФ",
+          "url": "https://v8.1c.ru/news/novosti-markirovki-s-1s-roznitsey-i-1s-unf.htm",
+          "snippet": "Эта инструкция поможет вам быстро сориентироваться в обновленной среде и найти привычные настройки обмена, инструменты загрузки товаров и документов в 1С, а также выгрузки номенклатуры на кассы и в облако Управления ассортиментом."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Роботизация производства в 2026: как роботы меняют бизнес и решают ...",
+          "url": "https://myukraina.com.ua/ru/robotyzatsiia-iak-mashyny-zminiuiut-vyrobnytstvo-ta-biznes-u-2026-rotsi/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": "Узнайте, как роботизация меняет производство в 2026 году. Промышленные роботы, коботы, RPA, цифры IFR, тренды Украины, ошибки внедрения и чек-лист готовности. Практическое руководство для бизнеса."
+        },
+        {
+          "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+          "url": "https://vk.com/video271632077_456240008",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+          "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+          "snippet": "Смотрите онлайн АВТОМАТИЗАЦИЯ ФИНОТДЕЛА 1 ч 16 мин 2 с. Видео от 30 января 2026 в хорошем качестве, без регистрации в бесплатном видеокаталоге ВКонтакте! 2 — оценили."
+        },
+        {
+          "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+          "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+          "snippet": "Встречи на ПМЭФ-2026 хорошо подсветили именно эти перемены. Автоматизация становится не набором отдельных инструментов, а способом собрать процессы, данные и людей в более управляемую среду. Для одних компаний это означает переход от ручных таблиц к единой системе."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "импорт 1с унф excel регулярно 2026",
+      "purpose": "вторичный запрос: импорт 1с унф excel регулярно",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Импорт Excel в 1С: пошаговая инструкция (2026) — Эксель Гид",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-importirovat-eksel-v-1s.html",
+          "snippet": ""
+        },
+        {
+          "title": "Порядок загрузки данных из Excel в 1C:УНФ Загрузка данных из ...",
+          "url": "https://topkoder.ru/stati/zagruzka-dannyh-iz-elektronnyh-tablic-excel-v-programmu-1s-upravlenie-nashej-firmoj/",
+          "snippet": "В этой статье мы разберем все актуальные способы импорта — от ручного ввода через буфер обмена до автоматизированных обработок с использованием COM-соединения и XML-обмена."
+        },
+        {
+          "title": "Как загрузить данные из Excel в 1С: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-zagruzit-dannye-iz-eksel-v-1s.html",
+          "snippet": "Осуществлять импорт данных возможно прямо из этих объектов или же используя функцию «Загрузка данных из Excel». Эту функцию находится в разделе «Компания» в подразделе «Начальные остатки»."
+        },
+        {
+          "title": "Перенос номенклатуры в 1С УНФ: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-nomenklaturu-v-1s-unf.html",
+          "snippet": "Подробный гайд по импорту данных из Excel в 1С: подготовка файла, выбор метода загрузки, обработка ошибок и оптимизация процесса. Подходит для 1С 8.3 и 8.2."
+        },
+        {
+          "title": "Новый интерфейс 1С:УНФ 2026: навигация по Обмену с 1С",
+          "url": "https://tusoft.ru/support/category/obmen-s-1s/novyy-interfeys-1sunf-gid-po-navigatsii/",
+          "snippet": "В этой статье разберём все актуальные способы переноса — от ручного ввода до автоматизированного обмена через XML и Excel, — а также покажем, как избежать типичных проблем."
+        },
+        {
+          "title": "Загрузка данных из Excel в 1С — способы и обработки",
+          "url": "https://kvant-c.ru/faq/1c-excel-import/",
+          "snippet": "Эта инструкция поможет вам быстро сориентироваться в обновленной среде и найти привычные настройки обмена, инструменты загрузки товаров и документов в 1С, а также выгрузки номенклатуры на кассы и в облако Управления ассортиментом."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "На этой странице вы найдёте готовые календари для каждого месяца: Формат А4, готовый к печати. Просто выберите нужный месяц ниже и скачайте календарь бесплатно и без регистрации. Идеально подходит для офиса, школы, дома или планирования личных дел."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-fajly-iz-1s-v-eksel.html",
+          "snippet": ""
+        },
+        {
+          "title": "Как загрузить прайс поставщика в 1С:УНФ — пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-zagruzit-prajs-postavshchika-v-1s-unf.html",
+          "snippet": "Вы узнаете, как сохранить структуру таблиц, избежать ошибок при работе с большими объёмами данных и автоматизировать рутинные операции."
+        },
+        {
+          "title": "1С и Excel: экспорт и импорт данных — пошагово и без ошибок",
+          "url": "https://life1c.ru/post/2901",
+          "snippet": "Подробное руководство по импорту прайс-листов поставщиков в 1С:Управление небольшой фирмой (УНФ). Форматы Excel, CSV, XML, настройка правил обмена и обработка ошибок."
+        },
+        {
+          "title": "Перенос номенклатуры в 1С УНФ: пошаговая инструкция 2026",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-nomenklaturu-v-1s-unf.html",
+          "snippet": "Поговорим просто: как передать данные из 1С в таблицу Excel и обратно так, чтобы не потерять ничего важного и не тратить часы на правки. Я расскажу о рабочих методах, типичных ошибках и даю практичные решения, которые легко применять прямо сейчас."
+        },
+        {
+          "title": "Выгрузка данных из 1с в Excel: 5 рабочих способов",
+          "url": "https://lumpics.ru/uploading-data-from-1c-in-excel/",
+          "snippet": "В этой статье разберём все актуальные способы переноса — от ручного ввода до автоматизированного обмена через XML и Excel, — а также покажем, как избежать типичных проблем."
+        },
+        {
+          "title": "Разбираемся, как выгрузить данные из 1С в Excel и наоборот",
+          "url": "https://scloud.ru/blog/razbiraemsya_kak_vygruzit_dannye_iz_1s_v_excel_i_naoborot/",
+          "snippet": "Довольно часто нужно перенести различные виды данных из программы 1С в Excel. Сделать это можно целым рядом способов."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-importirovat-eksel-v-1s.html",
+      "title": "Импорт Excel в 1С: пошаговая инструкция (2026) — Эксель Гид",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://topkoder.ru/stati/zagruzka-dannyh-iz-elektronnyh-tablic-excel-v-programmu-1s-upravlenie-nashej-firmoj/",
+      "title": "Порядок загрузки данных из Excel в 1C:УНФ Загрузка данных из ...",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://tusoft.ru/support/category/obmen-s-1s/novyy-interfeys-1sunf-gid-po-navigatsii/",
+      "title": "Новый интерфейс 1С:УНФ 2026: навигация по Обмену с 1С",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-nomenklaturu-v-1s-unf.html",
+      "title": "Перенос номенклатуры в 1С УНФ: пошаговая инструкция 2026",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://42clouds.com/ru-ru/manuals/bystryy-vvod-nomenklatury-cherez-fayl-excel-v-1s-upravlenie-nashey-firmoy/",
+      "title": "Загрузка номенклатуры из Excel в 1С: УНФ",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://lumpics.ru/upload-from-excel-in-1c/",
+      "title": "Загрузка из Excel в 1С: рабочая инструкция",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-prochitat-dannye-iz-ekselya-v-1s.html",
+      "title": "Как загрузить данные из Excel в 1С: пошаговая инструкция 2026",
+      "from_query": "импорт 1с унф excel регулярно август 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/995322/",
+      "title": "Импорт В Унф - Infostart",
+      "from_query": "импорт 1с унф excel регулярно август 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/k/ka/kak-perenesti-iz-eksel-v-1s.html",
+      "title": "Перенос данных из Excel в 1С: пошаговая инструкция 2026",
+      "from_query": "импорт 1с унф excel регулярно август 2026"
+    },
+    {
+      "url": "https://binavigator.ru/articles/servisy-1s/pyat-prichin-pereyti-iz-excel-v-1s-unf/",
+      "title": "1С или Excel: как малому бизнесу перейти на 1С:УНФ",
+      "from_query": "импорт 1с унф excel регулярно новости 2026"
+    },
+    {
+      "url": "https://tusoft.ru/blog/novosti-kompanii/1c-unf-platforma-85-i-obnovlenie-tovarnyh-kategorij-v-module-obmen-s-1c/",
+      "title": "Обмен с 1С в 2026: новости 1С:УНФ и платформы 8.5",
+      "from_query": "импорт 1с унф excel регулярно новости 2026"
+    },
+    {
+      "url": "https://v8.1c.ru/news/novyy-interfeys-8-5-v-1s-unf-1s-roznitsa-i-1s-rmk.htm",
+      "title": "Новый интерфейс 8.5 в 1С:УНФ, 1С:Розница и 1С:РМК",
+      "from_query": "импорт 1с унф excel регулярно новости 2026"
+    },
+    {
+      "url": "https://v8.1c.ru/news/novosti-markirovki-s-1s-roznitsey-i-1s-unf.htm",
+      "title": "Новости маркировки с 1С:Розницей и 1С:УНФ",
+      "from_query": "импорт 1с унф excel регулярно новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://myukraina.com.ua/ru/robotyzatsiia-iak-mashyny-zminiuiut-vyrobnytstvo-ta-biznes-u-2026-rotsi/",
+      "title": "Роботизация производства в 2026: как роботы меняют бизнес и решают ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vk.com/video271632077_456240008",
+      "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+      "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+      "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-zagruzit-dannye-iz-eksel-v-1s.html",
+      "title": "Как загрузить данные из Excel в 1С: пошаговая инструкция 2026",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://kvant-c.ru/faq/1c-excel-import/",
+      "title": "Загрузка данных из Excel в 1С — способы и обработки",
+      "from_query": "импорт 1с унф excel регулярно 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-vygruzit-fajly-iz-1s-v-eksel.html",
+      "title": "Как выгрузить данные из 1С в Excel: пошаговая инструкция 2026",
+      "from_query": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/k/ka/kak-zagruzit-prajs-postavshchika-v-1s-unf.html",
+      "title": "Как загрузить прайс поставщика в 1С:УНФ — пошаговая инструкция 2026",
+      "from_query": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок 2026"
+    },
+    {
+      "url": "https://life1c.ru/post/2901",
+      "title": "1С и Excel: экспорт и импорт данных — пошагово и без ошибок",
+      "from_query": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок 2026"
+    },
+    {
+      "url": "https://lumpics.ru/uploading-data-from-1c-in-excel/",
+      "title": "Выгрузка данных из 1с в Excel: 5 рабочих способов",
+      "from_query": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок 2026"
+    },
+    {
+      "url": "https://scloud.ru/blog/razbiraemsya_kak_vygruzit_dannye_iz_1s_v_excel_i_naoborot/",
+      "title": "Разбираемся, как выгрузить данные из 1С в Excel и наоборот",
+      "from_query": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок 2026"
+    }
+  ]
+}

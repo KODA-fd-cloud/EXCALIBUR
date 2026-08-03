@@ -1,0 +1,43 @@
+{
+  "topic_id": "B37",
+  "h1": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок",
+  "title": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок",
+  "description": "Регулярный импорт из 1С УНФ в Excel: Power Query refresh, скрипт в папку, HTTP-сервис и чеклист безопасности без ежедневного \"Сохранить как\".",
+  "cover_alt": "Тёмный UI-мокап: регулярный поток данных из 1С УНФ в Excel по расписанию",
+  "slug": "import-1c-unf-excel-regulyarno",
+  "primary_query": "импорт 1с унф excel регулярно",
+  "secondary_queries": [
+    "выгрузка 1с в excel по расписанию",
+    "power query 1с обновление",
+    "odata 1с унф excel"
+  ],
+  "char_count": 8932,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "регулярный импорт из 1С УНФ в Excel",
+    "как обновлять данные УНФ в Excel без ручных выгрузок",
+    "расписание выгрузки 1С в Excel через Power Query"
+  ],
+  "meta_ab": {
+    "title_seo": "Импорт 1С УНФ Excel регулярно: без ручных выгрузок",
+    "title_ctr": "💻 Импорт из 1С УНФ в Excel регулярно: хватит жать \"Сохранить как\" каждое утро!",
+    "title_aeo": "Как настроить регулярный импорт из 1С УНФ в Excel без ручных выгрузок?",
+    "description_seo": "Пошагово: Power Query refresh в Desktop, скрипт в папку или HTTP-сервис УНФ. Выбор схемы, безопасность и проверка контрольных сумм.",
+    "description_ctr": "⚡️ Один раз настроили канал – дальше срез ДДС по кнопке или к 7:00. Три схемы регулярности и честные границы Excel Online.",
+    "description_aeo": "Регулярный импорт из 1С УНФ в Excel – контур обновления среза через Power Query, скрипт или HTTP-сервис без ежедневной ручной выгрузки отчёта."
+  },
+  "geo_qa": {
+    "score": 90,
+    "core_eeat_lite": 19,
+    "verdict": "PASS",
+    "date": "2026-08-03",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "WARNING",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  },
+  "cover_family": "gradient_abstract"
+}

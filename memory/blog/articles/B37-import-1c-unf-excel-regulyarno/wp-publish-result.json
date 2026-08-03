@@ -1,0 +1,18 @@
+{
+  "verdict": "fail",
+  "topic_id": "B37",
+  "slug": "import-1c-unf-excel-regulyarno",
+  "status": "PUBLISH_BLOCKER",
+  "permalink": null,
+  "post_id": null,
+  "blockers": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH missing / != yes",
+    "No FTP_*/SSH_* credentials (memory/site.env.local missing; process env empty)",
+    "PUBLIC_SITE_URL missing in env"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "dry_run": "pass",
+    "qa": "PASS"
+  }
+}

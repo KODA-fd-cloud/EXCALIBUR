@@ -1,0 +1,22 @@
+{
+  "pipeline": "quad_canvas_1x_generateimage_fallback",
+  "mcp_preferred": "user-mcp-kv/gpt-image-2",
+  "mcp_actual": "cursor_GenerateImage",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "style_ref_local": "memory/cover/assets/koda-ui-style-reference.png",
+  "output_canvas": "cover/canvas-quad.png",
+  "jobs": [
+    {
+      "slot": "canvas_quad",
+      "tool": "GenerateImage",
+      "note": "ONE call only — 4 abstract panels inside, then excalibur_blog_cover_quad_split.py --inject-html",
+      "mcp_args": {
+        "prompt": "see cover/quad-mcp-prompt.txt",
+        "aspect_ratio": "16:9",
+        "reference_image_paths": [
+          "memory/cover/assets/koda-ui-style-reference.png"
+        ]
+      }
+    }
+  ]
+}
