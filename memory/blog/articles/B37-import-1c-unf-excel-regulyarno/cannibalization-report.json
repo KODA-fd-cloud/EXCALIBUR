@@ -1,0 +1,18 @@
+{
+  "verdict": "warning",
+  "total_issues": 1,
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'B13-vygruzka-1c-excel-odata' ('выгрузка из 1с в excel') highly overlaps with secondary query of 'B37-import-1c-unf-excel-regulyarno' ('выгрузка 1с в excel по расписанию'). Similarity: 75%",
+      "articles": [
+        "B13-vygruzka-1c-excel-odata",
+        "B37-import-1c-unf-excel-regulyarno"
+      ],
+      "primary_query": "выгрузка из 1с в excel",
+      "secondary_query": "выгрузка 1с в excel по расписанию",
+      "similarity": 0.75
+    }
+  ]
+}
