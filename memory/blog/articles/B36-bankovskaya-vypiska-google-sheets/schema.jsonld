@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/bankovskaya-vypiska-google-sheets/#article",
+      "headline": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
+      "description": "CSV из Drive, e-mail, T-API и Sber API в staging Google Sheets: Apps Script, ежедневный trigger, hash-дедуп и безопасность токенов без 1С.",
+      "datePublished": "2026-08-03",
+      "dateModified": "2026-08-03",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-google-sheets/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/bankovskaya-vypiska-google-sheets/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/bankovskaya-vypiska-google-sheets-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная голографическая автоматизация финансовых данных на тёмном фоне с фиолетовым акцентом"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "банковская выписка google sheets, автоматизация финотдела, google apps script банковская выписка, импорт csv google sheets",
+      "wordCount": 9324,
+      "articleSection": "Автоматизация финотдела / Google Sheets",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/bankovskaya-vypiska-google-sheets/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли настроить импорт выписки без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да для CSV: возьмите официальный sample Google, подставьте ID папки и проверьте вручную. T-API - по шаблону UrlFetchApp выше; Sber API чаще потребует помощи с OAuth на старте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени займёт внедрение?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CSV и trigger - один вечер. T-API с тестами - 1-2 дня. Sber API - от сроков заявки в банке плюс настройка токена."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие риски для персональных данных и 152-ФЗ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Данные лежат в Google Cloud; ограничьте доступ к книге, токены в Properties, в нейросети только обезличенные копии. Пошаговый регламент - в статье про обезличивание."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Банк отдаёт только .txt для 1С - что делать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ищите экспорт CSV/Excel в клиент-банке. Если его нет - API банка или отдельный парсер txt; не пытайтесь \"скормить\" txt Sheets без маппинга полей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли 1С, если выписка уже в Sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет для управленческого ДДС и сверки. 1С с DirectBank - другой маршрут, когда бухгалтерия живёт в учётной системе."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Make или n8n вместо Apps Script?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если нужны десятки интеграций с уведомлениями. Apps Script проще, когда вся логика внутри одной таблицы - см. обзор no-code для финансов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как не задвоить операции при повторном импорте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Колонка hash перед append, папка processed для CSV, метка на обработанных письмах. Перед append проверяйте, есть ли hash на staging."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-03",
+    "today_ru": "03.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-05",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-03 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B36",
+    "priority": "P0",
+    "slug": "bankovskaya-vypiska-google-sheets",
+    "h1": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
+    "primary_query": "банковская выписка google sheets",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "банковская выписка google sheets",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "банковская выписка google sheets 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+          "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация сверки платежей с помощью GPT и Google Sheets - Ascn.ai",
+          "url": "https://ascn.ai/ru/templates/automate-bank-statement-and-invoice-reconciliation",
+          "snippet": "Это пошаговое руководство по автоматической выгрузке банковских выписок из интернет‑банка в Google Sheets и Excel."
+        },
+        {
+          "title": "Банковская сверка с ChatGPT: загружаем выписку — получаем акт ...",
+          "url": "https://blog.fin-academy.pro/bankovskaya-sverka-chatgpt-avtomatizatsiya",
+          "snippet": "Наше решение для автоматизированной сверки превращает многочасовой ручной труд в минутный процесс. Используя связку Google Sheets и мощных языковых моделей GPT, система интеллектуально сопоставляет банковские выписки с выставленными счетами."
+        },
+        {
+          "title": "Convert Bank Statements to Google Sheets (2026): 5 Methods Compared ...",
+          "url": "https://www.rocketstatements.com/blog/convert-bank-statements-to-google-sheets-2026-5-methods-compared-free-template",
+          "snippet": "В этой статье — конкретный алгоритм: как взять банковскую выписку, сравнить её с данными 1С, найти расхождения и сформировать акт сверки взаиморасчётов за 15 минут."
+        },
+        {
+          "title": "Avery: Bank Sync for Google Sheets™ - Google Workspace",
+          "url": "https://workspace.google.com/marketplace/app/avery_bank_sync_for_google_sheets/731084485496?hl=ru",
+          "snippet": "Convert Bank Statements to Google Sheets (2026): 5 Methods Compared + Free Template Rekeying 500 transactions from PDF bank statements can cost a bookkeeping team several unpaid hours each month. Convert bank statements to Google Sheets is a data-extraction process that reads PDF and image statements and outputs clean, spreadsheet-ready rows and columns. This comparison-post evaluates five ..."
+        },
+        {
+          "title": "StatementSheet:Эффективный конвертер банковских выписок, преобразующий ...",
+          "url": "https://moge.ai/ru/product/statementsheet",
+          "snippet": "Avery — Bank Sync for Google Sheets™ Stop manually importing bank statements. Avery automatically syncs your transactions from 10,000+ banks directly into your Google Sheets..."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "банковская выписка google sheets август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+          "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+          "snippet": ""
+        },
+        {
+          "title": "Как быстро обрабатывать банковскую выписку в Google Sheets",
+          "url": "https://www.youtube.com/watch?v=SaVqjcSW7FU",
+          "snippet": "Это пошаговое руководство по автоматической выгрузке банковских выписок из интернет‑банка в Google Sheets и Excel."
+        },
+        {
+          "title": "Автоматизация сверки платежей с помощью GPT и Google Sheets - Ascn.ai",
+          "url": "https://ascn.ai/ru/templates/automate-bank-statement-and-invoice-reconciliation",
+          "snippet": "Таблицы для автоматизации бизнеса Как быстро обрабатывать банковскую выписку в Google Sheets"
+        },
+        {
+          "title": "Convert Bank Statements to Google Sheets (2026): 5 Methods Compared ...",
+          "url": "https://www.rocketstatements.com/blog/convert-bank-statements-to-google-sheets-2026-5-methods-compared-free-template",
+          "snippet": "Узнайте, как автоматизировать сверку банковских выписок и счетов. Инструкция по использованию GPT и Google Sheets для сокращения времени обработки данных на 90% и исключения ошибок в бухгалтерии."
+        },
+        {
+          "title": "StatementSheet:Эффективный конвертер банковских выписок, преобразующий ...",
+          "url": "https://moge.ai/ru/product/statementsheet",
+          "snippet": "Convert Bank Statements to Google Sheets (2026): 5 Methods Compared + Free Template Rekeying 500 transactions from PDF bank statements can cost a bookkeeping team several unpaid hours each month. Convert bank statements to Google Sheets is a data-extraction process that reads PDF and image statements and outputs clean, spreadsheet-ready rows and columns. This comparison-post evaluates five ..."
+        },
+        {
+          "title": "Конвертер банковских выписок — преобразуйте выписки в Excel и CSV",
+          "url": "https://www.currency.wiki/ru/bank-statement-converter",
+          "snippet": "StatementSheet — специализированный инструмент для быстрой и точной конвертации PDF-выписок из банка в редактируемые файлы Excel и CSV. Поддерживает более 100 банков по всему миру, автоматизируя извлечение финансовых данных, устраняя ошибки ручного ввода и экономя время."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "банковская выписка google sheets новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+          "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+          "snippet": ""
+        },
+        {
+          "title": "Ai Ассистент Для Выписок, Счетов-фактур И Квитанций",
+          "url": "https://bankgpt.io/ru",
+          "snippet": "Три шага на этой неделе: 1) проверьте, в каких форматах ваш банк выдаёт выписки; 2) настройте выгрузку одного тестового файла и импорт в Google Sheets; 3) запустите ежедневную проверку первых пяти ..."
+        },
+        {
+          "title": "Генератор Банковских Выписок - Ai Онлайн Бесплатно, Без Регистрации",
+          "url": "https://bankstatementgenerator.ai/ru/",
+          "snippet": "Извлекайте, создавайте и анализируйте банковские выписки, счета-фактуры и квитанции с легкостью, сокращая ручную работу и повышая точность."
+        },
+        {
+          "title": "Конвертируйте Банковские Выписки в CSV, Excel, JSON",
+          "url": "https://www.easybankconvert.com/ru",
+          "snippet": "Создавайте профессиональные банковские выписки мгновенно с нашим AI-генератором банковских выписок. 100% онлайн, бесплатно, без регистрации. Экспорт в PDF или Excel за считанные секунды."
+        },
+        {
+          "title": "Банковская сверка с ChatGPT: загружаем выписку — получаем акт ...",
+          "url": "https://blog.fin-academy.pro/bankovskaya-sverka-chatgpt-avtomatizatsiya",
+          "snippet": "Бесплатный инструмент конвертации банковских выписок. Мгновенно конвертируйте PDF банковские выписки в формат CSV, Excel или JSON. Продвинутый анализ для всех банков."
+        },
+        {
+          "title": "StatementSheet:Эффективный конвертер банковских выписок, преобразующий ...",
+          "url": "https://moge.ai/ru/product/statementsheet",
+          "snippet": "В этой статье — конкретный алгоритм: как взять банковскую выписку, сравнить её с данными 1С, найти расхождения и сформировать акт сверки взаиморасчётов за 15 минут."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Роботизация производства в 2026: как роботы меняют бизнес и решают ...",
+          "url": "https://myukraina.com.ua/ru/robotyzatsiia-iak-mashyny-zminiuiut-vyrobnytstvo-ta-biznes-u-2026-rotsi/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+          "url": "https://vk.com/video271632077_456240008",
+          "snippet": "Узнайте, как роботизация меняет производство в 2026 году. Промышленные роботы, коботы, RPA, цифры IFR, тренды Украины, ошибки внедрения и чек-лист готовности. Практическое руководство для бизнеса."
+        },
+        {
+          "title": "Какой софт выбирают финансовые директора России в 2026 году",
+          "url": "https://blog.fin-ctrl.ru/blog/kakoy-soft-vybiraut-findiry",
+          "snippet": "Смотрите онлайн АВТОМАТИЗАЦИЯ ФИНОТДЕЛА 1 ч 16 мин 2 с. Видео от 30 января 2026 в хорошем качестве, без регистрации в бесплатном видеокаталоге ВКонтакте! 2 — оценили."
+        },
+        {
+          "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+          "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+          "snippet": "Сегодня же ситуация изменилась. Уход западных вендоров из России в 2022 году запустил процесс, который к 2025−2026 годам превратился в масштабную перестройку всей архитектуры корпоративного ПО."
+        },
+        {
+          "title": "Автоматизация управленческого учета и документооборот для финотдела ИТ ...",
+          "url": "https://1forma.ru/blog/tpost/xsuldi67l1-1fproject-finance",
+          "snippet": "В 2026 году все три задачи берёт Claude Code: терминальный агент от Anthropic, который пишет код, сам его запускает и кладёт результат прямо в вашу папку. Программировать не нужно. Нужно описать задачу по-русски."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "банковская выписка google sheets 2026",
+      "purpose": "вторичный запрос: банковская выписка google sheets",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+          "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация сверки платежей с помощью GPT и Google Sheets - Ascn.ai",
+          "url": "https://ascn.ai/ru/templates/automate-bank-statement-and-invoice-reconciliation",
+          "snippet": "Это пошаговое руководство по автоматической выгрузке банковских выписок из интернет‑банка в Google Sheets и Excel."
+        },
+        {
+          "title": "Банковская сверка с ChatGPT: загружаем выписку — получаем акт ...",
+          "url": "https://blog.fin-academy.pro/bankovskaya-sverka-chatgpt-avtomatizatsiya",
+          "snippet": "Узнайте, как автоматизировать сверку банковских выписок и счетов. Инструкция по использованию GPT и Google Sheets для сокращения времени обработки данных на 90% и исключения ошибок в бухгалтерии."
+        },
+        {
+          "title": "Convert Bank Statements to Google Sheets (2026): 5 Methods Compared ...",
+          "url": "https://www.rocketstatements.com/blog/convert-bank-statements-to-google-sheets-2026-5-methods-compared-free-template",
+          "snippet": "В этой статье — конкретный алгоритм: как взять банковскую выписку, сравнить её с данными 1С, найти расхождения и сформировать акт сверки взаиморасчётов за 15 минут."
+        },
+        {
+          "title": "Avery: Bank Sync for Google Sheets™ - Google Workspace",
+          "url": "https://workspace.google.com/marketplace/app/avery_bank_sync_for_google_sheets/731084485496?hl=ru",
+          "snippet": "Convert Bank Statements to Google Sheets (2026): 5 Methods Compared + Free Template Rekeying 500 transactions from PDF bank statements can cost a bookkeeping team several unpaid hours each month. Convert bank statements to Google Sheets is a data-extraction process that reads PDF and image statements and outputs clean, spreadsheet-ready rows and columns. This comparison-post evaluates five ..."
+        },
+        {
+          "title": "StatementSheet:Эффективный конвертер банковских выписок, преобразующий ...",
+          "url": "https://moge.ai/ru/product/statementsheet",
+          "snippet": "Avery — Bank Sync for Google Sheets™ Stop manually importing bank statements. Avery automatically syncs your transactions from 10,000+ banks directly into your Google Sheets..."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "На этой странице вы найдёте готовые календари для каждого месяца: Формат А4, готовый к печати. Просто выберите нужный месяц ниже и скачайте календарь бесплатно и без регистрации. Идеально подходит для офиса, школы, дома или планирования личных дел."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+          "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+          "snippet": ""
+        },
+        {
+          "title": "StatementSheet:Эффективный конвертер банковских выписок, преобразующий ...",
+          "url": "https://moge.ai/ru/product/statementsheet",
+          "snippet": "Три шага на этой неделе: 1) проверьте, в каких форматах ваш банк выдаёт выписки; 2) настройте выгрузку одного тестового файла и импорт в Google Sheets; 3) запустите ежедневную проверку первых ..."
+        },
+        {
+          "title": "1С и Google Таблицы: быстрый обмен данными и синхронизация",
+          "url": "https://life1c.ru/post/2919",
+          "snippet": "Автоматически преобразует PDF-выписки из банка в форматы Excel и CSV с сохранением всех деталей транзакций, таких как даты, суммы и описания. Совместим с более чем 100 банками по всему миру, обеспечивая доступность для пользователей различных финансовых учреждений."
+        },
+        {
+          "title": "Конвертируйте Банковские Выписки в CSV, Excel, JSON",
+          "url": "https://www.easybankconvert.com/ru",
+          "snippet": "В этой статье разберем реальные способы обмена данными между 1С и Google Таблицами, объясним, когда какой метод применяется, и покажем практические шаги — от простого CSV до ..."
+        },
+        {
+          "title": "Как быстро обрабатывать банковскую выписку в Google Sheets",
+          "url": "https://www.youtube.com/watch?v=SaVqjcSW7FU",
+          "snippet": "Бесплатный инструмент конвертации банковских выписок. Мгновенно конвертируйте PDF банковские выписки в формат CSV, Excel или JSON. Продвинутый анализ для всех банков."
+        },
+        {
+          "title": "Банковская сверка с ChatGPT: загружаем выписку — получаем акт ...",
+          "url": "https://blog.fin-academy.pro/bankovskaya-sverka-chatgpt-avtomatizatsiya",
+          "snippet": "Предпринимателю обязательно нужно вести учет финансов, чтобы контролировать движение средств в бизнесе и не допустить паденияМы уже несколько лет занимаемся ..."
+        }
+      ],
+      "searched_at": "2026-08-03"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://rko.by/tri-sposoba-vygruzki-bankovskikh-vypisok-v-google-sheets-i-excel",
+      "title": "Три способа выгрузки банковских выписок в Google Sheets и Excel",
+      "from_query": "банковская выписка google sheets 2026"
+    },
+    {
+      "url": "https://ascn.ai/ru/templates/automate-bank-statement-and-invoice-reconciliation",
+      "title": "Автоматизация сверки платежей с помощью GPT и Google Sheets - Ascn.ai",
+      "from_query": "банковская выписка google sheets 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/bankovskaya-sverka-chatgpt-avtomatizatsiya",
+      "title": "Банковская сверка с ChatGPT: загружаем выписку — получаем акт ...",
+      "from_query": "банковская выписка google sheets 2026"
+    },
+    {
+      "url": "https://www.rocketstatements.com/blog/convert-bank-statements-to-google-sheets-2026-5-methods-compared-free-template",
+      "title": "Convert Bank Statements to Google Sheets (2026): 5 Methods Compared ...",
+      "from_query": "банковская выписка google sheets 2026"
+    },
+    {
+      "url": "https://workspace.google.com/marketplace/app/avery_bank_sync_for_google_sheets/731084485496?hl=ru",
+      "title": "Avery: Bank Sync for Google Sheets™ - Google Workspace",
+      "from_query": "банковская выписка google sheets 2026"
+    },
+    {
+      "url": "https://moge.ai/ru/product/statementsheet",
+      "title": "StatementSheet:Эффективный конвертер банковских выписок, преобразующий ...",
+      "from_query": "банковская выписка google sheets 2026"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SaVqjcSW7FU",
+      "title": "Как быстро обрабатывать банковскую выписку в Google Sheets",
+      "from_query": "банковская выписка google sheets август 2026"
+    },
+    {
+      "url": "https://www.currency.wiki/ru/bank-statement-converter",
+      "title": "Конвертер банковских выписок — преобразуйте выписки в Excel и CSV",
+      "from_query": "банковская выписка google sheets август 2026"
+    },
+    {
+      "url": "https://bankgpt.io/ru",
+      "title": "Ai Ассистент Для Выписок, Счетов-фактур И Квитанций",
+      "from_query": "банковская выписка google sheets новости 2026"
+    },
+    {
+      "url": "https://bankstatementgenerator.ai/ru/",
+      "title": "Генератор Банковских Выписок - Ai Онлайн Бесплатно, Без Регистрации",
+      "from_query": "банковская выписка google sheets новости 2026"
+    },
+    {
+      "url": "https://www.easybankconvert.com/ru",
+      "title": "Конвертируйте Банковские Выписки в CSV, Excel, JSON",
+      "from_query": "банковская выписка google sheets новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://myukraina.com.ua/ru/robotyzatsiia-iak-mashyny-zminiuiut-vyrobnytstvo-ta-biznes-u-2026-rotsi/",
+      "title": "Роботизация производства в 2026: как роботы меняют бизнес и решают ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vk.com/video271632077_456240008",
+      "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://blog.fin-ctrl.ru/blog/kakoy-soft-vybiraut-findiry",
+      "title": "Какой софт выбирают финансовые директора России в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+      "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://1forma.ru/blog/tpost/xsuldi67l1-1fproject-finance",
+      "title": "Автоматизация управленческого учета и документооборот для финотдела ИТ ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://life1c.ru/post/2919",
+      "title": "1С и Google Таблицы: быстрый обмен данными и синхронизация",
+      "from_query": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание 2026"
+    }
+  ]
+}

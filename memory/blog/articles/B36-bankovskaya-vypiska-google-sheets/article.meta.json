@@ -1,0 +1,31 @@
+{
+  "topic_id": "B36",
+  "h1": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
+  "title": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
+  "description": "CSV из Drive, e-mail, T-API и Sber API в staging Google Sheets: Apps Script, ежедневный trigger, hash-дедуп и безопасность токенов без 1С.",
+  "cover_alt": "Абстрактная голографическая автоматизация финансовых данных на тёмном фоне с фиолетовым акцентом",
+  "slug": "bankovskaya-vypiska-google-sheets",
+  "primary_query": "банковская выписка google sheets",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "google apps script банковская выписка",
+    "импорт csv google sheets"
+  ],
+  "char_count": 9324,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "банковская выписка в google sheets без 1с",
+    "автоматический импорт выписки apps script",
+    "загрузка банковской выписки в google таблицы"
+  ],
+  "meta_ab": {
+    "title_seo": "Банковская выписка Google Sheets: CSV, API и расписание без 1С",
+    "title_ctr": "📊 Банковская выписка в Google Sheets: CSV, API или почта - что выбрать?",
+    "title_aeo": "Как загрузить банковскую выписку в Google Sheets без 1С?",
+    "description_seo": "Пошагово: staging-лист, импорт CSV из Drive, e-mail и T-API/Sber API через Apps Script, ежедневный trigger и проверка первой недели.",
+    "description_ctr": "⚡️ Хватит копипаста из клиент-банка: три маршрута в Google Sheets, hash-дедуп и токены в Script Properties.",
+    "description_aeo": "Банковская выписка Google Sheets без 1С - через CSV, e-mail или API банка, Apps Script и time-driven trigger с ручной сверкой недели 1."
+  },
+  "cover_family": "gradient_abstract"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "memory/blog/articles/B36-bankovskaya-vypiska-google-sheets/article.html",
+  "total_links": 5,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+    },
+    {
+      "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=bankovskaya-vypiska-google-sheets",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://koda-fd.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_absolute",
+      "skipped": false
+    }
+  ]
+}

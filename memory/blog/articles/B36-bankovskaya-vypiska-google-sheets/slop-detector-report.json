@@ -1,0 +1,26 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 3,
+  "over_long_sentences": [
+    {
+      "sentence": "Сравните маршруты: CSV, e-mail, T-API и Sber API API для финансиста - как защищённый курьер между банком и таблицей: вы не качаете файл руками, банк отдаёт структурированный реестр операций",
+      "word_count": 28
+    },
+    {
+      "sentence": "Маршрут Когда брать Сложность старта Риски CSV / Excel из Drive 1-2 счёта, банк даёт CSV Низкая (есть sample Google) Кодировка CP1251, разделитель ; E-mail с вложением Банк шлёт выписку на почту Средняя Спам, дубли писем, формат вложения T-API (Т-Бизнес) Счета в Т-Банке, нужен ежедневный поток 1-2 дня с тестами Токен 90 дней без использования, пагинация Sber API Уже подключены к Sber API для ЮЛ Выше (OAuth, заявка) Лимит ~5 запросов/сек, scope MCP_STATEMENT Вердикт: начните с CSV + Drive, если банк отдаёт файл",
+      "word_count": 77
+    },
+    {
+      "sentence": "Схема: клиент-банк / API / почта → Apps Script → staging → (далее ДДС и сверка) → лист log при ошибке Создайте installable trigger: Extensions → Triggers → функция импорта, раз в день, час до начала рабочего дня",
+      "word_count": 30
+    }
+  ],
+  "readability": {
+    "score": 92.8,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 10.0,
+    "avg_syllables_per_word": 1.7
+  }
+}

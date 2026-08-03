@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-03",
+    "today_ru": "03.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-05",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-03 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B36",
+    "priority": "P0",
+    "slug": "bankovskaya-vypiska-google-sheets",
+    "h1": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание",
+    "primary_query": "банковская выписка google sheets",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "банковская выписка google sheets",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B36",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "банковская выписка google sheets 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "банковская выписка google sheets август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "банковская выписка google sheets новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "банковская выписка google sheets 2026",
+      "purpose": "вторичный запрос: банковская выписка google sheets"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как забирать банковскую выписку в Google Sheets без 1С: CSV, API, расписание 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B36-bankovskaya-vypiska-google-sheets",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

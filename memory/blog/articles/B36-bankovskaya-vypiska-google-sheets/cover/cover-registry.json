@@ -1,0 +1,14 @@
+{
+  "topic_id": "B36",
+  "slug": "bankovskaya-vypiska-google-sheets",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактный поток банковской выписки в сетку Google Таблиц на тёмном голографическом фоне",
+  "cover_alt_text": "Абстрактный поток банковской выписки в сетку Google Таблиц на тёмном голографическом фоне",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "generated_at": "2026-08-03T06:03:54.431868+00:00",
+  "note": "abstract holographic finance automation, bank data streams into spreadsheet grid, NO text on image (blog brand style)"
+}

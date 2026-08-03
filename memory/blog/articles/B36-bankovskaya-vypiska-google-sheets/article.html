@@ -1,0 +1,152 @@
+<p>Каждое утро вы скачиваете выписку из клиент-банка, вставляете строки в Google Sheets и молитесь, чтобы формулы не сломались. Это можно заменить: CSV из банка, письмо с вложением или API Т-Бизнеса и Сбера автоматически попадают в staging-таблицу по расписанию. Ниже - выбор маршрута без 1С, Apps Script с ежедневным триггером и проверка первой недели, чтобы цифры совпали с банком.</p>
+
+<p>Если у вас уже есть 1С с DirectBank, это другой контур: банк стучится в учётную систему, а не в таблицу. Здесь - финотдел на Sheets как управленческий слой. Контекст no-code автоматизации - в <a href="/blog/avtomatizaciya-finansov-no-code/">гайде по автоматизации финансов без кода</a>. Правила обезличивания перед ChatGPT - в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">статье про защиту данных</a>.</p>
+
+<h2 id="when-needed">Оцените, когда нужна автоматизация выписки (и когда хватит CSV)</h2>
+<p>Мало операций в неделю - ручная выгрузка CSV раз в пятницу быстрее, чем писать скрипт. Несколько счетов, ежедневный ДДС или сверка с контрагентами каждое утро - пора ставить расписание. Ловушка: банк отдаёт только 1CClientBankExchange (.txt) для 1С. Для Sheets нужен CSV или Excel; если их нет, ищите API банка или промежуточный парсер.</p>
+<p><b>Сделайте:</b> посчитайте минуты в месяц на копипаст и сравните с одним вечером на настройку. <b>Не делайте:</b> автоматизировать "на будущее" при десяти строках в неделю - поддержка скрипта съест выгоду.</p>
+
+<h2 id="staging">Создайте staging-лист с колонками и дедупом</h2>
+<p>Staging - промежуточный журнал: сюда падает всё сырое из банка, отсюда вы ведёте ДДС. Отдельный лист <code>raw_import</code> только на append: правки в отчёте не должны затирать источник.</p>
+<ol>
+  <li>Создайте листы <code>raw_import</code>, <code>staging</code> и <code>log</code> в одной книге Google Sheets.</li>
+  <li>Задайте колонки staging: <code>date</code>, <code>amount</code>, <code>counterparty</code>, <code>purpose</code>, <code>account</code>, <code>hash</code>.</li>
+  <li>Считайте <code>hash</code> из даты, суммы и назначения - так вы не задвоите операцию при повторном импорте.</li>
+  <li>Зафиксируйте знак суммы: приход плюс, расход минус - один раз на всю компанию.</li>
+  <li>Не смешивайте staging с красивым отчётом для собственника на одном листе.</li>
+</ol>
+<p><b>Сделайте:</b> пустую структуру до первого файла из банка. <b>Не делайте:</b> тащить ИНН и номера карт клиентов "на всякий случай" - лишний риск по 152-ФЗ.</p>
+
+<h2 id="routes">Сравните маршруты: CSV, e-mail, T-API и Sber API</h2>
+<p>API для финансиста - как защищённый курьер между банком и таблицей: вы не качаете файл руками, банк отдаёт структурированный реестр операций. Выберите один основной канал и один запасной.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Маршрут</th>
+      <th>Когда брать</th>
+      <th>Сложность старта</th>
+      <th>Риски</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>CSV / Excel из Drive</b></td>
+      <td>1-2 счёта, банк даёт CSV</td>
+      <td>Низкая (есть sample Google)</td>
+      <td>Кодировка CP1251, разделитель <code>;</code></td>
+    </tr>
+    <tr>
+      <td><b>E-mail с вложением</b></td>
+      <td>Банк шлёт выписку на почту</td>
+      <td>Средняя</td>
+      <td>Спам, дубли писем, формат вложения</td>
+    </tr>
+    <tr>
+      <td><b>T-API (Т-Бизнес)</b></td>
+      <td>Счета в Т-Банке, нужен ежедневный поток</td>
+      <td>1-2 дня с тестами</td>
+      <td>Токен 90 дней без использования, пагинация</td>
+    </tr>
+    <tr>
+      <td><b>Sber API</b></td>
+      <td>Уже подключены к Sber API для ЮЛ</td>
+      <td>Выше (OAuth, заявка)</td>
+      <td>Лимит ~5 запросов/сек, scope MCP_STATEMENT</td>
+    </tr>
+  </tbody>
+</table>
+<blockquote>
+  <b>Вердикт:</b> начните с CSV + Drive, если банк отдаёт файл. Переходите на T-API, когда устали от ручной выгрузки или счетов больше двух. Sber API - если интеграция уже одобрена банком.
+</blockquote>
+<p><b>Сделайте:</b> один канал на счёт. <b>Не делайте:</b> параллельно CSV и API в один лист без hash - получите дубли.</p>
+
+<h2 id="csv-script">Настройте импорт CSV из Google Drive через Apps Script</h2>
+<p>Google Apps Script - встроенный "супер-Excel" внутри таблицы: код сам читает папку, парсит CSV и дописывает строки. Официальный sample Import CSV data делает то же: trigger, append, перенос в <code>processed/</code> и письмо с итогом.</p>
+<ol>
+  <li>Создайте папку Drive <code>bank_inbox</code> и подпапку <code>processed</code>.</li>
+  <li>Расширения → Apps Script → вставьте функцию импорта (фрагмент ниже).</li>
+  <li>Укажите ID папки и имя листа staging в константах, не в ячейках таблицы.</li>
+  <li>Запустите вручную, проверьте 5 первых строк против клиент-банка.</li>
+  <li>После успеха включите time-driven trigger (следующий блок).</li>
+</ol>
+<pre><code>function importCsvFromDrive() {
+  var folder = DriveApp.getFolderById('FOLDER_ID');
+  var files = folder.getFilesByType(MimeType.CSV);
+  var sheet = SpreadsheetApp.getActive().getSheetByName('staging');
+  while (files.hasNext()) {
+    var file = files.next();
+    var rows = Utilities.parseCsv(file.getBlob().getDataAsString('UTF-8'));
+    // map bank columns → staging, compute hash, skip duplicates
+    sheet.getRange(sheet.getLastRow() + 1, 1, rows.length, rows[0].length).setValues(rows);
+    file.moveTo(DriveApp.getFolderById('PROCESSED_FOLDER_ID'));
+  }
+}
+</code></pre>
+<p>Если в назначении кракозябры - пересохраните CSV в UTF-8 или укажите windows-1251 в <code>getDataAsString</code>. Комиссии банка часто идут отдельной строкой - не выкидывайте их при фильтре "только контрагенты".</p>
+<p><b>Сделайте:</b> лог ошибок на лист <code>log</code>. <b>Не делайте:</b> хранить пароли от клиент-банка в коде или ячейках.</p>
+
+<h2 id="email-api">Подключите e-mail или банковский API при необходимости</h2>
+<p><b>E-mail:</b> фильтр писем от адреса банка → Apps Script <code>GmailApp.search</code> → <code>Utilities.parseCsv</code> на вложении → тот же staging. Помечайте письмо меткой "обработано", чтобы не парсить дважды.</p>
+<p><b>T-API:</b> токен в ЛК Т-Бизнес → Интеграции, scope "Счета и выписки". Запрос <code>GET /api/v1/statement</code> через <code>UrlFetchApp</code>: лимит 1-5000 операций, пагинация <code>nextCursor</code>, до 20 запросов в секунду. Данные с июня 2023, даты в ISO 8601 (UTC) - сверьте часовой пояс с вашим ДДС.</p>
+<pre><code>function fetchTinkoffStatement(token, account, from, to) {
+  var url = 'https://business.tinkoff.ru/openapi/api/v1/statement?account=' +
+    account + '&from=' + from + '&to=' + to + '&limit=1000';
+  var resp = UrlFetchApp.fetch(url, {
+    headers: { Authorization: 'Bearer ' + token },
+    muteHttpExceptions: true
+  });
+  // map JSON operations → staging rows; loop while nextCursor present
+}
+</code></pre>
+<p><b>Sber API:</b> scope <code>MCP_STATEMENT</code>, метод выписки по рублёвому счёту. Старт тяжелее из-за OAuth - имеет смысл, если API уже выдан. Альтернатива оркестрации - Make или n8n, но Apps Script не требует отдельного сервера.</p>
+<p><b>Сделайте:</b> токены только в <code>PropertiesService.getScriptProperties()</code>. <b>Не делайте:</b> отправлять сырые выписки в ChatGPT для "разбора" - сначала <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">обезличьте данные</a>.</p>
+
+<h2 id="schedule">Поставьте ежедневный триггер и проверьте первую неделю</h2>
+<p>Расписание - как регламент закрытия месяца, только каждый день в одно время.</p>
+<blockquote>
+  <b>Схема:</b> клиент-банк / API / почта → Apps Script → staging → (далее ДДС и сверка) → лист log при ошибке
+</blockquote>
+<ol>
+  <li>Создайте installable trigger: Extensions → Triggers → функция импорта, раз в день, час до начала рабочего дня.</li>
+  <li>Или кодом: <code>ScriptApp.newTrigger('importCsvFromDrive').timeBased().everyDays(1).atHour(7).create()</code>.</li>
+  <li>Помните лимиты: не более 20 triggers на скрипт; runtime trigger 90 мин/день (consumer) или 6 ч (Workspace); один запуск до 6 минут.</li>
+  <li>Неделю 1 сверяйте staging с клиент-банком построчно: даты, комиссии, знак суммы.</li>
+  <li>UrlFetchApp: до 20 000 вызовов/день на consumer - для одной выписки с пагинацией хватает с запасом.</li>
+</ol>
+<p><b>Сделайте:</b> отдельный сервисный Google-аккаунт с доступом только к этой книге. <b>Не делайте:</b> включать trigger до ручной проверки - ошибка кодировки размножится на сотни строк.</p>
+
+<h2 id="security">Защитите токены и персональные данные</h2>
+<p>Облако Google - чужой сейф с ключами у провайдера: удобно, но выписка - коммерческая тайна. Токен банка в ячейке A1 увидит любой редактор таблицы; в Script Properties - только владелец скрипта.</p>
+<ul>
+  <li>Токены T-API и Sber - только Properties, ротация по регламенту (T-API: 90 дней без использования).</li>
+  <li>Не грузите полные реквизиты контрагентов в LLM; для анализа - обезличенная копия.</li>
+  <li>Ограничьте sharing книги: финотдел и собственник, не "вся компания".</li>
+</ul>
+<p><b>Сделайте:</b> чеклист безопасности из <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайда по обезличиванию</a>. <b>Не делайте:</b> публиковать скрин staging с живыми ИНН в Telegram или чатах.</p>
+
+<h2 id="next-steps">Что автоматизировать дальше</h2>
+<p>После стабильного staging логичный следующий шаг - нормализация статей ДДС и платёжный календарь; детали staging-слоя я разбираю в отдельном материале про raw_bank. Если нужны готовые сценарии и разбор ошибок импорта - загляните в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=bankovskaya-vypiska-google-sheets" target="_blank" rel="noopener noreferrer">закрытый клуб KODA</a>. Короткие заметки по финтех-автоматизации - в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>.</p>
+<ol>
+  <li>Доведите hash-дедуп до нуля дублей за 7 дней.</li>
+  <li>Добавьте колонку <code>category</code> и правила маппинга контрагент → статья.</li>
+  <li>Свяжите staging с ДДС-отчётом формулами или QUERY, не копипастом.</li>
+  <li>Раз в месяц сверяйте оборот staging с банковской справкой.</li>
+</ol>
+<p>Материалы по no-code для финотдела собраны на <a href="https://koda-fd.ru/" target="_blank" rel="noopener noreferrer">koda-fd.ru</a>.</p>
+<p><b>Сделайте:</b> не переходите к ДДС, пока staging неделю сходится с банком. <b>Не делайте:</b> подключать ChatGPT к сырой выписке без обезличивания.</p>
+
+<h2>Частые вопросы</h2>
+<h3>Можно ли настроить импорт выписки без программиста?</h3>
+<p>Да для CSV: возьмите официальный sample Google, подставьте ID папки и проверьте вручную. T-API - по шаблону UrlFetchApp выше; Sber API чаще потребует помощи с OAuth на старте.</p>
+<h3>Сколько времени займёт внедрение?</h3>
+<p>CSV и trigger - один вечер. T-API с тестами - 1-2 дня. Sber API - от сроков заявки в банке плюс настройка токена.</p>
+<h3>Какие риски для персональных данных и 152-ФЗ?</h3>
+<p>Данные лежат в Google Cloud; ограничьте доступ к книге, токены в Properties, в нейросети только обезличенные копии. Пошаговый регламент - в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">статье про обезличивание</a>.</p>
+<h3>Банк отдаёт только .txt для 1С - что делать?</h3>
+<p>Ищите экспорт CSV/Excel в клиент-банке. Если его нет - API банка или отдельный парсер txt; не пытайтесь "скормить" txt Sheets без маппинга полей.</p>
+<h3>Нужна ли 1С, если выписка уже в Sheets?</h3>
+<p>Нет для управленческого ДДС и сверки. 1С с DirectBank - другой маршрут, когда бухгалтерия живёт в учётной системе.</p>
+<h3>Make или n8n вместо Apps Script?</h3>
+<p>Да, если нужны десятки интеграций с уведомлениями. Apps Script проще, когда вся логика внутри одной таблицы - см. <a href="/blog/avtomatizaciya-finansov-no-code/">обзор no-code для финансов</a>.</p>
+<h3>Как не задвоить операции при повторном импорте?</h3>
+<p>Колонка hash перед append, папка processed для CSV, метка на обработанных письмах. Перед append проверяйте, есть ли hash на staging.</p>

@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/B36-bankovskaya-vypiska-google-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "tCursor , до 20 запросов в секунду. Данные с июня 2023, даты в ISO 8601 (UTC) - сверьте часовой пояс с в",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "90 дней",
+      "kind": "metric_or_duration",
+      "context": "е, нужен ежедневный поток 1-2 дня с тестами Токен 90 дней без использования, пагинация Sber API Уже подключ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "90 мин",
+      "kind": "metric_or_duration",
+      "context": ": не более 20 triggers на скрипт; runtime trigger 90 мин/день (consumer) или 6 ч (Workspace); один запуск",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 ч",
+      "kind": "metric_or_duration",
+      "context": "крипт; runtime trigger 90 мин/день (consumer) или 6 ч (Workspace); один запуск до 6 минут. Неделю 1 све",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 минут",
+      "kind": "metric_or_duration",
+      "context": "нь (consumer) или 6 ч (Workspace); один запуск до 6 минут. Неделю 1 сверяйте staging с клиент-банком постро",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "ый кодит\" . Доведите hash-дедуп до нуля дублей за 7 дней. Добавьте колонку category и правила маппинга кон",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1251",
+      "kind": "large_number",
+      "context": "ы - пересохраните CSV в UTF-8 или укажите windows-1251 в getDataAsString . Комиссии банка часто идут отде",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5000",
+      "kind": "large_number",
+      "context": "GET /api/v1/statement через UrlFetchApp : лимит 1-5000 операций, пагинация nextCursor , до 20 запросов в",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "8601",
+      "kind": "large_number",
+      "context": "апросов в секунду. Данные с июня 2023, даты в ISO 8601 (UTC) - сверьте часовой пояс с вашим ДДС. functio",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1000",
+      "kind": "large_number",
+      "context": "account + '&from=' + from + '&to=' + to + '&limit=1000'; var resp = UrlFetchApp.fetch(url, { headers: {",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "20 000",
+      "kind": "large_number",
+      "context": "очно: даты, комиссии, знак суммы. UrlFetchApp: до 20 000 вызовов/день на consumer - для одной выписки с паг",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
