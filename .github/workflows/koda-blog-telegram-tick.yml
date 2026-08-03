@@ -49,15 +49,8 @@ jobs:
           # shellcheck disable=SC2086
           # min-unpublished считает proposeable (не rejected). При 0 — всегда дозаправка.
           python scripts/excalibur_blog_scout_ci.py --count 5 --min-unpublished 3 $EXTRA | tee scout.json
-          git config user.name "koda-blog-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add memory/topics/blog-topics.md memory/topics/telegram-cooldowns.json || true
-          if git diff --cached --quiet; then
-            echo "Scout: no topic file changes"
-          else
-            git commit -m "chore(blog): scout refill topics"
-            git push
-          fi
+          # НЕ пушим Scout отдельно: иначе Commit state в конце job не может
+          # запушить pending (non-fast-forward) и «нет» откатывается → вечный B42.
 
       - name: Telegram tick
         id: tick
@@ -129,10 +122,26 @@ jobs:
           set -euo pipefail
           git config user.name "koda-blog-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add memory/topics/pending-approval.json memory/topics/telegram-updates.offset memory/topics/telegram-cooldowns.json memory/topics/blog-topics.md shared/published-articles.md memory/blog/articles || true
+          # Preserve local tick state across rebase (pending/rejects/offset)
+          mkdir -p /tmp/koda-tick-commit
+          cp memory/topics/pending-approval.json /tmp/koda-tick-commit/ 2>/dev/null || true
+          cp memory/topics/rejected-topics.json /tmp/koda-tick-commit/ 2>/dev/null || true
+          cp memory/topics/telegram-updates.offset /tmp/koda-tick-commit/ 2>/dev/null || true
+          cp memory/topics/telegram-cooldowns.json /tmp/koda-tick-commit/ 2>/dev/null || true
+          git fetch origin master
+          git pull --rebase origin master || {
+            echo "rebase failed — abort and retry with ours for topic state"
+            git rebase --abort || true
+            git reset --soft origin/master || true
+          }
+          cp /tmp/koda-tick-commit/pending-approval.json memory/topics/ 2>/dev/null || true
+          cp /tmp/koda-tick-commit/rejected-topics.json memory/topics/ 2>/dev/null || true
+          cp /tmp/koda-tick-commit/telegram-updates.offset memory/topics/ 2>/dev/null || true
+          cp /tmp/koda-tick-commit/telegram-cooldowns.json memory/topics/ 2>/dev/null || true
+          git add memory/topics/pending-approval.json memory/topics/rejected-topics.json memory/topics/telegram-updates.offset memory/topics/telegram-cooldowns.json memory/topics/blog-topics.md shared/published-articles.md memory/blog/articles || true
           if git diff --cached --quiet; then
             echo "No changes"
           else
             git commit -m "chore(blog): telegram tick / auto-publish approved topic"
-            git push
+            git push origin HEAD:master
           fi

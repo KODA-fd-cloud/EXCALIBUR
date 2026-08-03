@@ -1,10 +1,10 @@
 {
-  "topic_id": "B41",
-  "h1": "Как сверить начисление зарплаты с выплатами из банка: таблица расхождений",
-  "slug": "sverka-zarplaty-nachislenie-vyplata",
+  "topic_id": "B43",
+  "h1": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
+  "slug": "limity-rashodov-telegram-alert",
   "status": "pending",
-  "proposed_at": 1785738660,
-  "proposal_message_id": 175,
+  "proposed_at": 1785763691,
+  "proposal_message_id": 188,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -17,6 +17,8 @@
     "B37",
     "B38",
     "B39",
-    "B40"
+    "B40",
+    "B41",
+    "B42"
   ]
 }

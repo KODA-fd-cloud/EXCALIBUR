@@ -20,6 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PENDING = ROOT / "memory" / "topics" / "pending-approval.json"
+REJECTED = ROOT / "memory" / "topics" / "rejected-topics.json"
 TOPICS = ROOT / "memory" / "topics" / "blog-topics.md"
 PUBLISHED = ROOT / "shared" / "published-articles.md"
 OFFSET_FILE = ROOT / "memory" / "topics" / "telegram-updates.offset"
@@ -93,6 +94,43 @@ def load_pending() -> dict | None:
 def save_pending(pending: dict) -> None:
     PENDING.parent.mkdir(parents=True, exist_ok=True)
     PENDING.write_text(json.dumps(pending, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def load_rejected_file() -> list[str]:
+    if not REJECTED.is_file():
+        return []
+    try:
+        data = json.loads(REJECTED.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    if isinstance(data, list):
+        return [str(x).upper() for x in data]
+    if isinstance(data, dict):
+        return [str(x).upper() for x in (data.get("rejected_ids") or [])]
+    return []
+
+
+def save_rejected_file(ids: list[str] | set[str]) -> None:
+    """Durable reject list — survives pending git races / failed pushes."""
+    merged = sorted({str(x).upper() for x in ids if str(x).strip()})
+    REJECTED.parent.mkdir(parents=True, exist_ok=True)
+    REJECTED.write_text(
+        json.dumps({"rejected_ids": merged, "updated_at": int(time.time())}, ensure_ascii=False, indent=2)
+        + "\n",
+        encoding="utf-8",
+    )
+
+
+def mark_rejected(*topic_ids: str) -> list[str]:
+    merged = set(load_rejected_file())
+    pending = load_pending() or {}
+    merged |= {str(x).upper() for x in (pending.get("rejected_ids") or [])}
+    for tid in topic_ids:
+        if tid:
+            merged.add(str(tid).upper())
+    out = sorted(merged)
+    save_rejected_file(out)
+    return out
 
 
 def read_offset() -> int:
@@ -183,7 +221,9 @@ def cooldown_touch(key: str) -> None:
 
 def rejected_ids() -> set[str]:
     pending = load_pending() or {}
-    return {str(x).upper() for x in (pending.get("rejected_ids") or [])}
+    merged = {str(x).upper() for x in (pending.get("rejected_ids") or [])}
+    merged |= set(load_rejected_file())
+    return merged
 
 
 def proposeable_count() -> int:
@@ -287,7 +327,14 @@ def remind_pending(token: str, chat_id: str, pending: dict) -> dict:
     return pending
 
 
-def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> dict:
+def apply_decision(
+    token: str,
+    chat_id: str,
+    pending: dict,
+    decision: str,
+    *,
+    shown_topic_id: str | None = None,
+) -> dict:
     out: dict = {"decision": decision, "topic_id": pending.get("topic_id")}
     if decision == "approve":
         # Idempotent: не спамить «Тема принята» при повторном poll того же ок
@@ -322,10 +369,24 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
         return out
 
     if decision == "reject":
-        rejected = list(pending.get("rejected_ids") or [])
-        if pending["topic_id"] not in rejected:
-            rejected.append(pending["topic_id"])
-        send_text(token, chat_id, f"⏭ Ок, пропускаю {pending['topic_id']}. Сразу следующая тема:")
+        # Persist reject FIRST (durable file + pending) so a failed git push
+        # cannot resurrect the same topic on the next cron tick.
+        skip_tid = str(pending.get("topic_id") or "").upper()
+        shown = (shown_topic_id or "").upper()
+        # Drift case: file says B41, Telegram showed B42 — reject BOTH.
+        extra = [shown] if shown and shown != skip_tid else []
+        rejected = mark_rejected(
+            skip_tid,
+            *extra,
+            *[str(x) for x in (pending.get("rejected_ids") or [])],
+        )
+        pending["status"] = "rejected"
+        pending["rejected_ids"] = rejected
+        pending["rejected_at"] = int(time.time())
+        save_pending(pending)
+
+        label = skip_tid if not shown or shown == skip_tid else f"{skip_tid}+{shown}"
+        send_text(token, chat_id, f"⏭ Ок, пропускаю {label}. Сразу следующая тема:")
         topic = next_topic(skip_ids=set(rejected))
         if not topic:
             try:
@@ -333,31 +394,18 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
             except Exception:
                 pass
             topic = next_topic(skip_ids=set(rejected))
-            if not topic:
-                pending["status"] = "rejected"
-                pending["rejected_ids"] = rejected
-                save_pending(pending)
-                if cooldown_ready("empty_queue", EMPTY_QUEUE_COOLDOWN_SEC):
-                    send_text(
-                        token,
-                        chat_id,
-                        "📭 После «нет» не осталось тем. Scout не дозаправил — попробую позже (не чаще 1×/сутки).",
-                    )
-                    cooldown_touch("empty_queue")
-                out["status"] = "rejected"
-                out["next"] = None
-                return out
-            # fall through to propose filled topic
-            new_pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)
-            out["status"] = "pending"
-            out["decision"] = "reject_then_autofill_next"
-            out["next"] = {
-                "topic_id": new_pending["topic_id"],
-                "h1": new_pending["h1"],
-                "slug": new_pending.get("slug", ""),
-            }
-            out["topic_id"] = new_pending["topic_id"]
+        if not topic:
+            if cooldown_ready("empty_queue", EMPTY_QUEUE_COOLDOWN_SEC):
+                send_text(
+                    token,
+                    chat_id,
+                    "📭 После «нет» не осталось тем. Scout не дозаправил — попробую позже (не чаще 1×/сутки).",
+                )
+                cooldown_touch("empty_queue")
+            out["status"] = "rejected"
+            out["next"] = None
             return out
+
         new_pending = propose_topic(token, chat_id, topic, rejected_ids=rejected)
         out["status"] = "pending"
         out["decision"] = "reject_then_next"
@@ -373,7 +421,12 @@ def apply_decision(token: str, chat_id: str, pending: dict, decision: str) -> di
     return out
 
 
-def _poll_once(token: str, chat_id: str, pending: dict, *, timeout: int = 0) -> tuple[str, str | None, int]:
+def topic_id_from_text(text: str) -> str | None:
+    m = re.search(r"ID:\s*(B\d+)", text or "", re.I)
+    return m.group(1).upper() if m else None
+
+
+def _poll_once(token: str, chat_id: str, pending: dict, *, timeout: int = 0) -> tuple[str, str | None, int, str | None]:
     offset = read_offset()
     r = api(
         token,
@@ -385,6 +438,7 @@ def _poll_once(token: str, chat_id: str, pending: dict, *, timeout: int = 0) -> 
 
     decision = "pending"
     matched = None
+    shown_topic_id = None
     max_id = offset - 1
     min_date = effective_proposed_at(pending)
     proposal_mid = pending.get("proposal_message_id")
@@ -394,7 +448,8 @@ def _poll_once(token: str, chat_id: str, pending: dict, *, timeout: int = 0) -> 
         msg = upd.get("message") or {}
         if str(msg.get("chat", {}).get("id")) != str(chat_id):
             continue
-        reply_to = (msg.get("reply_to_message") or {}).get("message_id")
+        reply_to_msg = msg.get("reply_to_message") or {}
+        reply_to = reply_to_msg.get("message_id")
         if int(msg.get("date", 0)) < min_date and reply_to != proposal_mid:
             continue
         text = msg.get("text") or ""
@@ -403,12 +458,14 @@ def _poll_once(token: str, chat_id: str, pending: dict, *, timeout: int = 0) -> 
             continue
         decision = d
         matched = text
+        # If user replies to a proposal, trust THAT id (fixes B41-file / B42-Telegram drift)
+        shown_topic_id = topic_id_from_text(str(reply_to_msg.get("text") or ""))
         write_offset(int(upd["update_id"]) + 1)
         break
     else:
         if max_id >= offset:
             write_offset(max_id + 1)
-    return decision, matched, max_id
+    return decision, matched, max_id, shown_topic_id
 
 
 def cmd_send(args: argparse.Namespace) -> None:
@@ -494,7 +551,12 @@ def cmd_tick(args: argparse.Namespace) -> None:
     """Scheduled entrypoint: propose / remind (rate-limited) / handle ok|нет / autofill."""
     token, chat_id = require_creds()
     pending = load_pending()
-    rejected = list((pending or {}).get("rejected_ids") or [])
+    # Merge durable rejects into pending every tick (survives failed pushes / stale checkout)
+    durable = mark_rejected(*list((pending or {}).get("rejected_ids") or []))
+    if pending is not None:
+        pending["rejected_ids"] = durable
+        save_pending(pending)
+    rejected = list(durable)
 
     if pending and pending.get("status") == "pending":
         now = int(time.time())
@@ -520,11 +582,24 @@ def cmd_tick(args: argparse.Namespace) -> None:
         return
 
     if pending and pending.get("status") == "pending":
-        decision, matched, _ = _poll_once(token, chat_id, pending, timeout=0)
+        decision, matched, _, shown_tid = _poll_once(token, chat_id, pending, timeout=0)
         if decision in {"approve", "reject"}:
-            out = apply_decision(token, chat_id, pending, decision)
+            # If Telegram proposal drifted from pending file — align before approve/reject
+            if shown_tid and shown_tid != str(pending.get("topic_id") or "").upper():
+                if decision == "reject":
+                    pass  # apply_decision rejects both
+                else:
+                    # approve the topic user actually saw if it's in the pool
+                    for t in parse_topics():
+                        if t["topic_id"] == shown_tid:
+                            pending["topic_id"] = t["topic_id"]
+                            pending["h1"] = t["h1"]
+                            pending["slug"] = t.get("slug", "")
+                            break
+            out = apply_decision(token, chat_id, pending, decision, shown_topic_id=shown_tid)
             out["ok"] = True
             out["matched_text"] = matched
+            out["shown_topic_id"] = shown_tid
             out["action"] = "handled_reply"
             print(json.dumps(out, ensure_ascii=False))
             return
@@ -605,16 +680,17 @@ def cmd_poll(args: argparse.Namespace) -> None:
     if pending.get("status") != "pending":
         print(json.dumps({"ok": True, "decision": pending.get("status"), "pending": pending}, ensure_ascii=False))
         return
-    decision, matched, _ = _poll_once(token, chat_id, pending, timeout=0)
+    decision, matched, _, shown_tid = _poll_once(token, chat_id, pending, timeout=0)
     out: dict = {
         "ok": True,
         "decision": decision,
         "matched_text": matched,
         "topic_id": pending.get("topic_id"),
+        "shown_topic_id": shown_tid,
         "status": pending.get("status"),
     }
     if args.ack and decision in {"approve", "reject"}:
-        out.update(apply_decision(token, chat_id, pending, decision))
+        out.update(apply_decision(token, chat_id, pending, decision, shown_topic_id=shown_tid))
     print(json.dumps(out, ensure_ascii=False))
 
 
@@ -631,9 +707,11 @@ def cmd_await(args: argparse.Namespace) -> None:
     deadline = time.time() + args.timeout_sec
     skips = 0
     while time.time() < deadline:
-        decision, matched, _ = _poll_once(token, chat_id, pending, timeout=min(25, args.timeout_sec))
+        decision, matched, _, shown_tid = _poll_once(
+            token, chat_id, pending, timeout=min(25, args.timeout_sec)
+        )
         if decision == "approve":
-            out = apply_decision(token, chat_id, pending, decision)
+            out = apply_decision(token, chat_id, pending, decision, shown_topic_id=shown_tid)
             print(json.dumps({"ok": True, "matched_text": matched, "h1": pending.get("h1"), "slug": pending.get("slug"), **out}, ensure_ascii=False))
             return
         if decision == "reject":
@@ -642,7 +720,7 @@ def cmd_await(args: argparse.Namespace) -> None:
                 send_text(token, chat_id, "⏹ Слишком много «нет» подряд. Остановлюсь до следующего слота.")
                 print(json.dumps({"ok": False, "reason": "max_skips", "skips": skips}, ensure_ascii=False))
                 return
-            out = apply_decision(token, chat_id, pending, decision)
+            out = apply_decision(token, chat_id, pending, decision, shown_topic_id=shown_tid)
             if out.get("status") == "rejected":
                 print(json.dumps({"ok": False, "reason": "empty_queue", **out}, ensure_ascii=False))
                 return
