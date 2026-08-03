@@ -1,0 +1,43 @@
+{
+  "topic_id": "B43",
+  "h1": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
+  "title": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
+  "description": "Workflow для финотдела: реестр лимитов по статьям расходов в Google Sheets, безопасная выгрузка без ПДн, сценарий n8n/Make и Telegram-алерт при 80% бюджета.",
+  "cover_alt": "Абстрактная голографическая визуализация лимитов расходов на тёмном фоне с фиолетовым акцентом",
+  "slug": "limity-rashodov-telegram-alert",
+  "primary_query": "лимиты расходов telegram алерт",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "лимиты расходов telegram алерт",
+    "2026"
+  ],
+  "char_count": 8901,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "лимиты расходов с алертом в Telegram",
+    "контроль статей расходов через Google Sheets и n8n",
+    "Telegram-уведомление при перерасходе бюджета"
+  ],
+  "meta_ab": {
+    "title_seo": "Лимиты расходов и алерт в Telegram: настройка для финотдела",
+    "title_ctr": "Лимиты расходов без ERP: Google Sheets + n8n + Telegram-алерт за один день",
+    "title_aeo": "Как настроить контроль лимитов расходов с уведомлением в Telegram?",
+    "description_seo": "Пошаговый workflow: реестр лимитов по статьям, факт из банка или 1С, порог 80%, сценарий n8n и антиспам. Без сырых ПДн в облаке.",
+    "description_ctr": "Перерасход по рекламе узнаёте в пятницу? Соберите таблицу лимитов и бота, который пишет CFO при 80% бюджета.",
+    "description_aeo": "Контроль лимитов статей расходов через Google Sheets и n8n: колонки реестра, Telegram-бот, пороги срабатывания и типичные ошибки внедрения."
+  },
+  "geo_qa": {
+    "score": 87,
+    "core_eeat_lite": 17,
+    "verdict": "PASS",
+    "date": "2026-08-03",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  },
+  "cover_family": "gradient_abstract"
+}
