@@ -1,0 +1,42 @@
+{
+  "topic_id": "B43",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Перерасход узнаёте в пятницу?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущая с телефоном Telegram-алерта и стикером «80% бюджета» — крючок про контроль лимитов расходов",
+      "scene_hint": "Reference face only. Outfit: charcoal blazer + mustard knit, phone in hand with fake Telegram push «Маркетинг 82% лимита». Fake Google Sheets strip with column %_использования red at 82%, pink sticky «last_alert», torn paper with marker arrow to phone, shocked cat meme cutout, highlighter on «пятницу». DIY zine collage #F5F5F0, not corporate SaaS.",
+      "meme_caption_ru": "80% — и тишина?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Проверьте, нужен ли финотделу алерт по лимитам",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист финотдела: «пятничный сюрприз по перерасходу», «нет единого реестра статей», «алерт только после закрытия месяца», «CFO узнаёт из чата». Галочки красный/зелёный. Стикер «когда нужен бот». NO host face.",
+      "alt": "Чеклист: когда финотделу нужен алерт по лимитам статей расходов"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Создайте реестр лимитов в Google Sheets",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake Google Sheets UI: колонки article_id, статья, лимит_месяц, факт, %_использования, порог_алерта, last_alert, chat_id. Строка «Маркетинг» 82% красным. Скотч на углу, мини-стикер «реестр». NO host face.",
+      "alt": "Скрин реестра лимитов в Google Sheets с колонками порога и last_alert"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Наполните факт без сырых ПДн в облаке",
+      "visual_type": "infographic_card",
+      "scene_hint": "Инфографика «факт без ПДн»: банк/1С → агрегация по article_id → Sheets (суммы, без ФИО/счетов). Красный крест на карточке с паспортом/ФИО. Зелёная галочка на «сумма по статье». Стикер «152-ФЗ». NO host face.",
+      "alt": "Схема: факт расходов в облако без сырых персональных данных"
+    }
+  }
+}

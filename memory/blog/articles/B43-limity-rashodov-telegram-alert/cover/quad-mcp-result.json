@@ -1,0 +1,21 @@
+{
+  "pipeline": "quad_canvas_1x_mcp",
+  "mcp_mode": "fallback_generateimage_i2i",
+  "status": "ok",
+  "tool_primary": "gpt-image-2",
+  "tool_used": "Cursor GenerateImage",
+  "fallback_reason": "MCP server user-mcp-kv / gpt-image-2 unavailable in this Cloud run (GetMcpTools: no matches)",
+  "reference_image_local": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "input_urls_intended": ["https://koda-fd.ru/assets/CAcjfm4N.jpg"],
+  "aspect_ratio": "16:9",
+  "resolution_requested": "2K",
+  "raw_output_size": [1536, 1024],
+  "canvas_resized_to": [2048, 1152],
+  "resize_filter": "LANCZOS",
+  "canvas_file": "cover/canvas-quad.png",
+  "jobs_count": 1,
+  "url": null,
+  "artifact_source": "/opt/cursor/artifacts/assets/B43-canvas-quad-gen.png",
+  "note": "ONE GenerateImage call with reference_image_paths; not 4 separate generations"
+}
