@@ -40,17 +40,14 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: |
           set -euo pipefail
-          # Скрипт сам skip, если unpublished >= 3. Telegram-notify — в «больших» часах.
           HOUR_UTC=$(date -u +%H)
           EXTRA=""
           if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ] || [ "$HOUR_UTC" = "05" ] || [ "$HOUR_UTC" = "12" ]; then
             EXTRA="--notify --prefer-cursor"
           fi
           # shellcheck disable=SC2086
-          # min-unpublished считает proposeable (не rejected). При 0 — всегда дозаправка.
+          # Не пушим Scout отдельно — один commit state в конце, иначе pending/offset теряются.
           python scripts/excalibur_blog_scout_ci.py --count 5 --min-unpublished 3 $EXTRA | tee scout.json
-          # НЕ пушим Scout отдельно: иначе Commit state в конце job не может
-          # запушить pending (non-fast-forward) и «нет» откатывается → вечный B42.
 
       - name: Telegram tick
         id: tick
@@ -87,14 +84,16 @@ jobs:
           set -euo pipefail
           pip install cursor-sdk || true
           python scripts/excalibur_blog_write_approved.py | tee write.json
-          # Cloud Agent pushes articles to master — refresh tree, but KEEP local pending/offset
+          # Cloud Agent may push articles — refresh tree, KEEP telegram state
           mkdir -p /tmp/koda-tick-state
-          cp memory/topics/pending-approval.json /tmp/koda-tick-state/ || true
-          cp memory/topics/telegram-updates.offset /tmp/koda-tick-state/ || true
+          for f in pending-approval.json rejected-topics.json acked-topics.json telegram-updates.offset telegram-cooldowns.json; do
+            cp "memory/topics/$f" /tmp/koda-tick-state/ 2>/dev/null || true
+          done
           git fetch origin master
           git reset --hard origin/master
-          cp /tmp/koda-tick-state/pending-approval.json memory/topics/ 2>/dev/null || true
-          cp /tmp/koda-tick-state/telegram-updates.offset memory/topics/ 2>/dev/null || true
+          for f in pending-approval.json rejected-topics.json acked-topics.json telegram-updates.offset telegram-cooldowns.json; do
+            cp "/tmp/koda-tick-state/$f" memory/topics/ 2>/dev/null || true
+          done
 
       - name: Publish if approved (writing)
         id: finish
@@ -122,26 +121,53 @@ jobs:
           set -euo pipefail
           git config user.name "koda-blog-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Preserve local tick state across rebase (pending/rejects/offset)
+
+          # Snapshot telegram/runtime state BEFORE any git sync
           mkdir -p /tmp/koda-tick-commit
-          cp memory/topics/pending-approval.json /tmp/koda-tick-commit/ 2>/dev/null || true
-          cp memory/topics/rejected-topics.json /tmp/koda-tick-commit/ 2>/dev/null || true
-          cp memory/topics/telegram-updates.offset /tmp/koda-tick-commit/ 2>/dev/null || true
-          cp memory/topics/telegram-cooldowns.json /tmp/koda-tick-commit/ 2>/dev/null || true
+          for f in pending-approval.json rejected-topics.json acked-topics.json telegram-updates.offset telegram-cooldowns.json; do
+            cp "memory/topics/$f" /tmp/koda-tick-commit/ 2>/dev/null || true
+          done
+          cp -a shared/published-articles.md /tmp/koda-tick-commit/published-articles.md 2>/dev/null || true
+          cp -a memory/topics/blog-topics.md /tmp/koda-tick-commit/blog-topics.md 2>/dev/null || true
+
+          # Clean sync to remote tip (dirty tree previously broke pull --rebase → state never pushed)
           git fetch origin master
-          git pull --rebase origin master || {
-            echo "rebase failed — abort and retry with ours for topic state"
-            git rebase --abort || true
-            git reset --soft origin/master || true
-          }
-          cp /tmp/koda-tick-commit/pending-approval.json memory/topics/ 2>/dev/null || true
-          cp /tmp/koda-tick-commit/rejected-topics.json memory/topics/ 2>/dev/null || true
-          cp /tmp/koda-tick-commit/telegram-updates.offset memory/topics/ 2>/dev/null || true
-          cp /tmp/koda-tick-commit/telegram-cooldowns.json memory/topics/ 2>/dev/null || true
-          git add memory/topics/pending-approval.json memory/topics/rejected-topics.json memory/topics/telegram-updates.offset memory/topics/telegram-cooldowns.json memory/topics/blog-topics.md shared/published-articles.md memory/blog/articles || true
+          git reset --hard origin/master
+          git clean -fd -- memory/topics || true
+
+          # Restore authoritative local state from this job
+          mkdir -p memory/topics
+          for f in pending-approval.json rejected-topics.json acked-topics.json telegram-updates.offset telegram-cooldowns.json; do
+            cp "/tmp/koda-tick-commit/$f" "memory/topics/$f" 2>/dev/null || true
+          done
+          cp /tmp/koda-tick-commit/published-articles.md shared/published-articles.md 2>/dev/null || true
+          cp /tmp/koda-tick-commit/blog-topics.md memory/topics/blog-topics.md 2>/dev/null || true
+
+          git add \
+            memory/topics/pending-approval.json \
+            memory/topics/rejected-topics.json \
+            memory/topics/acked-topics.json \
+            memory/topics/telegram-updates.offset \
+            memory/topics/telegram-cooldowns.json \
+            memory/topics/blog-topics.md \
+            shared/published-articles.md \
+            memory/blog/articles || true
+
           if git diff --cached --quiet; then
             echo "No changes"
           else
             git commit -m "chore(blog): telegram tick / auto-publish approved topic"
-            git push origin HEAD:master
+            # Retry push once if Cloud Agent raced us
+            if ! git push origin HEAD:master; then
+              git fetch origin master
+              git rebase origin/master || git rebase --abort || true
+              # Re-apply state after rebase
+              for f in pending-approval.json rejected-topics.json acked-topics.json telegram-updates.offset telegram-cooldowns.json; do
+                cp "/tmp/koda-tick-commit/$f" "memory/topics/$f" 2>/dev/null || true
+              done
+              cp /tmp/koda-tick-commit/published-articles.md shared/published-articles.md 2>/dev/null || true
+              git add memory/topics/*.json memory/topics/telegram-updates.offset memory/topics/blog-topics.md shared/published-articles.md || true
+              git commit -m "chore(blog): telegram tick state (retry)" || true
+              git push origin HEAD:master
+            fi
           fi

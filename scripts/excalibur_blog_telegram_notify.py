@@ -21,10 +21,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PENDING = ROOT / "memory" / "topics" / "pending-approval.json"
 REJECTED = ROOT / "memory" / "topics" / "rejected-topics.json"
+ACKED = ROOT / "memory" / "topics" / "acked-topics.json"
 TOPICS = ROOT / "memory" / "topics" / "blog-topics.md"
 PUBLISHED = ROOT / "shared" / "published-articles.md"
 OFFSET_FILE = ROOT / "memory" / "topics" / "telegram-updates.offset"
 COOLDOWNS = ROOT / "memory" / "topics" / "telegram-cooldowns.json"
+STATE_FILES = (
+    PENDING,
+    REJECTED,
+    ACKED,
+    OFFSET_FILE,
+    COOLDOWNS,
+)
 
 # Anti-spam: never hammer Telegram with the same system notice
 EMPTY_QUEUE_COOLDOWN_SEC = 24 * 3600
@@ -131,6 +139,53 @@ def mark_rejected(*topic_ids: str) -> list[str]:
     out = sorted(merged)
     save_rejected_file(out)
     return out
+
+
+def load_acked_file() -> set[str]:
+    if not ACKED.is_file():
+        return set()
+    try:
+        data = json.loads(ACKED.read_text(encoding="utf-8"))
+    except Exception:
+        return set()
+    if isinstance(data, list):
+        return {str(x).upper() for x in data}
+    if isinstance(data, dict):
+        return {str(x).upper() for x in (data.get("acked_ids") or [])}
+    return set()
+
+
+def mark_acked(*topic_ids: str) -> list[str]:
+    """Once a topic got «Тема принята» / published — never send ack again."""
+    merged = set(load_acked_file())
+    pub_ids, _ = published_ids_and_slugs()
+    merged |= pub_ids
+    for tid in topic_ids:
+        if tid:
+            merged.add(str(tid).upper())
+    out = sorted(merged)
+    ACKED.parent.mkdir(parents=True, exist_ok=True)
+    ACKED.write_text(
+        json.dumps({"acked_ids": out, "updated_at": int(time.time())}, ensure_ascii=False, indent=2)
+        + "\n",
+        encoding="utf-8",
+    )
+    return out
+
+
+def drain_telegram_offset(token: str) -> int:
+    """Advance offset to latest update so old ок/нет cannot be replayed after git rollback."""
+    offset = read_offset()
+    r = api(token, "getUpdates", {"offset": offset, "timeout": 0, "allowed_updates": ["message"]})
+    if not r.get("ok"):
+        return offset
+    max_id = offset - 1
+    for upd in r.get("result", []):
+        max_id = max(max_id, int(upd["update_id"]))
+    if max_id >= offset:
+        write_offset(max_id + 1)
+        return max_id + 1
+    return offset
 
 
 def read_offset() -> int:
@@ -337,20 +392,40 @@ def apply_decision(
 ) -> dict:
     out: dict = {"decision": decision, "topic_id": pending.get("topic_id")}
     if decision == "approve":
-        # Idempotent: не спамить «Тема принята» при повторном poll того же ок
+        tid = str(pending.get("topic_id") or "").upper()
+        pub_ids, pub_slugs = published_ids_and_slugs()
+        slug = str(pending.get("slug") or "").lower()
+        already_done = tid in pub_ids or tid in load_acked_file() or (slug and slug in pub_slugs)
+
+        # Idempotent: не спамить «Тема принята» при повторном poll / откате git
+        if already_done:
+            mark_acked(tid)
+            pending["status"] = "published"
+            save_pending(pending)
+            out["status"] = "published"
+            out["action"] = "already_published_skip_ack"
+            return out
         if pending.get("status") in {"writing", "queued_write"} and pending.get("ack_message_id"):
+            mark_acked(tid)
             out["status"] = pending.get("status")
             out["action"] = "already_approved"
             out["ack_message_id"] = pending.get("ack_message_id")
             return out
         if pending.get("ack_message_id") and pending.get("status") == "pending":
-            # ack уже был, но status откатило git-race → восстановить writing без нового сообщения
             pending["status"] = "writing"
+            mark_acked(tid)
             save_pending(pending)
             out["status"] = "writing"
             out["action"] = "repaired_writing_no_ack"
             out["ack_message_id"] = pending.get("ack_message_id")
             return out
+        if tid in load_acked_file():
+            pending["status"] = "writing"
+            save_pending(pending)
+            out["status"] = "writing"
+            out["action"] = "acked_file_skip_message"
+            return out
+
         result = send_text(
             token,
             chat_id,
@@ -363,6 +438,7 @@ def apply_decision(
         pending["missing_article_notified"] = False
         pending["ack_message_id"] = result["message_id"]
         pending["approved_at"] = int(time.time())
+        mark_acked(tid)
         save_pending(pending)
         out["status"] = "writing"
         out["ack_message_id"] = result["message_id"]
@@ -557,6 +633,38 @@ def cmd_tick(args: argparse.Namespace) -> None:
         pending["rejected_ids"] = durable
         save_pending(pending)
     rejected = list(durable)
+
+    # If git rolled back pending to an already-published topic — advance, don't re-ack
+    if pending and pending.get("topic_id"):
+        tid = str(pending["topic_id"]).upper()
+        pub_ids, pub_slugs = published_ids_and_slugs()
+        slug = str(pending.get("slug") or "").lower()
+        if tid in pub_ids or tid in load_acked_file() or (slug and slug in pub_slugs):
+            if pending.get("status") in {"pending", "writing", "queued_write", "published"}:
+                mark_acked(tid)
+                rejected = mark_rejected(*rejected)  # keep file warm
+                topic = next_topic(skip_ids=set(rejected) | {tid} | pub_ids)
+                if topic and (
+                    pending.get("status") == "published"
+                    or tid in pub_ids
+                    or (slug and slug in pub_slugs)
+                ):
+                    # Only auto-propose if this topic is truly done (ledger/slug), not merely acked mid-write
+                    if tid in pub_ids or (slug and slug in pub_slugs):
+                        pending = propose_topic(token, chat_id, topic, rejected_ids=list(rejected))
+                        print(
+                            json.dumps(
+                                {
+                                    "ok": True,
+                                    "action": "repaired_stale_published_pending",
+                                    "prev": tid,
+                                    "topic_id": pending["topic_id"],
+                                    "status": "pending",
+                                },
+                                ensure_ascii=False,
+                            )
+                        )
+                        return
 
     if pending and pending.get("status") == "pending":
         now = int(time.time())

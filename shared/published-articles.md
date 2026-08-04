@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-08-04 | B43 | limity-rashodov-telegram-alert | https://koda-fd.ru/blog/limity-rashodov-telegram-alert/ | published |
 | 2026-08-01 | B30 | power-query-finansist-obnovlenie | https://koda-fd.ru/blog/power-query-finansist-obnovlenie/ | published |
 | 2026-08-01 | B29 | spravochnik-kategorij-dds | https://koda-fd.ru/blog/spravochnik-kategorij-dds/ | published |
 | 2026-08-01 | B28 | sverka-bank-1c-bez-pdn | https://koda-fd.ru/blog/sverka-bank-1c-bez-pdn/ | published |

@@ -1,10 +1,10 @@
 {
-  "topic_id": "B43",
-  "h1": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
-  "slug": "limity-rashodov-telegram-alert",
+  "topic_id": "B44",
+  "h1": "Как собрать упрощённый управленческий ОПиУ из ДДС в Google Sheets",
+  "slug": "upravlencheskij-opiu-iz-dds",
   "status": "pending",
-  "proposed_at": 1785763691,
-  "proposal_message_id": 188,
+  "proposed_at": 1785817250,
+  "proposal_message_id": null,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",

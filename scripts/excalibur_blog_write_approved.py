@@ -46,10 +46,15 @@ def launch_cursor_write(topic_id: str, h1: str, slug: str) -> dict:
 1) Прочитай AGENTS.md, shared/editorial-utility-only.md, memory/brief/conversion-map.md, карточку в memory/topics/blog-topics.md
 2) Создай memory/blog/articles/{topic_id}-{slug}/ с article.html + article.meta.json + article-qa.md (verdict: PASS)
 3) Обложка: abstract holographic CGI 16:9, БЕЗ текста/букв/watermark на картинке (как legacy gradient_abstract). Сохрани cover/cover.png + cover-registry.json. Можно Cursor GenerateImage / MCP; НЕ рисуй Montserrat-текст поверх.
-4) git add/commit/push в master: "feat(blog): write {topic_id} {slug}"
+4) git add/commit/push в master ТОЛЬКО файлы статьи/обложки:
+   memory/blog/articles/{topic_id}-{slug}/**
+   Сообщение: "feat(blog): write {topic_id} {slug}"
 5) В конце JSON: {{"topic_id","slug","article_dir","cover":true}}
 
-Запрещено: salebot, emdash, article_mode A, публикация без cover.png.
+Запрещено:
+- трогать memory/topics/pending-approval.json, telegram-updates.offset,
+  rejected-topics.json, acked-topics.json, telegram-cooldowns.json
+- salebot, emdash, article_mode A, публикация без cover.png
 """
 
     result = Agent.prompt(

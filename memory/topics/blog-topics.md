@@ -11,7 +11,7 @@
 python scripts/excalibur_blog_utility_gate.py --topic-id B13
 ```
 
-**Уже на блоге (не дублировать slug):** vibe-coding-finansist, avtomatizaciya-finansov-no-code, cursor-ai-agenty-finotchetnost, ot-excel-k-fin-konturu-30-dney, finansovyj-minimalizm, disnejlend-dlya-dannyh, ubijstvo-svyashchennoj-korovy, claude-code-finotdel, obezlichivanie-dannyh-chatgpt-finansist, vygruzka-1c-excel-odata, upravlenie-debitorkoj-reestr-napominaniya, ollama-finotdel-lokalnaya-nejroset, baza-znaniy-chatgpt-cursor-finotdel, nejroset-excel-formuly-finansist, schet-1c-unf-telefon-http-servis, python-finansist-sverka-csv, cursor-finansist-skript-dashbord, mcp-cursor-finansist-instrumenty, google-apps-script-finansist-obnovit-dannye
+**Уже на блоге (не дублировать slug):** vibe-coding-finansist, avtomatizaciya-finansov-no-code, cursor-ai-agenty-finotchetnost, ot-excel-k-fin-konturu-30-dney, finansovyj-minimalizm, disnejlend-dlya-dannyh, ubijstvo-svyashchennoj-korovy, claude-code-finotdel, obezlichivanie-dannyh-chatgpt-finansist, vygruzka-1c-excel-odata, upravlenie-debitorkoj-reestr-napominaniya, ollama-finotdel-lokalnaya-nejroset, baza-znaniy-chatgpt-cursor-finotdel, nejroset-excel-formuly-finansist, schet-1c-unf-telefon-http-servis, python-finansist-sverka-csv, cursor-finansist-skript-dashbord, mcp-cursor-finansist-instrumenty, google-apps-script-finansist-obnovit-dannye, limity-rashodov-telegram-alert
 
 **Очередь 2026-07 (согласовано):** B13–B23 — автоматизация + вайб-кодинг. Источник 1С: `D:\projects\1С` (`dds-sheets`, `pilot-unf`).  
 **Очередь 2026-08 (дозаправка):** B24–B33 — финконтур, банк, n8n, Cursor, сверки.  

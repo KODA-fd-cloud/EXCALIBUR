@@ -18,8 +18,10 @@ from excalibur_blog_docker_publish import publish_via_docker  # noqa: E402
 from excalibur_blog_telegram_notify import (  # noqa: E402
     load_dotenv_local,
     load_pending,
+    mark_acked,
     next_topic,
     propose_topic,
+    published_ids_and_slugs,
     require_creds,
     save_pending,
     send_text,
@@ -75,6 +77,18 @@ def main() -> int:
     slug = str(pending.get("slug") or "")
     token, chat_id = require_creds()
     env = load_env(ROOT)
+
+    pub_ids, pub_slugs = published_ids_and_slugs()
+    if topic_id in pub_ids or (slug and slug.lower() in pub_slugs):
+        mark_acked(topic_id)
+        rejected = list(pending.get("rejected_ids") or [])
+        pending["status"] = "published"
+        save_pending(pending)
+        nxt = next_topic(skip_ids={topic_id})
+        if nxt and (load_pending() or {}).get("topic_id") == topic_id:
+            propose_topic(token, chat_id, nxt, rejected_ids=rejected)
+        print(json.dumps({"ok": True, "action": "already_in_ledger", "topic_id": topic_id}, ensure_ascii=False))
+        return 0
 
     article_dir = find_article_dir(topic_id)
     if article_dir is None:
@@ -157,6 +171,7 @@ def main() -> int:
         return 6
 
     append_ledger(topic_id, payload["slug"], permalink)
+    mark_acked(topic_id)
     rejected = list(pending.get("rejected_ids") or [])
     pending["status"] = "published"
     pending["published_url"] = permalink
