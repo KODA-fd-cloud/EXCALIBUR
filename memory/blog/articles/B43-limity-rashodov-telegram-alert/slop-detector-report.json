@@ -1,0 +1,22 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 2,
+  "over_long_sentences": [
+    {
+      "sentence": "Контроль лимитов статей расходов с алертом в Telegram – реестр плана и факта в Google Sheets плюс сценарий n8n или Make, который пишет CFO или владельцу статьи до \"сгорания\" бюджета",
+      "word_count": 28
+    },
+    {
+      "sentence": "Схема: Выписка/1С → raw_expense → формулы fact и usage_pct → n8n Schedule → фильтр порога → Telegram → запись last_alert → разбор перерасходов Пример текста без контрагентов и реквизитов: Лимит расходов: ADV_01 Контекстная реклама Период: 2026-08 Факт: 382 000 / лимит 450 000 (85%) Owner: маркетинг Действие: согласовать доп",
+      "word_count": 31
+    }
+  ],
+  "readability": {
+    "score": 77.4,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 9.3,
+    "avg_syllables_per_word": 2.0
+  }
+}

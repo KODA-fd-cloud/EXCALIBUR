@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/B43-limity-rashodov-telegram-alert/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Контекстная реклама period Месяц лимита (YYYY-MM) 2026-08 limit_amount План на период 450 000 fact_amoun",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "24 часов",
+      "kind": "metric_or_duration",
+      "context": "d через getUpdates (обновления хранятся не дольше 24 часов) или Telegram Trigger. Webhook и getUpdates однов",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 дней",
+      "kind": "metric_or_duration",
+      "context": "ебание около порога. Гистерезис: повтор не раньше 3 дней или пока usage не ниже 75%. Утечка token. Не логи",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "вёт в таблицах, а не в ERP. Это не про P&amp;L на 200 строк и не про personal expense-бот, куда сотрудни",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "450 000",
+      "kind": "large_number",
+      "context": "ита (YYYY-MM) 2026-08 limit_amount План на период 450 000 fact_amount Факт на дату 382 000 usage_pct Формула",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "382 000",
+      "kind": "large_number",
+      "context": "t План на период 450 000 fact_amount Факт на дату 382 000 usage_pct Формула fact/limit 0.85 threshold_pct По",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "300",
+      "kind": "large_number",
+      "context": "Sheets каждую минуту: у Google Sheets API порядка 300 read/write запросов в минуту на проект и 60 на пол",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4096",
+      "kind": "large_number",
+      "context": "день одно и то же. Telegram Send Message (текст 1–4096 символов по Bot API) → Sheets Update: last_alert =",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
