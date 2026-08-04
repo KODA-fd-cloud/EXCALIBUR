@@ -1,0 +1,444 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-04",
+    "today_ru": "04.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-06",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-04 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B43",
+    "priority": "P0",
+    "slug": "limity-rashodov-telegram-alert",
+    "h1": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
+    "primary_query": "лимиты расходов telegram алерт",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "лимиты расходов telegram алерт",
+      "2026"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "лимиты расходов telegram алерт 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лимиты Telegram на массовую рассылку в 2026: что можно отправлять с ...",
+          "url": "https://gopulsar.ru/blog/limity-telegram-na-rassylku-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Сколько стоит Telegram Ads: цена и минимальный бюджет 2026",
+          "url": "https://aksanov.digital/blog/telegram-ads/minimalnyj-byudzhet",
+          "snippet": "Мы разбираемся, какие лимиты действительно работают, почему Telegram их вводит и как организовать рассылку, чтобы не попасть под ограничения."
+        },
+        {
+          "title": "Лимиты Telegram для автоматизации 2026 — безопасная работа без блокировок",
+          "url": "https://gramgpt.io/blog/telegram-limits-2026",
+          "snippet": "Сколько денег нужно на старт Telegram Ads в 2026: цифры по евро-кабинету, TON и Stars, комиссии, лимиты пополнения и сколько надо для теста."
+        },
+        {
+          "title": "Справка - Реальные лимиты Telegram 2026: инвайты, боты, файлы, группы",
+          "url": "https://smm.forum/threads/realnye-limity-telegram-2026-invajty-boty-fajly-gruppy.8/",
+          "snippet": "Актуальные лимиты Telegram для автоматизации: рассылки, личные сообщения, реакции и инвайтинг. Как работать безопасно и избегать блокировок аккаунтов."
+        },
+        {
+          "title": "Дневной лимит рассылки сообщений в Telegram в 2026 году: безопасные ...",
+          "url": "https://onlytg.com/ru/daily_limit_telegram_broadcast_messages_in_2026_safe_sending_rules_for_marketers/",
+          "snippet": "Здесь собраны реальные лимиты Telegram. Практические значения отличаются от теоретических, так как основаны на опыте массовых запусков, инвайтинга, работы с ботами и управления группами. Официальные технические лимиты приведены отдельной таблицей ниже."
+        },
+        {
+          "title": "Актуальные лимиты Telegram на 2026 год - sostav.ru",
+          "url": "https://www.sostav.ru/blogs/277482/75413",
+          "snippet": "В этом руководстве я разберу практические лимиты, реальные риски и более безопасные рабочие привычки, которые использую при планировании Telegram-маркетинга в 2026 году."
+        }
+      ],
+      "searched_at": "2026-08-04"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "лимиты расходов telegram алерт август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лимиты Telegram на массовую рассылку в 2026: что можно отправлять с ...",
+          "url": "https://gopulsar.ru/blog/limity-telegram-na-rassylku-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Справка - Реальные лимиты Telegram 2026: инвайты, боты, файлы, группы",
+          "url": "https://smm.forum/threads/realnye-limity-telegram-2026-invajty-boty-fajly-gruppy.8/",
+          "snippet": "Мы разбираемся, какие лимиты действительно работают, почему Telegram их вводит и как организовать рассылку, чтобы не попасть под ограничения."
+        },
+        {
+          "title": "Прогрев Telegram аккаунтов 2026 — Лимиты и избежание блокировки",
+          "url": "https://neironica.ru/telegram-warming.php",
+          "snippet": "Здесь собраны реальные лимиты Telegram. Практические значения отличаются от теоретических, так как основаны на опыте массовых запусков, инвайтинга, работы с ботами и управления группами. Официальные технические лимиты приведены отдельной таблицей ниже."
+        },
+        {
+          "title": "Лимиты Telegram для автоматизации 2026 — безопасная работа без блокировок",
+          "url": "https://gramgpt.io/blog/telegram-limits-2026",
+          "snippet": "Полное руководство по прогреву Telegram аккаунтов 2026: все актуальные лимиты, ограничения и способы избежать блокировки."
+        },
+        {
+          "title": "Лимиты и ограничения Telegram — Telegram Info",
+          "url": "https://limits.tginfo.me/ru-RU",
+          "snippet": "Актуальные лимиты Telegram для автоматизации: рассылки, личные сообщения, реакции и инвайтинг. Как работать безопасно и избегать блокировок аккаунтов."
+        },
+        {
+          "title": "Telegram 2026: все лимиты и ограничения, которые нужно знать",
+          "url": "https://dzen.ru/a/aXzlkcKuQHv0oHtw",
+          "snippet": "Всегда актуальные лимиты Telegram в 2026. Ограничение на длину сообщения, количество стикеров в наборах, частота сообщений в Bot API, количество участников, сколько можно редактировать, максимальный размер файла и другое."
+        }
+      ],
+      "searched_at": "2026-08-04"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "лимиты расходов telegram алерт новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Telegram 2026: все лимиты и ограничения, которые нужно знать",
+          "url": "https://dzen.ru/a/aXzlkcKuQHv0oHtw",
+          "snippet": ""
+        },
+        {
+          "title": "Актуальные лимиты Telegram на 2026 год",
+          "url": "https://www.sostav.ru/blogs/277482/75413",
+          "snippet": "Telegram в 2026 году продолжает набирать популярность, особенно после блокировки WhatsApp. Но у мессенджера есть свои правила — лимиты, о которых не все знают. Нарушение может привести к временной блокировке и ограничению функций. Разбираемся, что важно знать каждому пользователю."
+        },
+        {
+          "title": "Справка - Реальные лимиты Telegram 2026: инвайты, боты, файлы, группы",
+          "url": "https://smm.forum/threads/realnye-limity-telegram-2026-invajty-boty-fajly-gruppy.8/",
+          "snippet": "В 2026, с блокировкой WhatsApp, в Телеграм придет еще больше аудитории. Но не все знают что Телеграм имеет четкие ограничения, которые важно знать. Иначе можно попасть в \"тень\" или вовсе потерять аккаунт. 📢 Разберемся с актуальными лимитами на 2026 год. 🚫 Ограничение на действия аккаунта."
+        },
+        {
+          "title": "Актуальные лимиты Telegram на 2026 год",
+          "url": "https://dzen.ru/a/aXSa03hRmAYHwIwv",
+          "snippet": "Здесь собраны реальные лимиты Telegram. Практические значения отличаются от теоретических, так как основаны на опыте массовых запусков, инвайтинга, работы с ботами и управления группами."
+        },
+        {
+          "title": "Лимиты и ограничения в Телеграм 2026 - TraffSoft Blog",
+          "url": "https://how.traffsoft.com/help_guids/telegram_limits/",
+          "snippet": "Статья автора «Полевой про Маркетинг» в Дзене : В 2026, с блокировкой WhatsApp, в Телеграм придет еще больше аудитории. Но не все знают что Телеграм имеет четкие ограничения, которые важно знать."
+        },
+        {
+          "title": "Прогрев Telegram аккаунтов 2026 — Лимиты и избежание блокировки",
+          "url": "https://neironica.ru/telegram-warming.php",
+          "snippet": "Актуальные лимиты Telegram на 2026 год: сообщения, каналы, группы, боты, сторис, звонки и API. Подробная таблица ограничений и полезные советы."
+        }
+      ],
+      "searched_at": "2026-08-04"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+          "url": "https://vk.com/video271632077_456240008",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": "Смотрите онлайн АВТОМАТИЗАЦИЯ ФИНОТДЕЛА 1 ч 16 мин 2 с. Видео от 30 января 2026 в хорошем качестве, без регистрации в бесплатном видеокаталоге ВКонтакте! 2 — оценили."
+        },
+        {
+          "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+          "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "Какой софт выбирают финансовые директора России в 2026 году",
+          "url": "https://blog.fin-ctrl.ru/blog/kakoy-soft-vybiraut-findiry",
+          "snippet": "Встречи на ПМЭФ-2026 хорошо подсветили именно эти перемены. Автоматизация становится не набором отдельных инструментов, а способом собрать процессы, данные и людей в более управляемую среду. Для одних компаний это означает переход от ручных таблиц к единой системе."
+        },
+        {
+          "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+          "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+          "snippet": "Сегодня же ситуация изменилась. Уход западных вендоров из России в 2022 году запустил процесс, который к 2025−2026 годам превратился в масштабную перестройку всей архитектуры корпоративного ПО."
+        }
+      ],
+      "searched_at": "2026-08-04"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "лимиты расходов telegram алерт 2026",
+      "purpose": "вторичный запрос: лимиты расходов telegram алерт",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лимиты Telegram на массовую рассылку в 2026: что можно отправлять с ...",
+          "url": "https://gopulsar.ru/blog/limity-telegram-na-rassylku-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Лимиты Telegram для автоматизации 2026 — безопасная работа без блокировок",
+          "url": "https://gramgpt.io/blog/telegram-limits-2026",
+          "snippet": "Мы разбираемся, какие лимиты действительно работают, почему Telegram их вводит и как организовать рассылку, чтобы не попасть под ограничения."
+        },
+        {
+          "title": "Сколько стоит Telegram Ads: цена и минимальный бюджет 2026",
+          "url": "https://aksanov.digital/blog/telegram-ads/minimalnyj-byudzhet",
+          "snippet": "Актуальные лимиты Telegram для автоматизации: рассылки, личные сообщения, реакции и инвайтинг. Как работать безопасно и избегать блокировок аккаунтов."
+        },
+        {
+          "title": "Дневной лимит рассылки сообщений в Telegram в 2026 году: безопасные ...",
+          "url": "https://onlytg.com/ru/daily_limit_telegram_broadcast_messages_in_2026_safe_sending_rules_for_marketers/",
+          "snippet": "Сколько денег нужно на старт Telegram Ads в 2026: цифры по евро-кабинету, TON и Stars, комиссии, лимиты пополнения и сколько надо для теста."
+        },
+        {
+          "title": "Актуальные лимиты Telegram на 2026 год",
+          "url": "https://dzen.ru/a/aXSa03hRmAYHwIwv",
+          "snippet": "В этом руководстве я разберу практические лимиты, реальные риски и более безопасные рабочие привычки, которые использую при планировании Telegram-маркетинга в 2026 году."
+        },
+        {
+          "title": "Telegram 2026: все лимиты и ограничения, которые нужно знать",
+          "url": "https://dzen.ru/a/aXzlkcKuQHv0oHtw",
+          "snippet": "Статья автора «Полевой про Маркетинг» в Дзене : В 2026, с блокировкой WhatsApp, в Телеграм придет еще больше аудитории. Но не все знают что Телеграм имеет четкие ограничения, которые важно знать."
+        }
+      ],
+      "searched_at": "2026-08-04"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2 февраля — В Подмосковье зафиксирован первый в России случай оспы обезьян [27][28] 3 февраля — В Санкт-Петербурге возобновил работу бывший завод General Motors под брендом «АГР». Начата сборка марки « Jaecoo » [29] 15 февраля ..."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Налоги 2026",
+          "url": "https://www.nalog.gov.ru/new2026/",
+          "snippet": "Календарь России на 2026 год из праздниками и номерами недель. Онлайн календарь на год: просмотреть, печать, скачать."
+        }
+      ],
+      "searched_at": "2026-08-04"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как контролировать лимиты статей расходов и слать алерт в Telegram 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Крипта боты ТГ: топ-5 Telegram-ботов для мониторинга в 2026",
+          "url": "https://bankstoday.net/last-news/kriptoboty-v-telegram-top-5-instrumentov-monitoringa-rynka-na-2026-god",
+          "snippet": ""
+        },
+        {
+          "title": "Лимиты и ограничения в Телеграм 2026 - TraffSoft Blog",
+          "url": "https://how.traffsoft.com/help_guids/telegram_limits/",
+          "snippet": "Обзор топ‑5 Telegram‑ботов для мониторинга крипторынка в 2026: ценовые алерты, отслеживание китов и ликвидаций, DeFi‑функции. Плюсы, минусы и кому подойдут."
+        },
+        {
+          "title": "Лимиты Телеграм 2026 — сообщения, подписки, сторис, попытки входа",
+          "url": "https://martrending.ru/smm/limity-v-telegram",
+          "snippet": "Актуальные лимиты Telegram на 2026 год: сообщения, каналы, группы, боты, сторис, звонки и API. Подробная таблица ограничений и полезные советы."
+        },
+        {
+          "title": "Все лимиты Telegram: Список ограничений и как их обойти",
+          "url": "https://chatlabs.ru/vse-limity-telegram-oznakomlenie-s-ogranicheniyami-messendzhera/",
+          "snippet": "С ограничениями можно столкнуться неожиданно — при запуске рекламы, росте аудитории или автоматизации процессов. Поэтому важно заранее знать ограничения Телеграм в 2026 году, особенно если вы используете платформу в бизнесе или для продвижения. В этой статье собраны все актуальные лимиты и ограничения как в обычной версии, так и в Telegram Premium."
+        },
+        {
+          "title": "Актуальные лимиты Telegram на 2026 год",
+          "url": "https://www.sostav.ru/blogs/277482/75413",
+          "snippet": "В этом гайде разберёмся, какие ограничения действительно есть, на что стоит обратить внимание и как использовать Telegram без лишнего риска попасть под «молчаливые» санкции."
+        },
+        {
+          "title": "Лимиты Telegram - Справочная информация - SkyBots",
+          "url": "https://skybots.ru/telegram-limity",
+          "snippet": "В 2026, с блокировкой WhatsApp, в Телеграм придет еще больше аудитории. Но не все знают что Телеграм имеет четкие ограничения, которые важно знать."
+        }
+      ],
+      "searched_at": "2026-08-04"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://gopulsar.ru/blog/limity-telegram-na-rassylku-2026",
+      "title": "Лимиты Telegram на массовую рассылку в 2026: что можно отправлять с ...",
+      "from_query": "лимиты расходов telegram алерт 2026"
+    },
+    {
+      "url": "https://aksanov.digital/blog/telegram-ads/minimalnyj-byudzhet",
+      "title": "Сколько стоит Telegram Ads: цена и минимальный бюджет 2026",
+      "from_query": "лимиты расходов telegram алерт 2026"
+    },
+    {
+      "url": "https://gramgpt.io/blog/telegram-limits-2026",
+      "title": "Лимиты Telegram для автоматизации 2026 — безопасная работа без блокировок",
+      "from_query": "лимиты расходов telegram алерт 2026"
+    },
+    {
+      "url": "https://smm.forum/threads/realnye-limity-telegram-2026-invajty-boty-fajly-gruppy.8/",
+      "title": "Справка - Реальные лимиты Telegram 2026: инвайты, боты, файлы, группы",
+      "from_query": "лимиты расходов telegram алерт 2026"
+    },
+    {
+      "url": "https://onlytg.com/ru/daily_limit_telegram_broadcast_messages_in_2026_safe_sending_rules_for_marketers/",
+      "title": "Дневной лимит рассылки сообщений в Telegram в 2026 году: безопасные ...",
+      "from_query": "лимиты расходов telegram алерт 2026"
+    },
+    {
+      "url": "https://www.sostav.ru/blogs/277482/75413",
+      "title": "Актуальные лимиты Telegram на 2026 год - sostav.ru",
+      "from_query": "лимиты расходов telegram алерт 2026"
+    },
+    {
+      "url": "https://neironica.ru/telegram-warming.php",
+      "title": "Прогрев Telegram аккаунтов 2026 — Лимиты и избежание блокировки",
+      "from_query": "лимиты расходов telegram алерт август 2026"
+    },
+    {
+      "url": "https://limits.tginfo.me/ru-RU",
+      "title": "Лимиты и ограничения Telegram — Telegram Info",
+      "from_query": "лимиты расходов telegram алерт август 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aXzlkcKuQHv0oHtw",
+      "title": "Telegram 2026: все лимиты и ограничения, которые нужно знать",
+      "from_query": "лимиты расходов telegram алерт август 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aXSa03hRmAYHwIwv",
+      "title": "Актуальные лимиты Telegram на 2026 год",
+      "from_query": "лимиты расходов telegram алерт новости 2026"
+    },
+    {
+      "url": "https://how.traffsoft.com/help_guids/telegram_limits/",
+      "title": "Лимиты и ограничения в Телеграм 2026 - TraffSoft Blog",
+      "from_query": "лимиты расходов telegram алерт новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vk.com/video271632077_456240008",
+      "title": "АВТОМАТИЗАЦИЯ ФИНОТДЕЛА — Видео от Андрея Масловского | ВКонтакте",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+      "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://blog.fin-ctrl.ru/blog/kakoy-soft-vybiraut-findiry",
+      "title": "Какой софт выбирают финансовые директора России в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/claude-code-dlya-findira",
+      "title": "Claude Code для финдиректора: терминал-агент на каждый день, 7 рабочих ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.nalog.gov.ru/new2026/",
+      "title": "Налоги 2026",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://bankstoday.net/last-news/kriptoboty-v-telegram-top-5-instrumentov-monitoringa-rynka-na-2026-god",
+      "title": "Крипта боты ТГ: топ-5 Telegram-ботов для мониторинга в 2026",
+      "from_query": "Как контролировать лимиты статей расходов и слать алерт в Telegram 2026"
+    },
+    {
+      "url": "https://martrending.ru/smm/limity-v-telegram",
+      "title": "Лимиты Телеграм 2026 — сообщения, подписки, сторис, попытки входа",
+      "from_query": "Как контролировать лимиты статей расходов и слать алерт в Telegram 2026"
+    },
+    {
+      "url": "https://chatlabs.ru/vse-limity-telegram-oznakomlenie-s-ogranicheniyami-messendzhera/",
+      "title": "Все лимиты Telegram: Список ограничений и как их обойти",
+      "from_query": "Как контролировать лимиты статей расходов и слать алерт в Telegram 2026"
+    },
+    {
+      "url": "https://skybots.ru/telegram-limity",
+      "title": "Лимиты Telegram - Справочная информация - SkyBots",
+      "from_query": "Как контролировать лимиты статей расходов и слать алерт в Telegram 2026"
+    }
+  ]
+}
