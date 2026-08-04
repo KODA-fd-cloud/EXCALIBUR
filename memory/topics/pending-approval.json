@@ -2,7 +2,7 @@
   "topic_id": "B43",
   "h1": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
   "slug": "limity-rashodov-telegram-alert",
-  "status": "pending",
+  "status": "writing",
   "proposed_at": 1785763691,
   "proposal_message_id": 188,
   "chat_id": "1136346366",
@@ -20,5 +20,8 @@
     "B40",
     "B41",
     "B42"
-  ]
+  ],
+  "missing_article_notified": false,
+  "ack_message_id": 227,
+  "approved_at": 1785819744
 }

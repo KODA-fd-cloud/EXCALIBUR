@@ -322,3 +322,33 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-04 — B43 limity-rashodov-telegram-alert — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B43 |
+| slug | limity-rashodov-telegram-alert |
+| verdict | **FAIL / PUBLISH BLOCKER** |
+| permalink | — |
+| post_id | — |
+| method | not attempted (no credentials) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (9/9, site-base https://koda-fd.ru) — rechecked 2026-08-04
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- dry-run: OK (slug=limity-rashodov-telegram-alert, PHP bytes=10263611)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: missing (!= yes)
+- memory/site.env.local: absent
+- FTP_*/SSH_*/PUBLIC_SITE_URL: absent in Cloud env
+
+### Result
+
+Live publish not started. Credentials not invented. `shared/published-articles.md` not updated. telegram published not called.
+
+**Fix:** set Cloud Secrets `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL=https://koda-fd.ru`, and FTP_* or SSH_* (+ FTP_ROOT / DOCKER_WP_CONTAINER), then re-run publish.

@@ -1,0 +1,192 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#article",
+      "headline": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
+      "description": "Реестр лимитов по статьям расходов в Google Sheets, факт без ПДн, сценарий n8n/Make и Telegram-алерт при пороге 80% с антиспамом last_alert.",
+      "datePublished": "2026-08-04",
+      "dateModified": "2026-08-04",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/limity-rashodov-telegram-alert-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная голографическая визуализация лимитов расходов на тёмном фоне с фиолетовым акцентом"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "лимиты расходов telegram алерт, автоматизация финотдела, контроль статей расходов, n8n telegram бюджет",
+      "wordCount": 8963,
+      "articleSection": "Автоматизация финотдела / лимиты расходов",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли настроить лимиты расходов и алерт в Telegram без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: Google Sheets + n8n или Make по шагам выше. Код не обязателен. Apps Script – альтернатива без n8n, если всё в одном Google-аккаунте. Алерт по готовому листу – задача финансиста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько займёт внедрение?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Реестр + бот + один сценарий на 5–7 статей – обычно один рабочий день. Факт из банка или 1С – ещё 1–3 дня. Полный plan-факт по всем центрам не смешивайте с первым алертом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие риски для данных?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В сообщении – код статьи, суммы, период и owner. Токен бота и OAuth – только в credentials. Для жёстких политик – self-hosted n8n и обезличенный staging. ФИО, ИНН и карты в облачный лист не кладите."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой порог ставить: 80% или 100%?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "80% – ранний стоп; 100% – \"лимит исчерпан\". Два порога лучше одного позднего. Для рекламы можно 90%/100%, для аренды – 95%/100%; подстройте после месяца по ложным срабатываниям."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему не алертить на каждую транзакцию?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Шум убивает реакцию. Алерт по агрегату статьи за период плюс last_alert: одно событие при пересечении порога, не пуш на каждый платёж."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это отличается от дайджеста собственнику?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дайджест – регулярная сводка. Этот контур – событие: статья пересекла порог. Оба полезны, роли разные; не заменяйте одно другим."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли ERP для контроля лимитов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для MVP нет. Sheets + n8n Cloud или self-hosted достаточно. ERP имеет смысл при жёстком блоке заявок – тогда алерт логичнее там, а не дублем в Sheets."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#howto",
+      "name": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
+      "description": "Реестр лимитов в Google Sheets, факт без ПДн, сценарий n8n/Make и Telegram-алерт при пороге 80% с антиспамом last_alert.",
+      "inLanguage": "ru",
+      "totalTime": "P1D",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets (листы expense_limits и raw_expense)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "n8n или Make"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Telegram Bot API (@BotFather)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Реестр статей с лимитом, фактом, threshold_pct, owner и last_alert"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Access Token бота и chat_id чата финотдела/CFO в credentials"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Проверьте, нужен ли финотделу алерт по лимитам",
+          "text": "Алерт окупается при 10+ статьях, нескольких инициаторах трат и отсутствии единого дашборда. Не нужен при жёстком блоке заявок в 1С/ERP или при трёх стабильных лимитах. Старт с 5–7 «горячих» статей, не со всего plan-факт на 80 строк.",
+          "url": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#when-needed"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Создайте реестр лимитов в Google Sheets",
+          "text": "Лист expense_limits: article_code, article_name, period (YYYY-MM), limit_amount, fact_amount, usage_pct, threshold_pct (0.8), owner, last_alert. Один лист на текущий месяц; не смешивайте месяцы без фильтра.",
+          "url": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#registry"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Наполните факт без сырых ПДн в облаке",
+          "text": "Лист raw_expense — staging: код статьи, сумма, дата. Источник — банк, 1С или свод заявок. ФИО, ИНН, карты и полные выписки в облако не кладите. Токены — только в credentials; опрос Sheets — раз в сутки после импорта факта.",
+          "url": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#pdn"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Соберите цепочку: бот → n8n или Make → Telegram",
+          "text": "BotFather /newbot → credentials; chat_id через getUpdates или Telegram Trigger. В n8n: Schedule → Google Sheets Get rows → IF usage_pct >= threshold_pct и антиспам last_alert → Telegram Send Message → Update last_alert.",
+          "url": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Проверьте неделю 1 и уберите типичные ошибки",
+          "text": "Поднимите fact_amount выше порога на тестовой статье: одно сообщение и запись last_alert. На следующий день без роста факта — тишина. Уберите дубли факта, чужой period, ошибку timezone и утечку token в логах.",
+          "url": "https://koda-fd.ru/blog/limity-rashodov-telegram-alert/#verify"
+        }
+      ]
+    }
+  ]
+}

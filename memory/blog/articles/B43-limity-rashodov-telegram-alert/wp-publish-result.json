@@ -1,0 +1,20 @@
+{
+  "slug": "limity-rashodov-telegram-alert",
+  "topic_id": "B43",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "dry_run": {
+    "dry_run": true,
+    "slug": "limity-rashodov-telegram-alert",
+    "title": "Как контролировать лимиты статей расходов и слать алерт в Telegram",
+    "php_bytes": 10263611
+  },
+  "reasons": [
+    "memory/site.env.local missing",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH != yes",
+    "FTP_*/SSH_* and PUBLIC_SITE_URL absent"
+  ],
+  "link_verify": "pass",
+  "raw_output": "BLOCKER: no credentials after successful dry-run"
+}
