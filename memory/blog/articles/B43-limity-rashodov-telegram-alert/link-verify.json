@@ -1,9 +1,39 @@
 {
-  "source": "memory/blog/articles/B43-limity-rashodov-telegram-alert/article.html",
-  "total_links": 5,
+  "source": "/workspace/memory/blog/articles/B43-limity-rashodov-telegram-alert/article.html",
+  "total_links": 9,
   "failed_count": 0,
   "verdict": "pass",
   "links": [
+    {
+      "url": "https://koda-fd.ru/blog/daydzhest-sobstvenniku-n8n-telegram/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/daydzhest-sobstvenniku-n8n-telegram/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/spravochnik-kategorij-dds/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/bankovskaya-vypiska-staging-google-sheets/"
+    },
     {
       "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
       "status": 200,
@@ -32,6 +62,16 @@
       "error": null,
       "kind": "external",
       "skipped": false
+    },
+    {
+      "url": "https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/"
     },
     {
       "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=limity-rashodov-telegram-alert",
