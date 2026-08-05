@@ -22,17 +22,11 @@ ROOT = Path(__file__).resolve().parents[1]
 PENDING = ROOT / "memory" / "topics" / "pending-approval.json"
 REJECTED = ROOT / "memory" / "topics" / "rejected-topics.json"
 ACKED = ROOT / "memory" / "topics" / "acked-topics.json"
+LAST_PROPOSAL = ROOT / "memory" / "topics" / "last-proposal.json"
 TOPICS = ROOT / "memory" / "topics" / "blog-topics.md"
 PUBLISHED = ROOT / "shared" / "published-articles.md"
 OFFSET_FILE = ROOT / "memory" / "topics" / "telegram-updates.offset"
 COOLDOWNS = ROOT / "memory" / "topics" / "telegram-cooldowns.json"
-STATE_FILES = (
-    PENDING,
-    REJECTED,
-    ACKED,
-    OFFSET_FILE,
-    COOLDOWNS,
-)
 
 # Anti-spam: never hammer Telegram with the same system notice
 EMPTY_QUEUE_COOLDOWN_SEC = 24 * 3600
@@ -328,7 +322,64 @@ def normalize_reply(text: str) -> str:
     return "unknown"
 
 
+def load_last_proposal() -> dict | None:
+    if not LAST_PROPOSAL.is_file():
+        return None
+    try:
+        return json.loads(LAST_PROPOSAL.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def save_last_proposal(data: dict) -> None:
+    LAST_PROPOSAL.parent.mkdir(parents=True, exist_ok=True)
+    LAST_PROPOSAL.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def sync_pending_to_last_proposal(pending: dict | None) -> dict | None:
+    """If git pending drifted from what was actually sent to Telegram — trust last-proposal."""
+    last = load_last_proposal()
+    if not pending or not last:
+        return pending
+    last_tid = str(last.get("topic_id") or "").upper()
+    pend_tid = str(pending.get("topic_id") or "").upper()
+    if not last_tid or last_tid == pend_tid:
+        return pending
+    # Stale pending (e.g. B44) while chat shows B45
+    pending["topic_id"] = last_tid
+    pending["h1"] = last.get("h1") or pending.get("h1") or ""
+    pending["slug"] = last.get("slug") or pending.get("slug") or ""
+    if last.get("proposal_message_id"):
+        pending["proposal_message_id"] = last["proposal_message_id"]
+    if last.get("proposed_at"):
+        pending["proposed_at"] = last["proposed_at"]
+    pending["status"] = "pending"
+    save_pending(pending)
+    return pending
+
+
 def propose_topic(token: str, chat_id: str, topic: dict, *, rejected_ids: list[str] | None = None) -> dict:
+    tid = str(topic["topic_id"]).upper()
+    # Anti-spam: don't re-send the same proposal if it is already the active last one
+    last = load_last_proposal() or {}
+    if (
+        str(last.get("topic_id") or "").upper() == tid
+        and last.get("proposal_message_id")
+        and (time.time() - int(last.get("proposed_at") or 0)) < 6 * 3600
+    ):
+        pending = {
+            "topic_id": tid,
+            "h1": topic["h1"],
+            "slug": topic.get("slug", ""),
+            "status": "pending",
+            "proposed_at": int(last.get("proposed_at") or time.time()),
+            "proposal_message_id": last.get("proposal_message_id"),
+            "chat_id": str(chat_id),
+            "rejected_ids": list(rejected_ids or []),
+        }
+        save_pending(pending)
+        return pending
+
     text = (
         f"📝 Тема на согласование (КОДА блог)\n\n"
         f"ID: {topic['topic_id']}\n"
@@ -340,7 +391,7 @@ def propose_topic(token: str, chat_id: str, topic: dict, *, rejected_ids: list[s
     )
     result = send_text(token, chat_id, text)
     pending = {
-        "topic_id": topic["topic_id"],
+        "topic_id": tid,
         "h1": topic["h1"],
         "slug": topic.get("slug", ""),
         "status": "pending",
@@ -350,6 +401,15 @@ def propose_topic(token: str, chat_id: str, topic: dict, *, rejected_ids: list[s
         "rejected_ids": rejected_ids or [],
     }
     save_pending(pending)
+    save_last_proposal(
+        {
+            "topic_id": tid,
+            "h1": topic["h1"],
+            "slug": topic.get("slug", ""),
+            "proposed_at": int(result["date"]),
+            "proposal_message_id": result["message_id"],
+        }
+    )
     return pending
 
 
@@ -445,15 +505,15 @@ def apply_decision(
         return out
 
     if decision == "reject":
-        # Persist reject FIRST (durable file + pending) so a failed git push
-        # cannot resurrect the same topic on the next cron tick.
+        # Persist reject FIRST. Always kill pending + last-proposal + reply target
+        # (git often lags behind Telegram → otherwise «пропускаю B44» while chat shows B45).
         skip_tid = str(pending.get("topic_id") or "").upper()
         shown = (shown_topic_id or "").upper()
-        # Drift case: file says B41, Telegram showed B42 — reject BOTH.
-        extra = [shown] if shown and shown != skip_tid else []
+        last = load_last_proposal() or {}
+        last_tid = str(last.get("topic_id") or "").upper()
+        kill = {x for x in (skip_tid, shown, last_tid) if x}
         rejected = mark_rejected(
-            skip_tid,
-            *extra,
+            *kill,
             *[str(x) for x in (pending.get("rejected_ids") or [])],
         )
         pending["status"] = "rejected"
@@ -461,7 +521,7 @@ def apply_decision(
         pending["rejected_at"] = int(time.time())
         save_pending(pending)
 
-        label = skip_tid if not shown or shown == skip_tid else f"{skip_tid}+{shown}"
+        label = "+".join(sorted(kill)) if kill else "?"
         send_text(token, chat_id, f"⏭ Ок, пропускаю {label}. Сразу следующая тема:")
         topic = next_topic(skip_ids=set(rejected))
         if not topic:
@@ -627,6 +687,8 @@ def cmd_tick(args: argparse.Namespace) -> None:
     """Scheduled entrypoint: propose / remind (rate-limited) / handle ok|нет / autofill."""
     token, chat_id = require_creds()
     pending = load_pending()
+    # Trust what was actually sent to Telegram over stale git pending
+    pending = sync_pending_to_last_proposal(pending)
     # Merge durable rejects into pending every tick (survives failed pushes / stale checkout)
     durable = mark_rejected(*list((pending or {}).get("rejected_ids") or []))
     if pending is not None:

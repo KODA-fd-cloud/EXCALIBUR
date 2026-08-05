@@ -1,10 +1,10 @@
 {
-  "topic_id": "B44",
-  "h1": "Как собрать упрощённый управленческий ОПиУ из ДДС в Google Sheets",
-  "slug": "upravlencheskij-opiu-iz-dds",
+  "topic_id": "B46",
+  "h1": "Как забирать статусы ЭДО (отправлен/подписан) в Google Sheets без ручного мониторинга",
+  "slug": "statusy-edo-google-sheets",
   "status": "pending",
-  "proposed_at": 1785817250,
-  "proposal_message_id": null,
+  "proposed_at": 1785906542,
+  "proposal_message_id": 261,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -19,6 +19,8 @@
     "B39",
     "B40",
     "B41",
-    "B42"
+    "B42",
+    "B44",
+    "B45"
   ]
 }
