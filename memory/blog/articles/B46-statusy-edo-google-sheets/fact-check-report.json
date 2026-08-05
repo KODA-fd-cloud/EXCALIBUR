@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/B46-statusy-edo-google-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "д для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03;",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "6 мин",
+      "kind": "metric_or_duration",
+      "context": "аза в день. Лимиты: UrlFetch 20 000/день, runtime 6 мин/запуск. function fetchDocflowEvents_() { var prop",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 048 576",
+      "kind": "large_number",
+      "context": "з тел документов (лимит ответа GetDocflowEvents – 1 048 576 байт). Маппинг: WaitingForRecipientSignature → \"ож",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "20 000",
+      "kind": "large_number",
+      "context": "eryHours(1) или 2–4 раза в день. Лимиты: UrlFetch 20 000/день, runtime 6 мин/запуск. function fetchDocflow",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "401",
+      "kind": "large_number",
+      "context": "писано обеими\". Код / симптом Причина Что сделать 401 Просроченный токен Обновить access_token в Propert",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "402",
+      "kind": "large_number",
+      "context": "роченный токен Обновить access_token в Properties 402 Нет подписки на API Продлить тариф; fallback на CS",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "403",
+      "kind": "large_number",
+      "context": "т подписки на API Продлить тариф; fallback на CSV 403 Нет прав к ящику Проверить boxId и роли Дубликаты",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "ый перебор GetDocuments – тот возвращает не более 100 документов за запрос, при большем объёме нужна паг",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

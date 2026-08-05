@@ -1,0 +1,30 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 4,
+  "over_long_sentences": [
+    {
+      "sentence": "Оцените, нужен ли реестр статусов ЭДО в Google Sheets Сделайте реестр, если в день от пяти до пятнадцати документов, статусами пользуются закупки и бухгалтерия, а в 1С нет модуля ЭДО с выгрузкой",
+      "word_count": 31
+    },
+    {
+      "sentence": "Маршрут Когда выбирать Минус Apps Script + API Диадок Есть client_id, нулевой хостинг Настройка OAuth и маппинга n8n / Make + HTTP Есть no-code контур, нужны алерты Отдельный сервер n8n CSV с Drive + скрипт Малый объём, нет API Задержка, ручной экспорт Вердикт: с API Диадок начинайте с GetDocflowEvents – эффективнее перебора всей очереди",
+      "word_count": 46
+    },
+    {
+      "sentence": "Код / симптом Причина Что сделать 401 Просроченный токен Обновить access_token в Properties 402 Нет подписки на API Продлить тариф; fallback на CSV 403 Нет прав к ящику Проверить boxId и роли Дубликаты Нет upsert по doc_id Ключ MessageId+EntityId Статус не меняется GetDocuments вместо Events GetDocflowEvents + cursor Журнал log должен писать код ответа и время, но не ронять весь сценарий при одной ошибке",
+      "word_count": 58
+    },
+    {
+      "sentence": "При росте объёма (сотни документов в день) опрос идёт через события GetDocflowEvents, а не полный перебор GetDocuments – тот возвращает не более 100 документов за запрос, при большем объёме нужна пагинация AfterIndexKey",
+      "word_count": 30
+    }
+  ],
+  "readability": {
+    "score": 81.6,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 10.5,
+    "avg_syllables_per_word": 1.9
+  }
+}

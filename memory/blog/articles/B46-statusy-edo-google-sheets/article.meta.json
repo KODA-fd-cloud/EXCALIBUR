@@ -1,0 +1,43 @@
+{
+  "topic_id": "B46",
+  "h1": "Как забирать статусы ЭДО (отправлен/подписан) в Google Sheets без ручного мониторинга",
+  "title": "Как забирать статусы ЭДО (отправлен/подписан) в Google Sheets без ручного мониторинга",
+  "description": "Реестр статусов ЭДО в Google Sheets: staging-лист, GetDocflowEvents через Apps Script или n8n, маппинг API на бизнес-статусы и проверка первой недели.",
+  "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом",
+  "slug": "statusy-edo-google-sheets",
+  "primary_query": "статусы эдо google sheets",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "статусы эдо google sheets",
+    "2026"
+  ],
+  "char_count": 8967,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "статусы эдо в google sheets автоматически",
+    "мониторинг эдо google таблицы без ручного входа",
+    "выгрузка статусов документов эдо в sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Статусы ЭДО Google Sheets: автообновление через API без мониторинга",
+    "title_ctr": "📊 Статусы ЭДО в Google Sheets: как перестать каждый день заходить в Диадок?",
+    "title_aeo": "Как автоматически выгружать статусы ЭДО в Google Sheets?",
+    "description_seo": "Пошагово: staging-лист edo_status, GetDocflowEvents через Apps Script или n8n, маппинг API на бизнес-статусы и сверка первой недели без ручного мониторинга.",
+    "description_ctr": "⚡️ Хватит обходить кабинет ЭДО вручную: три маршрута в Google Sheets, токены в Properties и чеклист типичных ошибок API.",
+    "description_aeo": "Статусы ЭДО Google Sheets – через API оператора (GetDocflowEvents), Apps Script или n8n с маппингом отправлен/подписан/отклонён на бизнес-статусы финотдела."
+  },
+  "cover_family": "gradient_abstract",
+  "geo_qa": {
+    "score": 88,
+    "core_eeat_lite": 17,
+    "verdict": "PASS",
+    "date": "2026-08-05",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  }
+}

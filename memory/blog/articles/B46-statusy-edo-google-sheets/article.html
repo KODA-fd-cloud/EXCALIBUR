@@ -1,0 +1,172 @@
+<p>Финотдел тратит по полчаса в день на обход кабинета ЭДО: где УПД висит на подписи контрагента, что уже можно ставить в оплату, что отклонили. При пятнадцати исходящих документах в день и трёх отделах ручной мониторинг ломается. Ниже соберёте живой реестр статусов в Google Sheets с автообновлением через API оператора или n8n – без ежедневного входа в ЭДО и без программиста на постоянке.</p>
+
+<p>ЭДО (электронный документооборот) – обмен УПД и счетами-фактурами через оператора: Диадок, СБИС и др. Статус "отправлен" в кабинете и "готово к оплате" в регламенте – разные вещи. Google Sheets здесь лёгкий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электронные ТОРГ-12 через операторов больше не ходят.</p>
+
+<p>API оператора – как защищённый курьер между кабинетом ЭДО и таблицей: приносит метаданные (номер, дата, статус подписи), без тел документов. JSON в ответе – как структурированный акт сверки с именованными полями. Про хранение ключей и триггеры – в <a href="/blog/google-apps-script-finansist-obnovit-dannye/">гайде по кнопке "Обновить данные"</a>; про no-code маршруты – в <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизации финансов без кода</a>.</p>
+
+<h2 id="when-needed">Оцените, нужен ли реестр статусов ЭДО в Google Sheets</h2>
+
+<p><b>Сделайте реестр,</b> если в день от пяти до пятнадцати документов, статусами пользуются закупки и бухгалтерия, а в 1С нет модуля ЭДО с выгрузкой. <b>Не делайте,</b> если СЭД или 1С уже синхронизирует статусы. <b>Не делайте</b> полный API-контур без доступа к API оператора – останется CSV-импорт раз в неделю (до тридцати документов).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Маршрут</th>
+      <th>Когда выбирать</th>
+      <th>Минус</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Apps Script + API Диадок</b></td>
+      <td>Есть client_id, нулевой хостинг</td>
+      <td>Настройка OAuth и маппинга</td>
+    </tr>
+    <tr>
+      <td><b>n8n / Make + HTTP</b></td>
+      <td>Есть no-code контур, нужны алерты</td>
+      <td>Отдельный сервер n8n</td>
+    </tr>
+    <tr>
+      <td><b>CSV с Drive + скрипт</b></td>
+      <td>Малый объём, нет API</td>
+      <td>Задержка, ручной экспорт</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <b>Вердикт:</b> с API Диадок начинайте с <b>GetDocflowEvents</b> – эффективнее перебора всей очереди. Без API хватит CSV раз в неделю.
+</blockquote>
+
+<h2 id="prep-security">Подготовьте staging-лист и защитите данные от утечки</h2>
+
+<p>Разделите два слоя статусов. <b>Внешний слой</b> – что вернул API: отправлен, доставлен, ожидает подписи контрагента, подписан обеими сторонами, отклонён. <b>Внутренний слой</b> – бизнес-смысл: "на проверке закупок", "готово к оплате". Поле DocflowStatus в API – не синоним "можно платить". Зафиксируйте пять–семь формулировок без двусмысленности.</p>
+
+<p>Создайте лист edo_status с колонками: doc_id (MessageId + EntityId или номер УПД), counterparty_inn, doc_type, doc_date, amount, api_status_raw, business_status, last_event_at, updated_at, alert_flag. Отдельный лист log – для ошибок API (401, 402, таймауты), чтобы сбой одного запроса не ломал весь реестр. На листе status_map сведите коды API к business_status – финансисты читают второй столбец, не сырые enum.</p>
+
+<p><b>Безопасность:</b> токены access_token, client_id и boxId храните только в Script Properties, не в ячейках. Не отправляйте реестр с реальными ИНН и суммами в ChatGPT или Claude – маскируйте идентификаторы; чеклист – в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию</a>. Доступ к таблице по ролям: закупки видят статусы, редактор скрипта – один человек. <b>Сделайте:</b> status_map и log. <b>Не делайте:</b> копировать тексты УПД в Drive "для сверки".</p>
+
+<h2 id="setup-routes">Настройте автообновление: Apps Script, n8n или CSV</h2>
+
+<p>Маршрут A: Apps Script + API Диадок. Логика та же для СБИС, меняются URL и поля.</p>
+
+<blockquote>
+  <b>Схема:</b> триггер → POST GetDocflowEvents (cursor AfterIndexKey) → mapStatus → upsertRow в edo_status → log при ошибке
+</blockquote>
+
+<ol>
+  <li><b>Зарегистрируйте интеграцию</b> в Кабинете интегратора Диадок, получите client_id и access_token в Properties.</li>
+  <li><b>Создайте bound-скрипт</b> (Расширения → Apps Script): fetchDocflowEvents_, mapStatus_, upsertRow_.</li>
+  <li><b>Сохраняйте AfterIndexKey</b> в Properties после каждого опроса – забираете только новые события.</li>
+  <li><b>Запрашивайте метаданные</b> без тел документов (лимит ответа GetDocflowEvents – 1 048 576 байт).</li>
+  <li><b>Маппинг:</b> WaitingForRecipientSignature → "ожидает подписи"; DocflowStatus Finished → "подписано обеими"; отказ → "отклонён".</li>
+  <li><b>Upsert по doc_id</b> – обновление api_status_raw, business_status, last_event_at или новая строка.</li>
+  <li><b>Триггер</b> everyHours(1) или 2–4 раза в день. Лимиты: UrlFetch 20 000/день, runtime 6 мин/запуск.</li>
+</ol>
+
+<pre><code>function fetchDocflowEvents_() {
+  var props = PropertiesService.getScriptProperties();
+  var resp = UrlFetchApp.fetch(
+    'https://diadoc-api.kontur.ru/V4/GetDocflowEvents',
+    {
+      method: 'post',
+      contentType: 'application/json',
+      headers: { Authorization: 'Bearer ' + props.getProperty('DIADOC_TOKEN') },
+      payload: JSON.stringify({ AfterIndexKey: props.getProperty('AFTER_INDEX_KEY') || '' }),
+      muteHttpExceptions: true
+    }
+  );
+  if (resp.getResponseCode() !== 200) { logError_(resp.getResponseCode()); return []; }
+  var data = JSON.parse(resp.getContentText());
+  if (data.AfterIndexKey) props.setProperty('AFTER_INDEX_KEY', data.AfterIndexKey);
+  return data.Events || [];
+}
+
+function mapStatus_(event) {
+  var r = event.Document || {};
+  if (r.RecipientResponseStatus === 'WaitingForRecipientSignature') return 'ожидает подписи контрагента';
+  if (r.DocflowStatus === 'Finished') return 'подписано обеими сторонами';
+  if (r.RecipientResponseStatus === 'RecipientSignatureRequestRejected') return 'отклонён';
+  return 'отправлен';
+}</code></pre>
+
+<p><b>Маршрут B (n8n / Make):</b> HTTP Request к API оператора по cron → нода Google Sheets Update Row (search по doc_id, иначе Append). Паттерн как у шаблонов Diadoc→Sheets. Опционально Telegram при "отклонён" или если "ожидает подписи" дольше N дней – тот же канал, что в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>.</p>
+
+<p><b>Маршрут C (полуавтомат):</b> еженедельный экспорт списка документов из кабинета ЭДО (CSV) в папку Drive → Apps Script Utilities.parseCsv() → merge в edo_status. Подходит до ~30 документов в неделю без API. <b>Сделайте:</b> один успешный ручной запуск syncEdoStatuses до триггера. <b>Не делайте:</b> Bearer-токен в ячейке A1 "временно".</p>
+
+<h2 id="verify-errors">Проверьте реестр и разберите типичные ошибки</h2>
+
+<p>Первую неделю сверьте десять строк edo_status с кабинетом ЭДО. Отдельно кейс "подписано нами ≠ подписано обеими".</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Код / симптом</th>
+      <th>Причина</th>
+      <th>Что сделать</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>401</b></td>
+      <td>Просроченный токен</td>
+      <td>Обновить access_token в Properties</td>
+    </tr>
+    <tr>
+      <td><b>402</b></td>
+      <td>Нет подписки на API</td>
+      <td>Продлить тариф; fallback на CSV</td>
+    </tr>
+    <tr>
+      <td><b>403</b></td>
+      <td>Нет прав к ящику</td>
+      <td>Проверить boxId и роли</td>
+    </tr>
+    <tr>
+      <td>Дубликаты</td>
+      <td>Нет upsert по doc_id</td>
+      <td>Ключ MessageId+EntityId</td>
+    </tr>
+    <tr>
+      <td>Статус не меняется</td>
+      <td>GetDocuments вместо Events</td>
+      <td>GetDocflowEvents + cursor</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Журнал log должен писать код ответа и время, но не ронять весь сценарий при одной ошибке. При недоступности API ставьте alert_flag в строке документа – финансист видит маркер в таблице. <b>Сделайте:</b> чеклист из десяти документов на первую неделю и правило эскалации при 402. <b>Не делайте:</b> считать строку в Sheets юридическим источником истины – первичен кабинет оператора ЭДО.</p>
+
+<h2 id="next-steps">Расширьте автоматизацию: алерты и следующие шаги</h2>
+
+<p>Когда реестр стабилен, добавьте алерт в Telegram при "отклонён" или просрочке подписи (больше пяти рабочих дней в "ожидает контрагента"). Свяжите business_status "готово к оплате" с очередью согласования – но только после внутренней проверки закупок, не по одному API-полю.</p>
+
+<p>При росте объёма (сотни документов в день) опрос идёт через события GetDocflowEvents, а не полный перебор GetDocuments – тот возвращает не более 100 документов за запрос, при большем объёме нужна пагинация AfterIndexKey. В 2026 операторы двигаются к универсальным сообщениям ЭДО – следите, что форматы УПД 5.03 поддерживаются; реестр статусов не заменяет проверку формата.</p>
+
+<p>Пошаговый разбор маппинга и триггеров с обратной связью – в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=statusy-edo-google-sheets" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>, где разбираем рабочие таблицы финотдела на живых примерах.</p>
+
+<p><b>Что дальше:</b> (1) словарь статусов с закупками; (2) staging-лист edo_status; (3) маршрут A, B или C; (4) недельная сверка десяти документов; (5) алерт на просрочки. Источник истины – кабинет оператора; Sheets – оперативный дашборд для команды.</p>
+
+<h2>Частые вопросы</h2>
+
+<h3>Можно ли собрать реестр без программиста?</h3>
+<p>Да, для малого объёма: еженедельный CSV из кабинета ЭДО и Apps Script по шаблону выше. API Диадок требует однократной регистрации интеграции – это может сделать IT или подрядчик за один вечер. n8n настраивается без кода, но нужен OAuth к API и Google Sheets.</p>
+
+<h3>Сколько времени займёт внедрение?</h3>
+<p>Staging-лист и полуавтомат с CSV – один вечер. GetDocflowEvents с триггером и маппингом – от одного до трёх дней с тестовой сверкой десяти документов. Заложите согласование словаря статусов с закупками – без этого таблица превращается в "ещё один файл".</p>
+
+<h3>Какие риски для персональных и коммерческих данных?</h3>
+<p>Токены API, облако Google и доступы к таблице. Не храните секреты в ячейках, не скидывайте реестр с ИНН в LLM. Ограничьте sharing: только домен компании. Подробнее – в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">материале про обезличивание</a>.</p>
+
+<h3>Работает ли со СБИС?</h3>
+<p>Та же логика: API → маппинг → upsert. Пример Диадок – лучше документирован. Перенесите status_map под справочник оператора.</p>
+
+<h3>Чем лучше модуля ЭДО в 1С?</h3>
+<p>Sheets – дашборд без доработки 1С. Проводки остаются в учётке; реестр закрывает "где документ по подписи".</p>
+
+<h3>Как не перепутать "подписано нами" и "подписано обеими"?</h3>
+<p>Разные business_status и правило: оплата после "подписано обеими". Смотрите SenderSignatureStatus, RecipientResponseStatus и DocflowStatus.</p>
+
+<h3>Что если API вернул 402?</h3>
+<p>Продлите подписку на API. До этого – CSV-экспорт и запись в log.</p>
