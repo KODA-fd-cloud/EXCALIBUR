@@ -1,10 +1,10 @@
 {
-  "topic_id": "B47",
-  "h1": "Как собрать очередь согласования оплат поставщикам в Telegram с SLA",
-  "slug": "soglasovanie-oplat-telegram-sla",
+  "topic_id": "B48",
+  "h1": "Как автоматически разносить банковскую комиссию в статьи ДДС: правила и исключения",
+  "slug": "raznesti-komissiyu-banka-dds",
   "status": "pending",
-  "proposed_at": 1785964502,
-  "proposal_message_id": 269,
+  "proposed_at": 1785968408,
+  "proposal_message_id": 272,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -21,6 +21,7 @@
     "B41",
     "B42",
     "B44",
-    "B45"
+    "B45",
+    "B47"
   ]
 }
