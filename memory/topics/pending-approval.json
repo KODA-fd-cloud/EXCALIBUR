@@ -3,8 +3,8 @@
   "h1": "Как забирать статусы ЭДО (отправлен/подписан) в Google Sheets без ручного мониторинга",
   "slug": "statusy-edo-google-sheets",
   "status": "pending",
-  "proposed_at": 1785906542,
-  "proposal_message_id": 261,
+  "proposed_at": 1785906596,
+  "proposal_message_id": 262,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -22,5 +22,6 @@
     "B42",
     "B44",
     "B45"
-  ]
+  ],
+  "reminded_at": 1785906596
 }
