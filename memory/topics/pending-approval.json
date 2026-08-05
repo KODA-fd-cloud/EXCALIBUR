@@ -1,10 +1,10 @@
 {
-  "topic_id": "B46",
-  "h1": "Как забирать статусы ЭДО (отправлен/подписан) в Google Sheets без ручного мониторинга",
-  "slug": "statusy-edo-google-sheets",
+  "topic_id": "B47",
+  "h1": "Как собрать очередь согласования оплат поставщикам в Telegram с SLA",
+  "slug": "soglasovanie-oplat-telegram-sla",
   "status": "pending",
-  "proposed_at": 1785953443,
-  "proposal_message_id": 263,
+  "proposed_at": 1785964502,
+  "proposal_message_id": 269,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -22,6 +22,5 @@
     "B42",
     "B44",
     "B45"
-  ],
-  "reminded_at": 1785953443
+  ]
 }

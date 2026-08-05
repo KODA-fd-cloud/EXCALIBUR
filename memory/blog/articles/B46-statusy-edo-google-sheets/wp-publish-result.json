@@ -1,0 +1,8 @@
+{
+  "slug": "statusy-edo-google-sheets",
+  "topic_id": "B46",
+  "permalink": "https://koda-fd.ru/blog/statusy-edo-google-sheets/",
+  "raw_output": "OK post=211 slug=statusy-edo-google-sheets\nOK featured_image=212\npermalink=https://koda-fd.ru/blog/statusy-edo-google-sheets/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
