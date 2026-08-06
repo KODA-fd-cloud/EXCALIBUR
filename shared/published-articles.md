@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-08-06 | B51 | reestr-dogovorov-google-sheets | https://koda-fd.ru/blog/reestr-dogovorov-google-sheets/ | published |
 | 2026-08-06 | B49 | podotchet-reestr-google-sheets | https://koda-fd.ru/blog/podotchet-reestr-google-sheets/ | published |
 | 2026-08-05 | B46 | statusy-edo-google-sheets | https://koda-fd.ru/blog/statusy-edo-google-sheets/ | published |
 | 2026-08-04 | B43 | limity-rashodov-telegram-alert | https://koda-fd.ru/blog/limity-rashodov-telegram-alert/ | published |
