@@ -1,0 +1,13 @@
+{
+  "topic_id": "B49",
+  "slug": "podotchet-reestr-google-sheets",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image",
+  "file": "cover/cover.png",
+  "alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, сетка реестра авансов",
+  "cover_alt_text": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, сетка реестра авансов",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "scene_hint": "abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text",
+  "generated_at": "2026-08-06T03:54:48+03:00"
+}

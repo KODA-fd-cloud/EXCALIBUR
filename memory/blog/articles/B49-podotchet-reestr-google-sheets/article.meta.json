@@ -1,0 +1,39 @@
+{
+  "topic_id": "B49",
+  "h1": "Как вести подотчётные в Google Sheets: аванс, чеки, срок отчёта, эскалация",
+  "title": "Как вести подотчётные в Google Sheets: аванс, чеки, срок отчёта, эскалация",
+  "description": "Пошаговый реестр подотчётных в Google Sheets: аванс, чеки в Drive, формулы остатка и просрочки, эскалация и перенос в АО-1 без CRM и программиста.",
+  "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, сетка реестра авансов",
+  "slug": "podotchet-reestr-google-sheets",
+  "primary_query": "учет подотчетных google sheets",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "учет подотчетных google sheets",
+    "2026"
+  ],
+  "char_count": 8654,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "учет подотчетных в google sheets реестр",
+    "реестр подотчетных аванс чеки таблица",
+    "контроль срока отчета подотчетных sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Учет подотчетных Google Sheets: реестр авансов, чеков и просрочки",
+    "title_ctr": "📋 Подотчётные в Google Sheets: как перестать гонять сотрудников за чеками?",
+    "title_aeo": "Как вести учет подотчетных в Google Sheets с контролем сроков?",
+    "description_seo": "Реестр подотчётных в Google Sheets: колонки, формулы остатка и просрочки, папки чеков в Drive, эскалация и перенос в АО-1 без CRM и программиста.",
+    "description_ctr": "⚡️ Один реестр вместо хаоса в Excel: аванс, чеки, срок отчёта и эскалация просрочки в Google Sheets за вечер.",
+    "description_aeo": "Учет подотчетных Google Sheets – реестр с формулами остатка, QR-чеками в Drive, сроками из ЛНА и эскалацией через Apps Script или n8n."
+  },
+  "cover_family": "gradient_abstract",
+  "geo_qa": {
+    "score": 95,
+    "verdict": "PASS",
+    "date": "2026-08-06",
+    "html_linter": "PASS",
+    "slop_score": "WARNING",
+    "cannibalization": "PASS"
+  }
+}
