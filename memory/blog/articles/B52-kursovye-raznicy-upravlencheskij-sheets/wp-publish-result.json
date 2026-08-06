@@ -1,0 +1,8 @@
+{
+  "slug": "kursovye-raznicy-upravlencheskij-sheets",
+  "topic_id": "B52",
+  "permalink": "https://koda-fd.ru/blog/kursovye-raznicy-upravlencheskij-sheets/",
+  "raw_output": "OK post=218 slug=kursovye-raznicy-upravlencheskij-sheets\nOK featured_image=219\npermalink=https://koda-fd.ru/blog/kursovye-raznicy-upravlencheskij-sheets/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
