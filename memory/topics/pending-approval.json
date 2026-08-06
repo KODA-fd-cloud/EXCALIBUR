@@ -3,8 +3,8 @@
   "h1": "Как из зарплатной ведомости собрать файл для банк-клиента без копипаста",
   "slug": "zarplatnaya-vedomost-fail-bank",
   "status": "pending",
-  "proposed_at": 1785977963,
-  "proposal_message_id": 281,
+  "proposed_at": 1785989363,
+  "proposal_message_id": 282,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -24,5 +24,6 @@
     "B45",
     "B47",
     "B48"
-  ]
+  ],
+  "reminded_at": 1785989363
 }
