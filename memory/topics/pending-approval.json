@@ -1,10 +1,10 @@
 {
-  "topic_id": "B50",
-  "h1": "Как из зарплатной ведомости собрать файл для банк-клиента без копипаста",
-  "slug": "zarplatnaya-vedomost-fail-bank",
+  "topic_id": "B51",
+  "h1": "Как вести реестр договоров и сроков оплаты в Google Sheets с напоминаниями",
+  "slug": "reestr-dogovorov-google-sheets",
   "status": "pending",
-  "proposed_at": 1785989363,
-  "proposal_message_id": 282,
+  "proposed_at": 1785998695,
+  "proposal_message_id": 285,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -23,7 +23,7 @@
     "B44",
     "B45",
     "B47",
-    "B48"
-  ],
-  "reminded_at": 1785989363
+    "B48",
+    "B50"
+  ]
 }
