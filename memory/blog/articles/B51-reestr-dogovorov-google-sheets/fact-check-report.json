@@ -1,0 +1,73 @@
+{
+  "article": "memory/blog/articles/B51-reestr-dogovorov-google-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 9,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 9,
+  "facts": [
+    {
+      "fact": "45 дней",
+      "kind": "metric_or_duration",
+      "context": "овор в день подписания и как смотреть горизонт 30–45 дней. Реестр договоров - журнал, где одна строка = оди",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "ении на планёрке. Договоры с контрагентами хранят 5 лет после прекращения (ст. 29 ФЗ-402, ст. 23 НК РФ) -",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 мин",
+      "kind": "metric_or_duration",
+      "context": "по датам оплаты и окончания Квота MailApp, лимит 6 мин на запуск 1С / CLM Аудит, ACL, интеграция с учёто",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "расный - дата окончания &lt; СЕГОДНЯ(); жёлтый - ≤30 дней; на Графике - неоплаченные с датой в прошлом. Защ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 минут",
+      "kind": "metric_or_duration",
+      "context": "Gmail, до 1500 на Workspace. Runtime скрипта - до 6 минут. Правило владельца: договор вносите в день подпис",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "300",
+      "kind": "large_number",
+      "context": "когда нет) Сделайте реестр в Sheets, если до 200–300 активных договоров, один владелец таблицы (офис-ме",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1000",
+      "kind": "large_number",
+      "context": "|| !email) continue; var diff = (due - today) / (1000 * 60 * 60 * 24); if (diff === 0 || diff === remin",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "атели, не письма - 100/день на consumer Gmail, до 1500 на Workspace. Runtime скрипта - до 6 минут. Правил",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "аний? Consumer Gmail шлёт через MailApp, но квота 100 получателей/день. Для финотдела с десятками ответс",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

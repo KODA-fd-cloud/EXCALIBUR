@@ -1,0 +1,31 @@
+{
+  "topic_id": "B51",
+  "h1": "Как вести реестр договоров и сроков оплаты в Google Sheets с напоминаниями",
+  "title": "Как вести реестр договоров и сроков оплаты в Google Sheets с напоминаниями",
+  "description": "Пошаговый реестр договоров в Google Sheets: график оплат, условное форматирование просрочки, Apps Script с email-напоминаниями и регламент владельца без CRM и программиста.",
+  "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, сетка реестра договоров",
+  "slug": "reestr-dogovorov-google-sheets",
+  "primary_query": "реестр договоров google sheets",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "реестр договоров google sheets",
+    "2026"
+  ],
+  "char_count": 8640,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "реестр договоров google sheets напоминания",
+    "график оплат договоров google таблицы",
+    "контроль сроков договора sheets apps script"
+  ],
+  "meta_ab": {
+    "title_seo": "Реестр договоров Google Sheets: график оплат и напоминания",
+    "title_ctr": "📋 Реестр договоров в Google Sheets: как не пропустить оплату и пролонгацию?",
+    "title_aeo": "Как вести реестр договоров и сроков оплаты в Google Sheets с напоминаниями?",
+    "description_seo": "Реестр договоров в Google Sheets: колонки, график оплат, подсветка просрочки, Apps Script с email-напоминаниями и регламент владельца без CRM.",
+    "description_ctr": "⚡️ Один реестр вместо хаоса в Excel: сроки оплаты, пролонгация и email-напоминания в Google Sheets за один день.",
+    "description_aeo": "Реестр договоров Google Sheets - таблица с графиком платежей, условным форматированием и ежедневным Apps Script для напоминаний ответственным."
+  },
+  "cover_family": "gradient_abstract"
+}
