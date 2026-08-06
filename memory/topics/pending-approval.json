@@ -3,8 +3,8 @@
   "h1": "Как собрать прогноз кассового разрыва на 14 дней в Google Sheets без 1С",
   "slug": "prognoz-kassovogo-razryva-sheets",
   "status": "pending",
-  "proposed_at": 1786017214,
-  "proposal_message_id": 297,
+  "proposed_at": 1786024757,
+  "proposal_message_id": 299,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -25,5 +25,6 @@
     "B47",
     "B48",
     "B50"
-  ]
+  ],
+  "reminded_at": 1786024757
 }
