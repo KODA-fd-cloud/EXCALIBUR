@@ -1,0 +1,8 @@
+{
+  "slug": "podotchet-reestr-google-sheets",
+  "topic_id": "B49",
+  "permalink": "https://koda-fd.ru/blog/podotchet-reestr-google-sheets/",
+  "raw_output": "OK post=213 slug=podotchet-reestr-google-sheets\nOK featured_image=214\npermalink=https://koda-fd.ru/blog/podotchet-reestr-google-sheets/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

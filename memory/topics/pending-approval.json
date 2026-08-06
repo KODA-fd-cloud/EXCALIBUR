@@ -1,10 +1,10 @@
 {
-  "topic_id": "B49",
-  "h1": "Как вести подотчётные в Google Sheets: аванс, чеки, срок отчёта, эскалация",
-  "slug": "podotchet-reestr-google-sheets",
+  "topic_id": "B50",
+  "h1": "Как из зарплатной ведомости собрать файл для банк-клиента без копипаста",
+  "slug": "zarplatnaya-vedomost-fail-bank",
   "status": "pending",
-  "proposed_at": 1785972529,
-  "proposal_message_id": 275,
+  "proposed_at": 1785977963,
+  "proposal_message_id": 281,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
