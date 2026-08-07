@@ -1,0 +1,8 @@
+{
+  "slug": "vypiski-neskolkih-yurlic-odin-kontur",
+  "topic_id": "B55",
+  "permalink": "https://koda-fd.ru/blog/vypiski-neskolkih-yurlic-odin-kontur/",
+  "raw_output": "OK post=223 slug=vypiski-neskolkih-yurlic-odin-kontur\nOK categories=3,10,6\nOK featured_image=224\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/vypiski-neskolkih-yurlic-odin-kontur-dzen-cover.png\npermalink=https://koda-fd.ru/blog/vypiski-neskolkih-yurlic-odin-kontur/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

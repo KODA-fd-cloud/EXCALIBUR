@@ -1,10 +1,10 @@
 {
-  "topic_id": "B55",
-  "h1": "Как свести банковские выписки нескольких юрлиц в один управленческий контур",
-  "slug": "vypiski-neskolkih-yurlic-odin-kontur",
+  "topic_id": "B56",
+  "h1": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым",
+  "slug": "abc-analiz-debitorki-excel",
   "status": "pending",
-  "proposed_at": 1786089159,
-  "proposal_message_id": 309,
+  "proposed_at": 1786097150,
+  "proposal_message_id": 315,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -27,6 +27,5 @@
     "B50",
     "B53",
     "B54"
-  ],
-  "reminded_at": 1786089159
+  ]
 }
