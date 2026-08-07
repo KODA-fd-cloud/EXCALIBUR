@@ -45,7 +45,12 @@ def launch_cursor_write(topic_id: str, h1: str, slug: str) -> dict:
 Сделай полный прогон для ЭТОЙ темы:
 1) Прочитай AGENTS.md, shared/editorial-utility-only.md, memory/brief/conversion-map.md, карточку в memory/topics/blog-topics.md
 2) Создай memory/blog/articles/{topic_id}-{slug}/ с article.html + article.meta.json + article-qa.md (verdict: PASS)
-3) Обложка: abstract holographic CGI 16:9, БЕЗ текста/букв/watermark на картинке (как legacy gradient_abstract). Сохрани cover/cover.png + cover-registry.json. Можно Cursor GenerateImage / MCP; НЕ рисуй Montserrat-текст поверх.
+3) Обложка: ТОЛЬКО abstract holographic CGI 16:9.
+   Сохрани cover/cover.png + cover-registry.json.
+   ЖЁСТКИЙ ЗАПРЕТ на картинке: любой текст/буквы/цифры/логотипы/watermark,
+   лица людей, портреты, костюмы, «album cover», надписи Bxx / VISION / FUTURE,
+   barcode, UI-лейблы, PROFIT/%, Montserrat-оверлей.
+   Если модель всё равно нарисовала буквы/лицо — ПЕРЕГЕНЕРИРУЙ, не коммить брак.
 4) git add/commit/push в master ТОЛЬКО файлы статьи/обложки:
    memory/blog/articles/{topic_id}-{slug}/**
    Сообщение: "feat(blog): write {topic_id} {slug}"
@@ -53,8 +58,9 @@ def launch_cursor_write(topic_id: str, h1: str, slug: str) -> dict:
 
 Запрещено:
 - трогать memory/topics/pending-approval.json, telegram-updates.offset,
-  rejected-topics.json, acked-topics.json, telegram-cooldowns.json
+  rejected-topics.json, acked-topics.json, telegram-cooldowns.json, last-proposal.json
 - salebot, emdash, article_mode A, публикация без cover.png
+- публиковать с обложкой-портретом или с текстом на картинке
 """
 
     result = Agent.prompt(

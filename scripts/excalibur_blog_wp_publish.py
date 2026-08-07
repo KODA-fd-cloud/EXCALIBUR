@@ -215,6 +215,25 @@ if (is_wp_error($post_id)) {{
 }}
 echo 'OK post=' . $post_id . ' slug=' . $slug . PHP_EOL;
 
+// Never leave posts in «Без рубрики»
+$cat_ids = [];
+foreach (['blog-koda', 'блог-кода', 'ai-i-avtomatizaciya', 'ai'] as $cat_slug) {{
+    $term = get_category_by_slug($cat_slug);
+    if ($term && !is_wp_error($term)) {{
+        $cat_ids[] = (int) $term->term_id;
+    }}
+}}
+if (!$cat_ids) {{
+    $by_name = get_term_by('name', 'Блог КОДА', 'category');
+    if ($by_name && !is_wp_error($by_name)) {{
+        $cat_ids[] = (int) $by_name->term_id;
+    }}
+}}
+if ($cat_ids) {{
+    wp_set_post_categories($post_id, array_values(array_unique($cat_ids)), false);
+    echo 'OK categories=' . implode(',', $cat_ids) . PHP_EOL;
+}}
+
 if (!empty($p['cover_b64'])) {{
     $bin = base64_decode($p['cover_b64']);
     $tmp = wp_tempnam('excalibur-cover-' . $slug . '.png');

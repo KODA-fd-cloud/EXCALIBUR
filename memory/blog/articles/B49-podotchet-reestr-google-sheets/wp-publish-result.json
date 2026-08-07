@@ -2,7 +2,14 @@
   "slug": "podotchet-reestr-google-sheets",
   "topic_id": "B49",
   "permalink": "https://koda-fd.ru/blog/podotchet-reestr-google-sheets/",
-  "raw_output": "OK post=213 slug=podotchet-reestr-google-sheets\nOK featured_image=214\npermalink=https://koda-fd.ru/blog/podotchet-reestr-google-sheets/",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B49-podotchet-reestr-google-sheets/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1036953,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=213 slug=podotchet-reestr-google-sheets\nOK featured_image=221\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/podotchet-reestr-google-sheets-dzen-cover.png\npermalink=https://koda-fd.ru/blog/podotchet-reestr-google-sheets/",
   "verdict": "pass",
   "method": "ssh_docker_exec"
 }

@@ -125,6 +125,30 @@ def main() -> int:
         print(json.dumps({"ok": False, "action": "missing_cover", "topic_id": topic_id}, ensure_ascii=False))
         return 0
 
+    try:
+        from excalibur_blog_cover_gate import check_cover  # noqa: WPS433
+
+        cover_problems = check_cover(cover_png)
+    except Exception as e:
+        cover_problems = [f"cover_gate_error: {e}"]
+    if cover_problems:
+        if not pending.get("bad_cover_notified"):
+            send_text(
+                token,
+                chat_id,
+                f"⚠️ {topic_id}: обложка бракованная (текст/лицо/UI). Не публикую.\n"
+                + "; ".join(cover_problems[:3]),
+            )
+            pending["bad_cover_notified"] = True
+            save_pending(pending)
+        print(
+            json.dumps(
+                {"ok": False, "action": "bad_cover", "topic_id": topic_id, "problems": cover_problems},
+                ensure_ascii=False,
+            )
+        )
+        return 0
+
     if env.get("EXCALIBUR_BLOG_ALLOW_PUBLISH", "").strip().lower() != "yes":
         if not pending.get("publish_blocked_notified"):
             send_text(token, chat_id, "❌ Публикация заблокирована: EXCALIBUR_BLOG_ALLOW_PUBLISH != yes")
