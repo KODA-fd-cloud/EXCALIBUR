@@ -3,8 +3,8 @@
   "h1": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым",
   "slug": "abc-analiz-debitorki-excel",
   "status": "pending",
-  "proposed_at": 1786097150,
-  "proposal_message_id": 315,
+  "proposed_at": 1786100437,
+  "proposal_message_id": 316,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -27,5 +27,6 @@
     "B50",
     "B53",
     "B54"
-  ]
+  ],
+  "reminded_at": 1786100437
 }
