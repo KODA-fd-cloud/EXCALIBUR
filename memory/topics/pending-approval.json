@@ -1,10 +1,10 @@
 {
-  "topic_id": "B53",
-  "h1": "Как собрать прогноз кассового разрыва на 14 дней в Google Sheets без 1С",
-  "slug": "prognoz-kassovogo-razryva-sheets",
+  "topic_id": "B54",
+  "h1": "Как не платить поставщику без комплекта закрывающих: чеклист и статус в таблице",
+  "slug": "kontrol-zakryvayushchih-pered-oplatoj",
   "status": "pending",
-  "proposed_at": 1786072739,
-  "proposal_message_id": 300,
+  "proposed_at": 1786078868,
+  "proposal_message_id": 303,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -24,7 +24,7 @@
     "B45",
     "B47",
     "B48",
-    "B50"
-  ],
-  "reminded_at": 1786072739
+    "B50",
+    "B53"
+  ]
 }
