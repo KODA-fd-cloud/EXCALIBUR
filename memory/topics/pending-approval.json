@@ -3,8 +3,8 @@
   "h1": "Как свести банковские выписки нескольких юрлиц в один управленческий контур",
   "slug": "vypiski-neskolkih-yurlic-odin-kontur",
   "status": "pending",
-  "proposed_at": 1786083610,
-  "proposal_message_id": 308,
+  "proposed_at": 1786089159,
+  "proposal_message_id": 309,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -27,5 +27,6 @@
     "B50",
     "B53",
     "B54"
-  ]
+  ],
+  "reminded_at": 1786089159
 }
