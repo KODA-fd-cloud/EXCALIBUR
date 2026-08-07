@@ -1,0 +1,73 @@
+{
+  "article": "memory/blog/articles/B55-vypiski-neskolkih-yurlic-odin-kontur/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 9,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "ки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у ва",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "10 дней",
+      "kind": "metric_or_duration",
+      "context": "Разные банки, файлы по e-mail, нужен расписание 5-10 дней Low-code, но нужна дисциплина credentials D: RPA",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "2 недель",
+      "kind": "metric_or_duration",
+      "context": "ного банк-клиентов без API, enterprise-холдинг От 2 недель Дороже поддержка робота DirectBank в одной базе 1",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "ень против ручного импорта. Хранить выписки нужно 5 лет (ст. 29 ФЗ № 402-ФЗ). Зафиксируйте периметр - спи",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "ing с entity_id и hash. Настройте сбор выписок на 7 дней и пройдите сверку недели 1. Включите intercompany",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "large_number",
+      "context": "ки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "4521",
+      "kind": "large_number",
+      "context": "Канал сбора Ответственный OOO_Alpha Сбер, р/с ...4521 CSV, 1CClientBankExchange DirectBank в 1С Главбух",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "8830",
+      "kind": "large_number",
+      "context": "Bank в 1С Главбух Alpha OOO_Beta Тинькофф, р/с ...8830 CSV Файл из клиент-банка → Drive Финансист группы",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1102",
+      "kind": "large_number",
+      "context": "→ Drive Финансист группы OOO_Gamma Альфа, р/с ...1102 XML / PDF e-mail + n8n Финансист группы Безопаснос",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

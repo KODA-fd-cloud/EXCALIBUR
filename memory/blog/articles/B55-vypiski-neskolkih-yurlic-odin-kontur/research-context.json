@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-07",
+    "today_ru": "07.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-09",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-07 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B55",
+    "priority": "P0",
+    "slug": "vypiski-neskolkih-yurlic-odin-kontur",
+    "h1": "Как свести банковские выписки нескольких юрлиц в один управленческий контур",
+    "primary_query": "выписки нескольких юрлиц один учет",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "выписки нескольких юрлиц один учет",
+      "2026"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B55",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "выписки нескольких юрлиц один учет 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "выписки нескольких юрлиц один учет август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "выписки нескольких юрлиц один учет новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "выписки нескольких юрлиц один учет 2026",
+      "purpose": "вторичный запрос: выписки нескольких юрлиц один учет"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как свести банковские выписки нескольких юрлиц в один управленческий контур 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B55-vypiski-neskolkih-yurlic-odin-kontur",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
