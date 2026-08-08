@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-08-08 | B56 | abc-analiz-debitorki-excel | https://koda-fd.ru/blog/abc-analiz-debitorki-excel/ | published |
 | 2026-08-07 | B55 | vypiski-neskolkih-yurlic-odin-kontur | https://koda-fd.ru/blog/vypiski-neskolkih-yurlic-odin-kontur/ | published |
 | 2026-08-06 | B52 | kursovye-raznicy-upravlencheskij-sheets | https://koda-fd.ru/blog/kursovye-raznicy-upravlencheskij-sheets/ | published |
 | 2026-08-06 | B51 | reestr-dogovorov-google-sheets | https://koda-fd.ru/blog/reestr-dogovorov-google-sheets/ | published |
