@@ -1,0 +1,444 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-08",
+    "today_ru": "08.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-10",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-08 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B56",
+    "priority": "P0",
+    "slug": "abc-analiz-debitorki-excel",
+    "h1": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым",
+    "primary_query": "abc анализ дебиторской задолженности",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "abc анализ дебиторской задолженности",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "abc анализ дебиторской задолженности 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Анализ дебиторской задолженности \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_zadolzhennosti/",
+          "snippet": ""
+        },
+        {
+          "title": "Анализ дебиторской и кредиторской задолженности \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_i_kreditorskoj_zadolzhennosti/",
+          "snippet": "Подборка наиболее важных документов по запросу Анализ дебиторской задолженности (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Дебиторская Задолженность: Учёт, Анализ, Оптимизация (РФ, 2026 ...",
+          "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-debitorskoy-zadoljennosti/",
+          "snippet": "Подборка наиболее важных документов по запросу Анализ дебиторской и кредиторской задолженности (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Управление дебиторской задолженностью: полный гайд 2026",
+          "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+          "snippet": "Целью данной работы является создание комплексного, глубоко детализированного и актуализированного академического руководства по учету, анализу и оптимизации дебиторской задолженности."
+        },
+        {
+          "title": "Учет и Анализ Дебиторской Задолженности (2026): Руководство для ...",
+          "url": "https://risk.econlib.ru/diplomnaya/ot-testa-do-zaschityi-diploma-5/",
+          "snippet": "Полный гайд по управлению дебиторской задолженностью в 2026 году: методы снижения ДЗ, кредитная политика, автоматизация, работа с должниками и KPI."
+        },
+        {
+          "title": "Управление и анализ дебиторской задолженности: стратегии для РФ 2024 ...",
+          "url": "https://risk.econlib.ru/referat/proverit-zadoljennost/",
+          "snippet": "Полное руководство по бухгалтерскому учету и анализу дебиторской задолженности на предприятии с учетом ФСБУ 4/2023 и НК РФ на 2026 год. Практические рекомендации, методы анализа, HTML-формат."
+        }
+      ],
+      "searched_at": "2026-08-08"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "abc анализ дебиторской задолженности август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Авс анализ дебиторской задолженности пример расчета",
+          "url": "https://alexeydemidov.ru/blog/avs-analiz-debitorskoy-zadolzhennosti-primer-rascheta/",
+          "snippet": ""
+        },
+        {
+          "title": "Анализ дебиторской задолженности \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_zadolzhennosti/",
+          "snippet": "В этой статье вы получите не только пошаговую методику расчёта ABC-анализа дебиторской задолженности с примерами из реальной практики, но и узнаете, как правильно оформить ..."
+        },
+        {
+          "title": "Анализ дебиторской и кредиторской задолженности \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_i_kreditorskoj_zadolzhennosti/",
+          "snippet": "Подборка наиболее важных документов по запросу Анализ дебиторской задолженности (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Дебиторская Задолженность: Учёт, Анализ, Оптимизация (РФ, 2026 ...",
+          "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-debitorskoy-zadoljennosti/",
+          "snippet": "Подборка наиболее важных документов по запросу Анализ дебиторской и кредиторской задолженности (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Дебиторская и кредиторская задолженность: Учет, анализ, управление 2026 ...",
+          "url": "https://risk.econlib.ru/kursovaya/osobennosti-debitorskoy-i-kreditorskoy-zadoljennosti/",
+          "snippet": "Целью данной работы является создание комплексного, глубоко детализированного и актуализированного академического руководства по учету, анализу и оптимизации дебиторской задолженности."
+        },
+        {
+          "title": "Учет и Анализ Дебиторской Задолженности (2026): Руководство для ...",
+          "url": "https://risk.econlib.ru/diplomnaya/ot-testa-do-zaschityi-diploma-5/",
+          "snippet": "В рамках данного исследования будут рассмотрены теоретические аспекты, методы учета, анализа и управления дебиторской и кредиторской задолженностью, с особым акцентом на изменениях в нормативно-правовом регулировании, вступивших в силу в 2026 году."
+        }
+      ],
+      "searched_at": "2026-08-08"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "abc анализ дебиторской задолженности новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Управление дебиторской задолженностью: полный гайд 2026",
+          "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Учет и Управление Дебиторской Задолженностью: 2025-2026 Годы, Реферат",
+          "url": "https://risk.econlib.ru/referat/uchet-debitorskoy-zadoljennosti-2/",
+          "snippet": "Полный гайд по управлению дебиторской задолженностью в 2026 году: методы снижения ДЗ, кредитная политика, автоматизация, работа с должниками и KPI."
+        },
+        {
+          "title": "Дебиторская Задолженность: Учёт, Анализ, Оптимизация (РФ, 2026 ...",
+          "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-debitorskoy-zadoljennosti/",
+          "snippet": "Настоящая работа призвана дать исчерпывающий анализ учета и управления дебиторской задолженностью, охватывая как фундаментальные теоретические аспекты, так и новейшие изменения в нормативно-правовой базе Российской Федерации, актуальные на 2025-2026 годы."
+        },
+        {
+          "title": "Дебиторская и кредиторская задолженность: Учет, анализ, управление 2026 ...",
+          "url": "https://risk.econlib.ru/kursovaya/osobennosti-debitorskoy-i-kreditorskoy-zadoljennosti/",
+          "snippet": "Полное руководство по дебиторской задолженности: учёт РСБУ/МСФО, анализ, PD-модели, факторинг, взыскание и списание. Актуально для российских предприятий на 2026 год."
+        },
+        {
+          "title": "Анализ дебиторской и кредиторской задолженности \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_i_kreditorskoj_zadolzhennosti/",
+          "snippet": "Комплексный анализ дебиторской и кредиторской задолженности, учет, управление и последние изменения в нормативно-правовом регулировании 2026 года. Актуально для бухгалтеров и финансистов."
+        },
+        {
+          "title": "Анализ дебиторской задолженности \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_zadolzhennosti/",
+          "snippet": "Подборка наиболее важных документов по запросу Анализ дебиторской и кредиторской задолженности (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        }
+      ],
+      "searched_at": "2026-08-08"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "PDF Автоматизация 2026 всё,",
+          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Налоговая реформа 2026: почему бизнес массово уходит в автоматизацию",
+          "url": "https://vc.ru/id705136/2817200-nalogovaya-reforma-2026-avtomatizatsiya-biznesa",
+          "snippet": "ВТОМАТИЗАЦИЯ 2026: ВСЁ, ЧТО НУЖНО ЗНАТЬ Делать бизнес становится сложнее: растут требования, дорожают ресурсы, а стабильность всё . аще зависит от внутренних процессов. Автоматизация �."
+        },
+        {
+          "title": "Автоматизация бизнеса с помощью ИИ к 2026 году: доля рутинных задач ...",
+          "url": "https://finance.mail.ru/article/uzhe-v-etom-godu-ii-zaberet-chetvert-raboty-u-rossiyan-69221331/",
+          "snippet": "В январе 2026 года зафиксирован двукратный прирост числа активных пользователей ЭДО относительно декабря 2025-го. Аналитики связывают динамику с отменой льготной ставки по НДС для услуг эквайринга, процессинга и ряда платежных сервисов с 1 января 2026 года."
+        },
+        {
+          "title": "Тенденции автоматизации бухгалтерии и финансов в 2026 году",
+          "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-buhgalterii-i-finansov-v-2026-godu/",
+          "snippet": "Эксперт рассказала, какую долю рабочих функций автоматизирует ИИ к концу 2026 года. Делимся прогнозами по внедрению нейросетей в бизнес-процессы, списком задач для автоматизации и советами для сотрудников."
+        }
+      ],
+      "searched_at": "2026-08-08"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "abc анализ дебиторской задолженности 2026",
+      "purpose": "вторичный запрос: abc анализ дебиторской задолженности",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Анализ дебиторской задолженности \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_zadolzhennosti/",
+          "snippet": ""
+        },
+        {
+          "title": "Анализ дебиторской и кредиторской задолженности \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_i_kreditorskoj_zadolzhennosti/",
+          "snippet": "Подборка наиболее важных документов по запросу Анализ дебиторской задолженности (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Дебиторская Задолженность: Учёт, Анализ, Оптимизация (РФ, 2026 ...",
+          "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-debitorskoy-zadoljennosti/",
+          "snippet": "Подборка наиболее важных документов по запросу Анализ дебиторской и кредиторской задолженности (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Управление дебиторской задолженностью: полный гайд 2026",
+          "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+          "snippet": "Целью данной работы является создание комплексного, глубоко детализированного и актуализированного академического руководства по учету, анализу и оптимизации дебиторской задолженности."
+        },
+        {
+          "title": "Учет и Анализ Дебиторской Задолженности (2026): Руководство для ...",
+          "url": "https://risk.econlib.ru/diplomnaya/ot-testa-do-zaschityi-diploma-5/",
+          "snippet": "Полный гайд по управлению дебиторской задолженностью в 2026 году: методы снижения ДЗ, кредитная политика, автоматизация, работа с должниками и KPI."
+        },
+        {
+          "title": "Управление и анализ дебиторской задолженности: стратегии для РФ 2024 ...",
+          "url": "https://risk.econlib.ru/referat/proverit-zadoljennost/",
+          "snippet": "Полное руководство по бухгалтерскому учету и анализу дебиторской задолженности на предприятии с учетом ФСБУ 4/2023 и НК РФ на 2026 год. Практические рекомендации, методы анализа, HTML-формат."
+        }
+      ],
+      "searched_at": "2026-08-08"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "На этой странице вы найдёте готовые календари для каждого месяца: Формат А4, готовый к печати. Просто выберите нужный месяц ниже и скачайте календарь бесплатно и без регистрации. Идеально подходит для офиса, школы, дома или планирования личных дел."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        }
+      ],
+      "searched_at": "2026-08-08"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ABC-анализ в Excel: метод, формулы и примеры",
+          "url": "https://www.bitrix24.ru/journal/abc-analiz-excel/",
+          "snippet": ""
+        },
+        {
+          "title": "Как сделать ABC анализ в Excel - Lumpics.ru",
+          "url": "https://lumpics.ru/abc-analysis-in-excel/",
+          "snippet": "ABC-анализ в Excel: пошаговый расчёт с формулами, готовый пример для товаров и клиентов. Как провести и что делать с результатами."
+        },
+        {
+          "title": "ABC-анализ: что это такое и как сделать в Excel — примеры и таблицы",
+          "url": "https://ppc.world/articles/abc-analiz-sut-metoda-poshagovye-instrukcii-s-formulami-v-excel-keysy-ot-ekspertov/",
+          "snippet": "ABC-анализ используется для классификации различных ресурсов предприятия по степени важности. Excel позволяет облегчить выполнения данной процедуры."
+        },
+        {
+          "title": "Как Сделать Abc Анализ в Excel Формула • Специфика xyz-анализа | ...",
+          "url": "https://exceltab.ru/functions/abc-analiz-v-excel-poshagovaya-instrukciya-s0157/",
+          "snippet": "ABC-анализ — это способ разделить дела/товары/клиентов на три группы по важности, чтобы сконцентрироваться на главном и не распыляться на мелочи."
+        },
+        {
+          "title": "ABC-анализ в Excel: пошаговый расчёт через сводные таблицы",
+          "url": "https://brightboard.ru/blog/abc-analiz-v-excel-poshagovyy-raschyot-cherez-svodnye-tablitsy",
+          "snippet": "Заключение АВС-анализ — это инструмент, с помощью которого вы можете рассортировать товары, клиентов, должников и кредиторов на лидеров, середнячков и аутсайдеров."
+        },
+        {
+          "title": "ABC и XYZ анализ в Excel: таблицы, примеры расчетов, формулы",
+          "url": "https://businessolog.ru/abc-xyz-excel/",
+          "snippet": "Разбираем, как сделать ABC анализ в Excel для классификации запасов. Пошаговая схема расчета поможет найти приоритетные товары, выявить неликвид и избежать ошибок при закупках."
+        }
+      ],
+      "searched_at": "2026-08-08"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_zadolzhennosti/",
+      "title": "Анализ дебиторской задолженности \\ 2026-2025-2024 год \\ Акты, образцы ...",
+      "from_query": "abc анализ дебиторской задолженности 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/analiz_debitorskoj_i_kreditorskoj_zadolzhennosti/",
+      "title": "Анализ дебиторской и кредиторской задолженности \\ 2026-2025-2024 год ...",
+      "from_query": "abc анализ дебиторской задолженности 2026"
+    },
+    {
+      "url": "https://econlib.ru/diplomnaya/buhgalterskiy-uchet-i-analiz-debitorskoy-zadoljennosti/",
+      "title": "Дебиторская Задолженность: Учёт, Анализ, Оптимизация (РФ, 2026 ...",
+      "from_query": "abc анализ дебиторской задолженности 2026"
+    },
+    {
+      "url": "https://www.1ab.ru/blog/detail/upravlenie-debitorskoy-zadolzhennostyu-polnoe-rukovodstvo-dlya-biznesa-v-2026-godu/",
+      "title": "Управление дебиторской задолженностью: полный гайд 2026",
+      "from_query": "abc анализ дебиторской задолженности 2026"
+    },
+    {
+      "url": "https://risk.econlib.ru/diplomnaya/ot-testa-do-zaschityi-diploma-5/",
+      "title": "Учет и Анализ Дебиторской Задолженности (2026): Руководство для ...",
+      "from_query": "abc анализ дебиторской задолженности 2026"
+    },
+    {
+      "url": "https://risk.econlib.ru/referat/proverit-zadoljennost/",
+      "title": "Управление и анализ дебиторской задолженности: стратегии для РФ 2024 ...",
+      "from_query": "abc анализ дебиторской задолженности 2026"
+    },
+    {
+      "url": "https://alexeydemidov.ru/blog/avs-analiz-debitorskoy-zadolzhennosti-primer-rascheta/",
+      "title": "Авс анализ дебиторской задолженности пример расчета",
+      "from_query": "abc анализ дебиторской задолженности август 2026"
+    },
+    {
+      "url": "https://risk.econlib.ru/kursovaya/osobennosti-debitorskoy-i-kreditorskoy-zadoljennosti/",
+      "title": "Дебиторская и кредиторская задолженность: Учет, анализ, управление 2026 ...",
+      "from_query": "abc анализ дебиторской задолженности август 2026"
+    },
+    {
+      "url": "https://risk.econlib.ru/referat/uchet-debitorskoy-zadoljennosti-2/",
+      "title": "Учет и Управление Дебиторской Задолженностью: 2025-2026 Годы, Реферат",
+      "from_query": "abc анализ дебиторской задолженности новости 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+      "title": "PDF Автоматизация 2026 всё,",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vc.ru/id705136/2817200-nalogovaya-reforma-2026-avtomatizatsiya-biznesa",
+      "title": "Налоговая реформа 2026: почему бизнес массово уходит в автоматизацию",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://finance.mail.ru/article/uzhe-v-etom-godu-ii-zaberet-chetvert-raboty-u-rossiyan-69221331/",
+      "title": "Автоматизация бизнеса с помощью ИИ к 2026 году: доля рутинных задач ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-buhgalterii-i-finansov-v-2026-godu/",
+      "title": "Тенденции автоматизации бухгалтерии и финансов в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.bitrix24.ru/journal/abc-analiz-excel/",
+      "title": "ABC-анализ в Excel: метод, формулы и примеры",
+      "from_query": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым 2026"
+    },
+    {
+      "url": "https://lumpics.ru/abc-analysis-in-excel/",
+      "title": "Как сделать ABC анализ в Excel - Lumpics.ru",
+      "from_query": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым 2026"
+    },
+    {
+      "url": "https://ppc.world/articles/abc-analiz-sut-metoda-poshagovye-instrukcii-s-formulami-v-excel-keysy-ot-ekspertov/",
+      "title": "ABC-анализ: что это такое и как сделать в Excel — примеры и таблицы",
+      "from_query": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым 2026"
+    },
+    {
+      "url": "https://exceltab.ru/functions/abc-analiz-v-excel-poshagovaya-instrukciya-s0157/",
+      "title": "Как Сделать Abc Анализ в Excel Формула • Специфика xyz-анализа | ...",
+      "from_query": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым 2026"
+    },
+    {
+      "url": "https://brightboard.ru/blog/abc-analiz-v-excel-poshagovyy-raschyot-cherez-svodnye-tablitsy",
+      "title": "ABC-анализ в Excel: пошаговый расчёт через сводные таблицы",
+      "from_query": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым 2026"
+    },
+    {
+      "url": "https://businessolog.ru/abc-xyz-excel/",
+      "title": "ABC и XYZ анализ в Excel: таблицы, примеры расчетов, формулы",
+      "from_query": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым 2026"
+    }
+  ]
+}
