@@ -1,0 +1,30 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 4,
+  "over_long_sentences": [
+    {
+      "sentence": "Когда ABC по дебиторке нужен финотделу (и когда нет) ABC имеет смысл, если у вас отсрочка по нескольким договорам, суммы разные, а менеджеры тонут в Excel \"на флешке\"",
+      "word_count": 28
+    },
+    {
+      "sentence": "Колонка Зачем Пример contragent_code Идентификатор без ПДн K-0142 (не ФИО в облаке) debt_amount Число, не текст 485000 due_date Срок оплаты 2026-07-15 days_overdue Aging позже формула от due_date abc_class Класс A/B/C формула по накоп",
+      "word_count": 29
+    },
+    {
+      "sentence": "Настройте таблицу ABC в Excel/Sheets: формулы и очередь звонков Алгоритм простой: сортировка по сумме долга вниз → доля каждой строки → накопительный процент → класс A/B/C → внутри A сортировка по дням просрочки",
+      "word_count": 32
+    },
+    {
+      "sentence": "% → класс A/B/C → days_overdue → сорт A по просрочке ↓ → колонка \"Следующий шаг\" Очистите данные: удалите нулевые и оплаченные строки; проверьте, что суммы - числа (в Excel: \"число\", не \"текст\")",
+      "word_count": 27
+    }
+  ],
+  "readability": {
+    "score": 68.6,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 11.0,
+    "avg_syllables_per_word": 2.1
+  }
+}

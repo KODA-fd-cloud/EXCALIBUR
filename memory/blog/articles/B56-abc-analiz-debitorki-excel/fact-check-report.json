@@ -1,0 +1,59 @@
+{
+  "article": "memory/blog/articles/B56-abc-analiz-debitorki-excel/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 7,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 5,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "mount Число, не текст 485000 due_date Срок оплаты 2026-07-15 days_overdue Aging позже формула от due_dat",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "60 дней",
+      "kind": "metric_or_duration",
+      "context": "15+ контрагентов с открытыми счетами, отсрочка 14-60 дней, нет единого CRM-модуля взыскания. Не делайте ABC",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "30 минут",
+      "kind": "metric_or_duration",
+      "context": "я\". Ручной ABC на 30-50 строк занимает порядка 20-30 минут после первой настройки формул. Первую таблицу с н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "5 в общей сумме. Не делайте: ABC \"для галочки\" на 200 строках с нулями - сначала очистите выгрузку. Подг",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "0142",
+      "kind": "large_number",
+      "context": "ем Пример contragent_code Идентификатор без ПДн K-0142 (не ФИО в облаке) debt_amount Число, не текст 485",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "485000",
+      "kind": "large_number",
+      "context": "142 (не ФИО в облаке) debt_amount Число, не текст 485000 due_date Срок оплаты 2026-07-15 days_overdue Aging",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "196",
+      "kind": "large_number",
+      "context": "давности по денежным требованиям - три года (ст. 196 ГК РФ). ABC не заменяет юриста, но помогает не про",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
