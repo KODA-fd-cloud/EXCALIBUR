@@ -892,6 +892,150 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B57 — n8n: PDF-счёт → строка реестра
+
+- **priority:** P0
+- **slug:** n8n-pdf-schet-v-reestr
+- **theme_key:** n8n_pdf_invoice_row
+- **h1:** Как из PDF счёта сделать строку реестра оплат через n8n
+- **primary_query:** n8n pdf счет в google sheets
+- **secondary_queries:** автоматизация финотдела, n8n pdf счет в google sheets, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · tags:n8n,счет,sheets,реестр
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B58 — Реестр УПД / счетов-фактур
+
+- **priority:** P0
+- **slug:** reestr-upd-google-sheets
+- **theme_key:** vat_upd_registry
+- **h1:** Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта
+- **primary_query:** реестр упд google sheets
+- **secondary_queries:** автоматизация финотдела, реестр упд google sheets, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · tags:sheets,реестр
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B59 — Заявки на расход через Forms
+
+- **priority:** P0
+- **slug:** zayavka-na-rashod-google-forms
+- **theme_key:** expense_request_forms
+- **h1:** Как принимать заявки на расход через Google Forms в реестр Sheets
+- **primary_query:** заявка на расход google forms
+- **secondary_queries:** автоматизация финотдела, заявка на расход google forms, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · tags:заявки,sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B60 — Реестр займов сотрудникам
+
+- **priority:** P0
+- **slug:** reestr-zajmov-sotrudnikam-sheets
+- **theme_key:** employee_loan_registry
+- **h1:** Как вести реестр займов сотрудникам в Google Sheets: выдача, % , остаток
+- **primary_query:** реестр займов сотрудникам excel
+- **secondary_queries:** автоматизация финотдела, реестр займов сотрудникам excel, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · tags:sheets,реестр
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B61 — Пакет к cash-meeting за 30 минут
+
+- **priority:** P0
+- **slug:** paket-k-cash-meeting-sheets
+- **theme_key:** weekly_cash_pack
+- **h1:** Как собрать пакет к еженедельному cash-meeting за 30 минут из Sheets
+- **primary_query:** подготовка к cash meeting финансы
+- **secondary_queries:** автоматизация финотдела, подготовка к cash meeting финансы, 2026
+- **search_intent:** checklist
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · tags:cash,sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B62 — Unit-экономика услуг
+
+- **priority:** P0
+- **slug:** unit-ekonomika-uslug-sheets
+- **theme_key:** unit_economics_services
+- **h1:** Как собрать unit-экономику услуг в Google Sheets без сложной BI
+- **primary_query:** unit экономика услуг google sheets
+- **secondary_queries:** автоматизация финотдела, unit экономика услуг google sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · tags:услуги,sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Сняты как смысловые дубли (2026-08-03): B41≈B28 сверка банка, B42≈B25 выписка→Sheets, B43≈B13 1С→Excel, B44≈B17 формулы Excel+ИИ, B45≈B26 план-факт, B40≈B27 дайджест/отчёт.

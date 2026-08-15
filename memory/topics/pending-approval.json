@@ -1,10 +1,10 @@
 {
-  "topic_id": "B56",
-  "h1": "Как сделать ABC-анализ дебиторки в Excel/Sheets и решить, кому звонить первым",
-  "slug": "abc-analiz-debitorki-excel",
-  "status": "published",
-  "proposed_at": 1786143914,
-  "proposal_message_id": 317,
+  "topic_id": "B57",
+  "h1": "Как из PDF счёта сделать строку реестра оплат через n8n",
+  "slug": "n8n-pdf-schet-v-reestr",
+  "status": "pending",
+  "proposed_at": 1786780123,
+  "proposal_message_id": 338,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -27,13 +27,5 @@
     "B50",
     "B53",
     "B54"
-  ],
-  "reminded_at": 1786143914,
-  "missing_article_notified": true,
-  "ack_message_id": 319,
-  "approved_at": 1786151930,
-  "write_launch_notified": true,
-  "write_job_started_at": 1786151933,
-  "publish_started_notified": true,
-  "published_url": "https://koda-fd.ru/blog/abc-analiz-debitorki-excel/"
+  ]
 }

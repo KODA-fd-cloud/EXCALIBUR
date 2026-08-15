@@ -256,16 +256,30 @@ def save_cooldowns(data: dict) -> None:
     COOLDOWNS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def cooldown_ready(key: str, seconds: int) -> bool:
-    data = load_cooldowns()
-    last = int(data.get(key) or 0)
-    return (time.time() - last) >= seconds
-
-
 def cooldown_touch(key: str) -> None:
     data = load_cooldowns()
     data[key] = int(time.time())
+    # Keep sibling starve keys in sync so Scout+tick don't double-spam same day
+    if key in {"empty_queue", "scout_exhausted", "queue_starve"}:
+        now = int(time.time())
+        data["empty_queue"] = now
+        data["scout_exhausted"] = now
+        data["queue_starve"] = now
     save_cooldowns(data)
+
+
+def cooldown_ready(key: str, seconds: int) -> bool:
+    data = load_cooldowns()
+    # Any starve notice blocks all starve notices
+    if key in {"empty_queue", "scout_exhausted", "queue_starve"}:
+        last = max(
+            int(data.get("empty_queue") or 0),
+            int(data.get("scout_exhausted") or 0),
+            int(data.get("queue_starve") or 0),
+        )
+        return (time.time() - last) >= seconds
+    last = int(data.get(key) or 0)
+    return (time.time() - last) >= seconds
 
 
 def rejected_ids() -> set[str]:
