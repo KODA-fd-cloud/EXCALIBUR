@@ -1,0 +1,59 @@
+{
+  "article": "memory/blog/articles/B58-reestr-upd-google-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 7,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 5,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОР",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "лтый - edo_status \"ожидает подписи\" и дата старше 7 дней. Защитите шапку и формулы - случайная правка doc_",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 минут",
+      "kind": "metric_or_duration",
+      "context": "+ sheet.getLastRow()); } Runtime Apps Script - до 6 минут на запуск, UrlFetch - 20 000 вызовов/день на cons",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "174",
+      "kind": "large_number",
+      "context": "свой комплект. Журнал учёта счетов-фактур по ст. 174 НК обязателен посредникам и сдаётся в ИФНС ежеквар",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500",
+      "kind": "large_number",
+      "context": ") Сделайте реестр в Sheets, если в месяц от 20 до 500 входящих и исходящих УПД и СФ, статусами пользуютс",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "20 000",
+      "kind": "large_number",
+      "context": "me Apps Script - до 6 минут на запуск, UrlFetch - 20 000 вызовов/день на consumer. Google Sheets API не ато",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1000",
+      "kind": "large_number",
+      "context": "папки, а бухгалтер только подтверждает. При более 1000 строк в месяц перенесите метаданные в 1С, Sheets о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

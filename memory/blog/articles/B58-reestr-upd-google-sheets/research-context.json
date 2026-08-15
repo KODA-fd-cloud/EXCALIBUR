@@ -1,0 +1,100 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-15",
+    "today_ru": "15.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-17",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-15 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B58",
+    "priority": "P0",
+    "slug": "reestr-upd-google-sheets",
+    "h1": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта",
+    "primary_query": "реестр упд google sheets",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "реестр упд google sheets",
+      "2026"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B58",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "реестр упд google sheets 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "реестр упд google sheets август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "реестр упд google sheets новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "реестр упд google sheets 2026",
+      "purpose": "вторичный запрос: реестр упд google sheets"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B58-reestr-upd-google-sheets",
+  "research": {
+    "status": "complete",
+    "completed_at": "2026-08-15",
+    "agent": "excalibur-blog-research",
+    "research_notes": "memory/blog/articles/B58-reestr-upd-google-sheets/research-notes.md",
+    "fact_check_report": "memory/blog/articles/B58-reestr-upd-google-sheets/fact-check-report.json",
+    "utility_verdict": "PASS",
+    "wordstat_status": "mcp_unavailable",
+    "wordstat_note": "MCP user-mcp-kv не подключён; wordstat_get_top_requests не вызван; цифры спроса не выдуманы",
+    "facts_count": 20,
+    "serp_note": "primary SERP (шаг 0) нерелевантен — бланки УПД 2026; приоритет WebSearch Cursor 15.08.2026",
+    "competitive_gap": "Sheets-first реестр комплектности УПД+СФ+оплата+ЭДО vs бланки и новости ЭДО",
+    "cannibalization": ["B46-statusy-edo", "B51-reestr-dogovorov", "B22-apps-script"],
+    "internal_links": [
+      "/avtomatizaciya-finansov-no-code/",
+      "/obezlichivanie-dannyh-chatgpt-finansist/",
+      "/statusy-edo-google-sheets/",
+      "/reestr-dogovorov-google-sheets/"
+    ]
+  },
+  "next_step": "excalibur-blog-writer → article.html по research-notes.md"
+}

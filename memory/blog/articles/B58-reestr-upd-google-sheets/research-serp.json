@@ -1,0 +1,575 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-15",
+    "today_ru": "15.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-17",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-15 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B58",
+    "priority": "P0",
+    "slug": "reestr-upd-google-sheets",
+    "h1": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта",
+    "primary_query": "реестр упд google sheets",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "реестр упд google sheets",
+      "2026"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "реестр упд google sheets 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Применение УПД с 1 января 2026 года | БУХ.1С - сайт для современного ...",
+          "url": "https://buh.ru/articles/upd-s-1-yanvarya-2026-goda-kto-obyazan-primenyat-i-kak-bezboleznenno-pereyti.html",
+          "snippet": ""
+        },
+        {
+          "title": "Новая форма УПД с 01.01 2026 - образец и бланк",
+          "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-yanvarya-2026-goda",
+          "snippet": "С 2026 года организации и ИП перейдут на обязательное использование универсальных передаточных документов (УПД), составляемых в электронной форме. Рассказываем, что из себя представляет УПД, зачем его использовать, чем обусловлен переход на обязательное применение УПД и как он будет осуществляться."
+        },
+        {
+          "title": "Упд 2026: Образец Заполнения, Xml Для Эдо, Скачать Бланк",
+          "url": "https://service-online.su/forms/buh/upd/",
+          "snippet": "Новая форма УПД с 2026 года обязательна для использования организациями и ИП, которые применяют в работе с контрагентами электронный документооборот. Электронные документы должны быть оформлены в соответствии с утвержденными ФНС форматами, иначе их посчитают недействительными."
+        },
+        {
+          "title": "Форма УПД 2026: скачать бланк, образец заполнения",
+          "url": "https://glavkniga.ru/situations/k511708",
+          "snippet": "Заполните УПД онлайн бесплатно: с маркировкой, кодами КИЗ и прослеживаемостью. Скачайте бланк в PDF, Excel или XML для ЭДО. Новый бланк УПД действует в 2026 году и включает в себя изменения от 1 января 2026 года, включая поддержку нового электронного формата 5.03."
+        },
+        {
+          "title": "Скачать УПД с 01.04.2026 для Excel - v8pro.ru",
+          "url": "https://v8pro.ru/shop/upd-excel-xls/",
+          "snippet": "УПД - это универсальный передаточный документ, в котором объединены реквизиты счета-фактуры и первичного документа."
+        },
+        {
+          "title": "Электронный УПД с 2026 года | Время бухгалтера",
+          "url": "https://www.v2b.ru/articles/elektronnyy-upd-s-2026-goda/",
+          "snippet": "Скачать печатную форму Универсально передаточный документ (УПД) с 01.04.2026 для Эксель (Microsoft Excel) (в формате .xltx, .xlsx, xls)"
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "реестр упд google sheets август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "УПД-2026: бланк, образец заполнения | Время бухгалтера",
+          "url": "https://www.v2b.ru/articles/upd-2023-blank-obrazets-zapolneniya/",
+          "snippet": ""
+        },
+        {
+          "title": "Форма УПД 2026: скачать бланк, образец заполнения",
+          "url": "https://glavkniga.ru/situations/k511708",
+          "snippet": "Универсальный передаточный документ (УПД) представляет собой бухгалтерский документ, который объединяет функции счета-фактуры и первички. Он подтверждает реализацию товара, выполнение работ или оказание услуг."
+        },
+        {
+          "title": "Образец УПД 2026: скачать форму универсального передаточного документа",
+          "url": "https://secrets.tbank.ru/documents/universalnyj-peredatochnyj-dokument/",
+          "snippet": "УПД - это универсальный передаточный документ, в котором объединены реквизиты счета-фактуры и первичного документа."
+        },
+        {
+          "title": "Новая форма УПД с 01.01 2026 - образец и бланк",
+          "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-yanvarya-2026-goda",
+          "snippet": "Скачайте актуальный образец для заполнения бланка универсального передаточного документа, УПД, в формате XLSX. Шаблоны и формы на сайте соответствуют текущему законодательству РФ."
+        },
+        {
+          "title": "Скачать УПД с 01.04.2026 для Excel",
+          "url": "https://v8pro.ru/shop/upd-excel-xls/",
+          "snippet": "Новая форма УПД с 2026 года обязательна для использования организациями и ИП, которые применяют в работе с контрагентами электронный документооборот. Электронные документы должны быть оформлены в соответствии с утвержденными ФНС форматами, иначе их посчитают недействительными."
+        },
+        {
+          "title": "Образец универсального передаточного документа (УПД) в 2026 году ...",
+          "url": "https://www.moysklad.ru/poleznoe/formy-dokumentov/universalnyj-peredatochnyj-dokument/",
+          "snippet": "Скачать печатную форму Универсально передаточный документ (УПД) с 01.04.2026 для Эксель (Microsoft Excel) (в формате .xltx, .xlsx, xls)"
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "реестр упд google sheets новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Электронный УПД с 2026 года | Время бухгалтера",
+          "url": "https://www.v2b.ru/articles/elektronnyy-upd-s-2026-goda/",
+          "snippet": ""
+        },
+        {
+          "title": "Применение УПД с 1 января 2026 года | БУХ.1С - сайт для современного ...",
+          "url": "https://buh.ru/articles/upd-s-1-yanvarya-2026-goda-kto-obyazan-primenyat-i-kak-bezboleznenno-pereyti.html",
+          "snippet": "С первого января 2026 года УПД станет единственным электронным документом, подтверждающим отгрузку продукции, производство работ, оказание услуг."
+        },
+        {
+          "title": "Электронный УПД с 2026 года: обязательное применение, порядок перехода ...",
+          "url": "https://audit-reshenie.ru/journal/nds/elektronnyj-upd-s-2026-goda-objazatelnoe-primenenie/",
+          "snippet": "С 2026 года организации и ИП перейдут на обязательное использование универсальных передаточных документов (УПД), составляемых в электронной форме. Рассказываем, что из себя представляет УПД, зачем его использовать, чем обусловлен переход на обязательное применение УПД и как он будет осуществляться."
+        },
+        {
+          "title": "Новая форма УПД с 01.01 2026 - образец и бланк",
+          "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-yanvarya-2026-goda",
+          "snippet": "С 1 января 2026 года электронный УПД становится единственным электронным документом для подтверждения отгрузки товаров, работ и услуг. Утрачивают силу форматы электронных товарных накладных и актов. Организации должны обновить ПО и провести тестовый обмен с контрагентами."
+        },
+        {
+          "title": "Новая форма УПД с 1 апреля 2026 - образец и бланк",
+          "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-aprelya-2026-goda",
+          "snippet": "Форма УПД с 01.01.2026 станет электронным документом, обязательным для подтверждения отгрузки товаров (выполнения работ или оказания услуг). Электронный УПД заменит ТОРГ-12 и акт выполненных работ. Перейти на универсальный передаточный документ как основной рекомендуется уже сейчас."
+        },
+        {
+          "title": "С 2026 года необходимо применять только УПД - Центр технологий",
+          "url": "https://www.ct26.ru/novosti/2025/08/21/s-2026-goda-neobhodimo-primenyat-tolko-upd",
+          "snippet": "Новая форма УПД с 1 апреля 2026 г. подлежит обязательному применению всеми налогоплательщиками. В нее привнесены изменения, которые касаются отдельных реквизитов. Формы (счета, книги продаж / покупок), рекомендованные ранее ФНС и используемые до 01.04.2026, больше не действуют."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "Ai В Российском Финтехе 2026: Банки Автоматизируют До 70% Обращений ...",
+          "url": "https://axioma-ai.ru/ai-russia/russia-ai-fintech-banking-automation-2026-20260815",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Российские банки и финтех-компании в 2026 году активно внедряют AI для автоматизации клиентского обслуживания, кредитного скоринга и борьбы с мошенничеством. Сбер, Т-Банк, ВТБ и Альфа-Банк автоматизируют до 70% типовых ..."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Бухгалтерия в 2026 - автоматизация с учётом новых налогов",
+          "url": "https://vashereshenie.ru/blog/buxgalteriya-v-2026",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "реестр упд google sheets 2026",
+      "purpose": "вторичный запрос: реестр упд google sheets",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Применение УПД с 1 января 2026 года | БУХ.1С - сайт для современного ...",
+          "url": "https://buh.ru/articles/upd-s-1-yanvarya-2026-goda-kto-obyazan-primenyat-i-kak-bezboleznenno-pereyti.html",
+          "snippet": ""
+        },
+        {
+          "title": "Упд 2026: Образец Заполнения, Xml Для Эдо, Скачать Бланк",
+          "url": "https://service-online.su/forms/buh/upd/",
+          "snippet": "С 2026 года организации и ИП перейдут на обязательное использование универсальных передаточных документов (УПД), составляемых в электронной форме. Рассказываем, что из себя представляет УПД, зачем его использовать, чем обусловлен переход на обязательное применение УПД и как он будет осуществляться."
+        },
+        {
+          "title": "Новая форма УПД с 01.01 2026 - образец и бланк",
+          "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-yanvarya-2026-goda",
+          "snippet": "Заполните УПД онлайн бесплатно: с маркировкой, кодами КИЗ и прослеживаемостью. Скачайте бланк в PDF, Excel или XML для ЭДО. Новый бланк УПД действует в 2026 году и включает в себя изменения от 1 января 2026 года, включая поддержку нового электронного формата 5.03."
+        },
+        {
+          "title": "Скачать УПД с 01.04.2026 для Excel - v8pro.ru",
+          "url": "https://v8pro.ru/shop/upd-excel-xls/",
+          "snippet": "Новая форма УПД с 2026 года обязательна для использования организациями и ИП, которые применяют в работе с контрагентами электронный документооборот. Электронные документы должны быть оформлены в соответствии с утвержденными ФНС форматами, иначе их посчитают недействительными."
+        },
+        {
+          "title": "Форма УПД 2026: скачать бланк, образец заполнения",
+          "url": "https://glavkniga.ru/situations/k511708",
+          "snippet": "Скачать печатную форму Универсально передаточный документ (УПД) с 01.04.2026 для Эксель (Microsoft Excel) (в формате .xltx, .xlsx, xls)"
+        },
+        {
+          "title": "Электронный УПД с 2026 года | Время бухгалтера",
+          "url": "https://www.v2b.ru/articles/elektronnyy-upd-s-2026-goda/",
+          "snippet": "УПД - это универсальный передаточный документ, в котором объединены реквизиты счета-фактуры и первичного документа."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2 февраля — В Подмосковье зафиксирован первый в России случай оспы обезьян [27][28] 3 февраля — В Санкт-Петербурге возобновил работу бывший завод General Motors под брендом «АГР». Начата сборка марки « Jaecoo » [29] 15 февраля ..."
+        },
+        {
+          "title": "Производственный календарь 2026: нормы часов и рабочие дни",
+          "url": "https://allcontract.ru/calendar/2026",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Календарь 2026: все праздничные и выходные дни",
+          "url": "https://online-kalendar.ru/year-2026",
+          "snippet": "Производственный календарь 2026: 247 рабочих дней, 118 выходных, норма 1972 часа при 40-часовой неделе. Переносы выходных, сокращённые дни и нормы по месяцам."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "УПД и счет-фактура: где и как правильно использовать в 2026",
+          "url": "https://www.kontur-extern.ru/info/54586-ispolzovanie_upd_i_schet_faktury",
+          "snippet": ""
+        },
+        {
+          "title": "Новая форма УПД и счёта-фактуры с 1 апреля 2026 года",
+          "url": "https://saldovka.com/2026-exp/novaya-forma-upd-i-schyota-faktury-s-1-aprelya-2026-goda-chto-izmenilos-i-kak-zapolnyat.html",
+          "snippet": "В связи с тем, что с 2026 года НДС платят еще больше компаний на УСН, возникает множество вопросов по применению счетов-фактур и УПД. Из статьи вы узнаете, в чем сходство и различия этих документов, как их заполнять и отражать в регистрах по НДС."
+        },
+        {
+          "title": "Отправляйте УПД и счета-фактуры по новым правилам",
+          "url": "https://e-kontur.ru/enquiry/2334/otpravlyayte-upd-i-scheta-faktury",
+          "snippet": "С 1 апреля 2026 обязательна новая форма счёта-фактуры и УПД: строка 5б, ОГРНИП для ИП, НДС 22%, новые графы книг покупок и продаж. Инструкция и образец."
+        },
+        {
+          "title": "Счет-фактура 2026: УПД обязателен в ЭДО, бумажные формы не отменяются ...",
+          "url": "https://action-market.ru/blog/buhgalteriya/schet-faktura-s-2026-goda-chto-izmenitsya-v-dokumentooborote/",
+          "snippet": "В 2026 году для УПД и счётов-фактур появились новые обязательные реквизиты и обновилась форма счёта-фактуры. Разберём, что изменилось и как адаптироваться к новым правилам."
+        },
+        {
+          "title": "По какой форме выставлять счет-фактуру и УПД с апреля 2026 года?",
+          "url": "https://rarus.ru/publications/20260430-otvety-lk-1c-rarus-po-kakoy-forme-vystavlyat-schet-fakturu-i-upd-s-aprelya-2026-goda-821428/",
+          "snippet": "Счета-фактуры в 2026 году: обязательный УПД для ЭДО, сохранение бумажных форм, НДС 22%. Переход касается участников электронного документооборота с форматами ТОРГ-12 и актов."
+        },
+        {
+          "title": "Рекомендации ФНС по заполнению счетов-фактур и УПД с 1 января 2026 года",
+          "url": "https://www.diadoc.ru/articles/82777-rekomendacii_fns_po_zapolneniyu_schetov_faktur_i_upd",
+          "snippet": "В новом выпуске линия консультаций «1С‑Рарус» разберет: какую форму счета‑фактуры применять с апреля 2026 года, что изменилось и как работать с электронными форматами."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    }
+  ],
+  "errors": [],
+  "websearch_cursor": {
+    "searched_at": "2026-08-15",
+    "agent": "excalibur-blog-research",
+    "note": "Приоритетный SERP; шаг 0 primary_fresh нерелевантен intent (бланки УПД вместо Google Sheets)",
+    "queries": [
+      {
+        "query": "реестр УПД Google Sheets шаблон 2026",
+        "purpose": "primary + Sheets intent",
+        "top_results": [
+          {
+            "url": "https://pdf2sheets.app/ru/zachem-perevodit-pdf/kak-sobrat-nakladnye-v-odnu-tablicu/",
+            "title": "Как собрать накладные в одну таблицу - PDF to Google Sheets",
+            "relevance": "high"
+          },
+          {
+            "url": "https://buh.ru/articles/upd-s-1-yanvarya-2026-goda-kto-obyazan-primenyat-i-kak-bezboleznenno-pereyti.html",
+            "title": "Применение УПД с 1 января 2026 года",
+            "relevance": "context"
+          },
+          {
+            "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-aprelya-2026-goda",
+            "title": "Новая форма УПД с 1 апреля 2026",
+            "relevance": "low"
+          },
+          {
+            "url": "https://blank-kit.ru/documents/new/upd",
+            "title": "УПД 2026 онлайн, XML 5.03",
+            "relevance": "context"
+          },
+          {
+            "url": "https://www.moysklad.ru/poleznoe/formy-dokumentov/universalnyj-peredatochnyj-dokument/",
+            "title": "Образец УПД 2026 Excel",
+            "relevance": "low"
+          }
+        ]
+      },
+      {
+        "query": "как вести реестр счетов-фактур Google Таблицы",
+        "purpose": "registry columns + journal distinction",
+        "top_results": [
+          {
+            "url": "https://pdf2sheets.app/ru/zachem-perevodit-pdf/kak-sobrat-nakladnye-v-odnu-tablicu/",
+            "title": "PDF to Google Sheets — реестр первички",
+            "relevance": "high"
+          },
+          {
+            "url": "https://www.glavbukh.ru/art/386589-jurnal-ucheta-poluchennyh-i-vystavlennyh-schetov-faktur",
+            "title": "Журнал учета счетов-фактур 2026",
+            "relevance": "high"
+          },
+          {
+            "url": "https://ppt.ru/art/schet-faktura/zhurnal-ucheta-poluchennykh-i-vystavlennykh-schetov-faktur",
+            "title": "Журнал СФ — коды операций",
+            "relevance": "high"
+          },
+          {
+            "url": "https://nalog-nalog.ru/nds/zhurnal_schetovfaktur/zhurnal_registracii_schetov-faktur_-_obrazec-nn/",
+            "title": "Журнал регистрации СФ образец",
+            "relevance": "medium"
+          },
+          {
+            "url": "https://developers.google.com/apps-script",
+            "title": "Apps Script",
+            "relevance": "medium"
+          }
+        ]
+      },
+      {
+        "query": "автоматизация финотдела Google Sheets реестр документов 2026",
+        "purpose": "secondary automation",
+        "top_results": [
+          {
+            "url": "https://ezgpt.ru/articles/kak-sdelat-ii-agenta-dlya-schetov-aktov-i-pervichki",
+            "title": "ИИ-агент для счетов, актов и первички",
+            "relevance": "high"
+          },
+          {
+            "url": "https://scand.com/ru/company/blog/best-google-sheets-add-ons/",
+            "title": "Плагины Google Sheets для автоматизации",
+            "relevance": "medium"
+          },
+          {
+            "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+            "title": "AI для финансиста 2026 (KODA)",
+            "relevance": "internal"
+          }
+        ]
+      },
+      {
+        "query": "УПД 2026 обязательный электронный формат 5.03",
+        "purpose": "context facts",
+        "top_results": [
+          {
+            "url": "https://bazanpa.ru/vopros/obyazatelnyj-upd-v-2026-godu-kak-oformlyat-otgruzku-tovarov-raboty-i-uslugi/",
+            "title": "Обязательный электронный УПД 2026",
+            "relevance": "high"
+          },
+          {
+            "url": "https://rarus.ru/publications/20260115-otvety-lk-1c-rarus-obyazatelno-li-primenyat-elektronny-format-upd-s-2026-goda-801724/",
+            "title": "Обязательно ли УПД с 2026",
+            "relevance": "high"
+          },
+          {
+            "url": "https://www.klerk.ru/blogs/astral/661661/",
+            "title": "Электронный УПД 2025/2026",
+            "relevance": "medium"
+          },
+          {
+            "url": "https://blank-kit.ru/blog/novaya-forma-upd-2026-stroka-5b",
+            "title": "Строка 5б УПД 2026",
+            "relevance": "high"
+          }
+        ]
+      }
+    ]
+  },
+  "unique_urls": [
+    {
+      "url": "https://buh.ru/articles/upd-s-1-yanvarya-2026-goda-kto-obyazan-primenyat-i-kak-bezboleznenno-pereyti.html",
+      "title": "Применение УПД с 1 января 2026 года | БУХ.1С - сайт для современного ...",
+      "from_query": "реестр упд google sheets 2026"
+    },
+    {
+      "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-yanvarya-2026-goda",
+      "title": "Новая форма УПД с 01.01 2026 - образец и бланк",
+      "from_query": "реестр упд google sheets 2026"
+    },
+    {
+      "url": "https://service-online.su/forms/buh/upd/",
+      "title": "Упд 2026: Образец Заполнения, Xml Для Эдо, Скачать Бланк",
+      "from_query": "реестр упд google sheets 2026"
+    },
+    {
+      "url": "https://glavkniga.ru/situations/k511708",
+      "title": "Форма УПД 2026: скачать бланк, образец заполнения",
+      "from_query": "реестр упд google sheets 2026"
+    },
+    {
+      "url": "https://v8pro.ru/shop/upd-excel-xls/",
+      "title": "Скачать УПД с 01.04.2026 для Excel - v8pro.ru",
+      "from_query": "реестр упд google sheets 2026"
+    },
+    {
+      "url": "https://www.v2b.ru/articles/elektronnyy-upd-s-2026-goda/",
+      "title": "Электронный УПД с 2026 года | Время бухгалтера",
+      "from_query": "реестр упд google sheets 2026"
+    },
+    {
+      "url": "https://www.v2b.ru/articles/upd-2023-blank-obrazets-zapolneniya/",
+      "title": "УПД-2026: бланк, образец заполнения | Время бухгалтера",
+      "from_query": "реестр упд google sheets август 2026"
+    },
+    {
+      "url": "https://secrets.tbank.ru/documents/universalnyj-peredatochnyj-dokument/",
+      "title": "Образец УПД 2026: скачать форму универсального передаточного документа",
+      "from_query": "реестр упд google sheets август 2026"
+    },
+    {
+      "url": "https://www.moysklad.ru/poleznoe/formy-dokumentov/universalnyj-peredatochnyj-dokument/",
+      "title": "Образец универсального передаточного документа (УПД) в 2026 году ...",
+      "from_query": "реестр упд google sheets август 2026"
+    },
+    {
+      "url": "https://audit-reshenie.ru/journal/nds/elektronnyj-upd-s-2026-goda-objazatelnoe-primenenie/",
+      "title": "Электронный УПД с 2026 года: обязательное применение, порядок перехода ...",
+      "from_query": "реестр упд google sheets новости 2026"
+    },
+    {
+      "url": "https://spmag.ru/blanks/novaya-forma-upd-s-1-aprelya-2026-goda",
+      "title": "Новая форма УПД с 1 апреля 2026 - образец и бланк",
+      "from_query": "реестр упд google sheets новости 2026"
+    },
+    {
+      "url": "https://www.ct26.ru/novosti/2025/08/21/s-2026-goda-neobhodimo-primenyat-tolko-upd",
+      "title": "С 2026 года необходимо применять только УПД - Центр технологий",
+      "from_query": "реестр упд google sheets новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://axioma-ai.ru/ai-russia/russia-ai-fintech-banking-automation-2026-20260815",
+      "title": "Ai В Российском Финтехе 2026: Банки Автоматизируют До 70% Обращений ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vashereshenie.ru/blog/buxgalteriya-v-2026",
+      "title": "Бухгалтерия в 2026 - автоматизация с учётом новых налогов",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://allcontract.ru/calendar/2026",
+      "title": "Производственный календарь 2026: нормы часов и рабочие дни",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://online-kalendar.ru/year-2026",
+      "title": "Календарь 2026: все праздничные и выходные дни",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.kontur-extern.ru/info/54586-ispolzovanie_upd_i_schet_faktury",
+      "title": "УПД и счет-фактура: где и как правильно использовать в 2026",
+      "from_query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026"
+    },
+    {
+      "url": "https://saldovka.com/2026-exp/novaya-forma-upd-i-schyota-faktury-s-1-aprelya-2026-goda-chto-izmenilos-i-kak-zapolnyat.html",
+      "title": "Новая форма УПД и счёта-фактуры с 1 апреля 2026 года",
+      "from_query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026"
+    },
+    {
+      "url": "https://e-kontur.ru/enquiry/2334/otpravlyayte-upd-i-scheta-faktury",
+      "title": "Отправляйте УПД и счета-фактуры по новым правилам",
+      "from_query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026"
+    },
+    {
+      "url": "https://action-market.ru/blog/buhgalteriya/schet-faktura-s-2026-goda-chto-izmenitsya-v-dokumentooborote/",
+      "title": "Счет-фактура 2026: УПД обязателен в ЭДО, бумажные формы не отменяются ...",
+      "from_query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026"
+    },
+    {
+      "url": "https://rarus.ru/publications/20260430-otvety-lk-1c-rarus-po-kakoy-forme-vystavlyat-schet-fakturu-i-upd-s-aprelya-2026-goda-821428/",
+      "title": "По какой форме выставлять счет-фактуру и УПД с апреля 2026 года?",
+      "from_query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026"
+    },
+    {
+      "url": "https://www.diadoc.ru/articles/82777-rekomendacii_fns_po_zapolneniyu_schetov_faktur_i_upd",
+      "title": "Рекомендации ФНС по заполнению счетов-фактур и УПД с 1 января 2026 года",
+      "from_query": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта 2026"
+    }
+  ]
+}

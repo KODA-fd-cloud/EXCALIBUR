@@ -1,0 +1,31 @@
+{
+  "topic_id": "B58",
+  "h1": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта",
+  "title": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта",
+  "description": "Пошаговый реестр УПД и счетов-фактур в Google Sheets: doc_key, kit_status, анти-дубли, маршруты наполнения (ручной, CSV, API, n8n) и регламент сверки без подмены журнала посредника.",
+  "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, сетка реестра УПД и счетов-фактур",
+  "slug": "reestr-upd-google-sheets",
+  "primary_query": "реестр упд google sheets",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "реестр упд google sheets",
+    "2026"
+  ],
+  "char_count": 9473,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "реестр упд google sheets контроль комплекта",
+    "журнал счетов фактур google таблицы kit_status",
+    "как вести реестр упд и сф в sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Реестр УПД Google Sheets: контроль комплекта документов",
+    "title_ctr": "📊 Реестр УПД в Google Sheets: как не потерять счёт-фактуру на закрытии квартала?",
+    "title_aeo": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта?",
+    "description_seo": "Реестр УПД и счетов-фактур в Google Sheets: doc_key, kit_status, анти-дубли, маршруты CSV/API/n8n и регламент сверки с ЭДО без подмены журнала посредника.",
+    "description_ctr": "⚡️ Один реестр вместо хаоса в почте: УПД, СФ, оплата и статус ЭДО в Google Sheets с формулами комплектности за один день.",
+    "description_aeo": "Реестр УПД Google Sheets - таблица с doc_key, kit_status и анти-дублями для контроля комплекта документов, договора, оплаты и ЭДО."
+  },
+  "cover_family": "gradient_abstract"
+}
