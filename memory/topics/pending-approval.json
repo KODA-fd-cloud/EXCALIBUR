@@ -3,8 +3,8 @@
   "h1": "Как из PDF счёта сделать строку реестра оплат через n8n",
   "slug": "n8n-pdf-schet-v-reestr",
   "status": "pending",
-  "proposed_at": 1786780123,
-  "proposal_message_id": 338,
+  "proposed_at": 1786780307,
+  "proposal_message_id": 339,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -27,5 +27,6 @@
     "B50",
     "B53",
     "B54"
-  ]
+  ],
+  "reminded_at": 1786780307
 }
