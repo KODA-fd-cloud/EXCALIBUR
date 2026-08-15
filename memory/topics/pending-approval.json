@@ -1,10 +1,10 @@
 {
-  "topic_id": "B63",
-  "h1": "Как считать индекс изменения цен поставщиков в Excel/Sheets",
-  "slug": "indeks-cen-postavshchikov-sheets",
+  "topic_id": "B64",
+  "h1": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр",
+  "slug": "one-pager-sobstvenniku-sheets",
   "status": "pending",
-  "proposed_at": 1786795095,
-  "proposal_message_id": 367,
+  "proposed_at": 1786802416,
+  "proposal_message_id": 373,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -31,6 +31,5 @@
     "B60",
     "B61",
     "B62"
-  ],
-  "reminded_at": 1786795095
+  ]
 }
