@@ -3,8 +3,8 @@
   "h1": "Как считать индекс изменения цен поставщиков в Excel/Sheets",
   "slug": "indeks-cen-postavshchikov-sheets",
   "status": "pending",
-  "proposed_at": 1786794241,
-  "proposal_message_id": 366,
+  "proposed_at": 1786795095,
+  "proposal_message_id": 367,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -31,5 +31,6 @@
     "B60",
     "B61",
     "B62"
-  ]
+  ],
+  "reminded_at": 1786795095
 }
