@@ -3,8 +3,8 @@
   "h1": "Как вести реестр займов сотрудникам в Google Sheets: выдача, % , остаток",
   "slug": "reestr-zajmov-sotrudnikam-sheets",
   "status": "pending",
-  "proposed_at": 1786786216,
-  "proposal_message_id": 355,
+  "proposed_at": 1786787357,
+  "proposal_message_id": 356,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -28,5 +28,6 @@
     "B53",
     "B54",
     "B57"
-  ]
+  ],
+  "reminded_at": 1786787357
 }
