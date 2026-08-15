@@ -1,0 +1,8 @@
+{
+  "slug": "reestr-upd-google-sheets",
+  "topic_id": "B58",
+  "permalink": "https://koda-fd.ru/blog/reestr-upd-google-sheets/",
+  "raw_output": "OK post=229 slug=reestr-upd-google-sheets\nOK categories=3,10,6\nOK featured_image=230\npermalink=https://koda-fd.ru/blog/reestr-upd-google-sheets/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
