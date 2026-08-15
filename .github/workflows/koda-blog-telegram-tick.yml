@@ -40,13 +40,14 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: |
           set -euo pipefail
+          # Cloud Scout: всегда при низкой очереди (скрипт сам включит при proposeable=0).
+          # --notify только в «больших» слотах / ручном запуске — без спама каждые 15 мин.
+          EXTRA="--prefer-cursor"
           HOUR_UTC=$(date -u +%H)
-          EXTRA=""
           if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ] || [ "$HOUR_UTC" = "05" ] || [ "$HOUR_UTC" = "12" ]; then
-            EXTRA="--notify --prefer-cursor"
+            EXTRA="$EXTRA --notify"
           fi
           # shellcheck disable=SC2086
-          # Не пушим Scout отдельно — один commit state в конце, иначе pending/offset теряются.
           python scripts/excalibur_blog_scout_ci.py --count 5 --min-unpublished 3 $EXTRA | tee scout.json
 
       - name: Telegram tick

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """CI Scout: find fresh utility-only topics for KODA blog and append to blog-topics.md.
 
-Strategy (no LLM required):
-  - Curated bank of KODA-niche utility angles (CFO + automation).
-  - Web search (ddgs) scores which angles are «hot» right now.
-  - Cannibalization guard vs published + pool.
-  - Optional CURSOR_API_KEY → full Cloud Scout agent.
+Strategy:
+  1) Optional Cursor Cloud Scout (Excalibur Scout skill: WebSearch + Wordstat + cards)
+     — auto when queue empty or --prefer-cursor
+  2) Local web Scout:
+     - curated ANGLE_BANK scored by live DDG trends
+     - if bank thin/exhausted → invent new cards from today's SERP titles
+  3) Cannibalization guard (theme_key + semantic overlap)
 
 Usage:
   python scripts/excalibur_blog_scout_ci.py --count 3
@@ -526,6 +528,136 @@ def append_card(topic_id: str, angle: dict[str, str], *, evidence: str = "") -> 
     TOPICS_PATH.write_text(text + ("\n" if not text.endswith("\n") else ""), encoding="utf-8")
 
 
+def _slugify_ru(text: str) -> str:
+    table = str.maketrans(
+        {
+            "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ё": "e", "ж": "zh",
+            "з": "z", "и": "i", "й": "j", "к": "k", "л": "l", "м": "m", "н": "n", "о": "o",
+            "п": "p", "р": "r", "с": "s", "т": "t", "у": "u", "ф": "f", "х": "h", "ц": "c",
+            "ч": "ch", "ш": "sh", "щ": "sch", "ъ": "", "ы": "y", "ь": "", "э": "e", "ю": "yu",
+            "я": "ya",
+        }
+    )
+    s = text.lower().translate(table)
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return (s[:60] or "trend-topic").strip("-")
+
+
+def invent_angles_from_trends(trend_hits: list[dict[str, str]], *, limit: int = 8) -> list[dict[str, str]]:
+    """Turn live DDG titles into utility topic candidates (not bank rotation)."""
+    allow = (
+        "1с", "1c", "excel", "sheets", "n8n", "make", "cursor", "chatgpt", "claude",
+        "ддс", "дебитор", "сверк", "банк", "оплат", "автоматиз", "python", "финанс",
+        "бюджет", "отчёт", "отчет", "налог", "invoice", "odata", "apps script", "telegram",
+    )
+    deny = ("купить", "скачать бесплатно", "казино", "курс валют сегодня", "новости")
+    out: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for hit in trend_hits:
+        title = re.sub(r"\s+", " ", (hit.get("title") or "")).strip()
+        body = (hit.get("body") or "")[:200]
+        blob = f"{title} {body}".lower()
+        if len(title) < 24 or len(title) > 120:
+            continue
+        if not any(k in blob for k in allow):
+            continue
+        if any(k in blob for k in deny):
+            continue
+        # Normalize into how-to H1
+        h1 = title
+        if not re.match(r"^(как|чеклист|checklist|make|n8n|apps)\b", h1, re.I):
+            h1 = f"Как {h1[0].lower()}{h1[1:]}" if h1 else title
+        h1 = h1.rstrip(".!?")
+        pq = re.sub(r"[^\w\s\-]+", " ", title.lower(), flags=re.UNICODE)
+        pq = re.sub(r"\s+", " ", pq).strip()[:80]
+        slug = _slugify_ru(pq)
+        theme = "trend_" + re.sub(r"[^a-z0-9_]+", "_", slug)[:40]
+        if theme in seen or slug in seen:
+            continue
+        seen.add(theme)
+        seen.add(slug)
+        out.append(
+            {
+                "theme_key": theme,
+                "short": title[:70],
+                "h1": h1[:140],
+                "primary_query": pq,
+                "slug": slug,
+                "intent": "how_to",
+                "tags": "trend ddg scout",
+                "evidence": f"ddg:{hit.get('href', '')[:80]}",
+            }
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def gather_trend_hits() -> list[dict[str, str]]:
+    hits: list[dict[str, str]] = []
+    for q in TREND_QUERIES:
+        try:
+            hits.extend(ddg_search(q, max_results=4))
+        except Exception as e:
+            print(f"search fail {q}: {e}", file=sys.stderr)
+            continue
+        time.sleep(0.5)
+    return hits
+
+
+def try_add_angle(
+    angle: dict[str, str],
+    *,
+    existing: list[dict[str, str]],
+    published: set[str],
+    used_slugs: set[str],
+    used_q: set[str],
+    used_themes: set[str],
+    evidence: str,
+) -> dict[str, str] | None:
+    slug = angle["slug"].lower()
+    pq = angle["primary_query"].strip().lower()
+    theme = (angle.get("theme_key") or "").strip().lower()
+    if slug in used_slugs or pq in used_q:
+        print(f"SKIP slug/query used: {slug}", flush=True)
+        return None
+    if theme and theme in used_themes:
+        print(f"SKIP theme_key used: {theme}", flush=True)
+        return None
+    warns = check_overlap(
+        angle["primary_query"],
+        existing,
+        published,
+        h1=angle["h1"],
+        slug=angle["slug"],
+        theme_key=theme,
+        short=angle.get("short", ""),
+    )
+    if is_blocked(warns):
+        hit = warns[0]["topic_id"] if warns else "?"
+        print(f"SKIP semantic dup vs {hit}: {angle['h1'][:70]}", flush=True)
+        return None
+
+    topic_id = next_topic_id()
+    append_card(topic_id, angle, evidence=evidence)
+    row_topic = {
+        "topic_id": topic_id,
+        "h1": angle["h1"],
+        "primary_query": angle["primary_query"],
+        "slug": angle["slug"],
+        "theme_key": theme,
+        "short": angle.get("short", ""),
+        "priority": "P0",
+    }
+    existing.append(row_topic)
+    used_slugs.add(slug)
+    used_q.add(pq)
+    used_themes |= theme_keys_for(row_topic)
+    row = {"topic_id": topic_id, **angle}
+    print(f"ADDED {topic_id}: {angle['h1']}", flush=True)
+    return row
+
+
 def scout_web(count: int) -> list[dict[str, str]]:
     existing = load_existing_topics(ROOT)
     published = load_published_topics(ROOT)
@@ -536,8 +668,9 @@ def scout_web(count: int) -> list[dict[str, str]]:
     for t in existing:
         used_themes |= theme_keys_for(t)
 
-    print("Gathering trend signals…", flush=True)
-    trend_blob = gather_trend_blob()
+    print("Gathering live trend hits (DDG)…", flush=True)
+    trend_hits = gather_trend_hits()
+    trend_blob = " ".join(f"{h.get('title','')} {h.get('body','')}" for h in trend_hits).lower()
     salt = date.today().isoformat()
 
     ranked = sorted(
@@ -550,49 +683,37 @@ def scout_web(count: int) -> list[dict[str, str]]:
     for angle in ranked:
         if len(added) >= count:
             break
-        slug = angle["slug"].lower()
-        pq = angle["primary_query"].strip().lower()
-        theme = (angle.get("theme_key") or "").strip().lower()
-        if slug in used_slugs or pq in used_q:
-            print(f"SKIP slug/query used: {slug}", flush=True)
-            continue
-        if theme and theme in used_themes:
-            print(f"SKIP theme_key used: {theme}", flush=True)
-            continue
-        warns = check_overlap(
-            angle["primary_query"],
-            existing,
-            published,
-            h1=angle["h1"],
-            slug=angle["slug"],
-            theme_key=theme,
-            short=angle.get("short", ""),
-        )
-        if is_blocked(warns):
-            hit = warns[0]["topic_id"] if warns else "?"
-            print(f"SKIP semantic dup vs {hit}: {angle['h1'][:70]}", flush=True)
-            continue
-
-        topic_id = next_topic_id()
         tag_hits = [t for t in angle.get("tags", "").split() if t.lower() in trend_blob]
-        evidence = "tags:" + ",".join(tag_hits) if tag_hits else "rotation"
-        append_card(topic_id, angle, evidence=evidence)
-        row_topic = {
-            "topic_id": topic_id,
-            "h1": angle["h1"],
-            "primary_query": angle["primary_query"],
-            "slug": angle["slug"],
-            "theme_key": theme,
-            "short": angle.get("short", ""),
-            "priority": "P0",
-        }
-        existing.append(row_topic)
-        used_slugs.add(slug)
-        used_q.add(pq)
-        used_themes |= theme_keys_for(row_topic)
-        row = {"topic_id": topic_id, **angle}
-        added.append(row)
-        print(f"ADDED {topic_id}: {angle['h1']}", flush=True)
+        evidence = "bank+tags:" + ",".join(tag_hits) if tag_hits else "bank+rotation"
+        row = try_add_angle(
+            angle,
+            existing=existing,
+            published=published,
+            used_slugs=used_slugs,
+            used_q=used_q,
+            used_themes=used_themes,
+            evidence=evidence,
+        )
+        if row:
+            added.append(row)
+
+    # Live invent: when bank is thin/exhausted, mint topics from today's SERP titles
+    if len(added) < count:
+        print(f"Bank filled {len(added)}/{count} — inventing from live SERP…", flush=True)
+        for angle in invent_angles_from_trends(trend_hits, limit=count * 3):
+            if len(added) >= count:
+                break
+            row = try_add_angle(
+                angle,
+                existing=existing,
+                published=published,
+                used_slugs=used_slugs,
+                used_q=used_q,
+                used_themes=used_themes,
+                evidence=angle.get("evidence") or "ddg-invent",
+            )
+            if row:
+                added.append(row)
     return added
 
 
@@ -688,7 +809,10 @@ def main() -> int:
     mode = "web"
     added: list[dict] = []
 
-    if args.prefer_cursor and os.environ.get("CURSOR_API_KEY", "").strip():
+    # Cloud Scout = реальный Excalibur Scout (WebSearch + Wordstat + карточки).
+    # Включаем автоматически при пустой очереди или по --prefer-cursor.
+    use_cursor = bool(args.prefer_cursor) or proposeable == 0
+    if use_cursor and os.environ.get("CURSOR_API_KEY", "").strip():
         try:
             cursor_out = scout_cursor_cloud(args.count)
             mode = "cursor_cloud"
@@ -708,13 +832,20 @@ def main() -> int:
             print(f"cursor scout failed, fallback web: {e}", file=sys.stderr)
             mode = "web"
 
-    if mode == "web":
-        added = scout_web(args.count)
+    # Локальный web Scout: банк + live DDG invent (актуальные заголовки из SERP)
+    if mode == "web" or proposeable_count() < args.min_unpublished:
+        web_added = scout_web(args.count)
+        added.extend(web_added)
+        if mode == "cursor_cloud" and web_added:
+            mode = "cursor_cloud+web"
+        elif mode != "cursor_cloud":
+            mode = "web"
         print(
             json.dumps(
                 {
                     "ok": True,
-                    "action": "web_scout",
+                    "action": "web_scout" if mode == "web" else "hybrid_scout",
+                    "mode": mode,
                     "added": [
                         {
                             "topic_id": a["topic_id"],
@@ -725,6 +856,7 @@ def main() -> int:
                         for a in added
                     ],
                     "unpublished_after": unpublished_count(),
+                    "proposeable_after": proposeable_count(),
                 },
                 ensure_ascii=False,
             )

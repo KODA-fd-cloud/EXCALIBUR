@@ -112,6 +112,21 @@ def main() -> int:
         print(json.dumps({"ok": False, "action": "qa_not_pass", "topic_id": topic_id, "dir": article_dir.name}, ensure_ascii=False))
         return 0
 
+    research_notes = article_dir / "research-notes.md"
+    research_serp = article_dir / "research-serp.json"
+    if not research_notes.is_file() or not research_serp.is_file():
+        if not pending.get("missing_research_notified"):
+            send_text(
+                token,
+                chat_id,
+                f"⚠️ {topic_id}: нет research (research-notes.md / research-serp.json).\n"
+                f"Excalibur research обязателен — не публикую «из головы».",
+            )
+            pending["missing_research_notified"] = True
+            save_pending(pending)
+        print(json.dumps({"ok": False, "action": "missing_research", "topic_id": topic_id}, ensure_ascii=False))
+        return 0
+
     cover_png = article_dir / "cover" / "cover.png"
     if not cover_png.is_file():
         if not pending.get("missing_cover_notified"):

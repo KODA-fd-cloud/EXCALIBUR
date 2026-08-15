@@ -35,6 +35,7 @@ def launch_cursor_write(topic_id: str, h1: str, slug: str) -> dict:
     if not api_key:
         raise RuntimeError("CURSOR_API_KEY missing")
 
+    year = time.gmtime().tm_year
     prompt = f"""Ты оркестратор Excalibur BLOG в репо KODA-fd-cloud/EXCALIBUR.
 
 Тема утверждена в Telegram:
@@ -42,25 +43,36 @@ def launch_cursor_write(topic_id: str, h1: str, slug: str) -> dict:
 - h1: {h1}
 - slug: {slug}
 
-Сделай полный прогон для ЭТОЙ темы:
-1) Прочитай AGENTS.md, shared/editorial-utility-only.md, memory/brief/conversion-map.md, карточку в memory/topics/blog-topics.md
-2) Создай memory/blog/articles/{topic_id}-{slug}/ с article.html + article.meta.json + article-qa.md (verdict: PASS)
-3) Обложка: ТОЛЬКО abstract holographic CGI 16:9.
+ОБЯЗАТЕЛЬНО полный Excalibur-прогон (не писать «из головы» по одной карточке):
+
+1) Прочитай AGENTS.md, shared/editorial-utility-only.md, memory/brief/conversion-map.md,
+   карточку темы в memory/topics/blog-topics.md
+2) RESEARCH (обязательно ДО текста статьи):
+   - python scripts/excalibur_blog_research_start.py --topic-id {topic_id}
+   - WebSearch / SERP по primary_query + secondary из карточки (актуальные источники {year})
+   - Сохрани research-notes.md, research-serp.json, research-context.json, fact-check-report.json
+     в memory/blog/articles/{topic_id}-{slug}/
+   - Без research-файлов статью НЕ коммить
+3) Writer: article.html + article.meta.json + article-qa.md (verdict: PASS) — utility-only, с опорой на research
+4) Обложка: ТОЛЬКО abstract holographic CGI 16:9.
    Сохрани cover/cover.png + cover-registry.json.
    ЖЁСТКИЙ ЗАПРЕТ на картинке: любой текст/буквы/цифры/логотипы/watermark,
    лица людей, портреты, костюмы, «album cover», надписи Bxx / VISION / FUTURE,
    barcode, UI-лейблы, PROFIT/%, Montserrat-оверлей.
    Если модель всё равно нарисовала буквы/лицо — ПЕРЕГЕНЕРИРУЙ, не коммить брак.
-4) git add/commit/push в master ТОЛЬКО файлы статьи/обложки:
+5) Локально: python scripts/excalibur_blog_cover_gate.py --article-dir memory/blog/articles/{topic_id}-{slug}
+   Если gate fail — перегенерируй cover.
+6) git add/commit/push в master ТОЛЬКО файлы статьи/обложки/research:
    memory/blog/articles/{topic_id}-{slug}/**
    Сообщение: "feat(blog): write {topic_id} {slug}"
-5) В конце JSON: {{"topic_id","slug","article_dir","cover":true}}
+7) В конце JSON: {{"topic_id","slug","article_dir","cover":true,"research":true}}
 
 Запрещено:
 - трогать memory/topics/pending-approval.json, telegram-updates.offset,
   rejected-topics.json, acked-topics.json, telegram-cooldowns.json, last-proposal.json
 - salebot, emdash, article_mode A, публикация без cover.png
 - публиковать с обложкой-портретом или с текстом на картинке
+- пропускать research «чтобы быстрее»
 """
 
     result = Agent.prompt(
