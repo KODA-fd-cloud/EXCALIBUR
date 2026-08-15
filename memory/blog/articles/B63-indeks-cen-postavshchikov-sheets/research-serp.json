@@ -1,0 +1,479 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-15",
+    "today_ru": "15.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-17",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-15 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B63",
+    "priority": "P0",
+    "slug": "indeks-cen-postavshchikov-sheets",
+    "h1": "Как считать индекс изменения цен поставщиков в Excel/Sheets",
+    "primary_query": "индекс цен поставщиков excel",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "индекс цен поставщиков excel",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "индекс цен поставщиков excel 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ПРОГНОЗ ИНДЕКСОВ ЦЕН ПРОИЗВОДИТЕЛЕЙ <1> И ИНДЕКСОВ-ДЕФЛЯТОРОВ ПО ВИДАМ ...",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_476180/bd81e7dd3b7d86bf32ff21fb303474d56fd9b9d2/",
+          "snippet": ""
+        },
+        {
+          "title": "Прогноз индексов цен производителей и индексов-дефляторов по видам ...",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_504677/d8cd64a1266f122eb2628bf9ee00484e21032c09/",
+          "snippet": "См. Основные параметры сценарных условий прогноза социально-экономического развития РФ на 2026 год и на плановый период 2027 и 2028 гг."
+        },
+        {
+          "title": "Прогноз индексов цен производителей и индексов-дефляторов по видам ...",
+          "url": "https://sudact.ru/law/informatsiia-minekonomrazvitiia-rossii-stsenarnye-usloviia-funktsionirovaniia-ekonomiki_1/prognoz-indeksov-tsen-proizvoditelei-i/",
+          "snippet": "<Информация> Минэкономразвития России \"Сценарные условия функционирования экономики Российской Федерации, основные параметры прогноза социально-экономического развития Российской Федерации и прогнозируемые изменения цен (тарифов) на товары, услуги..."
+        },
+        {
+          "title": "Как использовать индекс-дефлятор в 2026 году. Как применять коэффициент ...",
+          "url": "https://ppt.ru/art/zakupki/koeffitsienty-i-indeksy-kogda-ispolzovat-i-kak-schitat",
+          "snippet": "<2> Дефлятор по виду деятельности \"Транспортировка и хранение\", индекс тарифов на грузовые перевозки. <3> За счет всех источников финансирования."
+        },
+        {
+          "title": "Прогнозные индексы",
+          "url": "https://www.rccsrk.ru/documents/ind_prognoz",
+          "snippet": "ИПЦ — индекс потребительских цен на текущий месяц в процентном соотношении к предыдущему месяцу в соответствии с информацией, установленной на сайте Росстата. Теперь разберемся, как использовать индекс-дефлятор — инструмент, который применяется для пересчета текущей стоимости в постоянные цены."
+        },
+        {
+          "title": "Индексы-дефляторы Минэкономразвития",
+          "url": "https://kbresurs.ru/103-ntsmk/309-indeksy-deflyatory-minekonomrazvitiya.html",
+          "snippet": "Применяются для расчета индекса прогнозной инфляции, используемого для пересчета сметной стоимости строительства из уровня цен на дату определения НМЦК в уровень цен соответствующего периода реализации проекта."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "индекс цен поставщиков excel август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Росстат — Цены, инфляция",
+          "url": "https://www.rosstat.gov.ru/statistics/price/",
+          "snippet": ""
+        },
+        {
+          "title": "Как использовать индекс-дефлятор в 2026 году. Как применять коэффициент ...",
+          "url": "https://ppt.ru/art/zakupki/koeffitsienty-i-indeksy-kogda-ispolzovat-i-kak-schitat",
+          "snippet": "Средние потребительские цены на отдельные виды товаров и услуг по Российской Федерации, федеральным округам, субъектам Российской Федерации и обследуемым городам (в 2026 г.)"
+        },
+        {
+          "title": "Региональные индексы розничных цен на топливо",
+          "url": "https://benzup.ru/index-region",
+          "snippet": "Для более точного расчета цен в закупках по 44-ФЗ используют различные индексы и коэффициенты: коэффициент вариации, индекс пересчета цен, индекс-дефлятор, индекс цен производителей."
+        },
+        {
+          "title": "Индекс цен производителей | Россия. Данные по годам",
+          "url": "https://statbase.ru/data/rus-producer-price-index/",
+          "snippet": "Региональные индексы розничных цен на АЗС на 14.08.2026 (индексы обновляется ежедневно в 11:00 МСК) ... Нужны данные в вашей системе?"
+        },
+        {
+          "title": "ПрайсПоиск.ру — поиск цен поставщиков",
+          "url": "https://www.pricepoisk.ru/",
+          "snippet": "Таблица и график индекса цен производителей - Россия. Полный набор статистических данных с 1948 по 2025 годы из официального источника."
+        },
+        {
+          "title": "Индексы изменения и пересчета сметной стоимости на ПИР | ИнфоСтрой",
+          "url": "https://gk-infostroy.ru/products/pir/tekuschie-indeksy/",
+          "snippet": "ПрайсПоиск.ру — поиск актуальных цен поставщиков России с учётом региона. Поиск по коду, артикулу и названию."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "индекс цен поставщиков excel новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Приказ Росстата От 26.12.2024 N 688 (Ред. От 06.07.2026) \"Об ...",
+          "url": "https://legalacts.ru/doc/prikaz-rosstata-ot-26122024-n-688-ob-utverzhdenii-ofitsialnoi/",
+          "snippet": ""
+        },
+        {
+          "title": "Цены Производителей В России - Trading Economics",
+          "url": "https://ru.tradingeconomics.com/russia/producer-prices",
+          "snippet": "Формирование индексов цен на продукцию (затраты, услуги) инвестиционного назначения основывается на действующих методологических принципах расчета показателей статистики цен и ..."
+        },
+        {
+          "title": "Об индексе цен производителей промышленных товаров в марте 2026 года",
+          "url": "https://rosstat.gov.ru/storage/mediabank/56_22-04-2026.html",
+          "snippet": "Эта страница предоставляет - Цены производителей в России - фактические значения, исторические данные, прогноз, график, статистику, экономический календарь и новости."
+        },
+        {
+          "title": "Об индексе цен производителей промышленных товаров в апреле 2026 года",
+          "url": "https://rosstat.gov.ru/storage/mediabank/71_20-05-2026.html",
+          "snippet": "В обрабатывающих производствах наибольшее изменение индекса цен отмечено в производстве кокса и нефтепродуктов, металлургическом производстве, производстве готовых металлических изделий, кроме машин и оборудования."
+        },
+        {
+          "title": "pbc-index.ru - ЦЦИ",
+          "url": "https://pbc-index.ru/",
+          "snippet": "В обрабатывающих производствах наибольшее изменение индекса цен отмечено в производстве кокса и нефтепродуктов +7,4%, металлургическом производстве +1,9%, производстве химических веществ и химических продуктов +1,4%."
+        },
+        {
+          "title": "Индекс цен производителей (ИЦП) — данные и прогноз",
+          "url": "https://forecasteconomy.com/indicator/ppi",
+          "snippet": "Центр ценовых индексов (ЦЦИ) - российское ценовое агентство. Оперативно публикуем цены на товары российского экспорта и логистику."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Топ‑5 новых моделей для автоматизации финансов (июль 2026)",
+          "url": "https://vc.ru/ai/3030629-top-modelei-dlya-avtomatizatsii-finansovykh-protsessov",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        },
+        {
+          "title": "PDF Автоматизация 2026 всё,",
+          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+          "snippet": "Ниже — топ‑5 моделей и платформ, которые реально меняют финансовую автоматизацию в 2026."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "индекс цен поставщиков excel 2026",
+      "purpose": "вторичный запрос: индекс цен поставщиков excel",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ПРОГНОЗ ИНДЕКСОВ ЦЕН ПРОИЗВОДИТЕЛЕЙ <1> И ИНДЕКСОВ-ДЕФЛЯТОРОВ ПО ВИДАМ ...",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_476180/bd81e7dd3b7d86bf32ff21fb303474d56fd9b9d2/",
+          "snippet": ""
+        },
+        {
+          "title": "Прогноз индексов цен производителей и индексов-дефляторов по видам ...",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_504677/d8cd64a1266f122eb2628bf9ee00484e21032c09/",
+          "snippet": "См. Основные параметры сценарных условий прогноза социально-экономического развития РФ на 2026 год и на плановый период 2027 и 2028 гг."
+        },
+        {
+          "title": "Прогноз индексов цен производителей и индексов-дефляторов по видам ...",
+          "url": "https://sudact.ru/law/informatsiia-minekonomrazvitiia-rossii-stsenarnye-usloviia-funktsionirovaniia-ekonomiki_1/prognoz-indeksov-tsen-proizvoditelei-i/",
+          "snippet": "<Информация> Минэкономразвития России \"Сценарные условия функционирования экономики Российской Федерации, основные параметры прогноза социально-экономического развития Российской Федерации и прогнозируемые изменения цен (тарифов) на товары, услуги..."
+        },
+        {
+          "title": "Как использовать индекс-дефлятор в 2026 году. Как применять коэффициент ...",
+          "url": "https://ppt.ru/art/zakupki/koeffitsienty-i-indeksy-kogda-ispolzovat-i-kak-schitat",
+          "snippet": "<2> Дефлятор по виду деятельности \"Транспортировка и хранение\", индекс тарифов на грузовые перевозки. <3> За счет всех источников финансирования."
+        },
+        {
+          "title": "Прогнозные индексы",
+          "url": "https://www.rccsrk.ru/documents/ind_prognoz",
+          "snippet": "ИПЦ — индекс потребительских цен на текущий месяц в процентном соотношении к предыдущему месяцу в соответствии с информацией, установленной на сайте Росстата. Теперь разберемся, как использовать индекс-дефлятор — инструмент, который применяется для пересчета текущей стоимости в постоянные цены."
+        },
+        {
+          "title": "Индексы-дефляторы Минэкономразвития",
+          "url": "https://kbresurs.ru/103-ntsmk/309-indeksy-deflyatory-minekonomrazvitiya.html",
+          "snippet": "Применяются для расчета индекса прогнозной инфляции, используемого для пересчета сметной стоимости строительства из уровня цен на дату определения НМЦК в уровень цен соответствующего периода реализации проекта."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "На этой странице вы найдёте готовые календари для каждого месяца: Формат А4, готовый к печати. Просто выберите нужный месяц ниже и скачайте календарь бесплатно и без регистрации. Идеально подходит для офиса, школы, дома или планирования личных дел."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как считать индекс изменения цен поставщиков в Excel/Sheets 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как посчитать индексы в Excel: 5 простых способов с примерами",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-poschitat-indeksy-v-eksel.html",
+          "snippet": ""
+        },
+        {
+          "title": "Как использовать индекс-дефлятор в 2026 году. Как применять коэффициент ...",
+          "url": "https://ppt.ru/art/zakupki/koeffitsienty-i-indeksy-kogda-ispolzovat-i-kak-schitat",
+          "snippet": "Пошаговая инструкция по расчёту индексов в Excel: формулы, функции, динамические массивы и автоматизация. Разберём реальные примеры для финансов, статистики и бизнеса."
+        },
+        {
+          "title": "Анализ поставщиков и цен для маркетплейсов | intmag24.ru",
+          "url": "https://intmag24.ru/tablitsy-excel/analiz-postavshhikov-i-tsen-dlya-marketplejsov/",
+          "snippet": "Для более точного расчета цен в закупках по 44-ФЗ используют различные индексы и коэффициенты: коэффициент вариации, индекс пересчета цен, индекс-дефлятор, индекс цен производителей."
+        },
+        {
+          "title": "Как добавить индекс в Excel: пошаговое руководство 2026",
+          "url": "https://excel-gid.vercel.app/articles/k/ka/kak-dobavit-indeks-v-eksel.html",
+          "snippet": "Ручной анализ цен поставщиков на сотни или тысячи позиций займёт часы. Но есть способ сделать это за пару минут с помощью Power Query в Excel."
+        },
+        {
+          "title": "Калькулятор индекса цен: расчет инфляции и дефляции онлайн | ТулФокс",
+          "url": "https://toolfox.ru/tools/price-index-calculator",
+          "snippet": "Узнайте, как создать индекс в Excel с помощью формул, столбцов и таблиц. Пошаговые инструкции для начинающих и продвинутых пользователей."
+        },
+        {
+          "title": "Калькулятор индексации цен: автоматический расчет новых цен | ТулФокс",
+          "url": "https://toolfox.ru/tools/price-indexation-calculator",
+          "snippet": "Калькулятор автоматически рассчитывает индекс цен по классической формуле, определяет процентное изменение, абсолютную разность и предоставляет профессиональную интерпретацию результатов."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_476180/bd81e7dd3b7d86bf32ff21fb303474d56fd9b9d2/",
+      "title": "ПРОГНОЗ ИНДЕКСОВ ЦЕН ПРОИЗВОДИТЕЛЕЙ <1> И ИНДЕКСОВ-ДЕФЛЯТОРОВ ПО ВИДАМ ...",
+      "from_query": "индекс цен поставщиков excel 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_504677/d8cd64a1266f122eb2628bf9ee00484e21032c09/",
+      "title": "Прогноз индексов цен производителей и индексов-дефляторов по видам ...",
+      "from_query": "индекс цен поставщиков excel 2026"
+    },
+    {
+      "url": "https://sudact.ru/law/informatsiia-minekonomrazvitiia-rossii-stsenarnye-usloviia-funktsionirovaniia-ekonomiki_1/prognoz-indeksov-tsen-proizvoditelei-i/",
+      "title": "Прогноз индексов цен производителей и индексов-дефляторов по видам ...",
+      "from_query": "индекс цен поставщиков excel 2026"
+    },
+    {
+      "url": "https://ppt.ru/art/zakupki/koeffitsienty-i-indeksy-kogda-ispolzovat-i-kak-schitat",
+      "title": "Как использовать индекс-дефлятор в 2026 году. Как применять коэффициент ...",
+      "from_query": "индекс цен поставщиков excel 2026"
+    },
+    {
+      "url": "https://www.rccsrk.ru/documents/ind_prognoz",
+      "title": "Прогнозные индексы",
+      "from_query": "индекс цен поставщиков excel 2026"
+    },
+    {
+      "url": "https://kbresurs.ru/103-ntsmk/309-indeksy-deflyatory-minekonomrazvitiya.html",
+      "title": "Индексы-дефляторы Минэкономразвития",
+      "from_query": "индекс цен поставщиков excel 2026"
+    },
+    {
+      "url": "https://www.rosstat.gov.ru/statistics/price/",
+      "title": "Росстат — Цены, инфляция",
+      "from_query": "индекс цен поставщиков excel август 2026"
+    },
+    {
+      "url": "https://benzup.ru/index-region",
+      "title": "Региональные индексы розничных цен на топливо",
+      "from_query": "индекс цен поставщиков excel август 2026"
+    },
+    {
+      "url": "https://statbase.ru/data/rus-producer-price-index/",
+      "title": "Индекс цен производителей | Россия. Данные по годам",
+      "from_query": "индекс цен поставщиков excel август 2026"
+    },
+    {
+      "url": "https://www.pricepoisk.ru/",
+      "title": "ПрайсПоиск.ру — поиск цен поставщиков",
+      "from_query": "индекс цен поставщиков excel август 2026"
+    },
+    {
+      "url": "https://gk-infostroy.ru/products/pir/tekuschie-indeksy/",
+      "title": "Индексы изменения и пересчета сметной стоимости на ПИР | ИнфоСтрой",
+      "from_query": "индекс цен поставщиков excel август 2026"
+    },
+    {
+      "url": "https://legalacts.ru/doc/prikaz-rosstata-ot-26122024-n-688-ob-utverzhdenii-ofitsialnoi/",
+      "title": "Приказ Росстата От 26.12.2024 N 688 (Ред. От 06.07.2026) \"Об ...",
+      "from_query": "индекс цен поставщиков excel новости 2026"
+    },
+    {
+      "url": "https://ru.tradingeconomics.com/russia/producer-prices",
+      "title": "Цены Производителей В России - Trading Economics",
+      "from_query": "индекс цен поставщиков excel новости 2026"
+    },
+    {
+      "url": "https://rosstat.gov.ru/storage/mediabank/56_22-04-2026.html",
+      "title": "Об индексе цен производителей промышленных товаров в марте 2026 года",
+      "from_query": "индекс цен поставщиков excel новости 2026"
+    },
+    {
+      "url": "https://rosstat.gov.ru/storage/mediabank/71_20-05-2026.html",
+      "title": "Об индексе цен производителей промышленных товаров в апреле 2026 года",
+      "from_query": "индекс цен поставщиков excel новости 2026"
+    },
+    {
+      "url": "https://pbc-index.ru/",
+      "title": "pbc-index.ru - ЦЦИ",
+      "from_query": "индекс цен поставщиков excel новости 2026"
+    },
+    {
+      "url": "https://forecasteconomy.com/indicator/ppi",
+      "title": "Индекс цен производителей (ИЦП) — данные и прогноз",
+      "from_query": "индекс цен поставщиков excel новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/3030629-top-modelei-dlya-avtomatizatsii-finansovykh-protsessov",
+      "title": "Топ‑5 новых моделей для автоматизации финансов (июль 2026)",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+      "title": "PDF Автоматизация 2026 всё,",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-poschitat-indeksy-v-eksel.html",
+      "title": "Как посчитать индексы в Excel: 5 простых способов с примерами",
+      "from_query": "Как считать индекс изменения цен поставщиков в Excel/Sheets 2026"
+    },
+    {
+      "url": "https://intmag24.ru/tablitsy-excel/analiz-postavshhikov-i-tsen-dlya-marketplejsov/",
+      "title": "Анализ поставщиков и цен для маркетплейсов | intmag24.ru",
+      "from_query": "Как считать индекс изменения цен поставщиков в Excel/Sheets 2026"
+    },
+    {
+      "url": "https://excel-gid.vercel.app/articles/k/ka/kak-dobavit-indeks-v-eksel.html",
+      "title": "Как добавить индекс в Excel: пошаговое руководство 2026",
+      "from_query": "Как считать индекс изменения цен поставщиков в Excel/Sheets 2026"
+    },
+    {
+      "url": "https://toolfox.ru/tools/price-index-calculator",
+      "title": "Калькулятор индекса цен: расчет инфляции и дефляции онлайн | ТулФокс",
+      "from_query": "Как считать индекс изменения цен поставщиков в Excel/Sheets 2026"
+    },
+    {
+      "url": "https://toolfox.ru/tools/price-indexation-calculator",
+      "title": "Калькулятор индексации цен: автоматический расчет новых цен | ТулФокс",
+      "from_query": "Как считать индекс изменения цен поставщиков в Excel/Sheets 2026"
+    }
+  ]
+}

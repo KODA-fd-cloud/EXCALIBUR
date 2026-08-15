@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/B63-indeks-cen-postavshchikov-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2016",
+      "kind": "date_or_year",
+      "context": "uery Ежемесячные прайсы из почты или папки; Excel 2016+ Настройка запроса один раз, дальше минуты вместо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 ч",
+      "kind": "metric_or_duration",
+      "context": "A+BI на крупных контурах сокращает мониторинг с 4–6 ч/день до ~30 мин проверки; старт без программиста",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 мин",
+      "kind": "metric_or_duration",
+      "context": "ых контурах сокращает мониторинг с 4–6 ч/день до ~30 мин проверки; старт без программиста - уже в Excel/Sh",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "40 минут",
+      "kind": "metric_or_duration",
+      "context": "иста или менеджера закупок. Повторные месяцы - 20–40 минут, если состав корзины не менялся. Какие риски для",
+      "verified": true,
+      "reason": "Numerical value '40' matched in fact-bank context"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "т же принцип соберёте в таблице за 1–2 часа на 50–100 позиций. Оцените, когда индекс цен поставщиков нуж",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500",
+      "kind": "large_number",
+      "context": "т Когда выбирать Минус Excel/Sheets + формулы До ~500 строк прайсов/мес, нужен быстрый управленческий ср",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "115",
+      "kind": "large_number",
+      "context": "100 ; в Google Sheets: =CURRENT/BASE*100 . Индекс 115 означает рост на 15% относительно базы. Соберите с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "105",
+      "kind": "large_number",
+      "context": "Пример: условное форматирование, если индекс &gt; 105 два месяца подряд - триггер пересмотра контракта.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

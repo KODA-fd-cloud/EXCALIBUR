@@ -1,0 +1,93 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-15",
+    "today_ru": "15.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-17",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-15 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B63",
+    "priority": "P0",
+    "slug": "indeks-cen-postavshchikov-sheets",
+    "h1": "Как считать индекс изменения цен поставщиков в Excel/Sheets",
+    "primary_query": "индекс цен поставщиков excel",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "индекс цен поставщиков excel",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B63",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "индекс цен поставщиков excel 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "индекс цен поставщиков excel август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "индекс цен поставщиков excel новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "индекс цен поставщиков excel 2026",
+      "purpose": "вторичный запрос: индекс цен поставщиков excel"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как считать индекс изменения цен поставщиков в Excel/Sheets 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B63-indeks-cen-postavshchikov-sheets",
+  "research_completed": {
+    "date_iso": "2026-08-15",
+    "agent": "excalibur-blog-research",
+    "utility_verdict": "PASS",
+    "sources_count": 15,
+    "facts_count": 20,
+    "wordstat": "unavailable_mcp_server",
+    "serp_gap": "Управленческий индекс цен поставщиков в Excel/Sheets (Ласпейреса) — preflight-SERP загрязнён Росстатом/44-ФЗ",
+    "artifacts": [
+      "research-notes.md",
+      "fact-check-report.json"
+    ]
+  },
+  "next_step": "excalibur-blog-writer: article.html по research-notes.md"
+}
