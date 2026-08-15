@@ -1,10 +1,10 @@
 {
-  "topic_id": "B60",
-  "h1": "Как вести реестр займов сотрудникам в Google Sheets: выдача, % , остаток",
-  "slug": "reestr-zajmov-sotrudnikam-sheets",
+  "topic_id": "B61",
+  "h1": "Как собрать пакет к еженедельному cash-meeting за 30 минут из Sheets",
+  "slug": "paket-k-cash-meeting-sheets",
   "status": "pending",
-  "proposed_at": 1786787357,
-  "proposal_message_id": 356,
+  "proposed_at": 1786789149,
+  "proposal_message_id": 359,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -27,7 +27,7 @@
     "B50",
     "B53",
     "B54",
-    "B57"
-  ],
-  "reminded_at": 1786787357
+    "B57",
+    "B60"
+  ]
 }
