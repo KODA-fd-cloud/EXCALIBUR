@@ -1,0 +1,170 @@
+{
+  "source": "memory/blog/articles/B59-zayavka-na-rashod-google-forms/research-notes.md",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "research_date": "2026-08-15",
+  "verdict": "pass",
+  "total_extracted_facts": 20,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 20,
+  "note": "Research-stage report: facts verified against cited URLs in research-notes; fact-bank has no direct rows for Google Forms expense workflow.",
+  "facts": [
+    {
+      "fact": "100 000 ответов",
+      "kind": "large_number",
+      "context": "При >100 000 ответов синхронизация Forms с Таблицами может прекратиться",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from support.google.com/docs/answer/139706",
+      "source_url": "https://support.google.com/docs/answer/139706?hl=ru"
+    },
+    {
+      "fact": "50 000 ответов",
+      "kind": "large_number",
+      "context": "При >50 000 ответов сводка ответов может не отображаться",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from Google Help",
+      "source_url": "https://support.google.com/docs/answer/139706?hl=ru"
+    },
+    {
+      "fact": "10 000 ответов",
+      "kind": "large_number",
+      "context": "При >10 000 ответов возможны сбои сортировки CSV и отображения вопросов",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from Google Help",
+      "source_url": "https://support.google.com/docs/answer/139706?hl=ru"
+    },
+    {
+      "fact": "15 минут",
+      "kind": "metric_or_duration",
+      "context": "Make Watch Responses на Free проверяет форму раз в 15 минут",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from mayai.ru",
+      "source_url": "https://mayai.ru/google-forms-make-zayavki/"
+    },
+    {
+      "fact": "5–10 минут",
+      "kind": "metric_or_duration",
+      "context": "Ручной перенос заявки Forms→CRM занимал 5–10 минут (кейс FL.ru)",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; portfolio case study",
+      "source_url": "https://www.fl.ru/user/dmshumski/portfolio/8062505/"
+    },
+    {
+      "fact": "forms.new",
+      "kind": "product_feature",
+      "context": "Быстрый URL создания Google Form",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from Google Help and RU guide 2026",
+      "source_url": "https://support.google.com/docs/answer/6281888?hl=ru"
+    },
+    {
+      "fact": "onFormSubmit",
+      "kind": "product_feature",
+      "context": "Installable trigger при отправке формы в связанную таблицу",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from Google Apps Script docs",
+      "source_url": "https://developers.google.com/apps-script/guides/triggers/installable"
+    },
+    {
+      "fact": "real-time",
+      "kind": "product_feature",
+      "context": "Ответы Forms в связанной таблице добавляются в режиме реального времени",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from Google Workspace user help",
+      "source_url": "https://support.google.com/a/users/answer/13046755?hl=ru"
+    },
+    {
+      "fact": "шифрование",
+      "kind": "security",
+      "context": "Workspace Forms: шифрование при передаче и хранении",
+      "verified": false,
+      "reason": "No matching fact in fact-bank; sourced from workspace.google.com",
+      "source_url": "https://workspace.google.com/intl/ru/products/forms/"
+    },
+    {
+      "fact": "заявка на кассовый расход",
+      "kind": "legal_contrast",
+      "context": "Бухгалтерский документ для РКО из кассы — не Google Forms workflow",
+      "verified": false,
+      "reason": "Contrast fact for article positioning; sourced from Consultant+",
+      "source_url": "https://www.consultant.ru/law/podborki/poryadok_zapolneniya_zayavki_na_kassovyj_rashod/"
+    },
+    {
+      "fact": "Заявка на расходование ДС",
+      "kind": "erp_contrast",
+      "context": "Документ 1С:ERP с лимитами и маршрутом согласования — не Forms+Sheets",
+      "verified": false,
+      "reason": "Contrast fact; sourced from integration-software.ru",
+      "source_url": "https://integration-software.ru/blog/obzor-funktsionala-kaznacheystvo-v-1s-erp-upravlenie-predpriyatiem"
+    },
+    {
+      "fact": "approved amount",
+      "kind": "workflow_column",
+      "context": "Служебная колонка реестра — сумма к выплате после согласования",
+      "verified": false,
+      "reason": "Workflow pattern from expense reimbursement guides",
+      "source_url": "https://joliform.com/blog/google-forms-expense-reimbursement-template"
+    },
+    {
+      "fact": "file upload",
+      "kind": "form_field",
+      "context": "Поле загрузки чека в форме возмещения расходов",
+      "verified": false,
+      "reason": "Field pattern from reimbursement templates",
+      "source_url": "https://ru.surveymonkey.com/templates/reimbursement-form-template/"
+    },
+    {
+      "fact": "Unlink form",
+      "kind": "product_feature",
+      "context": "Связь формы с таблицей можно разорвать без удаления данных",
+      "verified": false,
+      "reason": "Sourced from Google Help EN",
+      "source_url": "https://support.google.com/docs/answer/2917686?hl=en"
+    },
+    {
+      "fact": "onEdit не срабатывает",
+      "kind": "technical",
+      "context": "Добавление строки формой не вызывает onEdit — нужен onFormSubmit",
+      "verified": false,
+      "reason": "Sourced from Stack Overflow + Google triggers docs",
+      "source_url": "https://stackoverflow.com/questions/70213466/how-to-trigger-a-conditional-email-when-a-new-google-sheet-row-is-added-via-google-forms"
+    },
+    {
+      "fact": "SUMIF",
+      "kind": "sheets_formula",
+      "context": "Суммирование расходов по категориям в expense tracker на Sheets",
+      "verified": false,
+      "reason": "Pattern from 101-help expense tracker guide",
+      "source_url": "https://101-help.com/kak-ispolzovat-google-forms-v-kachestve-schetchika-raskhodov-1c3ff195d9/"
+    },
+    {
+      "fact": "2–4 часа",
+      "kind": "metric_or_duration",
+      "context": "Оценка MVP внедрения в reader_outcome/action_outline (editorial, не внешний источник)",
+      "verified": false,
+      "reason": "Editorial estimate for writer — mark as estimate in article, not external stat"
+    },
+    {
+      "fact": "5–80 заявок/мес",
+      "kind": "metric_or_duration",
+      "context": "Диапазон нагрузки когда подходит Forms+Sheets",
+      "verified": false,
+      "reason": "Editorial threshold for writer — no external benchmark cited"
+    },
+    {
+      "fact": "БИТ.Финанс",
+      "kind": "product_contrast",
+      "context": "1С-модуль казначейства для миграции при росте заявок",
+      "verified": false,
+      "reason": "Contrast product; sourced from firstbit.finance",
+      "source_url": "https://firstbit.finance/tpost/ddfpyyug51-zayavka-na-rashod-deneg-kak-sdelat-tak-c"
+    },
+    {
+      "fact": "нет официального шаблона",
+      "kind": "market_gap",
+      "context": "Google не публикует шаблон реестра заявок на расход в Sheets",
+      "verified": false,
+      "reason": "SERP synthesis; no official template on workspace.google.com/forms",
+      "source_url": "https://workspace.google.com/intl/ru/products/forms/"
+    }
+  ]
+}
