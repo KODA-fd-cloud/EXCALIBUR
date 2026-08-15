@@ -3,8 +3,8 @@
   "h1": "Как собрать пакет к еженедельному cash-meeting за 30 минут из Sheets",
   "slug": "paket-k-cash-meeting-sheets",
   "status": "pending",
-  "proposed_at": 1786789149,
-  "proposal_message_id": 359,
+  "proposed_at": 1786790878,
+  "proposal_message_id": 360,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -29,5 +29,6 @@
     "B54",
     "B57",
     "B60"
-  ]
+  ],
+  "reminded_at": 1786790878
 }

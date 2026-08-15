@@ -1036,6 +1036,126 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B63 — Индекс цен поставщиков
+
+- **priority:** P0
+- **slug:** indeks-cen-postavshchikov-sheets
+- **theme_key:** supplier_price_index
+- **h1:** Как считать индекс изменения цен поставщиков в Excel/Sheets
+- **primary_query:** индекс цен поставщиков excel
+- **secondary_queries:** автоматизация финотдела, индекс цен поставщиков excel, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · bank+tags:цены,sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B64 — One-pager для собственника
+
+- **priority:** P0
+- **slug:** one-pager-sobstvenniku-sheets
+- **theme_key:** board_one_pager
+- **h1:** Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр
+- **primary_query:** one pager для собственника финансы
+- **secondary_queries:** автоматизация финотдела, one pager для собственника финансы, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · bank+tags:one,sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B65 — Командировки: таблица расходов
+
+- **priority:** P0
+- **slug:** komandirovochnye-rashody-google-sheets
+- **theme_key:** travel_expense_table
+- **h1:** Как вести расходы по командировкам в Google Sheets: суточные, билеты, лимиты
+- **primary_query:** учет командировочных расходов google sheets
+- **secondary_queries:** автоматизация финотдела, учет командировочных расходов google sheets, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B66 — Отложенная выручка упрощённо
+
+- **priority:** P0
+- **slug:** otlozhennaya-vyruchka-sheets
+- **theme_key:** deferred_revenue_simple
+- **h1:** Как учитывать отложенную выручку в простой управленке на Google Sheets
+- **primary_query:** отложенная выручка управленческий учет sheets
+- **secondary_queries:** автоматизация финотдела, отложенная выручка управленческий учет sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B67 — Права на финпапки Drive
+
+- **priority:** P0
+- **slug:** prava-dostupa-drive-finotdel
+- **theme_key:** finance_folder_acl
+- **h1:** Как настроить права доступа к финансовым папкам Google Drive без утечек
+- **primary_query:** права доступа google drive финотдел
+- **secondary_queries:** автоматизация финотдела, права доступа google drive финотдел, 2026
+- **search_intent:** checklist
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-15 · trend-scored · bank+tags:безопасность
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Сняты как смысловые дубли (2026-08-03): B41≈B28 сверка банка, B42≈B25 выписка→Sheets, B43≈B13 1С→Excel, B44≈B17 формулы Excel+ИИ, B45≈B26 план-факт, B40≈B27 дайджест/отчёт.
