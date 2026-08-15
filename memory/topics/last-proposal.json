@@ -1,7 +1,7 @@
 {
-  "topic_id": "B57",
-  "h1": "Как из PDF счёта сделать строку реестра оплат через n8n",
-  "slug": "n8n-pdf-schet-v-reestr",
-  "proposed_at": 1786780123,
-  "proposal_message_id": 338
+  "topic_id": "B58",
+  "h1": "Как вести реестр УПД и счетов-фактур в Google Sheets без потери комплекта",
+  "slug": "reestr-upd-google-sheets",
+  "proposed_at": 1786782206,
+  "proposal_message_id": 342
 }
