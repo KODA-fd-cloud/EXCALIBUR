@@ -1,0 +1,8 @@
+{
+  "slug": "zayavka-na-rashod-google-forms",
+  "topic_id": "B59",
+  "permalink": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/",
+  "raw_output": "OK post=231 slug=zayavka-na-rashod-google-forms\nOK categories=3,10,6\nOK featured_image=232\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/zayavka-na-rashod-google-forms-dzen-cover.png\nOK schema_meta=1\nOK skip_theme_faq_meta=1\npermalink=https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
