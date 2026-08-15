@@ -1,0 +1,31 @@
+{
+  "topic_id": "B59",
+  "h1": "Как принимать заявки на расход через Google Forms в реестр Sheets",
+  "title": "Как принимать заявки на расход через Google Forms в реестр Sheets",
+  "description": "Пошаговая заявка на расход через Google Forms: поля формы, реестр в Google Sheets, колонки статусов согласования, email и Apps Script без программиста на MVP.",
+  "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, форма заявки и реестр расходов",
+  "slug": "zayavka-na-rashod-google-forms",
+  "primary_query": "заявка на расход google forms",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "заявка на расход google forms",
+    "2026"
+  ],
+  "char_count": 8760,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "заявка на расход google forms реестр sheets",
+    "согласование заявок на расход google таблицы",
+    "автоматизация заявок на оплату forms sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Заявка на расход Google Forms: реестр в Sheets и согласование",
+    "title_ctr": "📋 Заявка на расход через Google Forms: как собрать реестр и не потерять согласование?",
+    "title_aeo": "Как принимать заявки на расход через Google Forms в реестр Sheets?",
+    "description_seo": "Заявка на расход через Google Forms: поля формы, реестр в Google Sheets, статусы согласования, email-оповещения и Apps Script. Отличие от кассового расхода и 1С.",
+    "description_ctr": "⚡️ Заявки на расход больше не теряются в почте: форма, реестр Sheets и статусы одобрено/оплачено за один рабочий день без ERP.",
+    "description_aeo": "Заявка на расход Google Forms – форма с полями суммы и чека, связанная с Google Sheets: колонки status, approved_amount, payment_date и оповещения согласующему."
+  },
+  "cover_family": "gradient_abstract"
+}
