@@ -1,10 +1,10 @@
 {
-  "topic_id": "B61",
-  "h1": "Как собрать пакет к еженедельному cash-meeting за 30 минут из Sheets",
-  "slug": "paket-k-cash-meeting-sheets",
+  "topic_id": "B62",
+  "h1": "Как собрать unit-экономику услуг в Google Sheets без сложной BI",
+  "slug": "unit-ekonomika-uslug-sheets",
   "status": "pending",
-  "proposed_at": 1786790878,
-  "proposal_message_id": 360,
+  "proposed_at": 1786792630,
+  "proposal_message_id": 363,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -28,7 +28,7 @@
     "B53",
     "B54",
     "B57",
-    "B60"
-  ],
-  "reminded_at": 1786790878
+    "B60",
+    "B61"
+  ]
 }
