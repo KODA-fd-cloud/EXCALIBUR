@@ -1,0 +1,38 @@
+{
+  "article": "memory/blog/articles/B59-zayavka-na-rashod-google-forms/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 4,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "15 минут",
+      "kind": "metric_or_duration",
+      "context": "ерез скрипт, т.к. Free Make проверяет форму раз в 15 минут. Закрепите регламент. Кто подаёт (любой сотрудник",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "10 минут",
+      "kind": "metric_or_duration",
+      "context": "вают: ручной перенос заявки Forms в CRM занимал 5–10 минут; цепочка Forms → Sheets → n8n снимает ручной ввод",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "100 000",
+      "kind": "large_number",
+      "context": "ы\" → \"Добавить\" → \"При отправке формы\". При более 100 000 ответов синхронизация с таблицей может прекратитьс",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "то автоматизировать дальше Когда заявок больше 80–100 в месяц или нужен маршрут \"руководитель → CFO → оп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

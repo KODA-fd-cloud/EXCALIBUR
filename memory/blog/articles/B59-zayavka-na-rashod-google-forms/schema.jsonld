@@ -1,0 +1,198 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#article",
+      "headline": "Как принимать заявки на расход через Google Forms в реестр Sheets",
+      "description": "Пошаговая заявка на расход через Google Forms: поля формы, реестр в Google Sheets, колонки статусов согласования, email и Apps Script без программиста на MVP.",
+      "datePublished": "2026-08-15",
+      "dateModified": "2026-08-15",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/zayavka-na-rashod-google-forms-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, форма заявки и реестр расходов"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "заявка на расход google forms, автоматизация финотдела, google forms заявка на оплату, реестр заявок google sheets",
+      "wordCount": 8760,
+      "articleSection": "Автоматизация финотдела / Google Forms",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли собрать заявку на расход без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Форма, связь с таблицей, служебные колонки и email-уведомления в Forms хватает для MVP за 2–4 часа. Apps Script – опционально, когда нужно письмо согласующему с первой строки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени займёт внедрение?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Базовый контур – один рабочий день: поля, реестр, тест, регламент. Ещё полдня–день, если подключаете Make или n8n и согласуете маршрут с IT."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие риски для данных в Google Sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Утечка через широкий sharing, лишние ПДн в форме, копирование файла \"для удобства\" на личный диск. Сужайте поля, закройте доступ доменом, не выгружайте реестр в открытые ИИ без обезличивания."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это отличается от \"заявки на кассовый расход\" и от 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Кассовый расход – бланк на выдачу наличных из кассы по правилам бухучёта. \"Заявка на расходование ДС\" в 1С проходит лимиты и превращается в платёжное поручение. Forms + Sheets – управленческий журнал согласования до оплаты, не замена ERP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли собирать чеки в форме?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для возмещения подотчётных и контроля первички – да, поле \"Загрузка файла\". Храните файлы в папке Drive с ограниченным доступом; в реестре достаточно ссылки, не дублируйте скан в ячейку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда пора уходить в ERP или казначейство?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При более 100 заявок в месяц, жёстком бюджетном контроле по ЦФО, обязательном аудите каждого изменения status или интеграции с платёжным календарём. До этого Forms + Sheets закрывает дисциплину и прозрачность."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#howto",
+      "name": "Как принимать заявки на расход через Google Forms в реестр Sheets",
+      "description": "Создание формы заявки на расход, связь с реестром Google Sheets, служебные колонки статусов согласования и оповещения согласующему без программиста на MVP.",
+      "inLanguage": "ru",
+      "totalTime": "PT4H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Google Forms"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Apps Script (опционально для onFormSubmit)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Аккаунт Google Workspace с доступом к Forms и Drive"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Список статей расходов, центров затрат и проектов для выпадающих списков"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Создайте форму",
+          "text": "Откройте forms.new или в Google Sheets: «Инструменты» → «Создать форму». Добавьте поля: email инициатора, отдел, статью затрат, дату расхода, контрагента, сумму, валюту, обоснование, проект или договор, загрузку чека. Для суммы используйте «Краткий ответ» с подсказкой «только число».",
+          "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Свяжите с таблицей",
+          "text": "На вкладке «Ответы» нажмите значок таблицы или «Установить связь с Таблицами» → новая или существующая таблица. Ответы попадают в лист в реальном времени.",
+          "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Добавьте служебные колонки справа от ответов формы",
+          "text": "Добавьте колонки request_id, status (новая / на согласовании / одобрено / отклонено / оплачено), approver, approved_amount, payment_date, review_comment, updated_by. request_id – формула =ROW()-1 или ручной порядковый номер.",
+          "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Настройте списки статусов",
+          "text": "Через «Данные» → «Проверка данных» → выпадающий список задайте допустимые значения status. Произвольный текст в status ломает сводные и фильтры.",
+          "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Защитите шапку и формулы",
+          "text": "Используйте «Данные» → «Защищённые листы и диапазоны», чтобы инициатор случайно не стёр служебные поля.",
+          "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Включите оповещения",
+          "text": "Уровень A: на вкладке «Ответы» – «Получать уведомления о новых ответах по эл. почте». Уровень B: Apps Script с триггером onFormSubmit – письмо согласующему при каждой заявке. Уровень C: Make или n8n при росте нагрузки.",
+          "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Закрепите регламент",
+          "text": "Определите, кто подаёт заявку (сотрудник с доступом к форме), кто меняет status (руководитель или финдиректор), кто проставляет payment_date после оплаты (бухгалтер или казначей).",
+          "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/#setup"
+        }
+      ]
+    }
+  ]
+}

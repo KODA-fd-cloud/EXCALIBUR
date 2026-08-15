@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-15",
+    "today_ru": "15.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-17",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-15 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B59",
+    "priority": "P0",
+    "slug": "zayavka-na-rashod-google-forms",
+    "h1": "Как принимать заявки на расход через Google Forms в реестр Sheets",
+    "primary_query": "заявка на расход google forms",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "заявка на расход google forms",
+      "2026"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B59",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "заявка на расход google forms 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "заявка на расход google forms август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "заявка на расход google forms новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "заявка на расход google forms 2026",
+      "purpose": "вторичный запрос: заявка на расход google forms"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B59-zayavka-na-rashod-google-forms",
+  "research_completed": {
+    "date_iso": "2026-08-15",
+    "agent": "excalibur-blog-research",
+    "utility_verdict": "PASS",
+    "wordstat_status": "skipped_mcp_unavailable",
+    "artifacts": [
+      "research-notes.md",
+      "fact-check-report.json",
+      "research-serp.json"
+    ]
+  },
+  "next_step": "excalibur-blog-writer: article.html по research-notes.md"
+}

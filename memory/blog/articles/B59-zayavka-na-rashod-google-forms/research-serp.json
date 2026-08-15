@@ -1,0 +1,542 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-15",
+    "today_ru": "15.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-17",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-15 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B59",
+    "priority": "P0",
+    "slug": "zayavka-na-rashod-google-forms",
+    "h1": "Как принимать заявки на расход через Google Forms в реестр Sheets",
+    "primary_query": "заявка на расход google forms",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "заявка на расход google forms",
+      "2026"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "заявка на расход google forms 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Google Формы: вход в систему",
+          "url": "https://docs.google.com/forms/?hl=ru",
+          "snippet": ""
+        },
+        {
+          "title": "Порядок заполнения заявки на кассовый расход \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/poryadok_zapolneniya_zayavki_na_kassovyj_rashod/",
+          "snippet": "Используйте Google Формы в аккаунте Google (для личных целей) или в аккаунте Google Workspace (для бизнеса)."
+        },
+        {
+          "title": "Заявка на кассовый расход платежный документ \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/zayavka_na_kassovyj_rashod_platezhnyj_dokument/",
+          "snippet": "Подборка наиболее важных документов по запросу Порядок заполнения заявки на кассовый расход (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Образцы и бланки заявок 2026 года",
+          "url": "https://assistentus.ru/forma/zayavka/",
+          "snippet": "(КонсультантПлюс, 2026) подготовьте РКО и выдайте работнику наличные деньги из кассы либо перечислите их на его банковскую карту."
+        },
+        {
+          "title": "Google Формы: создание онлайн-форм | Google Workspace",
+          "url": "https://workspace.google.com/intl/ru/products/forms/",
+          "snippet": "Все актуальные образцы и бланки заявок на текущий год содержатся в этой рубрике. Сохраните страницу в закладки для оперативного обращения к ней в случае необходимости."
+        },
+        {
+          "title": "Быстро получайте информацию с помощью Google Forms",
+          "url": "https://www.google.com/intx/ru/forms/about/",
+          "snippet": "С помощью Google Форм в Google Workspace вы можете легко создавать формы и опросы, чтобы собирать и анализировать данные."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "заявка на расход google forms август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Google Формы: вход в систему",
+          "url": "https://docs.google.com/forms/?hl=ru",
+          "snippet": ""
+        },
+        {
+          "title": "Google Формы: создание онлайн-форм | Google Workspace",
+          "url": "https://workspace.google.com/intl/ru/products/forms/",
+          "snippet": "Используйте Google Формы в аккаунте Google (для личных целей) или в аккаунте Google Workspace (для бизнеса)."
+        },
+        {
+          "title": "Образцы и бланки заявок 2026 года",
+          "url": "https://assistentus.ru/forma/zayavka/",
+          "snippet": "С помощью Google Форм в Google Workspace вы можете легко создавать формы и опросы, чтобы собирать и анализировать данные."
+        },
+        {
+          "title": "Быстро получайте информацию с помощью Google Forms",
+          "url": "https://www.google.com/intx/ru/forms/about/",
+          "snippet": "Все актуальные образцы и бланки заявок на текущий год содержатся в этой рубрике. Сохраните страницу в закладки для оперативного обращения к ней в случае необходимости."
+        },
+        {
+          "title": "Шаблоны Google Forms: 10 готовых решений для любых задач",
+          "url": "https://qualtir.com/ru/blog/google-forms-templates-guide",
+          "snippet": "В Google Формах можно создавать формы и опросы с разными типами вопросов, а также анализировать результаты - в реальном времени и с любого устройства."
+        },
+        {
+          "title": "Заявка: бланки и образцы 2026",
+          "url": "https://blank-obrazets.ru/temy/zayavka/",
+          "snippet": "Найдите лучшие шаблоны Google Forms для опросов, тестов, форм заказов и многого другого. Бесплатные готовые дизайны помогут сэкономить время на настройку и повысить процент заполнения."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "заявка на расход google forms новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Образцы и бланки заявок 2026 года",
+          "url": "https://assistentus.ru/forma/zayavka/",
+          "snippet": ""
+        },
+        {
+          "title": "Google Формы: создание онлайн-форм | Google Workspace",
+          "url": "https://workspace.google.com/intl/ru/products/forms/",
+          "snippet": "Все актуальные образцы и бланки заявок на текущий год содержатся в этой рубрике. Сохраните страницу в закладки для оперативного обращения к ней в случае необходимости."
+        },
+        {
+          "title": "ЗАЯВКА https://docs.google.com/forms/d/e ...",
+          "url": "https://vk.com/wall-230504217_77",
+          "snippet": "С помощью Google Форм в Google Workspace вы можете легко создавать формы и опросы, чтобы собирать и анализировать данные."
+        },
+        {
+          "title": "Google Формы: вход в систему",
+          "url": "https://docs.google.com/forms/?hl=ru",
+          "snippet": "26-03-2026 ЗАЯВКА https://docs.google.com/forms/d/e/1FAIpQLSdmyroouxbRg.. ВЗНОС УЧАСТНИКА. Добровольный взнос участника составляет: до 30 апреля 2026 соло - 6000 , дуэт - 8000 (с дуэта), группы - 10000 (с группы) до 15 мая 2026"
+        },
+        {
+          "title": "Быстро получайте информацию с помощью Google Forms",
+          "url": "https://www.google.com/intx/ru/forms/about/",
+          "snippet": "Используйте Google Формы в аккаунте Google (для личных целей) или в аккаунте Google Workspace (для бизнеса)."
+        },
+        {
+          "title": "ЗАЯВКА https://docs.google.com/forms/d/e ...",
+          "url": "https://vk.com/wall-30632651_7042",
+          "snippet": "В Google Формах можно создавать формы и опросы с разными типами вопросов, а также анализировать результаты - в реальном времени и с любого устройства."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "Ai В Российском Финтехе 2026: Банки Автоматизируют До 70% Обращений ...",
+          "url": "https://axioma-ai.ru/ai-russia/russia-ai-fintech-banking-automation-2026-20260815",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Российские банки и финтех-компании в 2026 году активно внедряют AI для автоматизации клиентского обслуживания, кредитного скоринга и борьбы с мошенничеством. Сбер, Т-Банк, ВТБ и Альфа-Банк автоматизируют до 70% типовых ..."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Бухгалтерия в 2026 - автоматизация с учётом новых налогов",
+          "url": "https://vashereshenie.ru/blog/buxgalteriya-v-2026",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "заявка на расход google forms 2026",
+      "purpose": "вторичный запрос: заявка на расход google forms",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Google Формы: вход в систему",
+          "url": "https://docs.google.com/forms/?hl=ru",
+          "snippet": ""
+        },
+        {
+          "title": "Порядок заполнения заявки на кассовый расход \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/poryadok_zapolneniya_zayavki_na_kassovyj_rashod/",
+          "snippet": "Используйте Google Формы в аккаунте Google (для личных целей) или в аккаунте Google Workspace (для бизнеса)."
+        },
+        {
+          "title": "Заявка на кассовый расход платежный документ \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/zayavka_na_kassovyj_rashod_platezhnyj_dokument/",
+          "snippet": "Подборка наиболее важных документов по запросу Порядок заполнения заявки на кассовый расход (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Образцы и бланки заявок 2026 года",
+          "url": "https://assistentus.ru/forma/zayavka/",
+          "snippet": "(КонсультантПлюс, 2026) подготовьте РКО и выдайте работнику наличные деньги из кассы либо перечислите их на его банковскую карту."
+        },
+        {
+          "title": "Google Формы: создание онлайн-форм | Google Workspace",
+          "url": "https://workspace.google.com/intl/ru/products/forms/",
+          "snippet": "Все актуальные образцы и бланки заявок на текущий год содержатся в этой рубрике. Сохраните страницу в закладки для оперативного обращения к ней в случае необходимости."
+        },
+        {
+          "title": "Быстро получайте информацию с помощью Google Forms",
+          "url": "https://www.google.com/intx/ru/forms/about/",
+          "snippet": "С помощью Google Форм в Google Workspace вы можете легко создавать формы и опросы, чтобы собирать и анализировать данные."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Календарь 2026: все праздничные и выходные дни",
+          "url": "https://online-kalendar.ru/year-2026",
+          "snippet": "2 февраля — В Подмосковье зафиксирован первый в России случай оспы обезьян [27][28] 3 февраля — В Санкт-Петербурге возобновил работу бывший завод General Motors под брендом «АГР». Начата сборка марки « Jaecoo » [29] 15 февраля ..."
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+          "snippet": "Календарь на 2026 год с выходными также помогает считать рабочие смены и дедлайны текущего месяца прямо сейчас, находить лучшие дни для поездок и встреч с друзьями — все даты 2026 года у вас ..."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Интеграция Google Forms и Google Sheets | Nodul",
+          "url": "https://www.nodul.ru/integrations/google-forms/google-sheets",
+          "snippet": ""
+        },
+        {
+          "title": "Как отправлять заявки из формы в Google Таблицы?",
+          "url": "https://tilda.cc/ru/answers/a/forms-google-sheets/",
+          "snippet": "Nodul предоставляет встроенную интеграцию между Google Forms и Google Sheets. Вы можете подключить их за несколько минут с помощью визуального конструктора — без кода."
+        },
+        {
+          "title": "Как отправлять данные из Google Forms в Google Sheets для мощного ...",
+          "url": "https://it-developer.in.ua/kak-otpravlyat-dannye-iz-google-forms-v-google-sheets-dlya-moshhnogo-analiza.html",
+          "snippet": "Как отправлять заявки из формы в Google Таблицы? Перейдите в Настройки сайта → Формы → Google Таблицы (Google Sheets). Разрешите доступ к вашему аккаунту на Google."
+        },
+        {
+          "title": "Как я отправляю данные Google Forms в Google Sheets для мощного анализа",
+          "url": "https://ru.windows.day/?p=37256",
+          "snippet": "Чтобы упростить манипуляцию данными и провести более глубокий анализ, я предпочитаю отправлять данные из Google Forms в таблицу Google Sheets. Вот как я это делаю."
+        },
+        {
+          "title": "Экспорт заявок в Google Таблицы — как подключить интеграцию",
+          "url": "https://help.flexbe.ru/google-sheets/",
+          "snippet": "Для более удобной работы с данными и более глубоком анализе я предпочитаю передавать данные из Google Форм в таблицу Google Sheets. Вот как я это делаю."
+        },
+        {
+          "title": "Создание Google Формы с выводом результатов в Google Таблицы",
+          "url": "https://timeweb.com/ru/community/articles/sozdanie-google-formy-s-vyvodom-v-google-tablicy",
+          "snippet": "Если вы хотите, чтобы заявки на расчет стоимости отправлялись в одну таблицу, а заявки на бесплатный замер в другую — вы можете выбрать передавать данные с разных форм в отдельные таблицы."
+        }
+      ],
+      "searched_at": "2026-08-15"
+    }
+  ],
+  "errors": [],
+  "cursor_websearch": {
+    "searched_at": "2026-08-15",
+    "agent": "excalibur-blog-research",
+    "note": "Приоритетный SERP поверх шага 0 (duck); primary intent смешан с бухгалтерскими бланками.",
+    "queries": [
+      {
+        "query": "заявка на расход google forms 2026",
+        "top_results": [
+          {
+            "url": "https://joliform.com/blog/google-forms-expense-reimbursement-template",
+            "title": "Google Forms Expense Reimbursement Template: 35 Fields + Setup Guide",
+            "relevance": "high_en_fields"
+          },
+          {
+            "url": "https://www.signnow.com/features/google-forms-expense-reimbursement",
+            "title": "Streamline Google Forms Expense Reimbursement",
+            "relevance": "medium_en"
+          },
+          {
+            "url": "https://repetitor.ua/ru/yak-stvoryty-google-formu-povnyj-gajd-2026-dlya-novachkiv-i-profi/",
+            "title": "Как создать Google Форму: полный гайд 2026",
+            "relevance": "medium_ru_forms"
+          },
+          {
+            "url": "https://ru.surveymonkey.com/templates/reimbursement-form-template/",
+            "title": "Шаблон формы для возмещения расходов",
+            "relevance": "medium_fields"
+          },
+          {
+            "url": "https://101-help.com/kak-ispolzovat-google-forms-v-kachestve-schetchika-raskhodov-1c3ff195d9/",
+            "title": "Как использовать Google Forms в качестве счетчика расходов",
+            "relevance": "high_expense_tracker"
+          }
+        ]
+      },
+      {
+        "query": "Google Forms заявка расход Google Sheets реестр",
+        "top_results": [
+          {
+            "url": "https://support.google.com/docs/answer/139706?hl=ru",
+            "title": "Просмотр ответов и управление ими",
+            "relevance": "high_official"
+          },
+          {
+            "url": "https://support.google.com/docs/answer/6281888?hl=ru",
+            "title": "Как использовать Google Формы",
+            "relevance": "high_official"
+          },
+          {
+            "url": "https://timeweb.com/ru/community/articles/sozdanie-google-formy-s-vyvodom-v-google-tablicy",
+            "title": "Создание Google Формы с выводом результатов в Google Таблицы",
+            "relevance": "high_ru_howto"
+          },
+          {
+            "url": "https://developers.google.com/apps-script/guides/triggers/installable",
+            "title": "Installable Triggers | Apps Script",
+            "relevance": "high_automation"
+          },
+          {
+            "url": "https://mayai.ru/google-forms-make-zayavki/",
+            "title": "Google форма с уведомлением в Telegram через Make",
+            "relevance": "medium_integration"
+          }
+        ]
+      },
+      {
+        "query": "автоматизация финотдела 2026 заявки расход",
+        "top_results": [
+          {
+            "url": "https://integration-software.ru/blog/obzor-funktsionala-kaznacheystvo-v-1s-erp-upravlenie-predpriyatiem",
+            "title": "Казначейство 1С в ERP",
+            "relevance": "high_contrast_erp"
+          },
+          {
+            "url": "https://firstbit.finance/tpost/ddfpyyug51-zayavka-na-rashod-deneg-kak-sdelat-tak-c",
+            "title": "Заявка на расход ДС в БИТ.Финанс",
+            "relevance": "high_contrast_1c"
+          },
+          {
+            "url": "https://www.fl.ru/user/dmshumski/portfolio/8062505/",
+            "title": "Автоматизация первичной обработки заявок (Forms→Sheets→n8n)",
+            "relevance": "medium_case"
+          },
+          {
+            "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+            "title": "Автоматизация финансов 2026",
+            "relevance": "low_macro"
+          }
+        ]
+      }
+    ],
+    "competitive_gap": "RU SERP не даёт how-to «Forms → реестр заявок на расход со статусами согласования»; доминируют бланки кассового расхода и общие гайды Forms→Sheets."
+  },
+  "unique_urls": [
+    {
+      "url": "https://docs.google.com/forms/?hl=ru",
+      "title": "Google Формы: вход в систему",
+      "from_query": "заявка на расход google forms 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/poryadok_zapolneniya_zayavki_na_kassovyj_rashod/",
+      "title": "Порядок заполнения заявки на кассовый расход \\ 2026-2025-2024 год ...",
+      "from_query": "заявка на расход google forms 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/zayavka_na_kassovyj_rashod_platezhnyj_dokument/",
+      "title": "Заявка на кассовый расход платежный документ \\ 2026-2025-2024 год ...",
+      "from_query": "заявка на расход google forms 2026"
+    },
+    {
+      "url": "https://assistentus.ru/forma/zayavka/",
+      "title": "Образцы и бланки заявок 2026 года",
+      "from_query": "заявка на расход google forms 2026"
+    },
+    {
+      "url": "https://workspace.google.com/intl/ru/products/forms/",
+      "title": "Google Формы: создание онлайн-форм | Google Workspace",
+      "from_query": "заявка на расход google forms 2026"
+    },
+    {
+      "url": "https://www.google.com/intx/ru/forms/about/",
+      "title": "Быстро получайте информацию с помощью Google Forms",
+      "from_query": "заявка на расход google forms 2026"
+    },
+    {
+      "url": "https://qualtir.com/ru/blog/google-forms-templates-guide",
+      "title": "Шаблоны Google Forms: 10 готовых решений для любых задач",
+      "from_query": "заявка на расход google forms август 2026"
+    },
+    {
+      "url": "https://blank-obrazets.ru/temy/zayavka/",
+      "title": "Заявка: бланки и образцы 2026",
+      "from_query": "заявка на расход google forms август 2026"
+    },
+    {
+      "url": "https://vk.com/wall-230504217_77",
+      "title": "ЗАЯВКА https://docs.google.com/forms/d/e ...",
+      "from_query": "заявка на расход google forms новости 2026"
+    },
+    {
+      "url": "https://vk.com/wall-30632651_7042",
+      "title": "ЗАЯВКА https://docs.google.com/forms/d/e ...",
+      "from_query": "заявка на расход google forms новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://axioma-ai.ru/ai-russia/russia-ai-fintech-banking-automation-2026-20260815",
+      "title": "Ai В Российском Финтехе 2026: Банки Автоматизируют До 70% Обращений ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vashereshenie.ru/blog/buxgalteriya-v-2026",
+      "title": "Бухгалтерия в 2026 - автоматизация с учётом новых налогов",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://online-kalendar.ru/year-2026",
+      "title": "Календарь 2026: все праздничные и выходные дни",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.nodul.ru/integrations/google-forms/google-sheets",
+      "title": "Интеграция Google Forms и Google Sheets | Nodul",
+      "from_query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026"
+    },
+    {
+      "url": "https://tilda.cc/ru/answers/a/forms-google-sheets/",
+      "title": "Как отправлять заявки из формы в Google Таблицы?",
+      "from_query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026"
+    },
+    {
+      "url": "https://it-developer.in.ua/kak-otpravlyat-dannye-iz-google-forms-v-google-sheets-dlya-moshhnogo-analiza.html",
+      "title": "Как отправлять данные из Google Forms в Google Sheets для мощного ...",
+      "from_query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026"
+    },
+    {
+      "url": "https://ru.windows.day/?p=37256",
+      "title": "Как я отправляю данные Google Forms в Google Sheets для мощного анализа",
+      "from_query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026"
+    },
+    {
+      "url": "https://help.flexbe.ru/google-sheets/",
+      "title": "Экспорт заявок в Google Таблицы — как подключить интеграцию",
+      "from_query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026"
+    },
+    {
+      "url": "https://timeweb.com/ru/community/articles/sozdanie-google-formy-s-vyvodom-v-google-tablicy",
+      "title": "Создание Google Формы с выводом результатов в Google Таблицы",
+      "from_query": "Как принимать заявки на расход через Google Forms в реестр Sheets 2026"
+    }
+  ]
+}
