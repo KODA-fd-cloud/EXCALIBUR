@@ -3,8 +3,8 @@
   "h1": "Как разделить CAPEX и OPEX в управленке на Google Sheets",
   "slug": "capex-opex-google-sheets",
   "status": "pending",
-  "proposed_at": 1786881581,
-  "proposal_message_id": 392,
+  "proposed_at": 1786881716,
+  "proposal_message_id": 393,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -34,5 +34,6 @@
     "B65",
     "B66",
     "B67"
-  ]
+  ],
+  "reminded_at": 1786881716
 }
