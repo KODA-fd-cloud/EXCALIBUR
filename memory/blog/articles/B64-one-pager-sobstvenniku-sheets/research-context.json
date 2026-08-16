@@ -1,0 +1,96 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-16",
+    "today_ru": "16.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B64",
+    "priority": "P0",
+    "slug": "one-pager-sobstvenniku-sheets",
+    "h1": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр",
+    "primary_query": "one pager для собственника финансы",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "one pager для собственника финансы",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B64",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "one pager для собственника финансы 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "one pager для собственника финансы август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "one pager для собственника финансы новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "one pager для собственника финансы 2026",
+      "purpose": "вторичный запрос: one pager для собственника финансы"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B64-one-pager-sobstvenniku-sheets",
+  "research_complete": {
+    "agent": "excalibur-blog-research",
+    "completed_at": "2026-08-16",
+    "utility_verdict": "PASS",
+    "wordstat_status": "unavailable_mcp_user_mcp_kv",
+    "artifacts": [
+      "research-notes.md",
+      "research-serp.json",
+      "fact-check-report.json"
+    ],
+    "serp_note": "Preflight primary SERP — startup one-pager; WebSearch Cursor дополнил дашборды собственника + Sheets",
+    "facts_count": 20,
+    "action_outline_steps": 9,
+    "reader_outcome": "One-pager в Google Sheets: 5 цифр на одном экране, формулы со staging, светофор, проверка, без ПДн",
+    "next_step": "excalibur-blog-writer"
+  },
+  "next_step": "excalibur-blog-writer — research-notes.md готов"
+}

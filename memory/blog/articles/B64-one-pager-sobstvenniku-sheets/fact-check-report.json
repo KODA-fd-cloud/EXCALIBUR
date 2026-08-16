@@ -1,0 +1,138 @@
+{
+  "article": "memory/blog/articles/B64-one-pager-sobstvenniku-sheets/research-notes.md",
+  "stage": "research",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "research_date": "2026-08-16",
+  "total_research_facts": 20,
+  "verified_with_url": 20,
+  "wordstat_available": false,
+  "utility_verdict": "PASS",
+  "facts": [
+    {
+      "id": 1,
+      "claim": "Собственнику нужна управленческая картина, не бухгалтерский отчёт (выручка, прибыль, cash flow, план/факт)",
+      "source": "https://genad.ru/dashboard-sobstvennika-161/",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "claim": "Дашборд собственника — понять состояние за ~5 минут",
+      "source": "https://genad.ru/dashboard-sobstvennika-161/",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "claim": "Ответ дашборда: «всё в порядке» или «есть проблема»; 5 минут раз в неделю",
+      "source": "https://adpass.ru/dashbordy-dlya-sobstvennika-i-ropa-kak-perestat-gadat-i-nachat-upravlyat-za-5-minut-v-den/",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "claim": "Больше 10–12 ключевых метрик на экране — дашборд перестаёт работать",
+      "source": "https://adpass.ru/dashbordy-dlya-sobstvennika-i-ropa-kak-perestat-gadat-i-nachat-upravlyat-za-5-minut-v-den/",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "claim": "Индикация отклонений — светофор (зел/жёлт/красный)",
+      "source": "https://adpass.ru/dashbordy-dlya-sobstvennika-i-ropa-kak-perestat-gadat-i-nachat-upravlyat-za-5-minut-v-den/",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "claim": "Финблок: выручка, валовая/чистая прибыль, денежный поток с отклонениями от плана",
+      "source": "https://adpass.ru/dashbordy-dlya-sobstvennika-i-ropa-kak-perestat-gadat-i-nachat-upravlyat-za-5-minut-v-den/",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "claim": "«1 экран» — набор цифр раз в день/неделю с понятным действием",
+      "source": "https://gse.kz/blog/dashbord-sobstvennika-kpi-istochniki-dannykh",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "claim": "Два уровня прибыли на экране: валовая маржа и операционная прибыль",
+      "source": "https://gse.kz/blog/dashbord-sobstvennika-kpi-istochniki-dannykh",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "claim": "Сигналы кассового разрыва: остаток падает 2–3 периода; платежи 7–14 дней vs остаток",
+      "source": "https://gse.kz/blog/dashbord-sobstvennika-kpi-istochniki-dannykh",
+      "verified": true
+    },
+    {
+      "id": 10,
+      "claim": "Источники: 1С/ERP, CRM, банк; владелец каждого источника — бизнес-роль",
+      "source": "https://gse.kz/blog/dashbord-sobstvennika-kpi-istochniki-dannykh",
+      "verified": true
+    },
+    {
+      "id": 11,
+      "claim": "Отчёты собственника = личный дашборд без лишних строк",
+      "source": "https://noboring-finance.ru/gazeta/glossariy-otchety-dlya-sobstvennikov/page2/7/",
+      "verified": true
+    },
+    {
+      "id": 12,
+      "claim": "5–10 денежных показателей в цепочке до решения о бюджете",
+      "source": "https://dzen.ru/a/anBLF2tbQE6qYile",
+      "verified": true
+    },
+    {
+      "id": 13,
+      "claim": "Staging обязателен: bank → staging → dashboard",
+      "source": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
+      "verified": true
+    },
+    {
+      "id": 14,
+      "claim": "Кейс KODA: ДДС 20 часов → 15 минут/мес после staging + n8n",
+      "source": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
+      "verified": true
+    },
+    {
+      "id": 15,
+      "claim": "До 63% сотрудников копируют финданные в публичный ИИ; штрафы 152-ФЗ до 6 млн ₽",
+      "source": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "verified": true
+    },
+    {
+      "id": 16,
+      "claim": "Sheets API batchUpdate: subrequests атомарны — один невалидный отменяет весь batch",
+      "source": "https://developers.google.com/workspace/sheets/api/guides/batch",
+      "verified": true
+    },
+    {
+      "id": 17,
+      "claim": "Google рекомендует батчить запросы Sheets API",
+      "source": "https://developers.google.com/workspace/sheets/api/guides/batch",
+      "verified": true
+    },
+    {
+      "id": 18,
+      "claim": "После batch-записи в Sheets нужна перечитка/сверка (риск потери строк)",
+      "source": "https://habr.com/ru/articles/1017260/",
+      "verified": true
+    },
+    {
+      "id": 19,
+      "claim": "TableProf: dashboard собственника, срок шаблона 3–7 дней",
+      "source": "https://tableprof.ru/",
+      "verified": true
+    },
+    {
+      "id": 20,
+      "claim": "Birdyx: дашборд Sheets — выручка, прибыль, заказы на одном экране",
+      "source": "https://excel.birdyx.ru/blog/show/uchet-biznesa-google-sheets",
+      "verified": true
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "Wordstat MCP user-mcp-kv недоступен — показы/мес не получены",
+    "Preflight SERP по primary_query — startup one-pager trap; writer не копировать pitch-deck структуру"
+  ]
+}
