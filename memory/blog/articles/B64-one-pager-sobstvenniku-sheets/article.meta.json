@@ -1,0 +1,31 @@
+{
+  "topic_id": "B64",
+  "h1": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр",
+  "title": "One pager для собственника финансы: 5 цифр в Google Sheets",
+  "description": "Пошаговый one-pager для собственника в Google Sheets: staging, пять управленческих метрик, формулы SUMIFS, светофор отклонений и проверка без ПДн на экране владельца.",
+  "cover_alt": "Абстрактная голографическая визуализация финансовой автоматизации на тёмном фоне с фиолетовым акцентом",
+  "slug": "one-pager-sobstvenniku-sheets",
+  "primary_query": "one pager для собственника финансы",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "one pager для собственника финансы",
+    "2026"
+  ],
+  "char_count": 8676,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "one pager для собственника google sheets",
+    "дашборд собственника 5 цифр таблица",
+    "управленческий one-pager без power bi"
+  ],
+  "meta_ab": {
+    "title_seo": "One pager для собственника финансы: 5 цифр в Sheets",
+    "title_ctr": "📊 One-pager для собственника: 1 экран и 5 цифр в Sheets за 2–4 часа!",
+    "title_aeo": "Как собрать one-pager для собственника из Google Sheets?",
+    "description_seo": "One-pager для собственника в Google Sheets: staging, пять метрик, формулы, светофор и проверка. Собственник за 5 минут видит норма или проблема без BI и ПДн на экране.",
+    "description_ctr": "⚡️ Соберите one-pager за 2–4 часа: остаток, поток, выручка, ДЗ и план-факт на одном листе с формулами и светофором.",
+    "description_aeo": "One-pager для собственника из Google Sheets - пять управленческих цифр на одном экране, формулы со staging и светофор отклонений без программиста."
+  },
+  "cover_family": "gradient_abstract"
+}
