@@ -2,7 +2,7 @@
   "topic_id": "B64",
   "h1": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр",
   "slug": "one-pager-sobstvenniku-sheets",
-  "status": "pending",
+  "status": "queued_write",
   "proposed_at": 1786848455,
   "proposal_message_id": 375,
   "chat_id": "1136346366",
@@ -32,5 +32,10 @@
     "B61",
     "B62"
   ],
-  "reminded_at": 1786848455
+  "reminded_at": 1786848455,
+  "missing_article_notified": true,
+  "ack_message_id": 377,
+  "approved_at": 1786851878,
+  "write_launch_notified": true,
+  "write_job_started_at": 1786851881
 }
