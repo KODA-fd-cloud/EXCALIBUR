@@ -1,0 +1,8 @@
+{
+  "slug": "one-pager-sobstvenniku-sheets",
+  "topic_id": "B64",
+  "permalink": "https://koda-fd.ru/blog/one-pager-sobstvenniku-sheets/",
+  "raw_output": "OK post=237 slug=one-pager-sobstvenniku-sheets\nOK categories=3,10,6\nOK featured_image=238\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/one-pager-sobstvenniku-sheets-dzen-cover.png\npermalink=https://koda-fd.ru/blog/one-pager-sobstvenniku-sheets/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}

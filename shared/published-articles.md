@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-08-16 | B64 | one-pager-sobstvenniku-sheets | https://koda-fd.ru/blog/one-pager-sobstvenniku-sheets/ | published |
 | 2026-08-15 | B63 | indeks-cen-postavshchikov-sheets | https://koda-fd.ru/blog/indeks-cen-postavshchikov-sheets/ | published |
 | 2026-08-15 | B59 | zayavka-na-rashod-google-forms | https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/ | published |
 | 2026-08-15 | B58 | reestr-upd-google-sheets | https://koda-fd.ru/blog/reestr-upd-google-sheets/ | published |

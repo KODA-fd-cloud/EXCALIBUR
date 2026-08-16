@@ -1,10 +1,10 @@
 {
-  "topic_id": "B64",
-  "h1": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр",
-  "slug": "one-pager-sobstvenniku-sheets",
-  "status": "queued_write",
-  "proposed_at": 1786848455,
-  "proposal_message_id": 375,
+  "topic_id": "B65",
+  "h1": "Как вести расходы по командировкам в Google Sheets: суточные, билеты, лимиты",
+  "slug": "komandirovochnye-rashody-google-sheets",
+  "status": "pending",
+  "proposed_at": 1786874845,
+  "proposal_message_id": 381,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -31,11 +31,5 @@
     "B60",
     "B61",
     "B62"
-  ],
-  "reminded_at": 1786848455,
-  "missing_article_notified": true,
-  "ack_message_id": 377,
-  "approved_at": 1786851878,
-  "write_launch_notified": true,
-  "write_job_started_at": 1786851881
+  ]
 }
