@@ -3,8 +3,8 @@
   "h1": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр",
   "slug": "one-pager-sobstvenniku-sheets",
   "status": "pending",
-  "proposed_at": 1786803493,
-  "proposal_message_id": 374,
+  "proposed_at": 1786848455,
+  "proposal_message_id": 375,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -32,5 +32,5 @@
     "B61",
     "B62"
   ],
-  "reminded_at": 1786803493
+  "reminded_at": 1786848455
 }
