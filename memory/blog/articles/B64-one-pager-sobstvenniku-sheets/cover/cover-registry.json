@@ -1,0 +1,16 @@
+{
+  "topic_id": "B64",
+  "slug": "one-pager-sobstvenniku-sheets",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "reference_url": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-ot-excel-k-fin-konturu-30-dney-1024x576.png",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Абстрактная голографическая визуализация финансовой автоматизации на тёмном фоне с фиолетовым акцентом",
+  "cover_alt_text": "Абстрактная голографическая визуализация финансовой автоматизации на тёмном фоне с фиолетовым акцентом",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "text_on_image": false,
+  "generated_at": "2026-08-16T10:06:03.422743+00:00",
+  "note": "abstract holographic finance automation, five metric nodes to central hub one-pager metaphor, dark #0a0a0f purple #8b5cf6, NO text/letters/faces/UI labels; user-mcp-kv unavailable, GenerateImage i2i fallback with KODA reference; v1 had text → regenerated v2 PASS cover_gate"
+}

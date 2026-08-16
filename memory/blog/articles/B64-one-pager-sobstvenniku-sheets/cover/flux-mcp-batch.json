@@ -1,0 +1,27 @@
+{
+  "topic_id": "B64",
+  "slug": "one-pager-sobstvenniku-sheets",
+  "pipeline": "gradient_abstract_i2i",
+  "cover_family": "gradient_abstract",
+  "status": "blocked_mcp_unavailable",
+  "jobs": [
+    {
+      "tool": "gpt-image-2",
+      "server": "user-mcp-kv",
+      "mcp_args": {
+        "prompt": "KODA fintech blog cover 16:9, abstract digital holographic data visualization on near-black background #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic, five small glowing metric orbs on left flow through light conduits into one central bright hub on right suggesting owner one-pager dashboard aggregation, purely symbolic no screens, match KODA legacy blog card style, thumbnail-safe composition, absolutely NO text NO letters NO watermark NO logo NO people NO faces NO 3D product icons NO UI screenshots NO Cyrillic on image",
+        "input_urls": [
+          "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-ot-excel-k-fin-konturu-30-dney-1024x576.png"
+        ],
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      }
+    }
+  ],
+  "fallback": {
+    "pipeline": "cursor_generate_image_legacy_abstract",
+    "reference_local": "/tmp/koda-ref-cover.png",
+    "generated_file": "cover/cover.png"
+  },
+  "alt": "Абстрактная голографическая визуализация финансовой автоматизации на тёмном фоне с фиолетовым акцентом"
+}
