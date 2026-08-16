@@ -1276,6 +1276,126 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B73 — Автоматизация на n8n под ключ: разработка и внедрение в бизнес-процесс
+
+- **priority:** P0
+- **slug:** avtomatizaciya-na-n8n-pod-klyuch-razrabotka-i-vnedrenie-v-bi
+- **theme_key:** trend_avtomatizaciya_na_n8n_pod_klyuch_razrabo
+- **h1:** Как автоматизация на n8n под ключ: разработка и внедрение в бизнес-процессы | Secret Agents
+- **primary_query:** автоматизация на n8n под ключ разработка и внедрение в бизнес-процессы secret ag
+- **secondary_queries:** автоматизация финотдела, автоматизация на n8n под ключ разработка и внедрение в бизнес-процессы secret ag, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://secret-agents.ru/development/n8n
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B74 — Cursor AI: полный туториал по вайбкодингу в 2026 — журнал «Код»
+
+- **priority:** P0
+- **slug:** cursor-ai-polnyj-tutorial-po-vajbkodingu-v-2026-zhurnal-kod
+- **theme_key:** trend_cursor_ai_polnyj_tutorial_po_vajbkodingu
+- **h1:** Как cursor AI: полный туториал по вайбкодингу в 2026 — журнал «Код»
+- **primary_query:** cursor ai полный туториал по вайбкодингу в 2026 журнал код
+- **secondary_queries:** автоматизация финотдела, cursor ai полный туториал по вайбкодингу в 2026 журнал код, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://thecode.media/cursor-ai-tutorial-2026/
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B75 — ИИ для бухгалтеров — онлайн-курс по цифровой трансформации учета
+
+- **priority:** P0
+- **slug:** ii-dlya-buhgalterov-onlajn-kurs-po-cifrovoj-transformacii-uc
+- **theme_key:** trend_ii_dlya_buhgalterov_onlajn_kurs_po_cifro
+- **h1:** Как иИ для бухгалтеров — онлайн-курс по цифровой трансформации учета
+- **primary_query:** ии для бухгалтеров онлайн-курс по цифровой трансформации учета
+- **secondary_queries:** автоматизация финотдела, ии для бухгалтеров онлайн-курс по цифровой трансформации учета, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://aibuhgalter.by/
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B76 — Автоматизация Финансовых Расчетов в Excel: Ваш Путь к Безупречной ...
+
+- **priority:** P0
+- **slug:** avtomatizaciya-finansovyh-raschetov-v-excel-vash-put-k-bezup
+- **theme_key:** trend_avtomatizaciya_finansovyh_raschetov_v_ex
+- **h1:** Как автоматизация Финансовых Расчетов в Excel: Ваш Путь к Безупречной 
+- **primary_query:** автоматизация финансовых расчетов в excel ваш путь к безупречной
+- **secondary_queries:** автоматизация финотдела, автоматизация финансовых расчетов в excel ваш путь к безупречной, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://www.excelwithclaude.com/blog/excel-2026-3133
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B77 — Как сверять акты сверки в Excel: пошаговая инструкция 2026
+
+- **priority:** P0
+- **slug:** kak-sveryat-akty-sverki-v-excel-poshagovaya-instrukciya-2026
+- **theme_key:** trend_kak_sveryat_akty_sverki_v_excel_poshagov
+- **h1:** Как сверять акты сверки в Excel: пошаговая инструкция 2026
+- **primary_query:** как сверять акты сверки в excel пошаговая инструкция 2026
+- **secondary_queries:** автоматизация финотдела, как сверять акты сверки в excel пошаговая инструкция 2026, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://excel-gid.vercel.app/articles/k/ka/kak-sveryat-akty-sverok-v-eksele.html
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Сняты как смысловые дубли (2026-08-03): B41≈B28 сверка банка, B42≈B25 выписка→Sheets, B43≈B13 1С→Excel, B44≈B17 формулы Excel+ИИ, B45≈B26 план-факт, B40≈B27 дайджест/отчёт.

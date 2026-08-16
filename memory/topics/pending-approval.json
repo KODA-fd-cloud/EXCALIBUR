@@ -3,8 +3,8 @@
   "h1": "Как обучение n8n с Нуля в 2026: [ТОП-7] онлайн-курсов по автоматизации сценарий автоматизации — Top kursy (июль 2026) на DTF",
   "slug": "obuchenie-n8n-s-nulya-v-2026-top-7-onlajn-kursov-po-avtomati",
   "status": "pending",
-  "proposed_at": 1786891671,
-  "proposal_message_id": 404,
+  "proposed_at": 1786893497,
+  "proposal_message_id": 405,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -37,5 +37,6 @@
     "B68",
     "B69",
     "B70"
-  ]
+  ],
+  "reminded_at": 1786893497
 }
