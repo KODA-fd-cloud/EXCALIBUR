@@ -1156,6 +1156,126 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B68 — Трекер CAPEX vs OPEX
+
+- **priority:** P0
+- **slug:** capex-opex-google-sheets
+- **theme_key:** capex_opex_tracker
+- **h1:** Как разделить CAPEX и OPEX в управленке на Google Sheets
+- **primary_query:** capex opex google sheets
+- **secondary_queries:** автоматизация финотдела, capex opex google sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · bank+tags:sheets,управленческий
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B69 — Aging кредиторки в Sheets
+
+- **priority:** P0
+- **slug:** aging-kreditorki-google-sheets
+- **theme_key:** ap_aging_report
+- **h1:** Как собрать aging кредиторской задолженности в Google Sheets за вечер
+- **primary_query:** aging кредиторской задолженности excel
+- **secondary_queries:** автоматизация финотдела, aging кредиторской задолженности excel, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B70 — Маржа по проектам в Sheets
+
+- **priority:** P0
+- **slug:** marzha-po-proektam-google-sheets
+- **theme_key:** margin_by_project
+- **h1:** Как считать маржу по проектам в Google Sheets: выручка, прямые, вклад
+- **primary_query:** маржа по проектам google sheets
+- **secondary_queries:** автоматизация финотдела, маржа по проектам google sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B71 — Обучение n8n с Нуля в 2026: [ТОП-7] онлайн-курсов по автоматизации сце
+
+- **priority:** P0
+- **slug:** obuchenie-n8n-s-nulya-v-2026-top-7-onlajn-kursov-po-avtomati
+- **theme_key:** trend_obuchenie_n8n_s_nulya_v_2026_top_7_onlaj
+- **h1:** Как обучение n8n с Нуля в 2026: [ТОП-7] онлайн-курсов по автоматизации сценарий автоматизации — Top kursy (июль 2026) на DTF
+- **primary_query:** обучение n8n с нуля в 2026 топ-7 онлайн-курсов по автоматизации сценарий автомат
+- **secondary_queries:** автоматизация финотдела, обучение n8n с нуля в 2026 топ-7 онлайн-курсов по автоматизации сценарий автомат, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://dtf.ru/topkursy/4977962-obuchenie-n8n-top-7-kursov-po-avtomatizatsii
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B72 — n8n Finance Automation in 2026: Real Workflow Examples for AP, AR, and
+
+- **priority:** P0
+- **slug:** n8n-finance-automation-in-2026-real-workflow-examples-for-ap
+- **theme_key:** trend_n8n_finance_automation_in_2026_real_work
+- **h1:** n8n Finance Automation in 2026: Real Workflow Examples for AP, AR, and Close
+- **primary_query:** n8n finance automation in 2026 real workflow examples for ap ar and close
+- **secondary_queries:** автоматизация финотдела, n8n finance automation in 2026 real workflow examples for ap ar and close, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://www.yourproductpartners.com/post/n8n-finance-automation-in-2026-real-wor
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Сняты как смысловые дубли (2026-08-03): B41≈B28 сверка банка, B42≈B25 выписка→Sheets, B43≈B13 1С→Excel, B44≈B17 формулы Excel+ИИ, B45≈B26 план-факт, B40≈B27 дайджест/отчёт.

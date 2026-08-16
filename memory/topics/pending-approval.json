@@ -1,10 +1,10 @@
 {
-  "topic_id": "B66",
-  "h1": "Как учитывать отложенную выручку в простой управленке на Google Sheets",
-  "slug": "otlozhennaya-vyruchka-sheets",
+  "topic_id": "B67",
+  "h1": "Как настроить права доступа к финансовым папкам Google Drive без утечек",
+  "slug": "prava-dostupa-drive-finotdel",
   "status": "pending",
-  "proposed_at": 1786877930,
-  "proposal_message_id": 385,
+  "proposed_at": 1786879545,
+  "proposal_message_id": 388,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -31,6 +31,7 @@
     "B60",
     "B61",
     "B62",
-    "B65"
+    "B65",
+    "B66"
   ]
 }
