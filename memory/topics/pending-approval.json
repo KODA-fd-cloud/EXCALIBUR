@@ -3,8 +3,8 @@
   "h1": "n8n Finance Automation in 2026: Real Workflow Examples for AP, AR, and Close",
   "slug": "n8n-finance-automation-in-2026-real-workflow-examples-for-ap",
   "status": "pending",
-  "proposed_at": 1786910076,
-  "proposal_message_id": 408,
+  "proposed_at": 1786911481,
+  "proposal_message_id": 409,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -38,5 +38,6 @@
     "B69",
     "B70",
     "B71"
-  ]
+  ],
+  "reminded_at": 1786911481
 }
