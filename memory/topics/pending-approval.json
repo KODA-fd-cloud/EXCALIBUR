@@ -3,8 +3,8 @@
   "h1": "Как считать маржу по проектам в Google Sheets: выручка, прямые, вклад",
   "slug": "marzha-po-proektam-google-sheets",
   "status": "pending",
-  "proposed_at": 1786888434,
-  "proposal_message_id": 400,
+  "proposed_at": 1786889956,
+  "proposal_message_id": 401,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -36,5 +36,6 @@
     "B67",
     "B68",
     "B69"
-  ]
+  ],
+  "reminded_at": 1786889956
 }
