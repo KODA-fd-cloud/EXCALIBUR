@@ -1,10 +1,10 @@
 {
-  "topic_id": "B71",
-  "h1": "Как обучение n8n с Нуля в 2026: [ТОП-7] онлайн-курсов по автоматизации сценарий автоматизации — Top kursy (июль 2026) на DTF",
-  "slug": "obuchenie-n8n-s-nulya-v-2026-top-7-onlajn-kursov-po-avtomati",
+  "topic_id": "B72",
+  "h1": "n8n Finance Automation in 2026: Real Workflow Examples for AP, AR, and Close",
+  "slug": "n8n-finance-automation-in-2026-real-workflow-examples-for-ap",
   "status": "pending",
-  "proposed_at": 1786893497,
-  "proposal_message_id": 405,
+  "proposed_at": 1786910076,
+  "proposal_message_id": 408,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -36,7 +36,7 @@
     "B67",
     "B68",
     "B69",
-    "B70"
-  ],
-  "reminded_at": 1786893497
+    "B70",
+    "B71"
+  ]
 }
