@@ -1,0 +1,574 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-16",
+    "today_ru": "16.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B64",
+    "priority": "P0",
+    "slug": "one-pager-sobstvenniku-sheets",
+    "h1": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр",
+    "primary_query": "one pager для собственника финансы",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "one pager для собственника финансы",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "one pager для собственника финансы 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "One Pager Generator — бесплатный конструктор сводки на одной странице ...",
+          "url": "https://happycapy.ai/ru/tools/one-pager-generator",
+          "snippet": ""
+        },
+        {
+          "title": "Примеры One pager - FeoFinance",
+          "url": "https://feofinance.com/blog/tpost/ef7zjnl811-primeri-one-pager",
+          "snippet": "Генератор one-pager: опишите свой продукт, стартап или проект и получите чёткую сводку на одной странице с заголовком, ключевыми пунктами и призывом к действию. Бесплатно."
+        },
+        {
+          "title": "One-page financial plan: template and checklist for 2026",
+          "url": "https://snapprojections.com/blog/one-page-financial-plan/",
+          "snippet": "Короче, One pager это формат презентации, где собрана вся ключевая информация на 1 слайде. Вот примерный перечень: - Название и логотип - Описание продукта - Бизнес-модель (на чем зарабатываете)"
+        },
+        {
+          "title": "Как создать идеальный стартап OnePager для инвесторов?",
+          "url": "https://pitchbob.io/ru/blog/start-up-one-pager",
+          "snippet": "Use this one-page financial plan template to guide clear client conversations and build trust."
+        },
+        {
+          "title": "Onepage — стратегия и инвестиционный питч на одном листе",
+          "url": "https://biznesator.ru/onepage",
+          "snippet": "В этой статье мы погрузимся в мир одностраничников для начинающих и покажем, как создать идеальную презентационную колоду, которая увлечет потенциальных инвесторов."
+        },
+        {
+          "title": "Free One-Pager Templates - Customize & Download | Visme",
+          "url": "https://www.visme.co/templates/one-pagers/",
+          "snippet": "Создавайте лаконичные и одновременно глубокие концепции, стратегии и инвестиционные предложения, понятные с первого взгляда. Onepage — это инновационный формат, продуманный фреймворк и авторская методология Biznesator. Быстро оценивать перспективы и возможности проекта."
+        }
+      ],
+      "searched_at": "2026-08-16"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "one pager для собственника финансы август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "One Pager Generator — бесплатный конструктор сводки на одной странице ...",
+          "url": "https://happycapy.ai/ru/tools/one-pager-generator",
+          "snippet": ""
+        },
+        {
+          "title": "Примеры One pager - FeoFinance",
+          "url": "https://feofinance.com/blog/tpost/ef7zjnl811-primeri-one-pager",
+          "snippet": "Генератор one-pager: опишите свой продукт, стартап или проект и получите чёткую сводку на одной странице с заголовком, ключевыми пунктами и призывом к действию."
+        },
+        {
+          "title": "One-page financial plan: template and checklist for 2026",
+          "url": "https://snapprojections.com/blog/one-page-financial-plan/",
+          "snippet": "Короче, One pager это формат презентации, где собрана вся ключевая информация на 1 слайде. Вот примерный перечень: - Название и логотип - Описание продукта - Бизнес-модель (на чем зарабатываете)"
+        },
+        {
+          "title": "Все инструменты августа в одном месте - Финансовый директор № 8, август ...",
+          "url": "https://e.fd.ru/1194077",
+          "snippet": "Use this one-page financial plan template to guide clear client conversations and build trust."
+        },
+        {
+          "title": "Доллар и рубль. Прогноз на август 2026. Прогноз курса доллара и прогноз ...",
+          "url": "https://rutube.ru/video/bcdd85a53cab29201e821092d1a21cc8/",
+          "snippet": "Подготовили для вас подборку всех инструментов текущего номера: кризис-панель для собственника, калькулятор для сравнения налоговых режимов и оценки налогового риска, модель факторного ..."
+        },
+        {
+          "title": "Промты для one-pager инвесторам: готовые шаблоны стартаперу",
+          "url": "https://edugusarov.com/ru/prompty-dlya-startapera-one-pager-investory/",
+          "snippet": "Прогноз курса доллара и прогноз курса рубля | Ян Арт» на канале «Finversia» в хорошем качестве и бесплатно, опубликованное 1 августа 2026 года в 14:36, длительностью 00:19:22, на видеохостинге RUTUBE."
+        }
+      ],
+      "searched_at": "2026-08-16"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "one pager для собственника финансы новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Что изменится для ваших финансов в 2026 году",
+          "url": "https://fincult.info/news/chto-izmenitsya-dlya-vashikh-finansov-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Названы шесть ключевых изменений в сфере финансов для россиян с 1 июля ...",
+          "url": "https://delovoe.tv/event/izmeneniya_v_sfere_lichnih_finansov_s_1_iyulya_2026/",
+          "snippet": "С 1 сентября 2026 года заработает система быстрых переводов ценных бумаг. Инвесторы смогут перекинуть свои активы от одного брокера к другому за считаные минуты."
+        },
+        {
+          "title": "Путеводитель по личным финансам: что изменится в 2026 году",
+          "url": "https://www.united.ru/nnews/putevoditel-po-lichnym-finansam-chto-izmenitsya-v-2026-godu/",
+          "snippet": "Нововведения затронут такие сферы, как пенсионное обеспечение, налогообложение, банковские переводы, кредитование, сделки с недвижимостью и страхование. С 1 июля 2026 года в России вступают в силу важные изменения, касающиеся личных финансов граждан."
+        },
+        {
+          "title": "Последние новости финансов и кредитования в 2026 году - Финансы Light",
+          "url": "https://light-fin.ru/poslednie-novosti-finansov-i-kreditovaniya-v-2026-godu/",
+          "snippet": "Каждый год потихоньку меняет наши финансовые привычки: где-то появляются новые правила, где-то - новые возможности. В этом кратком путеводителе разбираем главное про деньги - без сложных терминов и лишних деталей. Про сервисы и оплату."
+        },
+        {
+          "title": "Финансы — последние и свежие новости сегодня и за 2026 год на iz.ru ...",
+          "url": "https://iz.ru/tag/finansy",
+          "snippet": "Обзор ключевых событий и изменений в финансовой сфере, влияющих на кредиты и личный бюджет в 2026 году."
+        },
+        {
+          "title": "Что изменится в личных финансах для россиян с 1 июля 2026 года",
+          "url": "https://www.rbc.ru/quote/01/07/2026/6a2fc5a69a7947b33e416063",
+          "snippet": "В Великобритании университеты переживают «финансовый кризис» на фоне резкого сокращения числа иностранных студентов из-за налога на плату за обучение. Об этом 14 августа сообщила газета The Guardian."
+        }
+      ],
+      "searched_at": "2026-08-16"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "Ai В Российском Финтехе 2026: Банки Автоматизируют До 70% Обращений ...",
+          "url": "https://axioma-ai.ru/ai-russia/russia-ai-fintech-banking-automation-2026-20260815",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "Российские банки и финтех-компании в 2026 году активно внедряют AI для автоматизации клиентского обслуживания, кредитного скоринга и борьбы с мошенничеством. Сбер, Т-Банк, ВТБ и Альфа-Банк автоматизируют до 70% типовых ..."
+        },
+        {
+          "title": "PDF Автоматизация 2026 всё,",
+          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        }
+      ],
+      "searched_at": "2026-08-16"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "one pager для собственника финансы 2026",
+      "purpose": "вторичный запрос: one pager для собственника финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "One Pager Generator — бесплатный конструктор сводки на одной странице ...",
+          "url": "https://happycapy.ai/ru/tools/one-pager-generator",
+          "snippet": ""
+        },
+        {
+          "title": "Примеры One pager - FeoFinance",
+          "url": "https://feofinance.com/blog/tpost/ef7zjnl811-primeri-one-pager",
+          "snippet": "Генератор one-pager: опишите свой продукт, стартап или проект и получите чёткую сводку на одной странице с заголовком, ключевыми пунктами и призывом к действию. Бесплатно."
+        },
+        {
+          "title": "One-page financial plan: template and checklist for 2026",
+          "url": "https://snapprojections.com/blog/one-page-financial-plan/",
+          "snippet": "Короче, One pager это формат презентации, где собрана вся ключевая информация на 1 слайде. Вот примерный перечень: - Название и логотип - Описание продукта - Бизнес-модель (на чем зарабатываете)"
+        },
+        {
+          "title": "Как создать идеальный стартап OnePager для инвесторов?",
+          "url": "https://pitchbob.io/ru/blog/start-up-one-pager",
+          "snippet": "Use this one-page financial plan template to guide clear client conversations and build trust."
+        },
+        {
+          "title": "Финансовый дашборд для собственника: что должно быть на одном экране ...",
+          "url": "https://impdata.ru/blog/finansovyj-dashbord-dlya-sobstvennika",
+          "snippet": "В этой статье мы погрузимся в мир одностраничников для начинающих и покажем, как создать идеальную презентационную колоду, которая увлечет потенциальных инвесторов."
+        },
+        {
+          "title": "Onepage — стратегия и инвестиционный питч на одном листе",
+          "url": "https://biznesator.ru/onepage",
+          "snippet": "Разбираем, какие блоки нужны в финансовом дашборде для собственника: прибыль, cash flow, маржа, план-факт и риски в одном окне."
+        }
+      ],
+      "searched_at": "2026-08-16"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Чему посвящен 2026 год в России и какие тематические годы уже были | 360.ru",
+          "url": "https://360.ru/tekst/obschestvo/sila-v-edinstve-chemu-posvjaschen-2026/",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Праздники в 2026 году: полный календарь праздников на каждый месяц",
+          "url": "https://mirkosmosa.ru/holiday/2026",
+          "snippet": "На одном из заседаний в Кремле президент Владимир Путин объявил 2026-й Годом единства народов России. Что это означает и какие темы уже были — в материале 360.ru."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "Полный календарь праздников в 2026 году. Официальные, международные, профессиональные и православные праздники по месяцам. Узнайте, какие даты отмечают в России и мире в 2026 году."
+        }
+      ],
+      "searched_at": "2026-08-16"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как собрать еженедельный дайджест собственнику из Google Sheets в ...",
+          "url": "https://dzen.ru/a/am1bDGtbQE6qWNrS",
+          "snippet": ""
+        },
+        {
+          "title": "Промты для one-pager инвесторам: готовые шаблоны стартаперу",
+          "url": "https://edugusarov.com/ru/prompty-dlya-startapera-one-pager-investory/",
+          "snippet": "Статья автора «Финансист, который кодит I Ольга Кондрацкая» в Дзене : Еженедельный дайджест собственнику из Google Sheets в Telegram - это не «ещё один отчёт», а короткое сообщение: 5-7 цифр,..."
+        },
+        {
+          "title": "Как делать one pager - mksegment.ru",
+          "url": "https://mksegment.ru/b/kak-delat-one-pager",
+          "snippet": "Промты для one-pager — это структурированные запросы к нейросети, которые за один проход формируют документ на одну страницу для инвестора с блоками «Проблема-Решение», Traction, Бизнес-модель и TAM ..."
+        },
+        {
+          "title": "Как сделать onepager: лучшие советы и рекомендации",
+          "url": "https://mksegment.ru/c/kak-sozdat-uspeshnyj-onepager-rukovodstvo-so-sovetami-i-rekomendaciyami",
+          "snippet": "В этой пошаговой инструкции мы расскажем, как создать качественный one pager, который поможет вам донести главные идеи вашего проекта до целевой аудитории."
+        },
+        {
+          "title": "Как сделать финансовый dashboard для собственника",
+          "url": "https://impdata.ru/blog/kak-sdelat-finansovyj-dashboard-dlya-sobstvennika",
+          "snippet": "Учитывая все эти элементы, вы сможете создать эффективный и привлекательный onepager, который поможет вам достичь поставленных целей и привлечь внимание целевой аудитории."
+        },
+        {
+          "title": "Примеры One pager - FeoFinance",
+          "url": "https://feofinance.com/blog/tpost/ef7zjnl811-primeri-one-pager",
+          "snippet": "Разбираем, как сделать финансовый dashboard для собственника: какие блоки нужны, как не перегрузить экран и что смотреть каждый день."
+        }
+      ],
+      "searched_at": "2026-08-16"
+    }
+  ],
+  "errors": [],
+  "websearch_cursor": {
+    "searched_at": "2026-08-16",
+    "agent": "excalibur-blog-research",
+    "note": "Приоритетный SERP; шаг 0 primary_fresh нерелевантен (startup one-pager generators). Живой WebSearch — дашборд собственника + Sheets.",
+    "queries": [
+      {
+        "query": "one pager для собственника финансы 2026",
+        "purpose": "primary — owner dashboard intent",
+        "top_results": [
+          {"url": "https://genad.ru/dashboard-sobstvennika-161/", "title": "Дашборд собственника: что должен содержать", "relevance": "high"},
+          {"url": "https://adpass.ru/dashbordy-dlya-sobstvennika-i-ropa-kak-perestat-gadat-i-nachat-upravlyat-za-5-minut-v-den/", "title": "Дашборды для собственника: 5 минут в день", "relevance": "high"},
+          {"url": "https://gse.kz/blog/dashbord-sobstvennika-kpi-istochniki-dannykh", "title": "Дашборд для собственника: 1 экран", "relevance": "high"},
+          {"url": "https://noboring-finance.ru/gazeta/glossariy-otchety-dlya-sobstvennikov/page2/7/", "title": "Отчёты для собственника", "relevance": "medium"},
+          {"url": "https://happycapy.ai/ru/tools/one-pager-generator", "title": "One Pager Generator (startup)", "relevance": "low_trap"}
+        ]
+      },
+      {
+        "query": "финансовый дашборд для собственника Google Sheets one pager",
+        "purpose": "Sheets + dashboard",
+        "top_results": [
+          {"url": "https://tableprof.ru/", "title": "TableProf — Finance dashboard в Sheets", "relevance": "high"},
+          {"url": "https://excel.birdyx.ru/blog/show/uchet-biznesa-google-sheets", "title": "Учёт бизнеса Google Sheets + дашборд", "relevance": "high"},
+          {"url": "https://xn--80acea1apc7cg1b5c.xn--p1ai/upruchetsdashbordom", "title": "Управленческий учёт + дашборд Sheets", "relevance": "medium"},
+          {"url": "https://peroksa.ru/guides/business-financials", "title": "Финансовый дашборд шаблон", "relevance": "medium"},
+          {"url": "https://getfiledrop.com/how-to-build-a-financial-dashboard-in-google-sheets/", "title": "How to Build Financial Dashboard in Sheets (EN)", "relevance": "medium"}
+        ]
+      },
+      {
+        "query": "автоматизация финотдела Google Sheets управленческая отчётность 2026",
+        "purpose": "secondary automation",
+        "top_results": [
+          {"url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/", "title": "Автоматизация финансов no-code (KODA)", "relevance": "internal"},
+          {"url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/", "title": "AI для финансиста 2026 (KODA)", "relevance": "internal"},
+          {"url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/", "title": "Автоматизация финансов 2026", "relevance": "medium"},
+          {"url": "https://developers.google.com/workspace/sheets/api/guides/batch", "title": "Google Sheets API batch", "relevance": "medium"},
+          {"url": "https://habr.com/ru/articles/1017260/", "title": "AI-агенты + Sheets API верификация", "relevance": "medium"}
+        ]
+      }
+    ]
+  },
+  "unique_urls": [
+    {
+      "url": "https://happycapy.ai/ru/tools/one-pager-generator",
+      "title": "One Pager Generator — бесплатный конструктор сводки на одной странице ...",
+      "from_query": "one pager для собственника финансы 2026"
+    },
+    {
+      "url": "https://feofinance.com/blog/tpost/ef7zjnl811-primeri-one-pager",
+      "title": "Примеры One pager - FeoFinance",
+      "from_query": "one pager для собственника финансы 2026"
+    },
+    {
+      "url": "https://snapprojections.com/blog/one-page-financial-plan/",
+      "title": "One-page financial plan: template and checklist for 2026",
+      "from_query": "one pager для собственника финансы 2026"
+    },
+    {
+      "url": "https://pitchbob.io/ru/blog/start-up-one-pager",
+      "title": "Как создать идеальный стартап OnePager для инвесторов?",
+      "from_query": "one pager для собственника финансы 2026"
+    },
+    {
+      "url": "https://biznesator.ru/onepage",
+      "title": "Onepage — стратегия и инвестиционный питч на одном листе",
+      "from_query": "one pager для собственника финансы 2026"
+    },
+    {
+      "url": "https://www.visme.co/templates/one-pagers/",
+      "title": "Free One-Pager Templates - Customize & Download | Visme",
+      "from_query": "one pager для собственника финансы 2026"
+    },
+    {
+      "url": "https://e.fd.ru/1194077",
+      "title": "Все инструменты августа в одном месте - Финансовый директор № 8, август ...",
+      "from_query": "one pager для собственника финансы август 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/bcdd85a53cab29201e821092d1a21cc8/",
+      "title": "Доллар и рубль. Прогноз на август 2026. Прогноз курса доллара и прогноз ...",
+      "from_query": "one pager для собственника финансы август 2026"
+    },
+    {
+      "url": "https://edugusarov.com/ru/prompty-dlya-startapera-one-pager-investory/",
+      "title": "Промты для one-pager инвесторам: готовые шаблоны стартаперу",
+      "from_query": "one pager для собственника финансы август 2026"
+    },
+    {
+      "url": "https://fincult.info/news/chto-izmenitsya-dlya-vashikh-finansov-v-2026-godu/",
+      "title": "Что изменится для ваших финансов в 2026 году",
+      "from_query": "one pager для собственника финансы новости 2026"
+    },
+    {
+      "url": "https://delovoe.tv/event/izmeneniya_v_sfere_lichnih_finansov_s_1_iyulya_2026/",
+      "title": "Названы шесть ключевых изменений в сфере финансов для россиян с 1 июля ...",
+      "from_query": "one pager для собственника финансы новости 2026"
+    },
+    {
+      "url": "https://www.united.ru/nnews/putevoditel-po-lichnym-finansam-chto-izmenitsya-v-2026-godu/",
+      "title": "Путеводитель по личным финансам: что изменится в 2026 году",
+      "from_query": "one pager для собственника финансы новости 2026"
+    },
+    {
+      "url": "https://light-fin.ru/poslednie-novosti-finansov-i-kreditovaniya-v-2026-godu/",
+      "title": "Последние новости финансов и кредитования в 2026 году - Финансы Light",
+      "from_query": "one pager для собственника финансы новости 2026"
+    },
+    {
+      "url": "https://iz.ru/tag/finansy",
+      "title": "Финансы — последние и свежие новости сегодня и за 2026 год на iz.ru ...",
+      "from_query": "one pager для собственника финансы новости 2026"
+    },
+    {
+      "url": "https://www.rbc.ru/quote/01/07/2026/6a2fc5a69a7947b33e416063",
+      "title": "Что изменится в личных финансах для россиян с 1 июля 2026 года",
+      "from_query": "one pager для собственника финансы новости 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://axioma-ai.ru/ai-russia/russia-ai-fintech-banking-automation-2026-20260815",
+      "title": "Ai В Российском Финтехе 2026: Банки Автоматизируют До 70% Обращений ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+      "title": "PDF Автоматизация 2026 всё,",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://impdata.ru/blog/finansovyj-dashbord-dlya-sobstvennika",
+      "title": "Финансовый дашборд для собственника: что должно быть на одном экране ...",
+      "from_query": "one pager для собственника финансы 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://360.ru/tekst/obschestvo/sila-v-edinstve-chemu-posvjaschen-2026/",
+      "title": "Чему посвящен 2026 год в России и какие тематические годы уже были | 360.ru",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://mirkosmosa.ru/holiday/2026",
+      "title": "Праздники в 2026 году: полный календарь праздников на каждый месяц",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/am1bDGtbQE6qWNrS",
+      "title": "Как собрать еженедельный дайджест собственнику из Google Sheets в ...",
+      "from_query": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр 2026"
+    },
+    {
+      "url": "https://mksegment.ru/b/kak-delat-one-pager",
+      "title": "Как делать one pager - mksegment.ru",
+      "from_query": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр 2026"
+    },
+    {
+      "url": "https://mksegment.ru/c/kak-sozdat-uspeshnyj-onepager-rukovodstvo-so-sovetami-i-rekomendaciyami",
+      "title": "Как сделать onepager: лучшие советы и рекомендации",
+      "from_query": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр 2026"
+    },
+    {
+      "url": "https://impdata.ru/blog/kak-sdelat-finansovyj-dashboard-dlya-sobstvennika",
+      "title": "Как сделать финансовый dashboard для собственника",
+      "from_query": "Как собрать one-pager для собственника из Sheets: 1 экран, 5 цифр 2026"
+    },
+    {
+      "url": "https://genad.ru/dashboard-sobstvennika-161/",
+      "title": "Дашборд собственника: что должен содержать",
+      "from_query": "websearch_cursor primary"
+    },
+    {
+      "url": "https://adpass.ru/dashbordy-dlya-sobstvennika-i-ropa-kak-perestat-gadat-i-nachat-upravlyat-za-5-minut-v-den/",
+      "title": "Дашборды для собственника и РОПа: 5 минут в день",
+      "from_query": "websearch_cursor primary"
+    },
+    {
+      "url": "https://gse.kz/blog/dashbord-sobstvennika-kpi-istochniki-dannykh",
+      "title": "Дашборд для собственника: деньги, продажи и риски в 1 экране",
+      "from_query": "websearch_cursor primary"
+    },
+    {
+      "url": "https://noboring-finance.ru/gazeta/glossariy-otchety-dlya-sobstvennikov/page2/7/",
+      "title": "Отчёты для собственника — Нескучные финансы",
+      "from_query": "websearch_cursor primary"
+    },
+    {
+      "url": "https://tableprof.ru/",
+      "title": "TableProf — автоматизация в Google Sheets",
+      "from_query": "websearch_cursor sheets"
+    },
+    {
+      "url": "https://excel.birdyx.ru/blog/show/uchet-biznesa-google-sheets",
+      "title": "Google таблица для бизнеса с дашбордом",
+      "from_query": "websearch_cursor sheets"
+    },
+    {
+      "url": "https://xn--80acea1apc7cg1b5c.xn--p1ai/upruchetsdashbordom",
+      "title": "Управленческий учёт в Google Таблицах с дашбордом",
+      "from_query": "websearch_cursor sheets"
+    },
+    {
+      "url": "https://peroksa.ru/guides/business-financials",
+      "title": "Финансовый дашборд для бизнеса | Peroksa",
+      "from_query": "websearch_cursor sheets"
+    },
+    {
+      "url": "https://getfiledrop.com/how-to-build-a-financial-dashboard-in-google-sheets/",
+      "title": "How to Build a Financial Dashboard in Google Sheets",
+      "from_query": "websearch_cursor sheets"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
+      "title": "Автоматизация финансов no-code — КОДА",
+      "from_query": "websearch_cursor secondary"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "title": "Обезличивание данных перед ChatGPT — КОДА",
+      "from_query": "websearch_cursor security"
+    },
+    {
+      "url": "https://developers.google.com/workspace/sheets/api/guides/batch",
+      "title": "Batch requests | Google Sheets API",
+      "from_query": "websearch_cursor secondary"
+    },
+    {
+      "url": "https://habr.com/ru/articles/1017260/",
+      "title": "Как я заменил финансовый отдел цепочкой AI-агентов",
+      "from_query": "websearch_cursor secondary"
+    }
+  ]
+}
