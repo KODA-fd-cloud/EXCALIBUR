@@ -1,10 +1,10 @@
 {
-  "topic_id": "B68",
-  "h1": "Как разделить CAPEX и OPEX в управленке на Google Sheets",
-  "slug": "capex-opex-google-sheets",
+  "topic_id": "B69",
+  "h1": "Как собрать aging кредиторской задолженности в Google Sheets за вечер",
+  "slug": "aging-kreditorki-google-sheets",
   "status": "pending",
-  "proposed_at": 1786884834,
-  "proposal_message_id": 394,
+  "proposed_at": 1786886876,
+  "proposal_message_id": 397,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -33,7 +33,7 @@
     "B62",
     "B65",
     "B66",
-    "B67"
-  ],
-  "reminded_at": 1786884834
+    "B67",
+    "B68"
+  ]
 }
