@@ -1,10 +1,10 @@
 {
-  "topic_id": "B70",
-  "h1": "Как считать маржу по проектам в Google Sheets: выручка, прямые, вклад",
-  "slug": "marzha-po-proektam-google-sheets",
+  "topic_id": "B71",
+  "h1": "Как обучение n8n с Нуля в 2026: [ТОП-7] онлайн-курсов по автоматизации сценарий автоматизации — Top kursy (июль 2026) на DTF",
+  "slug": "obuchenie-n8n-s-nulya-v-2026-top-7-onlajn-kursov-po-avtomati",
   "status": "pending",
-  "proposed_at": 1786889956,
-  "proposal_message_id": 401,
+  "proposed_at": 1786891671,
+  "proposal_message_id": 404,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -35,7 +35,7 @@
     "B66",
     "B67",
     "B68",
-    "B69"
-  ],
-  "reminded_at": 1786889956
+    "B69",
+    "B70"
+  ]
 }
