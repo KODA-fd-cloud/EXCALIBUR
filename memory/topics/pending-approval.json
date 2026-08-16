@@ -1,10 +1,10 @@
 {
-  "topic_id": "B69",
-  "h1": "Как собрать aging кредиторской задолженности в Google Sheets за вечер",
-  "slug": "aging-kreditorki-google-sheets",
+  "topic_id": "B70",
+  "h1": "Как считать маржу по проектам в Google Sheets: выручка, прямые, вклад",
+  "slug": "marzha-po-proektam-google-sheets",
   "status": "pending",
-  "proposed_at": 1786886876,
-  "proposal_message_id": 397,
+  "proposed_at": 1786888434,
+  "proposal_message_id": 400,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -34,6 +34,7 @@
     "B65",
     "B66",
     "B67",
-    "B68"
+    "B68",
+    "B69"
   ]
 }
