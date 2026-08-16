@@ -3,8 +3,8 @@
   "h1": "Как настроить права доступа к финансовым папкам Google Drive без утечек",
   "slug": "prava-dostupa-drive-finotdel",
   "status": "pending",
-  "proposed_at": 1786879545,
-  "proposal_message_id": 388,
+  "proposed_at": 1786880658,
+  "proposal_message_id": 389,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -33,5 +33,6 @@
     "B62",
     "B65",
     "B66"
-  ]
+  ],
+  "reminded_at": 1786880659
 }
