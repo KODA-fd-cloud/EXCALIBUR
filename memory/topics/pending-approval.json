@@ -3,8 +3,8 @@
   "h1": "Как сверять акты сверки в Excel: пошаговая инструкция 2026",
   "slug": "kak-sveryat-akty-sverki-v-excel-poshagovaya-instrukciya-2026",
   "status": "pending",
-  "proposed_at": 1786945796,
-  "proposal_message_id": 426,
+  "proposed_at": 1786949259,
+  "proposal_message_id": 427,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -43,5 +43,6 @@
     "B74",
     "B75",
     "B76"
-  ]
+  ],
+  "reminded_at": 1786949259
 }
