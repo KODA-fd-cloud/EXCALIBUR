@@ -1,10 +1,10 @@
 {
-  "topic_id": "B75",
-  "h1": "Как иИ для бухгалтеров — онлайн-курс по цифровой трансформации учета",
-  "slug": "ii-dlya-buhgalterov-onlajn-kurs-po-cifrovoj-transformacii-uc",
+  "topic_id": "B76",
+  "h1": "Как автоматизация Финансовых Расчетов в Excel: Ваш Путь к Безупречной",
+  "slug": "avtomatizaciya-finansovyh-raschetov-v-excel-vash-put-k-bezup",
   "status": "pending",
-  "proposed_at": 1786940749,
-  "proposal_message_id": 419,
+  "proposed_at": 1786943270,
+  "proposal_message_id": 422,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -40,6 +40,7 @@
     "B71",
     "B72",
     "B73",
-    "B74"
+    "B74",
+    "B75"
   ]
 }
