@@ -1,10 +1,10 @@
 {
-  "topic_id": "B72",
-  "h1": "n8n Finance Automation in 2026: Real Workflow Examples for AP, AR, and Close",
-  "slug": "n8n-finance-automation-in-2026-real-workflow-examples-for-ap",
+  "topic_id": "B73",
+  "h1": "Как автоматизация на n8n под ключ: разработка и внедрение в бизнес-процессы | Secret Agents",
+  "slug": "avtomatizaciya-na-n8n-pod-klyuch-razrabotka-i-vnedrenie-v-bi",
   "status": "pending",
-  "proposed_at": 1786911481,
-  "proposal_message_id": 409,
+  "proposed_at": 1786929985,
+  "proposal_message_id": 412,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -37,7 +37,7 @@
     "B68",
     "B69",
     "B70",
-    "B71"
-  ],
-  "reminded_at": 1786911481
+    "B71",
+    "B72"
+  ]
 }
