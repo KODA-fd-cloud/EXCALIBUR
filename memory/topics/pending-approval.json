@@ -1,10 +1,10 @@
 {
-  "topic_id": "B73",
-  "h1": "Как автоматизация на n8n под ключ: разработка и внедрение в бизнес-процессы | Secret Agents",
-  "slug": "avtomatizaciya-na-n8n-pod-klyuch-razrabotka-i-vnedrenie-v-bi",
+  "topic_id": "B74",
+  "h1": "Как cursor AI: полный туториал по вайбкодингу в 2026 — журнал «Код»",
+  "slug": "cursor-ai-polnyj-tutorial-po-vajbkodingu-v-2026-zhurnal-kod",
   "status": "pending",
-  "proposed_at": 1786934496,
-  "proposal_message_id": 413,
+  "proposed_at": 1786937627,
+  "proposal_message_id": 416,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -38,7 +38,7 @@
     "B69",
     "B70",
     "B71",
-    "B72"
-  ],
-  "reminded_at": 1786934496
+    "B72",
+    "B73"
+  ]
 }
