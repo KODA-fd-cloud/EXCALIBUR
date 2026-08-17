@@ -1,10 +1,10 @@
 {
-  "topic_id": "B77",
-  "h1": "Как сверять акты сверки в Excel: пошаговая инструкция 2026",
-  "slug": "kak-sveryat-akty-sverki-v-excel-poshagovaya-instrukciya-2026",
+  "topic_id": "B78",
+  "h1": "Как ИИ помогает выявлять ошибки в актах сверки: разбор реального кейса",
+  "slug": "kak-ii-pomogaet-vyyavlyat-oshibki-v-aktah-sverki-razbor-real",
   "status": "pending",
-  "proposed_at": 1786949259,
-  "proposal_message_id": 427,
+  "proposed_at": 1786953006,
+  "proposal_message_id": 430,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -42,7 +42,7 @@
     "B73",
     "B74",
     "B75",
-    "B76"
-  ],
-  "reminded_at": 1786949259
+    "B76",
+    "B77"
+  ]
 }
