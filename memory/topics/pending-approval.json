@@ -1,10 +1,10 @@
 {
-  "topic_id": "B74",
-  "h1": "Как cursor AI: полный туториал по вайбкодингу в 2026 — журнал «Код»",
-  "slug": "cursor-ai-polnyj-tutorial-po-vajbkodingu-v-2026-zhurnal-kod",
+  "topic_id": "B75",
+  "h1": "Как иИ для бухгалтеров — онлайн-курс по цифровой трансформации учета",
+  "slug": "ii-dlya-buhgalterov-onlajn-kurs-po-cifrovoj-transformacii-uc",
   "status": "pending",
-  "proposed_at": 1786937627,
-  "proposal_message_id": 416,
+  "proposed_at": 1786940749,
+  "proposal_message_id": 419,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -39,6 +39,7 @@
     "B70",
     "B71",
     "B72",
-    "B73"
+    "B73",
+    "B74"
   ]
 }
