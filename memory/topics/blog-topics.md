@@ -1516,6 +1516,126 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B83 — Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ..
+
+- **priority:** P0
+- **slug:** avtomatizaciya-na-n8n-dlya-biznesa-2026-zadachi-cena-self-ho
+- **theme_key:** trend_avtomatizaciya_na_n8n_dlya_biznesa_2026_
+- **h1:** Как автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs 
+- **primary_query:** автоматизация на n8n для бизнеса 2026 задачи цена self-hosted vs
+- **secondary_queries:** автоматизация финотдела, автоматизация на n8n для бизнеса 2026 задачи цена self-hosted vs, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://bot-craft.ru/blog/n8n-automation-2026/
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B84 — n8n для бизнеса: AI-агенты и автоматизация — гайд 2026 — Обучение по .
+
+- **priority:** P0
+- **slug:** n8n-dlya-biznesa-ai-agenty-i-avtomatizaciya-gajd-2026-obuche
+- **theme_key:** trend_n8n_dlya_biznesa_ai_agenty_i_avtomatizac
+- **h1:** n8n для бизнеса: AI-агенты и автоматизация — гайд 2026 — Обучение по 
+- **primary_query:** n8n для бизнеса ai-агенты и автоматизация гайд 2026 обучение по
+- **secondary_queries:** автоматизация финотдела, n8n для бизнеса ai-агенты и автоматизация гайд 2026 обучение по, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://mayai.ru/n8n-gayd-biznes-ai-agenty-avtomatizaciya-2026/
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B85 — Автоматизация финансов с n8n, Actual Budget и SimpleFIN
+
+- **priority:** P0
+- **slug:** avtomatizaciya-finansov-s-n8n-actual-budget-i-simplefin
+- **theme_key:** trend_avtomatizaciya_finansov_s_n8n_actual_bud
+- **h1:** Как автоматизация финансов с n8n, Actual Budget и SimpleFIN
+- **primary_query:** автоматизация финансов с n8n actual budget и simplefin
+- **secondary_queries:** автоматизация финотдела, автоматизация финансов с n8n actual budget и simplefin, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://home-hosted.ru/articles/samostoyatelnoe-upravlenie-finansami-n8n-actual-
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B86 — Автоматизация на n8n — workflow между 400+ сер… - FlowFrame
+
+- **priority:** P0
+- **slug:** avtomatizaciya-na-n8n-workflow-mezhdu-400-ser-flowframe
+- **theme_key:** trend_avtomatizaciya_na_n8n_workflow_mezhdu_40
+- **h1:** Как автоматизация на n8n — workflow между 400+ сер… - FlowFrame
+- **primary_query:** автоматизация на n8n workflow между 400 сер - flowframe
+- **secondary_queries:** автоматизация финотдела, автоматизация на n8n workflow между 400 сер - flowframe, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://flowframe.ru/avtomatizaciya/n8n-avtomatizaciya-2026/
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B87 — Система управленческого учёта в Таблицах и Формах Google | Udemy
+
+- **priority:** P0
+- **slug:** sistema-upravlencheskogo-ucheta-v-tablicah-i-formah-google-u
+- **theme_key:** trend_sistema_upravlencheskogo_ucheta_v_tablic
+- **h1:** Как система управленческого учёта в Таблицах и Формах Google | Udemy
+- **primary_query:** система управленческого учёта в таблицах и формах google udemy
+- **secondary_queries:** автоматизация финотдела, система управленческого учёта в таблицах и формах google udemy, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://www.udemy.com/course/google-v/
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Сняты как смысловые дубли (2026-08-03): B41≈B28 сверка банка, B42≈B25 выписка→Sheets, B43≈B13 1С→Excel, B44≈B17 формулы Excel+ИИ, B45≈B26 план-факт, B40≈B27 дайджест/отчёт.

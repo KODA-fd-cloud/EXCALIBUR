@@ -3,8 +3,8 @@
   "h1": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
   "slug": "kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
   "status": "pending",
-  "proposed_at": 1787005863,
-  "proposal_message_id": 441,
+  "proposed_at": 1787007587,
+  "proposal_message_id": 442,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -47,5 +47,6 @@
     "B78",
     "B79",
     "B80"
-  ]
+  ],
+  "reminded_at": 1787007587
 }
