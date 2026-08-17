@@ -3,8 +3,8 @@
   "h1": "Как автоматизация сверки взаиморасчётов в 1С: ошибки, причины и готовые решения",
   "slug": "avtomatizaciya-sverki-vzaimoraschetov-v-1s-oshibki-prichiny",
   "status": "pending",
-  "proposed_at": 1786955918,
-  "proposal_message_id": 433,
+  "proposed_at": 1786958613,
+  "proposal_message_id": 434,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -45,5 +45,6 @@
     "B76",
     "B77",
     "B78"
-  ]
+  ],
+  "reminded_at": 1786958613
 }
