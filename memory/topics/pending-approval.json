@@ -1,10 +1,10 @@
 {
-  "topic_id": "B78",
-  "h1": "Как ИИ помогает выявлять ошибки в актах сверки: разбор реального кейса",
-  "slug": "kak-ii-pomogaet-vyyavlyat-oshibki-v-aktah-sverki-razbor-real",
+  "topic_id": "B79",
+  "h1": "Как автоматизация сверки взаиморасчётов в 1С: ошибки, причины и готовые решения",
+  "slug": "avtomatizaciya-sverki-vzaimoraschetov-v-1s-oshibki-prichiny",
   "status": "pending",
-  "proposed_at": 1786953006,
-  "proposal_message_id": 430,
+  "proposed_at": 1786955918,
+  "proposal_message_id": 433,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -43,6 +43,7 @@
     "B74",
     "B75",
     "B76",
-    "B77"
+    "B77",
+    "B78"
   ]
 }
