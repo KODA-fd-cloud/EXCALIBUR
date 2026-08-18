@@ -1,0 +1,31 @@
+{
+  "article": "memory/blog/articles/B81-kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 3,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "6 мин",
+      "kind": "metric_or_duration",
+      "context": "imeout UrlFetch ~60 с, ответ до 50 MB, runtime до 6 мин. function saveOnecCredentials(baseUrl, user, pass",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "20 000",
+      "kind": "large_number",
+      "context": "script.external_request . Квоты UrlFetch: порядка 20 000/день (consumer) и 100 000 (Workspace). Сделайте:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100 000",
+      "kind": "large_number",
+      "context": "Квоты UrlFetch: порядка 20 000/день (consumer) и 100 000 (Workspace). Сделайте: успех на $top=5 + меню. Не",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

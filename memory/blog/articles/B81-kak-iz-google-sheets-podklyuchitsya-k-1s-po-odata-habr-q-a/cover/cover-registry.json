@@ -1,0 +1,50 @@
+{
+  "topic_id": "B81",
+  "slug": "kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
+  "cover_family": "gradient_abstract",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Ведущий у ноутбука: Excel ок, Google Sheets «Адрес недоступен» к 1С OData",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-08-18T05:10:57+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Ведущий у ноутбука: Excel ок, Google Sheets «Адрес недоступен» к 1С OData",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Таблица сценариев: когда финотделу нужен мост Sheets↔OData, а когда нет",
+      "h2_anchor": "Определите, когда Sheets↔OData нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Чеклист подготовки публикации 1С OData и доступности из сети Google",
+      "h2_anchor": "Подготовьте публикацию 1С и доступность из сети Google",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Схема: срез 1С без сырых ПДн на staging-лист Google Sheets",
+      "h2_anchor": "Защитите данные: без сырых ПДн в облачный Sheet",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

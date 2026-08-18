@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B81-kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1017,
+      572
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 572,
+        "end": 580
+      },
+      "v_gutter_px": {
+        "start": 1017,
+        "end": 1026
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1017,
+          "bottom": 572
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1017,
+          "bottom": 572
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Ведущий у ноутбука: Excel ок, Google Sheets «Адрес недоступен» к 1С OData",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1026,
+          "top": 0,
+          "right": 2048,
+          "bottom": 572
+        },
+        "raw_box_px": {
+          "left": 1026,
+          "top": 0,
+          "right": 2048,
+          "bottom": 572
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Таблица сценариев: когда финотделу нужен мост Sheets↔OData, а когда нет",
+        "h2_anchor": "Определите, когда Sheets↔OData нужен финотделу (и когда нет)"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 580,
+          "right": 1017,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 580,
+          "right": 1017,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист подготовки публикации 1С OData и доступности из сети Google",
+        "h2_anchor": "Подготовьте публикацию 1С и доступность из сети Google"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1026,
+          "top": 580,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1026,
+          "top": 580,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема: срез 1С без сырых ПДн на staging-лист Google Sheets",
+        "h2_anchor": "Защитите данные: без сырых ПДн в облачный Sheet"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Определите, когда Sheets↔OData нужен финотделу (и когда нет)",
+    "injected inline_2 after H2 — Подготовьте публикацию 1С и доступность из сети Google",
+    "injected inline_3 after H2 — Защитите данные: без сырых ПДн в облачный Sheet"
+  ]
+}

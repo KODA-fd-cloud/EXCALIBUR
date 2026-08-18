@@ -1,0 +1,42 @@
+{
+  "topic_id": "B81",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Excel видит 1С. Sheets пишет «Адрес недоступен»",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий у ноутбука: Excel ок, Google Sheets «Адрес недоступен» к 1С OData",
+      "scene_hint": "Лицо строго с reference (очки, quiff, борода). Одежда: тёмно-синий худи финотдела + бейдж «Sheets», НЕ красный смокинг. Поза: показывает на два fake-скрина — слева Excel с зелёной галочкой OData, справа Apps Script лог «Адрес недоступен». Рваная бумага, скотч, розовый стикер «UrlFetch ≠ LAN», жёлтый маркер на «Адрес недоступен», мем facepalm + кот-шок. Крупный кириллический hook.",
+      "meme_caption_ru": "UrlFetch ≠ ваш VPN"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Определите, когда Sheets↔OData нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Читаемая UI-таблица 2 колонки: «Нужен Sheets↔OData» vs «Лучше Excel/выгрузка»: строки сценарий финотдела, частота обновления, кто жмёт кнопку, сеть Google. Розовый стикер «когда да/нет», без лица героя.",
+      "alt": "Таблица сценариев: когда финотделу нужен мост Sheets↔OData, а когда нет"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте публикацию 1С и доступность из сети Google",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист на доске: публикация OData на веб-сервере, HTTPS снаружи, Basic Auth, $metadata отвечает, IP Google не LAN. Галочки и один красный пункт «VPN/private = блок». Скотч + мини-скрин curl. Без лица героя.",
+      "alt": "Чеклист подготовки публикации 1С OData и доступности из сети Google"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Защитите данные: без сырых ПДн в облачный Sheet",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема стрелками: 1С срез → обезличивание/агрегаты → staging raw_* → Google Sheet. Перечёркнутый блок «ФИО/ИНН в облако». Стикер «ПДн стоп». Без лица героя.",
+      "alt": "Схема: срез 1С без сырых ПДн на staging-лист Google Sheets"
+    }
+  }
+}

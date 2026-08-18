@@ -1,0 +1,32 @@
+{
+  "topic_id": "B81",
+  "slug": "kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
+  "article_dir": "memory/blog/articles/B81-kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
+  "publish_date": "2026-08-18",
+  "dry_run": {
+    "ok": true,
+    "title": "Как из Google Sheets подключиться к 1С по OData: шаги",
+    "slug": "kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
+    "php_bytes": 8419735
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 6,
+    "failed_count": 0,
+    "site_base": "https://koda-fd.ru"
+  },
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "missing_env": [
+    "memory/site.env.local (file absent)",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT (or FTP_PASSWORD)",
+    "SSH_HOST / SSH_USER / SSH_PASSWORD (or SSH_PASS) — optional docker path",
+    "DOCKER_WP_CONTAINER — optional docker path"
+  ],
+  "expected_permalink": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/",
+  "live_publish_attempted": false,
+  "published_articles_updated": false,
+  "error": "No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}

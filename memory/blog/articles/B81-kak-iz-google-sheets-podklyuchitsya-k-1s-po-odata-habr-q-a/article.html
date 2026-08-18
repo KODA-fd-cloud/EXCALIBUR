@@ -1,0 +1,169 @@
+<p>Excel и браузер открывают OData 1С, а Google Sheets через Apps Script отвечает "Адрес недоступен". Почти всегда виновата не "кривая" таблица, а сеть: UrlFetchApp ходит с IP Google, а не с вашего офисного ПК. Ниже – рабочий маршрут: сделать публикацию доступной по HTTPS, починить Basic Auth в скрипте, вытянуть JSON на лист raw_* и повесить кнопку "Обновить из 1С".</p>
+
+<p>OData в 1С – стандартный REST-интерфейс платформы (OData 3.0): защищённый "курьер" между учётной системой и внешней таблицей. Google Apps Script – как макрос Excel в облаке Google. Вопрос с Хабра Q&amp;A без ответов как раз про эту связку: код с <code>credentials: 'include'</code> падает, хотя Power Query живёт.</p>
+
+<p>Общий путь Excel ↔ 1С – в <a href="/blog/vygruzka-1c-excel-odata/">выгрузке 1С в Excel через OData</a>. Меню и кнопка в Sheets – в <a href="/blog/google-apps-script-finansist-obnovit-dannye/">гайде по Apps Script для финансиста</a>. Здесь фокус: Sheets → OData и сетевой блокер UrlFetch.</p>
+
+<h2 id="when-needed">Определите, когда Sheets↔OData нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Таблица сценариев: когда финотделу нужен мост Sheets↔OData, а когда нет" loading="lazy">
+</figure>
+
+<p>Нужно, если регулярно тянете срез статей ДДС или движений денег в Google Sheets без "Сохранить как → Импорт". Не нужно для разовых 20 строк – быстрее CSV. Опасно тащить в облако полные карточки физлиц и сырые ПДн.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Сценарий</th>
+      <th>Sheets + OData</th>
+      <th>Лучше иначе</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Еженедельный срез ДДС</b></td>
+      <td>Да, кнопка на raw_*</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td><b>Разовый отчёт</b></td>
+      <td>Избыточно</td>
+      <td>Excel / Power Query</td>
+    </tr>
+    <tr>
+      <td><b>1С только в LAN</b></td>
+      <td>Прямой GAS не взлетит</td>
+      <td>Push из локального скрипта</td>
+    </tr>
+    <tr>
+      <td><b>Запись обратно в 1С</b></td>
+      <td>Не стартовый кейс</td>
+      <td>Только чтение + регламент</td>
+    </tr>
+  </tbody>
+</table>
+<blockquote>
+  <b>Вердикт:</b> если Excel уже видит OData, а Sheets нет – проблема сети, не "Sheets хуже". <b>Сделайте:</b> чеклист HTTPS с телефона вне офиса. <b>Не делайте:</b> неделю править код, пока URL живёт только в LAN.
+</blockquote>
+
+<h2 id="prep-1c">Подготовьте публикацию 1С и доступность из сети Google</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Чеклист подготовки публикации 1С OData и доступности из сети Google" loading="lazy">
+</figure>
+
+<p>Без публичного HTTPS писать Apps Script бессмысленно. Платформа 1С (от 8.3.5) публикует REST на веб-сервере (IIS или Apache): Администрирование → Публикация на веб-сервере → галка "Публиковать стандартный интерфейс OData". Состав объектов – <code>УстановитьСоставСтандартногоИнтерфейсаOData</code> или в БСП: Настройки стандартного интерфейса OData. Через OData недоступны отчёты, журнал регистрации и пользователи.</p>
+<ol>
+  <li>Создайте отдельного пользователя 1С только на чтение нужных сущностей.</li>
+  <li>Опубликуйте базу с галкой OData и узким составом (ДДС, статьи – без лишнего).</li>
+  <li>Проверьте в браузере: <code>https://ваш-хост/.../odata/standard.odata/$metadata</code> с Basic Auth.</li>
+  <li>Повторите URL с телефона вне Wi‑Fi офиса. Не открывается – Google тоже не достучится.</li>
+  <li>Адрес не должен быть <code>192.168.*</code>: UrlFetchApp не ходит в private IP и закрытый контур.</li>
+  <li>Широкий whitelist всех IP из goog.json часто нереалистичен. Чаще – reverse proxy, промежуточный API или Plan B (push из локального контура).</li>
+</ol>
+<p><b>Сделайте:</b> readonly-пользователь + $metadata снаружи. <b>Не делайте:</b> открывать весь состав "как есть" и надеяться, что firewall пропустит пул Google.</p>
+<p>Честно говоря, половина "нерабочих" скриптов с Хабра упирается именно сюда: код правильный, а публикация 1С не видна из интернета. Пока браузер с мобильного LTE не открывает $metadata – не тратьте вечер на UrlFetchApp.</p>
+
+<h2 id="security-data">Защитите данные: без сырых ПДн в облачный Sheet</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Схема: срез 1С без сырых ПДн на staging-лист Google Sheets" loading="lazy">
+</figure>
+
+<p>Google Sheets – чужой облачный "сейф", не ваш серверный шкаф. В вопросе на Хабре тянули <code>Catalog_ФизическиеЛица</code> – красный флаг 152-ФЗ. Staging-лист – журнал для отчёта, не копия кадровой картотеки.</p>
+<ul>
+  <li>Берите срезы статей и ДДС с <code>$select</code> и <code>$filter</code>.</li>
+  <li>На отладке маскируйте ИНН/ФИО; в прод не кладите лишние поля "на будущее".</li>
+  <li>Логин и пароль OData – только в <code>PropertiesService</code>, никогда в ячейках и git.</li>
+  <li>Перед разбором ответов в ChatGPT/Claude обезличьте реквизиты – как в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию</a>.</li>
+</ul>
+<p><b>Сделайте:</b> минимум полей на raw_*. <b>Не делайте:</b> выгружать физлиц "потому что сущность была в примере".</p>
+
+<h2 id="gas-steps">Соберите пошагово: Apps Script → OData → лист</h2>
+<blockquote>
+  <b>Схема:</b> меню "Обновить" → UrlFetchApp (Basic Auth) → JSON value[] → лист raw_* → toast
+</blockquote>
+<ol>
+  <li>Таблица → Расширения → Apps Script; сохраните скрипт, привязанный к файлу.</li>
+  <li>Запишите учётные данные в Script Properties (base URL оканчивается на <code>/odata/standard.odata</code>).</li>
+  <li>GET на <code>$metadata</code>, затем запрос с <code>$format=json&amp;$top=5</code> на безопасную сущность.</li>
+  <li>Разберите ответ: <code>JSON.parse</code> → <code>value</code> → <code>setValues</code> на <code>raw_*</code>; при BOM срежьте первый символ.</li>
+  <li>Добавьте <code>onOpen</code> с меню "Обновить из 1С".</li>
+  <li>Режьте объём <code>$filter</code>/<code>$top</code>: timeout UrlFetch ~60 с, ответ до 50 MB, runtime до 6 мин.</li>
+</ol>
+<pre><code>function saveOnecCredentials(baseUrl, user, password) {
+  PropertiesService.getScriptProperties().setProperties({
+    ONEC_BASE_URL: String(baseUrl || "").replace(/\/$/, ""),
+    ONEC_USER: String(user || ""),
+    ONEC_PASSWORD: String(password || "")
+  }, false);
+}
+
+function fetchODataTop5() {
+  var p = PropertiesService.getScriptProperties();
+  var base = p.getProperty("ONEC_BASE_URL");
+  var user = p.getProperty("ONEC_USER");
+  var pass = p.getProperty("ONEC_PASSWORD");
+  var url = base + "/Catalog_SafeEntity?$format=json&amp;$top=5";
+  var token = Utilities.base64Encode(user + ":" + pass);
+  var resp = UrlFetchApp.fetch(url, {
+    method: "get",
+    headers: { Authorization: "Basic " + token },
+    muteHttpExceptions: true
+  });
+  if (resp.getResponseCode() !== 200) {
+    throw new Error("OData HTTP " + resp.getResponseCode());
+  }
+  var text = resp.getContentText();
+  if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+  var rows = (JSON.parse(text).value || []).map(function (r) {
+    return [r.Ref_Key, r.Description];
+  });
+  var sh = SpreadsheetApp.getActive().getSheetByName("raw_odata")
+    || SpreadsheetApp.getActive().insertSheet("raw_odata");
+  sh.clearContents();
+  sh.getRange(1, 1, 1, 2).setValues([["Ref_Key", "Description"]]);
+  if (rows.length) sh.getRange(2, 1, rows.length + 1, 2).setValues(rows);
+}
+
+function onOpen() {
+  SpreadsheetApp.getUi().createMenu("Финансы")
+    .addItem("Обновить из 1С", "fetchODataTop5").addToUi();
+}</code></pre>
+<p>Параметр <code>credentials: 'include'</code> из браузерного Fetch в Apps Script не нужен – достаточно заголовка Authorization. При первом Run выдайте scope <code>script.external_request</code>. Квоты UrlFetch: порядка 20 000/день (consumer) и 100 000 (Workspace).</p>
+<p><b>Сделайте:</b> успех на $top=5 + меню. <b>Не делайте:</b> копировать браузерные сниппеты и тащить весь регистр сразу.</p>
+
+<h2 id="errors">Проверьте результат и разберите типичные ошибки (Хабр Q&amp;A)</h2>
+<p>Симптом: Excel видит OData, GAS пишет "Адрес недоступен". Почти всегда это маршрут – IP Google режется firewall, хост в LAN или private IP. Retry помогает при кратком сбое, но не откроет закрытую сеть.</p>
+<ul>
+  <li><b>Адрес недоступен</b> – публичный HTTPS или Plan B (локальный скрипт → webapp Sheets).</li>
+  <li><b>401 / 403</b> – логин, права, состав OData, сертификат HTTPS.</li>
+  <li><b>Таймаут ~60 с</b> – режьте <code>$top</code> и период.</li>
+  <li><b>Пустой лист при 200</b> – имя сущности и BOM перед parse.</li>
+  <li><b>Authorization required</b> – Run вручную и выдайте scopes.</li>
+</ul>
+<p><b>Сделайте:</b> диагностику "сеть → auth → объём → парсинг". <b>Не делайте:</b> крутить Basic Auth, пока $metadata не открывается с телефона вне офиса.</p>
+
+<h2 id="next-steps">Что автоматизировать дальше</h2>
+<p>Когда кнопка стабильно кладёт срез на raw_*, зафиксируйте регламент: кто жмёт, какой период, куда staging. Дальше – осторожный ночной триггер, HTML-сводка или push, если 1С нельзя открывать наружу. Рядом по стеку – <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизация финансов без кода</a>.</p>
+<p>Разборы таких контуров – в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article&utm_campaign=kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>. Уроки по финконтуру – в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>.</p>
+<ol>
+  <li>DoD: после клика raw_* заполнен, в meta есть updated_at.</li>
+  <li>Добавьте период в <code>$filter</code> под ваш ДДС.</li>
+  <li>Если GAS→1С закрыт ИБ – push локально → doPost webapp.</li>
+  <li>Не пишите в 1С из Sheets по умолчанию: стартуйте с чтения.</li>
+</ol>
+<p><b>Сделайте:</b> один стабильный срез + rollback листа. <b>Не делайте:</b> обещать "whitelist трёх IP Google и заработает навсегда".</p>
+
+<h2>Частые вопросы</h2>
+<h3>Можно ли подключить Google Sheets к 1С по OData без программиста?</h3>
+<p>Скрипт Apps Script копируется по шаблону. Публикацию OData и HTTPS один раз делает админ или 1С-ник. Финансист дальше жмёт кнопку и правит фильтр периода.</p>
+<h3>Сколько займёт внедрение связки Sheets → OData?</h3>
+<p>Если OData уже снаружи по HTTPS – вечер на скрипт и меню. Если база только в LAN – сначала инфраструктура (дни) или сразу Plan B с push.</p>
+<h3>Какие риски для данных при выгрузке в Google Sheets?</h3>
+<p>Пароль только в Script Properties; отдельный пользователь на чтение; не тащить физлиц. Перед нейросетями обезличивайте ИНН, ФИО и суммы.</p>
+<h3>Почему в Excel OData работает, а в Sheets – "Адрес недоступен"?</h3>
+<p>Excel ходит с вашего ПК. UrlFetchApp – с пула IP Google и не достучится до private IP. Сначала проверьте $metadata с телефона вне офиса.</p>
+<h3>Нужен ли IIS, чтобы публиковать OData 1С?</h3>
+<p>Нужен веб-сервер: IIS или Apache, либо облачная публикация провайдера. Без HTTP-публикации OData не заработает – это REST по HTTPS, не файл .dt.</p>
+<h3>Можно ли писать документы в 1С из Google Sheets?</h3>
+<p>Технически операции изменения есть, но для финотдела по умолчанию оставляйте только чтение. Запись – отдельный регламент и аудит.</p>
+<h3>Что делать, если 1С нельзя открывать в интернет?</h3>
+<p>Не мучайте whitelist goog.json. Выгружайте локально (Python/n8n) и пушите JSON в веб-приложение Google Sheets.</p>
