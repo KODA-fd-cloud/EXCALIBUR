@@ -1,0 +1,59 @@
+{
+  "article": "memory/blog/articles/B81-kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 7,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "6 минут",
+      "kind": "metric_or_duration",
+      "context": "всю базу одним запросом\" – у скрипта лимит около 6 минут на запуск и квоты Url Fetch. Подготовка данных и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 мин",
+      "kind": "metric_or_duration",
+      "context": "time-driven trigger с меньшим $top (лимит runtime 6 мин, квота Url Fetch до 20 000/день на consumer). В Q",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 дней",
+      "kind": "metric_or_duration",
+      "context": "остав объектов и whitelist – закладывайте от 2 до 5 дней с админом, без обещаний \"за час\". Какие риски для",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "891699",
+      "kind": "large_number",
+      "context": "На Хабр Q&amp;A №891699 автор описал знакомую боль: в Excel и Power Query",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "20 000",
+      "kind": "large_number",
+      "context": "шим $top (лимит runtime 6 мин, квота Url Fetch до 20 000/день на consumer). В Q&amp;A лишний credentials:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "401",
+      "kind": "large_number",
+      "context": "роверить URL с внешней сети, не из VPN офиса HTTP 401 Неверный логин/пароль; нет роли OData; пользовател",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "404",
+      "kind": "large_number",
+      "context": "пOData ; тот же логин в браузере Пустой value или 404 Объект не в составе OData; опечатка в Catalog_* От",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

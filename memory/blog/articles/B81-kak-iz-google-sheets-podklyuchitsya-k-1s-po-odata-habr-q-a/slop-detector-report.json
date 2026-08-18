@@ -1,0 +1,38 @@
+{
+  "verdict": "warning",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 6,
+  "over_long_sentences": [
+    {
+      "sentence": "На Хабр Q&amp;A №891699 автор описал знакомую боль: в Excel и Power Query OData к 1С подключается, в браузере с Basic Auth тоже, а скрипт Google Apps Script падает с \"Адрес недоступен\"",
+      "word_count": 32
+    },
+    {
+      "sentence": "Сценарий Sheets + Apps Script + OData Альтернатива Общий дашборд ДДС, остатков, справочников Да: кнопка обновления, несколько редакторов Power Query в Excel, если все с одного ПК Разовая выгрузка \"на глаз\" Избыточно \"Сохранить как\" или Excel/OData Отчёты СКД, регламентные задания, журнал регистрации Нет: стандартный OData их не отдаёт Обработка 1С или SQL База только в LAN без HTTPS Нет: UrlFetchApp не дойдёт Файл на Диск или no-code автоматизация финансов Вердикт: берите Sheets + GAS, если нужен повторяемый срез в облачной таблице и админ готов один раз открыть OData наружу по HTTPS",
+      "word_count": 88
+    },
+    {
+      "sentence": "Схема: админ публикует OData → тест URL в браузере → whitelist IP Google → Script Properties → UrlFetchApp + Basic Auth → парсинг JSON → лист raw_* → меню \"Обновить из 1С\" Чеклист для админа 1С: публикация на IIS/Apache (1С не ниже 8",
+      "word_count": 31
+    },
+    {
+      "sentence": "5), галка \"Публиковать стандартный интерфейс OData\", узкий состав объектов, отдельный read-only пользователь, HTTPS, allowlist диапазонов IP Google на firewall (запросы GAS идут не с ПК пользователя, а из пула Google)",
+      "word_count": 29
+    },
+    {
+      "sentence": "Вставьте основной код – паттерн из Q&amp;A, но с muteHttpExceptions: true и разбором кода ответа (ошибка \"Адрес недоступен\" часто маскирует сеть или SSL): function refreshFrom1C() { var p = PropertiesService",
+      "word_count": 28
+    },
+    {
+      "sentence": "Симптом Вероятная причина Что сделать \"Адрес недоступен\" / exception fetch Firewall блокирует IP Google; HTTP вместо HTTPS; база только в LAN; самоподписанный SSL Allowlist IP Google; включить HTTPS; проверить URL с внешней сети, не из VPN офиса HTTP 401 Неверный логин/пароль; нет роли OData; пользователь заблокирован Проверить Properties; роль УдаленныйДоступOData ; тот же логин в браузере Пустой value или 404 Объект не в составе OData; опечатка в Catalog_* Открыть $metadata , скопировать точное имя ресурса Таймаут / обрыв на большом объёме Лимит 6 мин; тяжёлый запрос без $top Дробить $top , фильтр $filter по периоду, пагинация по @odata",
+      "word_count": 90
+    }
+  ],
+  "readability": {
+    "score": 100.0,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 10.1,
+    "avg_syllables_per_word": 1.5
+  }
+}

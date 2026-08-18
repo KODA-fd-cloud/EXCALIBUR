@@ -1,0 +1,464 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-18",
+    "today_ru": "18.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-20",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-18 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B81",
+    "priority": "P0",
+    "slug": "kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
+    "h1": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+    "primary_query": "как из google sheets подключиться к 1с по odata хабр q a",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "как из google sheets подключиться к 1с по odata хабр q a",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как из google sheets подключиться к 1с по odata хабр q a 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+          "url": "https://qna.habr.com/q/891699",
+          "snippet": ""
+        },
+        {
+          "title": "Туториал: интеграция 1С и КХД через стандартный REST‐интерфейс Odata / Хабр",
+          "url": "https://habr.com/ru/companies/modusbi/articles/865798/",
+          "snippet": "Как из google sheets подключиться к 1С по odata? Всем привет! Кто-нибудь может подсказать, как подключиться к Odata из 1С с помощью Google Sheets (GAS)."
+        },
+        {
+          "title": "Чтение данных из Google Таблиц (Google Sheets) прямо в 1С, используя ...",
+          "url": "https://infostart.ru/1c/tools/2572620/",
+          "snippet": "Теперь давайте подробнее разберем, как получить доступ к справочникам, документам и другим данным, используя стандартные HTTP -запросы через REST- интерфейс и протокол OData 3.0."
+        },
+        {
+          "title": "Интеграция 1С через API 2026 - habab.ru",
+          "url": "https://habab.ru/integratsiya-1s-api-odata",
+          "snippet": "Код представляет собой клиент для однократного чтения всего указанного диапазона ячеек из Google Таблицы в 1С."
+        },
+        {
+          "title": "Загрузка Google таблицы 1С через API - Koderline",
+          "url": "https://www.koderline.ru/expert/narabotki/article-integratsiya-programmy-1s-predpriyatie-s-google-tablitsami-zagruzka-dannykh-cherez-api/",
+          "snippet": "Практические рекомендации по диагностике основаны на типовых разборах интеграций 1С через OData и HTTP-сервисы; финальную редактуру выполнил Александр Руин, основатель habab.ru."
+        },
+        {
+          "title": "Работа с OData в 1С: настройка, HTTP-запросы и примеры",
+          "url": "https://1c-expert.vercel.app/articles/1/1s/1s-kak-rabotat-s-odata.html",
+          "snippet": "Загрузка Google таблицы через API в 1С позволяет автоматизировать обмен данными, создавать отчеты и упростить работу с информацией. Выбор метода интеграции зависит от сложности задачи и уровня технических навыков разработчика."
+        }
+      ],
+      "searched_at": "2026-08-18"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как из google sheets подключиться к 1с по odata хабр q a август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+          "url": "https://qna.habr.com/q/891699",
+          "snippet": ""
+        },
+        {
+          "title": "Use data from an OData feed - AppSheet Help - Google Help",
+          "url": "https://support.google.com/appsheet/answer/10106380?hl=en",
+          "snippet": "Всем привет! Кто-нибудь может подсказать, как подключиться к Odata из 1С с помощью Google Sheets (GAS). В Excel есть встроенный коннектор с окном авторизации (или тот же Power Query). Через него всё ок."
+        },
+        {
+          "title": "Какие есть инструменты для java для работы с Google Sheets? — Хабр Q&A",
+          "url": "https://qna.habr.com/q/1147158",
+          "snippet": "Simply put, by setting up an OData feed, you will enable not just AppSheet, but any other third-party application that has an OData connector to access and work with your data."
+        },
+        {
+          "title": "Коннектор Power Query Google Sheets - Power Query",
+          "url": "https://learn.microsoft.com/ru-ru/power-query/connectors/google-sheets",
+          "snippet": "Какие есть инструменты для решения подобных задач из-под java? Какими из них обычно пользуются и какими из них на ваш взгляд удобнее это делать?"
+        },
+        {
+          "title": "OData: варианты работы и возможности. Блог Programming Store",
+          "url": "https://wiki.programstore.ru/1s-odata/",
+          "snippet": "Чтобы подключиться к Google Sheets из Power Query Desktop, сделайте следующее: В интерфейсе получения данных найдите и выберите Google Sheets. Вам будет предложено указать URL-адрес Google Sheets. Скопируйте и вставьте URL-адрес из адресной строки браузера в вводную строку."
+        },
+        {
+          "title": "LLM + 1C: Почему чат-бот для учета - Habr",
+          "url": "https://habr.com/ru/articles/984008/",
+          "snippet": "OData (Open Data Protocol) — это открытый веб-протокол для получения, изменения и удаления данных. OData позволяет пользователям работать с данными с через протокол HTTP в виде запросов. Данные получаются в виде ответов, в формате XML или JSON."
+        }
+      ],
+      "searched_at": "2026-08-18"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как из google sheets подключиться к 1с по odata хабр q a новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+          "url": "https://qna.habr.com/q/891699",
+          "snippet": ""
+        },
+        {
+          "title": "Туториал: интеграция 1С и КХД через стандартный REST‐интерфейс Odata / Хабр",
+          "url": "https://habr.com/ru/companies/modusbi/articles/865798/",
+          "snippet": "Всем привет! Кто-нибудь может подсказать, как подключиться к Odata из 1С с помощью Google Sheets (GAS). В Excel есть встроенный коннектор с окном авторизации (или тот же Power Query). Через него всё ок."
+        },
+        {
+          "title": "Работа с OData в 1С: настройка, HTTP-запросы и примеры",
+          "url": "https://1c-expert.vercel.app/articles/1/1s/1s-kak-rabotat-s-odata.html",
+          "snippet": "Теперь давайте подробнее разберем, как получить доступ к справочникам, документам и другим данным, используя стандартные HTTP -запросы через REST- интерфейс и протокол OData 3.0."
+        },
+        {
+          "title": "Интеграция Google Sheets (Гугл таблицы) и 1С:Предприниматель по API без ...",
+          "url": "https://apimonster.ru/connector/bundle/googleSheets/1c-businessman/",
+          "snippet": "Полное руководство по работе с протоколом OData в 1С. Настройка публикаций, HTTP-запросы GET/POST, обработка JSON и частые ошибки интеграции."
+        },
+        {
+          "title": "Как включить OData в 1С: пошаговая инструкция и настройки",
+          "url": "https://1c-expert.vercel.app/articles/k/ka/kak-vklyuchit-odata-v-1s.html",
+          "snippet": "Если коннектора для сервиса нет, но у него есть api и вебхуки, то можно подключиться через универсальные коннекторы: Входящий вебхук, Исходяший вебхук, JavaScript."
+        },
+        {
+          "title": "Чтение данных из Google Таблиц (Google Sheets) прямо в 1С, используя ...",
+          "url": "https://infostart.ru/1c/tools/2572620/",
+          "snippet": "Подробное руководство по включению и настройке протокола OData в 1С Предприятие. Настройка доступа, прав пользователей и устранение ошибок подключения."
+        }
+      ],
+      "searched_at": "2026-08-18"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "PDF Автоматизация 2026 всё,",
+          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "ВТОМАТИЗАЦИЯ 2026: ВСЁ, ЧТО НУЖНО ЗНАТЬ Делать бизнес становится сложнее: растут требования, дорожают ресурсы, а стабильность всё . аще зависит от внутренних процессов. Автоматизация �."
+        },
+        {
+          "title": "Тенденции автоматизации финансовых операций и бухгалтерии в 2026 году",
+          "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-finansovyh-operaczij-i-buhgalterii-v-2026-godu/",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        },
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": "В этой статье мы подробно рассмотрим ключевые тенденции в автоматизации финансовых операций и бухгалтерии, объясним, как они работают и почему стоит обратить на них внимание уже сегодня."
+        }
+      ],
+      "searched_at": "2026-08-18"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "как из google sheets подключиться к 1с по odata хабр q a 2026",
+      "purpose": "вторичный запрос: как из google sheets подключиться к 1с по odata хабр q a",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+          "url": "https://qna.habr.com/q/891699",
+          "snippet": ""
+        },
+        {
+          "title": "Туториал: интеграция 1С и КХД через стандартный REST‐интерфейс Odata / Хабр",
+          "url": "https://habr.com/ru/companies/modusbi/articles/865798/",
+          "snippet": "Как из google sheets подключиться к 1С по odata? Всем привет! Кто-нибудь может подсказать, как подключиться к Odata из 1С с помощью Google Sheets (GAS)."
+        },
+        {
+          "title": "Интеграция Google Sheets (Гугл таблицы) и 1С:Предприниматель по API без ...",
+          "url": "https://apimonster.ru/connector/bundle/googleSheets/1c-businessman/",
+          "snippet": "Теперь давайте подробнее разберем, как получить доступ к справочникам, документам и другим данным, используя стандартные HTTP -запросы через REST- интерфейс и протокол OData 3.0."
+        },
+        {
+          "title": "Интеграция 1С через API 2026 - habab.ru",
+          "url": "https://habab.ru/integratsiya-1s-api-odata",
+          "snippet": "Если коннектора для сервиса нет, но у него есть api и вебхуки, то можно подключиться через универсальные коннекторы: Входящий вебхук, Исходяший вебхук, JavaScript."
+        },
+        {
+          "title": "Работа с 1С через протокол OData - INFOSTART",
+          "url": "https://infostart.ru/1c/articles/1570140/",
+          "snippet": "Практические рекомендации по диагностике основаны на типовых разборах интеграций 1С через OData и HTTP-сервисы; финальную редактуру выполнил Александр Руин, основатель habab.ru."
+        },
+        {
+          "title": "Интеграция Google Sheets (Гугл таблицы) и 1С по API без программиста",
+          "url": "https://apimonster.ru/connector/bundle/googleSheets/onec/",
+          "snippet": "В данной статье мы будем рассматривать работу с данными информационной базы через протокол OData (далее OData). Для начала рассмотрим, что такое OData. OpenDataProtocol или OData - это открытый веб-протокол для запроса и обновления данных."
+        }
+      ],
+      "searched_at": "2026-08-18"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "На этой странице вы найдёте готовые календари для каждого месяца: Формат А4, готовый к печати. Просто выберите нужный месяц ниже и скачайте календарь бесплатно и без регистрации. Идеально подходит для офиса, школы, дома или планирования личных дел."
+        },
+        {
+          "title": "Производственный календарь 2026 — рабочие дни, праздники, норма часов ...",
+          "url": "https://calcal.ru/proizvodstvennyj-kalendar-2026",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]."
+        }
+      ],
+      "searched_at": "2026-08-18"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Чтение данных из Google Таблиц (Google Sheets) прямо в 1С, используя ...",
+          "url": "https://infostart.ru/1c/tools/2572620/",
+          "snippet": ""
+        },
+        {
+          "title": "Интеграция 1С:Предприятие 8 и Google Sheets (Гугл таблицы) по API без ...",
+          "url": "https://apimonster.ru/connector/bundle/1c-enterprise/googleSheets/",
+          "snippet": "Код представляет собой клиент для однократного чтения всего указанного диапазона ячеек из Google Таблицы в 1С."
+        },
+        {
+          "title": "Интеграция 1С и Google Sheets (Гугл таблицы) по API без программиста",
+          "url": "https://apimonster.ru/connector/bundle/onec/googleSheets/",
+          "snippet": "Ваши идеи и подходы к решению задач стали незаменимыми в нашей работе. Каждый из вас внес свой уникальный вклад, и совместные усилия принесли впечатляющие результаты."
+        },
+        {
+          "title": "Работа с OData в 1С: настройка, HTTP-запросы и примеры",
+          "url": "https://1c-expert.vercel.app/articles/1/1s/1s-kak-rabotat-s-odata.html",
+          "snippet": "Коннектор ApiMonster для быстрой интеграции 1С и Google Sheets — это надежное решение для автоматизации обмена данными между вашей учетной системой и таблицами."
+        },
+        {
+          "title": "Интеграция 1с:CRM (1с срм) и Google Sheets (Гугл таблицы) по API без ...",
+          "url": "https://apimonster.ru/connector/bundle/1sCrm/googleSheets/",
+          "snippet": "Полное руководство по работе с протоколом OData в 1С. Настройка публикаций, HTTP-запросы GET/POST, обработка JSON и частые ошибки интеграции."
+        },
+        {
+          "title": "Интерфейс OData в 1С: что это и как подключить",
+          "url": "https://1c-expert.vercel.app/articles/i/in/interfejs-odata-v-1s-chto-eto.html",
+          "snippet": "Если коннектора для сервиса нет, но у него есть api и вебхуки, то можно подключиться через универсальные коннекторы: Входящий вебхук, Исходяший вебхук, JavaScript."
+        }
+      ],
+      "searched_at": "2026-08-18"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://qna.habr.com/q/891699",
+      "title": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/modusbi/articles/865798/",
+      "title": "Туториал: интеграция 1С и КХД через стандартный REST‐интерфейс Odata / Хабр",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/tools/2572620/",
+      "title": "Чтение данных из Google Таблиц (Google Sheets) прямо в 1С, используя ...",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://habab.ru/integratsiya-1s-api-odata",
+      "title": "Интеграция 1С через API 2026 - habab.ru",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://www.koderline.ru/expert/narabotki/article-integratsiya-programmy-1s-predpriyatie-s-google-tablitsami-zagruzka-dannykh-cherez-api/",
+      "title": "Загрузка Google таблицы 1С через API - Koderline",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/1/1s/1s-kak-rabotat-s-odata.html",
+      "title": "Работа с OData в 1С: настройка, HTTP-запросы и примеры",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://support.google.com/appsheet/answer/10106380?hl=en",
+      "title": "Use data from an OData feed - AppSheet Help - Google Help",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a август 2026"
+    },
+    {
+      "url": "https://qna.habr.com/q/1147158",
+      "title": "Какие есть инструменты для java для работы с Google Sheets? — Хабр Q&A",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a август 2026"
+    },
+    {
+      "url": "https://learn.microsoft.com/ru-ru/power-query/connectors/google-sheets",
+      "title": "Коннектор Power Query Google Sheets - Power Query",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a август 2026"
+    },
+    {
+      "url": "https://wiki.programstore.ru/1s-odata/",
+      "title": "OData: варианты работы и возможности. Блог Programming Store",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a август 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/984008/",
+      "title": "LLM + 1C: Почему чат-бот для учета - Habr",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a август 2026"
+    },
+    {
+      "url": "https://apimonster.ru/connector/bundle/googleSheets/1c-businessman/",
+      "title": "Интеграция Google Sheets (Гугл таблицы) и 1С:Предприниматель по API без ...",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a новости 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/k/ka/kak-vklyuchit-odata-v-1s.html",
+      "title": "Как включить OData в 1С: пошаговая инструкция и настройки",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a новости 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+      "title": "PDF Автоматизация 2026 всё,",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-finansovyh-operaczij-i-buhgalterii-v-2026-godu/",
+      "title": "Тенденции автоматизации финансовых операций и бухгалтерии в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/1570140/",
+      "title": "Работа с 1С через протокол OData - INFOSTART",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://apimonster.ru/connector/bundle/googleSheets/onec/",
+      "title": "Интеграция Google Sheets (Гугл таблицы) и 1С по API без программиста",
+      "from_query": "как из google sheets подключиться к 1с по odata хабр q a 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calcal.ru/proizvodstvennyj-kalendar-2026",
+      "title": "Производственный календарь 2026 — рабочие дни, праздники, норма часов ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://apimonster.ru/connector/bundle/1c-enterprise/googleSheets/",
+      "title": "Интеграция 1С:Предприятие 8 и Google Sheets (Гугл таблицы) по API без ...",
+      "from_query": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A 2026"
+    },
+    {
+      "url": "https://apimonster.ru/connector/bundle/onec/googleSheets/",
+      "title": "Интеграция 1С и Google Sheets (Гугл таблицы) по API без программиста",
+      "from_query": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A 2026"
+    },
+    {
+      "url": "https://apimonster.ru/connector/bundle/1sCrm/googleSheets/",
+      "title": "Интеграция 1с:CRM (1с срм) и Google Sheets (Гугл таблицы) по API без ...",
+      "from_query": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A 2026"
+    },
+    {
+      "url": "https://1c-expert.vercel.app/articles/i/in/interfejs-odata-v-1s-chto-eto.html",
+      "title": "Интерфейс OData в 1С: что это и как подключить",
+      "from_query": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A 2026"
+    }
+  ]
+}
