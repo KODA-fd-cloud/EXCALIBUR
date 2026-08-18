@@ -28,12 +28,16 @@
     "description_aeo": "Подключение Google Sheets к 1С по OData – UrlFetchApp с Basic Auth к standard.odata. Нужен публичный HTTPS: с IP Google LAN недоступна."
   },
   "geo_qa": {
-    "score": null,
-    "verdict": "PENDING",
-    "date": null,
-    "html_linter": null,
-    "slop_score": null,
-    "cannibalization": null
+    "score": 92,
+    "core_eeat_lite": 18,
+    "verdict": "PASS",
+    "date": "2026-08-18",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
   },
   "cover_family": "gradient_abstract"
 }

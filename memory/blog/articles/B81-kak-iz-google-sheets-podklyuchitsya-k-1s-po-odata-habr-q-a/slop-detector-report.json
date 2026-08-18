@@ -1,0 +1,22 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 2,
+  "over_long_sentences": [
+    {
+      "sentence": "Определите, когда Sheets↔OData нужен финотделу (и когда нет) Нужно, если регулярно тянете срез статей ДДС или движений денег в Google Sheets без \"Сохранить как → Импорт\"",
+      "word_count": 26
+    },
+    {
+      "sentence": "Сценарий Sheets + OData Лучше иначе Еженедельный срез ДДС Да, кнопка на raw_* – Разовый отчёт Избыточно Excel / Power Query 1С только в LAN Прямой GAS не взлетит Push из локального скрипта Запись обратно в 1С Не стартовый кейс Только чтение + регламент Вердикт: если Excel уже видит OData, а Sheets нет – проблема сети, не \"Sheets хуже\"",
+      "word_count": 51
+    }
+  ],
+  "readability": {
+    "score": 100.0,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 8.1,
+    "avg_syllables_per_word": 1.5
+  }
+}
