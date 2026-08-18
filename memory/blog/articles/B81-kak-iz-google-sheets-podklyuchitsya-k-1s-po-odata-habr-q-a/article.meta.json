@@ -1,0 +1,39 @@
+{
+  "topic_id": "B81",
+  "h1": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+  "title": "Как из Google Sheets подключиться к 1С по OData: шаги",
+  "description": "Пошагово: публикация OData 1С, Basic Auth в Apps Script, кнопка Обновить и почему Excel видит базу, а Sheets отвечает Адрес недоступен.",
+  "cover_alt": "Тёмный UI-мокап: мост данных Google Sheets к 1С через OData",
+  "slug": "kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
+  "primary_query": "как из google sheets подключиться к 1с по odata хабр q a",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "как из google sheets подключиться к 1с по odata хабр q a",
+    "2026"
+  ],
+  "char_count": 8945,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "как из Google Sheets подключиться к 1С по OData",
+    "Apps Script и OData 1С: кнопка Обновить",
+    "почему UrlFetchApp пишет Адрес недоступен к 1С"
+  ],
+  "meta_ab": {
+    "title_seo": "Как из Google Sheets подключиться к 1С по OData: шаги",
+    "title_ctr": "💻 Google Sheets → 1С по OData: почему UrlFetch пишет \"Адрес недоступен\"?",
+    "title_aeo": "Как из Google Sheets подключиться к 1С по OData через Apps Script?",
+    "description_seo": "Пошагово: публикация OData 1С, Basic Auth в Apps Script, кнопка Обновить и почему Excel видит базу, а Sheets отвечает Адрес недоступен.",
+    "description_ctr": "⚡️ Excel ок, Sheets нет? Чините HTTPS и Basic Auth, не credentials:include. Срез на raw_* за один вечер.",
+    "description_aeo": "Подключение Google Sheets к 1С по OData – UrlFetchApp с Basic Auth к standard.odata. Нужен публичный HTTPS: с IP Google LAN недоступна."
+  },
+  "geo_qa": {
+    "score": null,
+    "verdict": "PENDING",
+    "date": null,
+    "html_linter": null,
+    "slop_score": null,
+    "cannibalization": null
+  },
+  "cover_family": "gradient_abstract"
+}
