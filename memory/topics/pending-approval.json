@@ -1,10 +1,10 @@
 {
-  "topic_id": "B82",
-  "h1": "Как oData в 1С | Публикация и подключение | Д-Партнерс - «Д",
-  "slug": "odata-v-1s-publikaciya-i-podklyuchenie-d-partners-d",
+  "topic_id": "B83",
+  "h1": "Как автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs",
+  "slug": "avtomatizaciya-na-n8n-dlya-biznesa-2026-zadachi-cena-self-ho",
   "status": "pending",
-  "proposed_at": 1787032468,
-  "proposal_message_id": 450,
+  "proposed_at": 1787037862,
+  "proposal_message_id": 453,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -46,7 +46,7 @@
     "B77",
     "B78",
     "B79",
-    "B80"
-  ],
-  "reminded_at": 1787032468
+    "B80",
+    "B82"
+  ]
 }
