@@ -3,8 +3,8 @@
   "h1": "Как автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs",
   "slug": "avtomatizaciya-na-n8n-dlya-biznesa-2026-zadachi-cena-self-ho",
   "status": "pending",
-  "proposed_at": 1787040144,
-  "proposal_message_id": 454,
+  "proposed_at": 1787084375,
+  "proposal_message_id": 455,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -49,5 +49,5 @@
     "B80",
     "B82"
   ],
-  "reminded_at": 1787040144
+  "reminded_at": 1787084376
 }
