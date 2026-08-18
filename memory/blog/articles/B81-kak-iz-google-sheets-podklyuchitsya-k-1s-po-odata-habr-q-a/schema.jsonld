@@ -1,0 +1,196 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://koda-fd.ru/#organization",
+      "name": "КОДА — блог «Финансист, который кодит»",
+      "url": "https://koda-fd.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://koda-fd.ru/#logo",
+        "url": "https://koda-fd.ru/og-default.jpg",
+        "caption": "КОДА — блог «Финансист, который кодит»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://koda-fd.ru/#author-olga-kondratskaya",
+      "name": "Ольга Кондрацкая",
+      "jobTitle": "Финансовый директор-автоматизатор, автор блога «Финансист, который кодит»",
+      "image": "https://koda-fd.ru/og-default.jpg",
+      "worksFor": { "@id": "https://koda-fd.ru/#organization" },
+      "sameAs": [
+        "https://koda-fd.ru/",
+        "https://koda-fd.ru/blog/",
+        "https://t.me/finance_modern"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#article",
+      "headline": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+      "description": "Пошагово: публикация OData 1С, Basic Auth в Apps Script, кнопка Обновить и почему Excel видит базу, а Sheets отвечает Адрес недоступен.",
+      "datePublished": "2026-08-18",
+      "dateModified": "2026-08-18",
+      "inLanguage": "ru",
+      "url": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a-cover.png",
+        "width": 1200,
+        "height": 675,
+        "caption": "Тёмный UI-мокап: мост данных Google Sheets к 1С через OData"
+      },
+      "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
+      "publisher": { "@id": "https://koda-fd.ru/#organization" },
+      "keywords": "как из google sheets подключиться к 1с по odata хабр q a, apps script odata 1с urlfetch, автоматизация финотдела, адрес недоступен urlfetchapp, standard.odata",
+      "wordCount": 8945,
+      "articleSection": "1С / Google Sheets / автоматизация",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "КОДА — блог «Финансист, который кодит»",
+        "url": "https://koda-fd.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли подключить Google Sheets к 1С по OData без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Скрипт Apps Script копируется по шаблону. Публикацию OData и HTTPS один раз делает админ или 1С-ник. Финансист дальше жмёт кнопку и правит фильтр периода."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько займёт внедрение связки Sheets → OData?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Если OData уже снаружи по HTTPS – вечер на скрипт и меню. Если база только в LAN – сначала инфраструктура (дни) или сразу Plan B с push."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие риски для данных при выгрузке в Google Sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пароль только в Script Properties; отдельный пользователь на чтение; не тащить физлиц. Перед нейросетями обезличивайте ИНН, ФИО и суммы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему в Excel OData работает, а в Sheets – \"Адрес недоступен\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Excel ходит с вашего ПК. UrlFetchApp – с пула IP Google и не достучится до private IP. Сначала проверьте $metadata с телефона вне офиса."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли IIS, чтобы публиковать OData 1С?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нужен веб-сервер: IIS или Apache, либо облачная публикация провайдера. Без HTTP-публикации OData не заработает – это REST по HTTPS, не файл .dt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли писать документы в 1С из Google Sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Технически операции изменения есть, но для финотдела по умолчанию оставляйте только чтение. Запись – отдельный регламент и аудит."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если 1С нельзя открывать в интернет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не мучайте whitelist goog.json. Выгружайте локально (Python/n8n) и пушите JSON в веб-приложение Google Sheets."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#howto",
+      "name": "Как из Google Sheets подключиться к 1С по OData через Apps Script",
+      "description": "Публикация OData 1С по HTTPS, Basic Auth в UrlFetchApp, срез JSON на лист raw_* и кнопка «Обновить из 1С».",
+      "inLanguage": "ru",
+      "totalTime": "PT3H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "1С с публикацией standard.odata на веб-сервере (IIS/Apache или облако)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets + Apps Script (UrlFetchApp)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Браузер / телефон вне офиса для проверки $metadata"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Публичный HTTPS URL …/odata/standard.odata"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Отдельный пользователь 1С только на чтение"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Учётные данные в Script Properties (не в ячейках)"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Определите, когда Sheets↔OData нужен финотделу",
+          "text": "Используйте связку для регулярных срезов ДДС в Google Sheets. Для разовых 20 строк быстрее CSV/Excel. Если 1С только в LAN – прямой UrlFetchApp не взлетит, нужен Plan B (push).",
+          "url": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#when-needed"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Подготовьте публикацию 1С и доступность из сети Google",
+          "text": "Опубликуйте базу с галкой «Публиковать стандартный интерфейс OData», узкий состав объектов и readonly-пользователь. Проверьте $metadata в браузере и с телефона вне Wi‑Fi офиса – иначе Google тоже не достучится.",
+          "url": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#prep-1c"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Защитите данные: без сырых ПДн в облачный Sheet",
+          "text": "Берите срезы с $select/$filter, не тащите Catalog_ФизическиеЛица. Пароль OData только в PropertiesService; перед нейросетями обезличивайте ИНН и ФИО.",
+          "url": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#security-data"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Соберите Apps Script → OData → лист raw_*",
+          "text": "Сохраните base URL и учётку в Script Properties. GET $metadata, затем сущность с $format=json&$top=5, Basic Auth через Utilities.base64Encode. Разберите value[] на raw_*, добавьте onOpen с меню «Обновить из 1С».",
+          "url": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#gas-steps"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Проверьте результат и разберите типичные ошибки",
+          "text": "Если Excel видит OData, а Sheets пишет «Адрес недоступен» – чините маршрут (публичный HTTPS), не credentials:include. Дальше 401/403, таймаут ~60 с, BOM перед JSON.parse. Диагностика: сеть → auth → объём → парсинг.",
+          "url": "https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/#errors"
+        }
+      ]
+    }
+  ]
+}
