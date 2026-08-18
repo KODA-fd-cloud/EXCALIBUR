@@ -1,0 +1,174 @@
+<p>На <a href="https://qna.habr.com/q/891699" target="_blank" rel="noopener noreferrer">Хабр Q&amp;A №891699</a> автор описал знакомую боль: в Excel и Power Query OData к 1С подключается, в браузере с Basic Auth тоже, а скрипт Google Apps Script падает с "Адрес недоступен". Встроенного OData-коннектора в Google Sheets нет. Решение – один раз настроить публикацию 1С, открыть доступ для IP Google и написать короткий Apps Script с UrlFetchApp. После гайда у вас будет кнопка "Обновить из 1С" и staging-лист без сырых персональных данных в облаке.</p>
+
+<p>OData – REST-интерфейс 1С (протокол 3.0): защищённый курьер между базой и таблицей. URL вида <i>…/odata/standard.odata/ИмяРесурса</i> + логин на чтение → JSON, как акт сверки с именованными полями. Apps Script ходит за ним через UrlFetchApp. Публикацию OData, HTTPS и whitelist IP Google админ делает один раз; если база только в LAN без интернета – GAS не поможет, нужен CSV или no-code.</p>
+
+<h2 id="when-needed">Когда это нужно финотделу (и когда нет)</h2>
+<p>Сначала сверьте задачу с инструментом. Habr Q&A 891699 как раз про живой срез в общей Google-таблице, когда Excel на одном ПК уже неудобен, а команда работает в Sheets.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Сценарий</th>
+      <th>Sheets + Apps Script + OData</th>
+      <th>Альтернатива</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Общий дашборд ДДС, остатков, справочников</b></td>
+      <td>Да: кнопка обновления, несколько редакторов</td>
+      <td>Power Query в Excel, если все с одного ПК</td>
+    </tr>
+    <tr>
+      <td><b>Разовая выгрузка "на глаз"</b></td>
+      <td>Избыточно</td>
+      <td>"Сохранить как" или Excel/OData</td>
+    </tr>
+    <tr>
+      <td><b>Отчёты СКД, регламентные задания, журнал регистрации</b></td>
+      <td>Нет: стандартный OData их не отдаёт</td>
+      <td>Обработка 1С или SQL</td>
+    </tr>
+    <tr>
+      <td><b>База только в LAN без HTTPS</b></td>
+      <td>Нет: UrlFetchApp не дойдёт</td>
+      <td>Файл на Диск или <a href="/blog/avtomatizaciya-finansov-no-code/">no-code автоматизация финансов</a></td>
+    </tr>
+  </tbody>
+</table>
+<blockquote>
+  <b>Вердикт:</b> берите Sheets + GAS, если нужен повторяемый срез в облачной таблице и админ готов один раз открыть OData наружу по HTTPS. <b>Не делайте:</b> тащить в облако полные карточки физлиц и контрагентов с ИНН "на всякий случай".
+</blockquote>
+<p><b>Сделайте:</b> зафиксируйте одну сущность (например, статьи ДДС или движения денег) и период. <b>Не делайте:</b> обещать себе "выгружу всю базу одним запросом" – у скрипта лимит около 6 минут на запуск и квоты Url Fetch.</p>
+
+<h2 id="security">Подготовка данных и безопасность (без сырых ПДн в облако)</h2>
+<p>Sheets – чужой облачный контур; Basic Auth без HTTPS передаёт пароль открытым текстом.</p>
+<ol>
+  <li>Отдельный пользователь 1С на чтение с ролью <b>УдаленныйДоступOData</b>.</li>
+  <li>Узкий состав OData: нужные <code>Catalog_*</code> и регистры, без <code>Catalog_ФизическиеЛица</code>, если ФИО не нужны.</li>
+  <li>HTTPS с валидным сертификатом – самоподписанный SSL UrlFetchApp отвергнет.</li>
+  <li>Staging-лист <code>raw_*</code>; на отчётный лист – коды и агрегаты, не полные реквизиты.</li>
+  <li>Логин и пароль в <code>PropertiesService</code>, не в ячейке и не в чате.</li>
+  <li>Перед LLM обезличьте данные – маршрут в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию перед ChatGPT</a>.</li>
+</ol>
+<p><b>Сделайте:</b> чеклист "что можно в облако" до кнопки. <b>Не делайте:</b> учётку админа 1С и пароль в коде, как в Q&amp;A без Properties.</p>
+
+<h2 id="setup-script">Пошаговая настройка: от админа 1С до скрипта Apps Script</h2>
+<p>Маршрут, закрывающий Habr Q&A 891699. Имена сущностей берите из <code>$metadata</code>, не угадывайте.</p>
+<blockquote>
+  <b>Схема:</b> админ публикует OData → тест URL в браузере → whitelist IP Google → Script Properties → UrlFetchApp + Basic Auth → парсинг JSON → лист <code>raw_*</code> → меню "Обновить из 1С"
+</blockquote>
+<ol>
+  <li><b>Чеклист для админа 1С:</b> публикация на IIS/Apache (1С не ниже 8.3.5), галка "Публиковать стандартный интерфейс OData", узкий состав объектов, отдельный read-only пользователь, HTTPS, allowlist диапазонов IP Google на firewall (запросы GAS идут не с ПК пользователя, а из пула Google).</li>
+  <li><b>Проверьте эндпоинт вручную:</b> откройте <code>https://ВАШ_ХОСТ/…/odata/standard.odata/$metadata</code>, затем <code>Catalog_СтатьиДвиженияДенежныхСредств?$format=json&amp;$top=10</code> с Basic Auth в браузере или Postman. Должен прийти JSON с массивом <code>value</code>, не HTML-ошибка.</li>
+  <li><b>Откройте таблицу</b> → Расширения → Apps Script. Создайте лист <code>raw_dds</code> (или другое имя под ваш регистр).</li>
+  <li><b>Один раз выполните</b> функцию сохранения учётки (Run в редакторе):</li>
+</ol>
+<pre><code>function saveOnecCredentials(baseUrl, user, password) {
+  PropertiesService.getScriptProperties().setProperties({
+    ONEC_BASE_URL: String(baseUrl || "").replace(/\/$/, ""),
+    ONEC_USER: String(user || ""),
+    ONEC_PASSWORD: String(password || "")
+  }, false);
+}</code></pre>
+<p>Вызовите, например: <code>saveOnecCredentials("https://host/base/odata/standard.odata", "odata_read", "пароль")</code>. baseUrl – без хвоста сущности.</p>
+<ol start="5">
+  <li><b>Вставьте основной код</b> – паттерн из Q&amp;A, но с <code>muteHttpExceptions: true</code> и разбором кода ответа (ошибка "Адрес недоступен" часто маскирует сеть или SSL):</li>
+</ol>
+<pre><code>function refreshFrom1C() {
+  var p = PropertiesService.getScriptProperties();
+  var base = p.getProperty("ONEC_BASE_URL");
+  var user = p.getProperty("ONEC_USER");
+  var pass = p.getProperty("ONEC_PASSWORD");
+  var url = base + "/Catalog_СтатьиДвиженияДенежныхСредств?$format=json&$top=500";
+  var resp = UrlFetchApp.fetch(url, {
+    method: "get", muteHttpExceptions: true,
+    headers: { Authorization: "Basic " + Utilities.base64Encode(user + ":" + pass) }
+  });
+  if (resp.getResponseCode() !== 200) {
+    SpreadsheetApp.getUi().alert("HTTP " + resp.getResponseCode());
+    return;
+  }
+  var rows = JSON.parse(resp.getContentText()).value || [];
+  var sh = SpreadsheetApp.getActive().getSheetByName("raw_dds") ||
+    SpreadsheetApp.getActive().insertSheet("raw_dds");
+  sh.clear();
+  var hdr = Object.keys(rows[0] || {});
+  sh.getRange(1, 1, 1, hdr.length).setValues([hdr]);
+  sh.getRange(2, 1, rows.length, hdr.length).setValues(
+    rows.map(function(r) { return hdr.map(function(h) { return r[h]; }); })
+  );
+}
+function onOpen() {
+  SpreadsheetApp.getUi().createMenu("1С")
+    .addItem("Обновить из 1С", "refreshFrom1C").addToUi();
+}</code></pre>
+<ol start="6">
+  <li><b>Сохраните проект</b>, обновите таблицу – меню "1С → Обновить из 1С". При первом Run выдайте права.</li>
+  <li><b>Опционально:</b> time-driven trigger с меньшим <code>$top</code> (лимит runtime 6 мин, квота Url Fetch до 20 000/день на consumer).</li>
+</ol>
+<p>В Q&amp;A лишний <code>credentials: 'include'</code> – для GAS хватит <code>Authorization: Basic</code>. Только HTTPS, не HTTP. <b>Сделайте:</b> <code>$top=10</code> на тесте. <b>Не делайте:</b> тянуть <code>Catalog_ФизическиеЛица</code> из примера Q&amp;A без нужды.</p>
+
+<h2 id="errors">Проверка результата и типичные ошибки</h2>
+<p>После первого успеха сверьте строки с 1С и зафиксируйте HTTP-код в meta-листе.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Симптом</th>
+      <th>Вероятная причина</th>
+      <th>Что сделать</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>"Адрес недоступен" / exception fetch</b></td>
+      <td>Firewall блокирует IP Google; HTTP вместо HTTPS; база только в LAN; самоподписанный SSL</td>
+      <td>Allowlist IP Google; включить HTTPS; проверить URL с внешней сети, не из VPN офиса</td>
+    </tr>
+    <tr>
+      <td><b>HTTP 401</b></td>
+      <td>Неверный логин/пароль; нет роли OData; пользователь заблокирован</td>
+      <td>Проверить Properties; роль <b>УдаленныйДоступOData</b>; тот же логин в браузере</td>
+    </tr>
+    <tr>
+      <td><b>Пустой <code>value</code> или 404</b></td>
+      <td>Объект не в составе OData; опечатка в <code>Catalog_*</code></td>
+      <td>Открыть <code>$metadata</code>, скопировать точное имя ресурса</td>
+    </tr>
+    <tr>
+      <td><b>Таймаут / обрыв на большом объёме</b></td>
+      <td>Лимит 6 мин; тяжёлый запрос без <code>$top</code></td>
+      <td>Дробить <code>$top</code>, фильтр <code>$filter</code> по периоду, пагинация по <code>@odata.nextLink</code></td>
+    </tr>
+  </tbody>
+</table>
+<p>Ловушка Q&amp;A: браузер с ПК открывает OData, GAS падает – Google ходит с других IP. <b>Сделайте:</b> логируйте <code>getResponseCode()</code>. <b>Не делайте:</b> отключать проверку SSL в production.</p>
+
+<h2 id="next-steps">Что автоматизировать дальше</h2>
+<ol>
+  <li>Добавьте второй регистр (движения ДДС) тем же паттерном – отдельный <code>raw_*</code> лист.</li>
+  <li>Постройте сводную на staging-листах; не смешивайте сырые ключи контрагентов с отчётом для собственника.</li>
+  <li>Настройте триггер по расписанию, если команда забывает жать кнопку.</li>
+  <li>Сверьте с банковской выпиской – OData даёт учёт, не заменяет банк.</li>
+  <li>Если нужны формы, почта и webhook без кода – посмотрите <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизацию финансов без кода</a> (Make, Albato, n8n).</li>
+</ol>
+<p>Excel/OData – в <a href="/blog/vygruzka-1c-excel-odata/">выгрузке 1С в Excel</a>. Кейсы – в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>; уроки – в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a" target="_blank" rel="noopener noreferrer">клубе KODA</a>.</p>
+
+<h2>Частые вопросы</h2>
+
+<h3>Есть ли в Google Sheets встроенный OData-коннектор, как в Excel?</h3>
+<p>Нет. В Excel/Power Query есть "Из OData-канала", в Sheets – только Apps Script (UrlFetchApp) или сторонние коннекторы/no-code. Скопируйте скрипт из раздела выше и настройте Basic Auth через Properties.</p>
+
+<h3>Можно ли обойтись без программиста?</h3>
+<p>Скрипт – copy-paste и одна функция сохранения пароля. Публикацию OData, HTTPS и whitelist IP Google обычно делает админ 1С или подрядчик один раз. Без этого GAS не заработает, даже если код верный.</p>
+
+<h3>Почему в Q&amp;A работает браузер, а UrlFetchApp пишет "Адрес недоступен"?</h3>
+<p>Запрос из браузера идёт с вашего ПК (или VPN), а GAS – из пула IP Google. Firewall должен пропускать оба контура. Плюс проверьте HTTPS и валидный сертификат – HTTP и самоподписанный SSL часто ломают fetch.</p>
+
+<h3>Сколько времени займёт первое подключение?</h3>
+<p>При готовой публикации OData – около одного рабочего дня на скрипт и тест. Если нужны HTTPS, состав объектов и whitelist – закладывайте от 2 до 5 дней с админом, без обещаний "за час".</p>
+
+<h3>Какие риски для данных при Basic Auth в облаке?</h3>
+<p>Пароль в Script Properties (доступ у редакторов скрипта), утечка через общий доступ к таблице, ПДн на листе. Минимизируйте: read-only пользователь, staging без ФИО/ИНН, ротация пароля при увольнении, обезличивание перед LLM.</p>
+
+<h3>Что делать, если объём не влезает в 6 минут?</h3>
+<p>Уменьшите <code>$top</code>, добавьте <code>$filter</code> по периоду или пагинацию по <code>@odata.nextLink</code>. Тяжёлое – в Python/CSV на Drive, в Sheets только import.</p>

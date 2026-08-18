@@ -1,0 +1,30 @@
+{
+  "topic_id": "B81",
+  "h1": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+  "title": "Как из google sheets подключиться к 1С по odata? — Хабр Q&A",
+  "description": "Ответ на Habr Q&A 891699: Google Sheets к 1С по OData через Apps Script, UrlFetchApp, Basic Auth, whitelist IP Google и staging без ПДн в облаке.",
+  "slug": "kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a",
+  "primary_query": "как из google sheets подключиться к 1с по odata хабр q a",
+  "secondary_queries": [
+    "google sheets 1с odata",
+    "UrlFetchApp odata basic auth",
+    "автоматизация финотдела google sheets"
+  ],
+  "char_count": 8699,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "подключить Google Sheets к 1С по OData",
+    "Apps Script UrlFetchApp OData 1С",
+    "обновить данные из 1С в Google Sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Google Sheets к 1С по OData: Apps Script и Basic Auth",
+    "title_ctr": "💻 Google Sheets + 1С OData: почему Habr Q&A 891699 ломается и как починить за вечер?",
+    "title_aeo": "Как из Google Sheets подключиться к 1С по OData без встроенного коннектора?",
+    "description_seo": "Пошаговый ответ на Habr Q&A 891699: UrlFetchApp, Basic Auth, whitelist IP Google, Script Properties и staging-лист без ПДн. Типичные ошибки и чеклист для админа 1С.",
+    "description_ctr": "⚡️ Excel OData работает, а GAS падает с \"Адрес недоступен\"? Готовый скрипт, схема безопасности и разбор firewall Google IP.",
+    "description_aeo": "Подключение Google Sheets к 1С по OData делается через Apps Script (UrlFetchApp + Authorization Basic), после публикации standard.odata и открытия HTTPS для IP Google."
+  },
+  "cover_family": "gradient_abstract"
+}
