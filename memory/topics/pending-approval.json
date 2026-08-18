@@ -3,8 +3,8 @@
   "h1": "n8n для бизнеса: AI-агенты и автоматизация — гайд 2026 — Обучение по",
   "slug": "n8n-dlya-biznesa-ai-agenty-i-avtomatizaciya-gajd-2026-obuche",
   "status": "pending",
-  "proposed_at": 1787091547,
-  "proposal_message_id": 458,
+  "proposed_at": 1787093377,
+  "proposal_message_id": 459,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -49,5 +49,6 @@
     "B80",
     "B82",
     "B83"
-  ]
+  ],
+  "reminded_at": 1787093377
 }
