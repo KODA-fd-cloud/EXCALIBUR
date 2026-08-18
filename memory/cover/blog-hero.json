@@ -1,19 +1,18 @@
 {
-  "hero_id": "koda-ui",
-  "name_ru": "КОДА (без лица на обложке)",
-  "reference_image": "memory/cover/assets/koda-ui-style-reference.png",
-  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
-  "reference_url_source": "koda-fd.ru/wp-content",
+  "hero_id": "blog-host-face",
+  "name_ru": "Ведущий блога (лицо с reference)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://files.catbox.moe/yjlmip.png",
+  "reference_url_source": "catbox (prior covers B04/B05 face lock)",
   "visual_lock": {
-    "style": "dark web, dot-mesh optional, purple glow",
-    "palette": "#0a0a0f, #8b5cf6, #93c5fd"
+    "style": "human hook collage, DIY zine, torn paper",
+    "palette": "#F5F5F0, #1A1A2E, #FF1493, #FFD93D"
   },
-  "outfit_rule": "N/A — no human on cover",
-  "prompt_fragment": "Abstract holographic data visualization: glowing purple #8b5cf6 and blue #93c5fd nodes and light trails on dark #0a0a0f, dot-mesh grid, NO text on image.",
+  "outfit_rule": "Outfit is agent choice for the hook — do NOT copy red tuxedo from reference. Keep same face: glasses, quiff, stubble/beard.",
+  "prompt_fragment": "Cutout of the same male blog host from reference: mid-30s, thick light-brown quiff, black round glasses, short beard/stubble, friendly confident expression. Face identity locked to reference photo.",
   "cover_hook_rules": [
-    "Обложка = намёк на боль CFO (ручная рутина vs автоматизация)",
-    "Без лиц и stock-фото людей",
-    "Читаемый контраст для превью в Яндексе и Telegram",
-    "16:9, без watermark"
+    "Обложка = крючок боли финотдела + лицо ведущего",
+    "Одежда/поза свободны под scene_hint",
+    "16:9, кириллица на cover panel"
   ]
 }

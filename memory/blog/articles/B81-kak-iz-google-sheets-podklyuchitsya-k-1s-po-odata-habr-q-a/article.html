@@ -5,6 +5,10 @@
 <p>Общий путь Excel ↔ 1С – в <a href="/blog/vygruzka-1c-excel-odata/">выгрузке 1С в Excel через OData</a>. Меню и кнопка в Sheets – в <a href="/blog/google-apps-script-finansist-obnovit-dannye/">гайде по Apps Script для финансиста</a>. Здесь фокус: Sheets → OData и сетевой блокер UrlFetch.</p>
 
 <h2 id="when-needed">Определите, когда Sheets↔OData нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Таблица сценариев: когда финотделу нужен мост Sheets↔OData, а когда нет" loading="lazy">
+</figure>
+
 <p>Нужно, если регулярно тянете срез статей ДДС или движений денег в Google Sheets без "Сохранить как → Импорт". Не нужно для разовых 20 строк – быстрее CSV. Опасно тащить в облако полные карточки физлиц и сырые ПДн.</p>
 <table>
   <thead>
@@ -42,6 +46,10 @@
 </blockquote>
 
 <h2 id="prep-1c">Подготовьте публикацию 1С и доступность из сети Google</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Чеклист подготовки публикации 1С OData и доступности из сети Google" loading="lazy">
+</figure>
+
 <p>Без публичного HTTPS писать Apps Script бессмысленно. Платформа 1С (от 8.3.5) публикует REST на веб-сервере (IIS или Apache): Администрирование → Публикация на веб-сервере → галка "Публиковать стандартный интерфейс OData". Состав объектов – <code>УстановитьСоставСтандартногоИнтерфейсаOData</code> или в БСП: Настройки стандартного интерфейса OData. Через OData недоступны отчёты, журнал регистрации и пользователи.</p>
 <ol>
   <li>Создайте отдельного пользователя 1С только на чтение нужных сущностей.</li>
@@ -55,6 +63,10 @@
 <p>Честно говоря, половина "нерабочих" скриптов с Хабра упирается именно сюда: код правильный, а публикация 1С не видна из интернета. Пока браузер с мобильного LTE не открывает $metadata – не тратьте вечер на UrlFetchApp.</p>
 
 <h2 id="security-data">Защитите данные: без сырых ПДн в облачный Sheet</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Схема: срез 1С без сырых ПДн на staging-лист Google Sheets" loading="lazy">
+</figure>
+
 <p>Google Sheets – чужой облачный "сейф", не ваш серверный шкаф. В вопросе на Хабре тянули <code>Catalog_ФизическиеЛица</code> – красный флаг 152-ФЗ. Staging-лист – журнал для отчёта, не копия кадровой картотеки.</p>
 <ul>
   <li>Берите срезы статей и ДДС с <code>$select</code> и <code>$filter</code>.</li>

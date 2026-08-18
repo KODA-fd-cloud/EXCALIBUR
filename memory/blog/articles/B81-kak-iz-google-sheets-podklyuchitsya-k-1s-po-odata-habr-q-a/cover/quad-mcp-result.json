@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "mode": "GenerateImage_fallback",
+  "reason": "user-mcp-kv/gpt-image-2 unavailable; catbox/0x0 host failed",
+  "mcp_tool": null,
+  "generator": "Cursor GenerateImage",
+  "reference_image_paths": [
+    "memory/cover/assets/blog-hero-reference.png"
+  ],
+  "reference_url_hosted": "https://files.catbox.moe/yjlmip.png",
+  "reference_url_note": "URL stale/unreachable; i2i via local reference_image_paths",
+  "aspect_ratio": "16:9",
+  "source_canvas_size": [
+    1536,
+    1024
+  ],
+  "canvas_size_after_lanczos": [
+    2048,
+    1152
+  ],
+  "url": null,
+  "local_canvas": "cover/canvas-quad.png",
+  "artifact_source": "/opt/cursor/artifacts/assets/canvas-quad.png",
+  "generated_at": "2026-08-18T05:10:57.280838+00:00"
+}
