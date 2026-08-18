@@ -1,10 +1,10 @@
 {
-  "topic_id": "B84",
-  "h1": "n8n для бизнеса: AI-агенты и автоматизация — гайд 2026 — Обучение по",
-  "slug": "n8n-dlya-biznesa-ai-agenty-i-avtomatizaciya-gajd-2026-obuche",
+  "topic_id": "B85",
+  "h1": "Как автоматизация финансов с n8n, Actual Budget и SimpleFIN",
+  "slug": "avtomatizaciya-finansov-s-n8n-actual-budget-i-simplefin",
   "status": "pending",
-  "proposed_at": 1787093377,
-  "proposal_message_id": 459,
+  "proposed_at": 1787095112,
+  "proposal_message_id": 462,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -48,7 +48,7 @@
     "B79",
     "B80",
     "B82",
-    "B83"
-  ],
-  "reminded_at": 1787093377
+    "B83",
+    "B84"
+  ]
 }
