@@ -322,3 +322,42 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-18 — B81 kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B81 |
+| slug | kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a |
+| verdict | **❌ PUBLISH BLOCKER** |
+| post_id | — |
+| permalink | — (expected: https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/) |
+| trigger | pipeline after Indexer PASS; publish: yes |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (6/6, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present (BlogPosting + FAQPage + HowTo)
+- cover/cover.png + alt: present
+- dry-run: OK (slug + title, PHP bytes=8419735)
+
+### Blocker (env names only; no secret values)
+
+- `memory/site.env.local` — **absent**
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH` — missing (need `yes`)
+- `PUBLIC_SITE_URL` — missing
+- `FTP_*` (`FTP_HOST`, `FTP_USER`, `FTP_PASS`/`FTP_PASSWORD`, `FTP_ROOT`) — missing
+- `SSH_*` / docker path (`SSH_HOST`, `SSH_USER`, `SSH_PASSWORD`, `DOCKER_WP_CONTAINER`) — missing
+
+Live publish not attempted. Credentials not invented. `shared/published-articles.md` not updated.
+
+### Result
+
+```
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+Artifact: `memory/blog/articles/B81-kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/wp-publish-result.json` (verdict=fail)
