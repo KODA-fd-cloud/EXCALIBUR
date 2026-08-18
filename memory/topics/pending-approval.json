@@ -1,10 +1,10 @@
 {
-  "topic_id": "B83",
-  "h1": "Как автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs",
-  "slug": "avtomatizaciya-na-n8n-dlya-biznesa-2026-zadachi-cena-self-ho",
+  "topic_id": "B84",
+  "h1": "n8n для бизнеса: AI-агенты и автоматизация — гайд 2026 — Обучение по",
+  "slug": "n8n-dlya-biznesa-ai-agenty-i-avtomatizaciya-gajd-2026-obuche",
   "status": "pending",
-  "proposed_at": 1787084375,
-  "proposal_message_id": 455,
+  "proposed_at": 1787091547,
+  "proposal_message_id": 458,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -47,7 +47,7 @@
     "B78",
     "B79",
     "B80",
-    "B82"
-  ],
-  "reminded_at": 1787084376
+    "B82",
+    "B83"
+  ]
 }
