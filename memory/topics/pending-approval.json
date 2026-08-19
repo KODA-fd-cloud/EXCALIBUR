@@ -2,7 +2,7 @@
   "topic_id": "B86",
   "h1": "Как автоматизация на n8n — workflow между 400+ сер… - FlowFrame",
   "slug": "avtomatizaciya-na-n8n-workflow-mezhdu-400-ser-flowframe",
-  "status": "pending",
+  "status": "queued_write",
   "proposed_at": 1787096770,
   "proposal_message_id": 465,
   "chat_id": "1136346366",
@@ -51,5 +51,10 @@
     "B83",
     "B84",
     "B85"
-  ]
+  ],
+  "missing_article_notified": true,
+  "ack_message_id": 470,
+  "approved_at": 1787101359,
+  "write_launch_notified": true,
+  "write_job_started_at": 1787101362
 }
