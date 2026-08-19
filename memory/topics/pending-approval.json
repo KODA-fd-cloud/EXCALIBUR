@@ -2,7 +2,7 @@
   "topic_id": "B84",
   "h1": "Как собрать еженедельные 5 метрик CFO в одной вкладке Google Sheets",
   "slug": "ezhenedelnye-metriki-cfo-sheets",
-  "status": "pending",
+  "status": "rejected",
   "proposed_at": 1787134298,
   "proposal_message_id": 494,
   "chat_id": "1136346366",
@@ -46,6 +46,7 @@
     "B77",
     "B78",
     "B79",
+    "B84",
     "B85",
     "B86",
     "B87",
@@ -54,5 +55,6 @@
     "B90",
     "B91",
     "B92"
-  ]
+  ],
+  "rejected_at": 1787136322
 }

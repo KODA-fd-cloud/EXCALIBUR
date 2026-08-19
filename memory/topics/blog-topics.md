@@ -1348,6 +1348,126 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 - **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
 - **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
 
+---
+
+## B85 — Скоркард поставщиков в Sheets
+
+- **priority:** P0
+- **slug:** skorkard-postavshchikov-google-sheets
+- **theme_key:** vendor_scorecard_sheets
+- **h1:** Как вести скоркард поставщиков в Google Sheets: сроки, брак, цена
+- **primary_query:** оценка поставщиков google sheets
+- **secondary_queries:** автоматизация финотдела, оценка поставщиков google sheets, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B86 — Списания ТМЦ глазами финансиста
+
+- **priority:** P0
+- **slug:** spisanie-tmc-upravlencheskij-sheets
+- **theme_key:** inventory_writeoff_finance
+- **h1:** Как учитывать списания ТМЦ в управленке на Google Sheets
+- **primary_query:** списание тмц управленческий учет sheets
+- **secondary_queries:** автоматизация финотдела, списание тмц управленческий учет sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B87 — Учёт авансов выданных поставщикам
+
+- **priority:** P0
+- **slug:** avansy-postavshchikam-google-sheets
+- **theme_key:** prepaid_expense_tracker
+- **h1:** Как контролировать авансы поставщикам в Google Sheets: выдача, зачёт, остаток
+- **primary_query:** учет авансов поставщикам google sheets
+- **secondary_queries:** автоматизация финотдела, учет авансов поставщикам google sheets, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B88 — Реестр возвратов покупателям
+
+- **priority:** P0
+- **slug:** reestr-vozvratov-pokupatelyam-sheets
+- **theme_key:** refund_registry
+- **h1:** Как вести реестр возвратов покупателям в Google Sheets без потери статусов
+- **primary_query:** реестр возвратов покупателям excel
+- **secondary_queries:** автоматизация финотдела, реестр возвратов покупателям excel, 2026
+- **search_intent:** workflow
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
+---
+
+## B89 — Прогноз поступлений на 30 дней
+
+- **priority:** P0
+- **slug:** prognoz-postuplenij-30-dnej-sheets
+- **theme_key:** cash_in_forecast_30d
+- **h1:** Как спрогнозировать поступления на 30 дней в Google Sheets по открытым счетам
+- **primary_query:** прогноз поступлений google sheets
+- **secondary_queries:** автоматизация финотдела, прогноз поступлений google sheets, 2026
+- **search_intent:** how_to
+- **article_mode:** B
+- **author_id:** olga-kondratskaya
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:sheets
+- **h2_outline:**
+  1. Когда это нужно финотделу (и когда нет)
+  2. Подготовка данных и безопасность (без сырых ПДн в облако)
+  3. Пошаговая настройка / скрипт / сценарий
+  4. Проверка результата и типичные ошибки
+  5. Что автоматизировать дальше
+- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
+- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
+- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
+
 ## Архив очереди (не в работе)
 
 Сняты как смысловые дубли (2026-08-03): B41≈B28 сверка банка, B42≈B25 выписка→Sheets, B43≈B13 1С→Excel, B44≈B17 формулы Excel+ИИ, B45≈B26 план-факт, B40≈B27 дайджест/отчёт.
