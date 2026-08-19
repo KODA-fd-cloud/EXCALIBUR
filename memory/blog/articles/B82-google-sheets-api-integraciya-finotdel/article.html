@@ -1,0 +1,172 @@
+<p>Выгрузка из 1С или банка снова превращается в ручной CSV и копипаст в общую таблицу ДДС? Google Sheets API через сервисный аккаунт - это защищенный курьер между вашим скриптом и таблицей: без открытия браузера и без участия человека. Ниже за 1-2 часа настроите проект в Google Cloud, выберете scopes под задачу финотдела, расшарите staging-лист роботу и запустите Python-скрипт, который дописывает строки в реестр платежей с проверкой перечиткой.</p>
+
+<p>API (application programming interface) - программный способ сказать Google Таблицам: "запиши эти данные в диапазон A:E". Сервисный аккаунт - отдельный "технический пользователь" с JSON-ключом, как пропуск для ночного робота-сверки. IAM-роли в облаке Google сами по себе доступ к файлам не дают: таблицу нужно явно расшарить на email вида bot@project.iam.gserviceaccount.com. Для финотдела это transport в staging-слой, а не замена главной книги учета в 1С.</p>
+
+<h2 id="when-needed">Оцените, когда Google Sheets API нужен финотделу (и когда нет)</h2>
+
+<p><b>Подключайте API,</b> если данные из 1С, банка или CRM должны попадать в общую таблицу по расписанию: ДДС, реестр SaaS-подписок, платежный календарь, статусы сверок. Типичный симптом: каждое утро аналитик копирует выписку вручную, а формулы на дашборде уже устарели. <b>Не делайте</b> Sheets единственным источником правды при жестком аудите изменений, сложных правах по контрагентам или сотнях таблиц с enterprise ACL - тогда API оставьте staging-слоем, а учет ведите в 1С или BI.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Маршрут</th>
+      <th>Когда выбирать</th>
+      <th>Минус</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Ручной CSV + копипаст</b></td>
+      <td>Раз в месяц, 20 строк</td>
+      <td>Ошибки, нет истории автоматизации</td>
+    </tr>
+    <tr>
+      <td><b>Apps Script внутри таблицы</b></td>
+      <td>Один файл, триггер по времени, без внешнего сервера</td>
+      <td>Сложнее связать с 1С/Python вне Google</td>
+    </tr>
+    <tr>
+      <td><b>Sheets API + service account</b></td>
+      <td>Cron на сервере, выгрузка из 1С, n8n/Make</td>
+      <td>Нужен JSON-ключ и share таблицы</td>
+    </tr>
+    <tr>
+      <td><b>n8n/Make поверх того же SA</b></td>
+      <td>Визуальный сценарий без Python</td>
+      <td>Тот же контур безопасности и scopes</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <b>Вердикт:</b> если вы уже живете в Google Таблицах, но устали от ручных выгрузок - service account дешевле, чем ждать разработчика. No-code-альтернативы с тем же ключом - в <a href="/blog/avtomatizaciya-finansov-no-code/">гайде по автоматизации финансов</a>.
+</blockquote>
+
+<h2 id="prep-security">Подготовьте данные и безопасность (без сырых ПДн в облако)</h2>
+
+<p>Создайте в файле отдельный лист <b>staging</b> с режимом append-only: скрипт только дописывает строки, а итоговые сводки считаются формулами на другом листе. Колонки под задачу: дата, статья ДДС, сумма, контрагент (код), источник, статус сверки. JSON-ключ сервисного аккаунта - как пароль от расчетного счета: не кладите в git, не вставляйте в ячейку таблицы, храните в переменной окружения или секретах CI.</p>
+
+<p><b>Безопасность ПДн:</b> в облако отправляйте обезличенные поля - ИНН контрагента и сумму можно, паспорт сотрудника и полное ФИО в payroll - нет. Замените названия на "Контрагент_01", суммы округлите для тестов; чеклист - в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию данных</a>. <b>Сделайте:</b> отдельный service account только на финконтур, share только нужных файлов с правами "Редактор". <b>Не делайте:</b> scope drive на весь Google Drive без причины - он Restricted и требует расширенной верификации приложения.</p>
+
+<blockquote>
+  <b>Схема workflow:</b> источник (1С/банк/CSV) → обезличивание → Python + service account → staging-лист → batchGet сверка → дашборд или реестр → cron или n8n
+</blockquote>
+
+<h2 id="setup">Настройте service account, scopes и скрипт записи пошагово</h2>
+
+<p>Scopes - это список разрешений, которые вы даете ключу. Для записи управленческих таблиц обычно хватает <b>https://www.googleapis.com/auth/spreadsheets</b> (класс Sensitive: просмотр и правка всех таблиц, к которым расшарен робот). Если приложение создает файлы само - можно <b>drive.file</b> (Recommended, non-sensitive: только файлы, с которыми работало приложение). Scope применяется ко <b>всему файлу</b> таблицы; отдельный лист защищают через ProtectedRange в интерфейсе, а не отдельным scope.</p>
+
+<ol>
+  <li><b>Создайте проект</b> на console.cloud.google.com → APIs &amp; Services → Enable APIs → включите Google Sheets API. Если открываете таблицу по имени через gspread - добавьте Google Drive API; при записи по spreadsheetId из URL часто достаточно одного Sheets API.</li>
+  <li><b>Создайте service account:</b> IAM &amp; Admin → Service Accounts → Create → Keys → Add key → JSON. Сохраните файл как credentials.json вне репозитория; скопируйте client_email.</li>
+  <li><b>Расшарьте таблицу</b> на client_email с правами "Редактор", снимите галочку "Уведомить". Без этого шага получите 403 Permission denied при корректном JSON.</li>
+  <li><b>Установите библиотеки:</b> pip install google-api-python-client google-auth. spreadsheetId возьмите из URL: docs.google.com/spreadsheets/d/<b>{ID}</b>/edit.</li>
+  <li><b>Запустите тестовую запись</b> в staging!A:E с valueInputOption USER_ENTERED - даты и числа интерпретируются как при ручном вводе; RAW пишет текст "как есть" и ломает locale.</li>
+  <li><b>Батчите диапазоны:</b> один batchUpdate на пачку строк - это один запрос к квоте (300 write/мин на проект). Не обновляйте ячейку в цикле на тысячах строк.</li>
+</ol>
+
+<pre><code>from google.oauth2 import service_account
+from googleapiclient.discovery import build
+
+SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+SPREADSHEET_ID = "ваш_id_из_url"
+RANGE = "staging!A:E"
+
+creds = service_account.Credentials.from_service_account_file(
+    "credentials.json", scopes=SCOPES
+)
+service = build("sheets", "v4", credentials=creds)
+
+rows = [
+    ["2026-08-19", "ДДС", "Opex", "-150000", "bank_stmt_0826"],
+    ["2026-08-19", "ДДС", "Revenue", "320000", "crm_export"],
+]
+body = {"values": rows}
+
+service.spreadsheets().values().append(
+    spreadsheetId=SPREADSHEET_ID,
+    range=RANGE,
+    valueInputOption="USER_ENTERED",
+    insertDataOption="INSERT_ROWS",
+    body=body,
+).execute()
+
+print("Записано строк:", len(rows))</code></pre>
+
+<p>На Node.js тот же контур: npm i googleapis, auth через keyFile, метод spreadsheets.values.append. Выбирайте runtime рядом с 1С - логика scopes и share одинакова. Квоты: 300 write/мин на проект; при 429 - exponential backoff, см. <a href="https://developers.google.com/workspace/sheets/api/limits" target="_blank">лимиты Google</a>.</p>
+
+<h2 id="verify">Проверьте результат и типичные ошибки</h2>
+
+<p>После каждой пакетной записи перечитайте диапазон через values().get() или batchGet() и сверьте количество строк и суммы с источником. Batch update атомарен: один невалидный subrequest отменяет весь batch - проверяйте формат дат до продакшена.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ошибка</th>
+      <th>Последствие</th>
+      <th>Что сделать</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>403 Permission denied</b></td>
+      <td>Запись не проходит</td>
+      <td>Расшарить файл на client_email SA, права Editor</td>
+    </tr>
+    <tr>
+      <td><b>429 Quota exceeded</b></td>
+      <td>Скрипт падает ночью</td>
+      <td>Exponential backoff, batchUpdate, не ячейка в цикле</td>
+    </tr>
+    <tr>
+      <td><b>Дата как текст</b></td>
+      <td>Фильтры и сводные ломаются</td>
+      <td>valueInputOption USER_ENTERED, locale листа RU</td>
+    </tr>
+    <tr>
+      <td><b>JSON в git</b></td>
+      <td>Утечка доступа к таблицам</td>
+      <td>Секреты CI, ротация ключа в GCP</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Сделайте:</b> логируйте spreadsheetId, range и число записанных строк без сырых сумм контрагентов в открытый лог. <b>Не делайте:</b> считать "успех" только по HTTP 200 без перечитки - тихие расхождения в locale встречаются на практике.</p>
+
+<h2 id="next-steps">Спланируйте, что автоматизировать дальше</h2>
+
+<p>После рабочего staging-контура повесьте cron (раз в час или после выгрузки 1С) или n8n-сценарий с тем же JSON-ключом. Следующие типовые задачи: банковская выписка в Sheets, реестр договоров, SaaS-подписки - все они используют тот же паттерн append + сверка. Если задача живет только внутри одного файла без внешнего Python - Apps Script проще и без JSON.</p>
+
+<p>Первый контур занимает 1-2 часа; production с cron и регламентом обезличивания - еще 2-4 часа.</p>
+
+<h2>Что дальше</h2>
+
+<ol>
+  <li>Заведите отдельный GCP-проект под финконтур, не смешивайте с личным Gmail.</li>
+  <li>Создайте staging-лист и прогоните скрипт на обезличенных тестовых строках.</li>
+  <li>Расшарьте только нужные файлы, зафиксируйте scopes в README для команды.</li>
+  <li>Добавьте перечитку batchGet в тот же скрипт перед закрытием job.</li>
+  <li>Подключите cron или n8n, когда ручная проверка стабильна неделю.</li>
+</ol>
+
+<p>Разборы сценариев cron, n8n и связки с 1С - в Telegram-канале <a href="https://t.me/finance_modern?utm_source=blog&amp;utm_medium=article">"Финансист, который кодит"</a>. В <a href="https://club.koda-fd.ru/?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=google-sheets-api-integraciya-finotdel">закрытом клубе KODA</a> - пошаговые материалы по data foundation и автоматизации без dev-команды.</p>
+
+<h2>Частые вопросы</h2>
+
+<h3>Можно ли настроить без программиста?</h3>
+<p>Да: создание проекта, service account и share таблицы - по чеклисту выше. Скript - копипаст Python с правкой SPREADSHEET_ID; Cursor поможет адаптировать колонки. Если код не нужен - используйте Apps Script внутри таблицы или n8n с тем же JSON-ключом.</p>
+
+<h3>Сколько займет внедрение?</h3>
+<p>Первый рабочий контур - 1-2 часа: API, ключ, один staging-лист, тестовая запись и сверка. Production с cron, логами и регламентом обезличивания - еще 2-4 часа. Срок зависит от чистоты исходного CSV и готовности отдельного GCP-проекта.</p>
+
+<h3>Какие риски для данных?</h3>
+<p>JSON-ключ дает полный доступ ко всем файлам, расшаренным на email робота. Не кладите ПДн, храните ключ в секретах, делайте отдельный SA на финконтур. Scope spreadsheets - Sensitive: согласуйте с IT или безопасностью, если в компании есть политика облачных интеграций.</p>
+
+<h3>OAuth или service account?</h3>
+<p>Service account - для сервера и cron без участия человека. OAuth пользователя - когда каждый финансист пишет в свой Drive и нужен личный consent. Для ночной выгрузки из 1С выбирайте SA.</p>
+
+<h3>Нужен ли Google Drive API?</h3>
+<p>Для записи по spreadsheetId из URL - часто достаточно Sheets API. Drive API добавьте, если открываете таблицу по имени файла через gspread или создаете новые файлы из скрипта.</p>
+
+<h3>Чем API отличается от Apps Script?</h3>
+<p>Apps Script живет внутри таблицы, без JSON-ключа и внешнего сервера - удобно для триггеров по времени в одном файле. Sheets API - внешний Python/Node, интеграция с 1С, cron на VPS и n8n. Многие команды начинают с Apps Script и переходят на API, когда нужен transport из ERP.</p>

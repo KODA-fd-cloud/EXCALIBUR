@@ -1,0 +1,42 @@
+{
+  "verdict": "warning",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 7,
+  "over_long_sentences": [
+    {
+      "sentence": "Ниже за 1-2 часа настроите проект в Google Cloud, выберете scopes под задачу финотдела, расшарите staging-лист роботу и запустите Python-скрипт, который дописывает строки в реестр платежей с проверкой перечиткой",
+      "word_count": 29
+    },
+    {
+      "sentence": "Оцените, когда Google Sheets API нужен финотделу (и когда нет) Подключайте API, если данные из 1С, банка или CRM должны попадать в общую таблицу по расписанию: ДДС, реестр SaaS-подписок, платежный календарь, статусы сверок",
+      "word_count": 32
+    },
+    {
+      "sentence": "Не делайте Sheets единственным источником правды при жестком аудите изменений, сложных правах по контрагентам или сотнях таблиц с enterprise ACL - тогда API оставьте staging-слоем, а учет ведите в 1С или BI",
+      "word_count": 30
+    },
+    {
+      "sentence": "Маршрут Когда выбирать Минус Ручной CSV + копипаст Раз в месяц, 20 строк Ошибки, нет истории автоматизации Apps Script внутри таблицы Один файл, триггер по времени, без внешнего сервера Сложнее связать с 1С/Python вне Google Sheets API + service account Cron на сервере, выгрузка из 1С, n8n/Make Нужен JSON-ключ и share таблицы n8n/Make поверх того же SA Визуальный сценарий без Python Тот же контур безопасности и scopes Вердикт: если вы уже живете в Google Таблицах, но устали от ручных выгрузок - service account дешевле, чем ждать разработчика",
+      "word_count": 82
+    },
+    {
+      "sentence": "Подготовьте данные и безопасность (без сырых ПДн в облако) Создайте в файле отдельный лист staging с режимом append-only: скрипт только дописывает строки, а итоговые сводки считаются формулами на другом листе",
+      "word_count": 30
+    },
+    {
+      "sentence": "Схема workflow: источник (1С/банк/CSV) → обезличивание → Python + service account → staging-лист → batchGet сверка → дашборд или реестр → cron или n8n Настройте service account, scopes и скрипт записи пошагово Scopes - это список разрешений, которые вы даете ключу",
+      "word_count": 33
+    },
+    {
+      "sentence": "Ошибка Последствие Что сделать 403 Permission denied Запись не проходит Расшарить файл на client_email SA, права Editor 429 Quota exceeded Скрипт падает ночью Exponential backoff, batchUpdate, не ячейка в цикле Дата как текст Фильтры и сводные ломаются valueInputOption USER_ENTERED, locale листа RU JSON в git Утечка доступа к таблицам Секреты CI, ротация ключа в GCP Сделайте: логируйте spreadsheetId, range и число записанных строк без сырых сумм контрагентов в открытый лог",
+      "word_count": 66
+    }
+  ],
+  "readability": {
+    "score": 91.7,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 11.9,
+    "avg_syllables_per_word": 1.7
+  }
+}

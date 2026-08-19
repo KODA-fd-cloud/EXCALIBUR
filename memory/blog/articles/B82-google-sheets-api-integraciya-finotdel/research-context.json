@@ -1,0 +1,108 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-19",
+    "today_ru": "19.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B82",
+    "priority": "P0",
+    "slug": "google-sheets-api-integraciya-finotdel",
+    "h1": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта",
+    "primary_query": "google sheets api сервисный аккаунт финансы",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "google sheets api сервисный аккаунт финансы",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B82",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "google sheets api сервисный аккаунт финансы 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "google sheets api сервисный аккаунт финансы август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "google sheets api сервисный аккаунт финансы новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "google sheets api сервисный аккаунт финансы 2026",
+      "purpose": "вторичный запрос: google sheets api сервисный аккаунт финансы"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B82-google-sheets-api-integraciya-finotdel",
+  "research_completed_at": "2026-08-19",
+  "wordstat": {
+    "mcp_server": "user-mcp-kv",
+    "status": "unavailable",
+    "note": "MCP user-mcp-kv не подключён в Cloud-сессии; wordstat_get_top_requests не вызван"
+  },
+  "agent_websearch": {
+    "completed_at": "2026-08-19",
+    "queries": [
+      "Google Sheets API service account scopes Python write 2026",
+      "google sheets api сервисный аккаунт финансы автоматизация",
+      "автоматизация финотдела Google Sheets API 2026",
+      "Google Sheets API Node.js service account write spreadsheets.values.update"
+    ],
+    "priority_sources": [
+      "https://developers.google.com/workspace/sheets/api/scopes",
+      "https://developers.google.com/workspace/sheets/api/limits",
+      "https://developers.google.com/workspace/guides/create-credentials#service-account",
+      "https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets.values/update",
+      "https://habr.com/ru/articles/575160/",
+      "https://habr.com/ru/articles/1017260/"
+    ]
+  },
+  "artifacts": {
+    "research_notes": "memory/blog/articles/B82-google-sheets-api-integraciya-finotdel/research-notes.md",
+    "fact_check_report": "memory/blog/articles/B82-google-sheets-api-integraciya-finotdel/fact-check-report.json"
+  },
+  "utility_verdict": "PASS",
+  "next_step": "excalibur-blog-writer: article.html по research-notes.md"
+}

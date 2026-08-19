@@ -1,0 +1,59 @@
+{
+  "article": "memory/blog/articles/B82-google-sheets-api-integraciya-finotdel/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 7,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ild(\"sheets\", \"v4\", credentials=creds) rows = [ [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "403",
+      "kind": "large_number",
+      "context": "мите галочку \"Уведомить\". Без этого шага получите 403 Permission denied при корректном JSON. Установите",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "300",
+      "kind": "large_number",
+      "context": "hUpdate на пачку строк - это один запрос к квоте (300 write/мин на проект). Не обновляйте ячейку в цикле",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "150000",
+      "kind": "large_number",
+      "context": "s=creds) rows = [ [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"], [\"2026-08-19\", \"ДДС\", \"Reven",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "320000",
+      "kind": "large_number",
+      "context": "nk_stmt_0826\"], [\"2026-08-19\", \"ДДС\", \"Revenue\", \"320000\", \"crm_export\"], ] body = {\"values\": rows} servic",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "429",
+      "kind": "large_number",
+      "context": "т Расшарить файл на client_email SA, права Editor 429 Quota exceeded Скрипт падает ночью Exponential bac",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "й лог. Не делайте: считать \"успех\" только по HTTP 200 без перечитки - тихие расхождения в locale встреча",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

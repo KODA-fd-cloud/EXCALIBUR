@@ -1,0 +1,511 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-19",
+    "today_ru": "19.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B82",
+    "priority": "P0",
+    "slug": "google-sheets-api-integraciya-finotdel",
+    "h1": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта",
+    "primary_query": "google sheets api сервисный аккаунт финансы",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "google sheets api сервисный аккаунт финансы",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "google sheets api сервисный аккаунт финансы 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Google Sheets API | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/reference/rest",
+          "snippet": ""
+        },
+        {
+          "title": "Google Sheets API: как автоматизировать таблицы через скрипт и ...",
+          "url": "https://vibecoderz.ru/blog/google-sheets-api",
+          "snippet": "To call this service, we recommend that you use the Google-provided client libraries. If your application needs to use your own libraries to call this service, use the following information when..."
+        },
+        {
+          "title": "GitHub - Aleksey2505/instruction-google-sheets",
+          "url": "https://github.com/Aleksey2505/instruction-google-sheets",
+          "snippet": "Google Sheets API дает способ читать и записывать данные в Google Таблицы напрямую из своего кода или бота, без ручного копирования. По состоянию на июнь 2026 года это бесплатный сервис от Google."
+        },
+        {
+          "title": "Google Sheets API Overview | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/guides/concepts",
+          "snippet": "🟩 Как настроить доступ к Google Таблицам через сервисный аккаунт (5 минут) Полная инструкция для всех моих проектов:"
+        },
+        {
+          "title": "Импортозамещение Googlefinance | Получить Цены Акций, Фондов И Офз В ...",
+          "url": "https://habr.com/ru/articles/1001434/",
+          "snippet": "To learn about developing with Google Workspace APIs, including handling authentication and authorization, refer to Develop on Google Workspace. To learn how to configure and run a Sheets..."
+        },
+        {
+          "title": "GitHub - Dentoffae/googlesheets · GitHub",
+          "url": "https://github.com/Dentoffae/googlesheets",
+          "snippet": "GOOGLEFINANCE по Мосбирже по‑прежнему мёртв. Мосбиржа закрыла доступ к своему API с IP‑адресов Google (в том числе из Google Sheets / Apps Script). Напрямую стучаться из таблиц в MOEX теперь нельзя — получаем ошибки/блокировку. Поэтому я обновил решение:"
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "google sheets api сервисный аккаунт финансы август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать сервисный аккаунт вручную - Google Workspace Migrate",
+          "url": "https://support.google.com/workspacemigrate/answer/10839762?hl=ru",
+          "snippet": ""
+        },
+        {
+          "title": "Google Sheets API | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/reference/rest",
+          "snippet": "При настройке Google Workspace Migrate нужно создать сервисный аккаунт. Если вы не используете скрипт, создайте этот аккаунт вручную, следуя приведенным ниже инструкциям."
+        },
+        {
+          "title": "GitHub - Aleksey2505/instruction-google-sheets",
+          "url": "https://github.com/Aleksey2505/instruction-google-sheets",
+          "snippet": "To call this service, we recommend that you use the Google-provided client libraries. If your application needs to use your own libraries to call this service, use the following information when..."
+        },
+        {
+          "title": "Google Sheets API: как автоматизировать таблицы через скрипт и ...",
+          "url": "https://vibecoderz.ru/blog/google-sheets-api",
+          "snippet": "Как создать сервисный аккаунт (по шагам, 5 минут): Перейди по ссылке выше Выбери или создай проект (например, my-finance-bot-2025) Нажми «Создать сервисный аккаунт» Назови его, например: → sheets-bot"
+        },
+        {
+          "title": "GitHub - Dentoffae/googlesheets · GitHub",
+          "url": "https://github.com/Dentoffae/googlesheets",
+          "snippet": "Google Sheets API дает способ читать и записывать данные в Google Таблицы напрямую из своего кода или бота, без ручного копирования. По состоянию на июнь 2026 года это бесплатный сервис от Google."
+        },
+        {
+          "title": "Google Sheets API Overview | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/guides/concepts",
+          "snippet": "Набор утилит для работы с Google Таблицами через API v4 и небольшое десктоп-приложение на Tkinter, которое генерирует оформленный «документообразный» отчёт на новом листе таблицы."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "google sheets api сервисный аккаунт финансы новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Импортозамещение Googlefinance | Получить Цены Акций, Фондов И Офз В ...",
+          "url": "https://habr.com/ru/articles/1001434/",
+          "snippet": ""
+        },
+        {
+          "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+          "url": "https://datalopata.ru/blog/obzor-google-sheets-2026-polnyj-gajd-po-ai-i-avtomatizatsii/",
+          "snippet": "Мосбиржа закрыла доступ к своему API с IP‑адресов Google (в том числе из Google Sheets / Apps Script). Напрямую стучаться из таблиц в MOEX теперь нельзя — получаем ошибки/блокировку."
+        },
+        {
+          "title": "Загрузка google таблицы через API - INFOSTART",
+          "url": "https://infostart.ru/1c/articles/1998804/",
+          "snippet": "Обзор google sheets 2026: узнайте о новых AI-функциях Gemini 3.0, работе с Big Data и автоматизации без кода в 2026 году."
+        },
+        {
+          "title": "Google Таблицы и ChatGPT: 6 автоматизаций которые финансист запускает ...",
+          "url": "https://blog.fin-academy.pro/google-tablicy-chatgpt-avtomatizacii-dlya-finansista",
+          "snippet": "В итоге я реализовал свой механизм регистрации изменённых данных и отправки только изменённых данных из 1С в Google-Таблицу и обратное получение только изменённых данных."
+        },
+        {
+          "title": "Google Sheets API Overview | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/guides/concepts",
+          "snippet": "В 2026 году связка Google Sheets и ChatGPT GPT-5.5 стала по-настоящему рабочей именно для финансиста — и работает без единой строки кода. В этой статье разберу шесть конкретных автоматизаций с готовыми промптами, которые можно запустить сегодня. Три реальных кейса с цифрами из практики курса. Сравнение трёх способов подключить ChatGPT к таблицам."
+        },
+        {
+          "title": "Google Sheets API: как автоматизировать таблицы через скрипт и ...",
+          "url": "https://vibecoderz.ru/blog/google-sheets-api",
+          "snippet": "To learn about developing with Google Workspace APIs, including handling authentication and authorization, refer to Develop on Google Workspace. To learn how to configure and run a Sheets..."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "PDF Автоматизация 2026 всё,",
+          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "ВТОМАТИЗАЦИЯ 2026: ВСЁ, ЧТО НУЖНО ЗНАТЬ Делать бизнес становится сложнее: растут требования, дорожают ресурсы, а стабильность всё . аще зависит от внутренних процессов. Автоматизация �."
+        },
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+          "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "google sheets api сервисный аккаунт финансы 2026",
+      "purpose": "вторичный запрос: google sheets api сервисный аккаунт финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Google Sheets API | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/reference/rest",
+          "snippet": ""
+        },
+        {
+          "title": "Google Sheets API: как автоматизировать таблицы через скрипт и ...",
+          "url": "https://vibecoderz.ru/blog/google-sheets-api",
+          "snippet": "To call this service, we recommend that you use the Google-provided client libraries. If your application needs to use your own libraries to call this service, use the following information when..."
+        },
+        {
+          "title": "Google Sheets API Overview | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/guides/concepts",
+          "snippet": "Google Sheets API дает способ читать и записывать данные в Google Таблицы напрямую из своего кода или бота, без ручного копирования. По состоянию на июнь 2026 года это бесплатный сервис от Google."
+        },
+        {
+          "title": "GitHub - Aleksey2505/instruction-google-sheets",
+          "url": "https://github.com/Aleksey2505/instruction-google-sheets",
+          "snippet": "To learn about developing with Google Workspace APIs, including handling authentication and authorization, refer to Develop on Google Workspace. To learn how to configure and run a Sheets..."
+        },
+        {
+          "title": "Импортозамещение Googlefinance | Получить Цены Акций, Фондов И Офз В ...",
+          "url": "https://habr.com/ru/articles/1001434/",
+          "snippet": "🟩 Как настроить доступ к Google Таблицам через сервисный аккаунт (5 минут) Полная инструкция для всех моих проектов:"
+        },
+        {
+          "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+          "url": "https://datalopata.ru/blog/obzor-google-sheets-2026-polnyj-gajd-po-ai-i-avtomatizatsii/",
+          "snippet": "GOOGLEFINANCE по Мосбирже по‑прежнему мёртв. Мосбиржа закрыла доступ к своему API с IP‑адресов Google (в том числе из Google Sheets / Apps Script). Напрямую стучаться из таблиц в MOEX теперь нельзя — получаем ошибки/блокировку. Поэтому я обновил решение:"
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
+          "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        },
+        {
+          "title": "Производственный Календарь на 2026 год рабочие дни, праздники и ...",
+          "url": "https://calendar.yoip.ru/work/2026-proizvodstvennyj-calendar.html",
+          "snippet": "Этот производственный календарь поможет заранее понять, когда выпадают официальные праздники, какие выходные перенесли, какие рабочие дни будут сокращёнными и в какие месяцы удобнее планировать отпуск или короткую поездку."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Google Sheets API: как автоматизировать таблицы через скрипт и ...",
+          "url": "https://vibecoderz.ru/blog/google-sheets-api",
+          "snippet": ""
+        },
+        {
+          "title": "Choose Google Sheets API scopes | Google for Developers",
+          "url": "https://developers.google.com/workspace/sheets/api/scopes",
+          "snippet": "Google Sheets API дает способ читать и записывать данные в Google Таблицы напрямую из своего кода или бота, без ручного копирования. По состоянию на июнь 2026 года это бесплатный сервис от Google."
+        },
+        {
+          "title": "Google API Sheets in Python Чтение и Запись Данных с Помощью Сервисного ...",
+          "url": "https://it4each.com/blog/google-api-sheets-in-python-reading-and-writing-data-using-a-service-account/",
+          "snippet": "Configure the OAuth consent screen and choose scopes to define what information is displayed to users and app reviewers, and register your app so that you can publish it later. To define the..."
+        },
+        {
+          "title": "Google Sheets API + Python. Чтение и запись с ... - Habr",
+          "url": "https://habr.com/ru/articles/575160/",
+          "snippet": "Скрипт, представленный ниже, позовляет осуществлять достуа к файлам Google Spreadsheets для извлечения данных с листов электронной таблицы и записи новой информации."
+        },
+        {
+          "title": "GitHub - mikolyk/google-sheets-python: Python-клиент для Google Sheets ...",
+          "url": "https://github.com/mikolyk/google-sheets-python",
+          "snippet": "Чтобы писать из кода в Google Sheet нам нужен доступ к Google Sheets API, которое входит в библиотеку API Google Cloud Platform. Для этого нужно: В тексте это выглядит просто, однако в первый раз интерфейс Google Cloud Console выглядит как рубка звездолета."
+        },
+        {
+          "title": "Подключение Гугл таблиц через пайтон, наглядно и с картинками",
+          "url": "https://timthewebmaster.com/ru/articles/kak-podklyuchit-google-sheets-api-k-python-botu/",
+          "snippet": "Python-клиент для Google Sheets: чтение и запись через service account (gspread) - mikolyk/google-sheets-python"
+        }
+      ],
+      "searched_at": "2026-08-19"
+    }
+  ],
+  "errors": [],
+  "agent_websearch_supplement": {
+    "searched_at": "2026-08-19",
+    "tool": "WebSearch Cursor",
+    "note": "Дополнение preflight SERP; приоритет над утиным secondary_3 «2026 2026»",
+    "results": [
+      {
+        "query": "Google Sheets API service account scopes Python write 2026",
+        "url": "https://developers.google.com/workspace/sheets/api/scopes",
+        "title": "Choose Google Sheets API scopes",
+        "relevance": "canonical scopes table"
+      },
+      {
+        "query": "Google Sheets API service account scopes Python write 2026",
+        "url": "https://developers.google.com/workspace/sheets/api/limits",
+        "title": "Usage limits",
+        "relevance": "quotas 300/60, 429, pricing 2026"
+      },
+      {
+        "query": "google sheets api сервисный аккаунт финансы автоматизация",
+        "url": "https://surf.ru/avtomatizaciya-otchetnosti-s-python-i-google-sheets-api/",
+        "title": "Автоматизация отчётности с Python и Google Sheets API",
+        "relevance": "RU finance reporting angle"
+      },
+      {
+        "query": "google sheets api сервисный аккаунт финансы автоматизация",
+        "url": "https://mybotn8nflow.ru/osnovy-ii-i-automation/n8n-automation-google-sheets-integration/",
+        "title": "Интеграция n8n с google sheets",
+        "relevance": "SA share pattern for no-code"
+      },
+      {
+        "query": "автоматизация финотдела Google Sheets API 2026",
+        "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+        "title": "6 лучших решений 2026 для автоматизации финансов",
+        "relevance": "finance automation priorities"
+      },
+      {
+        "query": "автоматизация финотдела Google Sheets API 2026",
+        "url": "https://habr.com/ru/articles/1017260/",
+        "title": "Как я заменил финансовый отдел цепочкой AI-агентов",
+        "relevance": "verify-after-write pattern"
+      },
+      {
+        "query": "Google Sheets API Node.js service account write",
+        "url": "https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets.values/update",
+        "title": "Method: spreadsheets.values.update",
+        "relevance": "write endpoint canonical"
+      },
+      {
+        "query": "Google Sheets API Node.js service account write",
+        "url": "https://github.com/googleapis/google-api-nodejs-client",
+        "title": "google-api-nodejs-client",
+        "relevance": "Node service account auth"
+      },
+      {
+        "query": "H1 aligned",
+        "url": "https://habr.com/ru/articles/575160/",
+        "title": "Google Sheets API + Python. Сервисный аккаунт",
+        "relevance": "RU step-by-step batch methods"
+      },
+      {
+        "query": "H1 aligned",
+        "url": "https://developers.google.com/workspace/guides/create-credentials#service-account",
+        "title": "Create access credentials — service account",
+        "relevance": "SA creation + file share"
+      }
+    ]
+  },
+  "unique_urls": [
+    {
+      "url": "https://developers.google.com/workspace/sheets/api/reference/rest",
+      "title": "Google Sheets API | Google for Developers",
+      "from_query": "google sheets api сервисный аккаунт финансы 2026"
+    },
+    {
+      "url": "https://vibecoderz.ru/blog/google-sheets-api",
+      "title": "Google Sheets API: как автоматизировать таблицы через скрипт и ...",
+      "from_query": "google sheets api сервисный аккаунт финансы 2026"
+    },
+    {
+      "url": "https://github.com/Aleksey2505/instruction-google-sheets",
+      "title": "GitHub - Aleksey2505/instruction-google-sheets",
+      "from_query": "google sheets api сервисный аккаунт финансы 2026"
+    },
+    {
+      "url": "https://developers.google.com/workspace/sheets/api/guides/concepts",
+      "title": "Google Sheets API Overview | Google for Developers",
+      "from_query": "google sheets api сервисный аккаунт финансы 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/1001434/",
+      "title": "Импортозамещение Googlefinance | Получить Цены Акций, Фондов И Офз В ...",
+      "from_query": "google sheets api сервисный аккаунт финансы 2026"
+    },
+    {
+      "url": "https://github.com/Dentoffae/googlesheets",
+      "title": "GitHub - Dentoffae/googlesheets · GitHub",
+      "from_query": "google sheets api сервисный аккаунт финансы 2026"
+    },
+    {
+      "url": "https://support.google.com/workspacemigrate/answer/10839762?hl=ru",
+      "title": "Как создать сервисный аккаунт вручную - Google Workspace Migrate",
+      "from_query": "google sheets api сервисный аккаунт финансы август 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/obzor-google-sheets-2026-polnyj-gajd-po-ai-i-avtomatizatsii/",
+      "title": "Обзор google sheets 2026: полный гайд по AI и автоматизации",
+      "from_query": "google sheets api сервисный аккаунт финансы новости 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/1998804/",
+      "title": "Загрузка google таблицы через API - INFOSTART",
+      "from_query": "google sheets api сервисный аккаунт финансы новости 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/google-tablicy-chatgpt-avtomatizacii-dlya-finansista",
+      "title": "Google Таблицы и ChatGPT: 6 автоматизаций которые финансист запускает ...",
+      "from_query": "google sheets api сервисный аккаунт финансы новости 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+      "title": "PDF Автоматизация 2026 всё,",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+      "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
+      "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar.yoip.ru/work/2026-proizvodstvennyj-calendar.html",
+      "title": "Производственный Календарь на 2026 год рабочие дни, праздники и ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://developers.google.com/workspace/sheets/api/scopes",
+      "title": "Choose Google Sheets API scopes | Google for Developers",
+      "from_query": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта 2026"
+    },
+    {
+      "url": "https://it4each.com/blog/google-api-sheets-in-python-reading-and-writing-data-using-a-service-account/",
+      "title": "Google API Sheets in Python Чтение и Запись Данных с Помощью Сервисного ...",
+      "from_query": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/575160/",
+      "title": "Google Sheets API + Python. Чтение и запись с ... - Habr",
+      "from_query": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта 2026"
+    },
+    {
+      "url": "https://github.com/mikolyk/google-sheets-python",
+      "title": "GitHub - mikolyk/google-sheets-python: Python-клиент для Google Sheets ...",
+      "from_query": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта 2026"
+    },
+    {
+      "url": "https://timthewebmaster.com/ru/articles/kak-podklyuchit-google-sheets-api-k-python-botu/",
+      "title": "Подключение Гугл таблиц через пайтон, наглядно и с картинками",
+      "from_query": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта 2026"
+    }
+  ]
+}

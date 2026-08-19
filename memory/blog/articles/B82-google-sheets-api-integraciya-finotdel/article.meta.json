@@ -1,0 +1,31 @@
+{
+  "topic_id": "B82",
+  "h1": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта",
+  "title": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта",
+  "description": "Пошаговая интеграция Google Sheets API для финотдела: service account, scopes, share таблицы, Python-скрипт записи в staging-лист, проверка batchGet и типичные ошибки 403/429 без сырых ПДн.",
+  "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, интеграция Google Sheets API",
+  "slug": "google-sheets-api-integraciya-finotdel",
+  "primary_query": "google sheets api сервисный аккаунт финансы",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "google sheets api сервисный аккаунт финансы",
+    "2026"
+  ],
+  "char_count": 9182,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "google sheets api сервисный аккаунт python",
+    "автоматизация финотдела google таблицы api",
+    "запись в google sheets через service account"
+  ],
+  "meta_ab": {
+    "title_seo": "Google Sheets API сервисный аккаунт: интеграция для финотдела",
+    "title_ctr": "💻 Google Sheets API для финотдела: service account и запись из Python за 2 часа?",
+    "title_aeo": "Как интегрировать Google Sheets API через сервисный аккаунт для финансов?",
+    "description_seo": "Google Sheets API для финотдела: service account, scopes, share таблицы, Python-скрипт записи в staging и проверка без сырых ПДн. Ошибки 403 и 429.",
+    "description_ctr": "⚡️ Хватит копипаста CSV: настройте service account и Python-скрипт записи в Google Таблицы за один вечер.",
+    "description_aeo": "Интеграция Google Sheets API через service account - JSON-ключ, scopes spreadsheets, share на робота и append в staging-лист из Python."
+  },
+  "cover_family": "gradient_abstract"
+}
