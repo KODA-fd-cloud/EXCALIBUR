@@ -1,0 +1,39 @@
+{
+  "topic_id": "B80",
+  "h1": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor",
+  "title": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor",
+  "description": "Пошагово: MCP к 1С в Cursor через OData или HTTP-расширение, read-only безопасность, mcp.json, промпт на остатки и обороты и сверка с ОСВ.",
+  "slug": "mcp-1c-cursor-ostatki-oboroty",
+  "primary_query": "mcp 1с cursor финансы",
+  "secondary_queries": [
+    "автоматизация финотдела 2026",
+    "mcp 1с cursor",
+    "остатки обороты 1с cursor",
+    "подключить mcp к 1с"
+  ],
+  "char_count": 9181,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "MCP к 1С в Cursor: остатки и обороты без Excel",
+    "как подключить MCP 1С cursor для финансиста",
+    "get_balance и OData MCP для дебиторки в Cursor"
+  ],
+  "meta_ab": {
+    "title_seo": "MCP 1С Cursor финансы: остатки и обороты из Agent",
+    "title_ctr": "💻 MCP к 1С в Cursor: читайте остатки и обороты без выгрузки в Excel!",
+    "title_aeo": "Как подключить MCP к 1С и запросить остатки прямо из Cursor?",
+    "description_seo": "Гайд для финотдела: выбор OData или HTTP MCP, read-only пользователь, настройка mcp.json, промпт на счёт 62 и сверка 2–3 строк с оборотно-сальдовой ведомостью 1С.",
+    "description_ctr": "⚡️ Устали таскать ОСВ в чат? Подключите MCP к 1С в Cursor и получите остатки по счёту через tool – с чеклистом безопасности.",
+    "description_aeo": "MCP к 1С в Cursor – подключение через 1c-odata-mcp или HTTP get_balance: read-only доступ, mcp.json и сверка остатков с отчётом 1С."
+  },
+  "cover_family": "gradient_abstract",
+  "geo_qa": {
+    "score": 93,
+    "verdict": "PASS",
+    "date": "2026-08-19",
+    "html_linter": "pass",
+    "slop_score": 0,
+    "cannibalization": "warning"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 4,
+  "over_long_sentences": [
+    {
+      "sentence": "MCP к 1С даёт агенту \"розетку\" в учётную базу: вы спрашиваете на русском про остатки и обороты, Cursor вызывает tool и возвращает цифры из 1С без ручной выгрузки",
+      "word_count": 26
+    },
+    {
+      "sentence": "Простыми словами: без MCP агент видит только то, что вы вставили в чат; с MCP у него появляются кнопки-tools, и он сам ходит за свежими данными",
+      "word_count": 26
+    },
+    {
+      "sentence": "get_debtors, get_sales, get_cashflow get_balance, get_register_totals Кто ставит Финансист, если OData уже живой Админ базы + веб-сервер (IIS/Apache) Запись в базу Только чтение по умолчанию Зависит от расширения; на пилоте – read-only user Сделайте: чеклист read-only user / env / gitignore до первого tool call",
+      "word_count": 36
+    },
+    {
+      "sentence": "Схема: Cursor Agent → подтверждение tool → stdio-обёртка (Node/npx) → OData или HTTP POST /hs/mcp/ → 1С → JSON с остатками/оборотами Трек A: OData через 1c-odata-mcp Проверьте OData в браузере: https://ВАШ_ХОСТ/…/odata/standard",
+      "word_count": 30
+    }
+  ],
+  "readability": {
+    "score": 82.9,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 10.8,
+    "avg_syllables_per_word": 1.8
+  }
+}

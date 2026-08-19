@@ -1,0 +1,493 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-19",
+    "today_ru": "19.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B80",
+    "priority": "P0",
+    "slug": "mcp-1c-cursor-ostatki-oboroty",
+    "h1": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor",
+    "primary_query": "mcp 1с cursor финансы",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "mcp 1с cursor финансы",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "mcp 1с cursor финансы 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "MCP в Cursor: как подключить инструменты и перестать копировать CSV ...",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+          "snippet": "Как настроить Cursor 3.1 для 1С:Предприятие в 2026: BSL Pack, MCP-1C, cursor_rules_1c, выбор модели. Рабочий стек для разработки на BSL без галлюцинаций."
+        },
+        {
+          "title": "enhansome-1c-mcp/README.md at main - GitHub",
+          "url": "https://github.com/enhansome/enhansome-1c-mcp/blob/main/README.md",
+          "snippet": "Пошагово: что такое MCP для финансиста, какой сервер подключить первым, mcp.json/Marketplace в Cursor, сценарий отчёта по папке CSV и чеклист секретов."
+        },
+        {
+          "title": "MCP сервер для 1С: Cursor, Claude Code, Codex | 1C AI Dev Tools",
+          "url": "https://aitools1c.dev/guides/mcp-server-dlya-1c/",
+          "snippet": "MCP позволяет AI-ассистентам (Claude, Cursor, VS Code Copilot и др.) взаимодействовать с 1С: читать метаданные, запускать тесты, анализировать код, управлять базами и многое другое. Хотите добавить проект?"
+        },
+        {
+          "title": "Подключение MCP-1C к Cursor для разработки на 1С",
+          "url": "https://feenlace.ru/blog/cursor-setup/",
+          "snippet": "Что такое MCP-сервер для 1С и как он дает AI-агентам доступ к метаданным, BSL-коду, справке, формам, запросам, журналу и тестам в Cursor, Claude Code, Codex и ChatGPT."
+        },
+        {
+          "title": "Разработка MCP-серверов в 1С - GitHub",
+          "url": "https://github.com/vladimir-kharin/1c_mcp",
+          "snippet": "Cursor для 1С: как подключить MCP-1C по транспорту stdio, где лежит mcp.json, минимальный конфиг, несколько баз 1С, ключи LLM в секции env и проверка через MCP Logs. Cursor читает определения инструментов MCP из конфигурационного файла и подключает их к чату."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "mcp 1с cursor финансы август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "MCP в Cursor: как подключить инструменты и перестать копировать CSV ...",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+          "snippet": "Cursor работает с 1С — через выгрузку конфигурации в файлы (из Конфигуратора или EDT), плагин BSL Pack для подсветки синтаксиса и MCP-сервер, который даёт агенту доступ к метаданным живой базы. Без MCP LLM галлюцинируют на каждом шагу — придумывают несуществующие методы платформы."
+        },
+        {
+          "title": "Подключение MCP-1C к Cursor для разработки на 1С",
+          "url": "https://feenlace.ru/blog/cursor-setup/",
+          "snippet": "Пошагово: что такое MCP для финансиста, какой сервер подключить первым, mcp.json/Marketplace в Cursor, сценарий отчёта по папке CSV и чеклист секретов."
+        },
+        {
+          "title": "MCP-серверы для 1С: как я использую Cursor для работы с метаданными",
+          "url": "https://denisrynkov.com/blog/mcp-1c-cursor/",
+          "snippet": "Чтобы использовать Cursor для 1С и получить в редакторе доступ к метаданным вашей конфигурации, достаточно прописать в этот файл запуск бинарника MCP-1C."
+        },
+        {
+          "title": "GitHub - iflow-mcp/alekseiseleznev-onec-mcp-universal: Единый MCP ...",
+          "url": "https://github.com/iflow-mcp/alekseiseleznev-onec-mcp-universal",
+          "snippet": "Коротко о том, как MCP-серверы и векторный поиск по коду 1С превращают Cursor в полноценную среду для 1С-разработки."
+        },
+        {
+          "title": "MCP сервер для 1С: подключаем Claude и Cursor к базе 1С:Предприятие",
+          "url": "https://vibecoderz.ru/blog/mcp-server-dlya-1s",
+          "snippet": "Подробное описание всех MCP-инструментов, API-эндпоинтов и переменных окружения. Документация встроена в дашборд, поддерживается в репозитории и доступна на русском и английском языках."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "mcp 1с cursor финансы новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "MCP сервер для 1С: подключаем Claude и Cursor к базе 1С:Предприятие",
+          "url": "https://vibecoderz.ru/blog/mcp-server-dlya-1s",
+          "snippet": "Cursor работает с 1С — через выгрузку конфигурации в файлы (из Конфигуратора или EDT), плагин BSL Pack для подсветки синтаксиса и MCP-сервер, который даёт агенту доступ к метаданным живой базы. Без MCP LLM галлюцинируют на каждом шагу — придумывают несуществующие методы платформы."
+        },
+        {
+          "title": "MCP-серверы для бухгалтерии: подключаем 1С к Claude и забываем про ...",
+          "url": "https://blog.fin-academy.pro/mcp-servery-dlya-buhgalterii-1c",
+          "snippet": "MCP сервер для 1С решает именно эту проблему: даёт Claude, Cursor или любому другому AI-ассистенту прямой доступ к метаданным, справке платформы и данным вашей базы. В 2026 году уже есть несколько рабочих решений — open-source и коммерческих. В этой статье разберём каждое: что умеет, как установить, кому подойдёт."
+        },
+        {
+          "title": "MCP сервер для 1С: Cursor, Claude Code, Codex | 1C AI Dev Tools",
+          "url": "https://aitools1c.dev/guides/mcp-server-dlya-1c/",
+          "snippet": "MCP-сервер для 1С в 2026: как подключить Claude к 1С Бухгалтерия и ERP, запрашивать данные живым языком, автоматизировать сверки и управленческие отчёты без экспорта XLS."
+        },
+        {
+          "title": "INFATON MCP Server v2.1 — 51 инструмент для AI-интеграции с 1С:Предприятие",
+          "url": "https://infostart.ru/1c/articles/2712602/",
+          "snippet": "Что такое MCP-сервер для 1С и как он дает AI-агентам доступ к метаданным, BSL-коду, справке, формам, запросам, журналу и тестам в Cursor, Claude Code, Codex и ChatGPT."
+        },
+        {
+          "title": "MCP в Cursor: как подключить инструменты и перестать копировать CSV ...",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+          "snippet": "Мы в ООО «ИНФАТОН» выпустили open-source MCP-сервер для 1С:Предприятие. За месяц проект вырос с 35 до 51 инструмента — добавились бухгалтерия, CDC (отслеживание изменений), пакетные операции ..."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        },
+        {
+          "title": "Тенденции автоматизации финансовых операций и бухгалтерии в 2026 году",
+          "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-finansovyh-operaczij-i-buhgalterii-v-2026-godu/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        },
+        {
+          "title": "Автоматизация бизнеса в 2026: 7 инструментов, которые сократят рутину и ...",
+          "url": "https://www.souldex.ru/blog/avtomatizaciya-biznesa-2026-instrumenty",
+          "snippet": "Обзор актуальных тенденций автоматизации финансовых операций и бухгалтерии для повышения эффективности и снижения ошибок в бизнесе."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "mcp 1с cursor финансы 2026",
+      "purpose": "вторичный запрос: mcp 1с cursor финансы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "MCP в Cursor: как подключить инструменты и перестать копировать CSV ...",
+          "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+          "snippet": "Как настроить Cursor 3.1 для 1С:Предприятие в 2026: BSL Pack, MCP-1C, cursor_rules_1c, выбор модели. Рабочий стек для разработки на BSL без галлюцинаций."
+        },
+        {
+          "title": "enhansome-1c-mcp/README.md at main - GitHub",
+          "url": "https://github.com/enhansome/enhansome-1c-mcp/blob/main/README.md",
+          "snippet": "Пошагово: что такое MCP для финансиста, какой сервер подключить первым, mcp.json/Marketplace в Cursor, сценарий отчёта по папке CSV и чеклист секретов."
+        },
+        {
+          "title": "MCP сервер для 1С: Cursor, Claude Code, Codex | 1C AI Dev Tools",
+          "url": "https://aitools1c.dev/guides/mcp-server-dlya-1c/",
+          "snippet": "MCP позволяет AI-ассистентам (Claude, Cursor, VS Code Copilot и др.) взаимодействовать с 1С: читать метаданные, запускать тесты, анализировать код, управлять базами и многое другое. Хотите добавить проект?"
+        },
+        {
+          "title": "Подключение MCP-1C к Cursor для разработки на 1С",
+          "url": "https://feenlace.ru/blog/cursor-setup/",
+          "snippet": "Что такое MCP-сервер для 1С и как он дает AI-агентам доступ к метаданным, BSL-коду, справке, формам, запросам, журналу и тестам в Cursor, Claude Code, Codex и ChatGPT."
+        },
+        {
+          "title": "Разработка MCP-серверов в 1С - GitHub",
+          "url": "https://github.com/vladimir-kharin/1c_mcp",
+          "snippet": "Cursor для 1С: как подключить MCP-1C по транспорту stdio, где лежит mcp.json, минимальный конфиг, несколько баз 1С, ключи LLM в секции env и проверка через MCP Logs. Cursor читает определения инструментов MCP из конфигурационного файла и подключает их к чату."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": ""
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        },
+        {
+          "title": "Производственный календарь на 2026 год с праздниками и выходными",
+          "url": "https://assistentus.ru/proizvodstvennyj-kalendar-2026/",
+          "snippet": "Календарь России на 2026 год из праздниками и номерами недель. Онлайн календарь на год: просмотреть, печать, скачать."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "MCP-серверы для бухгалтерии: подключаем 1С к Claude и забываем про ...",
+          "url": "https://blog.fin-academy.pro/mcp-servery-dlya-buhgalterii-1c",
+          "snippet": ""
+        },
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": "В 2026 году финансист, который умеет подключить нейросеть напрямую к 1С, перестаёт тратить утро на выгрузки XLS, ручные сверки и копирование чисел из одного окна в другое."
+        },
+        {
+          "title": "MCP сервер для 1С: подключаем Claude и Cursor к базе 1С:Предприятие",
+          "url": "https://vibecoderz.ru/blog/mcp-server-dlya-1s",
+          "snippet": "Cursor работает с 1С — через выгрузку конфигурации в файлы (из Конфигуратора или EDT), плагин BSL Pack для подсветки синтаксиса и MCP-сервер, который даёт агенту доступ к метаданным живой базы. Без MCP LLM галлюцинируют на каждом шагу — придумывают несуществующие методы платформы."
+        },
+        {
+          "title": "1с И Ai От Хайпа К Практике. Создаем Mcp-сервер Для Интеграции Ваших ...",
+          "url": "https://infostart.ru/1c/articles/2514331/",
+          "snippet": "Интеграция MCP позволяет Claude, Cursor и другим AI‑ассистентам напрямую обращаться к метаданным и справке 1С, избавляя от ошибок в коде и ускоряя разработку."
+        },
+        {
+          "title": "Mcp Сервер Для 1с | Arqa — Подключите Ai К Вашей 1с",
+          "url": "https://arqa.cc/ru/mcp-server",
+          "snippet": "На живых примерах объясняем, как подключить MCP-сервер к IDE Cursor, безопасно использовать локальные модели и уже сегодня начать интегрировать 1С и приложения с ИИ."
+        },
+        {
+          "title": "Подключение MCP-1C к Cursor для разработки на 1С",
+          "url": "https://feenlace.ru/blog/cursor-setup/",
+          "snippet": "MCP сервер для интеграции 1С с Claude, ChatGPT, Cursor и другими AI-моделями. Создавайте документы, получайте отчёты и автоматизируйте учёт через Model Context Protocol."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+      "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+      "from_query": "mcp 1с cursor финансы 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
+      "title": "MCP в Cursor: как подключить инструменты и перестать копировать CSV ...",
+      "from_query": "mcp 1с cursor финансы 2026"
+    },
+    {
+      "url": "https://github.com/enhansome/enhansome-1c-mcp/blob/main/README.md",
+      "title": "enhansome-1c-mcp/README.md at main - GitHub",
+      "from_query": "mcp 1с cursor финансы 2026"
+    },
+    {
+      "url": "https://aitools1c.dev/guides/mcp-server-dlya-1c/",
+      "title": "MCP сервер для 1С: Cursor, Claude Code, Codex | 1C AI Dev Tools",
+      "from_query": "mcp 1с cursor финансы 2026"
+    },
+    {
+      "url": "https://feenlace.ru/blog/cursor-setup/",
+      "title": "Подключение MCP-1C к Cursor для разработки на 1С",
+      "from_query": "mcp 1с cursor финансы 2026"
+    },
+    {
+      "url": "https://github.com/vladimir-kharin/1c_mcp",
+      "title": "Разработка MCP-серверов в 1С - GitHub",
+      "from_query": "mcp 1с cursor финансы 2026"
+    },
+    {
+      "url": "https://denisrynkov.com/blog/mcp-1c-cursor/",
+      "title": "MCP-серверы для 1С: как я использую Cursor для работы с метаданными",
+      "from_query": "mcp 1с cursor финансы август 2026"
+    },
+    {
+      "url": "https://github.com/iflow-mcp/alekseiseleznev-onec-mcp-universal",
+      "title": "GitHub - iflow-mcp/alekseiseleznev-onec-mcp-universal: Единый MCP ...",
+      "from_query": "mcp 1с cursor финансы август 2026"
+    },
+    {
+      "url": "https://vibecoderz.ru/blog/mcp-server-dlya-1s",
+      "title": "MCP сервер для 1С: подключаем Claude и Cursor к базе 1С:Предприятие",
+      "from_query": "mcp 1с cursor финансы август 2026"
+    },
+    {
+      "url": "https://blog.fin-academy.pro/mcp-servery-dlya-buhgalterii-1c",
+      "title": "MCP-серверы для бухгалтерии: подключаем 1С к Claude и забываем про ...",
+      "from_query": "mcp 1с cursor финансы новости 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/2712602/",
+      "title": "INFATON MCP Server v2.1 — 51 инструмент для AI-интеграции с 1С:Предприятие",
+      "from_query": "mcp 1с cursor финансы новости 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-finansovyh-operaczij-i-buhgalterii-v-2026-godu/",
+      "title": "Тенденции автоматизации финансовых операций и бухгалтерии в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.souldex.ru/blog/avtomatizaciya-biznesa-2026-instrumenty",
+      "title": "Автоматизация бизнеса в 2026: 7 инструментов, которые сократят рутину и ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://assistentus.ru/proizvodstvennyj-kalendar-2026/",
+      "title": "Производственный календарь на 2026 год с праздниками и выходными",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/2514331/",
+      "title": "1с И Ai От Хайпа К Практике. Создаем Mcp-сервер Для Интеграции Ваших ...",
+      "from_query": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor 2026"
+    },
+    {
+      "url": "https://arqa.cc/ru/mcp-server",
+      "title": "Mcp Сервер Для 1с | Arqa — Подключите Ai К Вашей 1с",
+      "from_query": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor 2026"
+    },
+    {
+      "url": "https://github.com/infaton/MCP35",
+      "title": "infaton/MCP35 — MCP-сервер 1С (get_balance, get_register_totals)",
+      "from_query": "agent_websearch:mcp 1с cursor финансы 2026 остатки обороты"
+    },
+    {
+      "url": "https://github.com/evilbruce666/1c-odata-mcp",
+      "title": "1c-odata-mcp — MCP через OData (дебиторка, продажи, cashflow)",
+      "from_query": "agent_websearch:mcp 1с cursor финансы 2026"
+    },
+    {
+      "url": "https://glama.ai/mcp/servers/infaton/MCP35",
+      "title": "INFATON MCP35 by infaton | Glama",
+      "from_query": "agent_websearch:get_balance 1c mcp"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/2635907/",
+      "title": "mcp-1c на Go — один бинарник для Cursor и Claude",
+      "from_query": "agent_websearch:автоматизация финотдела MCP 1С Cursor 2026"
+    },
+    {
+      "url": "https://github.com/feenlace/mcp-1c",
+      "title": "feenlace/mcp-1c — 10 tools, HTTP-сервис 1С",
+      "from_query": "agent_websearch:Как подключить MCP к 1С Cursor mcp.json"
+    },
+    {
+      "url": "https://cursor.com/ru/help/customization/mcp",
+      "title": "Cursor Help — MCP customization (RU)",
+      "from_query": "agent_websearch:mcp.json cursor настройка"
+    },
+    {
+      "url": "https://www.anthropic.com/news/model-context-protocol",
+      "title": "Anthropic — Model Context Protocol announcement",
+      "from_query": "agent_websearch:MCP protocol 2024"
+    }
+  ],
+  "agent_websearch": {
+    "searched_at": "2026-08-19",
+    "agent": "excalibur-blog-research",
+    "queries": [
+      "mcp 1с cursor финансы 2026 остатки обороты",
+      "автоматизация финотдела MCP 1С Cursor 2026",
+      "Как подключить MCP к 1С Cursor mcp.json настройка",
+      "1c odata mcp get_balance cursor"
+    ],
+    "key_findings": [
+      "INFATON MCP35: tools get_balance и get_register_totals для остатков/оборотов",
+      "1c-odata-mcp: read.analytics.* без расширения 1С при включённом OData",
+      "feenlace mcp-1c: Go-бинарник + .cursor/mcp.json для Cursor",
+      "SERP gap: мало RU how-to именно Cursor + fin balances vs dev BSL guides"
+    ],
+    "top_urls": [
+      "https://github.com/infaton/MCP35",
+      "https://github.com/evilbruce666/1c-odata-mcp",
+      "https://infostart.ru/1c/articles/2712602/",
+      "https://github.com/feenlace/mcp-1c",
+      "https://blog.fin-academy.pro/mcp-servery-dlya-buhgalterii-1c",
+      "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/"
+    ]
+  }
+}
