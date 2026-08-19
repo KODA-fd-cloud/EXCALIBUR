@@ -1,0 +1,73 @@
+{
+  "article": "memory/blog/articles/B83-reestr-saas-podpisok-sheets/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 9,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "джет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - пов",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "120 дней",
+      "kind": "metric_or_duration",
+      "context": "по категориям и настроите подсветку сроков за 90–120 дней до списания - без SMP и без программиста на старт",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 мин",
+      "kind": "metric_or_duration",
+      "context": "ный email по датам продления Квота MailApp, лимит 6 мин на запуск n8n / Make + выписка 15–20+ сервисов, р",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 мес",
+      "kind": "metric_or_duration",
+      "context": "ания о продлении пошагово Схема workflow: выписка 3 мес → фильтр SaaS → строки в Sheets → владелец + кате",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "его списания. Условное форматирование: красный - ≤30 дней; жёлтый - 31–60; зелёный - 61–90. Для корпоративн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "60 дней",
+      "kind": "metric_or_duration",
+      "context": "), Zapier или еженедельный обзор CFO по фильтру \"≤60 дней\". Статусы вынесите на лист \"Справочник\": \"активна",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "30 мин",
+      "kind": "metric_or_duration",
+      "context": "н ответственный + квартальная сверка с выпиской (~30 мин) Только CF, без обзора Никто не открыл файл - про",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 минут",
+      "kind": "metric_or_duration",
+      "context": "- около часа. Квартальная сверка с банком - около 30 минут, если строки обновлялись при каждой новой подписк",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "120",
+      "kind": "large_number",
+      "context": "по категориям и настроите подсветку сроков за 90–120 дней до списания - без SMP и без программиста на с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

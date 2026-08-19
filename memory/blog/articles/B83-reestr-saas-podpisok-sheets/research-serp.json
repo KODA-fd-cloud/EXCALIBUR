@@ -1,0 +1,449 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-19",
+    "today_ru": "19.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B83",
+    "priority": "P0",
+    "slug": "reestr-saas-podpisok-sheets",
+    "h1": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии",
+    "primary_query": "реестр saas подписок компания",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "реестр saas подписок компания",
+      "2026"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "реестр saas подписок компания 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Оплата подписки на SaaS-сервисы из России: какие способы есть в 2026 ...",
+          "url": "https://companies.rbc.ru/news/3k19caudNM/oplata-podpiski-na-saas-servisyi-iz-rossii-kakie-sposobyi-est-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Реестр подписок компании: шаблон Excel и как вести учёт",
+          "url": "https://subsly.org/blog/reestr-podpisok-kompanii-shablon/",
+          "snippet": "Выбирая надежные сервисы оплаты зарубежных подписок, следует проверить юридическое лицо, полномочия на проведение расчетов, порядок возврата средств и состав документов."
+        },
+        {
+          "title": "Рейтинг 420 продуктовых SaaS-компаний России в 2026 году",
+          "url": "https://hightime.media/raiting-saas-kompaniy/",
+          "snippet": "Загрузите банковскую выписку в Subsly, и за пару минут получите готовый реестр: все подписки с суммами, категориями, дублями и пометкой неиспользуемых — без ручного заполнения."
+        },
+        {
+          "title": "Инвойс и выписка: все подписки компании",
+          "url": "https://saasheriff.ru/blog/invoice-vypiska-nayti-vse-podpiski/",
+          "snippet": "Всем привет, на связи Hightime! Мы провели анализ рынка продуктовых SaaS компаний. В рейтинге отражено состояние данного рынка на конец 2024 года. Данный список был составлен по следующим критериям:"
+        },
+        {
+          "title": "FinOps для SaaS и облаков: контроль подписок, лимитов и расходов",
+          "url": "https://onreport.ru/articles/finops-dlya-saas-i-oblakov-kak-kontrolirovat-podpiski-limity-i-rashody-na-cifrovye-servisy/",
+          "snippet": "Запросы: найти все подписки компании, учёт SaaS по выписке, инвойсы корпоративная почта. Посадка: банк и почта."
+        },
+        {
+          "title": "Договор SaaS-подписки — скачать образец 2026",
+          "url": "https://allcontract.ru/documents/contracts/dogovor-saas-podpiski",
+          "snippet": "Как выстроить контроль SaaS-подписок и облачных расходов: владельцы сервисов, лимиты, алерты, аудит лицензий и отчетность для CFO."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "реестр saas подписок компания август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Оплата подписки на SaaS-сервисы из России: какие способы есть в 2026 ...",
+          "url": "https://companies.rbc.ru/news/3k19caudNM/oplata-podpiski-na-saas-servisyi-iz-rossii-kakie-sposobyi-est-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Инвойс и выписка: все подписки компании",
+          "url": "https://saasheriff.ru/blog/invoice-vypiska-nayti-vse-podpiski/",
+          "snippet": "Выбирая надежные сервисы оплаты зарубежных подписок, следует проверить юридическое лицо, полномочия на проведение расчетов, порядок возврата средств и состав документов."
+        },
+        {
+          "title": "GitHub - KiTaUc/ledger-renewals: Простой реестр SaaS-подписок: расходы ...",
+          "url": "https://github.com/KiTaUc/ledger-renewals",
+          "snippet": "Запросы: найти все подписки компании, учёт SaaS по выписке, инвойсы корпоративная почта. Посадка: банк и почта."
+        },
+        {
+          "title": "Лучшие сервисы, чтобы оплатить SaaS-подписки из России: рейтинг 2026",
+          "url": "https://vc.ru/raketapay/3075857-servisy-dlya-oplaty-saas-podpisok-iz-rossii-luchshie-varyanty",
+          "snippet": "Знайте о продлении до того, как оно случится само. Простой реестр SaaS-подписок: расходы, даты продления и доставка напоминаний."
+        },
+        {
+          "title": "Рейтинг 420 продуктовых SaaS-компаний России в 2026 году",
+          "url": "https://hightime.media/raiting-saas-kompaniy/",
+          "snippet": "Ниже — рейтинг сервисов, через которые в 2026 году реально оплатить зарубежный SaaS из России. Каждый разобран по единой схеме: как устроен, плюсы, пример использования и кому подходит."
+        },
+        {
+          "title": "Реестр подписок компании: шаблон Excel и как вести учёт",
+          "url": "https://subsly.org/blog/reestr-podpisok-kompanii-shablon/",
+          "snippet": "Всем привет, на связи Hightime! Мы провели анализ рынка продуктовых SaaS компаний. В рейтинге отражено состояние данного рынка на конец 2024 года. Данный список был составлен по следующим критериям:"
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "реестр saas подписок компания новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Оплата подписки на SaaS-сервисы из России: какие способы есть в 2026 ...",
+          "url": "https://companies.rbc.ru/news/3k19caudNM/oplata-podpiski-na-saas-servisyi-iz-rossii-kakie-sposobyi-est-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Как оплатить SaaS-подписки из России в 2026 году",
+          "url": "https://dtf.ru/id3470229/5235441-oplata-saas-podpisok-iz-rossii",
+          "snippet": "Рабочие способы оплаты SaaS из России следует сравнивать не только по рыночной стоимости процессинга и сервисному сбору."
+        },
+        {
+          "title": "Лучшие сервисы, чтобы оплатить SaaS-подписки из России: рейтинг 2026",
+          "url": "https://vc.ru/raketapay/3075857-servisy-dlya-oplaty-saas-podpisok-iz-rossii-luchshie-varyanty",
+          "snippet": "Крупные SaaS-компании сверяют не только BIN карты, но и страну её выпуска, платёжный адрес, IP и геолокацию сессии, домен корпоративной почты, налоговый идентификатор в реквизитах."
+        },
+        {
+          "title": "Инвойс и выписка: все подписки компании",
+          "url": "https://saasheriff.ru/blog/invoice-vypiska-nayti-vse-podpiski/",
+          "snippet": "Ниже — рейтинг сервисов, через которые в 2026 году реально оплатить зарубежный SaaS из России. Каждый разобран по единой схеме: как устроен, плюсы, пример использования и кому подходит."
+        },
+        {
+          "title": "Бизнес на подписке: модели, которые работают в 2026",
+          "url": "https://alex-blog.ru/biznes-na-podpiske-modeli-kotorye-rabotayut-v-2026/",
+          "snippet": "Запросы: найти все подписки компании, учёт SaaS по выписке, инвойсы корпоративная почта. Посадка: банк и почта."
+        },
+        {
+          "title": "Рынок подписок (SaaS для частных лиц) - Анализ рынка | INRESEARCH",
+          "url": "https://inresearch.ru/324/",
+          "snippet": "В этой статье мы подробно разберём, почему подписная модель так востребована в 2026 году, какие варианты подписок приносят максимальную отдачу и как выбрать лучшую подписную платформу для ..."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "PDF Автоматизация 2026 всё,",
+          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "ВТОМАТИЗАЦИЯ 2026: ВСЁ, ЧТО НУЖНО ЗНАТЬ Делать бизнес становится сложнее: растут требования, дорожают ресурсы, а стабильность всё . аще зависит от внутренних процессов. Автоматизация �."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        },
+        {
+          "title": "Тенденции автоматизации финансовых операций и бухгалтерии в 2026 году",
+          "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-finansovyh-operaczij-i-buhgalterii-v-2026-godu/",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "реестр saas подписок компания 2026",
+      "purpose": "вторичный запрос: реестр saas подписок компания",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Оплата подписки на SaaS-сервисы из России: какие способы есть в 2026 ...",
+          "url": "https://companies.rbc.ru/news/3k19caudNM/oplata-podpiski-na-saas-servisyi-iz-rossii-kakie-sposobyi-est-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Реестр подписок компании: шаблон Excel и как вести учёт",
+          "url": "https://subsly.org/blog/reestr-podpisok-kompanii-shablon/",
+          "snippet": "Выбирая надежные сервисы оплаты зарубежных подписок, следует проверить юридическое лицо, полномочия на проведение расчетов, порядок возврата средств и состав документов."
+        },
+        {
+          "title": "Рейтинг 420 продуктовых SaaS-компаний России в 2026 году",
+          "url": "https://hightime.media/raiting-saas-kompaniy/",
+          "snippet": "Загрузите банковскую выписку в Subsly, и за пару минут получите готовый реестр: все подписки с суммами, категориями, дублями и пометкой неиспользуемых — без ручного заполнения."
+        },
+        {
+          "title": "Инвойс и выписка: все подписки компании",
+          "url": "https://saasheriff.ru/blog/invoice-vypiska-nayti-vse-podpiski/",
+          "snippet": "Всем привет, на связи Hightime! Мы провели анализ рынка продуктовых SaaS компаний. В рейтинге отражено состояние данного рынка на конец 2024 года. Данный список был составлен по следующим критериям:"
+        },
+        {
+          "title": "FinOps для SaaS и облаков: контроль подписок, лимитов и расходов",
+          "url": "https://onreport.ru/articles/finops-dlya-saas-i-oblakov-kak-kontrolirovat-podpiski-limity-i-rashody-na-cifrovye-servisy/",
+          "snippet": "Запросы: найти все подписки компании, учёт SaaS по выписке, инвойсы корпоративная почта. Посадка: банк и почта."
+        },
+        {
+          "title": "Договор SaaS-подписки — скачать образец 2026",
+          "url": "https://allcontract.ru/documents/contracts/dogovor-saas-podpiski",
+          "snippet": "Как выстроить контроль SaaS-подписок и облачных расходов: владельцы сервисов, лимиты, алерты, аудит лицензий и отчетность для CFO."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": ""
+        },
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "ПРОИЗВОДСТВЕННЫЙ КАЛЕНДАРЬ НА 2026 ГОД",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_508943/attach_LAW_508943_2/",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        },
+        {
+          "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
+          "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
+          "snippet": "В 2026 году в целом при пятидневной рабочей неделе с двумя выходными днями будет 247 рабочих дней, в том числе 4 сокращенных на один час рабочих дня, указанных выше, и 118 выходных и нерабочих ..."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "FinOps для SaaS и облаков: контроль подписок, лимитов и расходов",
+          "url": "https://onreport.ru/articles/finops-dlya-saas-i-oblakov-kak-kontrolirovat-podpiski-limity-i-rashody-na-cifrovye-servisy/",
+          "snippet": ""
+        },
+        {
+          "title": "Как управлять подписками на SaaS и перестать переплачивать за ...",
+          "url": "https://beancount.io/ru/blog/2026/03/11/saas-subscription-management-small-business-guide",
+          "snippet": "Как выстроить контроль SaaS-подписок и облачных расходов: владельцы сервисов, лимиты, алерты, аудит лицензий и отчетность для CFO."
+        },
+        {
+          "title": "Как провести аудит SaaS-подписок самостоятельно за 30 минут — гайд",
+          "url": "https://subsly.org/blog/audit-saas-podpisok-za-30-minut/",
+          "snippet": "Изучите эффективные стратегии управления подписками на SaaS и сократите лишние расходы на программные инструменты."
+        },
+        {
+          "title": "Аудит SaaS-подписок для финансового директора",
+          "url": "https://www.kt-team.ru/blog/audit-saas-podpisok-kompanii",
+          "snippet": "Аудит SaaS-подписок — это разовая работа, которая обычно возвращает компании 50-150 тыс. ₽/мес постоянной экономии. И сделать его можно самостоятельно за 30 минут — без специальных инструментов и бухгалтерского образования. Этот гайд проведёт вас через все шаги: что искать, как считать, какие выводы делать. Подойдёт компаниям до 100 человек."
+        },
+        {
+          "title": "Оптимизация лицензий ПО: как не платить за лишние места",
+          "url": "https://subsly.org/blog/optimizaciya-licenziy-po/",
+          "snippet": "Инструкция для финансового директора: как свести SaaS-расходы, найти неиспользуемые места, проверить документы и управлять продлениями."
+        },
+        {
+          "title": "Учет подписок и платежей для онлайн‑бизнеса: как выстроить устойчивый ...",
+          "url": "https://sneps.ru/novosti/uchet-podpisok-i-platezhej-dlya-onlajn-biznesa-kak-vystroit-ustojchivyj-billing/",
+          "snippet": "Люди увольняются, проекты заканчиваются, а лицензии остаются и тихо списываются. Разберём, где прячутся лишние места и как оптимизировать лицензии ПО без потери в работе."
+        }
+      ],
+      "searched_at": "2026-08-19"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://companies.rbc.ru/news/3k19caudNM/oplata-podpiski-na-saas-servisyi-iz-rossii-kakie-sposobyi-est-v-2026-godu/",
+      "title": "Оплата подписки на SaaS-сервисы из России: какие способы есть в 2026 ...",
+      "from_query": "реестр saas подписок компания 2026"
+    },
+    {
+      "url": "https://subsly.org/blog/reestr-podpisok-kompanii-shablon/",
+      "title": "Реестр подписок компании: шаблон Excel и как вести учёт",
+      "from_query": "реестр saas подписок компания 2026"
+    },
+    {
+      "url": "https://hightime.media/raiting-saas-kompaniy/",
+      "title": "Рейтинг 420 продуктовых SaaS-компаний России в 2026 году",
+      "from_query": "реестр saas подписок компания 2026"
+    },
+    {
+      "url": "https://saasheriff.ru/blog/invoice-vypiska-nayti-vse-podpiski/",
+      "title": "Инвойс и выписка: все подписки компании",
+      "from_query": "реестр saas подписок компания 2026"
+    },
+    {
+      "url": "https://onreport.ru/articles/finops-dlya-saas-i-oblakov-kak-kontrolirovat-podpiski-limity-i-rashody-na-cifrovye-servisy/",
+      "title": "FinOps для SaaS и облаков: контроль подписок, лимитов и расходов",
+      "from_query": "реестр saas подписок компания 2026"
+    },
+    {
+      "url": "https://allcontract.ru/documents/contracts/dogovor-saas-podpiski",
+      "title": "Договор SaaS-подписки — скачать образец 2026",
+      "from_query": "реестр saas подписок компания 2026"
+    },
+    {
+      "url": "https://github.com/KiTaUc/ledger-renewals",
+      "title": "GitHub - KiTaUc/ledger-renewals: Простой реестр SaaS-подписок: расходы ...",
+      "from_query": "реестр saas подписок компания август 2026"
+    },
+    {
+      "url": "https://vc.ru/raketapay/3075857-servisy-dlya-oplaty-saas-podpisok-iz-rossii-luchshie-varyanty",
+      "title": "Лучшие сервисы, чтобы оплатить SaaS-подписки из России: рейтинг 2026",
+      "from_query": "реестр saas подписок компания август 2026"
+    },
+    {
+      "url": "https://dtf.ru/id3470229/5235441-oplata-saas-podpisok-iz-rossii",
+      "title": "Как оплатить SaaS-подписки из России в 2026 году",
+      "from_query": "реестр saas подписок компания новости 2026"
+    },
+    {
+      "url": "https://alex-blog.ru/biznes-na-podpiske-modeli-kotorye-rabotayut-v-2026/",
+      "title": "Бизнес на подписке: модели, которые работают в 2026",
+      "from_query": "реестр saas подписок компания новости 2026"
+    },
+    {
+      "url": "https://inresearch.ru/324/",
+      "title": "Рынок подписок (SaaS для частных лиц) - Анализ рынка | INRESEARCH",
+      "from_query": "реестр saas подписок компания новости 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+      "title": "PDF Автоматизация 2026 всё,",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://remont-netbook.ru/tendenczii-avtomatizaczii-finansovyh-operaczij-i-buhgalterii-v-2026-godu/",
+      "title": "Тенденции автоматизации финансовых операций и бухгалтерии в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_508943/attach_LAW_508943_2/",
+      "title": "ПРОИЗВОДСТВЕННЫЙ КАЛЕНДАРЬ НА 2026 ГОД",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
+      "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://beancount.io/ru/blog/2026/03/11/saas-subscription-management-small-business-guide",
+      "title": "Как управлять подписками на SaaS и перестать переплачивать за ...",
+      "from_query": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии 2026"
+    },
+    {
+      "url": "https://subsly.org/blog/audit-saas-podpisok-za-30-minut/",
+      "title": "Как провести аудит SaaS-подписок самостоятельно за 30 минут — гайд",
+      "from_query": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии 2026"
+    },
+    {
+      "url": "https://www.kt-team.ru/blog/audit-saas-podpisok-kompanii",
+      "title": "Аудит SaaS-подписок для финансового директора",
+      "from_query": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии 2026"
+    },
+    {
+      "url": "https://subsly.org/blog/optimizaciya-licenziy-po/",
+      "title": "Оптимизация лицензий ПО: как не платить за лишние места",
+      "from_query": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии 2026"
+    },
+    {
+      "url": "https://sneps.ru/novosti/uchet-podpisok-i-platezhej-dlya-onlajn-biznesa-kak-vystroit-ustojchivyj-billing/",
+      "title": "Учет подписок и платежей для онлайн‑бизнеса: как выстроить устойчивый ...",
+      "from_query": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии 2026"
+    }
+  ]
+}
