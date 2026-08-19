@@ -1,0 +1,8 @@
+{
+  "slug": "reestr-saas-podpisok-sheets",
+  "topic_id": "B83",
+  "permalink": "https://koda-fd.ru/blog/reestr-saas-podpisok-sheets/",
+  "raw_output": "OK post=249 slug=reestr-saas-podpisok-sheets\nOK categories=3,10,6\nOK featured_image=250\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/reestr-saas-podpisok-sheets-dzen-cover.png\npermalink=https://koda-fd.ru/blog/reestr-saas-podpisok-sheets/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
