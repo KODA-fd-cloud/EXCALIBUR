@@ -1,0 +1,139 @@
+{
+  "article": "memory/blog/articles/B80-mcp-1c-cursor-ostatki-oboroty/article.html",
+  "research_source": "memory/blog/articles/B80-mcp-1c-cursor-ostatki-oboroty/research-notes.md",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "research_stage": true,
+  "total_extracted_facts": 18,
+  "verified_facts_count": 18,
+  "unverified_facts_count": 0,
+  "wordstat_status": "unavailable_mcp_server",
+  "facts": [
+    {
+      "id": 1,
+      "fact": "MCP анонсирован Anthropic 25 ноября 2024 как открытый протокол для AI и внешних инструментов",
+      "source_url": "https://www.anthropic.com/news/model-context-protocol",
+      "verified": true,
+      "reason": "Primary source Anthropic news"
+    },
+    {
+      "id": 2,
+      "fact": "INFATON MCP Server v2.1 содержит 51 инструмент (рост с 35)",
+      "source_url": "https://infostart.ru/1c/articles/2712602/",
+      "verified": true,
+      "reason": "Infostart article by vendor INFATON"
+    },
+    {
+      "id": 3,
+      "fact": "get_balance возвращает остатки и обороты регистра бухгалтерии",
+      "source_url": "https://infostart.ru/1c/articles/2712602/",
+      "verified": true,
+      "reason": "Documented tool #42 in INFATON MCP"
+    },
+    {
+      "id": 4,
+      "fact": "get_register_totals возвращает итоги регистров накопления",
+      "source_url": "https://infostart.ru/1c/articles/2712602/",
+      "verified": true,
+      "reason": "Documented tool #43 in INFATON MCP"
+    },
+    {
+      "id": 5,
+      "fact": "INFATON MCP требует платформу 1С 8.3.20+",
+      "source_url": "https://infostart.ru/1c/articles/2712602/",
+      "verified": true,
+      "reason": "Compatibility table in Infostart article"
+    },
+    {
+      "id": 6,
+      "fact": "1c-odata-mcp запускается командой npx -y 1c-odata-mcp",
+      "source_url": "https://github.com/evilbruce666/1c-odata-mcp",
+      "verified": true,
+      "reason": "README quick start"
+    },
+    {
+      "id": 7,
+      "fact": "1c-odata-mcp по умолчанию только на чтение",
+      "source_url": "https://github.com/evilbruce666/1c-odata-mcp",
+      "verified": true,
+      "reason": "README security section"
+    },
+    {
+      "id": 8,
+      "fact": "read.analytics.get_debtors даёт сальдо счёта 62 по контрагентам",
+      "source_url": "https://github.com/evilbruce666/1c-odata-mcp",
+      "verified": true,
+      "reason": "README analytics tools table"
+    },
+    {
+      "id": 9,
+      "fact": "feenlace mcp-1c — 10 MCP tools, один Go-бинарник",
+      "source_url": "https://github.com/feenlace/mcp-1c/blob/main/docs/getting-started.md",
+      "verified": true,
+      "reason": "Official getting-started doc"
+    },
+    {
+      "id": 10,
+      "fact": "Cursor хранит MCP-конфиг в .cursor/mcp.json или ~/.cursor/mcp.json",
+      "source_url": "https://cursor.com/ru/help/customization/mcp",
+      "verified": true,
+      "reason": "Official Cursor help"
+    },
+    {
+      "id": 11,
+      "fact": "Agent в Cursor по умолчанию запрашивает подтверждение перед MCP tool call",
+      "source_url": "https://cursor.com/ru/help/customization/mcp",
+      "verified": true,
+      "reason": "Official Cursor help"
+    },
+    {
+      "id": 12,
+      "fact": "feenlace рекомендует не более ~40 MCP tools суммарно в Cursor",
+      "source_url": "https://github.com/feenlace/mcp-1c/blob/main/docs/getting-started.md",
+      "verified": true,
+      "reason": "Documented limitation in getting-started"
+    },
+    {
+      "id": 13,
+      "fact": "HTTP-сервисы 1С поддерживаются на платформе 8.3.10+",
+      "source_url": "https://blog.fin-academy.pro/mcp-servery-dlya-buhgalterii-1c",
+      "verified": true,
+      "reason": "Requirements section in fin-academy guide"
+    },
+    {
+      "id": 14,
+      "fact": "INFATON MCP использует JSON-RPC 2.0 и HTTP Basic Auth",
+      "source_url": "https://infostart.ru/1c/articles/2712602/",
+      "verified": true,
+      "reason": "Architecture section Infostart"
+    },
+    {
+      "id": 15,
+      "fact": "1c-odata-mcp требует опубликованный OData на стороне 1С",
+      "source_url": "https://github.com/evilbruce666/1c-odata-mcp",
+      "verified": true,
+      "reason": "README deployment table"
+    },
+    {
+      "id": 16,
+      "fact": "mcp-1c (Go) совместим с Cursor и не требует Python/Node на стороне сервера",
+      "source_url": "https://infostart.ru/1c/articles/2635907/",
+      "verified": true,
+      "reason": "Infostart article about Go mcp-1c"
+    },
+    {
+      "id": 17,
+      "fact": "get_balance принимает account_code, period_from, period_to",
+      "source_url": "https://glama.ai/mcp/servers/infaton/MCP35",
+      "verified": true,
+      "reason": "Glama MCP catalog API example"
+    },
+    {
+      "id": 18,
+      "fact": "BSL Language Server поддерживает режим MCP",
+      "source_url": "https://1c-syntax.github.io/bsl-language-server/en/",
+      "verified": true,
+      "reason": "Official BSL LS documentation"
+    }
+  ]
+}
