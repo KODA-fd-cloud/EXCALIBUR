@@ -1,7 +1,7 @@
 {
-  "topic_id": "B80",
-  "h1": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor",
-  "slug": "mcp-1c-cursor-ostatki-oboroty",
-  "proposed_at": 1787119282,
-  "proposal_message_id": 475
+  "topic_id": "B82",
+  "h1": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта",
+  "slug": "google-sheets-api-integraciya-finotdel",
+  "proposed_at": 1787122105,
+  "proposal_message_id": 481
 }

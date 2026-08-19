@@ -1,0 +1,8 @@
+{
+  "slug": "mcp-1c-cursor-ostatki-oboroty",
+  "topic_id": "B80",
+  "permalink": "https://koda-fd.ru/blog/mcp-1c-cursor-ostatki-oboroty/",
+  "raw_output": "OK post=244 slug=mcp-1c-cursor-ostatki-oboroty\nOK categories=3,10,6\nOK featured_image=245\npermalink=https://koda-fd.ru/blog/mcp-1c-cursor-ostatki-oboroty/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
