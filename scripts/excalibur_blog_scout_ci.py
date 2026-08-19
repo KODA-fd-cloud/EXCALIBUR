@@ -4,9 +4,8 @@
 Strategy:
   1) Optional Cursor Cloud Scout (Excalibur Scout skill: WebSearch + Wordstat + cards)
      — auto when queue empty or --prefer-cursor
-  2) Local web Scout:
-     - curated ANGLE_BANK scored by live DDG trends
-     - if bank thin/exhausted → invent new cards from today's SERP titles
+  2) Local web Scout: curated ANGLE_BANK scored by live DDG trends
+     (SERP titles are signals ONLY — never pasted as H1)
   3) Cannibalization guard (theme_key + semantic overlap)
 
 Usage:
@@ -51,16 +50,16 @@ YEAR = datetime.now(timezone.utc).year
 
 # Trend probes — only for scoring, not for raw H1 paste.
 TREND_QUERIES = [
-    f"n8n финансы автоматизация {YEAR}",
-    f"cursor ai бухгалтер {YEAR}",
-    f"автоматизация сверки банка excel {YEAR}",
+    f"вайб кодинг финансы {YEAR}",
+    f"cursor ai mcp финансы {YEAR}",
+    f"mcp сервер 1с api",
+    f"интеграция google sheets api финансы",
+    f"http сервис 1с веб сервис финансы",
+    f"cursor api автоматизация финотдел",
+    f"приложение для финансиста no code {YEAR}",
     f"управленческий учет google sheets {YEAR}",
     f"1с odata google sheets",
-    f"openai api финансы безопасность",
-    f"make.com vs n8n бизнес",
-    f"платёжный календарь автоматизация",
-    f"дебиторская задолженность напоминания telegram",
-    f"claude code финансы",
+    f"claude code финансы вайбкодинг",
 ]
 
 # Utility-only angles. Each theme_key = unique job-to-be-done.
@@ -103,13 +102,13 @@ ANGLE_BANK: list[dict[str, str]] = [
         "tags": "лимиты telegram бюджет алерт",
     },
     {
-        "theme_key": "make_payment_draft",
-        "short": "Make: платёжка из таблицы",
-        "h1": "Как собрать сценарий Make: строка в таблице → черновик платёжки в банк-клиент",
-        "primary_query": "make платёжка из google sheets",
-        "slug": "make-platezhka-iz-google-sheets",
-        "intent": "workflow",
-        "tags": "make платёжка sheets банк",
+        "theme_key": "mcp_1c_fin_read",
+        "short": "MCP: чтение данных 1С из Cursor",
+        "h1": "Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor",
+        "primary_query": "mcp 1с cursor финансы",
+        "slug": "mcp-1c-cursor-ostatki-oboroty",
+        "intent": "how_to",
+        "tags": "mcp 1с cursor api интеграция",
     },
     {
         "theme_key": "counterparty_dedupe",
@@ -181,7 +180,7 @@ ANGLE_BANK: list[dict[str, str]] = [
         "primary_query": "согласование оплат telegram sla",
         "slug": "soglasovanie-oplat-telegram-sla",
         "intent": "workflow",
-        "tags": "согласование оплаты telegram n8n",
+        "tags": "согласование оплаты telegram интеграция",
     },
     {
         "theme_key": "upi_from_dds",
@@ -302,13 +301,31 @@ ANGLE_BANK: list[dict[str, str]] = [
         "tags": "cash meeting sheets cfo чеклист",
     },
     {
-        "theme_key": "n8n_pdf_invoice_row",
-        "short": "n8n: PDF-счёт → строка реестра",
-        "h1": "Как из PDF счёта сделать строку реестра оплат через n8n",
-        "primary_query": "n8n pdf счет в google sheets",
-        "slug": "n8n-pdf-schet-v-reestr",
+        "theme_key": "vibe_coding_payment_registry",
+        "short": "Вайб-кодинг: реестр оплат из PDF",
+        "h1": "Как вайбкодингом в Cursor собрать из PDF счёта строку реестра оплат",
+        "primary_query": "вайб кодинг cursor pdf счет реестр",
+        "slug": "vibe-coding-pdf-schet-v-reestr",
         "intent": "workflow",
-        "tags": "n8n pdf счет sheets реестр",
+        "tags": "вайбкодинг cursor pdf реестр api",
+    },
+    {
+        "theme_key": "http_service_1c_apps",
+        "short": "HTTP-сервис 1С под своё приложение",
+        "h1": "Как опубликовать HTTP-сервис 1С и дергать его из своего приложения финотдела",
+        "primary_query": "http сервис 1с приложение финансы",
+        "slug": "http-servis-1c-prilozhenie-finotdel",
+        "intent": "how_to",
+        "tags": "http веб-сервис 1с api приложение",
+    },
+    {
+        "theme_key": "sheets_api_integration",
+        "short": "Google Sheets API в контуре финотдела",
+        "h1": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта",
+        "primary_query": "google sheets api сервисный аккаунт финансы",
+        "slug": "google-sheets-api-integraciya-finotdel",
+        "intent": "how_to",
+        "tags": "sheets api интеграция сервисный аккаунт",
     },
     {
         "theme_key": "travel_expense_table",
@@ -390,6 +407,97 @@ ANGLE_BANK: list[dict[str, str]] = [
         "slug": "pravila-kategorizacii-dds-chatgpt",
         "intent": "how_to",
         "tags": "chatgpt ддс правила безопасность",
+    },
+    # --- refill 2026-08-19 after killing DDG-title invent ---
+    {
+        "theme_key": "vendor_scorecard_sheets",
+        "short": "Скоркард поставщиков в Sheets",
+        "h1": "Как вести скоркард поставщиков в Google Sheets: сроки, брак, цена",
+        "primary_query": "оценка поставщиков google sheets",
+        "slug": "skorkard-postavshchikov-google-sheets",
+        "intent": "workflow",
+        "tags": "поставщики scorecard sheets закупки",
+    },
+    {
+        "theme_key": "cash_in_forecast_30d",
+        "short": "Прогноз поступлений на 30 дней",
+        "h1": "Как спрогнозировать поступления на 30 дней в Google Sheets по открытым счетам",
+        "primary_query": "прогноз поступлений google sheets",
+        "slug": "prognoz-postuplenij-30-dnej-sheets",
+        "intent": "how_to",
+        "tags": "поступления прогноз sheets дебиторка",
+    },
+    {
+        "theme_key": "approval_matrix_payments",
+        "short": "Матрица согласования платежей",
+        "h1": "Как завести матрицу согласования платежей в Google Sheets по суммам и ролям",
+        "primary_query": "матрица согласования платежей excel",
+        "slug": "matrica-soglasovaniya-platezhej-sheets",
+        "intent": "workflow",
+        "tags": "согласование матрица платежи sheets",
+    },
+    {
+        "theme_key": "bank_statement_rules_engine",
+        "short": "Движок правил для выписки",
+        "h1": "Как настроить таблицу правил разнесения выписки: приоритет, исключения, тест",
+        "primary_query": "правила разнесения банковской выписки",
+        "slug": "pravila-razneseniya-vypiski-sheets",
+        "intent": "how_to",
+        "tags": "выписка правила ддс sheets",
+    },
+    {
+        "theme_key": "cfo_weekly_metrics",
+        "short": "5 метрик CFO на неделю",
+        "h1": "Как собрать еженедельные 5 метрик CFO в одной вкладке Google Sheets",
+        "primary_query": "еженедельные метрики cfo google sheets",
+        "slug": "ezhenedelnye-metriki-cfo-sheets",
+        "intent": "checklist",
+        "tags": "cfo метрики sheets неделя",
+    },
+    {
+        "theme_key": "refund_registry",
+        "short": "Реестр возвратов покупателям",
+        "h1": "Как вести реестр возвратов покупателям в Google Sheets без потери статусов",
+        "primary_query": "реестр возвратов покупателям excel",
+        "slug": "reestr-vozvratov-pokupatelyam-sheets",
+        "intent": "workflow",
+        "tags": "возвраты реестр sheets продажи",
+    },
+    {
+        "theme_key": "prepaid_expense_tracker",
+        "short": "Учёт авансов выданных поставщикам",
+        "h1": "Как контролировать авансы поставщикам в Google Sheets: выдача, зачёт, остаток",
+        "primary_query": "учет авансов поставщикам google sheets",
+        "slug": "avansy-postavshchikam-google-sheets",
+        "intent": "workflow",
+        "tags": "авансы поставщики sheets контроль",
+    },
+    {
+        "theme_key": "inventory_writeoff_finance",
+        "short": "Списания ТМЦ глазами финансиста",
+        "h1": "Как учитывать списания ТМЦ в управленке на Google Sheets",
+        "primary_query": "списание тмц управленческий учет sheets",
+        "slug": "spisanie-tmc-upravlencheskij-sheets",
+        "intent": "how_to",
+        "tags": "тмц списание sheets управленка",
+    },
+    {
+        "theme_key": "subscription_saas_costs",
+        "short": "Реестр SaaS-подписок компании",
+        "h1": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии",
+        "primary_query": "реестр saas подписок компания",
+        "slug": "reestr-saas-podpisok-sheets",
+        "intent": "workflow",
+        "tags": "saas подписки sheets затраты",
+    },
+    {
+        "theme_key": "dividend_calendar_owner",
+        "short": "Календарь дивидендов / изъятий",
+        "h1": "Как вести календарь изъятий собственника в Google Sheets без путаницы с ДДС",
+        "primary_query": "календарь дивидендов собственника sheets",
+        "slug": "kalendar-izyatiy-sobstvennika-sheets",
+        "intent": "workflow",
+        "tags": "дивиденды собственник sheets ддс",
     },
 ]
 
@@ -528,71 +636,6 @@ def append_card(topic_id: str, angle: dict[str, str], *, evidence: str = "") -> 
     TOPICS_PATH.write_text(text + ("\n" if not text.endswith("\n") else ""), encoding="utf-8")
 
 
-def _slugify_ru(text: str) -> str:
-    table = str.maketrans(
-        {
-            "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ё": "e", "ж": "zh",
-            "з": "z", "и": "i", "й": "j", "к": "k", "л": "l", "м": "m", "н": "n", "о": "o",
-            "п": "p", "р": "r", "с": "s", "т": "t", "у": "u", "ф": "f", "х": "h", "ц": "c",
-            "ч": "ch", "ш": "sh", "щ": "sch", "ъ": "", "ы": "y", "ь": "", "э": "e", "ю": "yu",
-            "я": "ya",
-        }
-    )
-    s = text.lower().translate(table)
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    return (s[:60] or "trend-topic").strip("-")
-
-
-def invent_angles_from_trends(trend_hits: list[dict[str, str]], *, limit: int = 8) -> list[dict[str, str]]:
-    """Turn live DDG titles into utility topic candidates (not bank rotation)."""
-    allow = (
-        "1с", "1c", "excel", "sheets", "n8n", "make", "cursor", "chatgpt", "claude",
-        "ддс", "дебитор", "сверк", "банк", "оплат", "автоматиз", "python", "финанс",
-        "бюджет", "отчёт", "отчет", "налог", "invoice", "odata", "apps script", "telegram",
-    )
-    deny = ("купить", "скачать бесплатно", "казино", "курс валют сегодня", "новости")
-    out: list[dict[str, str]] = []
-    seen: set[str] = set()
-    for hit in trend_hits:
-        title = re.sub(r"\s+", " ", (hit.get("title") or "")).strip()
-        body = (hit.get("body") or "")[:200]
-        blob = f"{title} {body}".lower()
-        if len(title) < 24 or len(title) > 120:
-            continue
-        if not any(k in blob for k in allow):
-            continue
-        if any(k in blob for k in deny):
-            continue
-        # Normalize into how-to H1
-        h1 = title
-        if not re.match(r"^(как|чеклист|checklist|make|n8n|apps)\b", h1, re.I):
-            h1 = f"Как {h1[0].lower()}{h1[1:]}" if h1 else title
-        h1 = h1.rstrip(".!?")
-        pq = re.sub(r"[^\w\s\-]+", " ", title.lower(), flags=re.UNICODE)
-        pq = re.sub(r"\s+", " ", pq).strip()[:80]
-        slug = _slugify_ru(pq)
-        theme = "trend_" + re.sub(r"[^a-z0-9_]+", "_", slug)[:40]
-        if theme in seen or slug in seen:
-            continue
-        seen.add(theme)
-        seen.add(slug)
-        out.append(
-            {
-                "theme_key": theme,
-                "short": title[:70],
-                "h1": h1[:140],
-                "primary_query": pq,
-                "slug": slug,
-                "intent": "how_to",
-                "tags": "trend ddg scout",
-                "evidence": f"ddg:{hit.get('href', '')[:80]}",
-            }
-        )
-        if len(out) >= limit:
-            break
-    return out
-
-
 def gather_trend_hits() -> list[dict[str, str]]:
     hits: list[dict[str, str]] = []
     for q in TREND_QUERIES:
@@ -605,6 +648,54 @@ def gather_trend_hits() -> list[dict[str, str]]:
     return hits
 
 
+def is_junk_h1(h1: str) -> bool:
+    """Reject SERP paste / course roundups / brand tails — never publish as topic H1."""
+    h = (h1 or "").strip()
+    if len(h) < 20:
+        return True
+    low = h.lower()
+    deny_sub = (
+        "wikipedia",
+        "udemy",
+        "habr",
+        "habab",
+        "dtf",
+        "flowframe",
+        "sacra",
+        "n8n.io",
+        "make.com",
+        "zapier",
+        "топ-7",
+        "top-7",
+        "must-have",
+        "q&a",
+        " | ",
+        " — top ",
+        "revenue, funding",
+        "statistics 2026",
+        "(company)",
+        "онлайн-курс",
+        "журнал «",
+        "ваш путь",
+        "полный туториал",
+    )
+    if any(x in low for x in deny_sub):
+        return True
+    # Out of editorial focus
+    if re.search(r"\b(n8n|make\.com|zapier)\b", low):
+        return True
+    # Broken invent grammar: «Как » + noun/brand, not verb how-to
+    if re.match(r"^как\s+(автоматизация|обучение|система|ии|cursor|google|odata|n8n)\b", low):
+        return True
+    body = re.sub(r"^как\s+", "", low, flags=re.I)
+    cyr = len(re.findall(r"[а-яё]", body))
+    lat = len(re.findall(r"[a-z]", body))
+    # Mostly English SERP title glued after «Как»
+    if lat >= 25 and lat > cyr * 1.5:
+        return True
+    return False
+
+
 def try_add_angle(
     angle: dict[str, str],
     *,
@@ -615,6 +706,13 @@ def try_add_angle(
     used_themes: set[str],
     evidence: str,
 ) -> dict[str, str] | None:
+    if is_junk_h1(angle.get("h1", "")):
+        print(f"SKIP junk H1: {angle.get('h1', '')[:70]}", flush=True)
+        return None
+    blob = f"{angle.get('h1','')} {angle.get('primary_query','')} {angle.get('slug','')} {angle.get('tags','')}".lower()
+    if re.search(r"\b(n8n|zapier|make\.com)\b", blob) or re.search(r"(^|[\s:])make([\s:]|$)", blob):
+        print(f"SKIP out-of-focus stack: {angle.get('h1', '')[:70]}", flush=True)
+        return None
     slug = angle["slug"].lower()
     pq = angle["primary_query"].strip().lower()
     theme = (angle.get("theme_key") or "").strip().lower()
@@ -697,23 +795,14 @@ def scout_web(count: int) -> list[dict[str, str]]:
         if row:
             added.append(row)
 
-    # Live invent: when bank is thin/exhausted, mint topics from today's SERP titles
+    # SERP titles are competitor pages / course roundups — NEVER mint H1 from them.
+    # Fresh topics: ANGLE_BANK + Cursor Cloud Scout (rewrites into utility cards).
     if len(added) < count:
-        print(f"Bank filled {len(added)}/{count} — inventing from live SERP…", flush=True)
-        for angle in invent_angles_from_trends(trend_hits, limit=count * 3):
-            if len(added) >= count:
-                break
-            row = try_add_angle(
-                angle,
-                existing=existing,
-                published=published,
-                used_slugs=used_slugs,
-                used_q=used_q,
-                used_themes=used_themes,
-                evidence=angle.get("evidence") or "ddg-invent",
-            )
-            if row:
-                added.append(row)
+        print(
+            f"Bank filled {len(added)}/{count} — no DDG-title invent "
+            f"(use Cloud Scout / expand ANGLE_BANK).",
+            flush=True,
+        )
     return added
 
 
@@ -733,7 +822,22 @@ def scout_cursor_cloud(count: int) -> dict:
 - memory/topics/blog-topics.md
 - memory/brief/site-brief.md
 
-Задача: найти {count} НОВЫЕ актуальные utility-only темы ({YEAR}), релевантные CFO/финотделу + автоматизация (n8n/Make/Cursor/1С/Sheets/Python).
+Задача: найти {count} НОВЫЕ актуальные utility-only темы ({YEAR}), релевантные CFO/финотделу.
+
+Фокус стека (только это):
+- вайб-кодинг / Cursor / Claude Code
+- интеграции (1С ↔ Sheets/Excel/Telegram/банк)
+- MCP
+- API
+- веб-сервисы / HTTP-сервисы 1С
+- свои приложения для финотдела
+НЕ предлагай темы про Make, n8n, Zapier и подобные no-code оркестраторы.
+
+КРИТИЧНО — H1 пишешь ТЫ, не копируешь выдачу:
+- ЗАПРЕЩЕНО вставлять title страницы из SERP/DTF/Habr/Udemy/агентств как H1.
+- ЗАПРЕЩЕНО: «Как » + чужой заголовок, «| бренд», «— Хабр», «ТОП-7 курсов», англ. clickbait без переписывания.
+- H1 = нормальный русский how-to голос КОДА: «Как …», без мусора, без названия чужого сайта.
+- SERP только как сигнал боли/спроса → ты формулируешь свою utility-карточку.
 
 КРИТИЧНО — анти-парафраз:
 - Не предлагай ту же работу другими словами (job-to-be-done должен быть новым).
@@ -832,7 +936,7 @@ def main() -> int:
             print(f"cursor scout failed, fallback web: {e}", file=sys.stderr)
             mode = "web"
 
-    # Локальный web Scout: банк + live DDG invent (актуальные заголовки из SERP)
+    # Локальный web Scout: ТОЛЬКО ANGLE_BANK (SERP titles = scoring signal, never H1)
     if mode == "web" or proposeable_count() < args.min_unpublished:
         web_added = scout_web(args.count)
         added.extend(web_added)
@@ -868,8 +972,12 @@ def main() -> int:
 
             token, chat_id = require_creds()
             if added:
-                lines = "\n".join(f"• {a['topic_id']}: {a['h1']}" for a in added)
-                send_text(token, chat_id, f"🔎 Scout дозаправил очередь ({mode}):\n{lines}")
+                clean = [a for a in added if not is_junk_h1(a.get("h1", ""))]
+                if not clean:
+                    print("notify skipped: all added H1 failed junk gate", flush=True)
+                else:
+                    lines = "\n".join(f"• {a['topic_id']}: {a['h1']}" for a in clean)
+                    send_text(token, chat_id, f"🔎 Scout дозаправил очередь ({mode}):\n{lines}")
             elif mode == "cursor_cloud":
                 send_text(token, chat_id, "🔎 Scout (Cursor Cloud) запущен — новые темы скоро в blog-topics.md")
             elif cooldown_ready("scout_exhausted", 24 * 3600):

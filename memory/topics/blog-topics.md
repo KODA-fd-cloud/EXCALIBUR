@@ -1230,18 +1230,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B71 — Обучение n8n с Нуля в 2026: [ТОП-7] онлайн-курсов по автоматизации сце
+## B80 — MCP: чтение данных 1С из Cursor
 
 - **priority:** P0
-- **slug:** obuchenie-n8n-s-nulya-v-2026-top-7-onlajn-kursov-po-avtomati
-- **theme_key:** trend_obuchenie_n8n_s_nulya_v_2026_top_7_onlaj
-- **h1:** Как обучение n8n с Нуля в 2026: [ТОП-7] онлайн-курсов по автоматизации сценарий автоматизации — Top kursy (июль 2026) на DTF
-- **primary_query:** обучение n8n с нуля в 2026 топ-7 онлайн-курсов по автоматизации сценарий автомат
-- **secondary_queries:** автоматизация финотдела, обучение n8n с нуля в 2026 топ-7 онлайн-курсов по автоматизации сценарий автомат, 2026
+- **slug:** mcp-1c-cursor-ostatki-oboroty
+- **theme_key:** mcp_1c_fin_read
+- **h1:** Как подключить MCP к 1С: читать остатки и обороты прямо из Cursor
+- **primary_query:** mcp 1с cursor финансы
+- **secondary_queries:** автоматизация финотдела, mcp 1с cursor финансы, 2026
 - **search_intent:** how_to
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://dtf.ru/topkursy/4977962-obuchenie-n8n-top-7-kursov-po-avtomatizatsii
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:mcp,1с,cursor,api,интеграция
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -1254,18 +1254,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B72 — n8n Finance Automation in 2026: Real Workflow Examples for AP, AR, and
+## B81 — HTTP-сервис 1С под своё приложение
 
 - **priority:** P0
-- **slug:** n8n-finance-automation-in-2026-real-workflow-examples-for-ap
-- **theme_key:** trend_n8n_finance_automation_in_2026_real_work
-- **h1:** n8n Finance Automation in 2026: Real Workflow Examples for AP, AR, and Close
-- **primary_query:** n8n finance automation in 2026 real workflow examples for ap ar and close
-- **secondary_queries:** автоматизация финотдела, n8n finance automation in 2026 real workflow examples for ap ar and close, 2026
+- **slug:** http-servis-1c-prilozhenie-finotdel
+- **theme_key:** http_service_1c_apps
+- **h1:** Как опубликовать HTTP-сервис 1С и дергать его из своего приложения финотдела
+- **primary_query:** http сервис 1с приложение финансы
+- **secondary_queries:** автоматизация финотдела, http сервис 1с приложение финансы, 2026
 - **search_intent:** how_to
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://www.yourproductpartners.com/post/n8n-finance-automation-in-2026-real-wor
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:http,веб-сервис,1с,api,приложение
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -1278,18 +1278,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B73 — Автоматизация на n8n под ключ: разработка и внедрение в бизнес-процесс
+## B82 — Google Sheets API в контуре финотдела
 
 - **priority:** P0
-- **slug:** avtomatizaciya-na-n8n-pod-klyuch-razrabotka-i-vnedrenie-v-bi
-- **theme_key:** trend_avtomatizaciya_na_n8n_pod_klyuch_razrabo
-- **h1:** Как автоматизация на n8n под ключ: разработка и внедрение в бизнес-процессы | Secret Agents
-- **primary_query:** автоматизация на n8n под ключ разработка и внедрение в бизнес-процессы secret ag
-- **secondary_queries:** автоматизация финотдела, автоматизация на n8n под ключ разработка и внедрение в бизнес-процессы secret ag, 2026
+- **slug:** google-sheets-api-integraciya-finotdel
+- **theme_key:** sheets_api_integration
+- **h1:** Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта
+- **primary_query:** google sheets api сервисный аккаунт финансы
+- **secondary_queries:** автоматизация финотдела, google sheets api сервисный аккаунт финансы, 2026
 - **search_intent:** how_to
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://secret-agents.ru/development/n8n
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:sheets,api,интеграция
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -1302,18 +1302,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B74 — Cursor AI: полный туториал по вайбкодингу в 2026 — журнал «Код»
+## B83 — Реестр SaaS-подписок компании
 
 - **priority:** P0
-- **slug:** cursor-ai-polnyj-tutorial-po-vajbkodingu-v-2026-zhurnal-kod
-- **theme_key:** trend_cursor_ai_polnyj_tutorial_po_vajbkodingu
-- **h1:** Как cursor AI: полный туториал по вайбкодингу в 2026 — журнал «Код»
-- **primary_query:** cursor ai полный туториал по вайбкодингу в 2026 журнал код
-- **secondary_queries:** автоматизация финотдела, cursor ai полный туториал по вайбкодингу в 2026 журнал код, 2026
-- **search_intent:** how_to
+- **slug:** reestr-saas-podpisok-sheets
+- **theme_key:** subscription_saas_costs
+- **h1:** Как вести реестр SaaS-подписок и не платить за мёртвые лицензии
+- **primary_query:** реестр saas подписок компания
+- **secondary_queries:** автоматизация финотдела, реестр saas подписок компания, 2026
+- **search_intent:** workflow
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://thecode.media/cursor-ai-tutorial-2026/
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:подписки,sheets
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
@@ -1326,306 +1326,18 @@ python scripts/excalibur_blog_utility_gate.py --topic-id B13
 
 ---
 
-## B75 — ИИ для бухгалтеров — онлайн-курс по цифровой трансформации учета
+## B84 — 5 метрик CFO на неделю
 
 - **priority:** P0
-- **slug:** ii-dlya-buhgalterov-onlajn-kurs-po-cifrovoj-transformacii-uc
-- **theme_key:** trend_ii_dlya_buhgalterov_onlajn_kurs_po_cifro
-- **h1:** Как иИ для бухгалтеров — онлайн-курс по цифровой трансформации учета
-- **primary_query:** ии для бухгалтеров онлайн-курс по цифровой трансформации учета
-- **secondary_queries:** автоматизация финотдела, ии для бухгалтеров онлайн-курс по цифровой трансформации учета, 2026
-- **search_intent:** how_to
+- **slug:** ezhenedelnye-metriki-cfo-sheets
+- **theme_key:** cfo_weekly_metrics
+- **h1:** Как собрать еженедельные 5 метрик CFO в одной вкладке Google Sheets
+- **primary_query:** еженедельные метрики cfo google sheets
+- **secondary_queries:** автоматизация финотдела, еженедельные метрики cfo google sheets, 2026
+- **search_intent:** checklist
 - **article_mode:** B
 - **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://aibuhgalter.by/
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B76 — Автоматизация Финансовых Расчетов в Excel: Ваш Путь к Безупречной ...
-
-- **priority:** P0
-- **slug:** avtomatizaciya-finansovyh-raschetov-v-excel-vash-put-k-bezup
-- **theme_key:** trend_avtomatizaciya_finansovyh_raschetov_v_ex
-- **h1:** Как автоматизация Финансовых Расчетов в Excel: Ваш Путь к Безупречной 
-- **primary_query:** автоматизация финансовых расчетов в excel ваш путь к безупречной
-- **secondary_queries:** автоматизация финотдела, автоматизация финансовых расчетов в excel ваш путь к безупречной, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://www.excelwithclaude.com/blog/excel-2026-3133
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B77 — Как сверять акты сверки в Excel: пошаговая инструкция 2026
-
-- **priority:** P0
-- **slug:** kak-sveryat-akty-sverki-v-excel-poshagovaya-instrukciya-2026
-- **theme_key:** trend_kak_sveryat_akty_sverki_v_excel_poshagov
-- **h1:** Как сверять акты сверки в Excel: пошаговая инструкция 2026
-- **primary_query:** как сверять акты сверки в excel пошаговая инструкция 2026
-- **secondary_queries:** автоматизация финотдела, как сверять акты сверки в excel пошаговая инструкция 2026, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-16 · trend-scored · ddg:https://excel-gid.vercel.app/articles/k/ka/kak-sveryat-akty-sverok-v-eksele.html
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B78 — Как ИИ помогает выявлять ошибки в актах сверки: разбор реального кейса
-
-- **priority:** P0
-- **slug:** kak-ii-pomogaet-vyyavlyat-oshibki-v-aktah-sverki-razbor-real
-- **theme_key:** trend_kak_ii_pomogaet_vyyavlyat_oshibki_v_akta
-- **h1:** Как ИИ помогает выявлять ошибки в актах сверки: разбор реального кейса
-- **primary_query:** как ии помогает выявлять ошибки в актах сверки разбор реального кейса
-- **secondary_queries:** автоматизация финотдела, как ии помогает выявлять ошибки в актах сверки разбор реального кейса, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://www.glavbukh.ru/art/391460-kak-ii-pomogaet-vyyavlyat-oshibki-v-aktah-sve
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B79 — Автоматизация сверки взаиморасчётов в 1С: ошибки, причины и готовые ре
-
-- **priority:** P0
-- **slug:** avtomatizaciya-sverki-vzaimoraschetov-v-1s-oshibki-prichiny
-- **theme_key:** trend_avtomatizaciya_sverki_vzaimoraschetov_v_
-- **h1:** Как автоматизация сверки взаиморасчётов в 1С: ошибки, причины и готовые решения
-- **primary_query:** автоматизация сверки взаиморасчётов в 1с ошибки причины и готовые решения
-- **secondary_queries:** автоматизация финотдела, автоматизация сверки взаиморасчётов в 1с ошибки причины и готовые решения, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://cms1c.ru/poleznoe/avtomatizaciya-sverki-1s/
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B80 — Google Sheets - управленческий учет в таблицах | Добро ...
-
-- **priority:** P0
-- **slug:** google-sheets-upravlencheskij-uchet-v-tablicah-dobro
-- **theme_key:** trend_google_sheets_upravlencheskij_uchet_v_ta
-- **h1:** Как google Sheets - управленческий учет в таблицах | Добро 
-- **primary_query:** google sheets - управленческий учет в таблицах добро
-- **secondary_queries:** автоматизация финотдела, google sheets - управленческий учет в таблицах добро, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://vk.com/googlesheetsforyou
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B81 — Как из google sheets подключиться к 1С по odata? — Хабр Q&A
-
-- **priority:** P0
-- **slug:** kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a
-- **theme_key:** trend_kak_iz_google_sheets_podklyuchitsya_k_1s
-- **h1:** Как из google sheets подключиться к 1С по odata? — Хабр Q&A
-- **primary_query:** как из google sheets подключиться к 1с по odata хабр q a
-- **secondary_queries:** автоматизация финотдела, как из google sheets подключиться к 1с по odata хабр q a, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://qna.habr.com/q/891699
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B82 — OData в 1С | Публикация и подключение | Д-Партнерс - «Д ...
-
-- **priority:** P0
-- **slug:** odata-v-1s-publikaciya-i-podklyuchenie-d-partners-d
-- **theme_key:** trend_odata_v_1s_publikaciya_i_podklyuchenie_d
-- **h1:** Как oData в 1С | Публикация и подключение | Д-Партнерс - «Д 
-- **primary_query:** odata в 1с публикация и подключение д-партнерс - д
-- **secondary_queries:** автоматизация финотдела, odata в 1с публикация и подключение д-партнерс - д, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://d-partners.ru/services/obmen-dannymi-mezdu-1s-i-odata-publikaciia-podkli
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B83 — Автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs ..
-
-- **priority:** P0
-- **slug:** avtomatizaciya-na-n8n-dlya-biznesa-2026-zadachi-cena-self-ho
-- **theme_key:** trend_avtomatizaciya_na_n8n_dlya_biznesa_2026_
-- **h1:** Как автоматизация на n8n для бизнеса 2026: задачи, цена, self-hosted vs 
-- **primary_query:** автоматизация на n8n для бизнеса 2026 задачи цена self-hosted vs
-- **secondary_queries:** автоматизация финотдела, автоматизация на n8n для бизнеса 2026 задачи цена self-hosted vs, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://bot-craft.ru/blog/n8n-automation-2026/
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B84 — n8n для бизнеса: AI-агенты и автоматизация — гайд 2026 — Обучение по .
-
-- **priority:** P0
-- **slug:** n8n-dlya-biznesa-ai-agenty-i-avtomatizaciya-gajd-2026-obuche
-- **theme_key:** trend_n8n_dlya_biznesa_ai_agenty_i_avtomatizac
-- **h1:** n8n для бизнеса: AI-агенты и автоматизация — гайд 2026 — Обучение по 
-- **primary_query:** n8n для бизнеса ai-агенты и автоматизация гайд 2026 обучение по
-- **secondary_queries:** автоматизация финотдела, n8n для бизнеса ai-агенты и автоматизация гайд 2026 обучение по, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://mayai.ru/n8n-gayd-biznes-ai-agenty-avtomatizaciya-2026/
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B85 — Автоматизация финансов с n8n, Actual Budget и SimpleFIN
-
-- **priority:** P0
-- **slug:** avtomatizaciya-finansov-s-n8n-actual-budget-i-simplefin
-- **theme_key:** trend_avtomatizaciya_finansov_s_n8n_actual_bud
-- **h1:** Как автоматизация финансов с n8n, Actual Budget и SimpleFIN
-- **primary_query:** автоматизация финансов с n8n actual budget и simplefin
-- **secondary_queries:** автоматизация финотдела, автоматизация финансов с n8n actual budget и simplefin, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://home-hosted.ru/articles/samostoyatelnoe-upravlenie-finansami-n8n-actual-
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B86 — Автоматизация на n8n — workflow между 400+ сер… - FlowFrame
-
-- **priority:** P0
-- **slug:** avtomatizaciya-na-n8n-workflow-mezhdu-400-ser-flowframe
-- **theme_key:** trend_avtomatizaciya_na_n8n_workflow_mezhdu_40
-- **h1:** Как автоматизация на n8n — workflow между 400+ сер… - FlowFrame
-- **primary_query:** автоматизация на n8n workflow между 400 сер - flowframe
-- **secondary_queries:** автоматизация финотдела, автоматизация на n8n workflow между 400 сер - flowframe, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://flowframe.ru/avtomatizaciya/n8n-avtomatizaciya-2026/
-- **h2_outline:**
-  1. Когда это нужно финотделу (и когда нет)
-  2. Подготовка данных и безопасность (без сырых ПДн в облако)
-  3. Пошаговая настройка / скрипт / сценарий
-  4. Проверка результата и типичные ошибки
-  5. Что автоматизировать дальше
-- **faq_hints:** можно ли без программиста; сколько займёт внедрение; какие риски для данных
-- **internal_links:** /avtomatizaciya-finansov-no-code/, /obezlichivanie-dannyh-chatgpt-finansist/
-- **cover_scene_hint:** abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text
-
----
-
-## B87 — Система управленческого учёта в Таблицах и Формах Google | Udemy
-
-- **priority:** P0
-- **slug:** sistema-upravlencheskogo-ucheta-v-tablicah-i-formah-google-u
-- **theme_key:** trend_sistema_upravlencheskogo_ucheta_v_tablic
-- **h1:** Как система управленческого учёта в Таблицах и Формах Google | Udemy
-- **primary_query:** система управленческого учёта в таблицах и формах google udemy
-- **secondary_queries:** автоматизация финотдела, система управленческого учёта в таблицах и формах google udemy, 2026
-- **search_intent:** how_to
-- **article_mode:** B
-- **author_id:** olga-kondratskaya
-- **source_notes:** scout_ci 2026-08-17 · trend-scored · ddg:https://www.udemy.com/course/google-v/
+- **source_notes:** scout_ci 2026-08-19 · trend-scored · bank+tags:sheets
 - **h2_outline:**
   1. Когда это нужно финотделу (и когда нет)
   2. Подготовка данных и безопасность (без сырых ПДн в облако)
