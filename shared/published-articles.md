@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-08-19 | B82 | google-sheets-api-integraciya-finotdel | https://koda-fd.ru/blog/google-sheets-api-integraciya-finotdel/ | published |
 | 2026-08-19 | B80 | mcp-1c-cursor-ostatki-oboroty | https://koda-fd.ru/blog/mcp-1c-cursor-ostatki-oboroty/ | published |
 | 2026-08-18 | B81 | kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a | https://koda-fd.ru/blog/kak-iz-google-sheets-podklyuchitsya-k-1s-po-odata-habr-q-a/ | published |
 | 2026-08-16 | B64 | one-pager-sobstvenniku-sheets | https://koda-fd.ru/blog/one-pager-sobstvenniku-sheets/ | published |

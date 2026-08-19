@@ -1,7 +1,7 @@
 {
-  "topic_id": "B82",
-  "h1": "Как интегрировать Google Sheets API: сервисный аккаунт, scopes, запись из скрипта",
-  "slug": "google-sheets-api-integraciya-finotdel",
-  "proposed_at": 1787122105,
-  "proposal_message_id": 481
+  "topic_id": "B83",
+  "h1": "Как вести реестр SaaS-подписок и не платить за мёртвые лицензии",
+  "slug": "reestr-saas-podpisok-sheets",
+  "proposed_at": 1787132254,
+  "proposal_message_id": 488
 }
