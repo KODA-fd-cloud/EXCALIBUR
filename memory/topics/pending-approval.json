@@ -1,10 +1,10 @@
 {
-  "topic_id": "B93",
-  "h1": "Как ротировать ключ сервисного аккаунта Google Sheets API без простоя обновлений",
-  "slug": "rotaciya-service-account-sheets-api",
+  "topic_id": "B90",
+  "h1": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки",
+  "slug": "cursor-skill-vygruzka-1c-odata",
   "status": "pending",
-  "proposed_at": 1787401907,
-  "proposal_message_id": 503,
+  "proposed_at": 1787404710,
+  "proposal_message_id": 506,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -51,7 +51,7 @@
     "B86",
     "B87",
     "B88",
-    "B89"
-  ],
-  "reminded_at": 1787401907
+    "B89",
+    "B93"
+  ]
 }
