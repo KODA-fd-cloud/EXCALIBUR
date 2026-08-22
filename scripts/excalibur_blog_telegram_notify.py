@@ -29,7 +29,7 @@ OFFSET_FILE = ROOT / "memory" / "topics" / "telegram-updates.offset"
 COOLDOWNS = ROOT / "memory" / "topics" / "telegram-cooldowns.json"
 
 # Anti-spam: never hammer Telegram with the same system notice
-EMPTY_QUEUE_COOLDOWN_SEC = 24 * 3600
+EMPTY_QUEUE_COOLDOWN_SEC = 7 * 24 * 3600  # starve-spam max 1×/week
 REMIND_COOLDOWN_SEC = 12 * 3600
 
 
