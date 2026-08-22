@@ -1,0 +1,31 @@
+{
+  "topic_id": "B91",
+  "h1": "Как через HTTP-сервис создать черновик счёта в 1С из JSON своего приложения",
+  "title": "Как через HTTP-сервис создать черновик счёта в 1С из JSON своего приложения",
+  "description": "HTTP-сервис 1С: POST JSON из CRM или сайта → черновик счёта на оплату с номером в ответе. Контракт, bit_http_api vs свой код, curl и безопасность для финотдела.",
+  "cover_alt": "Тёмная схема: приложение отправляет JSON в HTTP-сервис 1С, на выходе черновик счёта",
+  "slug": "http-servis-1c-chernovik-scheta-json",
+  "primary_query": "http сервис 1с создать счет json",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "post json 1с счет",
+    "http сервис 1с"
+  ],
+  "char_count": 8868,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "создать счёт в 1С через HTTP POST JSON",
+    "черновик счёта на оплату из API 1С",
+    "HTTP-сервис 1С для CRM и сайта"
+  ],
+  "meta_ab": {
+    "title_seo": "HTTP сервис 1С создать счет json: POST и черновик",
+    "title_ctr": "💻 HTTP сервис 1С: как создать счёт из JSON без ручного ввода в базе?",
+    "title_aeo": "Как через HTTP-сервис создать черновик счёта в 1С из JSON?",
+    "description_seo": "Пошагово: JSON-контракт, свой HTTP-сервис или bit_http_api для БП, публикация hs, curl-тест и сверка в «Счета покупателям». Безопасность ПДн для финотдела.",
+    "description_ctr": "⚡️ CRM шлёт POST — 1С возвращает номер счёта: черновик без проведения, типичные 404/500 и чеклист для бухгалтера. Гайд для fin + 1С.",
+    "description_aeo": "HTTP сервис 1С создать счет json — POST с Content-Type application/json создаёт черновик счёта на оплату и отдаёт number, id, date в ответе."
+  },
+  "cover_family": "gradient_abstract"
+}

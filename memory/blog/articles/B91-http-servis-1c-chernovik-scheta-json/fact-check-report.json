@@ -1,0 +1,80 @@
+{
+  "article": "memory/blog/articles/B91-http-servis-1c-chernovik-scheta-json/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 10,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 8,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ь про счёт на оплату , а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1 000 000",
+      "kind": "large_number",
+      "context": "ST bit_http_api поле price передаётся в копейках (1 000 000 = 10 000,00 ₽) - ошибка здесь даёт счёт в 100 раз",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "api поле price передаётся в копейках (1 000 000 = 10 000,00 ₽) - ошибка здесь даёт счёт в 100 раз больше и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "000 000 = 10 000,00 ₽) - ошибка здесь даёт счёт в 100 раз больше или меньше. Пример тела для обмена (мас",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7700000000",
+      "kind": "large_number",
+      "context": "я обмена (маскированные данные): { \"seller_inn\": \"7700000000\", \"payer_inn\": \"7700000001\", \"comment\": \"ORDER-20",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7700000001",
+      "kind": "large_number",
+      "context": "ные): { \"seller_inn\": \"7700000000\", \"payer_inn\": \"7700000001\", \"comment\": \"ORDER-2026-001\", \"items\": [ {\"name\"",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500000",
+      "kind": "large_number",
+      "context": "s\": [ {\"name\": \"Консультация\", \"qty\": 1, \"price\": 1500000} ] } Безопасность до публикации: отдельный пользо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "401/403 . Не прячьте ошибки бизнес-логики в HTTP 200 с текстом \"ошибка\". curl -X POST \"https://host/bas",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100000",
+      "kind": "large_number",
+      "context": "000001\",\"items\":[{\"name\":\"Услуга\",\"qty\":1,\"price\":100000}]}' Сделайте: на пилоте создавайте только чернови",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500",
+      "kind": "large_number",
+      "context": "сразу: пустое тело → 400, неверный ИНН → 4xx или 500 с записью в журнал регистрации 1С. Smoke-test GET",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

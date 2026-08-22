@@ -1,0 +1,104 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-22",
+    "today_ru": "22.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-24",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B91",
+    "priority": "P0",
+    "slug": "http-servis-1c-chernovik-scheta-json",
+    "h1": "Как через HTTP-сервис создать черновик счёта в 1С из JSON своего приложения",
+    "primary_query": "http сервис 1с создать счет json",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "http сервис 1с создать счет json",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B91",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "http сервис 1с создать счет json 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "http сервис 1с создать счет json август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "http сервис 1с создать счет json новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "http сервис 1с создать счет json 2026",
+      "purpose": "вторичный запрос: http сервис 1с создать счет json"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как через HTTP-сервис создать черновик счёта в 1С из JSON своего приложения 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B91-http-servis-1c-chernovik-scheta-json",
+  "research_completed": {
+    "date": "2026-08-22",
+    "agent": "excalibur-blog-research",
+    "utility_verdict": "PASS",
+    "reader_outcome": "Настроить POST JSON → HTTP-сервис 1С → черновик счёта на оплату с номером в ответе и проверить через curl/Postman + UI 1С.",
+    "action_outline_steps": 8,
+    "facts_count": 18,
+    "unique_sources_count": 10,
+    "wordstat": {
+      "status": "unavailable",
+      "reason": "MCP server user-mcp-kv not connected in cloud session",
+      "auth_url": "https://oauth.yandex.ru/authorize?response_type=token&client_id=c654b948515a4a07a4c89648a0831d40"
+    },
+    "artifacts": [
+      "research-notes.md",
+      "research-serp.json",
+      "fact-check-report.json"
+    ],
+    "related_topics": ["B18", "B80"],
+    "internal_links": [
+      "/avtomatizaciya-finansov-no-code/",
+      "/obezlichivanie-dannyh-chatgpt-finansist/"
+    ]
+  },
+  "next_step": "Task excalibur-blog-writer по research-notes.md"
+}

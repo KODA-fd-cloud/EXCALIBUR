@@ -1,0 +1,15 @@
+{
+  "topic_id": "B91",
+  "slug": "http-servis-1c-chernovik-scheta-json",
+  "cover_family": "gradient_abstract",
+  "pipeline": "cursor_generate_image_legacy_abstract",
+  "file": "cover/cover.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "alt": "Тёмная схема: приложение отправляет JSON в HTTP-сервис 1С, на выходе черновик счёта",
+  "cover_alt_text": "Тёмная схема: приложение отправляет JSON в HTTP-сервис 1С, на выходе черновик счёта",
+  "aspect_ratio": "16:9",
+  "size": "1200x675",
+  "generated_at": "2026-08-22T14:23:05.256596+00:00",
+  "scene_hint": "abstract holographic finance automation dark #0a0a0f purple #8b5cf6, no text",
+  "note": "abstract holographic, NO text on image"
+}
