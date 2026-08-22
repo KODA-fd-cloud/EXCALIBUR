@@ -28,7 +28,7 @@
     "description_aeo": "Cursor Skill для выгрузки 1С – папка .cursor/skills с SKILL.md и MCP-транспортом OData. Как настроить read-only, прогнать smoke-test и поймать типичные ошибки."
   },
   "geo_qa": {
-    "score": 91,
+    "score": 92,
     "core_eeat_lite": 19,
     "verdict": "PASS",
     "date": "2026-08-22",

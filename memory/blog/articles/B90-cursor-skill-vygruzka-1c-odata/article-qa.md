@@ -15,7 +15,7 @@ verdict: PASS
 | GEO / citability | 25 | 24 | Answer-first lead 387 симв, таблица Rules/MCP/Skill + errors, workflow blockquote, ol×22, pre×1, 6 FAQ |
 | CORE-EEAT lite | 15 | 14 | 19/20; −1 Wordstat MCP-KV offline в research |
 | Human voice | 15 | 15 | 0 slop hits, Flesch RU 97.3, режим B Ольга, «Сделайте/Не делайте» |
-| Fact safety | 15 | 14 | fact-check из research-notes URLs; без выдуманных процентов |
+| Fact safety | 15 | 14 | fact-check PASS (8 stats, 2 verified in fact-bank; 6 tech refs из research-notes) |
 | Contract HTML | 10 | 5 | linter PASS, объём 8949 ✓, CTA club×1 + TG×1 ✓; −5 нет `<img>` (cover отдельно) |
 
 **Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate pass — **выполнен**.
@@ -66,12 +66,14 @@ verdict: PASS
 |--------|---------|------|
 | html-linter | PASS | html-linter-report.json |
 | slop-detector | PASS | slop-detector-report.json |
-| utility gate (article) | PASS | utility-gate-report.json (implicit) |
-| link-verify | PASS | link-verify.json |
+| utility gate (article) | PASS | utility-gate-report.json |
+| link-verify | PASS (7/7) | link-verify.json |
+| fact-check | PASS | fact-check-report.json |
+| cannibalization | PASS (B90 не в issues) | cannibalization-report.json |
 
 ## Link verify
 
-- total: 8, failed: 0 (ожидается после прогона)
+- total: 7, failed: 0
 - OK: `/blog/avtomatizaciya-finansov-no-code/`, `/blog/obezlichivanie-dannyh-chatgpt-finansist/`, `/blog/vygruzka-1c-excel-odata/`, `/blog/mcp-1c-cursor-ostatki-oboroty/`, `/blog/cursor-rules-finotdel/`, t.me/finance_modern, club.koda-fd.ru
 - `--site-base https://koda-fd.ru`
 
@@ -84,21 +86,24 @@ verdict: PASS
 
 ## Fact-check
 
+- verdict: PASS
+- extracted: 8 stats; verified in fact-bank: 2 (2026, 500); unverified: 6 (115, 1000, 100000, 401, 404, 200000 — tech refs из research-notes, не маркетинг)
 - Опора на research-notes fact table (20 утверждений с URL)
 - Без «115 skills обязательны для CFO», без write без human-in-the-loop
 
 ## Cannibalization
 
-- Дифференциация: B90 = SKILL.md packaging; B13 Excel/Sheets; B80 MCP остатки; B23 rules
-- verdict: PASS (ожидается)
+- global report: WARNING (B80↔B21 overlap 75%, не B90)
+- B90 primary `cursor skill 1с odata` — дифференциация от B13 (Excel), B80 (MCP остатки), B23 (rules)
+- verdict: PASS
 
 ## Utility gate
 
-- article: PASS (`checklist`, numbered steps ≥5, faq_h3=6)
+- article: PASS (`checklist`, numbered steps 22, faq_h3=6, h2=5, tables=2)
 
 ## Fix cycle
 
-- cycle 0: HTML без правок после первого прогона linter/slop/utility
+- cycle 0: HTML без правок; все gates PASS
 
 ## Optional (не blocker)
 

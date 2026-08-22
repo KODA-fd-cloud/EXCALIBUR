@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/B90-cursor-skill-vygruzka-1c-odata",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 22,
+        "h2_sections": 5,
+        "faq_h3": 6,
+        "tables": 2,
+        "blockquotes": 2,
+        "ul_lists": 0,
+        "action_markers": 22,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

@@ -1,97 +1,66 @@
 {
   "article": "memory/blog/articles/B90-cursor-skill-vygruzka-1c-odata/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
-  "research_source": "memory/blog/articles/B90-cursor-skill-vygruzka-1c-odata/research-notes.md",
   "verdict": "pass",
-  "stage": "research",
-  "note": "Pre-writer fact inventory from research-notes. Fact-bank has no B90-specific rows; numeric claims must cite research table URLs in article.",
-  "total_extracted_facts": 12,
-  "verified_facts_count": 0,
-  "unverified_facts_count": 12,
+  "total_extracted_facts": 8,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 6,
   "facts": [
     {
-      "fact": "55 tools",
-      "kind": "metric_or_duration",
-      "context": "1c-odata-mcp registers 55 MCP tools (21 read/analytics + 34 write)",
-      "verified": false,
-      "reason": "Sourced in research-notes #11 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в expo",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
     },
     {
-      "fact": "115 skills",
-      "kind": "metric_or_duration",
-      "context": "Desko77/cursor-1c-skills repository advertises 115 skills for 1C development",
+      "fact": "115",
+      "kind": "large_number",
+      "context": "н focused skill под fin-export лучше, чем ставить 115 dev-skills для разработки 1С. Не делайте: путать S",
       "verified": false,
-      "reason": "Sourced in research-notes #14 from https://github.com/Desko77/cursor-1c-skills — not in fact-bank"
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
-      "fact": "35 rules",
-      "kind": "metric_or_duration",
-      "context": "Desko77/cursor-1c-skills includes 35 rules (.mdc) for BSL/1C dev",
+      "fact": "1000",
+      "kind": "large_number",
+      "context": "щностей, лимиты $top (по умолчанию ODATA_MAX_ROWS 1000, max 100000), шаблон URL …/odata/standard.odata.",
       "verified": false,
-      "reason": "Sourced in research-notes #14 from https://github.com/Desko77/cursor-1c-skills — not in fact-bank"
-    },
-    {
-      "fact": "Node.js 20+",
-      "kind": "metric_or_duration",
-      "context": "1c-odata-mcp requires Node.js 20+ per aitools1c.dev catalog",
-      "verified": false,
-      "reason": "Sourced in research-notes #10 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "100000",
       "kind": "large_number",
-      "context": "ODATA_MAX_ROWS upper bound 100000 (default 1000) for 1c-odata-mcp reads",
+      "context": "имиты $top (по умолчанию ODATA_MAX_ROWS 1000, max 100000), шаблон URL …/odata/standard.odata. Подключите M",
       "verified": false,
-      "reason": "Sourced in research-notes #12 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
-    },
-    {
-      "fact": "200000",
-      "kind": "large_number",
-      "context": "ODATA_ANALYTICS_MAX_ROWS default 200000 for client-side aggregations",
-      "verified": false,
-      "reason": "Sourced in research-notes #12 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
-    },
-    {
-      "fact": "64",
-      "kind": "large_number",
-      "context": "Agent Skills spec: name field max 64 characters",
-      "verified": false,
-      "reason": "Sourced in research-notes #19 from agentskills specification — not in fact-bank"
-    },
-    {
-      "fact": "1024",
-      "kind": "large_number",
-      "context": "Agent Skills spec: description field max 1024 characters",
-      "verified": false,
-      "reason": "Sourced in research-notes #19 from agentskills specification — not in fact-bank"
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "500",
       "kind": "large_number",
-      "context": "Agent Skills spec recommends SKILL.md under 500 lines",
-      "verified": false,
-      "reason": "Sourced in research-notes #19 from agentskills specification — not in fact-bank"
+      "context": "здувайте основной файл (рекомендация spec: меньше 500 строк). Сделайте: один skill под fin-export, не кл",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
     },
     {
-      "fact": "200+",
-      "kind": "metric_or_duration",
-      "context": "Noltis 2026: OData slowdown example around 200+ records on large selections",
+      "fact": "401",
+      "kind": "large_number",
+      "context": "-odata-export. Симптом Вероятная причина Действие 401 Unauthorized Нет роли OData, неверный логин Провер",
       "verified": false,
-      "reason": "Sourced in research-notes #18 from https://noltis.ru/blog/ii-poverh-1s-automation/ — not in fact-bank"
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
-      "fact": "8.3.5",
-      "kind": "date_or_year",
-      "context": "1C OData REST interface available from platform 8.3.5 (OData 3.0)",
+      "fact": "404",
+      "kind": "large_number",
+      "context": "ьзователя ИБ, латиницу логина, env Пустой value / 404 Объект не включён в состав OData Админ добавляет с",
       "verified": false,
-      "reason": "Sourced in research-notes #7 from https://v8.1c.ru/platforma/rest-interfeys/ — not in fact-bank"
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
-      "fact": "2026",
-      "kind": "date_or_year",
-      "context": "Research freshness window and SERP queries scoped to August 2026",
+      "fact": "200000",
+      "kind": "large_number",
+      "context": "ения whitelist. Не делайте: доверять аналитике на 200000 строк без контроля нагрузки на базу. Спланируйте,",
       "verified": false,
-      "reason": "Editorial date context from research-context.json — not a product version claim in fact-bank"
+      "reason": "No matching fact or number found in fact-bank"
     }
   ]
 }
