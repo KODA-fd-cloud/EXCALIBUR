@@ -1,10 +1,10 @@
 {
-  "topic_id": "B91",
-  "h1": "Как через HTTP-сервис создать черновик счёта в 1С из JSON своего приложения",
-  "slug": "http-servis-1c-chernovik-scheta-json",
+  "topic_id": "B92",
+  "h1": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+  "slug": "mcp-google-sheets-cursor-reestry",
   "status": "pending",
-  "proposed_at": 1787407062,
-  "proposal_message_id": 512,
+  "proposed_at": 1787408667,
+  "proposal_message_id": 518,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",

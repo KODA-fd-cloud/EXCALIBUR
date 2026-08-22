@@ -2,6 +2,7 @@
 
 | date | topic_id | slug | url | status |
 |------|----------|------|-----|--------|
+| 2026-08-22 | B91 | http-servis-1c-chernovik-scheta-json | https://koda-fd.ru/blog/http-servis-1c-chernovik-scheta-json/ | published |
 | 2026-08-22 | B90 | cursor-skill-vygruzka-1c-odata | https://koda-fd.ru/blog/cursor-skill-vygruzka-1c-odata/ | published |
 | 2026-08-19 | B83 | reestr-saas-podpisok-sheets | https://koda-fd.ru/blog/reestr-saas-podpisok-sheets/ | published |
 | 2026-08-19 | B82 | google-sheets-api-integraciya-finotdel | https://koda-fd.ru/blog/google-sheets-api-integraciya-finotdel/ | published |

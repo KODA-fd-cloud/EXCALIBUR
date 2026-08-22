@@ -1,0 +1,8 @@
+{
+  "slug": "http-servis-1c-chernovik-scheta-json",
+  "topic_id": "B91",
+  "permalink": "https://koda-fd.ru/blog/http-servis-1c-chernovik-scheta-json/",
+  "raw_output": "OK post=256 slug=http-servis-1c-chernovik-scheta-json\nOK categories=3,10,6\nOK featured_image=257\nOK dzen_cover_url=https://koda-fd.ru/blog/wp-content/uploads/2026/08/http-servis-1c-chernovik-scheta-json-dzen-cover.png\npermalink=https://koda-fd.ru/blog/http-servis-1c-chernovik-scheta-json/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
