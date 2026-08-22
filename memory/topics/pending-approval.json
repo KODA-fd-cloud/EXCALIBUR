@@ -3,8 +3,8 @@
   "h1": "Как ротировать ключ сервисного аккаунта Google Sheets API без простоя обновлений",
   "slug": "rotaciya-service-account-sheets-api",
   "status": "pending",
-  "proposed_at": 1787400082,
-  "proposal_message_id": 502,
+  "proposed_at": 1787401907,
+  "proposal_message_id": 503,
   "chat_id": "1136346366",
   "rejected_ids": [
     "B26",
@@ -52,5 +52,6 @@
     "B87",
     "B88",
     "B89"
-  ]
+  ],
+  "reminded_at": 1787401907
 }
