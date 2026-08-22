@@ -1,7 +1,7 @@
 {
-  "topic_id": "B90",
-  "h1": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки",
-  "slug": "cursor-skill-vygruzka-1c-odata",
-  "proposed_at": 1787404710,
-  "proposal_message_id": 506
+  "topic_id": "B91",
+  "h1": "Как через HTTP-сервис создать черновик счёта в 1С из JSON своего приложения",
+  "slug": "http-servis-1c-chernovik-scheta-json",
+  "proposed_at": 1787407062,
+  "proposal_message_id": 512
 }

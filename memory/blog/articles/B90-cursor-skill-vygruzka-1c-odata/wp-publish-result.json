@@ -1,0 +1,8 @@
+{
+  "slug": "cursor-skill-vygruzka-1c-odata",
+  "topic_id": "B90",
+  "permalink": "https://koda-fd.ru/blog/cursor-skill-vygruzka-1c-odata/",
+  "raw_output": "OK post=254 slug=cursor-skill-vygruzka-1c-odata\nOK categories=3,10,6\nOK featured_image=255\npermalink=https://koda-fd.ru/blog/cursor-skill-vygruzka-1c-odata/",
+  "verdict": "pass",
+  "method": "ssh_docker_exec"
+}
