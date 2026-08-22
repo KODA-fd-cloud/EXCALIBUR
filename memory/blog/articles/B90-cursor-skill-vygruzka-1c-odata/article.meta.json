@@ -1,0 +1,43 @@
+{
+  "topic_id": "B90",
+  "h1": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки",
+  "title": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки",
+  "description": "Чеклист Cursor Skill для выгрузки 1С через OData: SKILL.md, MCP 1c-odata-mcp, безопасность read-only, smoke-test и типичные ошибки 401/404 для финотдела.",
+  "cover_alt": "Абстрактная схема автоматизации финотдела: Cursor Skill и поток OData из 1С",
+  "slug": "cursor-skill-vygruzka-1c-odata",
+  "primary_query": "cursor skill 1с odata",
+  "secondary_queries": [
+    "автоматизация финотдела",
+    "cursor skill 1с odata",
+    "2026"
+  ],
+  "char_count": 8949,
+  "article_mode": "B",
+  "author_id": "olga-kondratskaya",
+  "anchor_variants": [
+    "cursor skill выгрузка 1С OData",
+    "как оформить SKILL.md для выгрузки из 1С",
+    "MCP 1c-odata-mcp для финотдела"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor Skill выгрузка 1С OData: чеклист для финотдела",
+    "title_ctr": "💻 Cursor Skill «выгрузка из 1С»: хватит объяснять OData агенту в каждом чате!",
+    "title_aeo": "Как оформить Cursor Skill для выгрузки из 1С через OData?",
+    "description_seo": "Пошаговый чеклист: SKILL.md, MCP 1c-odata-mcp, read-only OData, exports/ без ПДн в чате и сверка 2–3 строк с отчётом 1С. Типичные ошибки 401 и пустой value.",
+    "description_ctr": "⚡️ Один вечер – готовый Skill под дебиторку и ДДС из 1С. OData, MCP, безопасность и DoD-сверка для финансиста без повторения правил.",
+    "description_aeo": "Cursor Skill для выгрузки 1С – папка .cursor/skills с SKILL.md и MCP-транспортом OData. Как настроить read-only, прогнать smoke-test и поймать типичные ошибки."
+  },
+  "geo_qa": {
+    "score": 91,
+    "core_eeat_lite": 19,
+    "verdict": "PASS",
+    "date": "2026-08-22",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS",
+    "link_verify": "PASS",
+    "utility_gate": "PASS",
+    "fact_check": "PASS"
+  },
+  "cover_family": "gradient_abstract"
+}

@@ -1,0 +1,449 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-22",
+    "today_ru": "22.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-24",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-22 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B90",
+    "priority": "P0",
+    "slug": "cursor-skill-vygruzka-1c-odata",
+    "h1": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки",
+    "primary_query": "cursor skill 1с odata",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "cursor skill 1с odata",
+      "2026"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "cursor skill 1с odata 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "GitHub - gybson63/1c-oData-skill: 1c Bot with AI agents",
+          "url": "https://github.com/gybson63/1c-oData-skill",
+          "snippet": "Cursor работает с 1С — через выгрузку конфигурации в файлы (из Конфигуратора или EDT), плагин BSL Pack для подсветки синтаксиса и MCP-сервер, который даёт агенту доступ к метаданным живой базы. Без MCP LLM галлюцинируют на каждом шагу — придумывают несуществующие методы платформы."
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor - Rutube",
+          "url": "https://rutube.ru/video/063997c7e3aae6107e4be2bfd06df119/",
+          "snippet": "Работа с 1С:Предприятие через стандартный OData: скиллы для AI-агентов, Telegram- и email-бот с мультиагентной архитектурой, обработка публикации объектов в OData."
+        },
+        {
+          "title": "cursor-1c-skills — Desko77 agent · MeshKore",
+          "url": "https://meshkore.com/agent/desko77-cursor-1c-skills",
+          "snippet": "Смотрите видео онлайн «ИИ в 1С: Rules и Skills в Cursor» на канале «Программировать в 1С просто» в хорошем качестве и бесплатно, опубликованное 18 мая 2026 года в 14:58, длительностью 00:23:52, на видеохостинге RUTUBE."
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor — Видео от 1С программирование",
+          "url": "https://vk.com/video-27758718_456239164",
+          "snippet": "111 скилов и 35 правил для Cursor IDE: агент собирает исходники 1С (метаданные, формы, расширения, роли, СКД, обработки) из компактного JSON и разбирает обратно. Базовые операции - без Конфигуратора."
+        },
+        {
+          "title": "[Ильяс Низамутдинов] Cursor + 1C: AI-разработка расширений. Тариф ...",
+          "url": "https://s16.slivskladru.com/threads/%D0%98%D0%BB%D1%8C%D1%8F%D1%81-%D0%9D%D0%B8%D0%B7%D0%B0%D0%BC%D1%83%D1%82%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2-cursor-1c-ai-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B9-%D0%A2%D0%B0%D1%80%D0%B8%D1%84-%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-cursor-2026.454797/",
+          "snippet": "Правила и скилы на гитхабе 👉 https://github.com/Desko77/cursor-1c-skills 🔥 В этом видео покажу, как установить в Cursor rules и skills для 1С, а также как с их помощью реализовать печатную форму документа."
+        }
+      ],
+      "searched_at": "2026-08-22"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "cursor skill 1с odata август 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Правильная настройка Cursor AI в 1С. Git ... - Rutube",
+          "url": "https://rutube.ru/video/d339376d2cb99c511f22ccf33ea941ee/",
+          "snippet": "Cursor работает с 1С — через выгрузку конфигурации в файлы (из Конфигуратора или EDT), плагин BSL Pack для подсветки синтаксиса и MCP-сервер, который даёт агенту доступ к метаданным живой базы. Без MCP LLM галлюцинируют на каждом шагу — придумывают несуществующие методы платформы."
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor — Видео от 1С программирование",
+          "url": "https://vk.com/video-27758718_456239164",
+          "snippet": "Это видео для тех, кто хочет подружить 1С и Cursor с дополнительными настройками для удобства. Рассказываю как с нуля настроить правильный шаблон проекта Vanessa-bootstrap, Git и Cursor."
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor - смотреть ... - Rutube",
+          "url": "https://rutube.ru/video/063997c7e3aae6107e4be2bfd06df119/",
+          "snippet": "Правила и скилы на гитхабе 👉 https://github.com/Desko77/cursor-1c-skills 🔥 В этом видео покажу, как установить в Cursor rules и skills для 1С, а также как с их помощью реализовать печатную форму документа."
+        },
+        {
+          "title": "Скачать курс «1С + Cursor: от промпта до решения (2026)» [Ильяс ...",
+          "url": "https://kursliv.org/threads/iljas-nizamutdinov-1s-cursor-ot-prompta-do-reshenija-2026.303426/",
+          "snippet": "Смотрите видео онлайн «ИИ в 1С: Rules и Skills в Cursor» на канале «Программировать в 1С просто» в хорошем качестве и бесплатно, опубликованное 18 мая 2026 года в 14:58, длительностью 00:23:52, на видеохостинге RUTUBE."
+        },
+        {
+          "title": "[Ильяс Низамутдинов] Cursor + 1C: AI-разработка расширений. Тариф ...",
+          "url": "https://s16.slivskladru.com/threads/%D0%98%D0%BB%D1%8C%D1%8F%D1%81-%D0%9D%D0%B8%D0%B7%D0%B0%D0%BC%D1%83%D1%82%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2-cursor-1c-ai-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B9-%D0%A2%D0%B0%D1%80%D0%B8%D1%84-%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-cursor-2026.454797/",
+          "snippet": "[Ильяс Низамутдинов] 1С + Cursor: от промпта до решения (2026) Описание курса: Перестань писать вручную - AI делает быстрее Cursor может: создавать объекты конфигурации за минуты дорабатывать ..."
+        }
+      ],
+      "searched_at": "2026-08-22"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "cursor skill 1с odata новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor — Видео от 1С программирование",
+          "url": "https://vk.com/video-27758718_456239164",
+          "snippet": "Cursor работает с 1С — через выгрузку конфигурации в файлы (из Конфигуратора или EDT), плагин BSL Pack для подсветки синтаксиса и MCP-сервер, который даёт агенту доступ к метаданным живой базы. Без MCP LLM галлюцинируют на каждом шагу — придумывают несуществующие методы платформы."
+        },
+        {
+          "title": "Agent Skills | Cursor Docs",
+          "url": "https://cursor.com/docs/skills",
+          "snippet": "Правила и скилы на гитхабе 👉 https://github.com/Desko77/cursor-1c-skills 🔥 В этом видео покажу, как установить в Cursor rules и skills для 1С, а также как с их помощью реализовать печатную форму документа."
+        },
+        {
+          "title": "Новости вайбкодинга в 1С. Вчера записал видео, в котором подробно ...",
+          "url": "https://vk.com/wall-27758718_2377",
+          "snippet": "When Cursor starts, it automatically discovers skills from skill directories and makes them available to Agent. The agent is presented with available skills and decides when they are relevant based on context."
+        },
+        {
+          "title": "Конспект: Экосистема Cursor AI 2026: Правила, MCP, Skills и Sub-agents ...",
+          "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
+          "snippet": "Вчера записал видео, в котором подробно показываю, как загружать rules и skills в Cursor. Для примера использую исходники вот от сюда https://vk.cc/cXwwbo Это видео войдёт в новый ролик, где я покажу ..."
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor - смотреть ... - Rutube",
+          "url": "https://rutube.ru/video/063997c7e3aae6107e4be2bfd06df119/",
+          "snippet": "Полный гайд по инструментам Cursor: настройка .cursorrules, использование MCP серверов, динамические навыки Skills и управление субагентами для AI-разработки."
+        }
+      ],
+      "searched_at": "2026-08-22"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+          "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "PDF Автоматизация 2026 всё,",
+          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+          "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
+        },
+        {
+          "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+          "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+          "snippet": "ВТОМАТИЗАЦИЯ 2026: ВСЁ, ЧТО НУЖНО ЗНАТЬ Делать бизнес становится сложнее: растут требования, дорожают ресурсы, а стабильность всё . аще зависит от внутренних процессов. Автоматизация �."
+        },
+        {
+          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+          "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
+        },
+        {
+          "title": "Тенденции в автоматизации бизнеса в 2026 году",
+          "url": "https://vsl-bi.ru/avtomatizaciya_biznesa_2026",
+          "snippet": "Коротко: в 2026 финансист автоматизирует в первую очередь классификацию платежей, сверки, управленческую отчётность, прогноз cash flow и контроль дебиторки. Старт — с чистых данных и задач с высоким эффектом при низкой сложности. 2024-2026 годы перевернули ожидания."
+        }
+      ],
+      "searched_at": "2026-08-22"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "cursor skill 1с odata 2026",
+      "purpose": "вторичный запрос: cursor skill 1с odata",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+          "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+          "snippet": ""
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor — Видео от 1С программирование",
+          "url": "https://vk.com/video-27758718_456239164",
+          "snippet": "Cursor работает с 1С — через выгрузку конфигурации в файлы (из Конфигуратора или EDT), плагин BSL Pack для подсветки синтаксиса и MCP-сервер, который даёт агенту доступ к метаданным живой базы. Без MCP LLM галлюцинируют на каждом шагу — придумывают несуществующие методы платформы."
+        },
+        {
+          "title": "GitHub - gybson63/1c-oData-skill: 1c Bot with AI agents",
+          "url": "https://github.com/gybson63/1c-oData-skill",
+          "snippet": "Правила и скилы на гитхабе 👉 https://github.com/Desko77/cursor-1c-skills 🔥 В этом видео покажу, как установить в Cursor rules и skills для 1С, а также как с их помощью реализовать печатную форму документа."
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor - Rutube",
+          "url": "https://rutube.ru/video/063997c7e3aae6107e4be2bfd06df119/",
+          "snippet": "Работа с 1С:Предприятие через стандартный OData: скиллы для AI-агентов, Telegram- и email-бот с мультиагентной архитектурой, обработка публикации объектов в OData."
+        },
+        {
+          "title": "cursor-1c-skills — Desko77 agent · MeshKore",
+          "url": "https://meshkore.com/agent/desko77-cursor-1c-skills",
+          "snippet": "Смотрите видео онлайн «ИИ в 1С: Rules и Skills в Cursor» на канале «Программировать в 1С просто» в хорошем качестве и бесплатно, опубликованное 18 мая 2026 года в 14:58, длительностью 00:23:52, на видеохостинге RUTUBE."
+        },
+        {
+          "title": "[Ильяс Низамутдинов] Cursor + 1C: AI-разработка расширений. Тариф ...",
+          "url": "https://s16.slivskladru.com/threads/%D0%98%D0%BB%D1%8C%D1%8F%D1%81-%D0%9D%D0%B8%D0%B7%D0%B0%D0%BC%D1%83%D1%82%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2-cursor-1c-ai-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B9-%D0%A2%D0%B0%D1%80%D0%B8%D1%84-%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-cursor-2026.454797/",
+          "snippet": "111 скилов и 35 правил для Cursor IDE: агент собирает исходники 1С (метаданные, формы, расширения, роли, СКД, обработки) из компактного JSON и разбирает обратно. Базовые операции - без Конфигуратора."
+        }
+      ],
+      "searched_at": "2026-08-22"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": ""
+        },
+        {
+          "title": "2026 год — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+          "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
+        },
+        {
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
+          "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
+        },
+        {
+          "title": "2026 год в России — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+          "url": "https://calendar-ru.com/calendar/2026",
+          "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
+        },
+        {
+          "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
+          "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
+          "snippet": "Календарь России на 2026 год из праздниками и номерами недель. Онлайн календарь на год: просмотреть, печать, скачать."
+        }
+      ],
+      "searched_at": "2026-08-22"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "GitHub - Desko77/cursor-1c-skills: 115 скилов и 35 правил для Cursor ...",
+          "url": "https://github.com/Desko77/cursor-1c-skills",
+          "snippet": ""
+        },
+        {
+          "title": "Cursor Rules для 1С: как подключить AI-ассистента к разработке на 1С ...",
+          "url": "https://vibecoderz.ru/blog/cursor-rules-dlya-1s",
+          "snippet": "Набор скилов, правил и команд для Cursor IDE: агент правит 1С по формату платформы, а не текстовым поиском по файлам. Скилы дают агенту готовые операции над исходниками: собрать объект метаданных, форму, роль, схему компоновки, расширение, внешнюю обработку - и разобрать их обратно."
+        },
+        {
+          "title": "Cursor Skills for 1C: skills и rules для 1С | 1C AI Dev Tools",
+          "url": "https://aitools1c.dev/tools/cursor-skills-for-1c-desko77/",
+          "snippet": "Покажем, как подключить AI‑ассистента Cursor к 1С:Предприятию, настроив правила, плагины и MCP‑сервер, чтобы писать BSL‑код быстрее и точнее. Cursor и 1С — это неочевидная, но рабочая связка. В 2026 году российские 1С-разработчики активно тестируют Cursor как AI-среду для написания BSL-кода."
+        },
+        {
+          "title": "Cursor IDE для 1С. Кодревью и рефакторинг с помощью AI",
+          "url": "https://infostart.ru/1c/articles/2372034/",
+          "snippet": "Набор skills/rules/commands для агентной разработки 1С в Cursor: от проектирования и анализа до создания, изменения, запуска и проверки артефактов классической 1С и 1С 7.7."
+        },
+        {
+          "title": "cursor-1c-skills/README.md at main · whiner9/cursor-1c-skills",
+          "url": "https://github.com/whiner9/cursor-1c-skills/blob/main/README.md",
+          "snippet": "Показываем типичные ситуации, когда рефакторинг становится токсичным: работа с legacy-кодом, изменения перед релизом, рефакторинг про запас и без тестирования."
+        },
+        {
+          "title": "ИИ в 1С: Rules и Skills в Cursor — Видео от 1С программирование",
+          "url": "https://vk.com/video-27758718_456239164",
+          "snippet": "Cursor Skills for 1C:Enterprise Набор скилов, правил и команд для Cursor IDE, ориентированных на разработку 1С:Предприятие."
+        }
+      ],
+      "searched_at": "2026-08-22"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://shtruzel.ru/articles/cursor-dlya-1c-nastrojka-mcp-bsl-2026",
+      "title": "Cursor для 1С в 2026: настройка, MCP и rules для BSL",
+      "from_query": "cursor skill 1с odata 2026"
+    },
+    {
+      "url": "https://github.com/gybson63/1c-oData-skill",
+      "title": "GitHub - gybson63/1c-oData-skill: 1c Bot with AI agents",
+      "from_query": "cursor skill 1с odata 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/063997c7e3aae6107e4be2bfd06df119/",
+      "title": "ИИ в 1С: Rules и Skills в Cursor - Rutube",
+      "from_query": "cursor skill 1с odata 2026"
+    },
+    {
+      "url": "https://meshkore.com/agent/desko77-cursor-1c-skills",
+      "title": "cursor-1c-skills — Desko77 agent · MeshKore",
+      "from_query": "cursor skill 1с odata 2026"
+    },
+    {
+      "url": "https://vk.com/video-27758718_456239164",
+      "title": "ИИ в 1С: Rules и Skills в Cursor — Видео от 1С программирование",
+      "from_query": "cursor skill 1с odata 2026"
+    },
+    {
+      "url": "https://s16.slivskladru.com/threads/%D0%98%D0%BB%D1%8C%D1%8F%D1%81-%D0%9D%D0%B8%D0%B7%D0%B0%D0%BC%D1%83%D1%82%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2-cursor-1c-ai-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B9-%D0%A2%D0%B0%D1%80%D0%B8%D1%84-%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-cursor-2026.454797/",
+      "title": "[Ильяс Низамутдинов] Cursor + 1C: AI-разработка расширений. Тариф ...",
+      "from_query": "cursor skill 1с odata 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/d339376d2cb99c511f22ccf33ea941ee/",
+      "title": "Правильная настройка Cursor AI в 1С. Git ... - Rutube",
+      "from_query": "cursor skill 1с odata август 2026"
+    },
+    {
+      "url": "https://kursliv.org/threads/iljas-nizamutdinov-1s-cursor-ot-prompta-do-reshenija-2026.303426/",
+      "title": "Скачать курс «1С + Cursor: от промпта до решения (2026)» [Ильяс ...",
+      "from_query": "cursor skill 1с odata август 2026"
+    },
+    {
+      "url": "https://cursor.com/docs/skills",
+      "title": "Agent Skills | Cursor Docs",
+      "from_query": "cursor skill 1с odata новости 2026"
+    },
+    {
+      "url": "https://vk.com/wall-27758718_2377",
+      "title": "Новости вайбкодинга в 1С. Вчера записал видео, в котором подробно ...",
+      "from_query": "cursor skill 1с odata новости 2026"
+    },
+    {
+      "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
+      "title": "Конспект: Экосистема Cursor AI 2026: Правила, MCP, Skills и Sub-agents ...",
+      "from_query": "cursor skill 1с odata новости 2026"
+    },
+    {
+      "url": "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/",
+      "title": "Автоматизация финансов: системный подход к учету в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
+      "title": "PDF Автоматизация 2026 всё,",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://znaj.org/ru/6-luchshikh-reshenii-2026-goda-avtomatizacii-upravleniya-finansami/",
+      "title": "6 лучших решений 2026 года для автоматизации управления финансами",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "title": "Ai Для Финансиста В 2026: Что Автоматизировать Уже Сейчас",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://vsl-bi.ru/avtomatizaciya_biznesa_2026",
+      "title": "Тенденции в автоматизации бизнеса в 2026 году",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
+      "title": "2026 год — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2026",
+      "title": "2026 - Wikipedia",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "title": "2026 год в России — Википедия",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://calendar-ru.com/calendar/2026",
+      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
+      "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://github.com/Desko77/cursor-1c-skills",
+      "title": "GitHub - Desko77/cursor-1c-skills: 115 скилов и 35 правил для Cursor ...",
+      "from_query": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки 2026"
+    },
+    {
+      "url": "https://vibecoderz.ru/blog/cursor-rules-dlya-1s",
+      "title": "Cursor Rules для 1С: как подключить AI-ассистента к разработке на 1С ...",
+      "from_query": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки 2026"
+    },
+    {
+      "url": "https://aitools1c.dev/tools/cursor-skills-for-1c-desko77/",
+      "title": "Cursor Skills for 1C: skills и rules для 1С | 1C AI Dev Tools",
+      "from_query": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки 2026"
+    },
+    {
+      "url": "https://infostart.ru/1c/articles/2372034/",
+      "title": "Cursor IDE для 1С. Кодревью и рефакторинг с помощью AI",
+      "from_query": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки 2026"
+    },
+    {
+      "url": "https://github.com/whiner9/cursor-1c-skills/blob/main/README.md",
+      "title": "cursor-1c-skills/README.md at main · whiner9/cursor-1c-skills",
+      "from_query": "Как оформить Cursor Skill «выгрузка из 1С»: чеклист, OData, типичные ошибки 2026"
+    }
+  ]
+}

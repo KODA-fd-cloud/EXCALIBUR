@@ -1,0 +1,166 @@
+<p>Каждый раз, когда вы просите Cursor "выгрузи дебиторку из 1С", агент снова уточняет сущность OData, лимит строк и куда сохранить файл. Cursor Skill "выгрузка из 1С" упаковывает этот сценарий в SKILL.md: триггер, шаги для агента и связка с MCP-транспортом OData. После настройки вы повторяете выгрузку одной фразой и сверяете 2–3 суммы с отчётом 1С, а не объясняете правила в каждом чате.</p>
+
+<p>Skill – это не замена публикации OData и не замена rules про ПДн. Rules задают "что нельзя", MCP даёт "розетку" для HTTP-запросов к базе, Skill описывает пошаговую процедуру выгрузки, когда вы говорите "дебиторка", "ДДС" или "реестр за период". Если OData ещё не опубликован, сначала пройдите <a href="/blog/vygruzka-1c-excel-odata/">гайд по выгрузке 1С в Excel через OData</a>; Skill не создаёт URL сам.</p>
+
+<p>Ниже – чеклист для финотдела: когда оформлять skill, как подключить read-only MCP, что положить в references и какие ошибки OData ловить до продакшена.</p>
+
+<h2 id="when-skill">Когда это нужно финотделу (и когда нет)</h2>
+<p>Skill имеет смысл, если сценарий повторяется: движения ДДС за месяц, реестр документов, срез дебиторки ad-hoc через Agent. Разовая ручная выгрузка в Excel – проще без skill-packaging. Нужны только остатки без упаковки workflow – см. <a href="/blog/mcp-1c-cursor-ostatki-oboroty/">MCP 1С: остатки и обороты</a>. Нет опубликованного standard.odata – сначала админ один раз, потом skill.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Слой</th>
+      <th>Роль</th>
+      <th>Когда брать</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Rules / AGENTS.md</b></td>
+      <td>Постоянные запреты: ПДн, папки, git</td>
+      <td>Всегда в проекте финотдела</td>
+    </tr>
+    <tr>
+      <td><b>MCP (1c-odata-mcp)</b></td>
+      <td>Транспорт: GET к OData, tools аналитики</td>
+      <td>Живая база 1С, read-only пользователь</td>
+    </tr>
+    <tr>
+      <td><b>Skill (SKILL.md)</b></td>
+      <td>Процедура: сущность → фильтр → exports/</td>
+      <td>Повторяемые выгрузки через Agent</td>
+    </tr>
+  </tbody>
+</table>
+<blockquote>
+  <b>Вердикт:</b> один focused skill под fin-export лучше, чем ставить 115 dev-skills для разработки 1С. <b>Не делайте:</b> путать Skill с заменой публикации OData.
+</blockquote>
+<p><b>Сделайте:</b> зафиксируйте 2–3 типовых запроса (ДДС, дебиторка, реестр). <b>Не делайте:</b> оформлять skill, пока нет smoke-test URL OData в браузере.</p>
+
+<h2 id="security">Подготовьте данные и безопасность (без сырых ПДн в облако)</h2>
+<p>OData для ИИ – слой аккуратного чтения. Риски: массовый $top на весь регистр, утечка JSON с ФИО и ИНН в облачный чат, запись в базу без человека. Для fin-старта – только read-only MCP, узкий состав сущностей в публикации, отдельный пользователь ИБ с минимальными правами; логин латиницей (кириллица часто ломается коннекторами).</p>
+<ol>
+  <li>Согласуйте с админом whitelist Catalog_* и AccumulationRegister_* в составе OData.</li>
+  <li>Создайте пользователя read-only с ролью удалённого доступа OData.</li>
+  <li>Храните URL, логин и пароль только в env / Script Properties, не в SKILL.md и git.</li>
+  <li>Добавьте exports/ и data/ в .gitignore; полные выгрузки не коммитьте.</li>
+  <li>В SKILL.md пропишите запрет: не вставлять сырой JSON с ПДн в чат; обезличивание – по <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайду обезличивания для ChatGPT</a>.</li>
+  <li>Включите Privacy Mode в Cursor, если работаете с чувствительными срезами.</li>
+</ol>
+<p>1c-odata-mcp по умолчанию read-only; write-tools видны в списке, но блокируются на уровне env. Для fin-skill write-сценарии не описывайте – только отдельный проект с preview/confirm и человеком в контуре.</p>
+<p><b>Сделайте:</b> правила безопасности вынести в <a href="/blog/cursor-rules-finotdel/">Cursor Rules для финотдела</a> и сослаться из skill. <b>Не делайте:</b> paste полного ответа OData в промпт "для анализа".</p>
+
+<h2 id="setup-skill-mcp">Оформите Skill и подключите MCP пошагово</h2>
+<p>Agent Skills – открытый стандарт: папка с SKILL.md, Cursor подхватывает при старте. Каталоги: .cursor/skills/ в проекте, глобально ~/.cursor/skills/. Имя папки = name во frontmatter (lowercase, дефисы, до 64 символов).</p>
+<ol>
+  <li>Создайте .cursor/skills/1c-odata-export/ и файл SKILL.md внутри.</li>
+  <li>Заполните frontmatter: name и description с триггерами "выгрузка", "OData", "1С", "дебиторка", "реестр".</li>
+  <li>Опционально paths: exports/**, data/** – skill активнее при работе с этими файлами; disable-model-invocation: true – только ручной /1c-odata-export.</li>
+  <li>В теле SKILL.md блоки When to Use, Preconditions, Steps: уточнить сущность и период → MCP tool или GET с $filter и $top → сохранить в exports/ → сверка без сырого JSON в чат.</li>
+  <li>Добавьте references/entities.md: whitelist сущностей, лимиты $top (по умолчанию ODATA_MAX_ROWS 1000, max 100000), шаблон URL …/odata/standard.odata.</li>
+  <li>Подключите MCP в .cursor/mcp.json: npx -y 1c-odata-mcp с env ODATA_URL, ODATA_USER, ODATA_PASSWORD; Node.js 20+; после правки – перезапуск Cursor.</li>
+  <li>Альтернатива: референс gybson63/1c-oData-skill (skills/odata + docs/mcp-setup.md).</li>
+  <li>Smoke-test: Customize → Skills – skill виден; промпт "Выгрузи движения ДДС за август 2026, top 100" → подтверждение tool call → файл в exports/.</li>
+</ol>
+<pre><code>---
+name: 1c-odata-export
+description: Выгрузка регистров и справочников 1С через OData и MCP. Триггеры: выгрузка, OData, 1С, дебиторка, ДДС, реестр.
+paths:
+  - "exports/**"
+  - "data/**"
+---
+
+# 1C OData Export
+
+## When to Use
+Повторяемая выгрузка из опубликованной базы 1С: ДДС, дебиторка, реестр документов за период.
+
+## Preconditions
+- OData опубликован (…/odata/standard.odata), сущность в whitelist references/entities.md
+- MCP 1c-odata-mcp подключён, read-only
+- Результат – exports/, не сырой JSON в чат
+
+## Steps
+1. Уточни сущность, период, $top (начни с 100–1000).
+2. Вызови MCP read-tool или GET с $filter по дате.
+3. Сохрани в exports/ с датой в имени файла.
+4. Сверь 2–3 суммы с отчётом 1С; при расхождении – остановись.
+
+## Errors
+401 – роль OData / логин; пустой value – объект не в составе OData; timeout – уменьши $top.</code></pre>
+<blockquote>
+  <b>Схема:</b> Запрос "дебиторка" → Skill (процедура) → MCP tool → OData GET → exports/ → сверка с 1С
+</blockquote>
+<p>Структуру SKILL.md можно набросать через built-in /create-skill в Cursor. Детали сущностей держите в references/, не раздувайте основной файл (рекомендация spec: меньше 500 строк).</p>
+<p><b>Сделайте:</b> один skill под fin-export, не клонировать весь Desko77/cursor-1c-skills. <b>Не делайте:</b> хранить пароли в mcp.json в git.</p>
+
+<h2 id="verify-errors">Проверьте результат и разберите типичные ошибки OData</h2>
+<p>Definition of Done для fin-выгрузки – не "агент что-то вернул", а 2–3 строки совпали с отчётом 1С. Skill сработал, если в Agent виден badge skill или срабатывает /1c-odata-export.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Симптом</th>
+      <th>Вероятная причина</th>
+      <th>Действие</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>401 Unauthorized</b></td>
+      <td>Нет роли OData, неверный логин</td>
+      <td>Проверьте пользователя ИБ, латиницу логина, env</td>
+    </tr>
+    <tr>
+      <td><b>Пустой value / 404</b></td>
+      <td>Объект не включён в состав OData</td>
+      <td>Админ добавляет сущность; сверьте имя через $metadata</td>
+    </tr>
+    <tr>
+      <td><b>Timeout</b></td>
+      <td>$top слишком большой, 200+ строк уже тормозят</td>
+      <td>Уменьшите выборку, $filter по периоду, батчи</td>
+    </tr>
+    <tr>
+      <td><b>Агент "выгрузил" без tool call</b></td>
+      <td>Галлюцинация имён сущностей</td>
+      <td>Заставьте conf_doc_search или $metadata; проверьте MCP Logs</td>
+    </tr>
+    <tr>
+      <td><b>Write без подтверждения</b></td>
+      <td>Read-only env не включён</td>
+      <td>Только read для fin; write – отдельный контур</td>
+    </tr>
+  </tbody>
+</table>
+<ol>
+  <li>Откройте отчёт 1С за тот же период и сущность.</li>
+  <li>Сравните итог и 2–3 произвольные строки с exports/.</li>
+  <li>При расхождении – не масштабируйте; проверьте фильтр даты и состав OData.</li>
+  <li>Зафиксируйте рабочие URL и ошибки в references/errors.md внутри skill.</li>
+</ol>
+<p><b>Сделайте:</b> прогоните чеклист после каждого изменения whitelist. <b>Не делайте:</b> доверять аналитике на 200000 строк без контроля нагрузки на базу.</p>
+
+<h2 id="next-steps">Спланируйте, что автоматизировать дальше</h2>
+<p>После рабочего skill логично добавить второй skill под сверку CSV с 1С, scheduled export или связку с Google Sheets по OData. Общий контур no-code – в <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизации финансов без кода</a>. На koda-fd.ru – материалы по финконтуру и вайб-кодингу для CFO.</p>
+<ol>
+  <li>Скопируйте skill-шаблон в fin-pilot-template в git для команды.</li>
+  <li>Добавьте scripts/validate_export.py для локальной сверки строк (опционально).</li>
+  <li>Расширяйте references/entities.md только по заявке финотдела, не "весь метаданные".</li>
+  <li>Раз в квартал пересмотрите лимиты $top и права read-only пользователя.</li>
+</ol>
+<p>Разборы skill + OData для финансистов – в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>. Уроки и шаблоны – в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=cursor-skill-vygruzka-1c-odata" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>.</p>
+<p><b>Сделайте:</b> один вечер на SKILL.md + smoke-test при готовом OData (ориентир практики – сборка за вечер при известных граблях). <b>Не делайте:</b> обещать "без программиста на 100%", если публикация OData ещё не сделана.</p>
+
+<h2>Частые вопросы</h2>
+<h3>Можно ли оформить Skill без программиста 1С?</h3>
+<p>SKILL.md и mcp.json финансист соберёт сам. Публикацию OData и состав сущностей обычно делает админ один раз; дальше вы повторяете сценарий через Agent без пересказа правил.</p>
+<h3>Сколько займёт внедрение?</h3>
+<p>При готовом OData – 1–2 часа на SKILL.md, references и smoke-test. С нуля (публикация + MCP + skill) – вечер с админом, если заранее знаете типичные ошибки состава OData.</p>
+<h3>Чем Skill отличается от Rules?</h3>
+<p>Rules – постоянная "конституция" проекта: ПДн, папки, git. Skill – процедура, которую агент включает при релевантном запросе "выгрузи дебиторку". Оба слоя нужны вместе.</p>
+<h3>Нужен ли отдельный MCP, если Skill уже есть?</h3>
+<p>Да. Skill инструктирует агента, как вызывать tools; транспорт – MCP (1c-odata-mcp или аналог). Без MCP skill останется текстом без доступа к базе.</p>
+<h3>Какие риски для данных при выгрузке через Agent?</h3>
+<p>Утечка через облачную модель и избыточный $top. Снижайте: read-only, whitelist сущностей, exports/ локально, обезличивание перед анализом в чате, при необходимости локальная модель.</p>
+<h3>Можно ли через skill писать в базу 1С?</h3>
+<p>Для fin-старта – нет, только read. Write в 1c-odata-mcp требует отдельных флагов и human-in-the-loop; оформляйте отдельный проект и skill, не смешивайте с выгрузкой CFO.</p>

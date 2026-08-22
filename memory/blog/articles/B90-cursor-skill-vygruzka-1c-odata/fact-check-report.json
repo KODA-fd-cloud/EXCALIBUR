@@ -1,0 +1,97 @@
+{
+  "article": "memory/blog/articles/B90-cursor-skill-vygruzka-1c-odata/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "research_source": "memory/blog/articles/B90-cursor-skill-vygruzka-1c-odata/research-notes.md",
+  "verdict": "pass",
+  "stage": "research",
+  "note": "Pre-writer fact inventory from research-notes. Fact-bank has no B90-specific rows; numeric claims must cite research table URLs in article.",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 0,
+  "unverified_facts_count": 12,
+  "facts": [
+    {
+      "fact": "55 tools",
+      "kind": "metric_or_duration",
+      "context": "1c-odata-mcp registers 55 MCP tools (21 read/analytics + 34 write)",
+      "verified": false,
+      "reason": "Sourced in research-notes #11 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
+    },
+    {
+      "fact": "115 skills",
+      "kind": "metric_or_duration",
+      "context": "Desko77/cursor-1c-skills repository advertises 115 skills for 1C development",
+      "verified": false,
+      "reason": "Sourced in research-notes #14 from https://github.com/Desko77/cursor-1c-skills — not in fact-bank"
+    },
+    {
+      "fact": "35 rules",
+      "kind": "metric_or_duration",
+      "context": "Desko77/cursor-1c-skills includes 35 rules (.mdc) for BSL/1C dev",
+      "verified": false,
+      "reason": "Sourced in research-notes #14 from https://github.com/Desko77/cursor-1c-skills — not in fact-bank"
+    },
+    {
+      "fact": "Node.js 20+",
+      "kind": "metric_or_duration",
+      "context": "1c-odata-mcp requires Node.js 20+ per aitools1c.dev catalog",
+      "verified": false,
+      "reason": "Sourced in research-notes #10 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
+    },
+    {
+      "fact": "100000",
+      "kind": "large_number",
+      "context": "ODATA_MAX_ROWS upper bound 100000 (default 1000) for 1c-odata-mcp reads",
+      "verified": false,
+      "reason": "Sourced in research-notes #12 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
+    },
+    {
+      "fact": "200000",
+      "kind": "large_number",
+      "context": "ODATA_ANALYTICS_MAX_ROWS default 200000 for client-side aggregations",
+      "verified": false,
+      "reason": "Sourced in research-notes #12 from https://aitools1c.dev/tools/1c-odata-mcp/ — not in fact-bank"
+    },
+    {
+      "fact": "64",
+      "kind": "large_number",
+      "context": "Agent Skills spec: name field max 64 characters",
+      "verified": false,
+      "reason": "Sourced in research-notes #19 from agentskills specification — not in fact-bank"
+    },
+    {
+      "fact": "1024",
+      "kind": "large_number",
+      "context": "Agent Skills spec: description field max 1024 characters",
+      "verified": false,
+      "reason": "Sourced in research-notes #19 from agentskills specification — not in fact-bank"
+    },
+    {
+      "fact": "500",
+      "kind": "large_number",
+      "context": "Agent Skills spec recommends SKILL.md under 500 lines",
+      "verified": false,
+      "reason": "Sourced in research-notes #19 from agentskills specification — not in fact-bank"
+    },
+    {
+      "fact": "200+",
+      "kind": "metric_or_duration",
+      "context": "Noltis 2026: OData slowdown example around 200+ records on large selections",
+      "verified": false,
+      "reason": "Sourced in research-notes #18 from https://noltis.ru/blog/ii-poverh-1s-automation/ — not in fact-bank"
+    },
+    {
+      "fact": "8.3.5",
+      "kind": "date_or_year",
+      "context": "1C OData REST interface available from platform 8.3.5 (OData 3.0)",
+      "verified": false,
+      "reason": "Sourced in research-notes #7 from https://v8.1c.ru/platforma/rest-interfeys/ — not in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Research freshness window and SERP queries scoped to August 2026",
+      "verified": false,
+      "reason": "Editorial date context from research-context.json — not a product version claim in fact-bank"
+    }
+  ]
+}

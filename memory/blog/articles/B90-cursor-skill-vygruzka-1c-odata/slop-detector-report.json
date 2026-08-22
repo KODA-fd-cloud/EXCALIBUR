@@ -1,0 +1,22 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 2,
+  "over_long_sentences": [
+    {
+      "sentence": "md блоки When to Use, Preconditions, Steps: уточнить сущность и период → MCP tool или GET с $filter и $top → сохранить в exports/ → сверка без сырого JSON в чат",
+      "word_count": 28
+    },
+    {
+      "sentence": "Симптом Вероятная причина Действие 401 Unauthorized Нет роли OData, неверный логин Проверьте пользователя ИБ, латиницу логина, env Пустой value / 404 Объект не включён в состав OData Админ добавляет сущность; сверьте имя через $metadata Timeout $top слишком большой, 200+ строк уже тормозят Уменьшите выборку, $filter по периоду, батчи Агент \"выгрузил\" без tool call Галлюцинация имён сущностей Заставьте conf_doc_search или $metadata; проверьте MCP Logs Write без подтверждения Read-only env не включён Только read для fin; write – отдельный контур Откройте отчёт 1С за тот же период и сущность",
+      "word_count": 80
+    }
+  ],
+  "readability": {
+    "score": 97.3,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 9.7,
+    "avg_syllables_per_word": 1.6
+  }
+}
