@@ -1,0 +1,112 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-08-24",
+    "today_ru": "24.08.2026",
+    "year": 2026,
+    "month": 8,
+    "month_name_ru": "август",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-05-26",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-24 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B92",
+    "priority": "P0",
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "h1": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "primary_query": "mcp google sheets cursor",
+    "secondary_queries": [
+      "автоматизация финотдела",
+      "mcp google sheets cursor",
+      "2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B92",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "mcp google sheets cursor 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "mcp google sheets cursor август 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "mcp google sheets cursor новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация финотдела 2026",
+      "purpose": "вторичный запрос: автоматизация финотдела"
+    },
+    {
+      "id": "secondary_2",
+      "query": "mcp google sheets cursor 2026",
+      "purpose": "вторичный запрос: mcp google sheets cursor"
+    },
+    {
+      "id": "secondary_3",
+      "query": "2026 2026",
+      "purpose": "вторичный запрос: 2026"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "research_completed": {
+    "date_iso": "2026-08-24",
+    "agent": "excalibur-blog-research",
+    "utility_verdict": "PASS",
+    "wordstat_status": "unavailable",
+    "wordstat_note": "MCP user-mcp-kv not in dynamic tool catalog; no fabricated volumes",
+    "sources_verified": 25,
+    "serp_queries_live": [
+      "mcp google sheets cursor 2026",
+      "Cursor Google Workspace MCP Sheets plugin marketplace 2026",
+      "автоматизация финотдела Google Sheets реестры 2026"
+    ],
+    "recommended_paths": [
+      {
+        "id": "path_a_marketplace",
+        "label": "Cursor Marketplace google-sheets (OAuth)",
+        "best_for": "быстрый пилот на личном аккаунте",
+        "caveat": "статус плагина Sheets в витрине проверять на дату публикации (август 2026 — нестабилен)"
+      },
+      {
+        "id": "path_b_mcp_gsheets",
+        "label": "freema/mcp-gsheets + service account",
+        "best_for": "финконтур: реестры, минимальный share, без доступа ко всему Drive",
+        "related": "B82, B93"
+      }
+    ],
+    "artifacts": [
+      "research-notes.md",
+      "research-serp.json",
+      "fact-check-report.json"
+    ]
+  },
+  "next_step": "excalibur-blog-writer: article.html по research-notes.md"
+}
