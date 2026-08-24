@@ -1,0 +1,169 @@
+{
+  "article": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/research-notes.md",
+  "stage": "research",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "research_date": "2026-08-24",
+  "total_research_facts": 25,
+  "verified_with_url": 25,
+  "wordstat_available": false,
+  "utility_verdict": "PASS",
+  "facts": [
+    {
+      "id": 1,
+      "claim": "MCP подключает Cursor к внешним инструментам; Agent вызывает tools в чате",
+      "source": "https://cursor.com/help/customization/mcp",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "claim": "mcp.json: проектный .cursor/mcp.json и глобальный ~/.cursor/mcp.json мержатся; проектный приоритетнее",
+      "source": "https://cursor.com/help/customization/mcp",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "claim": "Локальный MCP: command/args/env; удалённый: url + headers",
+      "source": "https://cursor.com/help/customization/mcp",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "claim": "После правки mcp.json нужен перезапуск Cursor",
+      "source": "https://cursor.com/help/customization/mcp",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "claim": "Agent по умолчанию запрашивает approval перед MCP-tool",
+      "source": "https://cursor.com/help/customization/mcp",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "claim": "Troubleshooting через Output → MCP Logs",
+      "source": "https://cursor.com/help/customization/mcp",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "claim": "03.08.2026 Cursor анонсировал Google Workspace plugins (Drive, Gmail, Calendar в changelog)",
+      "source": "https://cursor.com/changelog/google-workspace-plugins",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "claim": "Changelog 03.08.2026 не детализирует Sheets/Docs (gap подтверждён сторонним анализом)",
+      "source": "https://explainx.ai/blog/cursor-google-workspace-plugins-gmail-drive-calendar-august-2026",
+      "verified": true
+    },
+    {
+      "id": 9,
+      "claim": "04.08.2026 Docs/Sheets/Slides могли быть убраны из Marketplace; OAuth bug cursor://",
+      "source": "https://vibecoding.ru/news/2026/08/03/cursor-google-workspace-plugins",
+      "verified": true
+    },
+    {
+      "id": 10,
+      "claim": "Google Workspace MCP — Developer Preview",
+      "source": "https://vibecoding.ru/news/2026/08/03/cursor-google-workspace-plugins",
+      "verified": true
+    },
+    {
+      "id": 11,
+      "claim": "mcp-gsheets требует Node 20+, SA JSON, npx mcp-gsheets@latest",
+      "source": "https://github.com/freema/mcp-gsheets",
+      "verified": true
+    },
+    {
+      "id": 12,
+      "claim": "Tools mcp-gsheets: sheets_get_values, sheets_update_values, sheets_append_values, sheets_check_access",
+      "source": "https://github.com/freema/mcp-gsheets",
+      "verified": true
+    },
+    {
+      "id": 13,
+      "claim": "sheets_append_values default insertDataOption OVERWRITE",
+      "source": "https://github.com/freema/mcp-gsheets",
+      "verified": true
+    },
+    {
+      "id": 14,
+      "claim": "SA требует Share файла на client_email; IAM не заменяет share",
+      "source": "https://developers.google.com/workspace/guides/create-credentials#service-account",
+      "verified": true
+    },
+    {
+      "id": 15,
+      "claim": "Scope spreadsheets — Sensitive; применяется ко всему файлу",
+      "source": "https://developers.google.com/workspace/sheets/api/scopes",
+      "verified": true
+    },
+    {
+      "id": 16,
+      "claim": "Sheets API write quota 300 req/min; 429 при превышении",
+      "source": "https://developers.google.com/workspace/sheets/api/limits",
+      "verified": true
+    },
+    {
+      "id": 17,
+      "claim": "we2go/google-mcp: npx google-mcp init wizard",
+      "source": "https://github.com/we2go/google-mcp",
+      "verified": true
+    },
+    {
+      "id": 18,
+      "claim": "spreadsheet-mcp: 27 tools, service account JSON",
+      "source": "https://github.com/dudegladiator/spreadsheet-mcp",
+      "verified": true
+    },
+    {
+      "id": 19,
+      "claim": "PasteSheet hosted MCP: url в mcp.json; private от $9/mo",
+      "source": "https://dev.to/pastesheet/google-sheets-in-vs-code-cursor-and-windsurf-over-mcp-5467",
+      "verified": true
+    },
+    {
+      "id": 20,
+      "claim": "Риск indirect prompt injection через Google-контент для MCP-агента",
+      "source": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
+      "verified": true
+    },
+    {
+      "id": 21,
+      "claim": "Connected в UI ≠ успешная авторизация Google",
+      "source": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
+      "verified": true
+    },
+    {
+      "id": 22,
+      "claim": "Cloud Agents не наследуют локальный Google OAuth автоматически",
+      "source": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
+      "verified": true
+    },
+    {
+      "id": 23,
+      "claim": "Реестр договоров в Sheets до 200–300 активных договоров",
+      "source": "https://dzen.ru/a/anRW32ni3D3wHjQF",
+      "verified": true
+    },
+    {
+      "id": 24,
+      "claim": "Forms→Sheets: >80–100 заявок/мес → staging/ERP",
+      "source": "https://dzen.ru/a/aoAx4V_t_ztBh5aj",
+      "verified": true
+    },
+    {
+      "id": 25,
+      "claim": "2026: финотдел автоматизирует классификацию, сверки, отчётность — Sheets как transport",
+      "source": "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
+      "verified": true
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "Wordstat MCP user-mcp-kv недоступен — показы/мес не получены",
+    "Статус официального Sheets-плагина в Marketplace нестабилен (август 2026) — writer держать Path B (mcp-gsheets) как основной для финконтура",
+    "preflight research-serp.json: query secondary_3 «2026 2026» нерелевантен"
+  ]
+}

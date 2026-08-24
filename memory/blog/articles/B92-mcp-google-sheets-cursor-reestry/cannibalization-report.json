@@ -1,0 +1,20 @@
+{
+  "verdict": "warning",
+  "total_issues": 1,
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "high_primary_overlap",
+      "message": "WARNING: High primary query overlap (75%) between 'B80-mcp-1c-cursor-ostatki-oboroty' and 'B21-mcp-cursor-finansist-instrumenty'. Queries: 'mcp 1с cursor финансы' vs 'mcp cursor финансист'",
+      "articles": [
+        "B80-mcp-1c-cursor-ostatki-oboroty",
+        "B21-mcp-cursor-finansist-instrumenty"
+      ],
+      "queries": [
+        "mcp 1с cursor финансы",
+        "mcp cursor финансист"
+      ],
+      "similarity": 0.75
+    }
+  ]
+}
