@@ -2,7 +2,7 @@
   "topic_id": "B92",
   "h1": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
   "slug": "mcp-google-sheets-cursor-reestry",
-  "status": "pending",
+  "status": "queued_write",
   "proposed_at": 1787497189,
   "proposal_message_id": 521,
   "chat_id": "1136346366",
@@ -54,5 +54,11 @@
     "B89",
     "B93"
   ],
-  "reminded_at": 1787497189
+  "reminded_at": 1787497189,
+  "missing_article_notified": true,
+  "ack_message_id": 523,
+  "approved_at": 1787544037,
+  "write_launch_notified": true,
+  "write_job_started_at": 1787544041,
+  "publish_started_notified": true
 }
