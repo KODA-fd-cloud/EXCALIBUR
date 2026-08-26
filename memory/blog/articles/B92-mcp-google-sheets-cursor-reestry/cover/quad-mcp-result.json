@@ -1,0 +1,25 @@
+{
+  "method": "cursor_GenerateImage_fallback",
+  "mcp_mode": "image-to-image",
+  "reason": "gpt-image-2 / user-mcp-kv unavailable in Cloud",
+  "tool": "cursor.GenerateImage",
+  "aspect_ratio": "16:9",
+  "reference_image_paths": [
+    "memory/cover/assets/blog-hero-reference.png"
+  ],
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "source_artifact": "/opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "canvas_size": [
+    2048,
+    1152
+  ],
+  "upscale": "LANCZOS",
+  "url": "",
+  "local_canvas": "cover/canvas-quad.png",
+  "jobs": 1,
+  "note": "ONE GenerateImage call for full 2x2 quad; not 4 separate gens"
+}

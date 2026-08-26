@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Копипаст реестра в чат — или MCP Sheets за вечер?",
+  "mcp_note": "ONE GenerateImage fallback (no gpt-image-2) + reference_image_paths, then LANCZOS 2048x1152 + split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога (очки, борода): мем-коллаж — копипаст реестра в чат vs MCP Google Sheets",
+      "scene_hint": "reference male host face (glasses, beard, quiff) in black hoodie + ID-badge «финконтур», pointing at fake Cursor chat dump of spreadsheet rows vs clean mcp.json sticky; torn paper «Marketplace: MCP server Not Found», pink sticky «Path B = default», Telegram screenshot «где диапазон?», facepalm meme + shocked cat cutout, pink highlight on «копипаст»",
+      "meme_caption_ru": "Копипаст в чат — жиза?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Clean RU comparison table UI: Path B mcp-gsheets+SA vs Path A Marketplace vs копипаст vs Python-скрипт; columns Когда / Минус; sticky note «default 26.08»; tape corner — NO people faces",
+      "alt": "Таблица сравнения маршрутов Path B / Path A / копипаст / скрипт для MCP Sheets"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow diagram 5 steps: колонки doc_key → обезличить ПДн → share SA Editor → JSON-ключ вне git → DoD find-update-re-read; red stamp «без сырых ПДн»; mini sticky — NO hero face",
+      "alt": "Схема подготовки реестра и безопасности без сырых ПДн перед MCP"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake tool screenshots collage: GCP service account + Sheets API enabled + Cursor mcp.json snippet mcp-gsheets + MCP Logs green check; pink marker arrow «Path B»; NO people",
+      "alt": "Скриншоты GCP SA, Sheets API и mcp.json для Path B mcp-gsheets"
+    }
+  }
+}
