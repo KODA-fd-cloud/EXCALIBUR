@@ -322,3 +322,19 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-26 — B92 mcp-google-sheets-cursor-reestry — ❌ PUBLISH BLOCKER
+
+- topic_id: B92
+- slug: mcp-google-sheets-cursor-reestry
+- article_dir: memory/blog/articles/B92-mcp-google-sheets-cursor-reestry
+- link-verify: pass (8/8, site-base https://koda-fd.ru)
+- dry-run: ok (PHP bytes 11950651)
+- publish: **not run**
+- reason: missing Cloud Secrets / `memory/site.env.local`
+- missing vars: EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_HOST, FTP_USER, FTP_PASS (or FTP_PASSWORD), FTP_ROOT
+- permalink: none
+- ledger: not updated (no live publish)
+

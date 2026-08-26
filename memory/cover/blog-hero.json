@@ -1,19 +1,13 @@
 {
-  "hero_id": "koda-ui",
-  "name_ru": "КОДА (без лица на обложке)",
-  "reference_image": "memory/cover/assets/koda-ui-style-reference.png",
-  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
-  "reference_url_source": "koda-fd.ru/wp-content",
+  "hero_id": "koda-blog-host-male",
+  "name_ru": "Ведущий блога КОДА (male host, glasses/beard)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "reference_url_source": "koda-fd.ru/assets",
   "visual_lock": {
-    "style": "dark web, dot-mesh optional, purple glow",
-    "palette": "#0a0a0f, #8b5cf6, #93c5fd"
+    "style": "human hook collage 16:9, reference face lock",
+    "palette": "#F5F5F0, #1A1A2E, #FF1493, #FFD93D"
   },
-  "outfit_rule": "N/A — no human on cover",
-  "prompt_fragment": "Abstract holographic data visualization: glowing purple #8b5cf6 and blue #93c5fd nodes and light trails on dark #0a0a0f, dot-mesh grid, NO text on image.",
-  "cover_hook_rules": [
-    "Обложка = намёк на боль CFO (ручная рутина vs автоматизация)",
-    "Без лиц и stock-фото людей",
-    "Читаемый контраст для превью в Яндексе и Telegram",
-    "16:9, без watermark"
-  ]
+  "outfit_rule": "Agent chooses outfit/pose; face locked to male host reference (glasses, beard, quiff).",
+  "prompt_fragment": "Cutout of realistic male blog host from reference: glasses, neat beard, styled quiff; confident tech educator vibe. Outfit chosen per scene_hint."
 }
