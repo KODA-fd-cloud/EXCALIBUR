@@ -322,3 +322,40 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-27 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| permalink | — |
+| publish_date | 2026-08-27 |
+
+### Preconditions checked
+
+- article-qa.md: PASS (96/100) ✅
+- cover/cover.png + schema.jsonld: present ✅
+- indexer: done ✅
+- `memory/site.env.local`: **MISSING**
+- process env Cloud Secrets: none of the publish keys present
+
+### Missing env (names only, no values)
+
+1. `EXCALIBUR_BLOG_ALLOW_PUBLISH` (must be `yes`)
+2. `PUBLIC_SITE_URL`
+3. `FTP_HOST`
+4. `FTP_USER`
+5. `FTP_PASS` (alias `FTP_PASSWORD`)
+6. `FTP_ROOT`
+
+### Notes
+
+- Step executed (not silent skip). Dry-run/publish not started — no credentials to invent.
+- telegram_notify: not called.
+- Fix: inject Cloud Secrets + write `memory/site.env.local`, then re-run publish Task.
+

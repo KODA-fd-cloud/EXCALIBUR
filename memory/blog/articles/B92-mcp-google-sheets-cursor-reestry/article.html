@@ -1,12 +1,16 @@
-<p>Реестр договоров или УПД снова уезжает в чат Cursor кусками, а после правки вы вручную сверяете ячейки в Google Таблицах? MCP Google Sheets в Cursor - это розетка, через которую агент сам читает и обновляет строки реестра по ключу doc_key, без копипаста диапазонов. За 1-2 часа настроите service account и mcp-gsheets, проверите доступ через MCP Logs и прогоните сценарий: найти строку, обновить статус, перечитать результат.</p>
+<p>Реестр договоров или УПД снова уезжает в чат Cursor кусками, а после правки вы вручную сверяете ячейки в Google Таблицах? MCP Google Sheets в Cursor – это розетка, через которую агент сам читает и обновляет строки реестра по ключу doc_key, без копипаста диапазонов. За 1–2 часа настроите service account и mcp-gsheets (или OAuth-плагин для пилота), проверите доступ через MCP Logs и прогоните сценарий: найти строку → обновить статус → перечитать результат.</p>
 
-<p>MCP (Model Context Protocol) - протокол, через который Cursor подключает внешние инструменты. Без MCP агент видит только то, что вы вставили в чат; с MCP у него появляются tools, и он сам дергает Google Sheets API, как защищенный курьер между редактором и таблицей. JSON в ответе - как акт сверки: у каждого поля свое место.</p>
+<p>MCP (Model Context Protocol) – протокол, через который Cursor подключает внешние инструменты. Без MCP агент видит только то, что вы вставили в чат. С MCP у него появляются tools, и он сам дергает Google Sheets API – как защищенный курьер между редактором и таблицей. JSON в ответе похож на акт сверки: у каждого поля свое место.</p>
 
-<p>Два маршрута. Path A - плагин google-sheets из Marketplace через OAuth вашего Google (быстрый пилот на одном реестре). Path B - community-сервер mcp-gsheets на service account: расшарили только рабочий файл, ключ лежит в env, агент не видит весь Drive. Для финконтура в августе 2026 я опираюсь на Path B: changelog Cursor от 03.08.2026 детализирует Drive, Gmail и Calendar, а Sheets в витрине мог временно исчезнуть. Общий обзор MCP - в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; запись скриптом с тем же SA - в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
+<p>Два маршрута. Path A – плагин google-sheets из Marketplace через OAuth (быстрый пилот). Path B – mcp-gsheets на service account: расшарили только рабочий файл, ключ в env, агент не видит весь Drive. Для финконтура в августе 2026 я беру Path B: changelog от 03.08.2026 детально описывает Drive/Gmail/Calendar, а Sheets в витрине мог пропасть; плюс известен OAuth-баг cursor://. Обзор MCP – в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; запись скриптом с тем же SA – в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнительная таблица: когда MCP Sheets нужен финотделу и когда нет" loading="lazy">
+</figure>
 
-<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки на расход), правки повторяются каждую неделю, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица остается staging-слоем.</p>
+
+<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки на расход), правки повторяются, а копипаст в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственной правдой при жестком audit trail или более 200–300 активных договоров – тогда CLM/1С, таблица остается staging.</p>
 
 <table>
   <thead>
@@ -20,11 +24,11 @@
     <tr>
       <td><b>Path A: Marketplace + OAuth</b></td>
       <td>Личный пилот, быстрый старт</td>
-      <td>Права вашего Google; Sheets-плагин нестабилен в августе 2026</td>
+      <td>Права вашего Google; OAuth Cloud desktop в авг. 2026 часто Error 400</td>
     </tr>
     <tr>
       <td><b>Path B: mcp-gsheets + SA</b></td>
-      <td>Командный реестр, production</td>
+      <td>Командный реестр, production финконтура</td>
       <td>GCP-проект и JSON-ключ вне git</td>
     </tr>
     <tr>
@@ -41,33 +45,41 @@
 </table>
 
 <blockquote>
-  <b>Вердикт:</b> если реестр в Sheets и правки идут через Cursor - MCP убирает копипаст. No-code-контур - в <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизации финансов без кода</a>.
+  <b>Вердикт:</b> если реестр в Sheets и правки идут через Cursor – MCP убирает копипаст. No-code-контур – в <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизации финансов без кода</a>.
 </blockquote>
 
-<p><b>Сделайте:</b> DoD до установки: найти строку по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> MCP "на весь Drive" ради одного реестра.</p>
+<p><b>Сделайте:</b> DoD до установки – найти строку по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> MCP "на весь Drive" ради одного реестра.</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн в облако)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Чеклист подготовки реестра и безопасности без сырых ПДн в облако" loading="lazy">
+</figure>
 
-<p>Одна строка = одна сущность (договор, УПД, подписка). Колонка <b>doc_key</b> - стабильный код вроде DOG-2026-014; по нему агент ищет строку, а не по названию контрагента. Лист <b>staging</b> - для сырых импортов из 1С или Forms; боевой лист "Реестр" агент правит точечно в колонках status и comment.</p>
 
-<p>В облако отправляйте ИНН контрагента, сумму, статус - да; паспорт, полное ФИО в payroll, номера карт - нет. Замените названия на "Контрагент_01", суммы округлите для тестов. Чеклист - в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию данных</a>.</p>
+<p>Одна строка = одна сущность (договор, УПД, подписка). Колонка <b>doc_key</b> – стабильный код вроде DOG-2026-014; по нему агент ищет строку, а не по названию контрагента. Лист <b>staging</b> – для сырых импортов из 1С или Forms; боевой лист "Реестр" агент правит точечно в колонках status и comment.</p>
 
-<p>SA видит только таблицы, расшаренные на client_email; IAM Cloud не заменяет Share. Scope spreadsheets дает read/write всего файла; лист защищайте ProtectedRange. JSON-ключ - не в git, только в GOOGLE_APPLICATION_CREDENTIALS.</p>
+<p>В облако отправляйте ИНН контрагента, сумму, статус – да; паспорт, полное ФИО в payroll, номера карт – нет. Для тестов замените названия на "Контрагент_01", суммы округлите. Чеклист – в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию данных</a>.</p>
+
+<p>SA видит только таблицы, расшаренные на client_email; IAM Cloud не заменяет Share. Scope spreadsheets – read/write всего файла, лист защищайте ProtectedRange. JSON-ключ – не в git, только в GOOGLE_APPLICATION_CREDENTIALS.</p>
 
 <blockquote>
-  <b>Схема:</b> реестр в Sheets → (SA share | OAuth) → MCP в Cursor → update по doc_key → перечитка → регламент CFO
+  <b>Схема:</b> реестр в Sheets → (SA share | OAuth plugin) → MCP в Cursor → Agent read/update по doc_key → перечитка диапазона → регламент CFO
 </blockquote>
 
-<p><b>Сделайте:</b> отдельный SA, share одного файла "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
+<p><b>Сделайте:</b> отдельный SA, share одного файла с ролью "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
 
 <h2 id="setup">Настройте Path B: Google Cloud, SA и mcp.json пошагово</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Схема Path B: Google Cloud, service account и mcp.json для mcp-gsheets" loading="lazy">
+</figure>
 
-<p>Сервер mcp-gsheets (freema/mcp-gsheets) требует Node.js v20+, Google Sheets API и JSON SA. Конфиг: проектный <b>.cursor/mcp.json</b> или глобальный <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
+
+<p>Сервер mcp-gsheets (freema) требует Node.js v20+, Google Sheets API и JSON SA. Конфиг: проектный <b>.cursor/mcp.json</b> или глобальный <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
 
 <ol>
   <li><b>Создайте проект</b> на console.cloud.google.com → Enable APIs → Google Sheets API.</li>
-  <li><b>Service account:</b> IAM → Service Accounts → Create → Keys → JSON. Скопируйте client_email, файл вне git.</li>
-  <li><b>Расшарьте реестр</b> на client_email "Редактор", снимите "Уведомить". Без Share - 403.</li>
+  <li><b>Service account:</b> IAM → Service Accounts → Create → Keys → JSON. Скопируйте client_email, файл ключа положите вне репозитория.</li>
+  <li><b>Расшарьте реестр</b> на client_email "Редактор", без "Уведомить". Без Share будет 403, даже при "красивом" IAM.</li>
   <li><b>Добавьте блок в mcp.json</b> с абсолютным путем к ключу:</li>
 </ol>
 
@@ -85,93 +97,94 @@
 }</code></pre>
 
 <ol start="5">
-  <li><b>Перезапустите Cursor</b> после правки mcp.json (официальный help Cursor).</li>
-  <li><b>Проверьте:</b> Customize → MCPs → зеленый статус; ошибки - Output → MCP Logs (Ctrl+Shift+U). Tool sheets_check_access или чтение A1:C5 листа "Реестр".</li>
-  <li><b>Approval на write:</b> по умолчанию Agent спрашивает перед MCP-tool; на пилоте не включайте Auto-run всех write.</li>
+  <li><b>Перезапустите Cursor</b> после правки mcp.json (так требует официальный help Cursor).</li>
+  <li><b>Проверьте:</b> Customize → MCPs → зеленый статус; ошибки – Output → MCP Logs (Ctrl+Shift+U). Tool sheets_check_access или чтение A1:C5 листа "Реестр".</li>
+  <li><b>Approval на write:</b> Agent по умолчанию спрашивает перед MCP-tool; на пилоте не включайте Auto-run всех write.</li>
 </ol>
 
-<p>Tools реестра: sheets_get_values, sheets_update_values, sheets_append_values, sheets_get_metadata. Для append указывайте INSERT_ROWS: default OVERWRITE перезаписывает не так, как ждете.</p>
+<p>Tools реестра: sheets_get_values, sheets_update_values, sheets_append_values, sheets_get_metadata, sheets_check_access. Для append указывайте INSERT_ROWS: default OVERWRITE перезаписывает не так, как ждете.</p>
 
 <p><b>Сделайте:</b> зеленый сервер + check_access + тестовое чтение. <b>Не делайте:</b> коммит mcp.json с путем к ключу.</p>
 
-<h2 id="path-a">Подключите Path A: Marketplace OAuth (если плагин доступен)</h2>
+<h2 id="path-a">Подключите Path A: Marketplace OAuth (пилот с обходом Error 400)</h2>
 
-<p>03.08.2026 Cursor анонсировал Google Workspace plugins (Drive, Gmail, Calendar). Установка: Customize → MCPs → Add → OAuth, минимальные scopes.</p>
+<p>03.08.2026 Cursor анонсировал Google Workspace plugins. Если в Customize → MCPs видите google-sheets: Add → аутентификация OAuth, минимальные scopes. Для пилота этого хватает.</p>
 
-<p>На август 2026: Docs/Sheets/Slides могли исчезнуть из витрины; min Cursor 3.13.0; OAuth-bug cursor:// (обход cursor.com/agents). Workspace MCP - Developer Preview. <b>Не полагайтесь</b> на Path A как единственный маршрут - проверьте витрину, для production держите Path B. "Connected" ≠ успешная авторизация - только живой read/write.</p>
+<p>На август 2026: Cloud desktop часто дает <b>Error 400: invalid_request</b> – Google отклоняет redirect cursor://. Workaround: auth <b>Local</b> или Login через Agents (см. <a href="https://forum.cursor.com/t/167413" target="_blank" rel="noopener noreferrer">тред Cursor про Error 400</a>) → MCP Servers. Sheets мог пропасть из витрины – Path A не единственный маршрут.</p>
 
-<p><b>Сделайте:</b> если google-sheets в Marketplace - OAuth и тестовое чтение. <b>Не делайте:</b> считать зеленый индикатор финальной проверкой.</p>
+<p><b>Сделайте:</b> Local OAuth и чтение A1:C5. <b>Не делайте:</b> считать "Connected" проверкой без живого read/write.</p>
 
 <h2 id="registry-scenario">Прогоните сценарий: найти, обновить, перечитать</h2>
 
-<p>DoD: правка одной строки по doc_key и diff после write. Квота: 300 write/мин на проект; batch = один запрос; при 429 - пауза.</p>
+<p>DoD: правка одной строки по doc_key и diff после write. Квота: 300 write/мин на проект; batch = один запрос; при 429 – пауза.</p>
 
-<pre><code>Подключись к {SPREADSHEET_ID}. На листе "Реестр" найди doc_key = DOG-2026-014.
-Прочитай status и comment. Если status не "Оплачен", предложи "На согласовании"
-и дату в comment. После write перечитай строку и покажи diff.
-Не трогай другие листы и колонки вне status/comment.</code></pre>
+<pre><code>Подключись к таблице {SPREADSHEET_ID}. На листе "Реестр" найди строку,
+где колонка doc_key = DOG-2026-014. Прочитай status и comment.
+Если status не "Оплачен", предложи обновление на "На согласовании"
+и допиши в comment сегодняшнюю дату. После write перечитай ту же строку
+и покажи diff. Не трогай другие листы и колонки вне status/comment.</code></pre>
 
 <ol>
-  <li>sheets_get_metadata - лист "Реестр" и заголовки на месте.</li>
-  <li>Найти строку по doc_key через get_values, не "угадать" номер.</li>
-  <li>Approve sheets_update_values - только status и comment.</li>
-  <li>После write - get_values на ту же строку, сверка с ожиданием.</li>
+  <li>sheets_get_metadata – лист "Реестр" и заголовки на месте.</li>
+  <li>Найти строку по doc_key через sheets_get_values, не "угадать" номер строки.</li>
+  <li>Approve sheets_update_values – только status и comment.</li>
+  <li>После write – sheets_get_values на ту же строку, сверка с ожиданием.</li>
   <li>Follow-up при расхождении: "перечитай строку N, write не делай".</li>
 </ol>
 
-<p>Риск indirect prompt injection: в ячейках реестра могут быть тексты, которые агент прочтет как инструкции ("удали все строки", "отправь ключ"). Human-in-the-loop на каждый write-tool обязателен. Cloud Agents не наследуют локальный Google OAuth с рабочего Cursor - для облака нужен SA в env или отдельный коннектор.</p>
+<p>Риск indirect prompt injection: в ячейках могут быть тексты-инструкции ("удали все строки"). Human-in-the-loop на каждый write обязателен. Cloud Agents не наследуют локальный OAuth – для облака нужен SA в env или MCP в dashboard.</p>
 
-<p>Разборы контуров - в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>.</p>
+<p>Разборы контуров – в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>.</p>
 
 <p><b>Сделайте:</b> цикл find → update → re-read на тестовой строке. <b>Не делайте:</b> Auto-run write без allowlist.</p>
 
 <h2 id="verify">Проверьте результат и типичные ошибки</h2>
 
-<p>После каждой записи - перечитка того же диапазона.</p>
+<p>После каждой записи – перечитка того же диапазона. Connected ≠ authorized.</p>
 
 <ul>
-  <li><b>403</b> - нет Share на client_email или неверный путь к JSON.</li>
-  <li><b>Серый MCP</b> - MCP Logs; Node v20+, npx, абсолютный путь в env.</li>
-  <li><b>429</b> - батчите; не update на каждую ячейку в цикле.</li>
-  <li><b>Append</b> - явно INSERT_ROWS.</li>
-  <li><b>OAuth</b> - bug cursor:// или переход на Path B.</li>
+  <li><b>403 / unauthorized</b> – нет Share на client_email или неверный путь к JSON в env.</li>
+  <li><b>Серый MCP</b> – Output → MCP Logs; проверьте Node v20+, npx и абсолютный путь.</li>
+  <li><b>429</b> – батчите updates; не дергайте write на каждую ячейку в цикле.</li>
+  <li><b>Append</b> – явно INSERT_ROWS, иначе OVERWRITE.</li>
+  <li><b>OAuth Error 400</b> – Local auth или Login на cursor.com/agents; иначе Path B.</li>
 </ul>
 
-<p>При более 80-100 заявок/мес через Forms→Sheets таблица становится staging перед ERP или n8n; MCP остается transport точечных правок, не главной книгой. При росте нагрузки планируйте ротацию ключа SA (тема B93) и allowlist только нужных write-tools.</p>
+<p>При более 80–100 заявок/мес через Forms→Sheets таблица – staging перед ERP/n8n; MCP остается транспортом точечных правок. Планируйте ротацию ключа SA и allowlist write-tools.</p>
 
-<p><b>Сделайте:</b> чеклист share / env / MCP Logs / re-read. <b>Не делайте:</b> чинить 403 промптом без Share.</p>
+<p><b>Сделайте:</b> чеклист share / env / MCP Logs / re-read. <b>Не делайте:</b> чинить 403 промптом без Share файла.</p>
 
 <h2 id="next-steps">Что автоматизировать дальше</h2>
 
 <ol>
-  <li>Path B на одном реестре с doc_key и staging.</li>
-  <li>Зеленый MCP + check_access + update с перечиткой.</li>
+  <li>Path B на одном реестре с doc_key и листом staging.</li>
+  <li>Зеленый MCP + sheets_check_access + update с перечиткой.</li>
   <li>Allowlist write-tools; SA-ключ вне git.</li>
-  <li>Соседние реестры (B51 договоры, B58 УПД, B83 SaaS) - MCP поверх готовой таблицы.</li>
-  <li>При audit - ERP/CLM; cron-загрузки - скрипт B82.</li>
+  <li>Соседние реестры (договоры, УПД, SaaS) – MCP поверх уже спроектированной таблицы.</li>
+  <li>При audit trail – ERP/CLM; cron-загрузки – скрипт из гайда Sheets API (B82).</li>
 </ol>
 
-<p>Материалы по автоматизации - в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>.</p>
+<p>Материалы по автоматизации финотдела – в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>.</p>
 
 <h2>Частые вопросы</h2>
 
 <h3>Можно ли без программиста?</h3>
-<p>Path A: да для пилота, если плагин в витрине. Path B: по инструкции и help Cursor; первый реестр 1-2 часа с GCP и Share.</p>
+<p>Path A: да для пилота при Local auth и плагине в витрине. Path B: по инструкции Cursor поможет с mcp.json; первый реестр 1–2 часа с GCP и Share.</p>
 
 <h3>Сколько займет внедрение?</h3>
-<p>SA + mcp.json + тестовый update - около 1-2 часов. OAuth быстрее, если плагин доступен и OAuth без bug.</p>
+<p>SA + mcp.json + тестовый update – около 1–2 часов. OAuth быстрее, если auth не упирается в Error 400.</p>
 
 <h3>OAuth или service account?</h3>
-<p>OAuth - личный пилот. SA - командный реестр, минимальный blast radius: только расшаренные файлы.</p>
+<p>OAuth – личный пилот. SA – командный реестр и минимальный blast radius (только расшаренные файлы). При Cloud OAuth-баге Path B надежнее.</p>
 
 <h3>Какие риски для данных?</h3>
-<p>OAuth = права вашего Google; SA = все расшаренные таблицы. Без сырых ПДн; подтверждайте write-tools; indirect injection из ячеек. Обезличивание - в гайде по ссылке выше.</p>
+<p>OAuth = права вашего Google; SA = все расшаренные таблицы. Без сырых ПДн; подтверждайте write; учитывайте injection из ячеек.</p>
 
 <h3>Чем B92 отличается от B82?</h3>
-<p>B82 - скрипт в staging по cron. B92 - Agent правит через MCP без скрипта; тот же SA и Share.</p>
+<p>B82 – скрипт пишет в staging по cron. B92 – Agent правит через MCP без скрипта; тот же SA и Share.</p>
 
-<h3>Работает ли в Cloud Agents?</h3>
-<p>Локальный OAuth в облако не переезжает. Для Cloud Agents - SA в env или отдельный коннектор.</p>
+<h3>Работает ли MCP Sheets в Cloud Agents?</h3>
+<p>Локальный OAuth в облако не переезжает. Для Cloud Agents – MCP в dashboard или SA в env.</p>
 
 <h3>Нужен ли MCP для маленького реестра?</h3>
-<p>5 строк раз в месяц - хватит ручного редактирования. MCP окупается при еженедельных правках через Cursor без копипаста.</p>
+<p>5 строк раз в месяц – хватит ручного редактирования. MCP окупается при еженедельных правках через Cursor без копипаста.</p>
