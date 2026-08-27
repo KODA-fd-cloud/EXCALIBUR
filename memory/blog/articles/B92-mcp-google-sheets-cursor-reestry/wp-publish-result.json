@@ -1,0 +1,16 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "blockers": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "memory/site.env.local missing"
+  ],
+  "raw_output": "❌ PUBLISH BLOCKER: missing publish credentials / allow flag"
+}
