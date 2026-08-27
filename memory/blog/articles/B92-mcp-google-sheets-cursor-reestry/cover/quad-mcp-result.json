@@ -1,0 +1,18 @@
+{
+  "url": null,
+  "local_source": "/opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "method": "cursor_generate_image_i2i_lanczos_2048x1152",
+  "original_size": [
+    1536,
+    1024
+  ],
+  "canvas_size": [
+    2048,
+    1152
+  ],
+  "resized": true,
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "mcp_mode": "image-to-image",
+  "generator": "cursor_GenerateImage",
+  "generated_at": "2026-08-27T05:16:38+00:00"
+}
