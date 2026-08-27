@@ -1,24 +1,24 @@
 # QA: B92 mcp-google-sheets-cursor-reestry
 
 date: 2026-08-27
-score_total: 78/100
+score_total: 96/100
 core_eeat_lite: 19/20
-link_verify: fail
+link_verify: pass
 utility_gate: pass
-verdict: FAIL
+verdict: PASS
 
 ## Scores
 
 | Блок | Вес | Балл | Комментарий |
 |------|-----|------|-------------|
 | SEO structure | 20 | 18 | primary в лиде; FAQ 7; H2 how-to ×8; таблица Path A/B; meta_ab ✓ |
-| GEO / citability | 25 | 23 | Answer-first lead; blockquote workflow; ol×3; pre/code mcp.json; −2 за dead external href |
+| GEO / citability | 25 | 25 | Answer-first lead; blockquote workflow; ol×3; pre/code mcp.json; forum.cursor.com 200 |
 | CORE-EEAT lite | 15 | 14 | 19/20; −1 Wordstat MCP-KV offline |
 | Human voice | 15 | 15 | 0 slop hits, Flesch RU 100, режим B Ольга, «Сделайте/Не делайте» |
 | Fact safety | 15 | 14 | fact-check PASS (6 extracted / 1 bank); цифры 1–2 ч / 200–300 / Error 400 из research |
-| Contract HTML | 10 | −6→4 | linter PASS, объём 8884 ✓, CTA club+TG ✓; **link-verify FAIL** (−6 hard gate) |
+| Contract HTML | 10 | 10 | linter PASS, объём 8906 ✓, CTA club+TG ✓; **link-verify PASS** (7/7) |
 
-**Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate pass — **НЕ выполнен** (link-verify fail).
+**Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate pass — **выполнен**.
 
 ## Hard bans (KODA)
 
@@ -30,7 +30,7 @@ verdict: FAIL
 | «мы в KODA» | нет |
 | salebot / koda_salebot | нет |
 | article_mode | B |
-| char_count | 8884 (8500–9500) ✓ |
+| char_count | 8906 (8500–9500) ✓ |
 | CTA | club.koda-fd.ru ×1 + t.me/finance_modern ×1 |
 | TOC с якорями | нет |
 
@@ -65,7 +65,7 @@ verdict: FAIL
 | Скрипт | Verdict | Файл |
 |--------|---------|------|
 | fact-check | PASS | fact-check-report.json |
-| link-verify | **FAIL** | link-verify.json |
+| link-verify | **PASS** | link-verify.json |
 | html-linter | PASS | html-linter-report.json |
 | slop-detector | PASS | slop-detector-report.json |
 | cannibalization | PASS (portfolio WARNING B21↔B80) | cannibalization-report.json |
@@ -73,11 +73,10 @@ verdict: FAIL
 
 ## Link verify
 
-- total: 7, failed: 1 → **verdict fail**
-- OK: `/blog/mcp-cursor-finansist-instrumenty/`, `/blog/google-sheets-api-integraciya-finotdel/`, `/blog/avtomatizaciya-finansov-no-code/`, `/blog/obezlichivanie-dannyh-chatgpt-finansist/`, t.me/finance_modern, club.koda-fd.ru
-- **FAIL:** `https://cursor.com/agents` → HTTP 403 (HEAD+GET; bot/WAF; UA не помогает)
+- total: 7, failed: 0 → **verdict pass**
+- OK: `/blog/mcp-cursor-finansist-instrumenty/`, `/blog/google-sheets-api-integraciya-finotdel/`, `/blog/avtomatizaciya-finansov-no-code/`, `/blog/obezlichivanie-dannyh-chatgpt-finansist/`, `https://forum.cursor.com/t/167413`, t.me/finance_modern, club.koda-fd.ru
 - `--site-base https://koda-fd.ru`
-- Примечание: `https://forum.cursor.com/t/167413` отвечает 200 (источник research)
+- FIX cycle 1 confirmed: dead `cursor.com/agents` href убран; forum thread 200
 
 ## AI-slop scan
 
@@ -101,26 +100,14 @@ verdict: FAIL
 - article: PASS (`action_markers=19`, numbered steps=17, faq_h3=7, tables=1)
 - report: utility-gate-report.json
 
-## FIX для writer (cycle 1) — НЕ править geo-qa
-
-**Блокер:** одна внешняя ссылка ломает hard gate `link-verify`.
-
-1. В `article.html` найти `<a href="https://cursor.com/agents" …>cursor.com/agents</a>`.
-2. Выбрать один вариант (предпочтительно A):
-   - **A (рекомендуется):** заменить href на `https://forum.cursor.com/t/167413` (research: OAuth Error 400 / workaround; link-verify 200). Текст якоря можно оставить «forum Cursor (OAuth Error 400)» или «тред Cursor про Error 400».
-   - **B:** убрать тег `<a>`, оставить plain/`<b>cursor.com/agents</b>` (как уже в списке ошибок) — link-verify не проверяет голый текст.
-3. Не менять longread/структуру/char_count сверх необходимого для ссылки (±50 символов ок).
-4. После правки: перезапуск `excalibur_blog_link_verify.py` → ожидается pass → geo-qa cycle 2.
-
-**Запрещено geo-qa:** править article.html самостоятельно; cover/schema/publish.
-
 ## Fix cycle
 
 - cycle 0 (writer 2026-08-27): article.html 8884; Path A OAuth Error 400 + agents workaround
-- cycle 1 (geo-qa 2026-08-27): все скрипты кроме link-verify PASS → **FAIL**, FIX выше
+- cycle 1 (geo-qa 2026-08-27): link-verify FAIL на cursor.com/agents → FIX writer
+- cycle 2 (geo-qa 2026-08-27): все скрипты PASS → **PASS** (score 96/100)
 
-## Schema ready (после PASS — handoff для schema-агента)
+## Schema ready (handoff для schema-агента)
 
 BlogPosting: pending | FAQPage: yes (7) | HowTo: yes (GCP→mcp.json→verify→registry) | Review: no | E-E-A-T SameAs Author: pending (author_id: olga-kondratskaya)
 
-**cover/schema НЕ запускать** до geo-qa PASS.
+**next:** директор запускает cover || schema параллельно.
