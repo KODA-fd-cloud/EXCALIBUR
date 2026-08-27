@@ -353,3 +353,13 @@ QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
 - Credentials not invented.
 - `telegram_notify published` not called (no live permalink).
 - Secrets requested via `request-environment-setup-actions`.
+
+
+## 2026-08-27T12:00Z cron — B92 continue_pipeline — **❌ PUBLISH BLOCKER** (повтор)
+
+- tick: `continue_pipeline` / `writing` / B92
+- Preflight research_start + utility PASS
+- Artifacts ready (QA PASS 91, cover, schema, indexer)
+- Publish Task: dry-run PASS, live blocked — missing `EXCALIBUR_BLOG_ALLOW_PUBLISH`, `PUBLIC_SITE_URL`, `FTP_*`, `memory/site.env.local`
+- `telegram_notify published` не вызывался (нет permalink)
+- Secrets requested via `request-environment-setup-actions`
