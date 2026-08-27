@@ -1,8 +1,8 @@
 {
   "source": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
-  "total_links": 6,
-  "failed_count": 0,
-  "verdict": "pass",
+  "total_links": 7,
+  "failed_count": 1,
+  "verdict": "fail",
   "links": [
     {
       "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
@@ -43,6 +43,15 @@
       "kind": "internal_relative",
       "skipped": false,
       "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+    },
+    {
+      "url": "https://cursor.com/agents",
+      "status": 403,
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "external",
+      "skipped": false
     },
     {
       "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
