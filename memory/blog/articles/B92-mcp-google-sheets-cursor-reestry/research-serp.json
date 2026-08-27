@@ -2,17 +2,17 @@
   "agent": "excalibur-blog",
   "date_context": {
     "timezone": "Europe/Moscow",
-    "today_iso": "2026-08-24",
-    "today_ru": "24.08.2026",
+    "today_iso": "2026-08-27",
+    "today_ru": "27.08.2026",
     "year": 2026,
     "month": 8,
     "month_name_ru": "август",
-    "weekday_ru": "понедельник",
+    "weekday_ru": "четверг",
     "freshness_window": {
-      "prefer_sources_after": "2026-05-26",
+      "prefer_sources_after": "2026-05-29",
       "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
     },
-    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-24 (2026 год)."
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-27 (2026 год)."
   },
   "topic": {
     "topic_id": "B92",
@@ -36,37 +36,37 @@
       "result_count": 6,
       "results": [
         {
-          "title": "plugins/google-sheets at main · cursor/plugins · GitHub",
-          "url": "https://github.com/cursor/plugins/tree/main/google-sheets",
+          "title": "cursor-plugins/google-sheets at main · jonbaldie/cursor-plugins",
+          "url": "https://github.com/jonbaldie/cursor-plugins/tree/main/google-sheets",
           "snippet": ""
         },
         {
-          "title": "google-sheets | Cursor MCP Server",
-          "url": "https://cursor.com/marketplace/mcp/google-sheets",
+          "title": "cursor-plugins/google-sheets at main · suryatmodulus/cursor ... - GitHub",
+          "url": "https://github.com/suryatmodulus/cursor-plugins/tree/main/google-sheets",
           "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
-        },
-        {
-          "title": "cursor-plugins/google-sheets/README.md at main - GitHub",
-          "url": "https://github.com/jonbaldie/cursor-plugins/blob/main/google-sheets/README.md",
-          "snippet": "google-sheets is a Cursor MCP server included in the Google Sheets plugin by Cursor. Connect Cursor to Google Sheets via Google's remote MCP server — read spreadsheets, update values and formulas."
-        },
-        {
-          "title": "Как подключить henilcalagiya/google-sheets-mcp к Cursor — MCP Каталог",
-          "url": "https://mcp-catalog.ru/tutorials/google-sheets-cursor",
-          "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
-        },
-        {
-          "title": "Google Sheets for Cursor | MCP Servers - Model Context Protocol | The ...",
-          "url": "https://mcpservers.com/servers/akchro-google-sheets/cursor",
-          "snippet": "Пошаговая инструкция: установка MCP-сервера henilcalagiya/google-sheets-mcp (Your AI Assistant's Gateway to Google Sheets! 25 powerful tools for seamless Google Sheets automation via MCP) в Cursor."
         },
         {
           "title": "Google Sheets MCP - Model Context Protocol Integration for Cursor IDE ...",
           "url": "https://mcpcursor.com/server/google-sheets-mcp",
-          "snippet": "Integrates with Google Sheets to enable spreadsheet creation, editing, and formatting capabilities through specialized Python tools built with FastMCP framework, requiring Google Cloud OAuth authentication. | MCP server optimized for Cursor integration."
+          "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
+        },
+        {
+          "title": "Cursor открыл агентам почту Gmail и таблицы Sheets",
+          "url": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
+          "snippet": "Integrates with Google Sheets to enable spreadsheet creation, editing, and formatting capabilities through specialized Python tools built with FastMCP framework, requiring Google Cloud OAuth authentication."
+        },
+        {
+          "title": "MCP Server for Google Sheets and Excel Online | sheet2api",
+          "url": "https://sheet2api.com/mcp-server/",
+          "snippet": "В анонсе прямо сказано: Cursor теперь работает по всему Google Workspace. Для того, кто гоняет брифи и таблицы каждый день, сдвиг бытовой — агент получил ту же почту и ту же таблицу, где лежит работа."
+        },
+        {
+          "title": "Как подключить henilcalagiya/google-sheets-mcp к Cursor — MCP Каталог",
+          "url": "https://mcp-catalog.ru/tutorials/google-sheets-cursor",
+          "snippet": "The sheet2api MCP server lets Claude, ChatGPT, Cursor and any other MCP client read and write the rows of your Google Sheet or Excel Online workbook."
         }
       ],
-      "searched_at": "2026-08-24"
+      "searched_at": "2026-08-27"
     },
     {
       "query_id": "primary_recent",
@@ -75,37 +75,37 @@
       "result_count": 6,
       "results": [
         {
-          "title": "Cursor открыл агентам почту Gmail и таблицы Sheets",
-          "url": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
+          "title": "Cursor дотянулся до Google Workspace: из 5 обещанных плагинов через ...",
+          "url": "https://vibecoding.ru/news/2026/08/03/cursor-google-workspace-plugins",
           "snippet": ""
         },
         {
-          "title": "plugins/google-sheets at main · cursor/plugins · GitHub",
-          "url": "https://github.com/cursor/plugins/tree/main/google-sheets",
-          "snippet": "Теперь Cursor официально пустил агентов в Gmail и Google Sheets — рядом диск, календарь и документы. Плагины ставятся из витрины Cursor, доступ — под твоим аккаунтом Google."
+          "title": "Cursor открыл агентам почту Gmail и таблицы Sheets",
+          "url": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
+          "snippet": "Cursor анонсировал плагины Google Workspace 3 августа, а уже 4-го убрал из маркетплейса Docs, Sheets и Slides. Из пяти обещанных в строю остались три: Gmail, Drive и Calendar."
         },
         {
           "title": "google-sheets | Cursor MCP Server",
           "url": "https://cursor.com/marketplace/mcp/google-sheets",
-          "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
-        },
-        {
-          "title": "on X: \"Cursor: Cursor for Google Workspace What changed: - Cursor can ...",
-          "url": "https://x.com/cursorreleases/status/2084366956170502490",
-          "snippet": "google-sheets is a Cursor MCP server included in the Google Sheets plugin by Cursor. Connect Cursor to Google Sheets via Google's remote MCP server — read spreadsheets, update values and formulas."
+          "snippet": "Теперь Cursor официально пустил агентов в Gmail и Google Sheets — рядом диск, календарь и документы. Плагины ставятся из витрины Cursor, доступ — под твоим аккаунтом Google."
         },
         {
           "title": "plugins/google-sheets/CHANGELOG.md at main · cursor/plugins",
           "url": "https://github.com/cursor/plugins/blob/main/google-sheets/CHANGELOG.md",
-          "snippet": "Cursor: Cursor for Google WorkspaceWhat changed:- Cursor can now read, write, and act across Google Workspace via MCP- Covers Drive, Gmail, Calendar, Docs, Sheets, and Chat- Install from the Cursor Marketplace or the Customize page in CursorDetails in thread ↓"
+          "snippet": "google-sheets is a Cursor MCP server included in the Google Sheets plugin by Cursor. Connect Cursor to Google Sheets via Google's remote MCP server — read spreadsheets, update values and formulas."
         },
         {
-          "title": "Как подключить henilcalagiya/google-sheets-mcp к Cursor — MCP Каталог",
-          "url": "https://mcp-catalog.ru/tutorials/google-sheets-cursor",
+          "title": "Google Sheets MCP - Model Context Protocol Integration for Cursor IDE ...",
+          "url": "https://mcpcursor.com/server/google-sheets-mcp",
           "snippet": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub."
+        },
+        {
+          "title": "Cursor Google Workspace Plugins: Gmail, Drive (2026) | explainx.ai Blog",
+          "url": "https://www.explainx.ai/blog/cursor-google-workspace-plugins-gmail-drive-calendar-august-2026",
+          "snippet": "Integrates with Google Sheets to enable spreadsheet creation, editing, and formatting capabilities through specialized Python tools built with FastMCP framework, requiring Google Cloud OAuth authentication."
         }
       ],
-      "searched_at": "2026-08-24"
+      "searched_at": "2026-08-27"
     },
     {
       "query_id": "news_angle",
@@ -124,27 +124,27 @@
           "snippet": "Cursor теперь может читать, писать и действовать в вашем Google Workspace. Новые плагины дают агентам прямой доступ к Gmail, Google Drive, Calendar, Docs и Sheets."
         },
         {
-          "title": "Конспект: Экосистема Cursor AI 2026: Правила, MCP, Skills и Sub-agents ...",
-          "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
+          "title": "plugins/google-sheets/CHANGELOG.md at main · cursor/plugins",
+          "url": "https://github.com/cursor/plugins/blob/main/google-sheets/CHANGELOG.md",
           "snippet": "Теперь Cursor официально пустил агентов в Gmail и Google Sheets — рядом диск, календарь и документы. Плагины ставятся из витрины Cursor, доступ — под твоим аккаунтом Google."
         },
         {
-          "title": "on X: \"Cursor: Cursor for Google Workspace What changed: - Cursor can ...",
-          "url": "https://x.com/cursorreleases/status/2084366956170502490",
+          "title": "Конспект: Экосистема Cursor AI 2026: Правила, MCP, Skills и Sub-agents ...",
+          "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
+          "snippet": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub."
+        },
+        {
+          "title": "cursor-plugins/google-sheets/CHANGELOG.md at main - GitHub",
+          "url": "https://github.com/jonbaldie/cursor-plugins/blob/main/google-sheets/CHANGELOG.md",
           "snippet": "Полный гайд по инструментам Cursor: настройка .cursorrules, использование MCP серверов, динамические навыки Skills и управление субагентами для AI-разработки."
         },
         {
           "title": "Google открыла 40 млн документов для AI-ассистентов через MCP",
           "url": "https://www.ai-stat.ru/news/2026-02-10-google-developer-knowledge-mcp",
-          "snippet": "Cursor: Cursor for Google WorkspaceWhat changed:- Cursor can now read, write, and act across Google Workspace via MCP- Covers Drive, Gmail, Calendar, Docs, Sheets, and Chat- Install from the Cursor Marketplace or the Customize page in CursorDetails in thread ↓"
-        },
-        {
-          "title": "Google Sheets in VS Code, Cursor, and Windsurf over MCP",
-          "url": "https://www.webnuz.com/article/2026-07-26/Google%20Sheets%20in%20VS%20Code%2C%20Cursor%2C%20and%20Windsurf%20over%20MCP",
-          "snippet": "Developer Knowledge API и MCP-сервер от Google дают AI-инструментам прямой доступ к документации Firebase, Android, Cloud и Maps. Работает с Claude Code, Cursor, Copilot."
+          "snippet": "Cursor plugin specification and official plugins. Contribute to jonbaldie/cursor-plugins development by creating an account on GitHub."
         }
       ],
-      "searched_at": "2026-08-24"
+      "searched_at": "2026-08-27"
     },
     {
       "query_id": "secondary_1",
@@ -168,22 +168,22 @@
           "snippet": "Узнайте, как Автоматизация финансов экономит до 40% времени в 2026 году. Кейсы, чеклист и обзор ошибок от эксперта с 10-летним стажем."
         },
         {
-          "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
-          "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
+          "title": "Лучшие сервисы для автоматизации финансового планирования в 2026 году ...",
+          "url": "https://teego.ru/servisy/luchshie-servisy-dlya-avtomatizatsii-finansovogo-planirovaniya-v-2026-godu/",
           "snippet": "В этой статье мы сравним шесть популярных решений для автоматизации управления финансами: Oracle, SAP, Farseer, ABM Finance, Anaplan и Microsoft Dynamics 365 - рассмотрим их особенности, сильные стороны и сценарии применения."
+        },
+        {
+          "title": "Автоматизация бизнеса в 2026: 7 инструментов, которые сократят рутину и ...",
+          "url": "https://www.souldex.ru/blog/avtomatizaciya-biznesa-2026-instrumenty",
+          "snippet": "Сравнение ведущих сервисов для автоматизации финансового планирования: функции, цены и как выбрать инструмент для учета бюджета и прогнозирования денежных потоков."
         },
         {
           "title": "Топ‑5 новых моделей для автоматизации финансов (июль 2026)",
           "url": "https://vc.ru/ai/3030629-top-modelei-dlya-avtomatizatsii-finansovykh-protsessov",
-          "snippet": "Мы разберем, какие технологии в 2026 году определяют эффективность работы с денежными потоками, как выстроить бесшовную интеграцию аналитических контуров и почему роботизация рутинных операций уже не ограничивается крупными холдингами, а становится доступной среднему и даже малому бизнесу."
-        },
-        {
-          "title": "PDF Автоматизация 2026 всё,",
-          "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
-          "snippet": "Ниже — топ‑5 моделей и платформ, которые реально меняют финансовую автоматизацию в 2026."
+          "snippet": "Нужна комплексная настройка под ваши процессы, интеграция систем и обучение команды. Наша веб-студия специализируется на автоматизации бизнеса \"под ключ\" для ИП и компаний в России."
         }
       ],
-      "searched_at": "2026-08-24"
+      "searched_at": "2026-08-27"
     },
     {
       "query_id": "secondary_2",
@@ -192,37 +192,37 @@
       "result_count": 6,
       "results": [
         {
-          "title": "plugins/google-sheets at main · cursor/plugins · GitHub",
-          "url": "https://github.com/cursor/plugins/tree/main/google-sheets",
+          "title": "cursor-plugins/google-sheets at main · jonbaldie/cursor-plugins",
+          "url": "https://github.com/jonbaldie/cursor-plugins/tree/main/google-sheets",
           "snippet": ""
         },
         {
-          "title": "google-sheets | Cursor MCP Server",
-          "url": "https://cursor.com/marketplace/mcp/google-sheets",
+          "title": "cursor-plugins/google-sheets at main · suryatmodulus/cursor ... - GitHub",
+          "url": "https://github.com/suryatmodulus/cursor-plugins/tree/main/google-sheets",
+          "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
+        },
+        {
+          "title": "Google Sheets MCP - Model Context Protocol Integration for Cursor IDE ...",
+          "url": "https://mcpcursor.com/server/google-sheets-mcp",
           "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
         },
         {
           "title": "Cursor открыл агентам почту Gmail и таблицы Sheets",
           "url": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
-          "snippet": "google-sheets is a Cursor MCP server included in the Google Sheets plugin by Cursor. Connect Cursor to Google Sheets via Google's remote MCP server — read spreadsheets, update values and formulas."
-        },
-        {
-          "title": "Google Sheets MCP - Model Context Protocol Integration for Cursor IDE ...",
-          "url": "https://mcpcursor.com/server/google-sheets-mcp",
-          "snippet": "Теперь Cursor официально пустил агентов в Gmail и Google Sheets — рядом диск, календарь и документы. Плагины ставятся из витрины Cursor, доступ — под твоим аккаунтом Google."
-        },
-        {
-          "title": "cursor-plugins/google-sheets at main · suryatmodulus/cursor ... - GitHub",
-          "url": "https://github.com/suryatmodulus/cursor-plugins/tree/main/google-sheets",
           "snippet": "Integrates with Google Sheets to enable spreadsheet creation, editing, and formatting capabilities through specialized Python tools built with FastMCP framework, requiring Google Cloud OAuth authentication."
         },
         {
-          "title": "Cursor дотянулся до Google Workspace: из 5 обещанных плагинов через ...",
-          "url": "https://vibecoding.ru/news/2026/08/03/cursor-google-workspace-plugins",
-          "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
+          "title": "Как подключить henilcalagiya/google-sheets-mcp к Cursor — MCP Каталог",
+          "url": "https://mcp-catalog.ru/tutorials/google-sheets-cursor",
+          "snippet": "Теперь Cursor официально пустил агентов в Gmail и Google Sheets — рядом диск, календарь и документы. Плагины ставятся из витрины Cursor, доступ — под твоим аккаунтом Google."
+        },
+        {
+          "title": "MCP Server for Google Sheets and Excel Online | sheet2api",
+          "url": "https://sheet2api.com/mcp-server/",
+          "snippet": "Пошаговая инструкция: установка MCP-сервера henilcalagiya/google-sheets-mcp (Your AI Assistant's Gateway to Google Sheets! 25 powerful tools for seamless Google Sheets automation via MCP) в Cursor."
         }
       ],
-      "searched_at": "2026-08-24"
+      "searched_at": "2026-08-27"
     },
     {
       "query_id": "secondary_3",
@@ -236,32 +236,32 @@
           "snippet": ""
         },
         {
-          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
-          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "title": "2026 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026",
           "snippet": "2026 (две ты́сячи два́дцать шесто́й) год по григорианскому календарю — невисокосный год, начинающийся в четверг."
         },
         {
-          "title": "2026 - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2026",
+          "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+          "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+        },
+        {
+          "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+          "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
           "snippet": "В нем содержится информация о количестве рабочих, выходных и праздничных дней, норме рабочего времени в 2026 году. Для удобства использования производственный календарь содержит как общеквартальные сведения о количестве рабочих и выходных дней, так и информацию по каждому месяцу."
         },
         {
           "title": "2026 год в России — Википедия",
           "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
-          "snippet": "2026 (MMXXVI) is the current year, and is a common year starting on Thursday of the Gregorian calendar, the 2026th year of the Common Era (CE) and Anno Domini (AD) designations, the 26th year of the 3rd millennium and the 21st century, and the 7th year of the 2020s decade."
+          "snippet": "Скачайте календарь 2026 года по месяцам: январь, февраль... декабрь — каждый месяц на отдельном листе А4. Удобная календарная сетка."
         },
         {
-          "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
-          "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
+          "title": "Календарь - Россия 2026",
+          "url": "https://calculatorian.com/ru/time-and-date/year-calendar/ru/all/2026",
           "snippet": "Отменено ежегодное декларирование доходов чиновников, в том числе обязательное размещение деклараций в интернете и предоставление их СМИ. Информация о финансовом положении должностного лица вместо этого размещается в государственной информационной системе «Посейдон» [2]"
-        },
-        {
-          "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
-          "url": "https://calendar-ru.com/calendar/2026",
-          "snippet": "Этот производственный календарь поможет заранее понять, когда выпадают официальные праздники, какие выходные перенесли, какие рабочие дни будут сокращёнными и в какие месяцы удобнее планировать отпуск или короткую поездку."
         }
       ],
-      "searched_at": "2026-08-24"
+      "searched_at": "2026-08-27"
     },
     {
       "query_id": "h1_fresh",
@@ -270,19 +270,24 @@
       "result_count": 6,
       "results": [
         {
-          "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
-          "url": "https://neurinix.com/2026/06/21/podklyuchenie-mcp-cursor/",
+          "title": "Как подключить henilcalagiya/google-sheets-mcp к Cursor — MCP Каталог",
+          "url": "https://mcp-catalog.ru/tutorials/google-sheets-cursor",
           "snippet": ""
         },
         {
           "title": "Как подключить freema/mcp-gsheets к Cursor — MCP Каталог",
           "url": "https://mcp-catalog.ru/tutorials/gsheets-cursor",
-          "snippet": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов и автоматизаторов без кода."
+          "snippet": "Пошаговая инструкция: установка MCP-сервера henilcalagiya/google-sheets-mcp (Your AI Assistant's Gateway to Google Sheets! 25 powerful tools for seamless Google Sheets automation via MCP) в Cursor."
+        },
+        {
+          "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+          "url": "https://neurinix.com/2026/06/21/podklyuchenie-mcp-cursor/",
+          "snippet": "Пошаговая инструкция: установка MCP-сервера freema/mcp-gsheets (MCP server for Google Sheets API integration with comprehensive reading, writing, formatting, and sheet management capabilities) в Cursor."
         },
         {
           "title": "MCP в Cursor: протокол, mcp.json и серверы — гайд",
           "url": "https://khar-ag.ru/docs/cursor-mcp-guide/",
-          "snippet": "Пошаговая инструкция: установка MCP-сервера freema/mcp-gsheets (MCP server for Google Sheets API integration with comprehensive reading, writing, formatting, and sheet management capabilities) в Cursor."
+          "snippet": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов и автоматизаторов без кода."
         },
         {
           "title": "MCP в Cursor — полное руководство (2026) — ru-mcp",
@@ -290,81 +295,24 @@
           "snippet": "Короткий ответ: Что такое MCP в Cursor, как подключить внешние сервисы к агенту, настроить mcp.json и выбрать первые серверы — урок с примерами JSON, безопасностью и чеклистом."
         },
         {
-          "title": "plugins/google-sheets at main · cursor/plugins · GitHub",
-          "url": "https://github.com/cursor/plugins/tree/main/google-sheets",
-          "snippet": "Как использовать MCP в Cursor: troubleshooting, лимиты, настройка нескольких серверов, отладка через playground."
-        },
-        {
           "title": "MCP в Cursor 3.1 в 2026: подключение и топ-10 серверов",
           "url": "https://shtruzel.ru/articles/mcp-v-cursor-podklyuchenie-i-luchshie-servery-2026",
-          "snippet": "Google Sheets Cursor plugin that connects agents to Google Sheets through Google's remote Model Context Protocol server. Read spreadsheet values, update cells and formulas, and copy sheets between spreadsheets."
+          "snippet": "Как использовать MCP в Cursor: troubleshooting, лимиты, настройка нескольких серверов, отладка через playground."
         }
       ],
-      "searched_at": "2026-08-24"
+      "searched_at": "2026-08-27"
     }
   ],
   "errors": [],
-  "agent_websearch": {
-    "searched_at": "2026-08-24",
-    "tool": "WebSearch (Cursor)",
-    "note": "Дополнение к preflight DuckDuckGo; приоритет для writer — agent_websearch + research-notes.md",
-    "queries": [
-      {
-        "query": "mcp google sheets cursor 2026",
-        "top_urls": [
-          "https://github.com/freema/mcp-gsheets",
-          "https://github.com/we2go/google-mcp",
-          "https://github.com/dudegladiator/spreadsheet-mcp",
-          "https://skiln.co/blog/google-sheets-mcp-review-2026",
-          "https://dev.to/pastesheet/google-sheets-in-vs-code-cursor-and-windsurf-over-mcp-5467"
-        ]
-      },
-      {
-        "query": "Cursor Google Workspace MCP Sheets plugin marketplace 2026",
-        "top_urls": [
-          "https://cursor.com/changelog/google-workspace-plugins",
-          "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
-          "https://vibecoding.ru/news/2026/08/03/cursor-google-workspace-plugins",
-          "https://explainx.ai/blog/cursor-google-workspace-plugins-gmail-drive-calendar-august-2026",
-          "https://github.com/cursor/plugins"
-        ]
-      },
-      {
-        "query": "автоматизация финотдела Google Sheets реестры 2026",
-        "top_urls": [
-          "https://koda-fd.ru/blog/ai-dlya-finansista-2026/",
-          "https://dzen.ru/a/anRW32ni3D3wHjQF",
-          "https://dzen.ru/a/aoAqyl_t_ztBh3s7",
-          "https://dzen.ru/a/aoAx4V_t_ztBh5aj",
-          "https://datalopata.ru/blog/avtomatizatsija-finansov-sistemnyj-podhod-k-uchetu-v-2026-godu/"
-        ]
-      }
-    ]
-  },
   "unique_urls": [
     {
-      "url": "https://github.com/cursor/plugins/tree/main/google-sheets",
-      "title": "plugins/google-sheets at main · cursor/plugins · GitHub",
+      "url": "https://github.com/jonbaldie/cursor-plugins/tree/main/google-sheets",
+      "title": "cursor-plugins/google-sheets at main · jonbaldie/cursor-plugins",
       "from_query": "mcp google sheets cursor 2026"
     },
     {
-      "url": "https://cursor.com/marketplace/mcp/google-sheets",
-      "title": "google-sheets | Cursor MCP Server",
-      "from_query": "mcp google sheets cursor 2026"
-    },
-    {
-      "url": "https://github.com/jonbaldie/cursor-plugins/blob/main/google-sheets/README.md",
-      "title": "cursor-plugins/google-sheets/README.md at main - GitHub",
-      "from_query": "mcp google sheets cursor 2026"
-    },
-    {
-      "url": "https://mcp-catalog.ru/tutorials/google-sheets-cursor",
-      "title": "Как подключить henilcalagiya/google-sheets-mcp к Cursor — MCP Каталог",
-      "from_query": "mcp google sheets cursor 2026"
-    },
-    {
-      "url": "https://mcpservers.com/servers/akchro-google-sheets/cursor",
-      "title": "Google Sheets for Cursor | MCP Servers - Model Context Protocol | The ...",
+      "url": "https://github.com/suryatmodulus/cursor-plugins/tree/main/google-sheets",
+      "title": "cursor-plugins/google-sheets at main · suryatmodulus/cursor ... - GitHub",
       "from_query": "mcp google sheets cursor 2026"
     },
     {
@@ -375,11 +323,26 @@
     {
       "url": "https://mayai.ru/cursor-otkryl-gmail-i-sheets-agentam/",
       "title": "Cursor открыл агентам почту Gmail и таблицы Sheets",
+      "from_query": "mcp google sheets cursor 2026"
+    },
+    {
+      "url": "https://sheet2api.com/mcp-server/",
+      "title": "MCP Server for Google Sheets and Excel Online | sheet2api",
+      "from_query": "mcp google sheets cursor 2026"
+    },
+    {
+      "url": "https://mcp-catalog.ru/tutorials/google-sheets-cursor",
+      "title": "Как подключить henilcalagiya/google-sheets-mcp к Cursor — MCP Каталог",
+      "from_query": "mcp google sheets cursor 2026"
+    },
+    {
+      "url": "https://vibecoding.ru/news/2026/08/03/cursor-google-workspace-plugins",
+      "title": "Cursor дотянулся до Google Workspace: из 5 обещанных плагинов через ...",
       "from_query": "mcp google sheets cursor август 2026"
     },
     {
-      "url": "https://x.com/cursorreleases/status/2084366956170502490",
-      "title": "on X: \"Cursor: Cursor for Google Workspace What changed: - Cursor can ...",
+      "url": "https://cursor.com/marketplace/mcp/google-sheets",
+      "title": "google-sheets | Cursor MCP Server",
       "from_query": "mcp google sheets cursor август 2026"
     },
     {
@@ -388,9 +351,9 @@
       "from_query": "mcp google sheets cursor август 2026"
     },
     {
-      "url": "https://vibecoding.ru/news/2026/08/03/cursor-google-workspace-plugins",
-      "title": "Cursor дотянулся до Google Workspace: из 5 обещанных плагинов через ...",
-      "from_query": "mcp google sheets cursor новости 2026"
+      "url": "https://www.explainx.ai/blog/cursor-google-workspace-plugins-gmail-drive-calendar-august-2026",
+      "title": "Cursor Google Workspace Plugins: Gmail, Drive (2026) | explainx.ai Blog",
+      "from_query": "mcp google sheets cursor август 2026"
     },
     {
       "url": "https://vibecoderz.ru/notes/cursor-ai-ecosystem-2026-rules-mcp-skills",
@@ -398,13 +361,13 @@
       "from_query": "mcp google sheets cursor новости 2026"
     },
     {
-      "url": "https://www.ai-stat.ru/news/2026-02-10-google-developer-knowledge-mcp",
-      "title": "Google открыла 40 млн документов для AI-ассистентов через MCP",
+      "url": "https://github.com/jonbaldie/cursor-plugins/blob/main/google-sheets/CHANGELOG.md",
+      "title": "cursor-plugins/google-sheets/CHANGELOG.md at main - GitHub",
       "from_query": "mcp google sheets cursor новости 2026"
     },
     {
-      "url": "https://www.webnuz.com/article/2026-07-26/Google%20Sheets%20in%20VS%20Code%2C%20Cursor%2C%20and%20Windsurf%20over%20MCP",
-      "title": "Google Sheets in VS Code, Cursor, and Windsurf over MCP",
+      "url": "https://www.ai-stat.ru/news/2026-02-10-google-developer-knowledge-mcp",
+      "title": "Google открыла 40 млн документов для AI-ассистентов через MCP",
       "from_query": "mcp google sheets cursor новости 2026"
     },
     {
@@ -423,8 +386,13 @@
       "from_query": "автоматизация финотдела 2026"
     },
     {
-      "url": "https://mkskom.ru/blog/avtomatizaciya-finansovogo-ucheta-sovremennye-i-effektivnye-tekhnologii-i-instrumenty",
-      "title": "Автоматизация финансового учета: ТОП технологий 2026 для управления ...",
+      "url": "https://teego.ru/servisy/luchshie-servisy-dlya-avtomatizatsii-finansovogo-planirovaniya-v-2026-godu/",
+      "title": "Лучшие сервисы для автоматизации финансового планирования в 2026 году ...",
+      "from_query": "автоматизация финотдела 2026"
+    },
+    {
+      "url": "https://www.souldex.ru/blog/avtomatizaciya-biznesa-2026-instrumenty",
+      "title": "Автоматизация бизнеса в 2026: 7 инструментов, которые сократят рутину и ...",
       "from_query": "автоматизация финотдела 2026"
     },
     {
@@ -433,23 +401,8 @@
       "from_query": "автоматизация финотдела 2026"
     },
     {
-      "url": "https://www.1c-bitrix.ru/download/files/checklist/automation_2026.pdf",
-      "title": "PDF Автоматизация 2026 всё,",
-      "from_query": "автоматизация финотдела 2026"
-    },
-    {
-      "url": "https://github.com/suryatmodulus/cursor-plugins/tree/main/google-sheets",
-      "title": "cursor-plugins/google-sheets at main · suryatmodulus/cursor ... - GitHub",
-      "from_query": "mcp google sheets cursor 2026"
-    },
-    {
       "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4",
       "title": "2026 год — Википедия",
-      "from_query": "2026 2026"
-    },
-    {
-      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
-      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
       "from_query": "2026 2026"
     },
     {
@@ -458,28 +411,33 @@
       "from_query": "2026 2026"
     },
     {
+      "url": "https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/",
+      "title": "Производственный календарь 2026 (рабочие дни, праздники и выходные дни ...",
+      "from_query": "2026 2026"
+    },
+    {
+      "url": "https://printfiles.ru/kalendari/2026/kalendar-2026-po-mesyatsam/",
+      "title": "Календарь 2026 по месяцам — распечатать каждый месяц отдельно",
+      "from_query": "2026 2026"
+    },
+    {
       "url": "https://ru.wikipedia.org/wiki/2026_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
       "title": "2026 год в России — Википедия",
       "from_query": "2026 2026"
     },
     {
-      "url": "https://ru.trip.com/blog/proizvodstvennyy-kalendar-na-2026-god/",
-      "title": "Производственный календарь 2026 в России: праздники, выходные, переносы ...",
+      "url": "https://calculatorian.com/ru/time-and-date/year-calendar/ru/all/2026",
+      "title": "Календарь - Россия 2026",
       "from_query": "2026 2026"
-    },
-    {
-      "url": "https://calendar-ru.com/calendar/2026",
-      "title": "Календарь на 2026 год (Россия) с праздниками и номерами недель: скачать ...",
-      "from_query": "2026 2026"
-    },
-    {
-      "url": "https://neurinix.com/2026/06/21/podklyuchenie-mcp-cursor/",
-      "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
-      "from_query": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста 2026"
     },
     {
       "url": "https://mcp-catalog.ru/tutorials/gsheets-cursor",
       "title": "Как подключить freema/mcp-gsheets к Cursor — MCP Каталог",
+      "from_query": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста 2026"
+    },
+    {
+      "url": "https://neurinix.com/2026/06/21/podklyuchenie-mcp-cursor/",
+      "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
       "from_query": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста 2026"
     },
     {
