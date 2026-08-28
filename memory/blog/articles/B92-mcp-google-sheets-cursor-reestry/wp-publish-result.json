@@ -1,0 +1,25 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "missing_env": [
+    "memory/site.env.local (file absent)",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "preflight": {
+    "qa": "PASS (score 91)",
+    "dry_run": "pass",
+    "dry_run_php_bytes": 4014479,
+    "link_verify_qa": "pass",
+    "link_verify_recheck": "fail (5/6 SSL handshake timeout to koda-fd.ru / club.koda-fd.ru — egress noise, not dead links)",
+    "site_base_used": "https://koda-fd.ru"
+  },
+  "raw_output": "Live publish not attempted: credentials and allow flag absent. Secrets requested via cursor-cloud request-environment-setup-actions."
+}
