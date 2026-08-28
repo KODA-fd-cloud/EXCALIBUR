@@ -322,3 +322,35 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-28 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| post_id | — |
+| permalink | — |
+| method | not attempted (missing credentials) |
+| trigger | Telegram cron `continue_pipeline` / resume publish-only |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify (QA): pass
+- link-verify recheck: fail 5/6 — SSL handshake timeout to `koda-fd.ru` / `club.koda-fd.ru` (egress; t.me OK)
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- dry-run: PASS (`slug=mcp-google-sheets-cursor-reestry`, PHP bytes 4014479)
+- `memory/site.env.local`: **absent**
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **unset**
+- PUBLIC_SITE_URL: **unset**
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT: **unset**
+
+### Result
+
+Live publish skipped. Ledger `shared/published-articles.md` **not** updated. Secrets + egress for `koda-fd.ru` / `club.koda-fd.ru` requested via environment setup actions.
+
