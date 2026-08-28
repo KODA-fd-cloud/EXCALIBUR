@@ -1,0 +1,20 @@
+{
+  "verdict": "blocker",
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "permalink": null,
+  "post_id": null,
+  "dry_run": "pass",
+  "link_verify": "pass",
+  "blockers": [
+    "memory/site.env.local missing",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH unset",
+    "PUBLIC_SITE_URL unset",
+    "FTP_HOST unset",
+    "FTP_USER unset",
+    "FTP_PASS unset",
+    "FTP_ROOT unset"
+  ],
+  "note": "Cloud secrets inject only TELEGRAM_*; credentials not invented"
+}
