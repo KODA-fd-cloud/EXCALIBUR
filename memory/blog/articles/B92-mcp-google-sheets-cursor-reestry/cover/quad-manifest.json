@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр в Sheets правите копипастом в Cursor?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога у ноутбука: мем-коллаж про копипаст реестра Google Sheets в Cursor и MCP",
+      "scene_hint": "reference-лицо Ольги в тёмном фиолетовом блейзере и очках, жест «хватит» к экрану; вокруг fake скрин Google Sheets с колонками doc_key/status, Telegram «опять копирую диапазон?», Cursor Agent чат с вставленной таблицей, розовый стикер «копипаст», скотч и рваная бумага, мем facepalm + shocked cat, розовый highlight на «копипастом»",
+      "meme_caption_ru": "Хватит копипаста из Sheets!"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица UI «MCP Sheets нужен / не нужен»: частые правки реестра vs разовые отчёты; Path A OAuth vs Path B SA; Cyrillic, розовый стикер «жиза», без лица героя",
+      "alt": "Сравнительная таблица: когда MCP Google Sheets нужен финотделу и когда нет"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow 4 шага: колонки реестра → убрать сырые ПДн → share SA Editor → проверить доступ; стрелки, маркер «без ПДн», tape, без лица",
+      "alt": "Схема подготовки реестра и безопасности без сырых ПДн в облако"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake скрин mcp.json + GCP service account + Tools & MCP зелёный статус mcp-gsheets; sticky «Path B», без лица героя",
+      "alt": "Скрин настройки Path B: Google Cloud, service account и mcp.json для mcp-gsheets"
+    }
+  }
+}
