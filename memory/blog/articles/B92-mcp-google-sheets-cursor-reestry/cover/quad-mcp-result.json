@@ -1,0 +1,5 @@
+{
+  "url": "file:cover/canvas-quad.png",
+  "source": "cursor_GenerateImage_fallback",
+  "note": "gpt-image-2 MCP unavailable; ONE GenerateImage with reference_image_paths=[blog-hero-reference.png], resized to 2048x1152"
+}

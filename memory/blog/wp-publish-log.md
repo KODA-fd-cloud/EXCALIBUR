@@ -322,3 +322,36 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+## 2026-08-29 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| post_id | — |
+| permalink | — |
+| method | — (credentials missing) |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (ledger+local; live koda-fd.ru SSL handshake timeout egress)
+- dry-run: PASS (PHP bytes 11571455)
+- schema.jsonld: present
+- cover/cover.png + cover/cover-registry.json: present
+- indexer: PASS
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing**
+- memory/site.env.local: **absent**
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT / PUBLIC_SITE_URL: **missing**
+
+### Result
+
+`❌ PUBLISH BLOCKER` — credentials not invented; not skipped as publish=no.
+
+missing_env: EXCALIBUR_BLOG_ALLOW_PUBLISH, FTP_HOST, FTP_USER, FTP_PASS, FTP_ROOT, PUBLIC_SITE_URL, memory/site.env.local
+
+Artifact: `memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/wp-publish-result.json`
+
