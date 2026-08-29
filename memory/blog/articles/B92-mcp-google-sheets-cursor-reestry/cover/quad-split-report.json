@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1019,
+      574
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 574,
+        "end": 580
+      },
+      "v_gutter_px": {
+        "start": 1019,
+        "end": 1027
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1019,
+          "bottom": 574
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1019,
+          "bottom": 574
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Ведущая блога у коллажа: копипаст строк Google Sheets vs MCP в Cursor",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1027,
+          "top": 0,
+          "right": 2048,
+          "bottom": 574
+        },
+        "raw_box_px": {
+          "left": 1027,
+          "top": 0,
+          "right": 2048,
+          "bottom": 574
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнительная таблица Path A Marketplace OAuth и Path B mcp-gsheets для финотдела",
+        "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 580,
+          "right": 1019,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 580,
+          "right": 1019,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема подготовки реестра: share service account, doc_key, без сырых ПДн",
+        "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1027,
+          "top": 580,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1027,
+          "top": 580,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Скрин настройки Path B: Google Cloud SA и mcp.json для mcp-gsheets",
+        "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+    "injected inline_2 after H2 — Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+    "injected inline_3 after H2 — Настройте Path B: Google Cloud, SA и mcp.json пошагово"
+  ]
+}
