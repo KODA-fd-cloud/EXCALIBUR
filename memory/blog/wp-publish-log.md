@@ -322,3 +322,41 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-29 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| permalink | — |
+| post_id | — |
+| dry_run | PASS (PHP bytes 12125987) |
+| link_verify live | fail SSL handshake timeout koda-fd.ru / club (egress); ledger annotated pass |
+| allow flag | missing |
+| site.env.local | **MISSING** |
+
+### missing_env
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH
+- FTP_HOST
+- FTP_USER
+- FTP_PASS
+- FTP_ROOT
+- PUBLIC_SITE_URL
+- memory/site.env.local
+
+### Injected Cloud Secrets (names only)
+
+- TELEGRAM_BOT_TOKEN
+- TELEGRAM_CHAT_ID
+
+### Notes
+
+- Credentials not invented; live publish skipped.
+- `shared/published-articles.md` not updated.
+- Same blocker pattern as 2026-08-28 cron publish attempt.
+

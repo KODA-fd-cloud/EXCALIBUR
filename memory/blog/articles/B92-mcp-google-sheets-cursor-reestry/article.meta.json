@@ -2,16 +2,16 @@
   "topic_id": "B92",
   "h1": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
   "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
-  "description": "MCP Google Sheets в Cursor для финотдела: mcp-gsheets + service account, share реестра, mcp.json, сценарий find-update-re-read по doc_key, Path A OAuth и безопасность без сырых ПДн.",
+  "description": "MCP Google Sheets в Cursor: Path A OAuth или Path B mcp-gsheets + service account, share реестра, сценарий find-update-re-read по doc_key без копипаста и сырых ПДн.",
   "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
   "slug": "mcp-google-sheets-cursor-reestry",
   "primary_query": "mcp google sheets cursor",
   "secondary_queries": [
     "автоматизация финотдела",
     "mcp google sheets cursor",
-    "2026"
+    "правка реестра google sheets cursor"
   ],
-  "char_count": 8774,
+  "char_count": 9295,
   "article_mode": "B",
   "author_id": "olga-kondratskaya",
   "anchor_variants": [
@@ -23,9 +23,9 @@
     "title_seo": "MCP Google Sheets Cursor: подключение и правка реестров",
     "title_ctr": "💻 MCP Google Sheets в Cursor: правьте реестр без копипаста за 2 часа?",
     "title_aeo": "Как подключить MCP Google Sheets в Cursor для финансового реестра?",
-    "description_seo": "MCP Google Sheets в Cursor: service account, mcp.json, share реестра, сценарий update по doc_key и проверка через MCP Logs. Path A OAuth и безопасность ПДн.",
-    "description_ctr": "⚡️ Хватит копировать диапазоны в чат: настройте mcp-gsheets и обновляйте статус строки через Agent за один вечер.",
-    "description_aeo": "Подключение MCP Google Sheets в Cursor через mcp-gsheets и service account: share файла, mcp.json, find-update-re-read по doc_key без копипаста."
+    "description_seo": "MCP Google Sheets в Cursor: Path A OAuth или Path B mcp-gsheets + SA, share реестра, update по doc_key и проверка через MCP Logs без сырых ПДн.",
+    "description_ctr": "⚡️ Хватит копировать диапазоны в чат: Path B mcp-gsheets + SA или Path A OAuth – обновляйте статус строки через Agent.",
+    "description_aeo": "Подключение MCP Google Sheets в Cursor через Path A Marketplace или Path B mcp-gsheets и service account: find-update-re-read по doc_key."
   },
   "cover_family": "gradient_abstract"
 }

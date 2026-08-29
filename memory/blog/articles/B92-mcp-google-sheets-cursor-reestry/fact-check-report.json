@@ -9,35 +9,35 @@
     {
       "fact": "2026",
       "kind": "date_or_year",
-      "context": "ент не видит весь Drive. Для финконтура в августе 2026 я опираюсь на Path B: changelog Cursor от 03.08.20",
+      "context": "к акт сверки: у каждого поля свое место. На 29.08.2026 два маршрута. Path A – плагин Google Sheets / Work",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
     {
       "fact": "2 часов",
       "kind": "metric_or_duration",
-      "context": "дрение? SA + mcp.json + тестовый update - около 1-2 часов. OAuth быстрее, если плагин доступен и OAuth без",
+      "context": "дрение? SA + mcp.json + тестовый update – около 1–2 часов. OAuth быстрее, если плагин доступен и OAuth без",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "300",
       "kind": "large_number",
-      "context": "ail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица ост",
+      "context": "ail, сотнях таблиц с enterprise ACL или более 200–300 активных договоров – тогда CLM или 1С, таблица ост",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "100",
       "kind": "large_number",
-      "context": "bug cursor:// или переход на Path B. При более 80-100 заявок/мес через Forms→Sheets таблица становится s",
+      "context": "place – Path B без ожидания витрины. При более 80–100 заявок/мес через Forms→Sheets таблица – staging пе",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "403",
       "kind": "large_number",
-      "context": "re / env / MCP Logs / re-read. Не делайте: чинить 403 промптом без Share. Что автоматизировать дальше Pa",
+      "context": "re / env / MCP Logs / re-read. Не делайте: чинить 403 промптом без Share. Что автоматизировать дальше Вы",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     }

@@ -1,0 +1,11 @@
+{
+  "url": "",
+  "local_source": "/opt/cursor/artifacts/assets/B92-canvas-quad-16x9.png",
+  "tool": "cursor.GenerateImage",
+  "mcp_requested": "user-mcp-kv/gpt-image-2",
+  "mcp_status": "unavailable_in_session",
+  "note": "ONE GenerateImage call with reference_image_paths=[blog-hero-reference.png]; resized 1536x1024→2048x1152 for quad split",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "input_urls_in_batch": true
+}
