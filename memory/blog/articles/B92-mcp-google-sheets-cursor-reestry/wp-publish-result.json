@@ -1,0 +1,32 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-08-29",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "status": "blocker",
+  "blocker": "❌ PUBLISH BLOCKER",
+  "reason": "No publish credentials / allow flag in Cloud Secrets or memory/site.env.local. Credentials not invented.",
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "PUBLIC_SITE_URL",
+    "memory/site.env.local"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "link_verify_note": "internals/club via ledger+local; live koda-fd.ru SSL handshake timeout (egress)",
+    "dry_run": "pass",
+    "php_bytes": 11571455,
+    "qa": "PASS 92/100",
+    "cover": "ok",
+    "schema": "ok",
+    "indexer": "PASS"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}

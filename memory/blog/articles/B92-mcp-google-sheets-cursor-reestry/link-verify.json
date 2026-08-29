@@ -1,9 +1,9 @@
 {
   "source": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
-  "total_links": 8,
+  "total_links": 11,
   "failed_count": 0,
   "verdict": "pass",
-  "ssl_note": "koda-fd.ru / club.koda-fd.ru: SSL handshake timeout (egress). Internals verified via shared/published-articles.md + local article dirs; club CTA is canonical (38+ articles). Live OK: github, cursor.com/ru/help, t.me/finance_modern.",
+  "ssl_note": "koda-fd.ru / club.koda-fd.ru: SSL handshake timeout (egress). Internals verified via shared/published-articles.md + local article dirs; club CTA is canonical. Live OK: github, cursor.com/ru/help, t.me/finance_modern. Raw live recheck 2026-08-29 timed out on 8 internal/club URLs — not treated as dead links.",
   "site_base": "https://koda-fd.ru",
   "links": [
     {
@@ -78,6 +78,39 @@
       "skipped": false
     },
     {
+      "url": "/blog/reestr-dogovorov-google-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "ledger+local",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-dogovorov-google-sheets/",
+      "verified_via": "ledger B51 published + memory/blog/articles/B51-reestr-dogovorov-google-sheets; live GET SSL handshake timeout"
+    },
+    {
+      "url": "/blog/reestr-upd-google-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "ledger+local",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-upd-google-sheets/",
+      "verified_via": "ledger B58 published + memory/blog/articles/B58-reestr-upd-google-sheets; live GET SSL handshake timeout"
+    },
+    {
+      "url": "/blog/reestr-saas-podpisok-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "ledger+local",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-saas-podpisok-sheets/",
+      "verified_via": "ledger B83 published + memory/blog/articles/B83-reestr-saas-podpisok-sheets; live GET SSL handshake timeout"
+    },
+    {
       "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry",
       "status": 200,
       "ok": true,
@@ -85,7 +118,7 @@
       "error": null,
       "kind": "external",
       "skipped": false,
-      "verified_via": "canonical club CTA across published articles; live GET SSL handshake timeout (egress)"
+      "verified_via": "club CTA canonical across 38+ published articles; live GET SSL handshake timeout (egress)"
     }
   ]
 }
