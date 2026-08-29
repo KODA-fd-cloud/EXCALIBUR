@@ -1,0 +1,2667 @@
+{
+  "site_base": "https://koda-fd.ru",
+  "total_articles": 44,
+  "opportunities_found": 380,
+  "suggestions": [
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B04-claude-code-finotdel",
+      "keyword": "claude code",
+      "context": "плодите противоречия.</li> </ul> <p>Если в команде уже есть Claude Code или другие агенты, AGENTS.md остаётся общим языком: его чит",
+      "link_replacement": "<a href=\"/blog/claude-code-finotdel/\">Claude Code</a>"
+    },
+    {
+      "source": "B28-sverka-bank-1c-bez-pdn",
+      "target": "B04-claude-code-finotdel",
+      "keyword": "claude code",
+      "context": "езличенный срез + промпт)</th>       <th>Локально (Python / Claude Code в папке)</th>     </tr>   </thead>   <tbody>     <tr>",
+      "link_replacement": "<a href=\"/blog/claude-code-finotdel/\">Claude Code</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B43-limity-rashodov-telegram-alert",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/limity-rashodov-telegram-alert/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B46-statusy-edo-google-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/statusy-edo-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B49-podotchet-reestr-google-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/podotchet-reestr-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/reestr-dogovorov-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/kursovye-raznicy-upravlencheskij-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B58-reestr-upd-google-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/reestr-upd-google-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B59-zayavka-na-rashod-google-forms",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/zayavka-na-rashod-google-forms/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B63-indeks-cen-postavshchikov-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/indeks-cen-postavshchikov-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B64-one-pager-sobstvenniku-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/one-pager-sobstvenniku-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/google-sheets-api-integraciya-finotdel/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B83-reestr-saas-podpisok-sheets",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/reestr-saas-podpisok-sheets/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B90-cursor-skill-vygruzka-1c-odata",
+      "keyword": "2026",
+      "context": "как акт сверки: у каждого поля свое место.</p>  <p>На 29.08.2026 два маршрута. <b>Path A</b> – плагин Google Sheets / Worksp",
+      "link_replacement": "<a href=\"/blog/cursor-skill-vygruzka-1c-odata/\">2026</a>"
+    },
+    {
+      "source": "B01-n8n-pervichka-iz-pochty-finansist",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "ласно статистике поисковых запросов Яндекс Вордстат на июнь 2026 года, интерес к теме «<a href=\"/blog/avtomatizaciya-n8n-ai-",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "этом читается как нормальный материал, а не набор ключей. В 2026 году этого мало: нейропоиск (Яндекс Нейро, Google AI Overvi",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "о вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, к",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>  <h2 id=\"config-location\">2. Выберите, где хранить mcp",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B04-claude-code-finotdel",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": ".</p>  <p>Переход финансовых департаментов на вайб-кодинг в 2026 году стал массовым трендом. Это подход, при котором CFO объ",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "re>   <p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат \"вопрос → ответ до 80 слов\" цитируется чаще всего.",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "с ChatGPT или Claude и долго правит результат, изжил себя в 2026 году.</p> <p>Главным критерием ранжирования стал показатель",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B11-obezlichivanie-dannyh-chatgpt-finansist",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "фы выросли до 6 млн рублей. МВД России предупредило 22 июня 2026 года, что ИИ в публичных ботах может выдавать фишинговые сс",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B14-upravlenie-debitorkoj-reestr-napominaniya",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": ">due_date</b></td>       <td>Плановая оплата</td>       <td>2026-06-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B15-ollama-finotdel-lokalnaya-nejroset",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "нужен режим без облачных обращений самого Ollama, в гайдах 2026 фигурируют настройки вроде <code>OLLAMA_NO_CLOUD=1</code> /",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B16-baza-znaniy-chatgpt-cursor-finotdel",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "ы ссылаетесь через @, поведение закрепляете rules. В гайдах 2026 отдельно отмечают индекс репозитория, <code>.cursor/rules</",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B17-nejroset-excel-formuly-finansist",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "ативного дебага: дали ошибку Excel – получили патч. С марта 2026 у OpenAI в бета есть надстройка ChatGPT for Excel (GPT-5.4)",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B18-schet-1c-unf-telefon-http-servis",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "<b>счёт на оплату</b>, а не про счёт-фактуру и новости НДС 2026. Счёт на оплату не заменяет первичку по 402-ФЗ и сам не дел",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B20-cursor-finansist-skript-dashbord",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "это не \"корпоративный BI за вечер\" и не полный гайд Cursor 2026. В моей практике цель одна – Definition of Done: файл расхо",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B23-cursor-rules-finotdel",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "те пример AGENTS.md и project rules</h2> <p>По докам Cursor 2026 канон project rules – файлы .mdc в .cursor/rules/ с frontma",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B24-platezhnyj-kalendar-google-sheets-n8n",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "</td>       <td>Дата платежа (обязательство)</td>       <td>2026-08-05</td>     </tr>     <tr>       <td><b>counterparty</b>",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B25-bankovskaya-vypiska-staging-google-sheets",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "ез бирки: вроде тот же CSV, но разделитель `;`, дата `31.07.2026`, сумма `1 234,56`, кодировка windows-1251. Google Sheets \"",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B30-power-query-finansist-obnovlenie",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "параметрах импорта CSV.</li>   <li>Для дат вида <code>01.08.2026</code> выберите локаль ru-RU или задайте пользовательский ф",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B43-limity-rashodov-telegram-alert",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "td><b>period</b></td>       <td>Месяц лимита</td>       <td>2026-08</td>     </tr>     <tr>       <td><b>limit_amount</b></t",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B46-statusy-edo-google-sheets",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "кий дашборд для финдира и закупок, не замена 1С. С 1 января 2026 для организаций на ЭДО обязателен формат УПД 5.03; электрон",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B52-kursovye-raznicy-upravlencheskij-sheets",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "а в Google Sheets должна быть типом «Дата», не текст «01.03.2026» - иначе VLOOKUP по связке дата+валюта не найдёт курс. Защи",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B55-vypiski-neskolkih-yurlic-odin-kontur",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "про выписки из ЕГРЮЛ или ЕГРН и постановку на учёт в ФНС с 2026 года - это другой запрос и другие документы. Если у вас одн",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B56-abc-analiz-debitorki-excel",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "d><b>due_date</b></td>       <td>Срок оплаты</td>       <td>2026-07-15</td>     </tr>     <tr>       <td><b>days_overdue</b>",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B58-reestr-upd-google-sheets",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "ус \"1\" - с функцией счёта-фактуры, \"2\" - без СФ. С 1 января 2026 для ЭДО действует формат УПД 5.03; электронные ТОРГ-12 чере",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B80-mcp-1c-cursor-ostatki-oboroty",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "сите: \"Покажи дебиторскую задолженность по счёту 62 за июль 2026\" – подтвердите вызов read.analytics.get_debtors.</li> </ol>",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "= build(\"sheets\", \"v4\", credentials=creds)  rows = [     [\"2026-08-19\", \"ДДС\", \"Opex\", \"-150000\", \"bank_stmt_0826\"],     [\"",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B83-reestr-saas-podpisok-sheets",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "съедает бюджет. По международным бенчмаркам Zylo и Vertice (2026) значительная доля лицензий не используется - повод для ауд",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B90-cursor-skill-vygruzka-1c-odata",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "kills – skill виден; промпт \"Выгрузи движения ДДС за август 2026, top 100\" → подтверждение tool call → файл в exports/.</li>",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    },
+    {
+      "source": "B91-http-servis-1c-chernovik-scheta-json",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "keyword": "2026",
+      "context": "речь про <b>счёт на оплату</b>, а не про счёт-фактуру, НДС 2026 и Sber API DirectBank. Счёт на оплату - основание для оплат",
+      "link_replacement": "<a href=\"/blog/mcp-google-sheets-cursor-reestry/\">2026</a>"
+    }
+  ]
+}
