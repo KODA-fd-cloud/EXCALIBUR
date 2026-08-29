@@ -1,0 +1,37 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-08-29",
+  "verdict": "blocker",
+  "status": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "php_bytes": 12125987
+  },
+  "link_verify": {
+    "live_recheck": "fail_ssl_handshake_timeout_5_of_6",
+    "ledger_annotated": "pass",
+    "t_me_live": 200
+  },
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "PUBLIC_SITE_URL",
+    "memory/site.env.local"
+  ],
+  "injected_secrets_only": [
+    "TELEGRAM_BOT_TOKEN",
+    "TELEGRAM_CHAT_ID"
+  ],
+  "blockers": [
+    "❌ PUBLISH BLOCKER: нет memory/site.env.local и Cloud Secrets для FTP/ALLOW/PUBLIC_SITE_URL (повтор 2026-08-28)"
+  ],
+  "notes": "Credentials not invented. Live publish skipped. published-articles.md not updated."
+}

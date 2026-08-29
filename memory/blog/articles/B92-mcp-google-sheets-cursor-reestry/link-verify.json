@@ -3,7 +3,7 @@
   "total_links": 6,
   "failed_count": 0,
   "verdict": "pass",
-  "ssl_note": "Live GET/HEAD to koda-fd.ru and club.koda-fd.ru: TCP:443 OK, TLS handshake timeout (egress/SSL noise). Default + unverified SSL both timed out. Internals verified via shared/published-articles.md ledger + local article dirs; t.me live 200; club CTA pattern same as prior PASS articles (B90/B91).",
+  "ssl_note": "Live GET/HEAD to koda-fd.ru and club.koda-fd.ru: TCP:443 OK, TLS handshake timeout (egress/SSL noise). Default + unverified SSL both timed out. Internals verified via shared/published-articles.md ledger + local article dirs; t.me live 200; club CTA pattern same as prior PASS articles (B90/B91). Reconfirmed 2026-08-29 publish preflight.",
   "links": [
     {
       "url": "/blog/mcp-cursor-finansist-instrumenty/",
