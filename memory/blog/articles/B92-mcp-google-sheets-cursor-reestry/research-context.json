@@ -3,17 +3,17 @@
   "step": "research_start",
   "date_context": {
     "timezone": "Europe/Moscow",
-    "today_iso": "2026-08-24",
-    "today_ru": "24.08.2026",
+    "today_iso": "2026-08-30",
+    "today_ru": "30.08.2026",
     "year": 2026,
     "month": 8,
     "month_name_ru": "август",
-    "weekday_ru": "понедельник",
+    "weekday_ru": "воскресенье",
     "freshness_window": {
-      "prefer_sources_after": "2026-05-26",
+      "prefer_sources_after": "2026-06-01",
       "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
     },
-    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-24 (2026 год)."
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-08-30 (2026 год)."
   },
   "topic": {
     "topic_id": "B92",
@@ -76,37 +76,5 @@
     }
   ],
   "output_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
-  "research_completed": {
-    "date_iso": "2026-08-24",
-    "agent": "excalibur-blog-research",
-    "utility_verdict": "PASS",
-    "wordstat_status": "unavailable",
-    "wordstat_note": "MCP user-mcp-kv not in dynamic tool catalog; no fabricated volumes",
-    "sources_verified": 25,
-    "serp_queries_live": [
-      "mcp google sheets cursor 2026",
-      "Cursor Google Workspace MCP Sheets plugin marketplace 2026",
-      "автоматизация финотдела Google Sheets реестры 2026"
-    ],
-    "recommended_paths": [
-      {
-        "id": "path_a_marketplace",
-        "label": "Cursor Marketplace google-sheets (OAuth)",
-        "best_for": "быстрый пилот на личном аккаунте",
-        "caveat": "статус плагина Sheets в витрине проверять на дату публикации (август 2026 — нестабилен)"
-      },
-      {
-        "id": "path_b_mcp_gsheets",
-        "label": "freema/mcp-gsheets + service account",
-        "best_for": "финконтур: реестры, минимальный share, без доступа ко всему Drive",
-        "related": "B82, B93"
-      }
-    ],
-    "artifacts": [
-      "research-notes.md",
-      "research-serp.json",
-      "fact-check-report.json"
-    ]
-  },
-  "next_step": "excalibur-blog-writer: article.html по research-notes.md"
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
 }
