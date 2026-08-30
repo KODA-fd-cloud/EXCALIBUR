@@ -1,0 +1,10 @@
+{
+  "url": null,
+  "local_source": "/opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "tool": "cursor.GenerateImage",
+  "mcp_mode": "image-to-image-fallback",
+  "note": "gpt-image-2 MCP unavailable; ONE GenerateImage i2i with blog-hero-reference.png; resized to 2048x1152",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "aspect_ratio": "16:9"
+}

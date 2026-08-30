@@ -322,3 +322,40 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-30 — B92 mcp-google-sheets-cursor-reestry — ❌ PUBLISH BLOCKER
+
+| field | value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+| publish_date | 2026-08-30 |
+| verdict | BLOCKER |
+| permalink | — |
+| dry_run | PASS (PHP bytes: 11328343; slug/title OK) |
+| link_verify | pass (ledger+local; ssl_note egress handshake timeout to koda-fd.ru/club) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (ssl_note egress)
+- schema.jsonld: present
+- cover/cover.png + 3 inline + alt: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing** (≠ yes)
+- memory/site.env.local: **absent**
+
+### Missing env (names only)
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH
+- PUBLIC_SITE_URL
+- FTP_HOST
+- FTP_USER
+- FTP_PASS
+- FTP_ROOT
+
+### Result
+
+❌ PUBLISH BLOCKER — credentials/allow flag not injected in cron Cloud Secrets. Real publish skipped. Ledger `shared/published-articles.md` not updated.
