@@ -1,0 +1,19 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "dry_run": {
+    "ok": true,
+    "php_bytes": 11328343
+  },
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "raw_output": "❌ PUBLISH BLOCKER: memory/site.env.local absent; Cloud Secrets missing FTP_*/ALLOW/PUBLIC_SITE_URL"
+}
