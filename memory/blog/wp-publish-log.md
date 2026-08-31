@@ -322,3 +322,37 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-08-31 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| permalink | — |
+| post_id | — |
+| dry_run | PASS (PHP bytes ≈ 4014479) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (QA); live recheck SSL handshake timeout egress → restored QA pass + `ssl_note`
+- schema.jsonld: present
+- cover/cover.png + registry: present
+- indexer: done
+- `memory/site.env.local`: **absent**
+- missing env (names only): `EXCALIBUR_BLOG_ALLOW_PUBLISH`, `PUBLIC_SITE_URL`, `FTP_HOST`, `FTP_USER`, `FTP_PASS`, `FTP_ROOT` (also no `SSH_*`)
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+missing: EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_HOST, FTP_USER, FTP_PASS, FTP_ROOT
+site.env.local: absent
+wp-publish-result.json: not created
+telegram_notify: skipped (no permalink)
+```

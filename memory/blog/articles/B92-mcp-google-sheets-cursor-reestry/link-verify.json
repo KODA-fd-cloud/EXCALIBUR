@@ -62,5 +62,13 @@
       "kind": "external",
       "skipped": false
     }
-  ]
+  ],
+  "ssl_note": "Preflight 2026-08-31 recheck: SSL handshake timeout to koda-fd.ru and club.koda-fd.ru (egress). t.me OK. Restored prior QA pass; not treated as dead links.",
+  "preflight_recheck": {
+    "date": "2026-08-31",
+    "site_base": "https://koda-fd.ru",
+    "result": "ssl_timeout_egress",
+    "failed_count_live": 5,
+    "action": "restored_qa_pass"
+  }
 }
