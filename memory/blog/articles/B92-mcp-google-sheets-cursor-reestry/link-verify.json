@@ -62,5 +62,13 @@
       "kind": "external",
       "skipped": false
     }
-  ]
+  ],
+  "ssl_note": {
+    "checked_at": "2026-09-01T05:08:06Z",
+    "site_base_used": "https://koda-fd.ru",
+    "PUBLIC_SITE_URL_env": "MISSING",
+    "live_recheck": "ssl_handshake_timeout",
+    "detail": "Egress TLS handshake timeout to koda-fd.ru and club.koda-fd.ru on preflight recheck; prior QA pass preserved (failed_count was SSL-only, not dead links). t.me OK.",
+    "action": "restored_pass_from_qa_artifact"
+  }
 }
