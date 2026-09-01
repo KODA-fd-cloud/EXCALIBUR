@@ -1,5 +1,36 @@
 # Excalibur BLOG — WP publish log
 
+## 2026-09-01 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| permalink | — |
+| reason | missing credentials / allow flag |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (6/6, site-base https://koda-fd.ru)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: PASS (PHP bytes 4014479; Pillow installed for cover check)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing** (≠ yes)
+- memory/site.env.local: **absent**
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT / PUBLIC_SITE_URL: **missing** in env
+
+### Result
+
+```
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+Ledger `shared/published-articles.md` not updated. No permalink.
+
+---
+
 ## 2026-07-22 — B18 schet-1c-unf-telefon-http-servis — **PASS**
 
 | Field | Value |
