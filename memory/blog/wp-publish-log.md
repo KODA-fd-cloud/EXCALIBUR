@@ -322,3 +322,47 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-01 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| permalink | _(none)_ |
+| post_id | _(none)_ |
+| dry_run | PASS (PHP bytes: 4014479) |
+| trigger | resume after indexer / publish_flag=yes |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (restored; ssl_note: egress TLS timeout koda-fd.ru)
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- memory/site.env.local: **MISSING**
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING**
+- PUBLIC_SITE_URL: **MISSING**
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT: **MISSING**
+- SSH_*: **MISSING**
+- TELEGRAM_*: present (not used — no permalink)
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+missing_env: EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_HOST, FTP_USER, FTP_PASS, FTP_ROOT
+missing_files: memory/site.env.local
+```
+
+### Notes
+
+- Ledger `shared/published-articles.md` **not** updated (no successful publish).
+- promotion-checklist.md: Live URL pending.
+- wp-publish-result.json: verdict=blocker
+

@@ -1,0 +1,34 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "blocker": "PUBLISH BLOCKER",
+  "reason": "No publish credentials: memory/site.env.local absent; Cloud Secrets missing required keys",
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "missing_files": [
+    "memory/site.env.local"
+  ],
+  "alternatives_checked": {
+    "SSH_HOST": "MISSING",
+    "FTP_PASSWORD": "MISSING",
+    "WP_HOME": "MISSING"
+  },
+  "dry_run": {
+    "ok": true,
+    "php_bytes": 4014479,
+    "slug": "mcp-google-sheets-cursor-reestry"
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "ssl_note": "live recheck SSL handshake timeout to koda-fd.ru; QA pass restored"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}
