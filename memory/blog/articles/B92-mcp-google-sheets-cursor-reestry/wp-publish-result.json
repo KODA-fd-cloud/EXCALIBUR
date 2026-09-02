@@ -1,0 +1,32 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 4015279
+  },
+  "link_verify": "pass",
+  "blockers": [
+    "memory/site.env.local missing",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH missing",
+    "PUBLIC_SITE_URL missing",
+    "FTP_HOST missing",
+    "FTP_USER missing",
+    "FTP_PASS missing",
+    "FTP_ROOT missing",
+    "SSH_HOST missing (optional alternative to FTP)",
+    "SSH_USER missing",
+    "SSH_PASS missing"
+  ],
+  "error": "No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local",
+  "run_date": "2026-09-02"
+}
