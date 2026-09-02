@@ -1,5 +1,36 @@
 # Excalibur BLOG — WP publish log
 
+## 2026-09-02 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **FAIL / BLOCKER** |
+| permalink | — |
+| site_base | https://koda-fd.ru |
+
+### Preconditions
+
+- article-qa.md: PASS (91)
+- link-verify.json: pass (6/6, site-base https://koda-fd.ru)
+- schema.jsonld: present
+- cover/cover.png + cover-registry: present
+- dry-run: OK (slug=mcp-google-sheets-cursor-reestry, PHP bytes=4014479)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing** (env + memory/site.env.local absent)
+- FTP_*/SSH_*/PUBLIC_SITE_URL: **missing**
+- Cloud secrets injected: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID only
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+(also EXCALIBUR_BLOG_ALLOW_PUBLISH != yes / unset)
+```
+
+Ledger `shared/published-articles.md` **not** updated (no live permalink).
+
+---
 ## 2026-07-22 — B18 schet-1c-unf-telefon-http-servis — **PASS**
 
 | Field | Value |
