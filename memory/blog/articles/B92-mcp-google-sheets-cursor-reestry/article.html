@@ -6,7 +6,7 @@
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
 
-<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки на расход), правки повторяются каждую неделю, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица остается staging-слоем.</p>
+<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (<a href="/blog/reestr-dogovorov-google-sheets/">договоры</a>, <a href="/blog/reestr-upd-google-sheets/">УПД</a>, <a href="/blog/reestr-saas-podpisok-sheets/">SaaS</a>, <a href="/blog/zayavka-na-rashod-google-forms/">заявки на расход</a>), правки повторяются каждую неделю, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица остается staging-слоем.</p>
 
 <table>
   <thead>
@@ -33,7 +33,7 @@
       <td>Нет перечитки, риск ПДн в истории чата</td>
     </tr>
     <tr>
-      <td><b>Python-скрипт (B82)</b></td>
+      <td><b><a href="/blog/google-sheets-api-integraciya-finotdel/">Python-скрипт (B82)</a></b></td>
       <td>Cron, пакет из 1С</td>
       <td>Нет интерактивных правок через Agent</td>
     </tr>
@@ -137,7 +137,7 @@
   <li><b>OAuth</b> - bug cursor:// или переход на Path B.</li>
 </ul>
 
-<p>При более 80-100 заявок/мес через Forms→Sheets таблица становится staging перед ERP или n8n; MCP остается transport точечных правок, не главной книгой. При росте нагрузки планируйте ротацию ключа SA (тема B93) и allowlist только нужных write-tools.</p>
+<p>При более 80-100 заявок/мес через <a href="/blog/zayavka-na-rashod-google-forms/">Forms→Sheets</a> таблица становится staging перед ERP или n8n; MCP остается transport точечных правок, не главной книгой. При росте нагрузки планируйте ротацию ключа SA (тема B93) и allowlist только нужных write-tools.</p>
 
 <p><b>Сделайте:</b> чеклист share / env / MCP Logs / re-read. <b>Не делайте:</b> чинить 403 промптом без Share.</p>
 
@@ -147,8 +147,8 @@
   <li>Path B на одном реестре с doc_key и staging.</li>
   <li>Зеленый MCP + check_access + update с перечиткой.</li>
   <li>Allowlist write-tools; SA-ключ вне git.</li>
-  <li>Соседние реестры (B51 договоры, B58 УПД, B83 SaaS) - MCP поверх готовой таблицы.</li>
-  <li>При audit - ERP/CLM; cron-загрузки - скрипт B82.</li>
+  <li>Соседние реестры (<a href="/blog/reestr-dogovorov-google-sheets/">B51 договоры</a>, <a href="/blog/reestr-upd-google-sheets/">B58 УПД</a>, <a href="/blog/reestr-saas-podpisok-sheets/">B83 SaaS</a>) - MCP поверх готовой таблицы.</li>
+  <li>При audit - ERP/CLM; cron-загрузки - <a href="/blog/google-sheets-api-integraciya-finotdel/">скрипт B82</a>.</li>
 </ol>
 
 <p>Материалы по автоматизации - в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>.</p>
@@ -168,7 +168,7 @@
 <p>OAuth = права вашего Google; SA = все расшаренные таблицы. Без сырых ПДн; подтверждайте write-tools; indirect injection из ячеек. Обезличивание - в гайде по ссылке выше.</p>
 
 <h3>Чем B92 отличается от B82?</h3>
-<p>B82 - скрипт в staging по cron. B92 - Agent правит через MCP без скрипта; тот же SA и Share.</p>
+<p><a href="/blog/google-sheets-api-integraciya-finotdel/">B82</a> - скрипт в staging по cron. B92 - Agent правит через MCP без скрипта; тот же SA и Share.</p>
 
 <h3>Работает ли в Cloud Agents?</h3>
 <p>Локальный OAuth в облако не переезжает. Для Cloud Agents - SA в env или отдельный коннектор.</p>
