@@ -322,3 +322,38 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-03 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| post_id | — |
+| permalink | — (not published) |
+| method | credentials missing; no fake publish |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- cover/cover.png + cover-registry.json: present
+- schema.jsonld: present
+- indexer: PASS (prior step)
+- link-verify (recheck `--site-base https://koda-fd.ru`): **fail** — 404 `/blog/podklyuchenie-mcp-cursor/`
+- `memory/site.env.local`: **absent**
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH`: **absent**
+- `PUBLIC_SITE_URL`: **absent**
+- `FTP_HOST` / `FTP_USER` / `FTP_PASS|FTP_PASSWORD` / `FTP_ROOT`: **absent**
+
+### Dry-run diagnostic
+
+```
+RuntimeError: Pillow is not installed; cannot decode-verify raster image: .../cover/cover.png; no remote cover URL in cover-registry.json
+```
+
+### Result
+
+❌ PUBLISH BLOCKER — шаг выполнен (не silent skip). Ledger `shared/published-articles.md` не обновлялся. Live URL не выдумывался.

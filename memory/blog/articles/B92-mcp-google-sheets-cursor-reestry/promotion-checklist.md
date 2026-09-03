@@ -1,7 +1,7 @@
 # Promotion checklist — B92 mcp-google-sheets-cursor-reestry
 
-Дата публикации: YYYY-MM-DD  
-Live URL: https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/ (заполнить после publish)
+Дата публикации: — (publish blocker 2026-09-03)  
+Live URL: — (не опубликовано; credentials/allow flag отсутствуют)
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
