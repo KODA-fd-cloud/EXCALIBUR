@@ -322,3 +322,38 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-03 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| post_id | — |
+| permalink | — |
+| method | blocked (no credentials) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (6/6, site-base https://koda-fd.ru)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: pass (Pillow installed; PHP bytes ~4.0M)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING**
+- PUBLIC_SITE_URL: **MISSING**
+- FTP_*/SSH_*: **MISSING**
+- memory/site.env.local: **MISSING**
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+missing: EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_HOST|SSH_HOST, FTP_USER|SSH_USER, FTP_PASS|FTP_PASSWORD|SSH_PASSWORD, FTP_ROOT, memory/site.env.local
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+Action: add Cloud Secrets or `memory/site.env.local` (gitignored), then re-run publish.
