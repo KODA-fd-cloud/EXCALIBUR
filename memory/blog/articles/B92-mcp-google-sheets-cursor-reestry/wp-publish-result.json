@@ -1,0 +1,22 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "blockers": [
+    "❌ PUBLISH BLOCKER: missing memory/site.env.local",
+    "missing EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "missing PUBLIC_SITE_URL",
+    "missing FTP_HOST (or SSH_HOST)",
+    "missing FTP_USER (or SSH_USER)",
+    "missing FTP_PASS/FTP_PASSWORD (or SSH_PASSWORD)",
+    "missing FTP_ROOT"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "failed_count": 0,
+    "dry_run": "pass",
+    "pillow": "installed"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}
