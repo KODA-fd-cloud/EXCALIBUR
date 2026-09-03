@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-03",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "attempted": true,
+    "ok": false,
+    "error": "Pillow is not installed; cannot decode-verify cover.png; no remote cover URL in cover-registry.json"
+  },
+  "link_verify": {
+    "verdict": "fail",
+    "failed_count": 1,
+    "site_base": "https://koda-fd.ru",
+    "failed_urls": [
+      "https://koda-fd.ru/blog/podklyuchenie-mcp-cursor/"
+    ]
+  },
+  "blockers": [
+    "missing memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH absent or != yes",
+    "PUBLIC_SITE_URL missing",
+    "FTP_HOST/FTP_USER/FTP_PASS|FTP_PASSWORD/FTP_ROOT missing (SSH_* also absent)",
+    "link-verify fail: /blog/podklyuchenie-mcp-cursor/ → 404"
+  ],
+  "missing_env_names": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_PASSWORD",
+    "FTP_ROOT"
+  ],
+  "published": false
+}
