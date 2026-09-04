@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова в чат кусками? MCP Sheets убивает копипаст",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога: мем-коллаж — MCP Google Sheets в Cursor вместо копипаста реестра",
+      "scene_hint": "reference-лицо (очки, quiff, борода) в чёрном худи Cursor + бейдж SA на шнурке; вокруг fake Google Sheets «DOG-2026-014 / status», Cursor MCP Logs зелёный mcp-gsheets, Telegram «опять копипаст диапазона?», стикер ★☆☆☆☆ «копипаст в чат», meme facepalm + shocked cat, розовый highlight на «копипаст», рваная бумага и скотч",
+      "meme_caption_ru": "Копипаст убит MCP?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-таблица Path B vs Path A vs Path C vs скрипт: когда, минус, вердикт production — без лица героя; мини-стикер «Path B» на скотче",
+      "alt": "Сравнительная таблица маршрутов MCP Sheets: Path B, A, C и скрипт для финотдела"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема 5 блоков: реестр Sheets → doc_key → SA share → MCP Cursor → update+перечитка; пометка «без сырых ПДн»; розовая sticky «staging»",
+      "alt": "Схема подготовки реестра: doc_key, SA share, MCP и перечитка без сырых ПДн"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Cloud, SA и mcp.json пошагово",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист-доска Path B: Cloud project → Sheets API → SA JSON → Share Редактор → mcp.json → MCP Logs зелёный → check_access; без лица героя",
+      "alt": "Чеклист настройки Path B: Cloud, service account, Share и mcp.json"
+    }
+  }
+}

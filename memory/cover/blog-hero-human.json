@@ -1,13 +1,15 @@
 {
-  "hero_id": "koda-olga-human",
-  "name_ru": "Ольга Кондрацкая (с лицом на обложке)",
+  "hero_id": "blog-host-human",
+  "name_ru": "Ведущий блога (лицо с reference)",
   "reference_image": "memory/cover/assets/blog-hero-reference.png",
   "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
   "reference_url_source": "koda-fd.ru/assets",
   "visual_lock": {
-    "style": "glowing tech web, purple neon lighting, sleek professional",
-    "palette": "#0a0a0f, #8b5cf6, #60a5fa, #facc15"
+    "face": "same person as reference: black round glasses, brown quiff, short beard",
+    "style": "human hook collage 16:9, DIY meme zine",
+    "palette": "#F5F5F0, #1A1A2E, #FF1493, #FFD93D"
   },
-  "outfit_rule": "The host Olga wears a sleek purple or dark violet blazer, smart glasses, and looks confident and smart.",
-  "prompt_fragment": "Cutout of a realistic female host named Olga (friendly and confident, about 30-35 years old, short neat dark hair, smart stylish glasses, wearing a sharp purple blazer, gesturing at the screen, smiling intelligently)."
+  "outfit_rule": "Outfit is agent choice per scene_hint — do NOT copy the red suit/bowtie from the reference photo.",
+  "prompt_fragment": "Preserve EXACT male host likeness from reference (glasses, quiff, beard). Outfit free per cover scene_hint."
 }
+
