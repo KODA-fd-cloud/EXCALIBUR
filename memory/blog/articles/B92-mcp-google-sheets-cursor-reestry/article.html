@@ -7,6 +7,10 @@
 </blockquote>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение маршрутов: Path B mcp-gsheets+SA, Path A OAuth, копипаст в чат" loading="lazy">
+</figure>
+
 
 <p><b>Подключайте,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки), правки еженедельные, а копипаст 40 строк бесит. <b>Не делайте</b> Sheets единственной правдой при жестком audit trail, сотнях таблиц с enterprise ACL или 200+ активных договорах - тогда 1С/CLM, таблица только staging.</p>
 
@@ -45,6 +49,10 @@
 <p><b>Сделайте:</b> DoD до установки - найти строку по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> MCP "на весь Drive" ради одного файла. No-code-контур - в <a href="/blog/avtomatizaciya-finansov-no-code/">автоматизации финансов без кода</a>.</p>
 
 <h2 id="prep-security">Подготовьте реестр без сырых ПДн</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Workflow реестра: staging, боевой лист и стабильный doc_key без сырых ПДн" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> (DOG-2026-014) - стабильный код поиска, не название контрагента. Лист <b>staging</b> - сырой импорт из 1С/Forms; боевой "Реестр" агент правит точечно в status и comment.</p>
 
@@ -53,6 +61,10 @@
 <p><b>Сделайте:</b> отдельный SA, Share одного файла "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
 
 <h2 id="setup">Настройте Path B: SA и mcp.json пошагово</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Чеклист Path B: service account, share реестра, mcp.json и проверка MCP" loading="lazy">
+</figure>
+
 
 <p>Production-default на 04.09.2026: mcp-gsheets (freema) + service account. Нужны Node.js v20+, Google Sheets API, JSON SA. Конфиг: <b>.cursor/mcp.json</b> (проект) или <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
 

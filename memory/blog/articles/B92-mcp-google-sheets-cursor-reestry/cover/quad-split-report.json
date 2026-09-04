@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1015,
+      572
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 572,
+        "end": 582
+      },
+      "v_gutter_px": {
+        "start": 1015,
+        "end": 1030
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1015,
+          "bottom": 572
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1015,
+          "bottom": 572
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка: CFO у ноутбука с Cursor и Google Sheets, стикеры MCP и копипаст диапазонов",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1030,
+          "top": 0,
+          "right": 2048,
+          "bottom": 572
+        },
+        "raw_box_px": {
+          "left": 1030,
+          "top": 0,
+          "right": 2048,
+          "bottom": 572
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение маршрутов: Path B mcp-gsheets+SA, Path A OAuth, копипаст в чат",
+        "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 582,
+          "right": 1015,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 582,
+          "right": 1015,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Workflow реестра: staging, боевой лист и стабильный doc_key без сырых ПДн",
+        "h2_anchor": "Подготовьте реестр без сырых ПДн"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1030,
+          "top": 582,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1030,
+          "top": 582,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист Path B: service account, share реестра, mcp.json и проверка MCP",
+        "h2_anchor": "Настройте Path B: SA и mcp.json пошагово"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Оцените, когда MCP Sheets нужен финотделу",
+    "injected inline_2 after H2 — Подготовьте реестр без сырых ПДн",
+    "injected inline_3 after H2 — Настройте Path B: SA и mcp.json пошагово"
+  ]
+}
