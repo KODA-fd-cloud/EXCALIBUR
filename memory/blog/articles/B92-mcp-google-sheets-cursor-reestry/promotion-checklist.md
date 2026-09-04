@@ -1,7 +1,7 @@
 # Promotion checklist — B92 mcp-google-sheets-cursor-reestry
 
 Дата публикации: 2026-09-04 (pending WP)  
-Live URL: https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/ (заполнить после publish)
+Live URL: — (❌ PUBLISH BLOCKER: нет credentials; ожидаемый URL после publish: https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/)
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
@@ -47,4 +47,4 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 - Indexer **safe mode**: dry-run interlinker (11 suggestions для B92 — все junk-якорь `2026` из secondary_queries) → `--apply` по корпусу **не** запускался.
 - Manual outbound добавлены на published slugs: B13, B51, B58, B83, B59, B23 (уже были B21, B82, B11, LEGACY no-code). B03 не линковать (404 live).
 - `memory/blog/llms.txt` + `llms-full.txt` обновлены (`--out-dir memory/blog`, site-base https://koda-fd.ru); B92 в индексе.
-- publish: pending (после Indexer).
+- publish: ❌ BLOCKER — нет memory/site.env.local / Cloud Secrets FTP_* + ALLOW_PUBLISH + PUBLIC_SITE_URL.

@@ -1,0 +1,22 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "publish_date": "2026-09-04",
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "php_bytes": 12699855
+  },
+  "preflight": {
+    "link_verify": "pass",
+    "qa": "PASS",
+    "cover": true,
+    "schema": true
+  },
+  "blockers": [
+    "❌ PUBLISH BLOCKER: нет memory/site.env.local и Cloud Secrets (EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_*/SSH_*)"
+  ],
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}

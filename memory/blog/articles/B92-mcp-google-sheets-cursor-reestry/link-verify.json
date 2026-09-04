@@ -1,6 +1,6 @@
 {
   "source": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
-  "total_links": 6,
+  "total_links": 12,
   "failed_count": 0,
   "verdict": "pass",
   "links": [
@@ -35,6 +35,16 @@
       "checked_url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/"
     },
     {
+      "url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/vygruzka-1c-excel-odata/"
+    },
+    {
       "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
       "status": 200,
       "ok": true,
@@ -52,6 +62,56 @@
       "error": null,
       "kind": "external",
       "skipped": false
+    },
+    {
+      "url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/zayavka-na-rashod-google-forms/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/cursor-rules-finotdel/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/cursor-rules-finotdel/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/reestr-dogovorov-google-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-dogovorov-google-sheets/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/reestr-upd-google-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-upd-google-sheets/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/reestr-saas-podpisok-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-saas-podpisok-sheets/"
     },
     {
       "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry",
