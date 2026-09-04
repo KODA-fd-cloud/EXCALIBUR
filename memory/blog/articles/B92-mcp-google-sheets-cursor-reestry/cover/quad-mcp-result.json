@@ -1,0 +1,13 @@
+{
+  "url": "file://memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/cover/canvas-quad.png",
+  "tool": "cursor.GenerateImage",
+  "fallback_reason": "user-mcp-kv/gpt-image-2 unavailable in this Cloud session; no self-hosted workers",
+  "input_reference_local": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "aspect_ratio": "16:9",
+  "canvas_size": [
+    2048,
+    1152
+  ],
+  "note": "ONE canvas generation (not 4 separate calls); resized to 2048x1152 then split+inject"
+}
