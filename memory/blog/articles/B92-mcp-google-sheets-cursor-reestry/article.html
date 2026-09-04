@@ -54,7 +54,7 @@
 </figure>
 
 
-<p>Одна строка = одна сущность. Колонка <b>doc_key</b> (DOG-2026-014) - стабильный код поиска, не название контрагента. Лист <b>staging</b> - сырой импорт из 1С/Forms; боевой "Реестр" агент правит точечно в status и comment.</p>
+<p>Одна строка = одна сущность. Колонка <b>doc_key</b> (DOG-2026-014) - стабильный код поиска, не название контрагента. Лист <b>staging</b> - сырой импорт из 1С/Forms (выгрузка OData - в <a href="/blog/vygruzka-1c-excel-odata/">гайде по OData в Excel</a>); боевой "Реестр" агент правит точечно в status и comment.</p>
 
 <p>В облако: ИНН, сумма, статус - да; паспорт, полные ФИО payroll, карты - нет. Для тестов: "Контрагент_01", округленные суммы. Чеклист - в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию</a>. SA видит только файлы, расшаренные на client_email; IAM Cloud не заменяет Share. Scope spreadsheets = весь файл; JSON-ключ не в git.</p>
 
@@ -137,7 +137,7 @@
   <li><b>OAuth Path A</b> - bug cursor:// → dashboard Agents или Path B.</li>
 </ul>
 
-<p>При &gt;80-100 заявок/мес Forms→Sheets таблица = staging перед ERP/n8n; MCP - transport точечных правок. Ротация ключа SA - тема B93; allowlist только нужных write-tools.</p>
+<p>При &gt;80-100 заявок/мес <a href="/blog/zayavka-na-rashod-google-forms/">Forms→Sheets</a> таблица = staging перед ERP/n8n; MCP - transport точечных правок. Ротация ключа SA - тема B93; allowlist только нужных write-tools (правила Cursor - в <a href="/blog/cursor-rules-finotdel/">гайде по cursor rules</a>).</p>
 
 <p><b>Сделайте:</b> чеклист share / env / Logs / re-read. <b>Не делайте:</b> чинить 403 промптом без Share.</p>
 
@@ -147,7 +147,7 @@
   <li>Path B на одном реестре с doc_key и staging.</li>
   <li>Зеленый MCP + check_access + update с перечиткой.</li>
   <li>Allowlist write-tools; SA-ключ вне git.</li>
-  <li>Соседние реестры (договоры, УПД, SaaS) - MCP поверх готовой таблицы.</li>
+  <li>Соседние реестры (<a href="/blog/reestr-dogovorov-google-sheets/">договоры</a>, <a href="/blog/reestr-upd-google-sheets/">УПД</a>, <a href="/blog/reestr-saas-podpisok-sheets/">SaaS</a>) - MCP поверх готовой таблицы.</li>
   <li>При audit - ERP/CLM; cron-загрузки - скрипт B82.</li>
 </ol>
 
