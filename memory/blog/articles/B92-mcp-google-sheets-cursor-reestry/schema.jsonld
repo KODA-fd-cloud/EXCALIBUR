@@ -31,8 +31,8 @@
       "@id": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#article",
       "headline": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
       "description": "MCP Google Sheets в Cursor для финотдела: mcp-gsheets + service account, share реестра, mcp.json, сценарий find-update-re-read по doc_key, Path A OAuth и безопасность без сырых ПДн.",
-      "datePublished": "2026-08-24",
-      "dateModified": "2026-08-24",
+      "datePublished": "2026-09-05",
+      "dateModified": "2026-09-05",
       "inLanguage": "ru",
       "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/",
       "mainEntityOfPage": {
@@ -41,7 +41,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/mcp-google-sheets-cursor-reestry-cover.png",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/09/mcp-google-sheets-cursor-reestry-cover.png",
         "width": 1200,
         "height": 675,
         "caption": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor"
@@ -49,7 +49,7 @@
       "author": { "@id": "https://koda-fd.ru/#author-olga-kondratskaya" },
       "publisher": { "@id": "https://koda-fd.ru/#organization" },
       "keywords": "mcp google sheets cursor, автоматизация финотдела, mcp-gsheets service account, правка реестра google sheets через cursor agent",
-      "wordCount": 8774,
+      "wordCount": 9449,
       "articleSection": "Cursor / MCP / Google Sheets",
       "isPartOf": {
         "@type": "Blog",
@@ -66,7 +66,7 @@
           "name": "Можно ли без программиста?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Path A: да для пилота, если плагин в витрине. Path B: по инструкции и help Cursor; первый реестр 1-2 часа с GCP и Share."
+            "text": "Path A: да для пилота, если плагин в витрине и OAuth проходит. Path B: по инструкции; первый реестр 1–2 часа с GCP и Share."
           }
         },
         {
@@ -74,7 +74,7 @@
           "name": "Сколько займет внедрение?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "SA + mcp.json + тестовый update - около 1-2 часов. OAuth быстрее, если плагин доступен и OAuth без bug."
+            "text": "SA + mcp.json + тестовый update – около 1–2 часов. OAuth быстрее, если плагин доступен и OAuth без bug cursor://."
           }
         },
         {
@@ -82,7 +82,7 @@
           "name": "OAuth или service account?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "OAuth - личный пилот. SA - командный реестр, минимальный blast radius: только расшаренные файлы."
+            "text": "OAuth – личный пилот. SA – командный реестр и минимальный blast radius: только расшаренные файлы."
           }
         },
         {
@@ -90,7 +90,7 @@
           "name": "Какие риски для данных?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "OAuth = права вашего Google; SA = все расшаренные таблицы. Без сырых ПДн; подтверждайте write-tools; indirect injection из ячеек. Обезличивание - в гайде по ссылке выше."
+            "text": "OAuth = права вашего Google; SA = все расшаренные таблицы. Без сырых ПДн; подтверждайте write-tools; смотрите injection из ячеек."
           }
         },
         {
@@ -98,7 +98,7 @@
           "name": "Чем B92 отличается от B82?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "B82 - скрипт в staging по cron. B92 - Agent правит через MCP без скрипта; тот же SA и Share."
+            "text": "B82 – скрипт пишет в staging по cron. B92 – Agent правит через MCP без скрипта; тот же SA и Share."
           }
         },
         {
@@ -106,7 +106,7 @@
           "name": "Работает ли в Cloud Agents?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Локальный OAuth в облако не переезжает. Для Cloud Agents - SA в env или отдельный коннектор."
+            "text": "Локальный OAuth в облако не переезжает. Для Cloud Agents – SA в env или коннектор в dashboard / Team Integrations."
           }
         },
         {
@@ -114,8 +114,95 @@
           "name": "Нужен ли MCP для маленького реестра?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "5 строк раз в месяц - хватит ручного редактирования. MCP окупается при еженедельных правках через Cursor без копипаста."
+            "text": "5 строк раз в месяц – хватит ручного редактирования. MCP окупается при еженедельных правках через Cursor без копипаста."
           }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#howto",
+      "name": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+      "description": "Подключение mcp-gsheets или Marketplace OAuth, подготовка реестра с doc_key, сценарий найти-обновить-перечитать и проверка через MCP Logs.",
+      "inLanguage": "ru",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Cursor (актуальная версия, для Path A – от 3.13.0)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Node.js v20+ и npx (mcp-gsheets)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Cloud Console (Sheets API + service account)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Sheets (реестр с колонкой doc_key)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "JSON-ключ service account (вне git, абсолютный путь в env)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Тестовый реестр без сырых ПДн, Share на client_email ролью Редактор"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Оцените, когда MCP Sheets нужен финотделу",
+          "text": "Подключайте MCP, если реестр уже в Google Таблицах и правки повторяются каждую неделю. Не делайте Sheets единственным источником правды при жёстком audit trail или сотнях таблиц с enterprise ACL.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#when-needed"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Подготовьте реестр и безопасность",
+          "text": "Одна строка = одна сущность; колонка doc_key; лист staging для импортов; в облако без сырых ПДн. Отдельный SA, Share одного файла ролью Редактор, JSON-ключ не в git.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#prep-security"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Настройте Path B: Google Cloud, SA и mcp.json",
+          "text": "Включите Google Sheets API, создайте service account и JSON-ключ, расшарьте реестр на client_email. Добавьте блок mcp-gsheets в .cursor/mcp.json или ~/.cursor/mcp.json с GOOGLE_APPLICATION_CREDENTIALS, перезапустите Cursor и проверьте MCP Logs / sheets_check_access.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Подключите Path A: Marketplace OAuth (если плагин доступен)",
+          "text": "Customize → MCPs → Add → OAuth с минимальными scopes. При Error 400 на cursor:// используйте Local auth или cursor.com/agents. Для production держите Path B.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#path-a"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Прогоните сценарий: найти, обновить, перечитать",
+          "text": "По промпту с DoD: sheets_get_metadata → найти строку по doc_key → approve sheets_update_values только status/comment → sheets_get_values на ту же строку и сверка. Human-in-the-loop на каждый write-tool.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#registry-scenario"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Проверьте результат и типичные ошибки",
+          "text": "После каждой записи – перечитка диапазона. Чеклист: 403 (Share/путь к JSON), серый MCP (Node/npx/MCP Logs), 429 (батчи), append с INSERT_ROWS, OAuth bug → Path B.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#verify"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Что автоматизировать дальше",
+          "text": "Закрепите Path B на одном реестре, allowlist write-tools, ключ SA вне git; затем соседние реестры (договоры, УПД, SaaS). При audit – ERP/CLM; cron-загрузки – скрипт B82.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#next-steps"
         }
       ]
     }
