@@ -322,3 +322,38 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-05 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| permalink | (нет) |
+| trigger | continue_pipeline / telegram tick approve |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (6/6, site-base https://koda-fd.ru inferred)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING** (≠ yes)
+- memory/site.env.local: **absent**
+- PUBLIC_SITE_URL / FTP_* / SSH_*: **MISSING**
+
+### Steps
+
+1. Preflight link-verify: **pass**
+2. Dry-run: **pass** (Pillow installed in env for cover decode; slug/title OK)
+3. Publish: **aborted** — `FileNotFoundError: No publish credentials`
+4. Fallback WebFetch: not applicable (no trigger URL; no FTP bootstrap)
+5. published-articles.md: **not updated** (no live URL)
+
+### Blocker fix
+
+Add Cloud Secrets / `memory/site.env.local`: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL`, `FTP_HOST`/`FTP_USER`/`FTP_PASS`/`FTP_ROOT` (or SSH_*), then re-run step ⑥ only.
+
