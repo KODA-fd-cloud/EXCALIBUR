@@ -322,3 +322,39 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-05 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **FAIL / BLOCKER** |
+| post_id | — |
+| permalink | — |
+| method | blocked (no credentials) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (14/14, site-base https://koda-fd.ru)
+- dry-run: pass (slug/title/PHP payload OK)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- memory/site.env.local: **MISSING**
+
+### Missing env (names only)
+
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH`
+- `PUBLIC_SITE_URL`
+- `FTP_HOST` / `FTP_USER` / `FTP_PASS` / `FTP_ROOT` (или `SSH_HOST` + SSH_*)
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — нет Cloud Secrets / site.env.local
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+published-articles.md: NOT updated (no live URL)
+```
