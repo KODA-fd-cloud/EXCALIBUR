@@ -1,0 +1,28 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-05",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "also_acceptable": ["SSH_HOST (+ SSH_*) instead of FTP_*"],
+  "site_env_local": "missing",
+  "preflight": {
+    "link_verify": "pass",
+    "dry_run": "pass",
+    "qa": "PASS",
+    "cover": "present",
+    "schema": "present"
+  },
+  "permalink": null,
+  "post_id": null,
+  "error": "No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local; EXCALIBUR_BLOG_ALLOW_PUBLISH != yes; PUBLIC_SITE_URL missing"
+}

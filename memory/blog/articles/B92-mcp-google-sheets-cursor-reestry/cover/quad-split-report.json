@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1016,
+      575
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 575,
+        "end": 585
+      },
+      "v_gutter_px": {
+        "start": 1016,
+        "end": 1031
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 1,
+          "right": 1016,
+          "bottom": 573
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1016,
+          "bottom": 575
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Ведущая блога у ноутбука: мем-коллаж — реестр в чат кусками vs MCP Google Sheets без копипаста",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1031,
+          "top": 0,
+          "right": 2048,
+          "bottom": 575
+        },
+        "raw_box_px": {
+          "left": 1031,
+          "top": 0,
+          "right": 2048,
+          "bottom": 575
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнительная таблица: Path A, Path B, копипаст и скрипт — когда MCP Sheets нужен финотделу",
+        "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 4,
+          "top": 585,
+          "right": 1012,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 585,
+          "right": 1016,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Workflow: подготовка реестра, share SA и запрет сырых ПДн перед MCP",
+        "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1035,
+          "top": 585,
+          "right": 2043,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1031,
+          "top": 585,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Скрин Path B: зелёный MCP mcp-gsheets, mcp.json и чеклист Share/check_access",
+        "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+    "injected inline_2 after H2 — Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+    "injected inline_3 after H2 — Настройте Path B: Google Cloud, SA и mcp.json пошагово"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова в чат кусками? MCP Sheets убивает копипаст",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; Cloud fallback: cursor.GenerateImage + reference",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущая блога у ноутбука: мем-коллаж — реестр в чат кусками vs MCP Google Sheets без копипаста",
+      "scene_hint": "reference-лицо Ольги (очки, короткие тёмные волосы), outfit: чёрный худи с капюшоном + бейдж «финреестр», жест «стоп» к рваному скрину чата Cursor с кусками таблицы; рядом fake Google Sheets с колонками doc_key/status, Telegram «опять копипаст?», розовый стикер «КОПИПАСТ В ЧАТ» зачёркнут маркером, скотч, рваная бумага, мем facepalm + shocked cat cutout, розовый highlight на слове «копипаст»",
+      "meme_caption_ru": "КОПИПАСТ В ЧАТ?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-таблица 4 маршрута: Path A OAuth | Path B mcp-gsheets+SA | Копипаст в чат | Python-скрипт — колонки «когда»/«минус»; без лица героя; розовый стикер «жиза» на копипасте",
+      "alt": "Сравнительная таблица: Path A, Path B, копипаст и скрипт — когда MCP Sheets нужен финотделу"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема: реестр Sheets → SA share | OAuth → MCP Cursor → update по doc_key → перечитка → регламент CFO; блок «ПДн: ИНН ок / паспорт нет»; стикер tape «staging»; без лица",
+      "alt": "Workflow: подготовка реестра, share SA и запрет сырых ПДн перед MCP"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake скрин Cursor Customize→MCPs зелёный mcp-gsheets + фрагмент mcp.json (npx mcp-gsheets, GOOGLE_APPLICATION_CREDENTIALS) + чеклист Share Редактор / Node 20 / check_access; sticky «403 = нет Share»; без лица героя",
+      "alt": "Скрин Path B: зелёный MCP mcp-gsheets, mcp.json и чеклист Share/check_access"
+    }
+  }
+}

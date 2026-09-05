@@ -9,9 +9,9 @@
   "secondary_queries": [
     "автоматизация финотдела",
     "mcp google sheets cursor",
-    "2026"
+    "mcp-gsheets service account"
   ],
-  "char_count": 8774,
+  "char_count": 9449,
   "article_mode": "B",
   "author_id": "olga-kondratskaya",
   "anchor_variants": [
@@ -27,5 +27,7 @@
     "description_ctr": "⚡️ Хватит копировать диапазоны в чат: настройте mcp-gsheets и обновляйте статус строки через Agent за один вечер.",
     "description_aeo": "Подключение MCP Google Sheets в Cursor через mcp-gsheets и service account: share файла, mcp.json, find-update-re-read по doc_key без копипаста."
   },
-  "cover_family": "gradient_abstract"
+  "cover_family": "gradient_abstract",
+  "date_published": "2026-09-05",
+  "status": "draft_ready"
 }
