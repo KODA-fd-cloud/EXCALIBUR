@@ -1,0 +1,19 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "raw_output": "❌ PUBLISH BLOCKER: no memory/site.env.local; EXCALIBUR_BLOG_ALLOW_PUBLISH missing/!=yes; PUBLIC_SITE_URL and FTP_*/SSH_* missing. Credentials not invented. Preflight link-verify=pass; dry-run=pass; real publish aborted at load_env.",
+  "preflight": {
+    "link_verify": "pass",
+    "site_base_used": "https://koda-fd.ru",
+    "site_base_source": "inferred_from_published_articles_PUBLIC_SITE_URL_missing"
+  },
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "php_bytes": 4014479
+  },
+  "publish_attempted": true,
+  "publish_error": "No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}
