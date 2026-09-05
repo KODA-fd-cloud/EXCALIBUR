@@ -10,7 +10,7 @@
 </figure>
 
 
-<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки на расход), правки повторяются каждую неделю, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200–300 активных договоров – тогда CLM или 1С, таблица остается staging.</p>
+<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (<a href="/blog/reestr-dogovorov-google-sheets/">договоры</a>, <a href="/blog/reestr-upd-google-sheets/">УПД</a>, <a href="/blog/reestr-saas-podpisok-sheets/">SaaS</a>, <a href="/blog/zayavka-na-rashod-google-forms/">заявки на расход</a>), правки повторяются каждую неделю, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200–300 активных договоров – тогда CLM или 1С, таблица остается staging.</p>
 
 <table>
   <thead>
@@ -56,7 +56,7 @@
 </figure>
 
 
-<p>Одна строка = одна сущность (договор, УПД, подписка). Колонка <b>doc_key</b> – стабильный код вроде DOG-2026-014; по нему агент ищет строку, а не по названию контрагента. Лист <b>staging</b> – для сырых импортов из 1С или Forms; боевой лист "Реестр" агент правит точечно в колонках status и comment.</p>
+<p>Одна строка = одна сущность (договор, УПД, подписка). Колонка <b>doc_key</b> – стабильный код вроде DOG-2026-014; по нему агент ищет строку, а не по названию контрагента. Лист <b>staging</b> – для сырых импортов из 1С или Forms (паттерн как у <a href="/blog/bankovskaya-vypiska-staging-google-sheets/">staging банковской выписки</a>); боевой лист "Реестр" агент правит точечно в колонках status и comment.</p>
 
 <p>В облако отправляйте ИНН контрагента, сумму, статус – да; паспорт, полное ФИО в payroll, номера карт – нет. Для тестов замените названия на "Контрагент_01", суммы округлите. Чеклист – в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию данных</a>.</p>
 
@@ -149,7 +149,7 @@
   <li><b>OAuth</b> – bug cursor://: Local auth / cursor.com/agents или Path B.</li>
 </ul>
 
-<p>При более 80–100 заявок/мес через Forms→Sheets таблица – staging перед ERP или n8n; MCP остается transport точечных правок, не главной книгой. При росте нагрузки – ротация ключа SA (B93) и allowlist write-tools.</p>
+<p>При более 80–100 заявок/мес через Forms→Sheets таблица – staging перед ERP или <a href="/blog/platezhnyj-kalendar-google-sheets-n8n/">n8n-контуром</a>; MCP остается transport точечных правок, не главной книгой. При росте нагрузки – ротация ключа SA (B93) и allowlist write-tools. Соседний MCP к остаткам 1С – в <a href="/blog/mcp-1c-cursor-ostatki-oboroty/">гайде MCP 1С в Cursor</a>.</p>
 
 <p><b>Сделайте:</b> чеклист share / env / MCP Logs / re-read. <b>Не делайте:</b> чинить 403 промптом без Share.</p>
 
@@ -159,7 +159,7 @@
   <li>Path B на одном реестре с doc_key и staging.</li>
   <li>Зеленый MCP + check_access + update с перечиткой.</li>
   <li>Allowlist write-tools; SA-ключ вне git.</li>
-  <li>Соседние реестры (B51 договоры, B58 УПД, B83 SaaS) – MCP поверх готовой таблицы.</li>
+  <li>Соседние реестры (B51 <a href="/blog/reestr-dogovorov-google-sheets/">договоры</a>, B58 <a href="/blog/reestr-upd-google-sheets/">УПД</a>, B83 <a href="/blog/reestr-saas-podpisok-sheets/">SaaS</a>) – MCP поверх готовой таблицы; подотчёт – в <a href="/blog/podotchet-reestr-google-sheets/">реестре подотчёта</a>.</li>
   <li>При audit – ERP/CLM; cron-загрузки – скрипт B82.</li>
 </ol>
 
