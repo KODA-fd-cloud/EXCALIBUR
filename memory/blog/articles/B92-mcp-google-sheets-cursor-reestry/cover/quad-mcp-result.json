@@ -1,0 +1,15 @@
+{
+  "status": "fallback_ok",
+  "tool": "cursor.GenerateImage",
+  "reason": "user-mcp-kv/gpt-image-2 unavailable in Cloud",
+  "reference_image_paths": [
+    "memory/cover/assets/blog-hero-reference.png"
+  ],
+  "artifact": "/opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "canvas": "cover/canvas-quad.png",
+  "resized_to": [
+    2048,
+    1152
+  ],
+  "split": "PASS"
+}

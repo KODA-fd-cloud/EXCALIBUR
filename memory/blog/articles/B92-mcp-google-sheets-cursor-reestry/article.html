@@ -5,6 +5,10 @@
 <p>Три маршрута: Path A – Marketplace + OAuth (пилот); Path B – freema/mcp-gsheets + service account (production финконтура); Path C – официальный remote Google на sheetsmcp.googleapis.com (advanced). Для финконтура я беру Path B: changelog Cursor от 03.08.2026 детализирует Drive, Gmail и Calendar, а Sheets в витрине мог исчезнуть. Обзор MCP – в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; запись скриптом с тем же SA – в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение маршрутов Path A/B/C и скрипта B82 для MCP Google Sheets в финотделе" loading="lazy">
+</figure>
+
 
 <p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки), правки еженедельные, а копипаст диапазонов бесит. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, enterprise ACL или более 200–300 активных договоров – тогда CLM/1С, таблица остается staging.</p>
 
@@ -47,6 +51,10 @@
 <p><b>Сделайте:</b> DoD: найти по doc_key → сменить status/comment → перечитать. <b>Не делайте:</b> MCP "на весь Drive" ради одного файла.</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Workflow подготовки реестра: staging, doc_key, share SA, без сырых ПДн" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> – стабильный код (DOG-2026-014). Лист <b>staging</b> – для импорта из 1С/Forms; лист "Реестр" агент правит только в status и comment.</p>
 
@@ -61,6 +69,10 @@
 <p><b>Сделайте:</b> отдельный SA, share "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
 
 <h2 id="setup">Настройте Path B: GCP, SA и mcp.json пошагово</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Чеклист настройки Path B: GCP, service account, mcp.json и проверка MCP" loading="lazy">
+</figure>
+
 
 <p>mcp-gsheets: Node.js v20+, Sheets API, JSON SA. Конфиг: <b>.cursor/mcp.json</b> или <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
 
