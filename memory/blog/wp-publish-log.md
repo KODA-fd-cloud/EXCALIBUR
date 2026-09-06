@@ -322,3 +322,51 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-06 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — |
+| permalink | — |
+| trigger | cron continue_pipeline / publish step ⑥ |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (10/10, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: OK (slug/title/PHP payload built; PHP bytes=11828859)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing**
+- memory/site.env.local: **missing**
+- process env FTP_*/PUBLIC_SITE_URL: **unset**
+
+### Missing env (no secrets invented/printed)
+
+- `memory/site.env.local`
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH`
+- `PUBLIC_SITE_URL`
+- `FTP_HOST`
+- `FTP_USER`
+- `FTP_PASS`
+- `FTP_ROOT`
+
+### Result
+
+```
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+### Notes
+
+- Шаг ⑥ выполнен (не silent skip).
+- `shared/published-articles.md` не обновлялся (нет live permalink).
+- telegram_notify не вызывался.
