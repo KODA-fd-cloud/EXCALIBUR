@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова в чат кусками? MCP Sheets убивает копипаст",
+  "mcp_note": "ONE image gen with input_urls/reference i2i, then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога: мем-коллаж — реестр в чат кусками vs MCP Google Sheets без копипаста",
+      "scene_hint": "reference-лицо Ольги (очки) в чёрном худи «финреестр» вместо пиджака, вокруг: fake скрин Cursor-чата с кусками таблицы, Google Sheets «status=updated», стикер ★☆☆☆☆ «опять копипаст», мем facepalm + shocked cat, розовый highlight на «КОПИПАСТ», рваная бумага и скотч",
+      "meme_caption_ru": "КОПИПАСТ В ЧАТ?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица сравнения 4 маршрутов: Path B SA / Path A OAuth / копипаст в чат / скрипт B82 — колонки Когда и Минус; тёмный SaaS UI + розовый стикер «Path B = default»; БЕЗ лица героя",
+      "alt": "Сравнительная таблица Path B, Path A, копипаст и скрипт для MCP Sheets"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема 4 шагов: колонки doc_key/status → без сырых ПДн → share только реестра → ключ SA в env; стрелки и tape corner; БЕЗ лица героя",
+      "alt": "Схема подготовки реестра и безопасности без сырых ПДн"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake скриншот mcp.json + Google Cloud SA + MCP Logs «connected»; sticky note «freema/mcp-gsheets»; БЕЗ лица героя",
+      "alt": "Скрин настройки Path B: Google Cloud SA и mcp.json"
+    }
+  }
+}

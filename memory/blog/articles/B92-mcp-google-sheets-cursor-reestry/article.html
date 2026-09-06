@@ -5,6 +5,10 @@
 <p>На сентябрь 2026 <b>Path B - production-default:</b> mcp-gsheets (freema) + service account, share только нужного реестра, ключ в env. <b>Path A</b> - Marketplace-плагин google-sheets через OAuth: пилот, но витрина Sheets нестабильна с августа 2026, OAuth из IDE часто ломается на cursor://. Обзор MCP - в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде MCP Cursor</a>; скрипт с тем же SA - в <a href="/blog/google-sheets-api-integraciya-finotdel/">Sheets API для финотдела</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнительная таблица Path B, Path A, копипаст и скрипт для MCP Sheets" loading="lazy">
+</figure>
+
 
 <p><b>Подключайте,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки), правки еженедельные, копипаст бесит. <b>Не делайте</b> Sheets единственной правдой при жестком audit trail, enterprise ACL или 200-300+ активных договоров - тогда CLM/1С, таблица как staging.</p>
 
@@ -47,6 +51,10 @@
 <p><b>Сделайте:</b> DoD: найти по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> MCP "на весь Drive".</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема подготовки реестра и безопасности без сырых ПДн" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> (DOG-2026-014) - ключ поиска. Лист <b>staging</b> для импортов; "Реестр" правится точечно в status/comment.</p>
 
@@ -59,6 +67,10 @@
 <p><b>Сделайте:</b> отдельный SA, share "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тест.</p>
 
 <h2 id="setup">Настройте Path B: Google Cloud, SA и mcp.json</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Скрин настройки Path B: Google Cloud SA и mcp.json" loading="lazy">
+</figure>
+
 
 <p>mcp-gsheets: Node.js v20+, Sheets API, JSON SA. Конфиг: <b>.cursor/mcp.json</b> или <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
 

@@ -1,0 +1,20 @@
+{
+  "url": "file:///opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "generator": "cursor.GenerateImage",
+  "mcp_mode": "image-to-image",
+  "reference_image_paths": [
+    "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/cover/hero-ref-i2i.png"
+  ],
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "aspect_ratio": "16:9",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "normalized_canvas": "cover/canvas-quad.png",
+  "normalized_size": [
+    2048,
+    1152
+  ],
+  "note": "gpt-image-2 MCP unavailable; ONE GenerateImage i2i call then LANCZOS resize + split"
+}
