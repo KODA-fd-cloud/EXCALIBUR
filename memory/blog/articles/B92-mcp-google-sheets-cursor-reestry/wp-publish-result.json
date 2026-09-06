@@ -1,0 +1,19 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": null,
+  "verdict": "blocker",
+  "method": null,
+  "raw_output": "❌ PUBLISH BLOCKER: memory/site.env.local отсутствует; EXCALIBUR_BLOG_ALLOW_PUBLISH != yes; FTP_*/PUBLIC_SITE_URL credentials недоступны. Dry-run OK (slug/title/payload). Real publish не запускался.",
+  "preflight": {
+    "link_verify": "pass",
+    "article_qa": "PASS",
+    "cover": true,
+    "schema": true,
+    "dry_run": "pass",
+    "allow_publish": false,
+    "site_env_local": false,
+    "ftp_credentials": false,
+    "public_site_url": false
+  }
+}

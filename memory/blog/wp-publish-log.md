@@ -322,3 +322,36 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-06 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| field | value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+| verdict | blocker |
+| permalink | — |
+| post_id | — |
+| method | — (real publish not started) |
+
+### Preconditions
+
+- article-qa.md: PASS
+- link-verify.json: pass (10/10, --site-base https://koda-fd.ru)
+- schema.jsonld: present
+- cover/cover.png + registry: present
+- dry-run: pass (slug/title OK; PHP payload built)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: missing (!= yes)
+- memory/site.env.local: missing
+- FTP_*/PUBLIC_SITE_URL: missing in process env
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — allow flag / site.env.local / FTP credentials отсутствуют.
+Real publish не запускался. Credentials не выдумывались.
+```
+
