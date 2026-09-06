@@ -2,16 +2,15 @@
   "topic_id": "B92",
   "h1": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
   "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
-  "description": "MCP Google Sheets в Cursor для финотдела: mcp-gsheets + service account, share реестра, mcp.json, сценарий find-update-re-read по doc_key, Path A OAuth и безопасность без сырых ПДн.",
+  "description": "MCP Google Sheets в Cursor для финотдела: Path B mcp-gsheets + service account как production-default, Path A OAuth с disclaimer, сценарий find-update-re-read по doc_key без копипаста.",
   "cover_alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
   "slug": "mcp-google-sheets-cursor-reestry",
   "primary_query": "mcp google sheets cursor",
   "secondary_queries": [
     "автоматизация финотдела",
-    "mcp google sheets cursor",
-    "2026"
+    "mcp google sheets cursor"
   ],
-  "char_count": 8774,
+  "char_count": 9219,
   "article_mode": "B",
   "author_id": "olga-kondratskaya",
   "anchor_variants": [
