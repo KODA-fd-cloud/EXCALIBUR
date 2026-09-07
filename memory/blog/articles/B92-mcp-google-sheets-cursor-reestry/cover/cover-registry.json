@@ -2,13 +2,49 @@
   "topic_id": "B92",
   "slug": "mcp-google-sheets-cursor-reestry",
   "cover_family": "gradient_abstract",
-  "pipeline": "cursor_generate_image_legacy_abstract",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
   "file": "cover/cover.png",
-  "dzen_file": "cover/dzen-cover.png",
-  "alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
-  "cover_alt_text": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
+  "alt": "Ведущая у ноутбука с Cursor и Google Sheets: мем «хватит копипаста», стикеры MCP и реестр",
   "aspect_ratio": "16:9",
-  "size": "1200x675",
-  "generated_at": "2026-08-24T04:06:46.278338+00:00",
-  "note": "abstract holographic, NO text on image"
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-09-07T05:11:14+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Ведущая у ноутбука с Cursor и Google Sheets: мем «хватит копипаста», стикеры MCP и реестр",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение маршрутов MCP Sheets: Path B production, A/C пилот, копипаст разово",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема подготовки реестра: doc_key, staging vs Реестр, без сырых ПДн",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Скрин настройки Path B: service account, mcp.json mcp-gsheets, зелёный MCP Logs",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "aspect_ratio": "16:9"
+    }
+  ]
 }

@@ -3,6 +3,10 @@
 <p>MCP (Model Context Protocol) – протокол внешних инструментов Cursor. Без него агент видит только то, что вы вставили в чат; с MCP у него появляются tools к Google Sheets API, как у защищенного курьера между редактором и таблицей. Ответ в JSON – как акт сверки: у каждого поля свое место. Три маршрута на сентябрь 2026: Path B (production) – freema/mcp-gsheets + service account; Path A – Marketplace/OAuth, если Sheets в витрине; Path C – remote Google <code>sheetsmcp.googleapis.com</code>. Changelog Cursor от 03.08.2026 детализирует Drive, Gmail и Calendar; Sheets в релизе не расписан. Обзор MCP – в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; тот же SA скриптом – в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение маршрутов MCP Sheets: Path B production, A/C пилот, копипаст разово" loading="lazy">
+</figure>
+
 
 <p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки), правки еженедельные, а копипаст бесит. <b>Не делайте</b> Sheets единственной правдой при жестком audit trail, сотнях таблиц с enterprise ACL или более 200–300 активных договоров – тогда CLM/1С, Sheets = staging.</p>
 
@@ -45,6 +49,10 @@
 <p><b>Сделайте:</b> DoD – найти по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> MCP "на весь Drive" ради одного файла.</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн в облако)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема подготовки реестра: doc_key, staging vs Реестр, без сырых ПДн" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> (DOG-2026-014) – стабильный ключ поиска. Лист <b>staging</b> – сырой импорт; лист "Реестр" агент правит точечно в status и comment. В облако: ИНН, сумма, статус – да; паспорт, полные ФИО payroll, карты – нет. Для тестов – "Контрагент_01" и округленные суммы. Чеклист – в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию</a>.</p>
 
@@ -57,6 +65,10 @@
 <p><b>Сделайте:</b> отдельный SA, share "Редактор" без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
 
 <h2 id="setup">Настройте Path B: Google Cloud, SA и mcp.json пошагово</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Скрин настройки Path B: service account, mcp.json mcp-gsheets, зелёный MCP Logs" loading="lazy">
+</figure>
+
 
 <p>mcp-gsheets: Node.js v20+, Sheets API, JSON SA. Конфиг – <b>.cursor/mcp.json</b> (проект) или <b>~/.cursor/mcp.json</b> (глобально).</p>
 
