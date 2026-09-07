@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр в чат — снова копипаст?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; fallback GenerateImage + blog-hero-reference.png",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: ведущий у ноутбука с Cursor и Google Sheets, мем про копипаст реестра без MCP",
+      "scene_hint": "reference-лицо Ольги (короткие тёмные волосы, стильные очки); фиолетовый блейзер, жест «хватит» на стопку распечатанных строк реестра; fake скрин Cursor Agent с вставленным диапазоном A2:F40 и красным крестом; fake Google Sheets с колонкой doc_key; рваная бумага, скотч, розовый маркер на слове «копипаст», мем facepalm, sticky «жиза»",
+      "meme_caption_ru": "Хватит копипаста!"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Решите, нужен ли MCP Google Sheets финотделу",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake UI-таблица Path A / Path B / Path C: колонки «Когда брать» и «Минус»; зелёная галочка на Path B mcp-gsheets+SA; стикер «production»; без лица героя",
+      "alt": "Сравнение путей MCP Google Sheets: Path B mcp-gsheets для финотдела выделен как production"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и уберите сырые ПДн",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица «Можно в облако vs Нельзя»: doc_key/статус/код vs паспорт/ФИО/сканы; розовый зачёркнутый блок ПДн, зелёный блок masked Kontragent_17; tape corner; без лица",
+      "alt": "Сравнение: в Sheets только doc_key и статусы, сырые ПДн вне облака"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: service account и mcp.json",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow 5 шагов: GCP SA → share client_email Editor → Node 20+ → mcp.json mcp-gsheets → зелёный статус MCP Logs; стрелки маркером, sticky «без git-ключа»; без лица героя",
+      "alt": "Схема Path B: service account, share реестра, mcp.json и зелёный статус MCP"
+    }
+  }
+}
