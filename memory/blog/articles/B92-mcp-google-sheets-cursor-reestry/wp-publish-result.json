@@ -1,0 +1,44 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-07",
+  "verdict": "fail",
+  "blocker": true,
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 11959711
+  },
+  "link_verify": {
+    "verdict": "fail",
+    "total_links": 10,
+    "failed_count": 1,
+    "failed_urls": [
+      "https://koda-fd.ru/blog/avtomatizaciya-n8n-ai-agents/"
+    ],
+    "site_base_used": "https://koda-fd.ru",
+    "note": "PUBLIC_SITE_URL missing; used indexer/QA site-base"
+  },
+  "missing_env": [
+    "memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "blockers": [
+    "❌ PUBLISH BLOCKER: missing publish credentials / allow flag (see missing_env)",
+    "❌ PUBLISH BLOCKER: link-verify fail — /blog/avtomatizaciya-n8n-ai-agents/ → HTTP 404"
+  ],
+  "ledger_updated": false,
+  "wp_publish_log_updated": false
+}
