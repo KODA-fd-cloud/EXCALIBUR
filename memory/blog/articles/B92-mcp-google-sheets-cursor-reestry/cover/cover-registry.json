@@ -1,14 +1,55 @@
 {
   "topic_id": "B92",
   "slug": "mcp-google-sheets-cursor-reestry",
-  "cover_family": "gradient_abstract",
-  "pipeline": "cursor_generate_image_legacy_abstract",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
   "file": "cover/cover.png",
-  "dzen_file": "cover/dzen-cover.png",
-  "alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
-  "cover_alt_text": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
+  "alt": "Обложка: ведущий у ноутбука с Cursor и Google Sheets, мем про копипаст реестра без MCP",
   "aspect_ratio": "16:9",
-  "size": "1200x675",
-  "generated_at": "2026-08-24T04:06:46.278338+00:00",
-  "note": "abstract holographic, NO text on image"
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-09-07T12:17:22+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Обложка: ведущий у ноутбука с Cursor и Google Sheets, мем про копипаст реестра без MCP",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение путей MCP Google Sheets: Path B mcp-gsheets для финотдела выделен как production",
+      "h2_anchor": "Решите, нужен ли MCP Google Sheets финотделу",
+      "visual_type": "tool_screenshot",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Сравнение: в Sheets только doc_key и статусы, сырые ПДн вне облака",
+      "h2_anchor": "Подготовьте реестр и уберите сырые ПДн",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Схема Path B: service account, share реестра, mcp.json и зелёный статус MCP",
+      "h2_anchor": "Настройте Path B: service account и mcp.json",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "mcp_mode": "image-to-image",
+  "generator": "cursor.GenerateImage_fallback",
+  "note": "user-mcp-kv/gpt-image-2 unavailable; ONE GenerateImage quad + reference_image_paths=[blog-hero-reference.png]; canvas 3:2→center-crop 16:9→2048x1152; split PASS; inject 3 figures",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url": "https://koda-fd.ru/assets/CAcjfm4N.jpg"
 }

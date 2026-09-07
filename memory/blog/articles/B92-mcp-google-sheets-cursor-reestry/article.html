@@ -5,6 +5,10 @@
 <p>Доступность Cursor зависит от региона и аккаунта: с начала сентября 2026 у части пользователей из РФ встречается "not available in your region". Гайд – при живом Cursor; обход ограничений не описываю. Path B (SA + mcp-gsheets) при необходимости переносится на другой MCP-клиент.</p>
 
 <h2 id="kogda-nuzhen-mcp-sheets">Решите, нужен ли MCP Google Sheets финотделу</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение путей MCP Google Sheets: Path B mcp-gsheets для финотдела выделен как production" loading="lazy">
+</figure>
+
 <p><b>Делайте,</b> если реестр уже в Sheets, правки статуса повторяются, а копипаст бесит. <b>Не делайте</b> MCP поверх сотен таблиц с жёстким enterprise ACL – для audit trail лучше 1С/CLM, Sheets оставьте staging.</p>
 <blockquote>
   <b>Схема:</b> Реестр в Sheets → (SA share | OAuth | Google remote MCP) → MCP в Cursor → Agent update по doc_key → перечитка → регламент CFO
@@ -38,11 +42,19 @@
 <p>Для production беру Path B. Общий MCP без Sheets – в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде MCP для финансиста</a>. SA без агента (скрипт) – в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="podgotovka-reestra">Подготовьте реестр и уберите сырые ПДн</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Сравнение: в Sheets только doc_key и статусы, сырые ПДн вне облака" loading="lazy">
+</figure>
+
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> стабильна (DOG-2026-014). Лист staging – импорт, лист Реестр – статусы.</p>
 <p><b>В облако можно:</b> doc_key, статус, дата, код контрагента, условная сумма. <b>Нельзя:</b> паспорт, полные ФИО, сканы. Маскируйте: ООО "Ромашка" → Kontragent_17, ИНН → INN_***893. Чеклист – в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">обезличивании данных</a>.</p>
 <p><b>Сделайте:</b> копию реестра под пилот. <b>Не делайте:</b> доступ агента ко всему Drive.</p>
 
 <h2 id="nastrojka-path-b">Настройте Path B: service account и mcp.json</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Схема Path B: service account, share реестра, mcp.json и зелёный статус MCP" loading="lazy">
+</figure>
+
 <p>Service account – служебный сотрудник Google без личного Gmail. Он видит только расшаренные файлы: IAM в Cloud не заменяет "Поделиться" на таблице.</p>
 <ol>
   <li>Создайте проект Google Cloud и включите <b>Google Sheets API</b>.</li>
