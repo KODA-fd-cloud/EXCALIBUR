@@ -9,7 +9,7 @@
   <img src="cover/inline-01.png" alt="Сравнение путей MCP Google Sheets: Path B mcp-gsheets для финотдела выделен как production" loading="lazy">
 </figure>
 
-<p><b>Делайте,</b> если реестр уже в Sheets, правки статуса повторяются, а копипаст бесит. <b>Не делайте</b> MCP поверх сотен таблиц с жёстким enterprise ACL – для audit trail лучше 1С/CLM, Sheets оставьте staging.</p>
+<p><b>Делайте,</b> если реестр уже в Sheets, правки статуса повторяются, а копипаст бесит. <b>Не делайте</b> MCP поверх сотен таблиц с жёстким enterprise ACL – для audit trail лучше 1С/CLM (чтение остатков из Cursor – в <a href="/blog/mcp-1c-cursor-ostatki-oboroty/">гайде MCP к 1С</a>), Sheets оставьте staging.</p>
 <blockquote>
   <b>Схема:</b> Реестр в Sheets → (SA share | OAuth | Google remote MCP) → MCP в Cursor → Agent update по doc_key → перечитка → регламент CFO
 </blockquote>
@@ -46,7 +46,7 @@
   <img src="cover/inline-02.png" alt="Сравнение: в Sheets только doc_key и статусы, сырые ПДн вне облака" loading="lazy">
 </figure>
 
-<p>Одна строка = одна сущность. Колонка <b>doc_key</b> стабильна (DOG-2026-014). Лист staging – импорт, лист Реестр – статусы.</p>
+<p>Одна строка = одна сущность. Колонка <b>doc_key</b> стабильна (DOG-2026-014) – тот же каркас, что в <a href="/blog/reestr-dogovorov-google-sheets/">реестре договоров в Sheets</a>. Лист staging – импорт, лист Реестр – статусы.</p>
 <p><b>В облако можно:</b> doc_key, статус, дата, код контрагента, условная сумма. <b>Нельзя:</b> паспорт, полные ФИО, сканы. Маскируйте: ООО "Ромашка" → Kontragent_17, ИНН → INN_***893. Чеклист – в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">обезличивании данных</a>.</p>
 <p><b>Сделайте:</b> копию реестра под пилот. <b>Не делайте:</b> доступ агента ко всему Drive.</p>
 
@@ -111,7 +111,7 @@
 <p><b>Сделайте:</b> чеклист share → ключ вне git → approval → re-read. <b>Не делайте:</b> SA-Editor на десятки старых таблиц.</p>
 
 <h2 id="chto-dalshe">Спланируйте рост после первого реестра</h2>
-<p>Дальше: второй реестр на том же SA (отдельный share), шаблон промпта с DoD, запрет write без diff. Нужен audit и поток – оркестрация в n8n, Sheets как витрина статусов.</p>
+<p>Дальше: второй реестр (например <a href="/blog/reestr-upd-google-sheets/">УПД в Sheets</a>) на том же SA (отдельный share), шаблон промпта с DoD, запрет write без diff. Нужен audit и поток – <a href="/blog/avtomatizaciya-n8n-ai-agents/">оркестрация ИИ-агентов в n8n</a>, Sheets как витрина статусов.</p>
 <p>Практика Cursor для финотдела – в <a href="https://club.koda-fd.ru/?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=mcp-google-sheets-cursor-reestry" target="_blank" rel="noopener">закрытом клубе KODA</a>.</p>
 <p><b>Сделайте:</b> зафиксируйте SA, файлы, кто ротирует ключ. <b>Не делайте:</b> масштаб на весь Drive до первого re-read.</p>
 
