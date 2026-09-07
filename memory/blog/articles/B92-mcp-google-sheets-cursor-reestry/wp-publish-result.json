@@ -17,14 +17,12 @@
     "php_bytes": 11959711
   },
   "link_verify": {
-    "verdict": "fail",
+    "verdict": "pass",
     "total_links": 10,
-    "failed_count": 1,
-    "failed_urls": [
-      "https://koda-fd.ru/blog/avtomatizaciya-n8n-ai-agents/"
-    ],
+    "failed_count": 0,
+    "failed_urls": [],
     "site_base_used": "https://koda-fd.ru",
-    "note": "PUBLIC_SITE_URL missing; used indexer/QA site-base"
+    "note": "Director fixed dead B02 → B24 platezhnyj-kalendar; re-verified PASS. PUBLIC_SITE_URL still missing."
   },
   "missing_env": [
     "memory/site.env.local",
@@ -36,9 +34,9 @@
     "FTP_ROOT"
   ],
   "blockers": [
-    "❌ PUBLISH BLOCKER: missing publish credentials / allow flag (see missing_env)",
-    "❌ PUBLISH BLOCKER: link-verify fail — /blog/avtomatizaciya-n8n-ai-agents/ → HTTP 404"
+    "❌ PUBLISH BLOCKER: missing publish credentials / allow flag (see missing_env)"
   ],
   "ledger_updated": false,
-  "wp_publish_log_updated": false
+  "wp_publish_log_updated": false,
+  "director_link_fix": "replaced /blog/avtomatizaciya-n8n-ai-agents/ with /blog/platezhnyj-kalendar-google-sheets-n8n/"
 }
