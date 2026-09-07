@@ -48,6 +48,6 @@ MCP Google Sheets в Cursor: mcp-gsheets + service account, share только �
 ## Notes
 
 - Indexer: dry-run interlinker → все 11 suggestions для B92 = junk anchor «2026»; **`--apply` не запускали**.
-- Ручные contextual interlinks (+4): `mcp-1c-cursor-ostatki-oboroty`, `reestr-dogovorov-google-sheets`, `reestr-upd-google-sheets`, `avtomatizaciya-n8n-ai-agents`. Уже были: B21, B82, B11. B03 не линковали (404).
+- Ручные contextual interlinks (+4): `mcp-1c-cursor-ostatki-oboroty`, `reestr-dogovorov-google-sheets`, `reestr-upd-google-sheets`, `platezhnyj-kalendar-google-sheets-n8n` (B24; B02 404 заменён). Уже были: B21, B82, B11. B03 не линковали (404).
 - llms.txt / llms-full.txt: `memory/blog/` (`--site-base https://koda-fd.ru`).
 - publish: next после Indexer.
