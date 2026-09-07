@@ -1,0 +1,21 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-07",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "reason": "No memory/site.env.local and no FTP_*/SSH_* or EXCALIBUR_BLOG_ALLOW_PUBLISH=yes in process env. Credentials not invented. Dry-run passed; real publish aborted at load_env.",
+  "preflight": {
+    "link_verify": "pass",
+    "link_verify_total": 10,
+    "site_base": "https://koda-fd.ru",
+    "dry_run": "pass"
+  },
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "ledger_updated": false
+}
