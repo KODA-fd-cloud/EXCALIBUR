@@ -312,6 +312,57 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 ---
 
+## 2026-09-08 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| permalink | — |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+
+### Preconditions
+
+- article-qa.md: PASS (92/100)
+- link-verify.json: pass (13/13) — re-run preflight OK (`--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **unset** (≠ yes)
+- memory/site.env.local: **MISSING**
+- FTP_*/PUBLIC_SITE_URL: **MISSING** in process env
+
+### Dry-run
+
+```
+dry_run=true slug=mcp-google-sheets-cursor-reestry PHP bytes: 8138555
+```
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+### Missing env (names only)
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH=yes
+- PUBLIC_SITE_URL
+- FTP_HOST (or SSH_HOST)
+- FTP_USER
+- FTP_PASS / FTP_PASSWORD
+- FTP_ROOT
+- memory/site.env.local
+
+### Notes
+
+- Secrets not invented. Cron injects Telegram only; need Cloud Secrets or site.env.local.
+- published-articles.md NOT updated (no live permalink).
+- wp-publish-result.json → verdict=blocker
+
+---
+
 ## 2026-07-22 — B14/B15/B16 docker publish — **PASS**
 
 | topic_id | slug | post_id | permalink |
