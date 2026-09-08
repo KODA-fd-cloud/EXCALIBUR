@@ -1,0 +1,8 @@
+{
+  "url": "cursor://GenerateImage/B92-canvas-quad.png",
+  "mcp_mode": "fallback_GenerateImage_i2i",
+  "note": "user-mcp-kv/gpt-image-2 unavailable; ONE GenerateImage quad with reference_image_paths=[memory/cover/assets/blog-hero-reference.png]; raw 1536x1024 center-crop+LANCZOS → canvas-quad.png 2048x1152",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "raw_artifact": "/opt/cursor/artifacts/assets/B92-canvas-quad.png"
+}

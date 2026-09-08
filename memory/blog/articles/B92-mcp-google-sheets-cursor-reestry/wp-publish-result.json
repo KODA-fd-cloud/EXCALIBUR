@@ -1,0 +1,12 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "reason": "No memory/site.env.local and no FTP_*/SSH_*/PUBLIC_SITE_URL/EXCALIBUR_BLOG_ALLOW_PUBLISH in process env",
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local",
+  "link_verify": "pass",
+  "dry_run": "pass",
+  "publish_date": "2026-09-08"
+}

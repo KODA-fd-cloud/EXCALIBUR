@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова копипастом в чат?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога у коллажа: реестр Google Sheets снова копируют в чат Cursor вместо MCP",
+      "scene_hint": "reference face Olga; outfit: sharp purple blazer over white shirt, smart glasses, confident half-body cutout pointing at chaos; fake Google Sheets tab «Реестр» with selected range A2:F40 + Telegram bubble «скинь ещё 40 строк»; sticky note «doc_key???»; shocked cat meme + facepalm cutout; pink highlighter on «копипастом»; torn paper + scotch tape DIY zine",
+      "meme_caption_ru": "Хватит копипаста в чат"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Читаемая comparison table UI: Path A hosted/OAuth vs Path B mcp-gsheets+SA vs копипаст vs Python-скрипт — колонки «когда» и «минус»; лёгкий pink sticky «Path B»; без лица героя",
+      "alt": "Таблица сравнения Path A, Path B, копипаста и скрипта для MCP Sheets в финотделе"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow diagram: реестр Sheets → SA Share → mcp-gsheets → Agent read/update по doc_key → re-read → регламент CFO; badge «без сырых ПДн»; tape corner; без лица",
+      "alt": "Схема подготовки реестра и share service account без сырых ПДн"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake Cursor MCP panel + mcp.json snippet mcp-gsheets + green Connected status + MCP Logs check_access; sticky «перезапусти Cursor»; без лица героя",
+      "alt": "Скрин UI Cursor: mcp-gsheets, mcp.json и зелёный статус MCP"
+    }
+  }
+}

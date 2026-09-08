@@ -1,6 +1,6 @@
 {
-  "source": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
-  "total_links": 6,
+  "source": "/workspace/memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
+  "total_links": 10,
   "failed_count": 0,
   "verdict": "pass",
   "links": [
@@ -15,6 +15,16 @@
       "checked_url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/"
     },
     {
+      "url": "https://koda-fd.ru/blog/mcp-1c-cursor-ostatki-oboroty/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/mcp-1c-cursor-ostatki-oboroty/"
+    },
+    {
       "url": "https://koda-fd.ru/blog/google-sheets-api-integraciya-finotdel/",
       "status": 200,
       "ok": true,
@@ -23,6 +33,26 @@
       "kind": "internal_relative",
       "skipped": false,
       "checked_url": "https://koda-fd.ru/blog/google-sheets-api-integraciya-finotdel/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/reestr-dogovorov-google-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-dogovorov-google-sheets/"
+    },
+    {
+      "url": "https://koda-fd.ru/blog/reestr-upd-google-sheets/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/reestr-upd-google-sheets/"
     },
     {
       "url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
@@ -52,6 +82,16 @@
       "error": null,
       "kind": "external",
       "skipped": false
+    },
+    {
+      "url": "https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://koda-fd.ru/blog/platezhnyj-kalendar-google-sheets-n8n/"
     },
     {
       "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry",
