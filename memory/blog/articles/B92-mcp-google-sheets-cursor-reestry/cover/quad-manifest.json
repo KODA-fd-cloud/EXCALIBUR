@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "koda_artur_human",
+  "style_file": "memory/cover/quad-style-koda-artur-human.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова копипастом в чат?",
+  "mcp_note": "ONE GenerateImage fallback (gpt-image-2 MCP absent) with reference i2i, then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога указывает на крючок: реестр Google Sheets снова копипастом в чат Cursor",
+      "scene_hint": "лицо reference (очки, борода, quiff), фиолетовый пиджак + белая рубашка, жест к экрану; вокруг fake скрин Google Sheets реестра с doc_key, Telegram «скопируй диапазон», sticky «MCP!», розовый highlight на «копипастом», shocked cutout",
+      "meme_caption_ru": "Хватит копипаста в чат"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Тёмная UI-таблица Path A Marketplace+OAuth vs Path B mcp-gsheets+SA vs копипаст vs Python-скрипт: когда выбирать / минус; без лиц",
+      "alt": "Сравнение маршрутов Path A, Path B, копипаст и скрипт для MCP Sheets"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн)",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист-доска: doc_key, staging-лист, Share только на SA, без паспортов/ФИО payroll, ProtectedRange; стикер «без сырых ПДн»; без лиц",
+      "alt": "Чеклист подготовки реестра и безопасности без сырых ПДн"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake UI: Google Cloud Enable Sheets API → SA JSON → Share Editor → блок mcpServers mcp-gsheets в mcp.json с absolute path; без лиц",
+      "alt": "Скрин/мокап шагов Path B: GCP, service account и mcp.json"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "GenerateImage_fallback",
+  "tool": "cursor.GenerateImage",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "raw_artifact": "/opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "canvas": "cover/canvas-quad.png",
+  "note": "gpt-image-2 MCP unavailable; ONE GenerateImage i2i + local crop 2048x1152"
+}
