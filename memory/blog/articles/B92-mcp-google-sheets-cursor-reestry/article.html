@@ -1,4 +1,4 @@
-<p>Реестр договоров или УПД снова уезжает в чат Cursor кусками, а статусы правятся руками в Google Таблицах? MCP Google Sheets в Cursor – розетка: агент сам читает и обновляет строку по doc_key, без копипаста. За 1–2 часа выберете Path A (Marketplace + OAuth) или Path B (mcp-gsheets + SA), проверите MCP Logs и прогоните: найти строку → обновить статус → перечитать.</p>
+<p><a href="/blog/reestr-dogovorov-google-sheets/">Реестр договоров</a> или <a href="/blog/reestr-upd-google-sheets/">УПД</a> снова уезжает в чат Cursor кусками, а статусы правятся руками в Google Таблицах? MCP Google Sheets в Cursor – розетка: агент сам читает и обновляет строку по doc_key, без копипаста. За 1–2 часа выберете Path A (Marketplace + OAuth) или Path B (mcp-gsheets + SA), проверите MCP Logs и прогоните: найти строку → обновить статус → перечитать.</p>
 
 <p>MCP (Model Context Protocol) – протокол внешних инструментов Cursor. Без него агент видит только текст из чата; с MCP появляются tools, а Sheets API работает как защищенный курьер к таблице. JSON – как акт сверки: у поля свое место. Для финансиста это разница между "скопировал диапазон в чат" и "агент сам открыл нужную строку реестра".</p>
 
@@ -10,7 +10,7 @@
 </figure>
 
 
-<p><b>Подключайте MCP,</b> если реестр уже в Sheets (договоры, УПД, SaaS, заявки) и правки повторяются каждую неделю. <b>Не делайте</b> Sheets единственным источником при жестком audit trail, enterprise ACL или более 200–300 договоров – тогда CLM/1С, таблица = staging. Разовая правка пяти строк быстрее копипастом; пакет из 1С по cron – скриптом B82.</p>
+<p><b>Подключайте MCP,</b> если реестр уже в Sheets (договоры, УПД, <a href="/blog/reestr-saas-podpisok-sheets/">SaaS</a>, <a href="/blog/zayavka-na-rashod-google-forms/">заявки</a>) и правки повторяются каждую неделю. <b>Не делайте</b> Sheets единственным источником при жестком audit trail, enterprise ACL или более 200–300 договоров – тогда CLM/1С, таблица = staging. Разовая правка пяти строк быстрее копипастом; пакет из 1С по cron – скриптом B82. Живые остатки из базы – через <a href="/blog/mcp-1c-cursor-ostatki-oboroty/">MCP к 1С</a>, не через Sheets.</p>
 
 <table>
   <thead>
@@ -149,7 +149,7 @@
   <li><b>Cloud OAuth</b> – Login на cursor.com/agents или Path B с SA.</li>
 </ul>
 
-<p>При >80–100 заявок/мес Forms→Sheets – staging перед ERP/n8n. Ротируйте ключ SA и держите allowlist write-tools. Если write прошел, а re-read показывает старое значение – не повторяйте update сразу: сначала get_values и сверка диапазона.</p>
+<p>При >80–100 заявок/мес <a href="/blog/zayavka-na-rashod-google-forms/">Forms→Sheets</a> – staging перед ERP или <a href="/blog/platezhnyj-kalendar-google-sheets-n8n/">n8n поверх Sheets</a>. Ротируйте ключ SA и держите allowlist write-tools. Если write прошел, а re-read показывает старое значение – не повторяйте update сразу: сначала get_values и сверка диапазона.</p>
 
 <p><b>Сделайте:</b> чеклист share / env / MCP Logs / re-read. <b>Не делайте:</b> чинить 403 промптом без Share.</p>
 
@@ -159,8 +159,8 @@
   <li>Path B на одном реестре с doc_key и staging.</li>
   <li>Зеленый MCP + check_access + update с перечиткой.</li>
   <li>Allowlist write-tools; SA-ключ вне git.</li>
-  <li>Соседние реестры (договоры, УПД, SaaS) – MCP поверх таблицы.</li>
-  <li>При audit – ERP/CLM; cron – скрипт B82.</li>
+  <li>Соседние реестры (<a href="/blog/reestr-dogovorov-google-sheets/">договоры</a>, <a href="/blog/reestr-upd-google-sheets/">УПД</a>, <a href="/blog/reestr-saas-podpisok-sheets/">SaaS</a>) – MCP поверх таблицы.</li>
+  <li>При audit – ERP/CLM; cron – скрипт B82; остатки в 1С – <a href="/blog/mcp-1c-cursor-ostatki-oboroty/">MCP к 1С</a>.</li>
 </ol>
 
 <p>Сначала один реестр и стабильный DoD, потом масштабируйте. Материалы – в <a href="https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry" target="_blank" rel="noopener noreferrer">закрытом клубе KODA</a>.</p>
