@@ -1,0 +1,23 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "error": "❌ PUBLISH BLOCKER: missing credentials / allow flag",
+  "missing_env": [
+    "memory/site.env.local (file missing)",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH=yes",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST (or SSH_HOST)",
+    "FTP_USER",
+    "FTP_PASS/FTP_PASSWORD",
+    "FTP_ROOT"
+  ],
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "php_bytes": 8138555
+  },
+  "link_verify": "pass",
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}
