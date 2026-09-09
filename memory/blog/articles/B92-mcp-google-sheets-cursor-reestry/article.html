@@ -10,7 +10,7 @@
 </figure>
 
 
-<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки), правки повторяются каждую неделю, а копипаст бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или сотнях активных договоров – тогда CLM или 1С, таблица остается staging-слоем.</p>
+<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (<a href="/blog/reestr-dogovorov-google-sheets/">договоры</a>, <a href="/blog/reestr-upd-google-sheets/">УПД</a>, <a href="/blog/reestr-saas-podpisok-sheets/">SaaS</a>, <a href="/blog/zayavka-na-rashod-google-forms/">заявки</a>), правки повторяются каждую неделю, а копипаст бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или сотнях активных договоров – тогда CLM или 1С, таблица остается staging-слоем.</p>
 
 <table>
   <thead>
@@ -155,12 +155,13 @@
 
 <h2 id="next-steps">Закрепите регламент и решите, что автоматизировать дальше</h2>
 
-<p>В регламенте CFO: кто подтверждает write, какие колонки трогает агент (только status/comment), где ключ SA, как часто ротируете JSON (тема B93). При Forms→Sheets свыше 80–100 заявок/мес таблица – staging перед n8n/ERP.</p>
+<p>В регламенте CFO: кто подтверждает write, какие колонки трогает агент (только status/comment), где ключ SA, как часто ротируете JSON (тема B93). При Forms→Sheets свыше 80–100 заявок/мес таблица – staging перед n8n/ERP; платежный контур – в <a href="/blog/platezhnyj-kalendar-google-sheets-n8n/">календаре платежей Sheets + n8n</a>.</p>
 
 <ul>
   <li>Allowlist: read + точечный update; delete/append – отдельно.</li>
   <li>Отдельный SA на контур реестров, не общий "dev-ключ".</li>
-  <li>Тот же SA можно кормить cron из B82 – MCP не отменяет пакетную загрузку.</li>
+  <li>Тот же SA можно кормить cron из <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a> – MCP не отменяет пакетную загрузку.</li>
+  <li>Параллельный MCP к остаткам 1С – в <a href="/blog/mcp-1c-cursor-ostatki-oboroty/">гайде MCP 1С в Cursor</a>; здесь только Sheets.</li>
   <li>Cloud Agents: MCP настраивается в dashboard / Team Integrations; локальный OAuth сам не переезжает.</li>
 </ul>
 
