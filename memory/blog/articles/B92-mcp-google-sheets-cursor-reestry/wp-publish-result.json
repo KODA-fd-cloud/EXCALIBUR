@@ -1,0 +1,27 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "missing_vars": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS (or FTP_PASSWORD)",
+    "FTP_ROOT"
+  ],
+  "missing_files": [
+    "memory/site.env.local"
+  ],
+  "link_verify": "pass (prior; re-run blocked: PUBLIC_SITE_URL missing)",
+  "dry_run": "pass",
+  "dry_run_detail": {
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 8521815
+  },
+  "raw_output": "❌ PUBLISH BLOCKER: no Cloud Secrets / memory/site.env.local. Missing ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_*. Credentials not invented. Real publish skipped.",
+  "notes": "Noon cron continue_pipeline publish-only. Article artifacts ready (QA PASS, cover, schema, indexer). Preflight link-verify with --site-base skipped: PUBLIC_SITE_URL absent. Dry-run OK after Pillow install. Need Cloud Secrets then re-run only excalibur-blog-publish for B92."
+}
