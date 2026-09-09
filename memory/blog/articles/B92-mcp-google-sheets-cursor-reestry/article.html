@@ -5,6 +5,10 @@
 <p>На 09.09.2026 у финотдела два рабочих маршрута. Path A – официальный remote Google Sheets MCP по URL sheetsmcp.googleapis.com с OAuth вашего Google. Path B – community-сервер (mcp-gsheets или mcp-google-sheets) на service account: расшарили только нужный реестр, ключ в env, агент не видит весь Drive. Не путайте с плагинами Workspace: changelog Cursor от 03.08.2026 подтверждает Drive, Gmail и Calendar; отдельного Sheets cell-editor в Marketplace нет, а Drive MCP не пишет ячейки. Обзор протокола – в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; запись скриптом с тем же SA – в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение: когда финотделу нужен MCP Google Sheets, а когда хватит Drive или ручной правки" loading="lazy">
+</figure>
+
 
 <p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки), правки повторяются каждую неделю, а копипаст бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или сотнях активных договоров – тогда CLM или 1С, таблица остается staging-слоем.</p>
 
@@ -47,6 +51,10 @@
 <p><b>Сделайте:</b> до установки зафиксируйте DoD: найти строку по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> доступ "на весь Drive" ради одного реестра и не ждите "плагин Sheets из Marketplace" – его в официальном changelog нет.</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн в облако)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема подготовки реестра: обезличивание, doc_key, доступ SA/OAuth без сырых ПДн" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> – стабильный код вроде DOG-2026-014; по нему агент ищет строку. Лист <b>staging</b> – для импортов из 1С или Forms; боевой лист "Реестр" агент правит точечно в колонках status и comment.</p>
 
@@ -61,6 +69,10 @@
 <p><b>Сделайте:</b> отдельный SA или OAuth-пилот, доступ только к нужному файлу. <b>Не делайте:</b> боевые ПДн в тестовый реестр и auto-approve на update_values.</p>
 
 <h2 id="setup">Настройте Path A или Path B: GCP, mcp.json и первый запуск</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Чеклист настройки Path A remote Sheets MCP или Path B service account и mcp.json" loading="lazy">
+</figure>
+
 
 <p>Конфиг – в проектном <b>.cursor/mcp.json</b> или глобальном <b>~/.cursor/mcp.json</b>; при совпадении имени побеждает проектный. После правки сохраните и <b>перезапустите Cursor</b>. Поля url / command / env – в <a href="https://cursor.com/help/customization/mcp" target="_blank" rel="noopener">Cursor Help: MCP</a>.</p>
 
@@ -78,7 +90,7 @@
       "url": "https://sheetsmcp.googleapis.com/mcp/v1"
     }
   }
-}</pre>
+}</code></pre>
 
 <ol start="4">
   <li><b>Пройдите OAuth</b> при первом вызове tool. Tools: get_values, get_spreadsheet, update_values, update_spreadsheet, update_formulas, insert_dimension.</li>
@@ -105,7 +117,7 @@
       }
     }
   }
-}</pre>
+}</code></pre>
 
 <p>Альтернатива uvx (xing5/mcp-google-sheets 0.6.3): сузьте tools через ENABLED_TOOLS (~19 tools ≈ 13K tokens по умолчанию).</p>
 
@@ -120,7 +132,7 @@
       }
     }
   }
-}</pre>
+}</code></pre>
 
 <p><b>Сделайте Path B</b> для общего реестра и share одного файла. <b>Не делайте:</b> относительный путь к ключу и commit JSON в git.</p>
 
