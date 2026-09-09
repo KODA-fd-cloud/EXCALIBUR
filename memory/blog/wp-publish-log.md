@@ -322,3 +322,46 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-09 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| field | value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+| publish_date | 2026-09-09 |
+| verdict | FAIL (blocker) |
+| permalink | — |
+| post_id | — |
+| link_verify | pass (15/0, site-base https://koda-fd.ru) |
+| dry_run | pass (slug ok; title fixed in meta) |
+
+### Preconditions
+
+- article-qa.md: PASS
+- link-verify.json: pass
+- schema.jsonld: present
+- cover/cover.png + registry: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing** (≠ yes)
+- memory/site.env.local: **MISSING**
+
+### Missing vars (names only)
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH
+- PUBLIC_SITE_URL
+- FTP_HOST
+- FTP_USER
+- FTP_PASS (or FTP_PASSWORD)
+- FTP_ROOT
+
+### Result
+
+```
+❌ PUBLISH BLOCKER: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+Next: inject Cloud Secrets or create `memory/site.env.local`, then re-run publish agent.
+
