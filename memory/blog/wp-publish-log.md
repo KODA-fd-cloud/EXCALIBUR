@@ -322,3 +322,38 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-09 — B92 mcp-google-sheets-cursor-reestry — **FAIL (PUBLISH BLOCKER)**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **FAIL** |
+| permalink | — |
+| dry_run | pass (PHP bytes 8521815) |
+| link_verify | prior pass; re-run blocked (PUBLIC_SITE_URL missing) |
+| method | skipped — no credentials |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- cover/cover.png + cover-registry.json: present
+- schema.jsonld: present
+- indexer: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **missing**
+- PUBLIC_SITE_URL / FTP_*: **missing**
+- memory/site.env.local: **absent**
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+missing_vars: EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_HOST, FTP_USER, FTP_PASS (or FTP_PASSWORD), FTP_ROOT
+dry_run: pass
+permalink: (empty)
+```
+
+Next: inject Cloud Secrets, then re-run only `excalibur-blog-publish` for B92.

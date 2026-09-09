@@ -1,0 +1,70 @@
+{
+  "site_base": "https://koda-fd.ru",
+  "dry_run_opportunities": 351,
+  "junk_keyword_filtered": 349,
+  "auto_apply": "SKIPPED — junk anchors (e.g. '2026'); prefer manual contextual",
+  "manual_applied": {
+    "outbound_B92": [
+      {
+        "target": "B51",
+        "slug": "reestr-dogovorov-google-sheets",
+        "anchor": "договоры"
+      },
+      {
+        "target": "B58",
+        "slug": "reestr-upd-google-sheets",
+        "anchor": "УПД"
+      },
+      {
+        "target": "B83",
+        "slug": "reestr-saas-podpisok-sheets",
+        "anchor": "SaaS"
+      },
+      {
+        "target": "B59",
+        "slug": "zayavka-na-rashod-google-forms",
+        "anchor": "заявки"
+      },
+      {
+        "target": "B24",
+        "slug": "platezhnyj-kalendar-google-sheets-n8n",
+        "anchor": "календаре платежей Sheets + n8n"
+      },
+      {
+        "target": "B82",
+        "slug": "google-sheets-api-integraciya-finotdel",
+        "anchor": "интеграции Sheets API"
+      },
+      {
+        "target": "B80",
+        "slug": "mcp-1c-cursor-ostatki-oboroty",
+        "anchor": "гайде MCP 1С в Cursor"
+      }
+    ],
+    "inbound_to_B92": [
+      {
+        "source": "B82",
+        "anchor": "MCP Google Sheets"
+      },
+      {
+        "source": "B21",
+        "anchor": "MCP Google Sheets в Cursor"
+      },
+      {
+        "source": "B80",
+        "anchor": "MCP Google Sheets в Cursor"
+      }
+    ],
+    "count": 10,
+    "skipped_dead": [
+      "B02 avtomatizaciya-n8n-ai-agents (404)",
+      "B03 podklyuchenie-mcp-cursor (404)"
+    ]
+  },
+  "preexisting_outbound_B92": [
+    "mcp-cursor-finansist-instrumenty",
+    "google-sheets-api-integraciya-finotdel",
+    "obezlichivanie-dannyh-chatgpt-finansist",
+    "avtomatizaciya-finansov-no-code"
+  ]
+}
