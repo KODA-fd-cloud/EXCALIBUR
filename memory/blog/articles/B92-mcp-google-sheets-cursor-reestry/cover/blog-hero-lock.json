@@ -1,0 +1,13 @@
+{
+  "hero_id": "blog-host-male-reference",
+  "name_ru": "Ведущий блога (лицо с reference)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "reference_url_source": "koda-fd.ru/assets",
+  "visual_lock": {
+    "style": "reference face lock: round glasses, voluminous quiff, neat beard",
+    "palette": "#0a0a0f, #8b5cf6, #60a5fa, #FF1493"
+  },
+  "outfit_rule": "Agent-chosen outfit: sleek purple or dark violet blazer, white shirt, confident tech-editor pose — do NOT copy the red suit from the reference photo.",
+  "prompt_fragment": "Cutout of the SAME man from the reference photo: friendly 30s, round black-rimmed glasses, messy voluminous light-brown quiff, neat salt-and-pepper beard — preserve EXACT facial likeness. Outfit may change (purple blazer + white shirt)."
+}

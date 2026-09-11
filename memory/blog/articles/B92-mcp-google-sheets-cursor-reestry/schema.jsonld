@@ -31,8 +31,8 @@
       "@id": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#article",
       "headline": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
       "description": "MCP Google Sheets в Cursor для финотдела: mcp-gsheets + service account, share реестра, mcp.json, сценарий find-update-re-read по doc_key, Path A OAuth и безопасность без сырых ПДн.",
-      "datePublished": "2026-08-24",
-      "dateModified": "2026-08-24",
+      "datePublished": "2026-09-11",
+      "dateModified": "2026-09-11",
       "inLanguage": "ru",
       "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/",
       "mainEntityOfPage": {
@@ -41,7 +41,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/08/mcp-google-sheets-cursor-reestry-cover.png",
+        "url": "https://koda-fd.ru/blog/wp-content/uploads/2026/09/mcp-google-sheets-cursor-reestry-cover.png",
         "width": 1200,
         "height": 675,
         "caption": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor"
@@ -116,6 +116,93 @@
             "@type": "Answer",
             "text": "5 строк раз в месяц - хватит ручного редактирования. MCP окупается при еженедельных правках через Cursor без копипаста."
           }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#howto",
+      "name": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+      "description": "Path B: Google Cloud, service account и mcp-gsheets в mcp.json; Path A OAuth; сценарий найти строку по doc_key, обновить status/comment и перечитать через MCP Logs.",
+      "inLanguage": "ru",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Cursor (актуальная версия)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Node.js v20+ и npx"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "mcp-gsheets (freema/mcp-gsheets)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Cloud Console (Google Sheets API)"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "JSON-ключ service account вне git"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Реестр Google Sheets с колонкой doc_key"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Оцените, когда MCP Sheets нужен финотделу",
+          "text": "Подключайте MCP, если реестр уже в Google Таблицах и правки повторяются каждую неделю. Не делайте Sheets единственным источником правды при жёстком audit trail. Зафиксируйте DoD: найти строку по doc_key, сменить status/comment, перечитать.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#when-needed"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Подготовьте реестр и безопасность",
+          "text": "Одна строка = одна сущность; колонка doc_key стабильна. Без сырых ПДн в облако. Отдельный SA, Share одного файла ролью «Редактор» без «Уведомить»; JSON-ключ только в GOOGLE_APPLICATION_CREDENTIALS.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#prep-security"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Настройте Path B: GCP, SA и mcp.json",
+          "text": "Включите Google Sheets API, создайте service account и JSON-ключ, расшарьте реестр на client_email. Добавьте блок mcp-gsheets в .cursor/mcp.json или ~/.cursor/mcp.json с npx -y mcp-gsheets@latest и абсолютным путём к ключу. Перезапустите Cursor, проверьте зелёный статус и sheets_check_access.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Подключите Path A: Marketplace OAuth",
+          "text": "Если плагин google-sheets доступен: Customize → MCPs → Add → OAuth с минимальными scopes. Не полагайтесь только на зелёный индикатор — проверьте живой read/write. Для production держите Path B.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#path-a"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Прогоните сценарий find → update → re-read",
+          "text": "По doc_key найдите строку через get_values, approve sheets_update_values только в status/comment, затем перечитайте ту же строку и сверьте diff. Human-in-the-loop на каждый write-tool.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#registry-scenario"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Проверьте результат и типичные ошибки",
+          "text": "Чеклист: Share / env / MCP Logs / re-read. 403 — нет Share или неверный путь к JSON; серый MCP — Node v20+ и абсолютный путь; 429 — батчите; append — явно INSERT_ROWS.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#verify"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Закрепите контур и следующие шаги",
+          "text": "Path B на одном реестре с doc_key и staging; allowlist write-tools; SA-ключ вне git. Соседние реестры (договоры, УПД, SaaS) — MCP поверх готовой таблицы; при audit — ERP/CLM.",
+          "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#next-steps"
         }
       ]
     }
