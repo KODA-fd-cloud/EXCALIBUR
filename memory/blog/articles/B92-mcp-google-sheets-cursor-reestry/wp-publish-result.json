@@ -1,0 +1,20 @@
+{
+  "verdict": "blocker",
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-11",
+  "permalink": null,
+  "post_id": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "php_bytes": 7515731
+  },
+  "link_verify": "pass",
+  "blockers": [
+    "no memory/site.env.local",
+    "no EXCALIBUR_BLOG_ALLOW_PUBLISH=yes",
+    "no FTP_*/SSH_* credentials"
+  ],
+  "raw_error": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}
