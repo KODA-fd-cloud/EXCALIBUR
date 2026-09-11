@@ -1,0 +1,13 @@
+{
+  "hero_id": "koda-artur-human",
+  "name_ru": "Ведущий блога (лицо с reference)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "reference_url_source": "fallback-batch-placeholder; local i2i via blog-hero-reference.png",
+  "visual_lock": {
+    "style": "glasses + quiff + beard face lock from blog-hero-reference.png",
+    "palette": "#F5F5F0, #FF1493, #1A1A2E, #FFD93D"
+  },
+  "outfit_rule": "Outfit FREE for agent: purple blazer + white shirt, confident fintech editor pose — do NOT copy red suit or red bowtie from the reference photo.",
+  "prompt_fragment": "Cutout of the SAME man from the input reference photo: late 20s–30s, thick black round glasses, textured light-brown quiff/pompadour, short salt-and-pepper beard, warm friendly smile — preserve EXACT facial likeness; only clothing/pose change."
+}
