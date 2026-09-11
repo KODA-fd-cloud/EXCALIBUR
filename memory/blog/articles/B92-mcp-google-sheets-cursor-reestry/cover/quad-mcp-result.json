@@ -1,0 +1,9 @@
+{
+  "url": "file:///opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "mcp_mode": "cursor.GenerateImage_i2i_fallback",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "input_urls_batch": [
+    "https://koda-fd.ru/assets/CAcjfm4N.jpg"
+  ],
+  "note": "user-mcp-kv/gpt-image-2 unavailable; ONE GenerateImage with reference_image_paths"
+}
