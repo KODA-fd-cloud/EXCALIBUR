@@ -322,3 +322,21 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-12 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| field | value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| article_dir | memory/blog/articles/B92-mcp-google-sheets-cursor-reestry |
+| link-verify | pass (7/7, `--site-base https://koda-fd.ru`) |
+| dry-run | pass (slug ok, PHP payload built) |
+| real publish | blocked |
+
+Missing env (names only): `memory/site.env.local`, `EXCALIBUR_BLOG_ALLOW_PUBLISH`, `PUBLIC_SITE_URL`, `FTP_HOST`, `FTP_USER`, `FTP_PASS`, `FTP_ROOT` (or `SSH_HOST`/`SSH_USER`/`SSH_PASS` alternative).
+
+Ledger `shared/published-articles.md`: not updated (no permalink).
+telegram_notify: skipped (director only).

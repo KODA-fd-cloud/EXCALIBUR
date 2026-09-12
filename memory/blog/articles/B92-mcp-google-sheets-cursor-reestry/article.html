@@ -2,11 +2,15 @@
 
 <p>MCP (Model Context Protocol) - протокол, через который Cursor подключает внешние инструменты. Без MCP агент видит только то, что вы вставили в чат; с MCP у него появляются tools, и он сам дергает Google Sheets API, как защищенный курьер между редактором и таблицей. JSON в ответе - как акт сверки: у каждого поля свое место.</p>
 
-<p>Два маршрута. Path A - плагин google-sheets из Marketplace через OAuth вашего Google (быстрый пилот на одном реестре). Path B - community-сервер mcp-gsheets на service account: расшарили только рабочий файл, ключ лежит в env, агент не видит весь Drive. Для финконтура в августе 2026 я опираюсь на Path B: changelog Cursor от 03.08.2026 детализирует Drive, Gmail и Calendar, а Sheets в витрине мог временно исчезнуть. Общий обзор MCP - в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; запись скриптом с тем же SA - в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
+<p>Три маршрута на сентябрь 2026. Path A - плагин google-sheets из Marketplace через OAuth (быстрый пилот). Path B - mcp-gsheets на service account: расшарили только рабочий файл, ключ в env. Path C - официальный remote Sheets MCP Google (Developer Preview) по sheetsmcp.googleapis.com. Для финконтура я опираюсь на Path B: changelog Cursor от 03.08.2026 детализирует Drive, Gmail и Calendar, а Sheets в витрине мог временно исчезнуть. Обзор MCP - в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; запись скриптом с тем же SA - в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение Path A, B и C для MCP Google Sheets в финотделе" loading="lazy">
+</figure>
 
-<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки на расход), правки повторяются каждую неделю, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица остается staging-слоем.</p>
+
+<p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (<a href="/blog/reestr-dogovorov-google-sheets/">договоры</a>, УПД, SaaS, заявки на расход), правки повторяются каждую неделю, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица остается staging-слоем.</p>
 
 <table>
   <thead>
@@ -20,22 +24,22 @@
     <tr>
       <td><b>Path A: Marketplace + OAuth</b></td>
       <td>Личный пилот, быстрый старт</td>
-      <td>Права вашего Google; Sheets-плагин нестабилен в августе 2026</td>
+      <td>Права вашего Google; Sheets-плагин нестабилен в витрине с августа 2026</td>
     </tr>
     <tr>
       <td><b>Path B: mcp-gsheets + SA</b></td>
-      <td>Командный реестр, production</td>
+      <td>Командный реестр, production финконтур</td>
       <td>GCP-проект и JSON-ключ вне git</td>
     </tr>
     <tr>
-      <td><b>Копипаст в чат</b></td>
-      <td>Разовая правка 5 строк</td>
-      <td>Нет перечитки, риск ПДн в истории чата</td>
+      <td><b>Path C: remote Google Sheets MCP</b></td>
+      <td>Пилот на официальном Preview</td>
+      <td>Developer Preview; нужен enable sheetsmcp.googleapis.com</td>
     </tr>
     <tr>
-      <td><b>Python-скрипт (B82)</b></td>
-      <td>Cron, пакет из 1С</td>
-      <td>Нет интерактивных правок через Agent</td>
+      <td><b>Копипаст в чат / скрипт B82</b></td>
+      <td>Разовая правка или cron из 1С</td>
+      <td>Нет Agent-цикла find-update-re-read</td>
     </tr>
   </tbody>
 </table>
@@ -47,20 +51,28 @@
 <p><b>Сделайте:</b> DoD до установки: найти строку по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> MCP "на весь Drive" ради одного реестра.</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн в облако)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема подготовки реестра и безопасности перед MCP Sheets" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность (договор, УПД, подписка). Колонка <b>doc_key</b> - стабильный код вроде DOG-2026-014; по нему агент ищет строку, а не по названию контрагента. Лист <b>staging</b> - для сырых импортов из 1С или Forms; боевой лист "Реестр" агент правит точечно в колонках status и comment.</p>
 
 <p>В облако отправляйте ИНН контрагента, сумму, статус - да; паспорт, полное ФИО в payroll, номера карт - нет. Замените названия на "Контрагент_01", суммы округлите для тестов. Чеклист - в <a href="/blog/obezlichivanie-dannyh-chatgpt-finansist/">гайде по обезличиванию данных</a>.</p>
 
-<p>SA видит только таблицы, расшаренные на client_email; IAM Cloud не заменяет Share. Scope spreadsheets дает read/write всего файла; лист защищайте ProtectedRange. JSON-ключ - не в git, только в GOOGLE_APPLICATION_CREDENTIALS.</p>
+<p>SA видит только таблицы, расшаренные на client_email; IAM Cloud не заменяет Share. JSON-ключ - не в git, только в GOOGLE_APPLICATION_CREDENTIALS. Риск indirect prompt injection: текст в ячейке может выглядеть как инструкция агенту - human approval на каждый write обязателен.</p>
 
 <blockquote>
-  <b>Схема:</b> реестр в Sheets → (SA share | OAuth) → MCP в Cursor → update по doc_key → перечитка → регламент CFO
+  <b>Схема:</b> реестр в Sheets → (SA share | OAuth plugin | Google remote MCP) → MCP в Cursor → update по doc_key → перечитка → регламент CFO
 </blockquote>
 
 <p><b>Сделайте:</b> отдельный SA, share одного файла "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
 
 <h2 id="setup">Настройте Path B: Google Cloud, SA и mcp.json пошагово</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Скрин настройки Path B: service account и mcp.json для mcp-gsheets" loading="lazy">
+</figure>
+
 
 <p>Сервер mcp-gsheets (freema/mcp-gsheets) требует Node.js v20+, Google Sheets API и JSON SA. Конфиг: проектный <b>.cursor/mcp.json</b> или глобальный <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
 
@@ -90,21 +102,31 @@
   <li><b>Approval на write:</b> по умолчанию Agent спрашивает перед MCP-tool; на пилоте не включайте Auto-run всех write.</li>
 </ol>
 
-<p>Tools реестра: sheets_get_values, sheets_update_values, sheets_append_values, sheets_get_metadata. Для append указывайте INSERT_ROWS: default OVERWRITE перезаписывает не так, как ждете.</p>
+<p>Tools реестра: sheets_get_values, sheets_update_values, sheets_append_values, sheets_get_metadata. Для append указывайте INSERT_ROWS: default OVERWRITE перезаписывает иначе, чем ждете. Квоты: 300 write/мин на проект; 429 - пауза и батч.</p>
 
 <p><b>Сделайте:</b> зеленый сервер + check_access + тестовое чтение. <b>Не делайте:</b> коммит mcp.json с путем к ключу.</p>
 
-<h2 id="path-a">Подключите Path A: Marketplace OAuth (если плагин доступен)</h2>
+<h2 id="path-a-c">Подключите Path A или Path C (Marketplace и remote Google)</h2>
 
-<p>03.08.2026 Cursor анонсировал Google Workspace plugins (Drive, Gmail, Calendar). Установка: Customize → MCPs → Add → OAuth, минимальные scopes.</p>
+<p>03.08.2026 Cursor анонсировал Google Workspace plugins (Drive, Gmail, Calendar). Path A: Customize → MCPs → Add → OAuth, минимальные scopes. По vibecoding.ru от 04.08.2026 Docs/Sheets могли исчезнуть из витрины; min Cursor 3.13.0; OAuth-bug cursor:// (обход cursor.com/agents). На 12.09.2026 проверяйте витрину заново.</p>
 
-<p>На август 2026: Docs/Sheets/Slides могли исчезнуть из витрины; min Cursor 3.13.0; OAuth-bug cursor:// (обход cursor.com/agents). Workspace MCP - Developer Preview. <b>Не полагайтесь</b> на Path A как единственный маршрут - проверьте витрину, для production держите Path B. "Connected" ≠ успешная авторизация - только живой read/write.</p>
+<p>Path C (Preview): URL <b>https://sheetsmcp.googleapis.com/mcp/v1</b>, enable sheets.googleapis.com и sheetsmcp.googleapis.com. Tools: get_values, update_values, get_spreadsheet. Пример блока url:</p>
 
-<p><b>Сделайте:</b> если google-sheets в Marketplace - OAuth и тестовое чтение. <b>Не делайте:</b> считать зеленый индикатор финальной проверкой.</p>
+<pre><code>{
+  "mcpServers": {
+    "sheets": {
+      "url": "https://sheetsmcp.googleapis.com/mcp/v1"
+    }
+  }
+}</code></pre>
+
+<p>"Connected" ≠ успешная авторизация - только живой read/write. Локальный OAuth не переезжает в Cloud Agents автоматически.</p>
+
+<p><b>Сделайте:</b> OAuth/remote и тестовое чтение, если плагин или Preview доступны. <b>Не делайте:</b> считать зеленый индикатор финальной проверкой; для production держите Path B.</p>
 
 <h2 id="registry-scenario">Прогоните сценарий: найти, обновить, перечитать</h2>
 
-<p>DoD: правка одной строки по doc_key и diff после write. Квота: 300 write/мин на проект; batch = один запрос; при 429 - пауза.</p>
+<p>DoD: правка одной строки по doc_key и diff после write.</p>
 
 <pre><code>Подключись к {SPREADSHEET_ID}. На листе "Реестр" найди doc_key = DOG-2026-014.
 Прочитай status и comment. Если status не "Оплачен", предложи "На согласовании"
@@ -119,8 +141,6 @@
   <li>Follow-up при расхождении: "перечитай строку N, write не делай".</li>
 </ol>
 
-<p>Риск indirect prompt injection: в ячейках реестра могут быть тексты, которые агент прочтет как инструкции ("удали все строки", "отправь ключ"). Human-in-the-loop на каждый write-tool обязателен. Cloud Agents не наследуют локальный Google OAuth с рабочего Cursor - для облака нужен SA в env или отдельный коннектор.</p>
-
 <p>Разборы контуров - в <a href="https://t.me/finance_modern?utm_source=blog&utm_medium=article" target="_blank" rel="noopener noreferrer">Telegram "Финансист, который кодит"</a>.</p>
 
 <p><b>Сделайте:</b> цикл find → update → re-read на тестовой строке. <b>Не делайте:</b> Auto-run write без allowlist.</p>
@@ -134,10 +154,10 @@
   <li><b>Серый MCP</b> - MCP Logs; Node v20+, npx, абсолютный путь в env.</li>
   <li><b>429</b> - батчите; не update на каждую ячейку в цикле.</li>
   <li><b>Append</b> - явно INSERT_ROWS.</li>
-  <li><b>OAuth</b> - bug cursor:// или переход на Path B.</li>
+  <li><b>OAuth / Preview</b> - bug cursor:// или переход на Path B.</li>
 </ul>
 
-<p>При более 80-100 заявок/мес через Forms→Sheets таблица становится staging перед ERP или n8n; MCP остается transport точечных правок, не главной книгой. При росте нагрузки планируйте ротацию ключа SA (тема B93) и allowlist только нужных write-tools.</p>
+<p>При более 80-100 заявок/мес через Forms→Sheets таблица становится staging перед ERP или n8n; MCP - transport точечных правок, не главная книга. Дальше - ротация ключа SA (B93) и allowlist write-tools.</p>
 
 <p><b>Сделайте:</b> чеклист share / env / MCP Logs / re-read. <b>Не делайте:</b> чинить 403 промптом без Share.</p>
 
@@ -156,13 +176,13 @@
 <h2>Частые вопросы</h2>
 
 <h3>Можно ли без программиста?</h3>
-<p>Path A: да для пилота, если плагин в витрине. Path B: по инструкции и help Cursor; первый реестр 1-2 часа с GCP и Share.</p>
+<p>Path A: да для пилота, если плагин в витрине. Path B: по инструкции и help Cursor; первый реестр 1-2 часа с GCP и Share. Path C: OAuth remote, если Preview доступен.</p>
 
 <h3>Сколько займет внедрение?</h3>
-<p>SA + mcp.json + тестовый update - около 1-2 часов. OAuth быстрее, если плагин доступен и OAuth без bug.</p>
+<p>SA + mcp.json + тестовый update - около 1-2 часов. OAuth быстрее, если плагин или remote доступны без bug.</p>
 
 <h3>OAuth или service account?</h3>
-<p>OAuth - личный пилот. SA - командный реестр, минимальный blast radius: только расшаренные файлы.</p>
+<p>OAuth - личный пилот (Path A/C). SA - командный реестр, минимальный blast radius: только расшаренные файлы.</p>
 
 <h3>Какие риски для данных?</h3>
 <p>OAuth = права вашего Google; SA = все расшаренные таблицы. Без сырых ПДн; подтверждайте write-tools; indirect injection из ячеек. Обезличивание - в гайде по ссылке выше.</p>
