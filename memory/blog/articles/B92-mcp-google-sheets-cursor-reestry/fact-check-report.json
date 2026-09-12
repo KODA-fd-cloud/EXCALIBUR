@@ -9,14 +9,14 @@
     {
       "fact": "2026",
       "kind": "date_or_year",
-      "context": "ент не видит весь Drive. Для финконтура в августе 2026 я опираюсь на Path B: changelog Cursor от 03.08.20",
+      "context": "каждого поля свое место. Три маршрута на сентябрь 2026. Path A - плагин google-sheets из Marketplace чер",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
     {
       "fact": "2 часов",
       "kind": "metric_or_duration",
-      "context": "дрение? SA + mcp.json + тестовый update - около 1-2 часов. OAuth быстрее, если плагин доступен и OAuth без",
+      "context": "дрение? SA + mcp.json + тестовый update - около 1-2 часов. OAuth быстрее, если плагин или remote доступны б",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },

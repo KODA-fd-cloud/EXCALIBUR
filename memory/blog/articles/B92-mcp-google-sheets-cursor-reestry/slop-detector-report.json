@@ -1,8 +1,8 @@
 {
-  "verdict": "pass",
+  "verdict": "warning",
   "total_slop_hits": 0,
   "slop_hits": [],
-  "total_over_long_sentences": 4,
+  "total_over_long_sentences": 6,
   "over_long_sentences": [
     {
       "sentence": "Без MCP агент видит только то, что вы вставили в чат; с MCP у него появляются tools, и он сам дергает Google Sheets API, как защищенный курьер между редактором и таблицей",
@@ -17,14 +17,22 @@
       "word_count": 26
     },
     {
-      "sentence": "Маршрут Когда выбирать Минус Path A: Marketplace + OAuth Личный пилот, быстрый старт Права вашего Google; Sheets-плагин нестабилен в августе 2026 Path B: mcp-gsheets + SA Командный реестр, production GCP-проект и JSON-ключ вне git Копипаст в чат Разовая правка 5 строк Нет перечитки, риск ПДн в истории чата Python-скрипт (B82) Cron, пакет из 1С Нет интерактивных правок через Agent Вердикт: если реестр в Sheets и правки идут через Cursor - MCP убирает копипаст",
-      "word_count": 66
+      "sentence": "Маршрут Когда выбирать Минус Path A: Marketplace + OAuth Личный пилот, быстрый старт Права вашего Google; Sheets-плагин нестабилен в витрине с августа 2026 Path B: mcp-gsheets + SA Командный реестр, production финконтур GCP-проект и JSON-ключ вне git Path C: remote Google Sheets MCP Пилот на официальном Preview Developer Preview; нужен enable sheetsmcp",
+      "word_count": 49
+    },
+    {
+      "sentence": "com Копипаст в чат / скрипт B82 Разовая правка или cron из 1С Нет Agent-цикла find-update-re-read Вердикт: если реестр в Sheets и правки идут через Cursor - MCP убирает копипаст",
+      "word_count": 26
+    },
+    {
+      "sentence": "Схема: реестр в Sheets → (SA share | OAuth plugin | Google remote MCP) → MCP в Cursor → update по doc_key → перечитка → регламент CFO Сделайте: отдельный SA, share одного файла \"Редактор\", без \"Уведомить\"",
+      "word_count": 28
     }
   ],
   "readability": {
     "score": 100.0,
     "level": "Very Easy (Simple conversational / children's text)",
-    "avg_sentence_len": 9.2,
-    "avg_syllables_per_word": 1.5
+    "avg_sentence_len": 8.2,
+    "avg_syllables_per_word": 1.4
   }
 }
