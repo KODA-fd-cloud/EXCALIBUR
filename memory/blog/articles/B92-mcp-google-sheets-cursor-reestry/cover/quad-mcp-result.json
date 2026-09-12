@@ -1,0 +1,9 @@
+{
+  "url": "file:cover/canvas-quad.png",
+  "source": "cursor.GenerateImage",
+  "filename": "B92-canvas-quad-v2.png",
+  "reference_image_paths": [
+    "memory/cover/assets/blog-hero-reference.png"
+  ],
+  "note": "gpt-image-2 unavailable; ONE GenerateImage i2i; gutter_detect PASS on v2"
+}
