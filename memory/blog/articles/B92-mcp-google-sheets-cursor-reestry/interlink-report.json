@@ -1,0 +1,34 @@
+{
+  "topic_id": "B92",
+  "site_base": "https://koda-fd.ru",
+  "note": "CLI has no --article-dir; dry-run over corpus. Auto --apply for B92 SKIPPED: all 11 corpus matches are false-positive keyword '2026'. Manual curated links applied instead (no plain-text volume change).",
+  "auto_opportunities_b92": 11,
+  "auto_applied_b92": 0,
+  "auto_rejected_false_positive_year": 11,
+  "manual_applied": [
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B82-google-sheets-api-integraciya-finotdel",
+      "anchor": "B82",
+      "where": "FAQ Чем B92 отличается от B82"
+    },
+    {
+      "source": "B21-mcp-cursor-finansist-instrumenty",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "anchor": "Sheets-сервер",
+      "where": "comparison table row облачная таблица"
+    }
+  ],
+  "existing_writer_outbound": [
+    "/blog/mcp-cursor-finansist-instrumenty/",
+    "/blog/google-sheets-api-integraciya-finotdel/",
+    "/blog/avtomatizaciya-finansov-no-code/",
+    "/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+  ],
+  "interlink_count": {
+    "auto_new": 0,
+    "manual_new": 2,
+    "outbound_internal_total_b92": 5,
+    "inbound_new": 1
+  }
+}
