@@ -2,9 +2,9 @@
   "article": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
   "verdict": "pass",
-  "total_extracted_facts": 6,
+  "total_extracted_facts": 8,
   "verified_facts_count": 1,
-  "unverified_facts_count": 5,
+  "unverified_facts_count": 7,
   "facts": [
     {
       "fact": "2026",
@@ -16,7 +16,21 @@
     {
       "fact": "2 часов",
       "kind": "metric_or_duration",
-      "context": "дрение? SA + mcp.json + тестовый update – около 1–2 часов. OAuth Local быстрее, если auth без bug. OAuth ил",
+      "context": "Sheets API + mcp.json + тестовый update – около 1–2 часов. OAuth Local быстрее (15–30 минут), если auth без",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 минут",
+      "kind": "metric_or_duration",
+      "context": "update – около 1–2 часов. OAuth Local быстрее (15–30 минут), если auth без Error 400. OAuth или service acco",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "014",
+      "kind": "large_number",
+      "context": "копипаст бесит. Типичный запрос: \"найди DOG-2026-014 и поставь статус На согласовании\" – без скриншотов",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
@@ -37,14 +51,14 @@
     {
       "fact": "403",
       "kind": "large_number",
-      "context": "re / env / MCP Logs / re-read. Не делайте: чинить 403 промптом без Share. Что автоматизировать дальше Pa",
+      "context": "ogs / re-read / ротация ключа. Не делайте: чинить 403 промптом без Share. Что автоматизировать дальше Pa",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "429",
       "kind": "large_number",
-      "context": "hboard MCP или Login на cursor.com/agents. Почему 429 при правках реестра? Один SA бьет в 60 req/min/use",
+      "context": "://cursor.com/agents, не in-app cursor://. Почему 429 при правках реестра? Один SA = один user и лимит 6",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     }

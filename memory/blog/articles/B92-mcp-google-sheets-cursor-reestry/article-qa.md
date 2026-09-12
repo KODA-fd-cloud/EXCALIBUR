@@ -1,24 +1,24 @@
 # QA: B92 mcp-google-sheets-cursor-reestry
 
 date: 2026-09-12
-score_total: 74/100
-core_eeat_lite: 18/20
+score_total: 95/100
+core_eeat_lite: 19/20
 link_verify: pass
 utility_gate: pass
-verdict: FAIL
+verdict: PASS
 
 ## Scores
 
 | Блок | Вес | Балл | Комментарий |
 |------|-----|------|-------------|
-| SEO structure | 20 | 18 | primary в лиде; FAQ 7; H2 how-to ×7; таблица Path A/B; meta_ab OK |
-| GEO / citability | 25 | 22 | Answer-first lead 425; blockquote workflow; ol×3; pre/code mcp.json + промпт; −3 объём ниже контракта |
-| CORE-EEAT lite | 15 | 13 | 18/20; −1 Wordstat MCP-KV offline; −1 объём (Ept/Contract) |
-| Human voice | 15 | 15 | 0 slop hits, Flesch RU 100, режим B Ольга, «Сделайте/Не делайте» ×6 |
-| Fact safety | 15 | 14 | fact-check PASS; 5 unverified = HTTP-коды/длительности из research, не market-claims |
-| Contract HTML | 10 | 2 | linter PASS, CTA club+TG ✓; **объём plain ~7216 вне 8500–9500**; meta.char_count=9313 считает HTML с тегами |
+| SEO structure | 20 | 18 | primary в лиде; FAQ 7; H2 how-to ×8; таблица Path A/B; meta_ab OK |
+| GEO / citability | 25 | 24 | Answer-first lead 425; blockquote workflow; ol×3; pre/code mcp.json + промпт |
+| CORE-EEAT lite | 15 | 14 | 19/20; −1 Wordstat MCP-KV offline |
+| Human voice | 15 | 15 | 0 slop hits, Flesch RU 100, режим B Ольга, «Сделайте/Не делайте» |
+| Fact safety | 15 | 14 | fact-check PASS; unverified = HTTP-коды/длительности из research, не market-claims |
+| Contract HTML | 10 | 10 | linter PASS; CTA club+TG ✓; plain **9280** в банде 8500–9500; meta.char_count = plain |
 
-**Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate pass — **не выполнен** (score 74 < 80; объём вне контракта).
+**Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate pass — **выполнен**.
 
 ## Hard bans (KODA)
 
@@ -30,25 +30,12 @@ verdict: FAIL
 | «мы в KODA» | нет |
 | salebot / koda_salebot | нет |
 | article_mode | B |
-| char_count (plain, без тегов) | **7216 — FAIL** (нужно 8500–9500) |
-| char_count в meta | 9313 = `len(html)` — **неверный метод** |
+| char_count (plain, без тегов) | **9280 — PASS** (8500–9500) |
+| char_count в meta | 9280 = plain ✓ |
 | CTA | club.koda-fd.ru ×1 + t.me/finance_modern ×1 |
 | TOC с якорями | нет |
 
-## Блокеры для writer (FIX cycle 1)
-
-1. **Объём:** довести plain text (HTML без тегов, пробелы считаются) до **8500–9500**. Сейчас ~7216 (−1284 до низа банда). Не раздувать тегами/разметкой.
-2. **meta.char_count:** пересчитать как plain text и записать реальное значение в банде.
-3. **Что дописать (предпочтительно, без полного рерайта):**
-   - Path B: 1–2 шага про GCP enable Sheets API / где лежит client_email (коротко).
-   - Сценарий: явный пример диапазона/листа после write (diff status/comment).
-   - Verify: 1 абзац про ротацию SA-ключа + allowlist write-tools (уже намёки есть — развернуть).
-   - FAQ: чуть плотнее ответы (Cloud Agents / 429 / B82), без воды.
-4. **Не трогать:** угол Path A vs Path B, research-факты (60/user, 300/project, cursor://), CTA, internal links, режим B.
-
-После правки — снова geo-qa (скрипты + article-qa).
-
-## CORE-EEAT lite: 18/20
+## CORE-EEAT lite: 19/20
 
 | ID | ✓/✗ | Примечание |
 |----|-----|------------|
@@ -72,8 +59,7 @@ verdict: FAIL
 | Exp03 | ✓ | 0 slop hits |
 | Ept01 | ✓ | ПДн, Share SA, approval write, injection |
 | Ept02 | ✓ | Internal ×4: mcp-cursor…, google-sheets-api…, no-code, обезличивание |
-| — | ✗ | Wordstat infra offline (−1) |
-| — | ✗ | Объём plain вне контракта (−1 → 18/20; gate score <80) |
+| — | ✗ | Wordstat infra offline (−1) → 19/20 |
 
 ## Script reports
 
@@ -101,7 +87,7 @@ verdict: FAIL
 
 ## Fact-check
 
-- verdict: pass (6 extracted; 1 verified in fact-bank «2026»; 5 unverified = «2 часов», 300/400/403/429 — HTTP/длительности, не выдуманные % спроса)
+- verdict: pass (extracted stats; verified in fact-bank «2026»; unverified = «2 часов», 300/400/403/429 — HTTP/длительности, не выдуманные % спроса)
 
 ## Cannibalization
 
@@ -110,21 +96,23 @@ verdict: FAIL
 
 ## Utility gate
 
-- article: PASS (`action_markers=18`, numbered steps=17, faq_h3=7, tables=1, h2=7)
-- note: gate смотрит `meta.char_count` и не ловит ошибку измерения HTML vs plain
+- article: PASS (`action_markers`, numbered steps, faq_h3=7, tables=1)
+- meta.char_count=9280 согласован с plain
 
 ## Fix cycle
 
 - cycle 0 (writer 2026-09-12): trim HTML `len` → 9313; meta_ab OK
-- cycle 1 (geo-qa): **FAIL** — plain ~7216 < 8500; article.html не правился geo-qa (нужен writer FIX)
+- cycle 1 (geo-qa): **FAIL** — plain ~7216 < 8500; meta считал `len(html)`
+- cycle 1 (writer FIX): plain **9280**, meta.char_count = plain
+- cycle 1 (geo-qa recheck): **PASS**
 
-## GEO QA agent (2026-09-12)
+## GEO QA agent (2026-09-12 recheck)
 
 - agent: excalibur-blog-geo-qa
 - gates scripts: utility ✓ | linter ✓ | slop ✓ | link-verify ✓ | fact-check ✓ | cannibalization (B92) ✓
-- contract volume: **FAIL**
-- verdict: **FAIL** — cover/schema **не** запускать; вернуть writer
+- contract volume: **PASS** (plain 9280)
+- verdict: **PASS** — директор может запускать cover \|\| schema
 
 ## Schema ready (handoff для schema-агента)
 
-BlogPosting: blocked until PASS | FAQPage: yes (7) | HowTo: yes | Review: no | author_id: olga-kondratskaya
+BlogPosting: ready | FAQPage: yes (7) | HowTo: yes | Review: no | author_id: olga-kondratskaya
