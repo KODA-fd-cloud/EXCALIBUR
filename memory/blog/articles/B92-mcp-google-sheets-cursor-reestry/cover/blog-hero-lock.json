@@ -1,0 +1,14 @@
+{
+  "hero_id": "blog-host-male-face",
+  "name_ru": "Ведущий блога (лицо с reference)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://raw.githubusercontent.com/KODA-fd-cloud/EXCALIBUR/master/memory/cover/assets/blog-hero-reference.png",
+  "reference_url_source": "raw.githubusercontent.com/master",
+  "visual_lock": {
+    "face": "round black glasses, ash-blonde/light-brown quiff, salt-and-pepper short beard — EXACT likeness from reference",
+    "style": "human hook collage 16:9, DIY zine, not corporate",
+    "palette": "#F5F5F0, #1A1A2E, #FF1493, #E85D4C, #FFD93D"
+  },
+  "outfit_rule": "Agent choice: sleek purple/blue blazer + white shirt (NOT red suit/bowtie from reference photo). Confident CFO-coder vibe.",
+  "prompt_fragment": "Blog host on COVER ONLY: preserve EXACT face likeness from reference — round black glasses, ash-blonde quiff, salt-and-pepper beard. Outfit, pose, props: agent's creative choice for the meme hook — do NOT copy reference photo clothing unless scene_hint asks."
+}

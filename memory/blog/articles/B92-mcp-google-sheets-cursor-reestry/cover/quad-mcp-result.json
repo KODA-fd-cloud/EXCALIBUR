@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "mode": "GenerateImage_i2i_fallback",
+  "attempt": 2,
+  "reason": "user-mcp-kv/gpt-image-2 unavailable; v1 split bleed → regen with hard gutters",
+  "local_source": "/opt/cursor/artifacts/assets/B92-canvas-quad-v2.png",
+  "reference_image_paths": [
+    "memory/cover/assets/blog-hero-reference.png"
+  ],
+  "input_urls_batch": [
+    "https://raw.githubusercontent.com/KODA-fd-cloud/EXCALIBUR/master/memory/cover/assets/blog-hero-reference.png"
+  ],
+  "canvas": "cover/canvas-quad.png",
+  "canvas_size": [
+    2048,
+    1152
+  ]
+}

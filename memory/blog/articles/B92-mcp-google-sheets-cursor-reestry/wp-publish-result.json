@@ -1,0 +1,21 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "missing": [
+    "memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "dry_run": "pass"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}

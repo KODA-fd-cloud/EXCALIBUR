@@ -322,3 +322,35 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-12 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **FAIL / BLOCKER** |
+| permalink | — |
+| post_id | — |
+
+### Preconditions
+
+- article-qa.md: PASS
+- link-verify.json: pass (6/6, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- dry-run: PASS (PHP bytes=7632831)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING**
+- memory/site.env.local: **MISSING**
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT: **MISSING**
+- PUBLIC_SITE_URL: **MISSING**
+
+### Result
+
+```
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+Real publish не выполнен. Credentials не выдумывались. `shared/published-articles.md` не обновлялся. telegram_notify — зона директора.
