@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/cover/blog-hero-lock.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова копипастом в чат Cursor?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; GenerateImage i2i fallback if MCP unavailable",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога у коллажа: реестр Google Sheets снова копипастом в чат Cursor — MCP вместо ручной сверки",
+      "scene_hint": "reference-лицо (очки, quiff, борода), одежда: фиолетово-синий блейзер + белая рубашка (НЕ красный костюм с reference), вокруг: fake Telegram «вставь диапазон A1:Z200», fake Google Sheets реестр договоров, стикер ★☆☆☆☆ «опять копипаст», meme facepalm + shocked cat, розовый highlight на «копипастом», рваная бумага и скотч",
+      "meme_caption_ru": "Хватит копипаста в чат"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица 4 маршрута: Path A OAuth / Path B SA / копипаст в чат / Python-скрипт B82 — колонки «когда» и «минус», стикер «DoD: find→update→re-read», без лица героя",
+      "alt": "Сравнительная таблица Path A, Path B, копипаст и скрипт: когда MCP Sheets нужен финотделу"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист безопасности: share только нужного файла, без сырых ПДн в чат/облако, JSON-ключ вне git, минимальные scopes SA — розовая sticky «ПДн out», скотч, без лица героя",
+      "alt": "Чеклист подготовки реестра и безопасности без сырых ПДн в облако"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake UI: Google Cloud SA + фрагмент mcp.json с mcp-gsheets и env ключом + Cursor MCP Logs «connected» — мини-шаги 1-2-3, стикер «Path B», без лица героя",
+      "alt": "Скриншоты Path B: Google Cloud SA, mcp.json и MCP Logs для mcp-gsheets"
+    }
+  }
+}
