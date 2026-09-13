@@ -1,0 +1,16 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": "pass",
+  "link_verify": "pass",
+  "blocker_reason": "EXCALIBUR_BLOG_ALLOW_PUBLISH unset; memory/site.env.local missing; FTP_*/SSH_* credentials absent",
+  "publish_date": "2026-09-13",
+  "site_base": "https://koda-fd.ru"
+}
