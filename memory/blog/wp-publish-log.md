@@ -1,5 +1,47 @@
 # Excalibur BLOG — WP publish log
 
+## 2026-09-14 — B92 mcp-google-sheets-cursor-reestry — **BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| permalink | null |
+| post_id | — |
+| method | blocked (no credentials) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (existing)
+- dry-run: PASS (PHP bytes 4014479)
+- schema.jsonld: present
+- cover/cover.png + cover/cover-registry.json: present
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING**
+- memory/site.env.local: **MISSING**
+
+### Missing env (names only)
+
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH`
+- `PUBLIC_SITE_URL`
+- `FTP_HOST`
+- `FTP_USER`
+- `FTP_PASS`
+- `FTP_ROOT`
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — step ⑥ executed, not skipped
+permalink=null
+```
+
+Unblock: set Cloud Secrets → `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` + `FTP_*` + `PUBLIC_SITE_URL` → re-run only publish for B92.
+
+---
+
+
 ## 2026-07-22 — B18 schet-1c-unf-telefon-http-servis — **PASS**
 
 | Field | Value |
