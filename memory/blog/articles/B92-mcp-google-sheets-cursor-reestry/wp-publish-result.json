@@ -1,0 +1,38 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "php_bytes": 4014479
+  },
+  "link_verify": "pass",
+  "blockers": [
+    "❌ PUBLISH BLOCKER: missing memory/site.env.local",
+    "missing env: EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "missing env: PUBLIC_SITE_URL",
+    "missing env: FTP_HOST",
+    "missing env: FTP_USER",
+    "missing env: FTP_PASS",
+    "missing env: FTP_ROOT"
+  ],
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "missing_files": [
+    "memory/site.env.local"
+  ],
+  "note": "Step ⑥ executed (not skipped). Credentials not invented. Re-run publish after Cloud Secrets are set."
+}
