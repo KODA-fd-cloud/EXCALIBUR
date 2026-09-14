@@ -51,4 +51,4 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 - Indexer 2026-09-14: dry-run без blind `--apply` (secondary `2026` → 378 false-positive year anchors). Curated **4** links. Stripped secondary `2026` from 13 metas.
 - CLI: `excalibur_blog_interlinker.py --blog-dir` (нет `--article-dir`); llms: `--out-dir memory/blog --site-base https://koda-fd.ru`.
 - llms.txt / llms-full.txt: 44 статьи, B92 присутствует.
-- publish: pending (ALLOW/FTP env).
+- publish: ❌ BLOCKER 2026-09-14 — `memory/site.env.local` / `EXCALIBUR_BLOG_ALLOW_PUBLISH` / FTP_* missing; Live URL pending real publish.
