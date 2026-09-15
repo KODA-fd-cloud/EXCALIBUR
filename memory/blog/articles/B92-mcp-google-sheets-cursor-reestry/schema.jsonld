@@ -184,7 +184,7 @@
           "@type": "HowToStep",
           "position": 4,
           "name": "Добавьте mcp-gsheets в mcp.json",
-          "text": "В .cursor/mcp.json или ~/.cursor/mcp.json добавьте блок mcp-gsheets с npx -y mcp-gsheets@latest, GOOGLE_PROJECT_ID и абсолютным путём GOOGLE_APPLICATION_CREDENTIALS. Ключ не коммитьте.",
+          "text": "В .cursor/mcp.json или ~/.cursor/mcp.json добавьте блок mcp-gsheets с npx -y mcp-gsheets@latest, GOOGLE_PROJECT_ID и абсолютным путем GOOGLE_APPLICATION_CREDENTIALS. Ключ не коммитьте.",
           "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#setup"
         },
         {
@@ -198,21 +198,21 @@
           "@type": "HowToStep",
           "position": 6,
           "name": "Сверьте Path A и Path C",
-          "text": "Path A (Marketplace OAuth) — только если Sheets в витрине. Path C (sheetsmcp.googleapis.com) — Developer Preview. Для первого реестра финотдела безопаснее Path B на SA.",
+          "text": "Path A (Marketplace OAuth) - только если Sheets в витрине. Path C (sheetsmcp.googleapis.com) - Developer Preview. Для первого реестра финотдела безопаснее Path B на SA.",
           "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#path-a-c"
         },
         {
           "@type": "HowToStep",
           "position": 7,
-          "name": "Прогоните сценарий find → update → re-read",
-          "text": "sheets_get_metadata → найти строку по doc_key через get_values → approve sheets_update_values только для status/comment → снова get_values и сверка. Approval на каждый write обязателен.",
+          "name": "Прогоните сценарий find -> update -> re-read",
+          "text": "sheets_get_metadata -> найти строку по doc_key через get_values -> approve sheets_update_values только для status/comment -> снова get_values и сверка. Approval на каждый write обязателен.",
           "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#registry-scenario"
         },
         {
           "@type": "HowToStep",
           "position": 8,
           "name": "Проверьте ошибки и закрепите регламент",
-          "text": "403 — Share или путь к JSON; серый MCP — Node v20+/npx/абсолютный путь; 429 — батчи. Закрепите Path B, allowlist write-tools и ротацию ключа SA.",
+          "text": "403 - Share или путь к JSON; серый MCP - Node v20+/npx/абсолютный путь; 429 - батчи. Закрепите Path B, allowlist write-tools и ротацию ключа SA.",
           "url": "https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/#verify"
         }
       ]
