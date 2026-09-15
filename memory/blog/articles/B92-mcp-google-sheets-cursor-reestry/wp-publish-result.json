@@ -1,0 +1,26 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-15",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "reason": "env gate FAIL",
+  "missing_env": [
+    "memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": false,
+  "dry_run": false,
+  "publish_attempted": false,
+  "notes": "Step 6 executed (not skipped). Secrets not invented. QA/cover/schema/indexer PASS."
+}
