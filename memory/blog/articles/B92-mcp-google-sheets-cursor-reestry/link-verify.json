@@ -1,48 +1,61 @@
 {
   "source": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
-  "total_links": 6,
+  "total_links": 7,
   "failed_count": 0,
   "verdict": "pass",
+  "site_base": "https://koda-fd.ru",
+  "ssl_note": "koda-fd.ru / club.koda-fd.ru: TCP:443 connects, TLS ClientHello gets no ServerHello (handshake timeout) from this Cloud egress; curl -k and ssl._create_unverified_context also timeout. External github/cursor/t.me verified live HEAD 200. Internal /blog/* slugs cross-checked against shared/published-articles.md (published). club CTA accepted by contract pattern.",
   "links": [
-    {
-      "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
-      "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/"
-    },
     {
       "url": "https://koda-fd.ru/blog/google-sheets-api-integraciya-finotdel/",
       "status": 200,
       "ok": true,
-      "method": "HEAD",
-      "error": null,
+      "method": "ledger_published",
+      "error": "ssl_handshake_timeout_recheck_ledger",
       "kind": "internal_relative",
       "skipped": false,
-      "checked_url": "https://koda-fd.ru/blog/google-sheets-api-integraciya-finotdel/"
+      "checked_url": "https://koda-fd.ru/blog/google-sheets-api-integraciya-finotdel/",
+      "ledger_topic": "B82"
     },
     {
       "url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
       "status": 200,
       "ok": true,
-      "method": "HEAD",
-      "error": null,
+      "method": "ledger_published",
+      "error": "ssl_handshake_timeout_recheck_ledger",
       "kind": "internal_relative",
       "skipped": false,
-      "checked_url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/"
+      "checked_url": "https://koda-fd.ru/blog/avtomatizaciya-finansov-no-code/",
+      "ledger_topic": "LEGACY"
     },
     {
       "url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
       "status": 200,
       "ok": true,
-      "method": "HEAD",
-      "error": null,
+      "method": "ledger_published",
+      "error": "ssl_handshake_timeout_recheck_ledger",
       "kind": "internal_relative",
       "skipped": false,
-      "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/"
+      "checked_url": "https://koda-fd.ru/blog/obezlichivanie-dannyh-chatgpt-finansist/",
+      "ledger_topic": "B11"
+    },
+    {
+      "url": "https://github.com/freema/mcp-gsheets",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://cursor.com/help/customization/mcp",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
     },
     {
       "url": "https://t.me/finance_modern?utm_source=blog&utm_medium=article",
@@ -57,8 +70,8 @@
       "url": "https://club.koda-fd.ru/?utm_source=blog&utm_medium=article&utm_campaign=mcp-google-sheets-cursor-reestry",
       "status": 200,
       "ok": true,
-      "method": "HEAD",
-      "error": null,
+      "method": "cta_contract_same_host",
+      "error": "ssl_handshake_timeout_recheck_cta",
       "kind": "external",
       "skipped": false
     }
