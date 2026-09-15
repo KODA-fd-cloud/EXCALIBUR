@@ -1,0 +1,13 @@
+{
+  "hero_id": "blog-host-reference",
+  "name_ru": "Ведущий блога (reference face)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "reference_url_source": "koda-fd.ru/assets + local blog-hero-reference.png",
+  "visual_lock": {
+    "style": "human hook collage, DIY zine",
+    "palette": "#F5F5F0, #1A1A2E, #FF1493, #E85D4C"
+  },
+  "outfit_rule": "Outfit is agent choice for the hook — purple or blue smart-casual blazer OK; do NOT copy red suit/bowtie from reference photo unless scene_hint asks.",
+  "prompt_fragment": "Blog host on COVER ONLY: preserve EXACT face likeness from reference — round black glasses, ash-blonde/light-brown quiff, short salt-and-pepper beard/stubble. Outfit, pose, props: agent's creative choice for the meme hook."
+}
