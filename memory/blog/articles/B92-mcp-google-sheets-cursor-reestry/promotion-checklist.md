@@ -52,4 +52,4 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 - CLI: `excalibur_blog_interlinker.py --blog-dir` (нет `--article-dir`); llms: `--out-dir memory/blog --site-base https://koda-fd.ru`.
 - llms.txt / llms-full.txt: 44 статьи, B92 присутствует.
 - Report: `memory/blog/interlink-suggestions-B92.json`
-- publish: pending (ALLOW/FTP env).
+- publish 2026-09-16: **❌ PUBLISH BLOCKER** — нет `memory/site.env.local` / `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` / FTP_* / PUBLIC_SITE_URL. Live URL выше — **planned**, не confirmed live. Ledger не обновлён.
