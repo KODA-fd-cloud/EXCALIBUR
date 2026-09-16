@@ -1,0 +1,25 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-16",
+  "verdict": "fail",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "method": null,
+  "blocker": "❌ PUBLISH BLOCKER",
+  "blocker_reason": "EXCALIBUR_BLOG_ALLOW_PUBLISH missing/!=yes; memory/site.env.local missing; FTP_*/PUBLIC_SITE_URL not in process env",
+  "preflight": {
+    "article_qa": "PASS",
+    "link_verify": "pass",
+    "link_verify_site_base_used": "https://koda-fd.ru",
+    "cover": "present",
+    "schema": "present",
+    "dry_run": "payload_ok",
+    "dry_run_php_bytes": 7586279
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local"
+}

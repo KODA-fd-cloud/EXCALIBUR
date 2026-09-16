@@ -322,3 +322,42 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-16 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| post_id | — |
+| permalink | — |
+| method | — |
+
+### Preconditions
+
+- article-qa.md: PASS (90/100)
+- link-verify.json: pass (8/8, site-base https://koda-fd.ru) — advisory; PUBLIC_SITE_URL missing
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: payload OK (slug/title/PHP bytes)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING** (≠ yes)
+- memory/site.env.local: **MISSING**
+- FTP_*/PUBLIC_SITE_URL: **MISSING** in process env
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — credentials / allow flag
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+### Notes
+
+- Шаг ⑥ **выполнен**, не skipped.
+- `shared/published-articles.md` **не** обновлён (нет live permalink).
+- Unblock: Cloud Secrets → EXCALIBUR_BLOG_ALLOW_PUBLISH=yes + FTP_HOST/USER/PASS/ROOT + PUBLIC_SITE_URL → re-run только excalibur-blog-publish для B92.
+- Credentials не выдуманы, секреты не печатались.
+
