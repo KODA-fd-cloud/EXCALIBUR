@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова копипастом в чат Cursor?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Хост блога на обложке: MCP Google Sheets в Cursor вместо копипаста строк реестра",
+      "scene_hint": "Reference-лицо Ольги (очки, короткие тёмные волосы). Одежда агента: фиолетовый блейзер и белая футболка, жест «стоп» к окну чата с вставленным диапазоном A2:G50. Fake скрины: Google Sheets статус «В работе», Telegram «снова копируешь ячейки?», MCP Logs зелёный get_values. Рваная бумага, скотч, розовый стикер «doc_key», розовый маркер на слове «копипастом», мем facepalm + шок-кот. DIY zine 16:9.",
+      "meme_caption_ru": "Хватит копипаста в чат"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-таблица «Нужен MCP Sheets?» vs «Хватит CSV/ручного экспорта»: колонки критерий / MCP / без MCP (частота правок, доступ Agent, ПДн). Cyrillic labels, светлый SaaS mockup, розовый стикер «жиза», скотч. Без лица героя.",
+      "alt": "Сравнительная таблица: когда MCP Google Sheets нужен финотделу, а когда нет"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow 4 шага со стрелками: 1) вынести ПДн из листа 2) share только реестр на SA 3) ограничить диапазон 4) проверить доступ. Иконки lock/sheet/key. Cyrillic, маркерные стрелки, мини-стикер «без ПДн». Без лица героя.",
+      "alt": "Схема подготовки реестра и безопасности без сырых ПДн в облако"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path A пошагово: Google Cloud, SA и mcp.json",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake скриншот Cursor mcp.json + Google Cloud service account + Tools & MCP зелёный статус mcp-gsheets. Подписи: credentials.json, spreadsheetId, command npx. Скотч на углу, стикер Path A. Без лица героя.",
+      "alt": "Скрин настройки Path A: Google Cloud, service account и mcp.json для mcp-gsheets"
+    }
+  }
+}

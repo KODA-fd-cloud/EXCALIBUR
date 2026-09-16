@@ -5,14 +5,14 @@
     {
       "severity": "warning",
       "type": "high_primary_overlap",
-      "message": "WARNING: High primary query overlap (75%) between 'B80-mcp-1c-cursor-ostatki-oboroty' and 'B21-mcp-cursor-finansist-instrumenty'. Queries: 'mcp 1с cursor финансы' vs 'mcp cursor финансист'",
+      "message": "WARNING: High primary query overlap (75%) between 'B21-mcp-cursor-finansist-instrumenty' and 'B80-mcp-1c-cursor-ostatki-oboroty'. Queries: 'mcp cursor финансист' vs 'mcp 1с cursor финансы'",
       "articles": [
-        "B80-mcp-1c-cursor-ostatki-oboroty",
-        "B21-mcp-cursor-finansist-instrumenty"
+        "B21-mcp-cursor-finansist-instrumenty",
+        "B80-mcp-1c-cursor-ostatki-oboroty"
       ],
       "queries": [
-        "mcp 1с cursor финансы",
-        "mcp cursor финансист"
+        "mcp cursor финансист",
+        "mcp 1с cursor финансы"
       ],
       "similarity": 0.75
     }
