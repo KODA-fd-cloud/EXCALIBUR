@@ -98,7 +98,7 @@
 
 <p>03.08.2026 Cursor анонсировал Google Workspace plugins (агенты в Drive, Gmail, Calendar без выхода из редактора). Установка: Customize → MCPs → Google Sheets → Add → OAuth, минимальные scopes.</p>
 
-<p>На сентябрь 2026 на форуме Cursor: OAuth из IDE часто падает с Error 400 на redirect cursor://. Local auth иногда проходит; Cloud/SSH – нет без обхода. Рабочий обход: логин через <a href="https://cursor.com/agents" target="_blank" rel="noopener noreferrer">cursor.com/agents</a> → MCP Servers → Login. "Connected" ≠ успешная авторизация – только живой read/write. <b>Не полагайтесь</b> на Path A как единственный маршрут production: для командного реестра держите Path B.</p>
+<p>На сентябрь 2026 на форуме Cursor: OAuth из IDE часто падает с Error 400 на redirect cursor://. Local auth иногда проходит; Cloud/SSH – нет без обхода. Рабочий обход: логин через cursor.com/agents → MCP Servers → Login (<a href="https://forum.cursor.com/t/google-plugins-broken-auth-2-0/167780" target="_blank" rel="noopener noreferrer">тред форума Cursor</a>). "Connected" ≠ успешная авторизация – только живой read/write. <b>Не полагайтесь</b> на Path A как единственный маршрут production: для командного реестра держите Path B.</p>
 
 <p><b>Сделайте:</b> если плагин в Marketplace – OAuth и тестовое чтение; при Error 400 – логин через Agents или сразу Path B. <b>Не делайте:</b> считать зеленый индикатор финальной проверкой.</p>
 
