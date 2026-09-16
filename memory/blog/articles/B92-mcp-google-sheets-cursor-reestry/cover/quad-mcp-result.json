@@ -1,0 +1,14 @@
+{
+  "tool": "cursor.GenerateImage",
+  "mode": "image-to-image",
+  "attempt": 2,
+  "filename": "B92-canvas-quad-v2.png",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "source_artifact": "/opt/cursor/artifacts/assets/B92-canvas-quad-v2.png",
+  "source_size": "1280x720",
+  "canvas_size": "2048x1152",
+  "split": "PASS gutter_detect",
+  "inject_html": "ok",
+  "note": "gpt-image-2 MCP unavailable; ONE GenerateImage i2i + LANCZOS upscale"
+}
