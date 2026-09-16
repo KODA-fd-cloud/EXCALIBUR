@@ -5,6 +5,10 @@
 <p>На 16.09.2026 два маршрута. Path A (рекомендую для финконтура) - <a href="https://github.com/freema/mcp-gsheets" target="_blank" rel="noopener noreferrer">freema/mcp-gsheets</a> + service account: расшарили только рабочий файл, ключ в env. Path B - официальный remote Sheets MCP Google (sheetsmcp.googleapis.com, Developer Preview, OAuth). Плагины Sheets/Docs в Marketplace <b>не обещаю</b>: сняты с витрины (форум Cursor, 31.08.2026); Drive не пишет ячейки. Обзор MCP - в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; скрипт с тем же SA - в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнительная таблица: когда MCP Google Sheets нужен финотделу, а когда нет" loading="lazy">
+</figure>
+
 
 <p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки на расход), правки еженедельные, а копипаст диапазонов в чат бесит. Типичный симптом: CFO просит сменить статус по doc_key, а вы выделяете 40 строк и боитесь сдвинуть формулы. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица остается staging-слоем.</p>
 
@@ -47,6 +51,10 @@
 <p><b>Сделайте:</b> DoD до установки: найти строку по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> ждать Marketplace Sheets.</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн в облако)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема подготовки реестра и безопасности без сырых ПДн в облако" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> - стабильный код вроде DOG-2026-014. Лист <b>staging</b> - для импортов из 1С/Forms; боевой "Реестр" агент правит точечно в status и comment.</p>
 
@@ -61,6 +69,10 @@
 <p><b>Сделайте:</b> отдельный SA, share одного файла "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
 
 <h2 id="setup-path-a">Настройте Path A пошагово: Google Cloud, SA и mcp.json</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Скрин настройки Path A: Google Cloud, service account и mcp.json для mcp-gsheets" loading="lazy">
+</figure>
+
 
 <p>mcp-gsheets: Node.js v20+, Google Sheets API, JSON SA. Конфиг: <b>.cursor/mcp.json</b> или <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
 

@@ -1,0 +1,14 @@
+{
+  "url": "file:///opt/cursor/artifacts/assets/b92-canvas-quad.png",
+  "mcp_tool": "cursor.GenerateImage",
+  "fallback_reason": "user-mcp-kv/gpt-image-2 not in session MCP catalog",
+  "reference_image_paths": [
+    "memory/cover/assets/blog-hero-reference.png"
+  ],
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "aspect_ratio": "16:9",
+  "size": [
+    2048,
+    1152
+  ]
+}
