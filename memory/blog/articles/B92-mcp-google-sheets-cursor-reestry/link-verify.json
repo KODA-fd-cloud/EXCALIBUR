@@ -1,9 +1,18 @@
 {
   "source": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/article.html",
-  "total_links": 6,
+  "total_links": 7,
   "failed_count": 0,
   "verdict": "pass",
   "links": [
+    {
+      "url": "https://github.com/freema/mcp-gsheets",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
     {
       "url": "https://koda-fd.ru/blog/mcp-cursor-finansist-instrumenty/",
       "status": 200,
