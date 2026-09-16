@@ -1,0 +1,30 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "missing_env": [
+    "memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT"
+  ],
+  "also_accepts": [
+    "SSH_HOST"
+  ],
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local",
+  "preflight": {
+    "link_verify": "pass",
+    "link_verify_total": 8,
+    "link_verify_site_base": "https://koda-fd.ru",
+    "dry_run": "pass",
+    "dry_run_php_bytes": 8605063,
+    "qa": "PASS",
+    "cover": "present",
+    "schema": "present"
+  }
+}
