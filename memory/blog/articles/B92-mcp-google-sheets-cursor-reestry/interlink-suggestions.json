@@ -26,19 +26,5 @@
       "context": "плодите противоречия.</li> </ul> <p>Если в команде уже есть Claude Code или другие агенты, AGENTS.md остаётся общим языком: его чит"
     }
   ],
-  "note": "CLI --article-dir unsupported; ran hub-and-spoke on blog-dir. Skipped keyword '2026' (secondary_queries pollution). Anchor_variants for B92 had 0 corpus matches.",
-  "suggestions": [
-    {
-      "source": "B28-sverka-bank-1c-bez-pdn",
-      "target": "B04-claude-code-finotdel",
-      "keyword": "claude code",
-      "context": "езличенный срез + промпт)</th>       <th>Локально (Python / Claude Code в папке)</th>     </tr>   </thead>   <tbody>     <tr>"
-    },
-    {
-      "source": "B23-cursor-rules-finotdel",
-      "target": "B04-claude-code-finotdel",
-      "keyword": "claude code",
-      "context": "плодите противоречия.</li> </ul> <p>Если в команде уже есть Claude Code или другие агенты, AGENTS.md остаётся общим языком: его чит"
-    }
-  ]
+  "note": "CLI --article-dir unsupported; ran hub-and-spoke on blog-dir. Skipped keyword '2026' (secondary_queries pollution). Anchor_variants for B92 had 0 corpus matches."
 }

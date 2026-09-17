@@ -1,0 +1,26 @@
+{
+  "pipeline": "quad_canvas_1x_mcp",
+  "fallback": "cursor_GenerateImage",
+  "fallback_reason": "MCP gpt-image-2 (user-mcp-kv) unavailable in this environment",
+  "reference_url_hosted": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "reference_image_local": "memory/cover/assets/koda-ui-style-reference.png",
+  "output_canvas": "cover/canvas-quad.png",
+  "jobs": [
+    {
+      "slot": "canvas_quad",
+      "tool": "cursor_GenerateImage",
+      "note": "ONE call only — 4 panels inside, then excalibur_blog_cover_quad_split.py; i2i via reference_image_paths",
+      "mcp_args": {
+        "prompt_file": "cover/quad-mcp-prompt.txt",
+        "input_urls": [
+          "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png"
+        ],
+        "reference_image_paths": [
+          "memory/cover/assets/koda-ui-style-reference.png"
+        ],
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      }
+    }
+  ]
+}

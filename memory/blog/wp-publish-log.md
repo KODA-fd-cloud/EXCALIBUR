@@ -322,3 +322,55 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-17 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **FAIL / BLOCKER** |
+| post_id | — |
+| permalink | — |
+| step | ⑥ executed (not skipped) |
+
+### Preconditions
+
+- article-qa.md: PASS (93/100)
+- link-verify.json: pass (6/6, advisory `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + cover-registry: present
+- dry-run: OK (PHP bytes 6303395)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **unset**
+- PUBLIC_SITE_URL: **unset**
+- FTP_*/SSH_*: **unset**
+- memory/site.env.local: **MISSING**
+- Cloud Secrets injected (names only): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+
+### Result
+
+```
+❌ PUBLISH BLOCKER
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+### Missing env (names only)
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH
+- PUBLIC_SITE_URL
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT
+- SSH_HOST (accepted alternative)
+- memory/site.env.local
+
+### Not done
+
+- shared/published-articles.md (no live permalink)
+- featured/inline upload
+- schema_meta
+- telegram published notify
+
+### Unblock
+
+Inject Cloud Secrets → EXCALIBUR_BLOG_ALLOW_PUBLISH=yes + FTP_* (or SSH_*) + PUBLIC_SITE_URL → re-run only excalibur-blog-publish for B92.
