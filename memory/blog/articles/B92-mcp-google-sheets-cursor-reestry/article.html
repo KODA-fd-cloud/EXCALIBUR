@@ -5,6 +5,10 @@
 <p>Три маршрута на сентябрь 2026. Path A - Marketplace или remote URL через OAuth личного Google (быстрый пилот). Path B - mcp-gsheets на service account: расшарили только реестр, ключ в env. Path C - официальный remote Google Sheets MCP на sheetsmcp.googleapis.com (Developer Preview). Для финконтура я беру Path B; A и C - для пилота. Обзор MCP - в <a href="/blog/mcp-cursor-finansist-instrumenty/">гайде по MCP в Cursor</a>; запись скриптом с тем же SA - в <a href="/blog/google-sheets-api-integraciya-finotdel/">интеграции Sheets API</a>.</p>
 
 <h2 id="when-needed">Оцените, когда MCP Sheets нужен финотделу (и когда нет)</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение: когда финотделу нужен MCP Google Sheets, а когда хватит ручного экспорта" loading="lazy">
+</figure>
+
 
 <p><b>Подключайте MCP,</b> если реестр уже в Google Таблицах (договоры, УПД, SaaS, заявки), правки повторяются каждую неделю, а копипаст в чат бесит. <b>Не делайте</b> Sheets единственным источником правды при жестком audit trail, сотнях таблиц с enterprise ACL или более 200-300 активных договоров - тогда CLM или 1С, таблица остается staging.</p>
 
@@ -47,6 +51,10 @@
 <p><b>Сделайте:</b> DoD до установки: найти строку по doc_key, сменить status/comment, перечитать. <b>Не делайте:</b> MCP "на весь Drive" ради одного реестра.</p>
 
 <h2 id="prep-security">Подготовьте реестр и безопасность (без сырых ПДн в облако)</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Workflow подготовки реестра: обезличивание, share service account, без сырых ПДн" loading="lazy">
+</figure>
+
 
 <p>Одна строка = одна сущность. Колонка <b>doc_key</b> - стабильный код вроде DOG-2026-014. Лист <b>staging</b> - для импортов из 1С или Forms; боевой лист "Реестр" агент правит только в status и comment.</p>
 
@@ -61,6 +69,10 @@
 <p><b>Сделайте:</b> отдельный SA, share одного файла "Редактор", без "Уведомить". <b>Не делайте:</b> боевые ПДн в тестовый реестр.</p>
 
 <h2 id="setup-path-b">Настройте Path B: Google Cloud, SA и mcp.json пошагово</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Скрин настройки Path B: service account, mcp-gsheets и mcp.json в Cursor" loading="lazy">
+</figure>
+
 
 <p>mcp-gsheets (freema) нужен Node.js v20+, Google Sheets API и JSON SA. Конфиг: проектный <b>.cursor/mcp.json</b> или глобальный <b>~/.cursor/mcp.json</b>; при конфликте имен побеждает проектный.</p>
 

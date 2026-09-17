@@ -1,0 +1,14 @@
+{
+  "hero_id": "blog-host-reference",
+  "name_ru": "Блог-ведущий (reference face)",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://files.catbox.moe/yjlmip.png",
+  "visual_lock": {
+    "style": "human hook collage, DIY zine, pink sticky notes",
+    "palette": "#F5F5F0, #1A1A2E, #FF1493, #FFD93D"
+  },
+  "outfit_rule": "Outfit is agent choice for the meme hook — casual hoodie or smart-casual, NOT the red suit from reference photo.",
+  "prompt_fragment": "Blog host on COVER ONLY: preserve EXACT face likeness from reference — round black glasses, ash-blonde/light-brown quiff, short beard. Outfit, pose, props: agent's creative choice for the meme hook — do NOT copy reference photo clothing unless scene_hint asks.",
+  "reference_url_source": "env:BLOG_HERO_REFERENCE_URL",
+  "reference_url_updated_at": "2026-09-17T12:28:15+00:00"
+}

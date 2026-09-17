@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/cover/canvas-quad.png",
+    "source_size_px": [
+      1280,
+      720
+    ],
+    "panel_size_px": [
+      637,
+      358
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 358,
+        "end": 363
+      },
+      "v_gutter_px": {
+        "start": 637,
+        "end": 642
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 637,
+          "bottom": 358
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 637,
+          "bottom": 358
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка: ведущий у ноутбука с Cursor и Google Sheets, стикеры MCP и копипаст реестра",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 642,
+          "top": 0,
+          "right": 1280,
+          "bottom": 358
+        },
+        "raw_box_px": {
+          "left": 642,
+          "top": 0,
+          "right": 1280,
+          "bottom": 358
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение: когда финотделу нужен MCP Google Sheets, а когда хватит ручного экспорта",
+        "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 363,
+          "right": 637,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 363,
+          "right": 637,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Workflow подготовки реестра: обезличивание, share service account, без сырых ПДн",
+        "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 642,
+          "top": 363,
+          "right": 1280,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 642,
+          "top": 363,
+          "right": 1280,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Скрин настройки Path B: service account, mcp-gsheets и mcp.json в Cursor",
+        "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово"
+      }
+    }
+  },
+  "html_inject": [
+    "skip inline_1: already injected",
+    "skip inline_2: already injected",
+    "skip inline_3: already injected"
+  ]
+}
