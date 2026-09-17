@@ -1,0 +1,44 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "koda_gradient_abstract",
+  "style_file": "memory/cover/quad-style-koda-gradient-abstract.json",
+  "cover_family": "gradient_abstract",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова уехал в чат кусками?",
+  "mcp_note": "FALLBACK GenerateImage (gpt-image-2 MCP unavailable); ONE canvas 2x2, reference i2i via reference_image_paths, then split",
+  "fallback": "cursor_GenerateImage",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_abstract_hook",
+      "alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
+      "scene_hint": "Abstract holographic: glowing spreadsheet grid dissolving into MCP node network, purple #8b5cf6 and blue #93c5fd light trails linking Cursor-like editor orb to Sheets lattice, no people, no text",
+      "meme_caption_ru": "Хватит копипаста в чат"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Abstract comparison of four glowing path-nodes (Path B brightest, A/C/script dimmer) as holographic decision matrix without readable letters — when MCP Sheets fits finance registry vs when not",
+      "alt": "Сравнение маршрутов Path A/B/C для MCP Google Sheets в финотделе"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Abstract security workflow: locked vault node → anonymized data particles → single shared file orb → Cursor MCP bridge; purple shield glow, no faces, no Cyrillic",
+      "alt": "Схема подготовки реестра и безопасности без сырых ПДн"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Abstract 6-step luminous pipeline: GCP project → service account key → share → mcp.json config block as glowing JSON lattice → restart → green access pulse; holographic tool aesthetic, no readable text",
+      "alt": "Пошаговая схема Path B: Google Cloud, service account и mcp.json"
+    }
+  }
+}

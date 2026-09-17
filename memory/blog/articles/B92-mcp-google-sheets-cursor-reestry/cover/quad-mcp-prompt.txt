@@ -1,0 +1,15 @@
+KODA fintech blog QUAD canvas 16:9, exact 2x2 grid four equal panels, optional thin white gutters ONLY on center lines x=50% and y=50%, no bleed across seams.
+
+Style lock for ALL panels: abstract digital holographic data visualization on near-black #0a0a0f, glowing purple #8b5cf6 and electric blue #93c5fd neon nodes spheres connected by luminous lines, dot-mesh particle grid, flowing light trails, cinematic depth, soft grain, futuristic CFO tech aesthetic. Match KODA legacy blog card style.
+
+Absolutely NO text NO letters NO watermark NO logo NO people NO faces NO Cyrillic on image. NO UI screenshot windows with readable labels.
+
+TOP-LEFT COVER: Abstract holographic — glowing spreadsheet grid dissolving into MCP node network; purple and blue light trails linking a Cursor-like editor orb to a Sheets lattice; copy-paste chaos transforming into clean automated data flow; thumbnail-safe center composition.
+
+TOP-RIGHT (comparison): Four glowing path-nodes as holographic decision matrix — one brightest Path B production node, three dimmer alternate routes — abstract comparison when MCP Sheets fits a finance registry vs when not.
+
+BOTTOM-LEFT (security workflow): Locked vault node → anonymized data particles → single shared file orb → MCP bridge; soft purple shield glow; registry prep without raw PII leaking into cloud.
+
+BOTTOM-RIGHT (setup pipeline): Six-step luminous pipeline orbs: cloud project → service account key crystal → share pulse → config JSON lattice → restart spark → green access confirmation pulse; Path B mcp-gsheets setup metaphor.
+
+Negative: text, letters, words, watermark, logo, people, faces, stock photo, 3D shield product icon, code editor window with readable code, spreadsheet UI with cell letters, yellow headline typography, vertical 9:16 carousel.

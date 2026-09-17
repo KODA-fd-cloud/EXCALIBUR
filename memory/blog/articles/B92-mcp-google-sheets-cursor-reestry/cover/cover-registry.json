@@ -2,13 +2,57 @@
   "topic_id": "B92",
   "slug": "mcp-google-sheets-cursor-reestry",
   "cover_family": "gradient_abstract",
-  "pipeline": "cursor_generate_image_legacy_abstract",
+  "style_preset": "koda_gradient_abstract",
+  "pipeline": "quad_canvas_1x_generateimage_fallback",
   "file": "cover/cover.png",
-  "dzen_file": "cover/dzen-cover.png",
   "alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
-  "cover_alt_text": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
   "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-09-17T05:22:14+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
+      "h2_anchor": null,
+      "visual_type": "cover_abstract_hook",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение маршрутов Path A/B/C для MCP Google Sheets в финотделе",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема подготовки реестра и безопасности без сырых ПДн",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Пошаговая схема Path B: Google Cloud, service account и mcp.json",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "mcp_mode": "image-to-image",
+  "fallback": "cursor_GenerateImage",
+  "fallback_reason": "MCP gpt-image-2 (user-mcp-kv) unavailable",
+  "reference_url": "https://koda-fd.ru/blog/wp-content/uploads/2026/05/cover-avtomatizaciya-finansov-no-code-1024x576.png",
+  "dzen_file": "cover/dzen-cover.png",
+  "cover_alt_text": "Абстрактная голографическая автоматизация финансов на тёмном фоне с фиолетовым акцентом, MCP Google Sheets в Cursor",
   "size": "1200x675",
-  "generated_at": "2026-08-24T04:06:46.278338+00:00",
-  "note": "abstract holographic, NO text on image"
+  "note": "KODA gradient_abstract quad 2x2; NO text on images; ONE GenerateImage fallback"
 }
