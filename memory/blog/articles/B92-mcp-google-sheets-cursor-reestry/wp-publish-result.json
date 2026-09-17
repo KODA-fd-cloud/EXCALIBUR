@@ -1,0 +1,27 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "blockers": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST",
+    "memory/site.env.local"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "link_verify_site_base_advisory": "https://koda-fd.ru",
+    "dry_run": "pass",
+    "dry_run_php_bytes": 6303395,
+    "qa": "PASS"
+  },
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local\nCloud Secrets present (names only): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID\nMissing publish secrets: EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_*/SSH_*",
+  "publish_date": "2026-09-17",
+  "note": "Step ⑥ executed (not skipped). Credentials not invented. Re-run publish after Cloud Secrets inject."
+}
