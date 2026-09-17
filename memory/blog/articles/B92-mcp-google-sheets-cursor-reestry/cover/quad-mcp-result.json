@@ -1,0 +1,9 @@
+{
+  "url": "file:///opt/cursor/artifacts/assets/B92-canvas-quad-v2.png",
+  "mcp_tool": "cursor.GenerateImage",
+  "mcp_mode": "image-to-image",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://files.catbox.moe/yjlmip.png",
+  "note": "gpt-image-2 unavailable; ONE GenerateImage i2i call (v2 after gutters fix)",
+  "generated_at": "2026-09-17T12:29:58.541689+00:00"
+}
