@@ -1,0 +1,18 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": null,
+  "raw_output": "❌ PUBLISH BLOCKER: missing memory/site.env.local and publish credentials. EXCALIBUR_BLOG_ALLOW_PUBLISH unset; PUBLIC_SITE_URL unset; FTP_HOST/FTP_USER/FTP_PASS/FTP_ROOT unset; SSH_HOST unset. Preflight link-verify pass; dry-run OK. Real publish not attempted.",
+  "verdict": "fail",
+  "method": null,
+  "blocker": "missing_credentials",
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST"
+  ]
+}
