@@ -322,3 +322,37 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-18 — B92 mcp-google-sheets-cursor-reestry — **BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **❌ PUBLISH BLOCKER** |
+| post_id | — |
+| permalink | — |
+| method | not attempted (no credentials) |
+
+### Preconditions
+
+- article-qa.md: PASS (93/100)
+- link-verify.json: pass (6/6, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: pass (slug/title OK, PHP bytes ~11.9MB)
+- `memory/site.env.local`: **MISSING**
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH`: unset
+- `PUBLIC_SITE_URL` / `FTP_*` / `SSH_*`: unset (secrets not invented)
+
+### Blockers
+
+- ❌ PUBLISH BLOCKER: нет `memory/site.env.local`
+- ❌ нет `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`
+- ❌ нет publish credentials (`FTP_*` или `SSH_*`) и `PUBLIC_SITE_URL`
+
+### Unblock
+
+Inject Cloud Secrets → `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` + `PUBLIC_SITE_URL` + `FTP_*` or `SSH_*` → re-run only `excalibur-blog-publish` for B92.

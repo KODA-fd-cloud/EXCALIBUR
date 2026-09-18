@@ -1,0 +1,10 @@
+{
+  "url": null,
+  "source": "cursor.GenerateImage",
+  "fallback": true,
+  "reason": "gpt-image-2 MCP unavailable",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "local_canvas": "cover/canvas-quad.png",
+  "note": "ONE i2i GenerateImage → resize 2048x1152 → split+inject"
+}

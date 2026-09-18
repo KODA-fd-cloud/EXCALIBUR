@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero-human.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова уехал в чат кусками?",
+  "mcp_note": "ONE gpt-image-2 (or GenerateImage i2i fallback) with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: ведущий в худи «финконтур» у коллажа Cursor/Sheets — реестр без копипаста через MCP",
+      "scene_hint": "reference-лицо Ольги (очки, quiff/короткие тёмные волосы, борода не нужна — женский host); outfit агента: чёрный худи с фиолетовым капюшоном и бейдж «финконтур», жест указывает на рваный скрин чата Cursor с кусками таблицы; fake UI: Telegram «опять копипаст A2:G80?», Wordstat «mcp google sheets», analytics 0 прочтений; розовый маркер на слове «копипаста», скотч, sticky note «жиза», мем facepalm кот; фон #F5F5F0 zine collage",
+      "meme_caption_ru": "Хватит копипаста в чат"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица 2 колонки «Подключайте MCP» vs «Не делайте»: реестр в Sheets + weekly правки / audit trail + ERP; Cyrillic UI, розовый стикер «Path B», без лица героя",
+      "alt": "Сравнение: когда MCP Google Sheets нужен финотделу и когда лучше ERP"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема: doc_key → staging лист → Реестр status/comment; щит «без ПДн», share только SA email; стрелки, tape corner, без лица",
+      "alt": "Схема подготовки реестра: doc_key, staging, share service account без сырых ПДн"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake скрин .cursor/mcp.json с mcp-gsheets + env GOOGLE_APPLICATION_CREDENTIALS; зелёный Connected; sticky «share файла»; без лица героя",
+      "alt": "Скрин настройки Path B: mcp.json, service account и mcp-gsheets в Cursor"
+    }
+  }
+}

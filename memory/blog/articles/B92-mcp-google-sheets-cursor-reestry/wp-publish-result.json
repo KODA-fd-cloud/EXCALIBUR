@@ -1,0 +1,16 @@
+{
+  "verdict": "fail",
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-18",
+  "dry_run": "pass",
+  "link_verify": "pass",
+  "permalink": null,
+  "post_id": null,
+  "blockers": [
+    "❌ PUBLISH BLOCKER: отсутствует memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH не задан в env (нужно =yes)",
+    "PUBLIC_SITE_URL / FTP_* / SSH_* отсутствуют — секреты не выдуманы"
+  ]
+}
