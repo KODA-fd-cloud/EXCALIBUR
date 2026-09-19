@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-19",
+  "verdict": "fail",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 4014479
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "site_base": "https://koda-fd.ru",
+    "total_links": 6,
+    "failed_count": 0
+  },
+  "blockers": [
+    "❌ PUBLISH BLOCKER",
+    "memory/site.env.local missing",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH missing (need =yes)",
+    "PUBLIC_SITE_URL missing",
+    "FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT missing",
+    "SSH_HOST (or SSH_*) missing — accepted alternative to FTP_*"
+  ],
+  "missing_env_names": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST"
+  ],
+  "raw_output": "BLOCKER: missing publish credentials and EXCALIBUR_BLOG_ALLOW_PUBLISH!=yes; real publish not attempted. Step ⑥ executed (preflight+dry-run+blocker write), not skipped."
+}

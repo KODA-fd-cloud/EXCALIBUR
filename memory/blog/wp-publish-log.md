@@ -322,3 +322,38 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-19 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **FAIL** (blocker) |
+| post_id | — |
+| permalink | — |
+| method | not attempted |
+
+### Preconditions this run
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (6/6) `--site-base https://koda-fd.ru` (PUBLIC_SITE_URL missing)
+- schema.jsonld: present
+- cover/cover.png + cover-registry: present
+- dry-run: OK (PHP bytes ~4014479; Pillow installed)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING** (need yes)
+- memory/site.env.local: **MISSING**
+- FTP_* / SSH_*: **MISSING**
+
+### Blockers (names only)
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH
+- PUBLIC_SITE_URL
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT
+- SSH_HOST (accepted alternative)
+
+### Notes
+
+Step ⑥ **executed**, not skipped. Ledger `shared/published-articles.md` **not** updated (publish unsuccessful). No telegram notify.
