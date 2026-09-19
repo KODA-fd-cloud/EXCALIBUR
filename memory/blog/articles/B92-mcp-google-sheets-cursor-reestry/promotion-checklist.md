@@ -44,7 +44,8 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
-- Indexer: interlinker `--apply --blog-dir memory/blog/articles` (CLI без `--article-dir`); auto-suggestions по якорю «2026» отклонены как неконтекстные — откат. В `article.html` сохранены ручные internal links: `mcp-cursor-finansist-instrumenty`, `google-sheets-api-integraciya-finotdel`, `avtomatizaciya-finansov-no-code`, `obezlichivanie-dannyh-chatgpt-finansist`.
-- Отчёт suggestions: `interlink-report.json` (380 opportunities / corpus).
-- llms.txt / llms-full.txt обновлены в `memory/blog/` (site-base https://koda-fd.ru), B92 в индексе.
+- Indexer: **без blind `--apply`** после strip `2026` из secondary_queries (14 metas). Accidental `--apply` до strip → откат year-anchors.
+- Curated 4 links: B21→B92, B82→B92, B51→B92, B92→B51. Отчёт: `memory/blog/interlink-suggestions-B92.json`.
+- В B92 также сохранены ручные links: `mcp-cursor-finansist-instrumenty`, `google-sheets-api-integraciya-finotdel`, `avtomatizaciya-finansov-no-code`, `obezlichivanie-dannyh-chatgpt-finansist`.
+- llms.txt / llms-full.txt обновлены в `memory/blog/` (site-base https://koda-fd.ru), 44 статьи, B92 в индексе.
 - ready_for_publish: yes (cover + schema уже PASS).

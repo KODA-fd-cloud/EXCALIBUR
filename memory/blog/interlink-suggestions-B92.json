@@ -1,0 +1,38 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "run_date": "2026-09-19",
+  "mode": "curated",
+  "blind_apply": false,
+  "reason": "secondary_queries year 2026 causes false-positive year anchors; strip then curated links only",
+  "stripped_secondary_2026_metas": 14,
+  "dry_run_after_strip_opportunities": 2,
+  "dry_run_note": "2 remaining opps are non-B92 (claude code cluster), not applied",
+  "blind_apply_incident": "accidental --apply before strip created year-anchor junk; reverted via git checkout",
+  "curated_links": [
+    {
+      "source": "B21-mcp-cursor-finansist-instrumenty",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "anchor": "MCP Google Sheets для реестров",
+      "href": "/blog/mcp-google-sheets-cursor-reestry/"
+    },
+    {
+      "source": "B82-google-sheets-api-integraciya-finotdel",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "anchor": "гайде MCP Google Sheets",
+      "href": "/blog/mcp-google-sheets-cursor-reestry/"
+    },
+    {
+      "source": "B51-reestr-dogovorov-google-sheets",
+      "target": "B92-mcp-google-sheets-cursor-reestry",
+      "anchor": "MCP Google Sheets",
+      "href": "/blog/mcp-google-sheets-cursor-reestry/"
+    },
+    {
+      "source": "B92-mcp-google-sheets-cursor-reestry",
+      "target": "B51-reestr-dogovorov-google-sheets",
+      "anchor": "реестр договоров",
+      "href": "/blog/reestr-dogovorov-google-sheets/"
+    }
+  ]
+}
