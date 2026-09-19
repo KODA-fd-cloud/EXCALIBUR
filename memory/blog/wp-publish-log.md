@@ -322,3 +322,39 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-19 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **fail** (BLOCKER) |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — |
+| permalink | — |
+| method | not attempted |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (7/7, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- dry-run: OK (slug/title, PHP bytes ~4014555; Pillow installed)
+- `memory/site.env.local`: **MISSING**
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH`: **MISSING**
+- `PUBLIC_SITE_URL` / `FTP_*` / `SSH_*`: **MISSING**
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — missing allow flag and credentials (names only):
+memory/site.env.local, EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL,
+FTP_HOST, FTP_USER, FTP_PASS, FTP_ROOT, SSH_HOST
+```
+
+Step ⑥ executed, not skipped. Real publish not run. Ledger `shared/published-articles.md` not updated.
