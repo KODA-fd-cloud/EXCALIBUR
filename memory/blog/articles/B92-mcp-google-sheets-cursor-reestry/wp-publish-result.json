@@ -1,0 +1,36 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-19",
+  "verdict": "fail",
+  "blocker": "PUBLISH BLOCKER",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 4014555
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 7,
+    "failed_count": 0,
+    "site_base": "https://koda-fd.ru"
+  },
+  "missing_env": [
+    "memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST"
+  ],
+  "notes": "Step ⑥ executed (not skipped). Real publish not attempted — no allow flag and no FTP_*/SSH_* credentials. Credentials not invented."
+}
