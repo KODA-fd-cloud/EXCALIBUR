@@ -1,0 +1,30 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": null,
+  "verdict": "blocker",
+  "dry_run": {
+    "ok": true,
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 4014479
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 6,
+    "failed_count": 0,
+    "site_base": "https://koda-fd.ru"
+  },
+  "blockers": [
+    "memory/site.env.local (file missing)",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST",
+    "SSH_USER",
+    "SSH_KEY"
+  ],
+  "note": "❌ PUBLISH BLOCKER — step ⑥ executed (preflight+dry-run OK); real publish not attempted. Missing credentials (names only)."
+}

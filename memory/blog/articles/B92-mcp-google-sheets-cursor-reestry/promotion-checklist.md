@@ -1,7 +1,7 @@
 # Promotion checklist — B92 mcp-google-sheets-cursor-reestry
 
-Дата публикации: YYYY-MM-DD  
-Live URL: https://koda-fd.ru/blog/mcp-google-sheets-cursor-reestry/
+Дата публикации: — (publish blocker 2026-09-20)  
+Live URL: — (ожидает publish; целевой slug: /blog/mcp-google-sheets-cursor-reestry/)
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
@@ -49,4 +49,4 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 - Рекомендация: убрать `"2026"` из `secondary_queries` в meta (не indexer-зона rewrite).
 - llms.txt / llms-full.txt обновлены в `memory/blog/` (site-base https://koda-fd.ru), B92 в индексе.
 - interlink-report: `memory/blog/articles/B92-mcp-google-sheets-cursor-reestry/interlink-report.json`
-- publish: pending после indexer.
+- publish: ❌ PUBLISH BLOCKER 2026-09-20 — нет site.env.local / EXCALIBUR_BLOG_ALLOW_PUBLISH / PUBLIC_SITE_URL / FTP_*|SSH_*; link-verify pass + dry-run OK; Live URL не выставлен.
