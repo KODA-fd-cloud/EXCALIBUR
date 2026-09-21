@@ -1,0 +1,42 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "method": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 4014755
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "site_base": "https://koda-fd.ru",
+    "total_links": 10,
+    "failed_count": 0
+  },
+  "blockers": [
+    "❌ PUBLISH BLOCKER: memory/site.env.local отсутствует",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH unset (нужно yes)",
+    "PUBLIC_SITE_URL unset",
+    "FTP_HOST / SSH_HOST unset",
+    "FTP_USER / SSH_USER unset",
+    "FTP_PASS / FTP_PASSWORD / SSH_KEY / SSH_PASS unset",
+    "FTP_ROOT unset"
+  ],
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST",
+    "SSH_USER",
+    "SSH_KEY",
+    "SSH_PASS"
+  ],
+  "raw_output": "FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local",
+  "published_at": null
+}

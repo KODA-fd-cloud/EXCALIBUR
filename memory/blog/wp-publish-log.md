@@ -322,3 +322,49 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-21 — B92 mcp-google-sheets-cursor-reestry — **BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — |
+| permalink | — |
+| method | — |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (10/10, site-base https://koda-fd.ru)
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- dry-run: OK (PHP bytes 4014755)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: unset
+- PUBLIC_SITE_URL: unset
+- FTP_*/SSH_*: unset
+- memory/site.env.local: отсутствует
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — credentials / allow flag missing
+FileNotFoundError: No publish credentials: set SSH_*/FTP_* in env or memory/site.env.local
+```
+
+### Missing env (names only)
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH
+- PUBLIC_SITE_URL
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT
+- SSH_HOST / SSH_USER / SSH_KEY / SSH_PASS
+
+### Notes
+
+- Шаг ⑥ выполнен (не skipped): dry-run PASS, real publish не запущен без secrets.
+- published-articles.md не обновлялся (нет live permalink).
