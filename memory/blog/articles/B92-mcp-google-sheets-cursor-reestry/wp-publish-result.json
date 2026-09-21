@@ -1,0 +1,44 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-21",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 4014755
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 10,
+    "failed_count": 0,
+    "site_base": "https://koda-fd.ru"
+  },
+  "blockers": [
+    "❌ PUBLISH BLOCKER: missing memory/site.env.local",
+    "❌ PUBLISH BLOCKER: EXCALIBUR_BLOG_ALLOW_PUBLISH unset (need yes)",
+    "❌ PUBLISH BLOCKER: PUBLIC_SITE_URL unset",
+    "❌ PUBLISH BLOCKER: FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT unset",
+    "❌ PUBLISH BLOCKER: SSH_HOST / SSH_USER / SSH_KEY|SSH_PASSWORD unset"
+  ],
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST",
+    "SSH_USER",
+    "SSH_KEY",
+    "SSH_PASSWORD"
+  ],
+  "raw_output": "link-verify pass 10/10; dry-run OK; real publish not attempted — env gate fail"
+}
