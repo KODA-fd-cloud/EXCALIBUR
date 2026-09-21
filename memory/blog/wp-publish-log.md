@@ -322,3 +322,47 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+## 2026-09-21 — B92 mcp-google-sheets-cursor-reestry — **BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| permalink | — |
+| post_id | — |
+| method | not attempted (env gate) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (10/10, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: OK (PHP bytes 4014755; Pillow installed for cover decode)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: unset
+- memory/site.env.local: absent
+- FTP_* / SSH_*: unset
+
+### Blockers (names only)
+
+- `memory/site.env.local`
+- `EXCALIBUR_BLOG_ALLOW_PUBLISH`
+- `PUBLIC_SITE_URL`
+- `FTP_HOST` / `FTP_USER` / `FTP_PASS` / `FTP_ROOT`
+- `SSH_HOST` / `SSH_USER` / `SSH_KEY` / `SSH_PASSWORD`
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — credentials / allow flag missing; real publish not run
+```
+
+### Notes
+
+- Step ⑥ executed (not silent skip).
+- `shared/published-articles.md` not updated (no live permalink).
+- Unblock: add Cloud Secrets / site.env.local → re-run only publish for B92.
+

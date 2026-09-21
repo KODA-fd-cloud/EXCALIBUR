@@ -51,3 +51,8 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 - Curated interlink count: **4 inbound** (B03/B21/B51/B82) + **4 outbound registry** в B92 + уже были B21/B82/no-code/обезличивание.
 - llms.txt / llms-full.txt: `--out-dir memory/blog --site-base https://koda-fd.ru`; **44** статей, B92 включён.
 - Live URL пустой — publish ещё не был.
+
+## Publish status (2026-09-21)
+
+- ❌ PUBLISH BLOCKER — missing site.env.local / EXCALIBUR_BLOG_ALLOW_PUBLISH / PUBLIC_SITE_URL / FTP_*|SSH_*.
+- Live URL остаётся пустым до успешного publish.
