@@ -1,0 +1,35 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-22",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "title": "Как подключить MCP к Google Sheets в Cursor и править реестры без копипаста",
+    "php_bytes": 4014479
+  },
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 6,
+    "failed_count": 0,
+    "site_base_used": "https://koda-fd.ru"
+  },
+  "blockers": [
+    "❌ PUBLISH BLOCKER: missing memory/site.env.local",
+    "MISSING env: EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "MISSING env: PUBLIC_SITE_URL",
+    "MISSING env: FTP_HOST",
+    "MISSING env: FTP_USER",
+    "MISSING env: FTP_PASS",
+    "MISSING env: FTP_ROOT",
+    "MISSING env: SSH_HOST (optional alt to FTP)"
+  ],
+  "note": "Step ⑥ executed (not skipped). Real publish not attempted. published-articles.md not updated (no live permalink)."
+}
