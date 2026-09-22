@@ -322,3 +322,42 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-22 — B92 mcp-google-sheets-cursor-reestry — **BLOCKER** (cron 12:07 UTC)
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **blocker** |
+| permalink | — (not published) |
+| post_id | — |
+| method | env gate (step executed, not skipped) |
+| tick | continue_pipeline / writing / approve |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (6/6, site-base https://koda-fd.ru)
+- schema.jsonld: present
+- cover/cover.png + alt: present
+- dry-run: OK (PHP bytes 4014479)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING**
+- PUBLIC_SITE_URL: **MISSING**
+- FTP_*: **MISSING**
+- SSH_*: **MISSING**
+- memory/site.env.local: **FILE_MISSING**
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — credentials / allow flag absent
+published-articles.md: NOT updated (no live permalink)
+```
+
+### Unblock
+
+Add Cloud Secrets / `memory/site.env.local` with EXCALIBUR_BLOG_ALLOW_PUBLISH=yes, PUBLIC_SITE_URL, FTP_* (or SSH_*), then resume Publish only.
+
