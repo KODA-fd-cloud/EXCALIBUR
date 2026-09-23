@@ -1,0 +1,46 @@
+{
+  "topic_id": "B92",
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "article_dir": "memory/blog/articles/B92-mcp-google-sheets-cursor-reestry",
+  "publish_date": "2026-09-23",
+  "verdict": "blocker",
+  "permalink": null,
+  "post_id": null,
+  "featured_image": null,
+  "inline_images": [],
+  "schema_meta": null,
+  "link_verify": {
+    "verdict": "pass",
+    "total_links": 9,
+    "failed_count": 0,
+    "site_base": "https://koda-fd.ru"
+  },
+  "dry_run": {
+    "ok": true,
+    "slug": "mcp-google-sheets-cursor-reestry",
+    "php_bytes": 4014767
+  },
+  "blockers": [
+    "❌ PUBLISH BLOCKER — missing memory/site.env.local",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST (or FTP_* alternative)"
+  ],
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST",
+    "SSH_USER",
+    "SSH_KEY",
+    "SSH_PASSWORD"
+  ],
+  "raw_output": "Real publish not attempted: no credentials and allow flag."
+}
