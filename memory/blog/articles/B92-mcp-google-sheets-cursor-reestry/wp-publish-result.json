@@ -1,0 +1,22 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": null,
+  "verdict": "blocker",
+  "dry_run": "ok",
+  "link_verify": "pass",
+  "blockers": [
+    "memory/site.env.local absent",
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "SSH_HOST",
+    "SSH_USER",
+    "SSH_KEY",
+    "SSH_PASSWORD"
+  ],
+  "raw_output": "❌ PUBLISH BLOCKER — missing credentials / allow flag (names only recorded). Dry-run OK (PHP bytes 4015043). link-verify pass 10/10. Real publish not attempted."
+}
