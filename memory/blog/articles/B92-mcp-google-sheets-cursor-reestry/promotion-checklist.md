@@ -1,7 +1,7 @@
 # Promotion checklist — B92 mcp-google-sheets-cursor-reestry
 
 Дата публикации: YYYY-MM-DD  
-Live URL: *(unpublished — заполнить после WP publish)*
+Live URL: *(unpublished — ❌ PUBLISH BLOCKER 2026-09-24: нет EXCALIBUR_BLOG_ALLOW_PUBLISH / PUBLIC_SITE_URL / FTP_*|SSH_*)*
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
@@ -45,4 +45,6 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
-Indexer 2026-09-24: dry-run до strip показал массовые матчи по голому «2026» → **не** blind `--apply`. Strip `2026` из 13 `secondary_queries`; восстановлен фильтр `is_usable_keyword` + `--article-dir` в interlinker. Scoped `--apply` B92 → 0 авто-вставок. Curated inbound B03/B21/B51/B82 → B92; outbound реестры B51/B58/B83/B59 + B82 в next-steps. Corpus `--apply` → 2× «claude code» (B23/B28→B04). llms.txt/llms-full.txt → `memory/blog/` (B92 есть). Live URL пуст до publish.
+Indexer 2026-09-24: dry-run до strip показал массовые матчи по голому «2026» → **не** blind `--apply`. Strip `2026` из 13 `secondary_queries`; восстановлен фильтр `is_usable_keyword` + `--article-dir` в interlinker. Scoped `--apply` B92 → 0 авто-вставок. Curated inbound B03/B21/B51/B82 → B92; outbound реестры B51/B58/B83/B59 + B82 в next-steps. Corpus `--apply` → 2× «claude code» (B23/B28→B04). llms.txt/llms-full.txt → `memory/blog/` (B92 есть).
+
+Publish 2026-09-24: link-verify pass 10/10; dry-run OK; ❌ PUBLISH BLOCKER (нет ALLOW / PUBLIC_SITE_URL / FTP_*|SSH_*). Live URL пуст.

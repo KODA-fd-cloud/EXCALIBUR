@@ -1,5 +1,49 @@
 # Excalibur BLOG — WP publish log
 
+## 2026-09-24 — B92 mcp-google-sheets-cursor-reestry — **BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** |
+| post_id | — |
+| featured_image_id | — |
+| inline_images | — |
+| permalink | null |
+| method | not attempted (env gate) |
+
+### Preconditions
+
+- article-qa.md: PASS (91/100)
+- link-verify.json: pass (10/10, `--site-base https://koda-fd.ru`)
+- schema.jsonld: present
+- cover/cover.png + cover-registry.json: present
+- dry-run: OK (PHP bytes 4015043; Pillow installed for cover decode)
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: MISSING (≠ yes)
+- memory/site.env.local: ABSENT
+
+### Missing secret NAMES only
+
+- EXCALIBUR_BLOG_ALLOW_PUBLISH
+- PUBLIC_SITE_URL
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT
+- SSH_HOST / SSH_USER / SSH_KEY / SSH_PASSWORD
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — step ⑥ executed, not skipped.
+Real publish not attempted (no credentials / allow flag).
+ledger shared/published-articles.md: NOT updated
+```
+
+### Unblock
+
+Cloud Secrets → `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` + `PUBLIC_SITE_URL` + `FTP_*` or `SSH_*` → resume **Publish only**.
+
+---
+
 ## 2026-07-22 — B18 schet-1c-unf-telefon-http-servis — **PASS**
 
 | Field | Value |
