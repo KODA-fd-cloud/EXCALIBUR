@@ -48,7 +48,28 @@ def load_all_articles(blog_dir: Path) -> list[dict[str, Any]]:
     return articles
 
 
-def find_linking_opportunities(articles: list[dict[str, Any]], site_base: str) -> list[dict[str, Any]]:
+_YEAR_ONLY_RE = re.compile(r"^(19|20)\d{2}$")
+
+
+def is_usable_keyword(keyword: str) -> bool:
+    """Reject bare years and other junk anchors that create mass false links."""
+    k = (keyword or "").strip()
+    if not k:
+        return False
+    # secondary_query often contains the run year (e.g. «2026») — never auto-link that
+    if _YEAR_ONLY_RE.fullmatch(k):
+        return False
+    if len(k) < 3:
+        return False
+    return True
+
+
+def find_linking_opportunities(
+    articles: list[dict[str, Any]],
+    site_base: str,
+    *,
+    source_only_topic_id: str | None = None,
+) -> list[dict[str, Any]]:
     suggestions = []
     # Normalize site base URL
     site_base = site_base.rstrip("/")
@@ -67,6 +88,8 @@ def find_linking_opportunities(articles: list[dict[str, Any]], site_base: str) -
         for k in raw_keywords:
             if k and k.strip():
                 k_clean = k.strip()
+                if not is_usable_keyword(k_clean):
+                    continue
                 if k_clean not in seen:
                     seen.add(k_clean)
                     keywords.append(k_clean)
@@ -77,6 +100,8 @@ def find_linking_opportunities(articles: list[dict[str, Any]], site_base: str) -
         for source in articles:
             if source["topic_id"] == target["topic_id"]:
                 continue  # Don't link to itself
+            if source_only_topic_id and source["topic_id"] != source_only_topic_id:
+                continue  # --article-dir: only inject outbound links from one article
 
             source_html = source["html_content"]
             # Check if source already links to target slug
@@ -171,9 +196,38 @@ def apply_interlinks(suggestions: list[dict[str, Any]], articles: list[dict[str,
     return applied_count
 
 
+def resolve_article_dir(root: Path, article_dir: Path, blog_dir: Path) -> tuple[Path, str]:
+    """Return (absolute article dir, topic_id) for --article-dir scoping."""
+    path = article_dir if article_dir.is_absolute() else root / article_dir
+    if not path.is_dir():
+        raise FileNotFoundError(f"Article directory not found: {path}")
+    meta_path = path / "article.meta.json"
+    topic_id = path.name.split("-", 1)[0]
+    if meta_path.is_file():
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            topic_id = str(meta.get("topic_id") or topic_id)
+        except Exception:
+            pass
+    # Prefer loading from full blog_dir (for target keyword inventory), but require article under it
+    try:
+        path.resolve().relative_to(blog_dir.resolve())
+    except ValueError:
+        # Allow absolute path outside blog_dir only if it looks like an article folder
+        if not (path / "article.html").is_file():
+            raise FileNotFoundError(f"article.html missing in {path}")
+    return path, topic_id
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Excalibur BLOG Hub-and-Spoke Interlinker")
     ap.add_argument("--blog-dir", type=Path, default=None, help="Path to articles/ directory")
+    ap.add_argument(
+        "--article-dir",
+        type=Path,
+        default=None,
+        help="Only inject outbound links from this article (topic scoped)",
+    )
     ap.add_argument("--site-base", type=str, default="https://example.com", help="Base site URL")
     ap.add_argument("--apply", action="store_true", help="Directly edit html files to apply links")
     ap.add_argument("--output", type=Path, default=None, help="Output path for JSON suggestions report")
@@ -188,15 +242,27 @@ def main() -> int:
         print(f"Blog directory not found: {blog_dir}")
         return 1
 
+    source_only_topic_id: str | None = None
+    if args.article_dir:
+        try:
+            _, source_only_topic_id = resolve_article_dir(root, args.article_dir, blog_dir)
+        except FileNotFoundError as exc:
+            print(exc)
+            return 1
+        print(f"Scoped to article topic_id={source_only_topic_id} (--article-dir)")
+
     articles = load_all_articles(blog_dir)
     print(f"Loaded {len(articles)} articles from memory.")
 
-    suggestions = find_linking_opportunities(articles, args.site_base)
+    suggestions = find_linking_opportunities(
+        articles, args.site_base, source_only_topic_id=source_only_topic_id
+    )
     print(f"Found {len(suggestions)} internal linking opportunities.")
 
     report = {
         "site_base": args.site_base,
         "total_articles": len(articles),
+        "source_only_topic_id": source_only_topic_id,
         "opportunities_found": len(suggestions),
         "suggestions": [
             {
@@ -218,6 +284,8 @@ def main() -> int:
     if args.apply and suggestions:
         applied = apply_interlinks(suggestions, articles)
         print(f"Successfully applied {applied} internal links across articles.")
+    elif args.apply:
+        print("No suggestions to apply (after year/junk keyword filter).")
 
     return 0
 
