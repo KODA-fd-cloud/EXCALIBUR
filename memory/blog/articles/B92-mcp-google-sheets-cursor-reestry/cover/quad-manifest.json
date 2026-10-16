@@ -1,0 +1,42 @@
+{
+  "topic_id": "B92",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Реестр снова копипастом в чат Cursor?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Ведущий блога шокирован: куски Google Sheets реестра снова копируют в чат Cursor вместо MCP",
+      "meme_caption_ru": "Хватит копипаста в чат",
+      "scene_hint": "reference-лицо (очки, quiff, борода), фиолетово-синий блейзер, жест «хватит»; fake скрин Telegram с длинным диапазоном A1:G200; рваная бумага + розовый стикер «doc_key?»; мем facepalm; розовый highlight на «копипастом»"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Оцените, когда MCP Sheets нужен финотделу (и когда нет)",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "UI-таблица 2 колонки: «Нужен MCP» vs «Хватит вручную» — частые правки реестра / разовые выгрузки; стикер «финотдел»; без лица героя",
+      "alt": "Сравнительная таблица: когда MCP Google Sheets нужен финотделу, а когда хватит ручной выгрузки"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Подготовьте реестр и безопасность (без сырых ПДн в облако)",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема 4 шага: колонка doc_key → шаринг только SA → без сырых ПДн → MCP Logs check; скотч/мини-стикер; без лица",
+      "alt": "Схема подготовки реестра Google Sheets: doc_key, доступ service account и без сырых ПДн"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Настройте Path B: Google Cloud, SA и mcp.json пошагово",
+      "visual_type": "tool_screenshot",
+      "scene_hint": "Fake скрин Cursor Settings → MCP: mcp-gsheets + фрагмент mcp.json с SA; зелёный статус Connected; стикер «Path B»; без лица героя",
+      "alt": "Скрин настройки Path B: Google Cloud service account и mcp.json для mcp-gsheets в Cursor"
+    }
+  }
+}
