@@ -322,3 +322,39 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+---
+
+## 2026-09-15 — B92 mcp-google-sheets-cursor-reestry — **❌ PUBLISH BLOCKER**
+
+| Field | Value |
+|-------|-------|
+| topic_id | B92 |
+| slug | mcp-google-sheets-cursor-reestry |
+| verdict | **BLOCKER** (env gate; step executed, not skipped) |
+| post_id | — |
+| permalink | — |
+| method | not attempted |
+
+### Preconditions
+
+- article-qa.md: PASS
+- cover/cover.png + cover-registry.json: present
+- schema.jsonld: present
+- indexer: PASS
+- memory/site.env.local: **MISSING**
+- EXCALIBUR_BLOG_ALLOW_PUBLISH: **MISSING**
+- PUBLIC_SITE_URL: **MISSING**
+- FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT: **MISSING**
+
+### Result
+
+```
+❌ PUBLISH BLOCKER — env gate FAIL
+missing: memory/site.env.local, EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_HOST, FTP_USER, FTP_PASS, FTP_ROOT
+(no secrets invented; dry-run/publish not started)
+```
+
+### Unblock
+
+Cloud Secrets → `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` + FTP_* + `PUBLIC_SITE_URL` → re-run only `excalibur-blog-publish` for B92.
