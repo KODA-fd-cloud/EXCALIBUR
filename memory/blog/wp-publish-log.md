@@ -322,3 +322,12 @@ permalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/
 
 method: `excalibur_blog_docker_publish.py` (ssh_docker_exec)
 QA: PASS; cover gradient_abstract; schema BlogPosting+FAQPage; CTA club+tg only
+
+## 2026-08-24 — B92 mcp-google-sheets-cursor-reestry
+
+- status: ❌ PUBLISH BLOCKER
+- link-verify: pass (6/6, site-base https://koda-fd.ru)
+- dry-run: pass (PHP bytes: 10228119)
+- live publish: not attempted
+- missing_env: EXCALIBUR_BLOG_ALLOW_PUBLISH, PUBLIC_SITE_URL, FTP_HOST, FTP_USER, FTP_PASS, FTP_ROOT, memory/site.env.local
+- permalink: (none)

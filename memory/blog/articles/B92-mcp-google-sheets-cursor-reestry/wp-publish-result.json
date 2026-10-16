@@ -1,0 +1,25 @@
+{
+  "slug": "mcp-google-sheets-cursor-reestry",
+  "topic_id": "B92",
+  "permalink": "",
+  "verdict": "blocker",
+  "blockers": [
+    "❌ PUBLISH BLOCKER: missing publish credentials / allow flag"
+  ],
+  "missing_env": [
+    "EXCALIBUR_BLOG_ALLOW_PUBLISH",
+    "PUBLIC_SITE_URL",
+    "FTP_HOST",
+    "FTP_USER",
+    "FTP_PASS",
+    "FTP_ROOT",
+    "memory/site.env.local"
+  ],
+  "preflight": {
+    "link_verify": "pass",
+    "site_base_used": "https://koda-fd.ru",
+    "dry_run": "pass",
+    "php_bytes": 10228119
+  },
+  "note": "pipeline publish_flag=yes, but Cloud Secrets / site.env.local not injected into this run"
+}

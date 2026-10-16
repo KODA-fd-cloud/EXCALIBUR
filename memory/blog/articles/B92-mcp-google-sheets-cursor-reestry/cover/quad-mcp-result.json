@@ -1,0 +1,19 @@
+{
+  "url": "",
+  "method": "fallback_GenerateImage",
+  "mcp": "gpt-image-2_unavailable",
+  "reference_image_paths": [
+    "memory/cover/assets/blog-hero-reference.png"
+  ],
+  "reference_url_hosted": "https://koda-fd.ru/assets/CAcjfm4N.jpg",
+  "source_artifact": "/opt/cursor/artifacts/assets/B92-canvas-quad.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "canvas_size": [
+    2048,
+    1152
+  ],
+  "note": "ONE Cursor GenerateImage i2i fallback; LANCZOS to 2048x1152 if needed before split"
+}
