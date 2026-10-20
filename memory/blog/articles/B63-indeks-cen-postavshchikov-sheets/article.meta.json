@@ -8,8 +8,7 @@
   "primary_query": "индекс цен поставщиков excel",
   "secondary_queries": [
     "автоматизация финотдела",
-    "индекс цен поставщиков excel",
-    "2026"
+    "индекс цен поставщиков excel"
   ],
   "char_count": 9025,
   "article_mode": "B",
